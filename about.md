@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+Traci Gardner
+
 Some information about you!
 
 ### More Information
