@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url("/ptw/-images/graph-5by5-light.png");
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+		font-family: 'Raleway', sans-serif;
+}
+div.wrapright, img.wrapright, figure.wrapright {
+	float: right;
+	margin: 0px 0px 15px 15px;
+}
+figcaption, .site-credit {
+	font-size: 15px;
+	color: #333;
+	font-weight:normal;
+}
+a, li a {
+	text-decoration: underline;
+}
+
+a.activeMenuItem {
+    background-color: #F00;
+    font-weight: bold;
+}
+
+.page-header-sidebar {
+	border-bottom: 1px solid #FF6600;
+    margin: 40px 0 20px;
+	padding: 15px 15px 15px 15px;
+	font-size: 18px;
+	font-weight: bold;
+}	
+
+.page-header-content {
+    margin: 40px 0 20px;
+	padding-bottom: 9px;
+	border-bottom: 1px solid #FF6600;
+}	
+
+/*
+    copied over code for dropdown lists
+    from https://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap
+*/
+.just-padding {
+  padding: 15px;
+}
+
+.list-group.list-group-root {
+  padding: 0;
+  overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+  margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+  padding-left: 60px; /* was 30 and 45 */
+}
+
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+  padding-left: 75px;
+}
+
+.list-group-item .glyphicon {
+  margin-right: 5px;
+}
