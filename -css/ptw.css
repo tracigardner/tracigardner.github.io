@@ -15,6 +15,20 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 	color: #660000;
 	border-bottom: 1px solid #FF6600;
 }
+.orangebox {
+	border: 6px solid #FF6600;
+	border-style: double;
+	box-sizing: border-box;
+	padding: 0 5px 5px 20px;
+}
+
+.maroonbox {
+	border: 6px solid #660000;
+	border-style: double;
+	box-sizing: border-box;
+	padding: 0 5px 5px 20px;
+}
+
 div.wrapright, img.wrapright, figure.wrapright {
 	float: right;
 	margin: 0px 0px 15px 15px;
