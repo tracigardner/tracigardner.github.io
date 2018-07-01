@@ -27,6 +27,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol {
 	box-sizing: border-box;
 	padding: 0 5px 5px 20px;
 }
+.listDS li {
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+.null li {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 
 div.wrapright, img.wrapright, figure.wrapright {
 	float: right;
