@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Traci Gardner
+Traci Gardner, English 3764
 
 Some information about you!
 
