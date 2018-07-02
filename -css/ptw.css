@@ -69,6 +69,19 @@ a.activeMenuItem {
 	border-bottom: 1px solid #FF6600;
 }	
 
+.alignnone {
+  margin: 1rem 0; }
+.aligncenter {
+  display: block;
+  margin: 0 auto 1rem; }
+.alignright {
+  float: right;
+  margin: 0 0 1rem 1rem; }
+.alignleft {
+  float: left;
+  margin: 0 1rem 1rem 0; }
+  
+
 /*
     copied over code for dropdown lists
     from https://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap
