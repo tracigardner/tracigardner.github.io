@@ -1,8 +1,7 @@
 ---
 layout: post
-title: TuesdayTutorial: Taking a Professional Photo
+title: Tuesday Tutorial: Taking a Professional Photo
 ---
-
 <p><em>This tutorial was posted on July 3, 2018.</em></p>
 <div style="float:right;width: 400px;">
 <figure style="margin-bottom: 24px;padding-left: 15px;">
@@ -35,5 +34,4 @@ title: TuesdayTutorial: Taking a Professional Photo
 <p>You will find a lot more useful tips in the step-by-step tutorial in the Hubspot post <a href="https://blog.hubspot.com/marketing/professional-headshot-tips-for-budget" target="_blank">How to Take Your Own Professional Headshot: A Bookmarkable Guide</a>, which says it takes 15 minutes to read. The article covers everything from how to set up your camera to editing your final choice. </p>
 <p>Take advantage of feedback from your writing group as well. If you can’t decide which photo is best, ask your writing group to help you decide.</p>
 <p>&nbsp;</p>
-<p style="font-size: small;">Photo credits: <a href="https://flic.kr/p/v4Nmb" target="_blank">Self Portrait in Barbados by Jens karlsson on Flickr</a>, used under a CC-BY license, and <a href="https://flic.kr/p/4YiRpN" target="_blank">Me for Lindberg glasses by Jens karlsson on Flickr</a>, used under a CC-BY license.<br />
-</p>
+<p style="font-size: small;">Photo credits: <a href="https://flic.kr/p/v4Nmb" target="_blank">Self Portrait in Barbados by Jens karlsson on Flickr</a>, used under a CC-BY license, and <a href="https://flic.kr/p/4YiRpN" target="_blank">Me for Lindberg glasses by Jens karlsson on Flickr</a>, used under a CC-BY license.</p>
