@@ -9,12 +9,10 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="entry">
-        {{ content }}
-
+        {{ post.excerpt }}
       </div>
 
-
-    <!--  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read and Make Comments </a> -->
-    </article>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    (I haven't figured out how to make full posts the default and get rid of the read more yet)</article>
   {% endfor %}
 </div>
