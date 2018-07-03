@@ -10,9 +10,9 @@ layout: default
 
       <div class="entry">
         {{ post.content }}
+        {% include disqus.html %}
       </div>
 
-      {% include disqus.html %}
 
     <!--  <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read and Make Comments </a> -->
     </article>
