@@ -1,6 +1,6 @@
 ---
 layout: post
-title: #TuesdayTutorial: Taking a Professional Photo
+title: &num;TuesdayTutorial: Taking a Professional Photo
 ---
 
 <p><em>This tutorial was posted on July 3, 2018.</em></p>
