@@ -16,7 +16,7 @@ title: #TuesdayTutorial: Taking a Professional Photo
 <h2>What to Wear</h2>
 <ul class="listDS">
   <li>Wear the kind of clothes that you would wear to work or to an interview. Be professional.</li>
-  <li>Alternately, if you are using a photo that shows yourself at work, the clothes that you wear in the workplace are fine (e.g., no one expects someone working a construction site to wear a suit).</li>
+  <li>Alternately, if you are using a photo that shows yourself at work, the clothes that you wear in the workplace are fine (e.g., no one expects someone working a construction site to wear a suit). Just be sure that the job matches your career ambitions.</li>
   <li>If you are pursuing a military career or currently in the Corps, a photo in your uniform works for this assignment. </li>
   <li>Don’t use a photo in which you are wearing formalwear. Ring Dance, prom, or wedding photos of you in a tux or evening gown are not  appropriate. Your readers will know you are trying to make-do with a photo that was clearly for another purpose. </li>
 </ul>
@@ -36,4 +36,4 @@ title: #TuesdayTutorial: Taking a Professional Photo
 <p>Take advantage of feedback from your writing group as well. If you can’t decide which photo is best, ask them to help you decide.</p>
 <p>&nbsp;</p>
 <p style="font-size: small;">Photo credits: <a href="https://flic.kr/p/v4Nmb" target="_blank">Self Portrait in Barbados by Jens karlsson on Flickr</a>, used under a CC-BY license, and <a href="https://flic.kr/p/4YiRpN" target="_blank">Me for Lindberg glasses by Jens karlsson on Flickr</a>, used under a CC-BY license.<br />
-</p> 
+</p>
