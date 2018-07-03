@@ -12,7 +12,7 @@ title: Professional Bio Project Overview
 <h2 id="notes">Notes for Today</h2>
 <ul class="listDS">
    <li><strong>Happy Independence Day! </strong>No work will be due on Thursday, and I will not post a Daily Discussion Post.</li>
-   <li><strong>Writing Groups will be set up on Wednesday. </strong>Once everyone has filled out the <a href="https://goo.gl/forms/16gNHgFHO4gzlbrA3" target="_blank">Summer II 2018 Group Preferences Survey</a></strong>, I will set up your writing groups.  so that I can arrange your writing groups. Responses are due today (by 11:59PM Tuesday, July 3). If you cannot fill out the survey on time, you may be placed in a general group or your group placement may be delayed. We will begin using groups later this week.</li>
+   <li><strong>Writing Groups will be set up on Wednesday. </strong>Once everyone has filled out the <a href="https://goo.gl/forms/16gNHgFHO4gzlbrA3" target="_blank">Summer II 2018 Group Preferences Survey</a>, I will set up your writing groups.  so that I can arrange your writing groups. Responses are due today (by 11:59PM Tuesday, July 3). If you cannot fill out the survey on time, you may be placed in a general group or your group placement may be delayed. We will begin using groups later this week.</li>
 </ul>
 <h2 id="readings">Readings for Today</h2>
 <ul>
