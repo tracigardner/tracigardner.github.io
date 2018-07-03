@@ -12,6 +12,8 @@ layout: default
         {{ post.content }}
       </div>
 
+        {% include disqus.html %}
+
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read and Make Comments </a>
     </article>
   {% endfor %}
