@@ -61,13 +61,13 @@ a.activeMenuItem {
 	padding: 15px 15px 15px 15px;
 	font-size: 18px;
 	font-weight: bold;
-}	
+}
 
 .page-header-content {
     margin: 40px 0 20px;
 	padding-bottom: 9px;
 	border-bottom: 1px solid #FF6600;
-}	
+}
 
 .alignnone {
   margin: 1rem 0; }
@@ -80,7 +80,10 @@ a.activeMenuItem {
 .alignleft {
   float: left;
   margin: 0 1rem 1rem 0; }
-  
+
+.photocredit {
+		font-size: small;
+	}
 
 /*
     copied over code for dropdown lists
