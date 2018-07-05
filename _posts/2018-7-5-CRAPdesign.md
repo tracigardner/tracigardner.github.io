@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Infographic Inspiration—Put CRAP in Your Document Design
+title: "#Infographic Inspiration: Put CRAP in Your Document Design"
 date: 2018-07-05 02:38:00 -0400
 ---
 <div style="float: right; width: 250px;margin-left: 9px;" class="maroonbox">
