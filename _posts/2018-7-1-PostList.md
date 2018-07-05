@@ -7,7 +7,7 @@ date: 2018-07-01 02:38:00
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a> ({{ page.date | date: "%B %e, %Y" }})
     </li>
   {% endfor %}
 </ul>
