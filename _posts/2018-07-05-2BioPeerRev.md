@@ -30,23 +30,22 @@ date: 2018-07-05 03:06:00
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
   <li><strong>Review the resources that can help you improve</strong> your Professional Bio:
-<ol class="null">
-      <li>The advice articles and examples from the <a href="https://btw-assignments.tracigardner.com/professional-bio-statement/" target="_blank">assignment</a></li>
-      <li>The <a href="https://www.thebalance.com/good-linkedin-summary-with-examples-4126809" target="_blank">LinkedIn Summary article</a>. Your professional bio, with light revision, can frequently do double duty as the summary for your LinkedIn profile.</li>
-      <li><a href="https://drive.google.com/file/d/1x7dF8RpTysYUQ2-xw1DMYLbYKrl_tXaY/view?usp=sharing" target="_blank">The Official Biography</a>,  from <em>The Tongue and Quill</em>. Useful for those pursuing military careers.</li>
-    </ol>
-  </li>
+  <ul class="null">
+        <li>The advice articles and examples from the <a href="https://btw-assignments.tracigardner.com/professional-bio-statement/" target="_blank">assignment</a></li>
+        <li>The <a href="https://www.thebalance.com/good-linkedin-summary-with-examples-4126809" target="_blank">LinkedIn Summary article</a>. Your professional bio, with light revision, can frequently do double duty as the summary for your LinkedIn profile.</li>
+        <li><a href="https://drive.google.com/file/d/1x7dF8RpTysYUQ2-xw1DMYLbYKrl_tXaY/view?usp=sharing" target="_blank">The Official Biography</a>,  from <em>The Tongue and Quill</em>. Useful for those pursuing military careers.</li>
+    </ul></li>
   <li><strong>Finish the draft of your Professional Bio.</strong>
     <ul>
     <li>Make your draft as complete as possible. </li>
     <li>Apply the ideas from this week&rsquo;s <a href="http://tracigardner.github.io/CRAPdesign/" title="#InfographicInspiration: Put CRAP in Your Document Design">#InfographicInspiration post</a> to make the design for your bio the best that it can be.</li>
     <li>If there are places where you know you will make changes or add information, add a note in your draft. </li>
     <li>Likewise, if there are places where you have questions, mark those as well and tell readers what you need help with.</li>
-    </ul>
-    </li>
-  <li><strong>Begin getting to know your Writing Group.</strong> Your professional bio draft will be your introduction to your group, but you can also get to know each other by chatting in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/363964" target="_blank">Group Chat Discussion in Canvas</a>. Additionally, be sure that you set up the guidelines for how you will work together in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362556" target="_blank">Group Ground Rules Discussion in Canvas</a>
-  <li><strong>By 11:59PM on tonight (Thursday, July 5), post a rough draft</strong> of your bio to your Writing Group in Canvas in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362558" target="_blank">Group Feedback on Professional Bios</a> Discussion. Additional instructions are in the Discussion.</li>
+    </ul></li>
+  <li><strong>Begin getting to know your Writing Group.</strong> Your professional bio draft will be your introduction to your group, but you can also get to know each other by chatting in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/363964" target="_blank">Group Chat Discussion in Canvas</a>. Additionally, be sure that you set up the guidelines for how you will work together in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362556" target="_blank">Group Ground Rules Discussion in Canvas</a>.</li>
+  <li><strong>By 11:59PM tonight (Thursday, July 5), post a rough draft</strong> of your bio to your Writing Group in Canvas in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362558" target="_blank">Group Feedback on Professional Bios</a> Discussion. Additional instructions are in the Discussion.</li>
   <li><strong>By 11:59PM on  Friday, July 6, post feedback  in Canvas to all your group members</strong> in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362558" target="_blank">Group Feedback on Professional Bios  Discussion</a>. Remember to provide constructive feedback, following <a href="/requirements/writing-groups/">the advice on the Writing Groups page</a> and the information in the video above, <a href="https://youtu.be/GlSCMx9-fGA" target="_blank">Peer Review: Commenting Strategies</a>. Additional instructions are in the Discussion itself.</li>
   <li><strong>Add a comment to the <a href="http://tracigardner.github.io/CRAPdesign/" target="_blank">#InfographicInspiration: Put CRAP in Your Document Design post</a></strong> if you are <a href="/requirements/#higher">working toward a grade higher than a B</a>. <a href="/daily-discussion-posts/">See the Daily Discussion Posts page</a> for more information on commenting.</li>
   <li><strong>Record the work that you&rsquo;ve done</strong> on your Professional Bio in your <a href="https://canvas.vt.edu/courses/70739/pages/labor-log" target="_parent">Labor Log</a> (link to the instructions). Your <a href="https://canvas.vt.edu/courses/70739/assignments/442792" target="_blank">07/06 Labor Log submission  in Canvas</a> is due by 11:59PM Friday, July 6. The grace period for your labor log ends at 11:59PM on Monday, July 9. If you have questions about your Labor Log, you can ask them in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362550" target="_parent">Labor Logs and Writing Groups Questions Discussion</a>.</li>
-<li><strong>By 11:59PM tonight (Thursday, July 5), complete your <a href="https://canvas.vt.edu/courses/70739/quizzes/110440" target="_parent">07/05 Course Declaration in Canvas</a></strong>, to track the tasks you have completed for the day.  Remember that these course declarations are the best way to track how you are doing in the course. The grace period for your 07/05 Declaration ends at 11:59 PM on Sunday, July 8.</li></ol>
+<li><strong>By 11:59PM tonight (Thursday, July 5), complete your <a href="https://canvas.vt.edu/courses/70739/quizzes/110440" target="_parent">07/05 Course Declaration in Canvas</a></strong>, to track the tasks you have completed for the day. Remember that these course declarations are the best way to track how you are doing in the course. The grace period for your 07/05 Declaration ends at 11:59 PM on Sunday, July 8.</li>
+</ol>
