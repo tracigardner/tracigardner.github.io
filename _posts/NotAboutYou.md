@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FridayFact—The Best Bio Isn’t About You
+title: "#FridayFact: The Best Bio Isn’t About You"
 date: 2018-07-06 00:00:00 -0400
 ---
 <p><img src="/wp-content/uploads/you.jpg" alt="You? by Shawn Rossi on Flickr, used under a CC-BY 2.0 license" style="width: 301px;height: 226px;float: right;" />Today’s #FridayFact may seem contradictory. How can your professional bio NOT be about you? The answer is that it’s all about perspective—or to be more specific, about your reader’s perspective. </p>
