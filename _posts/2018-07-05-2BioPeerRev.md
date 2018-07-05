@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Professional Bio Peer Review
-date: 2018-07-05 03:06:00
+date: 2018-07-05 03:06:00 -4:00
 ---
 <p><em>This is the post for July 5, 2018.</em></p>
 <h2 id="notes">Notes for Today</h2>
