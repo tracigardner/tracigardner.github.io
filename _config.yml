@@ -50,6 +50,10 @@ url: https://tracigardner.github.io
 baseurl: ""
 
 #
+# FUTURE flag is BOOL
+# Publish posts or collection documents with a future date.
+future: false
+
 # !! You don't need to change any of the configuration flags below !!
 #
 
