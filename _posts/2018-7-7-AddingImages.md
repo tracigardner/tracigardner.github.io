@@ -12,27 +12,27 @@ date: 2018-07-07 00:00:00 -0400
 <table>
 <thead>
 <tr>
-<td style="padding: 12px;"><strong>Design Principle</strong></td>
-<td style="padding: 12px;"><strong>Think About These Questions</strong></td>
+<td style="padding: 12px;text-align: left;vertical-align: top;"><strong>Design Principle</strong></td>
+<td style="padding: 12px;text-align: left;vertical-align: top;"><strong>Think About These Questions</strong></td>
 </tr>
 </thead>
 <tr>
-<td>Contrast</td>
-<td>Is the size of the image appropriate for the length of the text?<br />
+<td style="padding: 12px;text-align: left;vertical-align: top;">Contrast</td>
+<td style="padding: 12px;text-align: left;vertical-align: top;">Is the size of the image appropriate for the length of the text?<br />
 Does it stand out without overwhelming the design?</td>
 </tr>
 <tr>
-<td>Repetition</td>
-<td>Does the style of the image match the style of the text?<br />
+<td style="padding: 12px;text-align: left;vertical-align: top;">Repetition</td>
+<td style="padding: 12px;text-align: left;vertical-align: top;">Does the style of the image match the style of the text?<br />
 Are colors a way to include repetition in the text?</td>
 </tr>
 <tr>
-<td>Alignment</td>
-<td>Does the image line up with the margin(s) of the text?</td>
+<td style="padding: 12px;text-align: left;vertical-align: top;">Alignment</td>
+<td style="padding: 12px;text-align: left;vertical-align: top;">Does the image line up with the margin(s) of the text?</td>
 </tr>
 <tr>
-<td>Proximity</td>
-<td>Is the image near the information that it relates to?<br />
+<td style="padding: 12px;text-align: left;vertical-align: top;">Proximity</td>
+<td style="padding: 12px;text-align: left;vertical-align: top;">Is the image near the information that it relates to?<br />
 Have you wrapped the text around the image to tighten proximity?</td>
 </tr>
 </table>
