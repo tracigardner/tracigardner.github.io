@@ -36,10 +36,7 @@ Are colors a way to include repetition in the text?</td>
 Have you wrapped the text around the image to tighten proximity?</td>
 </tr>
 </table>
-
-To learn about the tools available in your word processor, watch one of the following videos, both from Lynda.com:
-
-<a href="https://www.lynda.com/Google-Docs-tutorials/Format-text-around-images/706916/751224-4.html" target="_blank">Format text around images</a> (4m 24s), from Google Docs: Formatting in Depth
-<iframe width='560' height='315' src='https://www.lynda.com/player/embed/751224?fs=3&w=560&h=315&ps=paused&utm_medium=referral&utm_source=embed+video&utm_campaign=ldc-website&utm_content=vid-751224' mozallowfullscreen='true' webkitallowfullscreen='true' allowfullscreen='true' frameborder='0'></iframe>
-
-<a href="https://www.lynda.com/Word-tutorials/Add-customize-graphics-document/571619/637618-4.html?org=vt.edu" target="_blank">Add and customize graphics in a document</a> (9m 28s), from Word Tips Weekly
+<p>To learn about the tools available in your word processor, watch one of the following videos, both from Lynda.com:</p>
+<p><a href="https://www.lynda.com/Google-Docs-tutorials/Format-text-around-images/706916/751224-4.html" target="_blank">Format text around images</a> (4m 24s), from Google Docs: Formatting in Depth</p>
+<p><iframe width='560' height='315' src='https://www.lynda.com/player/embed/751224?fs=3&w=560&h=315&ps=paused&utm_medium=referral&utm_source=embed+video&utm_campaign=ldc-website&utm_content=vid-751224' mozallowfullscreen='true' webkitallowfullscreen='true' allowfullscreen='true' frameborder='0'></iframe></p>
+<p><a href="https://www.lynda.com/Word-tutorials/Add-customize-graphics-document/571619/637618-4.html?org=vt.edu" target="_blank">Add and customize graphics in a document</a> (9m 28s), from Word Tips Weekly</p>
