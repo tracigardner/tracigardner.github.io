@@ -9,11 +9,11 @@ date: 2018-07-07 00:00:00 -0400
 </div>
 <p>Inserting an image in a word processor document is relatively easy. The hard part is using what you know about the <a href="https://tracigardner.github.io/CRAPdesign/" target="_blank">design elements of contrast, repetition, alignment, and proximity</a> to make your image contribute positively to your message.</p>
 <p>As you add images, consider these ideas:</p>
-<table style="padding: 12px;">
+<table>
 <thead>
 <tr>
-<td><strong>Design Principle</strong></td>
-<td><strong>Think About These Questions</strong></td>
+<td style="padding: 12px;"><strong>Design Principle</strong></td>
+<td style="padding: 12px;"><strong>Think About These Questions</strong></td>
 </tr>
 </thead>
 <tr>
