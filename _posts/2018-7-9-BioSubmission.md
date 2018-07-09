@@ -7,7 +7,8 @@ date: 2018-07-09 02:00:00
 <h2 id="notes">Notes for Today</h2>
 <ul class="listDS">
    <li><strong>Bios due today.</strong></li>
-   <li><strong>No Course Declaration today.</strong> To give you a little extra time to work on your draft, I will include activities from today&rsquo;s post in the declaration for tomorrow.</li>   
+   <li><strong>No Course Declaration today.</strong> To give you a little extra time to work on your draft, I will include activities from today&rsquo;s post in the declaration for tomorrow.</li>
+   <li><strong>Answers to Grade Questions coming.</strong> Several of you have written with questions about the grading system and grades higher than a B. I&rsquo;m working on some additional explanatory resources that I will post later this week.</li>
 </ul>
 <h2 id="readings">Readings for Today</h2>
 <ul>
