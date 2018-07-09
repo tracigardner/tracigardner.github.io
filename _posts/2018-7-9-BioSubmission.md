@@ -1,6 +1,6 @@
 ---
 layout: post
-title: title
+title: Professional Bio Submission
 date: 2018-07-09 02:00:00
 ---
 <p><em>This is the post for July 9, 2018.</em></p>
