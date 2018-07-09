@@ -18,7 +18,7 @@ date: 2018-07-09 02:00:00
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
 <li><strong>Work through the assignment checklist</strong> before submitting your Bio project:
-    <ul class="listDS" style="list-style-type: none;">
+    <ul class="listDS">
     <li>Does your document make a <strong>good first impression</strong>? Does it look polished and professional?</li>
     <li>Does the document include a <strong>well-chosen photo</strong> that follows the <a href="https://tracigardner.github.io/1tutorialPhoto/" target="_blank">#TuesdayTutorial: Taking a Professional Photo</a>?</li>
     <li>Does your document take advantage of the <a href="https://tracigardner.github.io/CRAPdesign/" target="_blank">CRAP design principles</a>?
@@ -34,8 +34,6 @@ date: 2018-07-09 02:00:00
     </li>
     <li>Does the document use <strong>accurate/appropriate</strong> grammar, spelling, punctuation, mechanics, linking, and formatting? For a refresher on grammar and punctuation basics, watch the Lynda.com courses on <a href="https://www.lynda.com/Business-Business-Skills-tutorials/Grammar-Fundamentals/158318-2.html" target="_blank">Grammar Fundamentals</a> and <a href="https://www.lynda.com/Business-Skills-tutorials/Advanced-Grammar/373556-2.html" target="_blank">Advanced Grammar</a>.</li>
     </ul></li>
-  <li><strong>xxx.</strong> xxx.</li>
-  <li><strong>xxx.</strong> xxx.</li>
   <li><strong>Add a comment to the <a href="https://tracigardner.github.io/FShapedReadingPattern/" target="_blank">#KnowYourReader: F-Shaped Reading Pattern post</a></strong> if you are <a href="/requirements/#higher">working toward a grade higher than a B</a>.</li>
   <li><strong>Record the work that you&rsquo;ve done</strong> in your Labor Log. Your <a href="https://canvas.vt.edu/courses/70739/assignments/444290" target="_parent">07/13 Labor Log submission in Canvas</a> is due by 11:59PM Friday, July 13. The grace period for your labor log ends at 11:59PM on Monday, July 16.</li>
 <li><strong>By 11:59PM tonight (Monday, July 9), submit your <a href="https://canvas.vt.edu/courses/70739/assignments/442797" target="_parent">Professional Bio in Canvas</a></strong>. The grace period for your Professional Bio ends at 11:59 PM on Thursday, July 12.</li></ol>
