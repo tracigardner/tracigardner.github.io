@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working on Your Analysis Project
-date: 2018-07-11 03:00:03 -0400
+date: 2018-07-11 00:00:03 -0400
 ---
 <p><em>This is the post for July 11, 2018.</em></p>
 <div>
@@ -35,4 +35,4 @@ date: 2018-07-11 03:00:03 -0400
 <li><strong>Consider the general categories of communication</strong> that occur in your field. Read the information on the <a href="https://wcprogram.lmc.gatech.edu/posters/woven" target="_blank">Poster: Writing and Communication – WOVEN</a> from Georgia Tech, and then add your replies to the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362560" target="_blank">WOVEN in Your Field Discussion in Canvas</a>. The WOVEN structure should help you think of kinds of writing to include in your Analysis project.</li>
 <li><strong>Add a comment to the daily discussion posts</strong> if you are <a href="/requirements/#higher">working toward a grade higher than a B</a>. The available posts are the <a href="https://tracigardner.github.io/UsingParallelStructures/" target="_blank">#TuesdayTutorial: Using Parallel Structures</a> (posted late Tuesday night) and the <a href="https://tracigardner.github.io/YourCodeOfEthics/" target="_blank">#WednesdayWrite: Consider Your Code of Ethics post</a>.</li>
 <li><strong>Record the work that you&rsquo;ve done</strong> in your Labor Log. Your <a href="https://canvas.vt.edu/courses/70739/assignments/444290" target="_parent">07/13 Labor Log submission in Canvas</a> is due by 11:59PM Friday, July 13. The grace period for your labor log ends at 11:59PM on Monday, July 16.</li>
-<li><strong>By 11:59PM tonight (Wednesday, July 11), complete your <a href="#" target="_parent">07/11 Course Declaration in Canvas</a></strong>, to track the tasks you have completed for the day. Remember that these course declarations are the best way to track how you are doing in the course. The grace period for your 07/11 Declaration ends at 11:59 PM on Saturday, July 14.</li></ol>
+<li><strong>By 11:59PM tonight (Wednesday, July 11), complete your <a href="https://canvas.vt.edu/courses/70739/quizzes/110998" target="_parent">07/11 Course Declaration in Canvas</a></strong>, to track the tasks you have completed for the day. Remember that these course declarations are the best way to track how you are doing in the course. The grace period for your 07/11 Declaration ends at 11:59 PM on Saturday, July 14.</li></ol>
