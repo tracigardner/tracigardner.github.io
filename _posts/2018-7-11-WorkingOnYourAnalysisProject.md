@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working on Your Analysis Project
-date: 2018-07-11 00:00:03 -0400
+date: 2018-07-11 03:00:03 -0400
 ---
 <p><em>This is the post for July 11, 2018.</em></p>
 <div>
