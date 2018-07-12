@@ -13,7 +13,7 @@ date: 2018-07-13 00:00:00 -0400
    </li>
 </ul>
 <p>There are a lot of ads on these pages. I use a browser extension that hides all the ads. If the ads bother you, you might try one of the blockers too. I'm using <a href="https://www.getadblock.com/" target="_blank">Adblock</a> in the Chrome browser.</p>
-<h2>Video Demonstrations of Table Design</h2>
+<h2>Video Demos of Table Design in Word</h2>
 <div style="float: right; width: 250px;margin-left: 9px;" class="maroonbox">
 <h4>Lynda.com Login Help</h4>
 <p>Lynda.com videos are free to Virginia Tech students with your VT.EDU login. Start at <a href="http://lynda.vt.edu/" target="_blank">the VT.EDU login page</a> to access these resources.</p>
@@ -30,5 +30,10 @@ date: 2018-07-13 00:00:00 -0400
   <li><a href="https://www.lynda.com/Office-tutorials/Putting-text-columns/378044/432808-4.html?org=vt.edu" target="_blank">Chapter 8: Working with Columns and Tables in Word 2016</a></li>
   <li><a href="https://www.lynda.com/Word-tutorials/Putting-text-columns/378103/432715-4.html?org=vt.edu" target="_blank">Chapter 8: Working with Columns and Tables in Word 365</a></li>
 </ul>
-<p class="photocredit">Photo credit: <a href="https://flic.kr/p/axuMkY" target="_blank">Old French Table by French Finds on Flickr</a>, used under a CC-BY license.</p>
+<h2>Controlling Page Breaks in Table in Word</h2>
+As you design your table, you may find yourself in the situation where a row of information breaks onto two pages. To solve that problem, all you need to do is change a checkbox in Word to keep rows of information together. </p>
+<p>This Auburn University Writing Center video demonstrates how to change that setting in Microsoft Word for Mac. The process for Windows is similar, so it’s still worth watching the video if you’re a Windows person.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o9sC2_ELlDw?rel=0" frameborder="0" allowfullscreen></iframe>
+<p>If you use Windows, use <a href="https://support.office.com/en-us/article/Format-a-table-e6e77bc6-1f4e-467e-b818-2e2acc488006?CorrelationId=c9d89777-d325-40df-8b7a-e53c8f882505&amp;ui=en-US&amp;rs=en-US&amp;ad=US&amp;ocmsassetID=HA010034301#bm11" target="_blank">the instructions from Microsoft</a> to make the change.</p>
 <p>&nbsp;</p>
+<p class="photocredit">Photo credit: <a href="https://flic.kr/p/axuMkY" target="_blank">Old French Table by French Finds on Flickr</a>, used under a CC-BY license.</p>
