@@ -14,16 +14,16 @@ date: 2018-07-15 00:00:00 -0400
 </ul>
 <p>In all these cases, you will want a formal letter. You may occasionally write <strong>informal letters</strong> in the workplace, but it’s typical for informal correspondence to be handled in email messages.</p>
 <p>These resources can help no matter which kind of letter you are writing: </p>
-<ol class="listDS">
+<ul class="listDS">
 <li>This short video from Rasmussen College quickly demonstrates “<a href="https://youtu.be/rizoxcRkNqY" target="_blank">How to Write a Formal Letter</a>” (3m49s).</li>
 <li>The Visual Communication Guy provides <a href="http://thevisualcommunicationguy.com/2013/10/03/how-to-write-a-letter-in-business-letter-format/" target="_blank">an annotated explanation of what goes into a letter and how to format letters that you write.</li>
 <li><a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/basic_business_letters/the_basic_business_letter.html" target="_blank">Writing the Basic Business Letter</a> from the Purdue OWL outlines the parts of a letter as well as the specifics on formats and punctuation.</li>
-</ol>
+</ul>
 <h2 id="memos">Memos</h2>
 <p>When you are not writing letters or email messages, you will often find yourself writing memos, which are typically internal messages sent to colleagues within your organization. </p>
 <p>Like all correspondence, memos should be clear and well-organized with document design features that help readers find the information that is important to them. You can use headings, bulleted lists, and numbered lists to make details stand out.</p>
 <p>In addition to general memos, you may find that you use specific memos in the workplace. For instance, you might use a <strong>memorandum of understanding</strong> (MoU) as a kind of contract, where you and other parties agree to specific terms. MoUs are often created by a lawyer or the organization’s legal department. If you write such a memo yourself, it will probably need to go through a legal review before it is sent to the recipient.</p>
-<ul style="listDS">
+<ul class="listDS">
 <li>The <a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/memos/parts_of_a_memo.html" target="_blank">Parts of a Memo</a>, from the Purdue OWL, reviews all the headings and expected information included in a basic memo.</li>
 <li>The Lynda.com video <a href="https://www.lynda.com/Business-Skills-tutorials/Special-considerations-memos/147532/162434-4.html?org=vt.edu" target="_blank">Special Considerations for Memos</a> (3m52s) explains memo format in detail.</li>
 </ul>
