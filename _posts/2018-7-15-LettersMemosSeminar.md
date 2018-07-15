@@ -17,7 +17,8 @@ date: 2018-07-15 00:00:00 -0400
 <ul class="listDS">
 <li>This short video from Rasmussen College quickly demonstrates “<a href="https://youtu.be/rizoxcRkNqY" target="_blank">How to Write a Formal Letter</a>” (3m49s).</li>
 <li>The Visual Communication Guy provides <a href="http://thevisualcommunicationguy.com/2013/10/03/how-to-write-a-letter-in-business-letter-format/" target="_blank">an annotated explanation of what goes into a letter and how to format letters that you write.</li>
-<li><a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/basic_business_letters/the_basic_business_letter.html" target="_blank">Writing the Basic Business Letter</a> from the Purdue OWL outlines the parts of a letter as well as the specifics on formats and punctuation.</li></ul>
+<li><a href="https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/basic_business_letters/the_basic_business_letter.html" target="_blank">Writing the Basic Business Letter</a> from the Purdue OWL outlines the parts of a letter as well as the specifics on formats and punctuation.</li>
+</ul>
 <h2 id="memos">Memos</h2>
 <p>When you are not writing letters or email messages, you will often find yourself writing memos, which are typically internal messages sent to colleagues within your organization. </p>
 <p>Like all correspondence, memos should be clear and well-organized with document design features that help readers find the information that is important to them. You can use headings, bulleted lists, and numbered lists to make details stand out.</p>
