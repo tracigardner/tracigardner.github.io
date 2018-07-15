@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "#SundaySeminar: Letters and Memos"
-date: 2018-07-08 00:00:00 -0400
+date: 2018-07-15 00:00:00 -0400
 ---
 <p>Correspondence is a critical form of technical writing. In addition to email messages, which we covered in <a href="https://tracigardner.github.io/EmailSeminar" target="_blank">last week&rsquo;s #SundaySeminar</a>, you need to know how to write letters and memos—and the difference between the two.</p>
 <h2 id="letters">Letters</h2>
