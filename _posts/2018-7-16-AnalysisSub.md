@@ -17,7 +17,7 @@ date: 2018-07-16 02:06:00 -0400
 </ul>
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
-<li><strong>Work through the assignment checklist</strong> before submitting your Bio project:
+<li><strong>Work through the assignment checklist</strong> before submitting your Analysis project:
 <ul class="listDS">
   <li>Does your document make a <strong>good first impression</strong>? Does it look polished and professional?</li>
   <li>Does the document include<strong> ten different kinds of writing</strong> and the <strong>required columns of information</strong> (additional columns are okay):
