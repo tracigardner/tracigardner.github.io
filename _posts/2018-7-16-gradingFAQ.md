@@ -1,22 +1,8 @@
-<html>
-<head>
-<title>Grading FAQ</title>
-<!-- Latest compiled and minified BootStrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-
-<!-- FontAwesome library -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<link href="https://tracigardner.github.io/-css/ptw.css" rel="stylesheet" type="text/css">
-</head>
-<body style="padding: 0px 15px 0px 15px;">
-<h1>Grading FAQ</h1>
+---
+layout: post
+title: Grading FAQ
+date: 2018-07-16 01:36:00 -0400
+---
 <p>Click on the title of any question in this FAQ to show the answer:</p>
 <div class="container" style="margin-left: 6px;">
 <h2><a href="#whylabor" data-toggle="collapse">Why do you use a labor-based system?<i class="fa fa-angle-down fa-fw"></i></a></h2>
