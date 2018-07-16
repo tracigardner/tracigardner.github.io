@@ -21,7 +21,7 @@ date: 2018-07-16 02:06:00 -0400
 <ul class="listDS">
   <li>Does your document make a <strong>good first impression</strong>? Does it look polished and professional?</li>
   <li>Does the document include<strong> ten different kinds of writing</strong> and the <strong>required columns of information</strong> (additional columns are okay):
-<ul>
+<ul class="null">
       <li>Does it identify the audience(s) and purpose(s) of each kind of writing?</li>
       <li>Does it state the length of each kind of writing?</li>
       <li>Does it describe the characteristics and special features of each kind of writing?</li>
@@ -32,7 +32,7 @@ date: 2018-07-16 02:06:00 -0400
   </li>
   <li>Do the columns in the  document <strong>use parallel structure</strong>s? See the #TuesdayTutorial: Using Parallel  Structures for help.</li>
   <li>Does your document take advantage of the <a href="https://tracigardner.github.io/CRAPdesign/" target="_blank">CRAP design principles</a>?
-    <ul>
+    <ul class="null">
       <li>Does the document use <strong>contrast</strong> to make key text (like the title) stand out?</li>
       <li>Does the document use <strong>repetition</strong> so that the document is consistent and unified?</li>
       <li>Does the document use <strong>alignment</strong> to connect the different sections and ensure nothing seems out of place?</li>
