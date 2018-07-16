@@ -14,6 +14,7 @@ date: 2018-07-16 02:06:00 -0400
 <li>Review any posts from last week as needed.</li>  
 <li><a href="https://tracigardner.github.io/AvoidCenteredText/" target="_blank">#WeekendWatch: Avoid Centered Text</a> (if you missed it Saturday)</li>
 <li><a href="https://tracigardner.github.io/DDPstats/" target="_blank">Daily Discussion Post Statistics</a></li>
+<li><a href="https://tracigardner.github.io/requirements/gradingFAQ.html" target="_blank">Grading FAQ</a></li>
 </ul>
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
