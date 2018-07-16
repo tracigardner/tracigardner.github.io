@@ -92,5 +92,3 @@ date: 2018-07-16 01:36:00 -0400
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p class="photocredit">Image credits: Icons are all from The Noun Project, used under a CC-BY 3.0 license: Worker by Wilson Joseph, Workplace by Darri, Research by Tanuj Abraham, growth by Souvik Bhattacharjee, code by Creative Stall, journal by Vectors Market, peer review by Cody Foss, exam by Nawicon Studio, Top Grades by Creaticca Creative Agency, and Laptop by Manantagan.</p>
-</body>
-</html>
