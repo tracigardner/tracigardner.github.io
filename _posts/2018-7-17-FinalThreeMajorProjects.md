@@ -13,8 +13,6 @@ date: 2018-07-17 03:06:00 -0400
     <figcaption><a href="https://tracigardner.github.io/wp-content/uploads/-transcripts/threeFinalProjects-transcript.html" target="_blank">Read the Image Transcript here</a></figcaption></figure>
   </div>
   <p>The important detail here is that you have to decide on your plan for both the proposal and the genre analysis report this week. </p>
-  </li>
-</ul>
 <h2 id="readings">Readings for Today</h2>
 <ul>
 <li><a href="https://canvas.vt.edu/courses/70739/assignments/442799" target="_parent">Short Report Proposal</a> (assignment)</li>
