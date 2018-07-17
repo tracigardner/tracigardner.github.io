@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Final Three Major Projects
-date: 2018-07-17 03:06:00
+date: 2018-07-17 03:06:00 -0400
 ---
 <p><em>This is the post for July 17, 2018.</em></p>
 <h2 id="notes">Notes for Today</h2>
