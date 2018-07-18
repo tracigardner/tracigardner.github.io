@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "#FridayFact: Information-Rich Signposts Help Readers"
-date: 2018-07-01 00:00:00 -0400
+date: 2018-07-20 00:00:00 -0400
 ---
 <div style="float: right; width: 250px;" class="maroonbox">
 <h4>Lynda.com Login Help</h4>
