@@ -6,11 +6,11 @@ date: 2018-07-19 00:06:00 -0400
 <p><em>This is the post for July 19, 2018.</em></p>
 <h2 id="readings">Notes for Today</h2>
 <ul>
-  <li><a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart</a><li><a href="https://tracigardner.github.io/GanttVideo/" target="_blank">#WeekendWatch: Creating a Gantt Chart</a></ul>
+<li><a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart</a></li><li><a href="https://tracigardner.github.io/GanttVideo/" target="_blank">#WeekendWatch: Creating a Gantt Chart</a></li></ul>
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
 <li><strong>Review the resources that can help you improve</strong> your Analysis project:<ul class="null">
-<li>The readings included in the <a href="https://tracigardner.github.io/FinalThreeMajorProjects/#readings" target="_blank">post from Tuesday</a> and the <a href="https://tracigardner.github.io/OrganizingYourProposal/#readings" target="_blank">post from Wednesday</a> of this week.</li>
+<li>The readings included in the <a href="https://tracigardner.github.io/FinalThreeMajorProjects/#readings" target="_blank">post from Tuesday</a> and the <a href="https://tracigardner.github.io/OrganizingYourProposal/#readings" target="_blank">post from Wednesday</a> of this week</li>
 <li><a href="https://tracigardner.github.io/ProposalOverviewTutorial/" target="_blank">#TuesdayTutorial: Proposal Overview</a></li>
 <li><a href="https://tracigardner.github.io/UsingLists/" target="_blank">#WednesdayWrite: Using Lists to Organize Information</a></li>
 <li><a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart</a></li>
