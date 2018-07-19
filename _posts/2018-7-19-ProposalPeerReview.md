@@ -5,14 +5,15 @@ date: 2018-07-19 00:06:00 -0400
 ---
 <p><em>This is the post for July 19, 2018.</em></p>
 <h2 id="readings">Notes for Today</h2>
-<ul><li><a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart!</a><li><li><a href="https://tracigardner.github.io/GanttVideo/" target="_blank">#WeekendWatch: Creating a Gantt Chart</a><li></ul>
+<ul>
+  <li><a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart</a><li><a href="https://tracigardner.github.io/GanttVideo/" target="_blank">#WeekendWatch: Creating a Gantt Chart</a></ul>
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
 <li><strong>Review the resources that can help you improve</strong> your Analysis project:<ul class="null">
 <li>The readings included in the <a href="https://tracigardner.github.io/FinalThreeMajorProjects/#readings" target="_blank">post from Tuesday</a> and the <a href="https://tracigardner.github.io/OrganizingYourProposal/#readings" target="_blank">post from Wednesday</a> of this week.</li>
 <li><a href="https://tracigardner.github.io/ProposalOverviewTutorial/" target="_blank">#TuesdayTutorial: Proposal Overview</a></li>
-<li><a href="https://tracigardner.github.io/UsingLists/" target="_blank">#WednesdayWrite: Using Lists to Organize Information</a><li>
-<li><a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart</a><li>
+<li><a href="https://tracigardner.github.io/UsingLists/" target="_blank">#WednesdayWrite: Using Lists to Organize Information</a>
+<li><a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart</a>
 <li><a href="https://tracigardner.github.io/GanttVideo/" target="_blank">#WeekendWatch: Creating a Gantt Chart</a><li>
 </ul></li>
 <li><strong>Finish the draft of your Proposal.</strong>
@@ -27,4 +28,4 @@ date: 2018-07-19 00:06:00 -0400
 <li><strong>Add a comment to the <a href="https://tracigardner.github.io/GanttChartInfo/" target="_blank">#InfographicInspiration: Scheduling with a Gantt Chart post</a> and/or the <a href="https://tracigardner.github.io/GanttVideo/" target="_blank">#WeekendWatch: Creating a Gantt Chart post</a></strong> if you are working toward a grade higher than a B.</li>
 <li><strong>Share your Analysis project draft with people not in your writing group</strong> by posting it in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362561" target="_parent">Short Proposal Drafts Share</a> if you are working toward a grade higher than a B.</li>
 <li><strong>Record the work that you&rsquo;ve done</strong> in your Labor Log. Your <a href="https://canvas.vt.edu/courses/70739/assignments/444291" target="_parent">07/20 Labor Log submission  in Canvas</a> is due by 11:59PM Friday, July 20. The grace period for your labor log ends at 11:59PM on Monday, July 23.</li>
-<li><strong>By 11:59PM tonight (Thursday, July 19), complete your <a href="https://canvas.vt.edu/courses/70739/quizzes/111479" target="_parent">07/19 Course Declaration in Canvas</a></strong>, to track the tasks you have completed for the day. The grace period for your 07/19 Declaration ends at 11:59 PM on Sunday, July 22.</li></ol>
+<li><strong>By 11:59PM tonight (Thursday, July 19), complete your <a href="https://canvas.vt.edu/courses/70739/quizzes/111479" target="_parent">07/19 Course Declaration in Canvas</a></strong>, to track the tasks you have completed for the day. The grace period for your 07/19 Declaration ends at 11:59 PM on Sunday, July 22.</li></ol
