@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working On Your Proposal Project
-date: 2018-07-13 00:03:00 -0400
+date: 2018-07-20 00:03:00 -0400
 ---
 <p><em>This is the post for July 20, 2018.</em></p>
 <h2 id="notes">Notes for Today</h2>
