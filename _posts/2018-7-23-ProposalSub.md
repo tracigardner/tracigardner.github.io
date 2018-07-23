@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Analysis Project Submission
+title: Proposal Submission
 date: 2018-07-23 00:00:00 -0400
 ---
 <p><em>This is the post for July 23, 2018.</em></p>
