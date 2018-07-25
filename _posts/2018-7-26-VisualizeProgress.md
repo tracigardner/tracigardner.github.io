@@ -15,6 +15,9 @@ date: 2018-07-26 00:00:00 -0400
 <p>For my money (yes, a pun), the line chart is much easier to understand quickly. The point of today’s post is that the graphical version is not just an illustration. It is critical to showing the reader information about the topic.</p>
 <p>In many circumstances, you will include both a text description and a graphical representation. In fact, a text description is important for accessibility. Readers using screen readers need that text version, so including both is the best strategy. </p>
 <p>As you work on your Progress Report, think about how you can add a graphical representation of information in your progress report. The infographic below shows a collection of graphics you can use to communicate information. Visit the post <a href="http://anna.vc/post/112863438962/how-to-think-using-visual-analogies" target="_blank">How to Think Visually Using Visual Analogies</a> from Anna Vital for a larger version of the image and expanded details on the various kinds of charts and graphs.</p>
+<blockquote>
+<img src="/images/noun_Information_1129953.png" style="float: left;width: 100px;height: auto;" />TIP: If you have trouble imagining how to show your progress visually, think about what you might post on Instagram to show people the process you have followed and the progress you have made.
+</blockquote>
 <p>Once you explore the options, add a comment that discusses a graphical representation that you might use in your Progress Report. Talk about what you have chosen, how you will use it, and why it will be effective in communicating with me about your progress.</p>
 <p><img alt="How to Think Visually Using Visual Analogies" style="width: 504px;height: 1024px" /></p>
 <p>Source: <a href="http://anna.vc/post/112863438962/how-to-think-using-visual-analogies" target="_blank">How to Think Visually Using Visual Analogies</a> from Anna Vital. The expanded details on this source page work as a transcript for the image.</p>
