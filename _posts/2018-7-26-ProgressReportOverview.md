@@ -27,8 +27,7 @@ date: 2018-07-26 00:03:00 -0400
 <ul>
 <li><a href="https://www.e-education.psu.edu/styleforstudents/c6_p10.html" target="_blank">Progress Reports</a></li>
 <li><a href="https://www.e-education.psu.edu/styleforstudents/c6_p11.html" target="_blank">Sample Progress Report</a></li></ul></li>
-<li><a href="https://tracigardner.github.io/VisualizeProgress" target="_blank">#InfographicInspiration: Visualize Your Progress</a></li>
-</ul></li></ul>
+<li><a href="https://tracigardner.github.io/VisualizeProgress" target="_blank">#InfographicInspiration: Visualize Your Progress</a></li></ul></li></ul>
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
 <li><strong>Turn in your <a href="https://canvas.vt.edu/courses/70739/assignments/442799" target="_parent">Proposal in Canvas</a>, if you are using the grace period.</strong> The grace period for your Proposal ends at 11:59 PM tonight (Thursday, July 26).</li>
