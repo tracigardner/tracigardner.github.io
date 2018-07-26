@@ -14,16 +14,16 @@ date: 2018-07-26 00:03:00 -0400
 </ul>
 <h2 id="readings">Readings for Today</h2>
 <ul>
-  <li><a href="https://canvas.vt.edu/courses/70739/assignments/442798" target="_parent">Progress Report Assignment</a></li>
-    <li>From <em><a href="http://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=412" target="_blank">Technical Writing</a></em> by Hamlin, Rubio, and DeSilva
-  <ul>
-  <li><a href="https://openoregon.pressbooks.pub/technicalwriting/part/6-progress-reports/" target="_blank">6. Progress Reports</a><ul>
-  <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-1-functions-and-contents-of-progress-reports/" target="_blank">6.1 Functions and Contents of Progress Reports</a></li>
-  <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-2-timing-and-format-of-progress-reports/" target="_blank">6.2 Timing and Format of Progress Reports</a></li>
-  <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-3-organizational-patterns-or-sections-for-progress-reports/" target="_blank">6.3 Organizational Patterns or Sections for Progress Reports</a></li>
-  <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-4-other-parts-of-progress-reports/" target="_blank">6.4 Other Parts of Progress Reports</a></li>
-  <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-5-revision-checklist-for-progress-reports/" target="_blank">6.5 Revision Checklist for Progress Reports</a></li>
-  </ul></li>
+<li><a href="https://canvas.vt.edu/courses/70739/assignments/442798" target="_parent">Progress Report Assignment</a></li>
+  <li>From <em><a href="http://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=412" target="_blank">Technical Writing</a></em> by Hamlin, Rubio, and DeSilva
+  <ul><li><a href="https://openoregon.pressbooks.pub/technicalwriting/part/6-progress-reports/" target="_blank">6. Progress Reports</a>
+  <ul><li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-1-functions-and-contents-of-progress-reports/" target="_blank">6.1 Functions and Contents of Progress Reports</a></li>
+    <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-2-timing-and-format-of-progress-reports/" target="_blank">6.2 Timing and Format of Progress Reports</a></li>
+    <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-3-organizational-patterns-or-sections-for-progress-reports/" target="_blank">6.3 Organizational Patterns or Sections for Progress Reports</a></li>
+    <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-4-other-parts-of-progress-reports/" target="_blank">6.4 Other Parts of Progress Reports</a></li>
+    <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-5-revision-checklist-for-progress-reports/" target="_blank">6.5 Revision Checklist for Progress Reports</a></li>
+    </ul></li>
+    </ul></li>
   <li>From <a href="https://www.e-education.psu.edu/styleforstudents/" target="_blank"><em>Style for Students Online: Effective Technical Writing in the Information Age</em></a> by Schall
   <ul>
   <li><a href="https://www.e-education.psu.edu/styleforstudents/c6_p10.html" target="_blank">Progress Reports</a></li>
