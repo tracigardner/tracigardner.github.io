@@ -23,7 +23,7 @@ date: 2018-07-26 00:03:00 -0400
   <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-3-organizational-patterns-or-sections-for-progress-reports/" target="_blank">6.3 Organizational Patterns or Sections for Progress Reports</a></li>
   <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-4-other-parts-of-progress-reports/" target="_blank">6.4 Other Parts of Progress Reports</a></li>
   <li><a href="https://openoregon.pressbooks.pub/technicalwriting/chapter/6-5-revision-checklist-for-progress-reports/" target="_blank">6.5 Revision Checklist for Progress Reports</a></li>
-  </ul></li></ul></li>
+  </ul></li>
   <li>From <a href="https://www.e-education.psu.edu/styleforstudents/" target="_blank"><em>Style for Students Online: Effective Technical Writing in the Information Age</em></a> by Schall
   <ul>
   <li><a href="https://www.e-education.psu.edu/styleforstudents/c6_p10.html" target="_blank">Progress Reports</a></li>
