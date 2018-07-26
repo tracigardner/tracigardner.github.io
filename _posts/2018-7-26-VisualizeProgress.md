@@ -19,5 +19,5 @@ date: 2018-07-26 00:00:00 -0400
 <img src="/images/noun_Information_1129953.png" style="float: left;width: 100px;height: auto;" />TIP: If you have trouble imagining how to show your progress visually, think about what you might post on Instagram to show people the process you have followed and the progress you have made.
 </blockquote>
 <p>Once you explore the options, add a comment that discusses a graphical representation that you might use in your Progress Report. Talk about what you have chosen, how you will use it, and why it will be effective in communicating with me about your progress.</p>
-<p><img alt="How to Think Visually Using Visual Analogies" style="width: 504px;height: 1024px" /></p>
+<p><img  src="/wp-content/uploads/how-to-think-visually-504x1024.png" alt="How to Think Visually Using Visual Analogies" style="width: 504px;height: 1024px" /></p>
 <p>Source: <a href="http://anna.vc/post/112863438962/how-to-think-using-visual-analogies" target="_blank">How to Think Visually Using Visual Analogies</a> from Anna Vital. The expanded details on this source page work as a transcript for the image.</p>
