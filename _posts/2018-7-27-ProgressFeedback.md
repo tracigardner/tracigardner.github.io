@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Progress Report Group Feedback
-date: 2018-07-27 00:00:01 -0400
+date: 2018-07-27 00:00:21 -0400
 ---
 <p><em>This is the post for July 27, 2018.</em></p>
 <h2 id="notes">Notes for Today</h2>
