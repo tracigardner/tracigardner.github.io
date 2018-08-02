@@ -17,7 +17,6 @@ As a reminder, we’re using a different schedule this week. Your Genre Analysis
   </ul>
 <h2 id="tasks">Tasks for Today</h2>
 <ol class="listDS">
-<li><strong>Review the readings that can help you improve</strong> your GAR.</li>
 <li><strong>Finish the draft of your GAR.</strong>
   <ul>
   <li>Make your draft as complete as possible. </li>
