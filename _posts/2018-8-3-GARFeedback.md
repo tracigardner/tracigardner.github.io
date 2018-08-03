@@ -17,7 +17,7 @@ date: 2018-08-03 00:00:21 -0400
   <li><strong>By 11:59PM tonight (Friday, August 3), post feedback in Canvas to all your group members</strong> in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362554" target="_parent">Group Feedback on Progress Reports</a> Discussion:
     <ul>
     <li>Confirm that the draft includes the <strong>required sections</strong> (additional sections are okay):
-    <ul>
+    <ul class="null">
       <li>cover page (be sure to list your name as the author)</li>
       <li>executive summary (or abstract)</li>
       <li>table of contents</li>
@@ -35,5 +35,5 @@ date: 2018-08-03 00:00:21 -0400
     <li>Provide <strong>constructive feedback and encouragement</strong>, following the advice in the <a href="https://youtu.be/GlSCMx9-fGA" target="_blank">Peer Review: Commenting Strategies</a> video.</li></ul>
   </li>
   <li><strong>Post feedback to people not in your writing group</strong> by applying the peer review guidelines above to drafts posted in the <a href="https://canvas.vt.edu/courses/70739/discussion_topics/362542" target="_parent">Genre Analysis Reports Drafts Share</a> if you are working toward a grade higher than a B.</li>
-  <li><strong>By 11:59 PM tonight (Friday, August 3), add details on the work that you&rsquo;ve done</strong> and then submit your <a href="https://canvas.vt.edu/courses/70739/assignments/444293" target="_parent">08/03 Labor Log submission  in Canvas</a>. The grace period for your labor log ends at 11:59PM on Monday, August 6.</li></li>
+  <li><strong>By 11:59 PM tonight (Friday, August 3), add details on the work that you&rsquo;ve done</strong> and then submit your <a href="https://canvas.vt.edu/courses/70739/assignments/444293" target="_parent">08/03 Labor Log submission  in Canvas</a>. The grace period for your labor log ends at 11:59PM on Monday, August 6.</li>
   <li><strong>By 11:59PM tonight (Friday, August 3), complete your <a href="https://canvas.vt.edu/courses/70739/quizzes/112850" target="_parent">08/03 Course Declaration in Canvas</a></strong>, to track the tasks you have completed for the day. The grace period for your 08/03 Declaration ends at 11:59 PM on Monday, August 6.</li></ol>
