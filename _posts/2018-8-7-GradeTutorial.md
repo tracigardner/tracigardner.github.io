@@ -58,10 +58,9 @@ date: 2018-08-07 00:00:00 -0400
       <li>07/26</li>
       <li>07/27</li>
       <li>08/03</li>
-      <li>08/07</li>
       <li>08/08</li>
     </ul>
-    </div>
+    </div></li>
   <li>Evaluate your labor in the course in <a href="https://tracigardner.github.io/requirements/final-exam/">a performance review</a>, which serves as your final exam (uploaded as an Assignment in Canvas).</li>
 </ul>
 <h2 id="lower">To Earn a Grade Lower than a B</h2>
