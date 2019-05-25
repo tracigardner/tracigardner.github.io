@@ -38,13 +38,14 @@
       <gcse:search></gcse:search>
     </div>
 <!-- script -->
-<h1 id="demo"></h1>
+<div id="demo"></div>
 <script>
     if ( window.location !== window.parent.location ) {
       // The page is in an iframe
     } else {
       // The page is not in an iframe
-      document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      document.getElementById("demo").innerHTML = "<h1>Creating a GANTT Chart</h1>"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
 </script>
   <p>On Thursday, our #InfographicInspiration explained <a href="https:///infographicinspiration-scheduling-with-a-gantt-chart/">background information on Gantt Charts</a>, identified their basic characteristics, and outlined their strengths. As you probably recall, Gantt charts are one of the ways that you can organize the schedule in your proposal to make the details clear and easy to follow.</p>
