@@ -10,6 +10,9 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 		font-family: 'Raleway', sans-serif;
 }
+h1 {
+	font-size: 24px;
+}
 .alternateTable {
     border-collapse: collapse;
     width: 100%;
@@ -19,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 .alternateTable td, .alternateTable th {
     border: 1px solid #ddd;
     padding: 12px;
-	vertical-align: top;	
+	vertical-align: top;
 }
 
 .alternateTable tr:nth-child(odd){
@@ -124,13 +127,13 @@ a.activeMenuItem {
 	padding: 15px 15px 15px 15px;
 	font-size: 18px;
 	font-weight: bold;
-}	
+}
 
 .page-header-content {
     margin: 40px 0 20px;
 	padding-bottom: 9px;
 	border-bottom: 1px solid #FF6600;
-}	
+}
 
 /*
     copied over code for dropdown lists
