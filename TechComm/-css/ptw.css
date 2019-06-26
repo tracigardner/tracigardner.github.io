@@ -10,6 +10,9 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 		font-family: 'Raleway', sans-serif;
 }
+.jumbotron h1 {
+	font-size: 18px;
+}
 .alternateTable {
     border-collapse: collapse;
     width: 100%;
