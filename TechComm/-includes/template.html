@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php $thisPage="progress"; ?>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xxx</title>
+<!-- Latest compiled and minified BootStrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- FontAwesome library -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- My Custom CSS -->
+<link href="https://tengrrl.github.io/ptw/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+<!-- Navigation scripts -->
+<script>
+$(function() {
+        
+  $('.list-group-item').on('click', function() {
+    $('.fa', this)
+      .toggleClass('fa-angle-right')
+      .toggleClass('fa-angle-down');
+  });
+
+});
+</script>
+
+<!-- include scripts -->
+<script>
+$(document).ready(function(){
+   $('#jumbotron').load("../-includes/jumbotron.html");
+   $('#sidebar').load("../-includes/sidebar.html");
+   $('#footer').load("../-includes/footer.html");
+});
+
+
+</script>
+</head>
+<body>
+<header>
+<div id="top-rectangle" class="row"> 
+	<div class="col-md-12" style="background-color: #660000;">&nbsp;</div>
+    </div>
+<div id="jumbotron"></div>
+</header>
+<main>
+<div class="container-fluid"> 
+<div class="main row">
+<div class="col-md-3" style="background-color: #dedede;min-height: 1100px;">
+<div id="sidebar"></div>
+</div>
+
+<div id="#stuff" class="col-md-9" style="background-color: #FFFFFF;min-height: 1100px;"">
+<h1 class="page-header-content">xxx</h1>
+<p>
+<figure class="wrapright" style="width: 425px; height: auto;">
+<img 
+	src="xxx" 
+	alt="xxx, on Flickr" 
+   	width="xxx" height="xxx" 
+    class="img-responsive img-rounded"
+    />
+    <figcaption>
+    Credit: <a href="xxx" target="_blank" class="credit">xxx, on Flickr</a>, used under a CC-BY 2.0 license.
+    </figcaption>
+ </figure>crazy billiant content
+</p>
+</div>
+</main>
+
+<footer>
+<div id="footer"></div>
+</footer>
+</div>
+</body>
+</html>

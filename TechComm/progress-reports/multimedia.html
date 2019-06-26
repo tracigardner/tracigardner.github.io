@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progress Reports: Multimedia Examples</title>
+<!-- Latest compiled and minified BootStrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- FontAwesome library -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- My Custom CSS -->
+<link href="https://tengrrl.github.io/ptw/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+<!-- Navigation scripts -->
+<script>
+$(function() {
+        
+  $('.list-group-item').on('click', function() {
+    $('.fa', this)
+      .toggleClass('fa-angle-right')
+      .toggleClass('fa-angle-down');
+  });
+
+});
+</script>
+
+<!-- include scripts -->
+<script>
+$(document).ready(function(){
+   $('#jumbotron').load("../-includes/jumbotron.html");
+   $('#sidebar').load("../-includes/sidebar.html");
+   $('#footer').load("../-includes/footer.html");
+});
+
+
+</script>
+</head>
+<body>
+<header>
+<div id="top-rectangle" class="row"> 
+	<div class="col-md-12" style="background-color: #660000;">&nbsp;</div>
+    </div>
+<div id="jumbotron"></div>
+</header>
+<main>
+<div class="container-fluid"> 
+<div class="main row">
+<div class="col-md-3" style="background-color: #dedede;min-height: 1100px;">
+<div id="sidebar"></div>
+</div>
+
+<div id="#stuff" class="col-md-9" style="background-color: #FFFFFF;min-height: 1100px;"">
+<h1 class="page-header-content">Progress Reports: Multimedia Examples</h1>
+<p>Progress and status reports have traditionally been created to look like paper-based documents, which may be distributed in print or by electronic means. Multimedia tools, however, are sometimes a better choice, especially in the case of multimedia projects. Rather than describing progress on a project, a multimedia format for a progress or status report allows the writer to demonstrate changes in ways that make the work to date clear.
+<br />
+<br />At the simplest level, this kind of progress can often be shown in side-by-side photos that show a before and an after view. In more sophisticated reports, this progress is explained in video format. The January 15th Progress Report shown below explains the work on a video game project by walking the audience through the changes that have been made.</p>
+
+<video src="http://www.archive.org/download/January15thProgressReport/format=MPEG4" width="640" height="480" controls></video>
+
+</div>
+</main>
+
+<footer>
+<div id="footer"></div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progress Reports: Longer Examples</title>
+<!-- Latest compiled and minified BootStrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- FontAwesome library -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- My Custom CSS -->
+<link href="https://tengrrl.github.io/ptw/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+<!-- Navigation scripts -->
+<script>
+$(function() {
+        
+  $('.list-group-item').on('click', function() {
+    $('.fa', this)
+      .toggleClass('fa-angle-right')
+      .toggleClass('fa-angle-down');
+  });
+
+});
+</script>
+
+<!-- include scripts -->
+<script>
+$(document).ready(function(){
+   $('#jumbotron').load("../-includes/jumbotron.html");
+   $('#sidebar').load("../-includes/sidebar.html");
+   $('#footer').load("../-includes/footer.html");
+});
+
+
+</script>
+</head>
+<body>
+<header>
+<div id="top-rectangle" class="row"> 
+	<div class="col-md-12" style="background-color: #660000;">&nbsp;</div>
+    </div>
+<div id="jumbotron"></div>
+</header>
+<main>
+<div class="container-fluid"> 
+<div class="main row">
+<div class="col-md-3" style="background-color: #dedede;min-height: 1100px;">
+<div id="sidebar"></div>
+</div>
+
+<div id="#stuff" class="col-md-9" style="background-color: #FFFFFF;min-height: 1100px;"">
+<h1 class="page-header-content">Progress Reports: Longer Examples</h1>
+<p>Progress reports can be long documents, especially in cases where a major project is being updated to stakeholders, such as the <a data-align="right" data-annotations="" data-size="native" data-caption="none" resource="annual-progress-report-water-leasing-program" href="http://www.archive.org/download/annualprogressre1999montrich/format=Grayscale+LuraTech+PDF" target="_blank">Annual progress report, water leasing program</a> shown below. In this case, the report covers the progress during a year, and the document is arranged as a formal report, with title page, table of contents, and clear sections.</p>
+
+<embed src="https://archive.org/download/annualprogressre1999montrich/annualprogressre1999montrich_bw.pdf" width="750" height="900"></embed>
+</div>
+</main>
+
+<footer>
+<div id="footer"></div>
+</footer>
+</div>
+</body>
+</html>

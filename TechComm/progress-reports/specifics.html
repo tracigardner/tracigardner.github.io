@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php $thisPage="progress"; ?>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Progress Reports: Using Specific Details</title>
+<!-- Latest compiled and minified BootStrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<!-- FontAwesome library -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- My Custom CSS -->
+<link href="https://tengrrl.github.io/ptw/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+<!-- Navigation scripts -->
+<script>
+$(function() {
+        
+  $('.list-group-item').on('click', function() {
+    $('.fa', this)
+      .toggleClass('fa-angle-right')
+      .toggleClass('fa-angle-down');
+  });
+
+});
+</script>
+
+<!-- include scripts -->
+<script>
+$(document).ready(function(){
+   $('#jumbotron').load("../-includes/jumbotron.html");
+   $('#sidebar').load("../-includes/sidebar.html");
+   $('#footer').load("../-includes/footer.html");
+});
+
+
+</script>
+</head>
+<body>
+<header>
+<div id="top-rectangle" class="row"> 
+	<div class="col-md-12" style="background-color: #660000;">&nbsp;</div>
+    </div>
+<div id="jumbotron"></div>
+</header>
+<main>
+<div class="container-fluid"> 
+<div class="main row">
+<div class="col-md-3" style="background-color: #dedede;min-height: 1100px;">
+<div id="sidebar"></div>
+</div>
+
+<div id="#stuff" class="col-md-9" style="background-color: #FFFFFF;min-height: 1100px;"">
+<h1 class="page-header-content">Progress Reports: Using Specific Details</h1>
+<p>Use concrete, specific details to describe the work that your group has completed. Tell your readers precisely that you have done and how you will complete the remaining work. The examples below demonstrate how to make sure you use details.</p>
+<table class="alternateTable">
+    <tr>
+      <th style="width: 30%;" scope="col">Rather than general information like this</th>
+      <th scope="col">Use specific language like this</th>
+    </tr>
+    <tr>
+      <td>We are making good progress on the project.</td>
+      <td>In the two weeks since inception, our four-member team has achieved three of the six objectives we identified for project completion; we are on track to complete the project in another three to four weeks. (from p. 49 of <em><a href="https://open.umn.edu/opentextbooks/BookDetail.aspx?bookId=8" target="_blank">Business Communication for Success</a></em> by McLean)</td>
+    </tr>
+    <tr>
+      <td>We have assigned the remaining tasks to team members.</td>
+      <td><p>We have assigned the remaining project tasks to the following team members:</p>
+        <ul>
+          <li>Geordi is in charge of organizing and writing intro/front matter.</li>
+          <li>Data will focus on the majority of the body for the report, including introduction, methods, results and conclusions.</li>
+          <li>Wesley will write and formally make the recommendations (with visuals and diagrams, if necessary).</li>
+        </ul></td>
+    </tr>
+    <tr>
+      <td>We agreed on how to organize the pages on the website.</td>
+      <td>We created a basic wireframe with sections for the information that we need to include on each page of the website (site title, site menus, page title, content, and footer with copyright information and address).</td>
+    </tr>
+</table>
+</div>
+</main>
+
+<footer>
+<div id="footer"></div>
+</footer>
+</div>
+</body>
+</html>
