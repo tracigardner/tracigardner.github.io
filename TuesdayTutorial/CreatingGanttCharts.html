@@ -13,6 +13,16 @@
     <!-- My Custom CSS -->
     <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
 
+    <!-- include scripts -->
+    <script>
+    $(document).ready(function(){
+       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+       $('#sidebar').load("https://tracigardner.github.io/TechComm/-includes/sidebar.html");
+       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+
+    </script>
+
   <script>
   (function() {
     var cx = '004254621551572523759:n3ows2swaxg';
@@ -33,7 +43,7 @@
       // The page is in an iframe
     } else {
       // The page is not in an iframe
-      document.getElementById("demo").innerHTML = "<h1>Creating a GANTT Chart</h1><div style='width: 400px;float: right;clear:both;'><gcse:search></gcse:search></div>"
+      document.getElementById("demo").innerHTML = "  <div id="jumbotron"></div><h1>Creating a GANTT Chart</h1><div style='width: 400px;float: right;clear:both;'><gcse:search></gcse:search></div>"
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
 </script>
