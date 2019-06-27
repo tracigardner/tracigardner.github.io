@@ -9,12 +9,28 @@ body {
 	font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
-		font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 .jumbotron h1 {
-	font-size: 36px;
+	font-size: 42px;
 	font-weight: bold;
 }
+#vtNav {
+   background-color: #ff6600;
+   color: #fefefe;
+   font-size: 18px;
+   border: none;
+   border-radius: 0px;
+}
+#vtNav a {
+   background-color: #ff6600;
+   color: #fefefe;
+   font-size: 18px;
+   text-decoration: none;
+}
+#vtNav a:hover {
+	background-color: #660000;
+    }
 .alternateTable {
     border-collapse: collapse;
     width: 100%;
