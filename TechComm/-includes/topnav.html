@@ -24,7 +24,7 @@
 
 /* Current/active navbar link */
 .active {
-  background-color: #000000;
+  background-color: #dedede;
 }
 
 /* Dropdown content (hidden by default) */
@@ -57,14 +57,6 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
 /* Style the search box inside the navigation bar */
 .topnav input[type=text] {
   float: right;
@@ -90,7 +82,17 @@
   }
 }
 </style>
-
+  <script>
+  (function() {
+    var cx = '004254621551572523759:n3ows2swaxg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -98,7 +100,7 @@
 <div class="navbar topnav" id="myTopnav">
   <a href="#home" class="active"><i class="fa fa-fw fa-home"></i> Home</a>
   <a href="#news">News</a>
-    <div class="dropdown">
+<!-- <div class="dropdown">
     <button class="dropbtn">Genres 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -107,12 +109,10 @@
       <a href="#">Proposals</a>
       <a href="#">Progress Reports</a>
     </div>
-  </div> 
+  </div> -->
   <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
   <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
   <a href="#about">About</a>
-  <input type="text" placeholder="Search..">
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+<div style='width: 400px;float: right;'><gcse:search></gcse:search></div>
   </a>
 </div>
