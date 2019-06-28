@@ -71,6 +71,11 @@ a, li a {
 	text-decoration: underline;
 	color: #ff6600;
 }
+a:hover, li a:hover {
+	text-decoration: underline;
+	color: #660000;
+	background-color: #ff6600;
+}
 .orangebox {
 	border: 6px solid #FF6600;
 	border-style: double;
