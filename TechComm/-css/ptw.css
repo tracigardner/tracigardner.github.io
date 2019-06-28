@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 h2 {
 	color: #ff6600;
 }
+h3 {
+	color: #660000;
+}
 #vtNav {
    background-color: #ff6600;
    color: #fefefe;
