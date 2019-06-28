@@ -56,7 +56,7 @@ div.wrapright, img.wrapright, figure.wrapright {
 	float: right;
 	margin: 0px 0px 15px 15px;
 }
-figcaption, .site-credit {
+figcaption, .site-credit { 
 	font-size: 15px;
 	color: #333;
 	font-weight:normal;
@@ -89,14 +89,6 @@ a, li a {
 div.wrapright, img.wrapright, figure.wrapright {
 	float: right;
 	margin: 0px 0px 15px 15px;
-}
-figcaption, .site-credit {
-	font-size: 15px;
-	color: #333;
-	font-weight:normal;
-}
-a, li a {
-	text-decoration: underline;
 }
 
 a.activeMenuItem {
