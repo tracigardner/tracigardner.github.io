@@ -69,6 +69,7 @@ figcaption, .site-credit {
 }
 a, li a {
 	text-decoration: underline;
+	color: #ff6600;
 }
 .orangebox {
 	border: 6px solid #FF6600;
