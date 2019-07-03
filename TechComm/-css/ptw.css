@@ -37,8 +37,9 @@ h3 {
 #vtNav a:hover {
 	background-color: #660000;
     }
-#postBody p, ul, ol, td, dd, dt {
+#postBody p, ul, ol, ul li, ol li, td, dd, dt {
 	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
 }
 .alternateTable {
     border-collapse: collapse;
