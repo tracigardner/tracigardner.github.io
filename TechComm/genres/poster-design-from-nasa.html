@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Poster Design from Washington NASA Space Grant Consortium</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+    $(document).ready(function(){
+       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+    </script>
+    
+  <script>
+  (function() {
+    var cx = '004254621551572523759:n3ows2swaxg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</head>
+  <body>
+<!-- script -->
+<div id="topinfo"></div>
+<script>
+    if ( window.location !== window.parent.location ) {
+      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      // The page is in an iframe
+    } else {
+      // The page is not in an iframe
+      document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #660000;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Poster Design from Washington NASA Space Grant Consortium</h1>"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+    }
+</script>
+<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+<p><img src="https://tracigardner.github.io/TechComm/-images/nasa-banner-logo-only.png" width="114" height="125" alt="Washington NASA Space Grant Consortium Logo" style="float: right;margin: 0px 0px 15px 15px;">The Washington NASA Space Grant Consortium&rsquo;s site on&nbsp;<a href="http://www.waspacegrant.org/for_students/student_internships/wsgc_internships/posterdesign.html" target="_blank">The Basics of Poster Design</a> is intended for student interns who will create research posters.</p>
+<p>The site includes the following sections:&nbsp;</p>
+<ul>
+<li>Getting started</li>
+<li>Organizing your research</li>
+<li>Choosing your tools</li>
+<li>Mastering the basics</li>
+<li>Creating design unity</li>
+<li>Some final tips</li>
+<li>More design resources &amp; software tutorials</li>
+</ul>
+<p>Review the information on the site for additional tips and advice. Compare what you find to the resources shared last week and determine the best strategies for your research poster.</p>
+</div>
+<div id="bottominfo"></div>
+<script>
+    if ( window.location !== window.parent.location ) {
+      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      // The page is in an iframe
+    } else {
+      // The page is not in an iframe
+      document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+    }
+</script>
+  </body>
+</html>
