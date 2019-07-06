@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Examining a Technical Description</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+    $(document).ready(function(){
+       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+    </script>
+    
+  <script>
+  (function() {
+    var cx = '004254621551572523759:n3ows2swaxg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</head>
+  <body>
+<!-- script -->
+<div id="topinfo"></div>
+<script>
+    if ( window.location !== window.parent.location ) {
+      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      // The page is in an iframe
+    } else {
+      // The page is not in an iframe
+      document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #660000;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Examining a Technical Description</h1>"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+    }
+</script>
+<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+<p>Today’s post examines a kind of technical description that I expect everyone in the course is familiar with: Job Descriptions. In this Lynda.com video, Freda Thomas explains what a job description is (She’s providing a definition, as explained in Markel &amp; Selber, Chapter 20) and then describes the key features of a job description, which is a kind of technical description.</p>
+<p>Watch the Lynda.com video <a href="https://www.lynda.com/Business-Skills-tutorials/Creating-Compelling-Job-Description/601770-2.html?org=vt.edu" target="_blank" rel="noopener">Creating a Compelling Job Description</a> and consider how it works to define and describe an object. After you view the video, you can comment on the strategies that are used to create the technical description, OR tell us how another example of a technical description that you interact with on a regular basis works.</p>
+<p> <a href="https://www.lynda.com/Business-Skills-tutorials/Creating-Compelling-Job-Description/601770-2.html?org=vt.edu" target="_blank" rel="noopener"><img style="border: 1px solid #dcdcdc;" src="https://tracigardner.github.io/TechComm/-images/video-images/ldc-job-description.jpg" alt="Screenshot from Creating a Compelling Job Description Video" /></a></p>
+</div>
+<div id="bottominfo"></div>
+<script>
+    if ( window.location !== window.parent.location ) {
+      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      // The page is in an iframe
+    } else {
+      // The page is not in an iframe
+      document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+    }
+</script>
+  </body>
+</html>
