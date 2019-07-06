@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Charting Data with Images</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+    $(document).ready(function(){
+       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+    </script>
+    
+  <script>
+  (function() {
+    var cx = '004254621551572523759:n3ows2swaxg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+</head>
+  <body>
+<!-- script -->
+<div id="topinfo"></div>
+<script>
+    if ( window.location !== window.parent.location ) {
+      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      // The page is in an iframe
+    } else {
+      // The page is not in an iframe
+      document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #660000;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Charting Data with Images</h1>"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+    }
+</script>
+<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+<p>Today, we have a short Lynda.com video that explains how to <a href="https://www.lynda.com/Graphic-Design-tutorials/Chart-your-data-images/365959/434274-4.html?org=vt.edu" target="_blank">Chart Your Data with Images</a> (2m 26s). The video suggests that you can use images to illustrate data in more compelling ways than simple bar charts or pie charts allow.</p>
+<p>The requirements for your Research Poster state that your presentation graphics should meet these five characteristics (from Markel &amp; Selber):</p>
+<ul>
+<li>It presents a clear, well-supported claim. (p. 587)</li>
+<li>It is easy to see. (p. 587)</li>
+<li>It is easy to read. (p. 588)</li>
+<li>It is simple. (p. 589)</li>
+<li>It is correct. (p. 589)</li>
+</ul>
+<p>Compare these five characteristics to the advice that is included in the video, and comment on how you would design (or revise) images that you use to chart data to ensure that they meet the five characteristics. You can also consider the ethical issues involved with charting data with images.</p>
+</div>
+<div id="bottominfo"></div>
+<script>
+    if ( window.location !== window.parent.location ) {
+      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      // The page is in an iframe
+    } else {
+      // The page is not in an iframe
+      document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+    }
+</script>
+  </body>
+</html>
