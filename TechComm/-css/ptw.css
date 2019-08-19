@@ -11,7 +11,7 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 	font-family: 'Raleway', sans-serif;
 }
-ul li, ol li {
+.boo ul li {
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 }
