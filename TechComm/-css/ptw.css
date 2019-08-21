@@ -6,6 +6,7 @@
 
 @viewport {
   width: device-width;
+  initial-scale=1;
 }
 body {
 	font-family: 'Raleway', sans-serif;
