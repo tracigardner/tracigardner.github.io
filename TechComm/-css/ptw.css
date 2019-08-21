@@ -4,6 +4,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+@viewport {
+  width: device-width;
+}
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
