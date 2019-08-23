@@ -34,8 +34,8 @@ h3 {
    color: #fefefe;
    border: none;
    border-radius: 0px;
-   line-height: 20px;
-   height: 20px;
+   display: inline-block;
+   vertical-align: middle;
 }
 #vtNav a {
    background-color: #ff6600;
