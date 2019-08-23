@@ -32,14 +32,9 @@ h3 {
 #vtNav {
    background-color: #ff6600;
    color: #fefefe;
-   font-size: 18px;
    border: none;
    border-radius: 0px;
 }
-#vtNav:hover {
-	background-color: #660000;
-    padding: 8px;
-    }
 #vtNav a {
    background-color: #ff6600;
    color: #fefefe;
