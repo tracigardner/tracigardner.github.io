@@ -35,16 +35,17 @@ h3 {
    font-size: 18px;
    border: none;
    border-radius: 0px;
-   padding: 8px;
 }
 #vtNav a {
    background-color: #ff6600;
    color: #fefefe;
    font-size: 18px;
    text-decoration: none;
+   padding: 8px;
 }
 #vtNav a:hover {
 	background-color: #660000;
+    padding: 8px;
     }
 #postBody p, ul, ol, ul li, ol li, td, dd, dt {
 	font-family: Verdana, Geneva, sans-serif;
