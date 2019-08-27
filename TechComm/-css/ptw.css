@@ -78,7 +78,8 @@ div.wrapright, img.wrapright, figure.wrapright {
 figcaption, .site-credit { 
 	font-size: 18px;
 	color: #333;
-	font-we:normal;
+	font-weight:normal;
+    padding: 8px;
 }
 a, li a {
 	text-decoration: underline;
