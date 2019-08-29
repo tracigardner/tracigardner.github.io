@@ -30,7 +30,7 @@ h3 {
 	color: #660000;
 }
 .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
-.navbar {min-height:32px !important}
+.navbar {min-height:30px !important}
 #vtNav {
    background-color: #ff6600;
    color: #fefefe;
