@@ -31,10 +31,10 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 	font-weight: bold;
 }
 h2 {
-	color: #ff6600;
+	color: #e87722;
 }
 h3 {
-	color: #660000;
+	color: #861f41;
 }
 .navbar-nav > li > a {
 	padding-top:5px !important; 
@@ -44,20 +44,20 @@ h3 {
 	min-height:32px !important;
 	}
 #vtNav {
-   background-color: #ff6600;
+   background-color: #e87722;
    color: #fefefe;
    border: none;
    border-radius: 0px;
 }
 #vtNav a {
-   background-color: #ff6600;
+   background-color: #e87722;
    color: #fefefe;
    font-size: 18px;
    text-decoration: none;
    padding: 8px;
 }
 #vtNav a:hover {
-	background-color: #660000;
+	background-color: #861f41;
     padding: 8px;
     }
 #postBody p, ul, ol, ul li, ol li, td, dd, dt {
@@ -97,20 +97,20 @@ figcaption, .site-credit {
 }
 a, li a {
 	text-decoration: underline;
-	color: #ff6600;
+	color: #e87722;
 }
 a:hover, li a:hover {
 	text-decoration: underline;
-	color: #660000;
+	color: #861f41;
 }
 .orangebox {
-	border: 6px solid #FF6600;
+	border: 6px solid #e87722;
 	border-style: double;
 	box-sizing: border-box;
 	padding: 0 5px 5px 20px;
 }
 .maroonbox {
-	border: 6px solid #660000;
+	border: 6px solid #861f41;
 	border-style: double;
 	box-sizing: border-box;
 	padding: 0 5px 5px 20px;
@@ -136,7 +136,7 @@ a.activeMenuItem {
 }
 
 .page-header-sidebar {
-	border-bottom: 1px solid #FF6600;
+	border-bottom: 1px solid #e87722;
     margin: 40px 0 20px;
 	padding: 15px 15px 15px 15px;
 	font-size: 18px;
@@ -146,7 +146,7 @@ a.activeMenuItem {
 .page-header-content {
     margin: 40px 0 20px;
 	padding-bottom: 9px;
-	border-bottom: 1px solid #FF6600;
+	border-bottom: 1px solid #e87722;
 }
 
 .alignnone {
@@ -171,7 +171,7 @@ a.activeMenuItem {
 }
 
 .page-header-sidebar {
-	border-bottom: 1px solid #FF6600;
+	border-bottom: 1px solid #e87722;
     margin: 40px 0 20px;
 	padding: 15px 15px 15px 15px;
 	font-size: 18px;
@@ -181,7 +181,7 @@ a.activeMenuItem {
 .page-header-content {
     margin: 40px 0 20px;
 	padding-bottom: 9px;
-	border-bottom: 1px solid #FF6600;
+	border-bottom: 1px solid #e87722;
 }
 
 /*
