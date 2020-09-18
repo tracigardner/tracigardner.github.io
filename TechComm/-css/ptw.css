@@ -226,7 +226,7 @@ a.activeMenuItem {
 
 /* Table of Contents styles */
 
-/* Add line above footnotes */
+/* Add left-aligned line above footnotes */
 .fn1:before {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
