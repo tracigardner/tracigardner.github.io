@@ -230,8 +230,8 @@ a.activeMenuItem {
 .fn1:before {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    margin: auto auto auto 0; /* This will left align the border. */
+    margin: 24 auto auto 0; /* This will left align the border. */
     width: 18%; /* Change this to whatever width you want. */
-    padding-top: 30px; /* This creates some space between the element and the border. */
+    padding-top: 15px; /* This creates some space between the element and the border. */
     border-top: 1px solid #666666; /* This creates the border. Replace black with whatever color you want. */
 	}
