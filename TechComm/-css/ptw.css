@@ -194,10 +194,7 @@ a.activeMenuItem {
 	text-decoration: none;
 }
 .btn-home:hover {
-	border-radius:9px;
-	background-	color: #e87722;
-	color: #ffffff;
-	text-decoration: none;
+	background-color: #e87722;
 }
 
 
