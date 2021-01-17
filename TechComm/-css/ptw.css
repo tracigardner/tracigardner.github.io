@@ -187,13 +187,18 @@ a.activeMenuItem {
 /* 
 	Code for button links
 */
-.btn-home {
+.btn-home a {
 	border-radius:9px;
 	background-color: #861F41;
 	color: #ffffff;
 	text-decoration: none;
 }
-
+.btn-home a:hover {
+	border-radius:9px;
+	background-	color: #e87722;
+	color: #ffffff;
+	text-decoration: none;
+}
 
 
 /*
