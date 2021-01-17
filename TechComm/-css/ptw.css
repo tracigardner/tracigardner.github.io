@@ -184,6 +184,18 @@ a.activeMenuItem {
 	border-bottom: 1px solid #e87722;
 }
 
+/* 
+	Code for button links
+*/
+.btn-home {
+	border-radius:9px;
+	background-color: #861F41;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+
 /*
     copied over code for dropdown lists
     from https://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap
