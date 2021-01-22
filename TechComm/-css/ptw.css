@@ -120,6 +120,10 @@ a:hover, li a:hover {
 	margin-bottom: 18px;
 }
 
+.skipline li {
+	margin-bottom: 12px;
+}
+
 .null li {
 	margin-top: 0px;
 	margin-bottom: 0px;
