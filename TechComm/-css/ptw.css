@@ -67,7 +67,8 @@ h3 {
 .alternateTable {
     border-collapse: collapse;
     width: 100%;
-	margin: 6px 6px 6px 6px;
+    margin: 6px 6px 6px 6px;
+    table-layout: auto;
 }
 
 .alternateTable td, .alternateTable th {
