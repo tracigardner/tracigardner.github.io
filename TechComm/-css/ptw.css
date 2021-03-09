@@ -121,7 +121,7 @@ a:hover, li a:hover {
 	margin-bottom: 18px;
 }
 
-.skipline li {
+.skipline li, .skipline dl, .skipline dd {
 	margin-bottom: 12px;
 }
 
