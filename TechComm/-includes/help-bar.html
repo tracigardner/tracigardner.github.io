@@ -1,0 +1,10 @@
+<script>
+    if ( window.location !== window.parent.location ) {
+              document.getElementById("helpbar").innerHTML = "abracadabra"
+       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // The page is in an iframe
+    } else {
+      // The page is not in an iframe
+          document.getElementById("demo").innerHTML = "<div id='content'></div>"
+    }
+</script>
