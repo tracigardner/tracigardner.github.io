@@ -19,7 +19,7 @@
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
        $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html")
     });
     </script>
     
@@ -86,21 +86,10 @@
 <p>Prerequisite: English 1106, English 1204H, COMM 1016, or equivalency, and Junior standing.</p>
 
 </div>
-
-<script>
-    if ( window.location !== window.parent.location ) {
-              document.getElementById("helpbar").innerHTML = "abracadabra"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
-      // The page is in an iframe
-    } else {
-      // The page is not in an iframe
-          document.getElementById("demo").innerHTML = "<div id='content'></div>"
-    }
-</script>
 <div id="bottominfo"></div>
 <script>
     if ( window.location !== window.parent.location ) {
-      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      document.getElementById("demo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
