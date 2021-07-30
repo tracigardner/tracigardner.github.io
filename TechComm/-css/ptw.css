@@ -188,6 +188,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 }
 h2 {
 	color: #e87722;
+    font-size: 27px;
 }
 h3 {
 	color: #861f41;
