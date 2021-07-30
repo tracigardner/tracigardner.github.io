@@ -188,12 +188,12 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 }
 h2 {
 	color: #e87722;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: bold;
 }
 h3 {
 	color: #861f41;
-    font-size: 21px;
+    font-size: 18px;
 }
 .navbar-nav > li > a {
 	padding-top:5px !important; 
