@@ -131,7 +131,17 @@
   </li>
   </ul>
 </div>
-  <script>
+<script language="JavaScript">
+    <!-- Hide JavaScript...
+    var LastUpdated = document.lastModified;
+    var LastUpdatedDate = LastUpdated.slice(0,10);
+    document.writeln ("Last updated " + LastUpdatedDate);
+    // End Hiding -->
+          </script>
+<p style="font-size: 1px; border-bottom: 2px solid #861F41;">&nbsp;</p>
+</div>
+<div id="bottominfo"></div>
+<script>
     if ( window.location !== window.parent.location ) {
         document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
@@ -140,6 +150,6 @@
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-    </script>
+</script>
   </body>
 </html>
