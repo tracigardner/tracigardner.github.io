@@ -19,6 +19,7 @@
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
        $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
     });
     </script>
     
@@ -105,11 +106,24 @@
     <p>Good, old paper and pencil can work for mock-ups and storyboards. There&rsquo;s no reason that these planning tools have to be digitally produced.</p>
     <h3>Backing Up Your Design</h3>
     <p>Many of the mockup and storyboard tools publish your design on their site. Just in case something goes wrong, I strongly advise you to print your work to a PDF, take a screenshot, or otherwise back up the mockup or storyboard that you create. If you sketch out your mockup or storyboard on paper, take a photo with your phone.</p>
+
+   <p style="margin-top: 24px;">&nbsp;</p>
+        <p>
+    <script language="JavaScript">
+    <!-- Hide JavaScript...
+    var LastUpdated = document.lastModified;
+    var LastUpdatedDate = LastUpdated.slice(0,10);
+    document.writeln ("Last updated " + LastUpdatedDate);
+    // End Hiding -->
+    </script>
+    </p>
+    
+    
 </div>
 <div id="bottominfo"></div>
 <script>
     if ( window.location !== window.parent.location ) {
-      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
