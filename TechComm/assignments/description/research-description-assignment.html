@@ -109,16 +109,30 @@
       Since this is a part of the working draft for your Technical Description, you do not  turn it in separately. </li>
   </ul>
   <p>&nbsp;</p>
+
+   <p style="margin-top: 24px;">&nbsp;</p>
+        <p>
+    <script language="JavaScript">
+    <!-- Hide JavaScript...
+    var LastUpdated = document.lastModified;
+    var LastUpdatedDate = LastUpdated.slice(0,10);
+    document.writeln ("Last updated " + LastUpdatedDate);
+    // End Hiding -->
+    </script>
+    </p>
+    
+    
 </div>
-  <script>
+<div id="bottominfo"></div>
+<script>
     if ( window.location !== window.parent.location ) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
-        // The page is in an iframe
+      // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-  </script>
+</script>
   </body>
 </html>
