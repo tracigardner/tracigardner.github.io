@@ -19,6 +19,7 @@
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
        $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
     });
     </script>
     
@@ -101,40 +102,31 @@
   <li>Canvas will mark this activity <em>Complete</em> in Grades automatically when you confirm you have met all of the <a href="https://canvas.vt.edu/courses/136796/pages/research-description-criteria" target="_blank">Research Description Criteria</a>. </li>
   <li>Canvas will mark this activity <em>Incomplete</em> in Grades automatically if you do not confirm that you have met all of the <a href="https://canvas.vt.edu/courses/136796/pages/research-description-criteria" target="_blank">Research Description Criteria</a> by the end of the grace period.</li>
 </ul>
-<p>
-  <script language="JavaScript">
+
+
+   <p style="margin-top: 24px;">&nbsp;</p>
+        <p>
+    <script language="JavaScript">
     <!-- Hide JavaScript...
     var LastUpdated = document.lastModified;
     var LastUpdatedDate = LastUpdated.slice(0,10);
     document.writeln ("Last updated " + LastUpdatedDate);
     // End Hiding -->
     </script>
-</p>
-<ol class="skipline">
-  <li class="skipline"></li>
-</ol>
-<h2>Obtaining the Points for Your Work</h2>
-<ol class="skipline">
-  <li>You will automatically receive the points for your work when you submit this checklist. Canvas checks the work and awards the points. You can complete the checklist as many times as necessary to earn full points.</li>
-  <li>Once you earn full points, you MUST also submit your project in Part 2 of the Week Eleven module. </li>
-  <li>Once you submit your project video, Traci will review your work:
-    <ul>
-      <li>If she finds that it does not meet  the requirements for the assignment, she will adjust the points on your checklist and ask you to resubmit once you have revised to meet the project criteria.</li>
-      <li>If she finds that you did not submit your project, she will adjust the points and ask you to submit it.</li>
-      <li>Otherwise, she will give you feedback. Your points will not change.</li>
-    </ul>
-  </li>
-  </ol>
+    </p>
+    
+    
 </div>
-  <script>
+<div id="bottominfo"></div>
+<script>
     if ( window.location !== window.parent.location ) {
-      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-  </script>
+</script>
   </body>
 </html>
