@@ -19,6 +19,7 @@
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
        $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
     });
     </script>
     
@@ -58,9 +59,8 @@
 </ul>
 <h2>Recommendation Report Criteria</h2>
 <h3>Length</h3>
-<p>With examples and appropriate formatting, your report will likely be close to <strong>15 single-spaced pages long</strong>, though there is not a minimum or maximum page length. Write as much as you need to, but be sure to include all of the required information.</p>
+<p>With examples, graphics, and appropriate formatting, your report will likely be close to <strong>15 single-spaced pages long</strong>, though there is not a minimum or maximum page length. Write as much as you need to in order to include all of the required information.</p>
 <h3>Criteria</h3>
-<p>Your recommendation report should meet these requirements.  Page numbers below refer to Markel and Selber. </p>
 <p>My recommendation report . . . </p>
 <div style="float: right; width: 330px; border: 3px double #ff6600; margin: 0px 0px 15px 15px; padding: 6px; clear: both;">
   <h3 style="margin-top: 0px; margin-bottom: 0px;">Check the Textbook</h3>
@@ -118,14 +118,27 @@
       <li>Uses well-integrated and well-designed visuals to clarify the information.</li>
     </ul>
   </li>
-  <li style="margin-bottom: 12px;">Uses accurate/appropriate grammar, spelling, punctuation, mechanics, linking, and formatting.</li>
-  <li>Is an original project, written by you, not copied or rephrased from another source. If you copy or rephrase from another source, your work will be rejected.</li>
+  <li style="margin-bottom: 12px;">Is an original project, written by you, not copied or rephrased from another source. If you copy or rephrase from another source, your work will be rejected.</li>
 </ul>
 <p>&nbsp;</p>
+
+   <p style="margin-top: 24px;">&nbsp;</p>
+        <p>
+    <script language="JavaScript">
+    <!-- Hide JavaScript...
+    var LastUpdated = document.lastModified;
+    var LastUpdatedDate = LastUpdated.slice(0,10);
+    document.writeln ("Last updated " + LastUpdatedDate);
+    // End Hiding -->
+    </script>
+    </p>
+    
+    
 </div>
+<div id="bottominfo"></div>
 <script>
     if ( window.location !== window.parent.location ) {
-      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
