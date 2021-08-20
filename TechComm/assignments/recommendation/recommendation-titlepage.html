@@ -19,6 +19,7 @@
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
        $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
     });
     </script>
     
@@ -78,9 +79,9 @@
   </ul>
 <h2>When to Do It</h2>
 <ul class="skipline">
-  <li><strong>Suggested Due Date:</strong> By 11:59 PM on Thursday, June 25, 2021.</li>
-  <li><strong>Timely Feedback Date: </strong> If you need more time, take more time. </li>
-  <li><strong>Last Chance Date:</strong> The  grace period for your work ends at 11:59 PM on Thursday, July 1.</li>
+  <li><strong>Suggested Due Date:</strong> By 11:59 PM on Friday, November 19, 2021, to participate in  the <a href="https://canvas.vt.edu/courses/136796/discussion_topics/1102604" target="_blank">Last-Chance Feedback Discussion</a>.</li>
+  <li><strong>Timely Feedback Date: </strong> If you need more time, take more time.  You need this section for your completed report.</li>
+  <li><strong>Last Chance Date:</strong>The  grace period for your recommendation report ends at 11:59 PM on Friday, December 3, 2021.</li>
 </ul>
 <h2>How You Do It</h2>
 <ol class="skipline">
@@ -89,7 +90,7 @@
   <li class="skipline">Follow the example on p. 506 of Markel and Selber to add the text for your title page. </li>
   <li class="skipline">Format your title page similar to the example on p. 506 as well.</li>
   <li class="skipline">Review the title you have written to make sure it follows the guidelines on the <a href="https://canvas.vt.edu/courses/136796/pages/effective-report-titles" target="_blank">Effective Report Titles</a> page and from the textbook (See above).</li>
-  <li class="skipline">Review the “Prepared for” information. Your report should be prepared for the specific person who can take action on your recommendation (e.g., some administrator on campus for a problem you are exploring on campus, some manager at a workplace, town council or a similar group in your local community). It is NOT prepared for me. I cannot make your recommendation happen.</li>
+  <li class="skipline">Review the “Prepared for” information. Your report should be prepared for the decisionmaker who can take action on your recommendation (e.g., some administrator on campus for a problem you are exploring on campus, some manager at a workplace, town council or a similar group in your local community).</li>
   <li class="skipline">Move on to the next part of your report that you want to work on.</li>
 </ol>
 <h2>How to Assess &amp; Track Your Work</h2>
@@ -99,7 +100,9 @@
   <li>I will give you feedback when you turn in your draft to one of the feedback discussions. 
   Since this is a part of the working draft for your Recommendation Report, you do not  turn it in separately.</li>
 </ul>
-    <p>
+
+   <p style="margin-top: 24px;">&nbsp;</p>
+        <p>
     <script language="JavaScript">
     <!-- Hide JavaScript...
     var LastUpdated = document.lastModified;
@@ -108,16 +111,19 @@
     // End Hiding -->
     </script>
     </p>
+    
+    
 </div>
-  <script>
+<div id="bottominfo"></div>
+<script>
     if ( window.location !== window.parent.location ) {
-      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-    </script>
+</script>
   </body>
 </html>
