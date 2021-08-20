@@ -19,6 +19,7 @@
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
        $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
     });
     </script>
     
@@ -129,10 +130,23 @@
   <li>I will give you feedback when you turn in your draft to one of the feedback discussions. 
   Since this is a part of the working draft for your Recommendation Report, you do not  turn it in separately. </li>
 </ul>
+   <p style="margin-top: 24px;">&nbsp;</p>
+        <p>
+    <script language="JavaScript">
+    <!-- Hide JavaScript...
+    var LastUpdated = document.lastModified;
+    var LastUpdatedDate = LastUpdated.slice(0,10);
+    document.writeln ("Last updated " + LastUpdatedDate);
+    // End Hiding -->
+    </script>
+    </p>
+    
+    
 </div>
-<script type="text/javascript">
-if ( window.location !== window.parent.location ) {
-      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+<div id="bottominfo"></div>
+<script>
+    if ( window.location !== window.parent.location ) {
+      document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
