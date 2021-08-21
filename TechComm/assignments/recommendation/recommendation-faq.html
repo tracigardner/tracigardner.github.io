@@ -19,6 +19,7 @@
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
        $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
     });
     </script>
     
@@ -52,8 +53,8 @@
 <ul class="skipline">
 <li>Include all of the <strong>required sections</strong> listed on the <a href="https://canvas.vt.edu/courses/136796/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a> page. Do not combine or omit any of the required sections.</li>
 <li>Make sure your sections are in the <strong>required order</strong> listed on the <a href="https://canvas.vt.edu/courses/136796/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a> page.</li>
-<li>Address your letter of transmittal to a<strong> specific person, committee, or group</strong> (not to me).</li>
-<li>Choose a <strong><a href="https://canvas.vt.edu/courses/136796/assignments/1182797" target="_blank">specific title</a></strong> for your report. If your title is so general that it would work on anyone&rsquo;s report, you need to revise it. Use the <a href="https://canvas.vt.edu/courses/136796/pages/effective-report-titles" target="_blank">Effective Report Titles</a> for more help. Consider these examples:
+<li>Address your letter of transmittal to the decisionmaker (a<strong> specific person, committee, or group</strong>) who can put your recommendation into action.</li>
+<li>Choose a <strong>specific title</strong> for your report. If your title is so general that it would work on anyone&rsquo;s report, you need to revise it. Use the <a href="https://canvas.vt.edu/courses/136796/pages/effective-report-titles" target="_blank">Effective Report Titles</a> for more help. Consider these examples:
 <ul class="null">
     <li>Too General:
       <ul>
@@ -68,18 +69,20 @@
     </li>
   </ul>
 </li>
-<li>Include a <strong><a href="https://canvas.vt.edu/courses/136796/assignments/1182785" target="_blank">detailed and specific Table of Contents</a></strong>. It should show the full headings and sub-headings from the report. Check out the Table of Contents in the Sample Recommendation Report in the textbook for help.</li>
-<li>Use<strong> specific headings and sub-headings </strong>in your report. Again, check  the Table of Contents in the Sample Recommendation Report in the textbook to see appropriate headings. See <a href="https://tracigardner.github.io/TechComm/document-design/page--use-strong-phrasing-in-your-headings.html" target="_blank">Using Strong Phrasing in Your Headings</a> and the section on &ldquo;Titles and Headings&rdquo; in Chapter 11 of Markel and Selber&rsquo;s <em>Technical Communication</em> (page 275–277).</li>
+<li>Include a <strong><a href="https://canvas.vt.edu/courses/136796/pages/creating-your-table-of-contents" target="_blank">detailed and specific Table of Contents</a></strong>. It should show the full headings and sub-headings from the report. Check out the Table of Contents in the Sample Recommendation Report in the textbook for help.</li>
+<li>Use<strong> specific headings and sub-headings </strong>in your report. Again, check  the Table of Contents in the Sample Recommendation Report in the textbook to see appropriate headings. See <a href="https://canvas.vt.edu/courses/136796/pages/professional-design-for-reports" target="_blank">Professional Design for Reports</a> and the section on &ldquo;Titles and Headings&rdquo; in Chapter 11 of Markel and Selber&rsquo;s <em>Technical Communication</em> (page 275–277).</li>
 <li>Include both your p<strong>rimary and secondary research</strong>. Both are required.<br>
 </li>
 <li>Be sure that you place all<strong> quotations in quotation marks</strong>, and <strong>credit your sources</strong> in the body of your report. See the <a href="https://canvas.vt.edu/courses/136796/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citation</a> page for help.</li>
-<li>Make sure all of your <strong>sources are listed in <a href="https://canvas.vt.edu/courses/136796/assignments/1182787" target="_blank">your References section</a></strong>. See the <a href="https://canvas.vt.edu/courses/136796/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citation</a> page for help.</li>
-<li>Mention your Instructions Project in your report and include it in your <strong><a href="https://canvas.vt.edu/courses/136796/assignments/1182789" target="_blank">Appendix</a></strong>.</li>
+<li>Make sure all of your <strong>sources are listed in <a href="https://canvas.vt.edu/courses/136796/pages/providing-your-references" target="_blank">your References section</a></strong>. See the <a href="https://canvas.vt.edu/courses/136796/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citation</a> page for help.</li>
+<li>Mention your Instructions Project in your report and include it in your <strong><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-appendixes" target="_blank">Appendix</a></strong>.</li>
 <li>Be sure you <strong>spell check</strong> your work, and double check that you have <strong>all names spelled correctly</strong>.  </li>
 <li>If mentioned, use the <strong>correct name of our university.</strong> For more information, see <a href="https://career.vt.edu/job-search/presenting_yourself/resumes/common-resume-mistakes.html" target="_blank">https://career.vt.edu/job-search/presenting_yourself/resumes/common-resume-mistakes.html</a></li>
 </ul>
     <p>&nbsp;</p>
-    <p>
+
+   <p style="margin-top: 24px;">&nbsp;</p>
+        <p>
     <script language="JavaScript">
     <!-- Hide JavaScript...
     var LastUpdated = document.lastModified;
@@ -88,17 +91,19 @@
     // End Hiding -->
     </script>
     </p>
-<p>&nbsp;</p>
+    
+    
 </div>
-  <script>
+<div id="bottominfo"></div>
+<script>
     if ( window.location !== window.parent.location ) {
-      document.getElementById("demo").innerHTML = "<div id='content'></div>"
+      document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-  </script>
+</script>
   </body>
 </html>
