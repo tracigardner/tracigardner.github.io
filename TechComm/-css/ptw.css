@@ -249,7 +249,7 @@ h4 {
 }
 div.wrapright, img.wrapright, figure.wrapright {
 	float: right;
-	margin: 0px 0px 15px 15px;
+	margin: 0px 18px 18px 18px;
 }
 figcaption, .site-credit { 
 	font-size: 14px;
