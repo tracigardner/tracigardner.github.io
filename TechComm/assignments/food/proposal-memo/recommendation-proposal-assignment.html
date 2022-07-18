@@ -3,21 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Proposal Memo Assignment</title>
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <!-- Bootstrap -->
+	<link href="../../css/bootstrap-4.4.1.css" rel="stylesheet">
+	
     <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
-
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css"/>
     <!-- include scripts -->
     <script>
     $(document).ready(function(){
+       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/bs-navbar.html");
        $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+
        $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
        $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
     });
@@ -44,7 +40,7 @@
       // The page is in an iframe
     } else {
       // The page is not in an iframe
-      document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Proposal Memo Assignment</h1>"
+      document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Proposal Memo Assignment</h1>"
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
 </script>
@@ -54,7 +50,7 @@
   <li>Suggested Due Date: By 11:59 PM on Tuesday, May 31, 2022.</li>
   <li>Grace Period: Ends at 11:59 PM on Thursday, June 30, 2022.</li>
 </ul>
-
+<div id='jumbotron'></div>
 <h2>What I Want You to Do</h2>
 <p><img src="../../../-images/noun-request-for-proposal-color.png" width="240" height="240" alt="A proposal document showing a graphic of an orange-frosted donut with maroon sprinkles" style="float:right;margin: 0px 0px 12px 12px;" /></p>
 <p> You will propose the topic for your recommendation report in a one-page memo that describes your topic. Your memo will use memo headings and fill at least ¾ of the page.</p>
@@ -145,5 +141,13 @@
        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
 </script>
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../../js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../../js/popper.min.js"></script> 
+    <script src="../../js/bootstrap-4.4.1.js"></script>
+      
   </body>
 </html>
