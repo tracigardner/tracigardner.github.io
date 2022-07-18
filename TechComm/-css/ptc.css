@@ -115,33 +115,6 @@ h3 {
     font-size: 18px;
 }
 
-/*
-        .navbar-nav > li > a {
-            padding-top:5px !important; 
-            padding-bottom:5px !important;
-            }
-        .navbar {
-            min-height:32px !important;
-            }
-        #vtNav {
-           background-color: #e87722;
-           color: #fefefe;
-           border: none;
-           border-radius: 0px;
-        }
-        #vtNav a {
-           background-color: #e87722;
-           color: #fefefe;
-           font-size: 18px;
-           text-decoration: none;
-           padding: 8px;
-        }
-        #vtNav a:hover {
-            background-color: #861f41;
-            padding: 8px;
-            }
-*/
-
 #postBody p, ul, ol, ul li, ol li, td, dd, dt {
     background-color: #fefefe;
     padding: 0px 6px 15px 6px;
