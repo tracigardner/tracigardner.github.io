@@ -422,9 +422,7 @@ a.activeMenuItem {
 
 
 
-/*
-    copied over from DW Bootstrap Tutorial
-*/
+/* copied over from DW Bootstrap Tutorial */
 /* Background color for navbar and dropdown menus */
 .navbar-custom, .navbar-custom .dropdown-menu {
     background-color: #FFE4B5 /* moccasin; */
