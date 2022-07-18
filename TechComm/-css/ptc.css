@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 	font-size: 42px;
 	font-weight: bold;
 }
-h2, h4 {
+h2 {
 	color: #e87722;
     font-size: 21px;
 }
@@ -114,7 +114,9 @@ h3 {
 	color: #861f41;
     font-size: 18px;
 }
-
+h4 {
+	color: #e87722;
+}
 #postBody p, ul, ol, ul li, ol li, td, dd, dt {
     background-color: #fefefe;
     padding: 0px 6px 15px 6px;
@@ -153,14 +155,7 @@ figcaption, .site-credit {
 	font-weight:normal;
     padding: 8px;
 }
-a, li a {
-	text-decoration: underline;
-	color: #e87722;
-}
-a:hover, li a:hover {
-	text-decoration: underline;
-	color: #861f41;
-}
+
 .orangebox {
 	border: 6px solid #e87722;
 	border-style: double;
@@ -227,11 +222,6 @@ a.activeMenuItem {
 		font-size: small;
 	}
 
-a.activeMenuItem {
-    background-color: #F00;
-    font-weight: bold;
-}
-
 .page-header-sidebar {
 	border-bottom: 1px solid #e87722;
     margin: 40px 0 20px;
@@ -246,18 +236,6 @@ a.activeMenuItem {
 	border-bottom: 1px solid #e87722;
 }
 
-/* 
-	Code for button links
-*/
-.btn-home {
-	border-radius:9px;
-	background-color: #861F41;
-	color: #ffffff;
-	text-decoration: none;
-}
-.btn-home:hover {
-	background-color: #e87722;
-}
 
 /*
     Copied from Canvas stylesheet to create pill style
