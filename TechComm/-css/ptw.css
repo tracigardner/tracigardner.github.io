@@ -222,8 +222,6 @@ h4 {
     padding: 8px;
     }
 #postBody p, ul, ol, ul li, ol li, td, dd, dt {
-    background-color: #fefefe;
-    padding: 0px 6px 15px 6px;
 	font-family: 'Acherus', sans-serif;
 	font-size: 16px;
 }
