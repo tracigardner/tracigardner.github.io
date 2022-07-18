@@ -1,12 +1,5 @@
 /* CSS Document */
-@viewport {
-  width: device-width;
-  initial-scale=1;
-}
-
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@charset "utf-8";
 
 /* Font Families */
 /* Acherus */
@@ -436,53 +429,33 @@ a.activeMenuItem {
 
 
 /*
-    copied over code for dropdown lists
-    from https://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap
+    copied over from DW Bootstrap Tutorial
 */
-.just-padding {
-  padding: 15px;
+/* Background color for navbar and dropdown menus */
+.navbar-custom, .navbar-custom .dropdown-menu {
+    background-color: #FFE4B5 /* moccasin; */
 }
-
-.list-group.list-group-root {
-  padding: 0;
-  overflow: hidden;
+/* Text color for navbar and dropdown menus */
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .dropdown-item {
+    color: #61300d; /* coffee */
 }
-
-.list-group.list-group-root .list-group {
-  margin-bottom: 0;
+/* Background and text colors for current page link and links on hover and focus */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .dropdown-item:hover, 
+.navbar-custom .dropdown-item:focus {
+    background-color:  #E5C69F; /* gold crayola */
+    color: #61300d; /* coffee */
+ }
+/* Border and text colors for menu icon on small screens */
+.custom-toggler.navbar-toggler {
+    border-color: #61300d; /* coffee */
+    color: #61300d; /* coffee */
 }
-
-.list-group.list-group-root .list-group-item {
-  border-radius: 0;
-  border-width: 1px 0 0 0;
+/* Hamburger icon - use same rgb values as previous rule for stroke */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(97,48,13,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
-.list-group.list-group-root > .list-group-item:first-child {
-  border-top-width: 0;
-}
-
-.list-group.list-group-root > .list-group > .list-group-item {
-  padding-left: 60px; /* was 30 and 45 */
-}
-
-.list-group.list-group-root > .list-group > .list-group > .list-group-item {
-  padding-left: 75px;
-}
-
-.list-group-item .glyphicon {
-  margin-right: 5px;
-}
-
-/* Scroll to top */
-
-/* Table of Contents styles */
-
-/* Add left-aligned line above footnotes */
-.fn1:before {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 42px auto auto 0px; /* This will left align the border. to center, use: auto 0 */
-    width: 18%; /* Change this to whatever width you want. */
-    padding-top: 15px; /* This creates some space between the element and the border. */
-    border-top: 1px solid #666666; /* This creates the border. Replace black with whatever color you want. */
-	}
