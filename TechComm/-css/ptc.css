@@ -4,13 +4,13 @@
 /* copied over from DW Bootstrap Tutorial */
 /* Background color for navbar and dropdown menus */
 .navbar-custom, .navbar-custom .dropdown-menu {
-    background-color: #FFE4B5 /* moccasin; */
+    background-color: #861f41;
 }
 /* Text color for navbar and dropdown menus */
 .navbar-custom .navbar-brand, .navbar-custom .navbar-text,
 .navbar-custom .navbar-nav .nav-link,
 .navbar-custom .dropdown-item {
-    color: #61300d; /* coffee */
+    color: #fff;
 }
 /* Background and text colors for current page link and links on hover and focus */
 .navbar-custom .nav-item.active .nav-link,
