@@ -93,13 +93,14 @@
 /* the various styles */
 /* * * * * * * * * * * */
 
-body {
+/* body {
 	font-family: 'Acherus', sans-serif;
 	font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6, p, ul, ol, td, dd, dt {
 	font-family: 'Acherus', sans-serif;
 }
+*/
 .boo ul li {
 	font-family: 'Acherus', sans-serif;
 	font-size: 18px;
