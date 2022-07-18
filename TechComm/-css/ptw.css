@@ -1,4 +1,5 @@
 /* CSS Document */
+@charset "utf-8";
 @viewport {
   width: device-width;
   initial-scale=1;
@@ -425,4 +426,34 @@ a.activeMenuItem {
     background-color:#FBEDE7;
     border-radius:6px;
     color:#D14604
+}
+
+/* copied from DW Bootstrap tutorial */
+/* Background color for navbar and dropdown menus */
+.navbar-custom, .navbar-custom .dropdown-menu {
+    background-color: #FFE4B5 /* moccasin; */
+}
+/* Text color for navbar and dropdown menus */
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .dropdown-item {
+    color: #61300d; /* coffee */
+}
+/* Background and text colors for current page link and links on hover and focus */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .dropdown-item:hover, 
+.navbar-custom .dropdown-item:focus {
+    background-color:  #E5C69F; /* gold crayola */
+    color: #61300d; /* coffee */
+ }
+/* Border and text colors for menu icon on small screens */
+.custom-toggler.navbar-toggler {
+    border-color: #61300d; /* coffee */
+    color: #61300d; /* coffee */
+}
+/* Hamburger icon - use same rgb values as previous rule for stroke */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(97,48,13,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
