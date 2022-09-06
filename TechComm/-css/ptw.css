@@ -453,7 +453,7 @@ dl.faq .desc {
   display: none;
   background-color: #efefef; /* was #fed; */
   border: 6px double #861f41; /* added */
-  padding: 20px 5px 5px 20px; /* added */
+  padding: 10px 5px 5px 20px; /* added */
 }
 
 dl.faq button:hover,
