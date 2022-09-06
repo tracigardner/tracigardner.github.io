@@ -424,60 +424,6 @@ a.activeMenuItem {
     color:#D14604
 }
 
-/* FAQ styles copied from CodePen */
-/* via https://www.w3.org/WAI/ARIA/apg/example-index/disclosure/disclosure-faq */
-dl.faq button {
-  margin: 0;
-  margin-top: 16px;
-  padding: 4px 8px;
-  font-weight: bold;
-  font-size: 110%;
-  border: none;
-  background-color: transparent;
-  border-radius: 5px;
-}
-
-dl dd {
-  margin: 0;
-  padding: 0;
-  margin-left: 1.5em;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #861f41; /* was #777 */
-}
-
-dl.faq .desc {
-  margin: 0;
-  margin-top: 0.5em; /* was .25em */
-  padding: 0.25em;
-  font-size: 110%;
-  display: none;
-  background-color: #efefef; /* was #fed; */
-  border: 6px double #861f41; /* added */
-  padding: 10px 5px 5px 20px; /* added */
-}
-
-dl.faq button:hover,
-dl.faq button:focus {
-  padding: 2px 6px;
-  background-color: #fff; /* was #def; */
-  cursor: pointer;
-}
-/* border: 2px solid #861f41; -- removed -- was 2px solid #005a9c */
-
-dl.faq button[aria-expanded="false"]::before {
-  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' style='forced-color-adjust: auto;'%3E%3Cpolygon points='1 1, 1 11, 8 6' fill='currentcolor' stroke= 'currentcolor' /%3E%3C/svg%3E%0A");
-  position: relative;
-  left: -2px;
-}
-
-dl.faq button[aria-expanded="true"]::before {
-  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' style='forced-color-adjust: auto;'%3E%3Cpolygon points='1 1, 11 1, 6 8' fill='currentcolor' stroke= 'currentcolor' /%3E%3C/svg%3E ");
-  position: relative;
-  left: -4px;
-  top: 2px;
-}
-
-
 
 /*
     copied over code for dropdown lists
