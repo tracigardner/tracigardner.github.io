@@ -459,7 +459,7 @@ dl.faq button:hover,
 dl.faq button:focus {
   padding: 2px 6px;
   background-color: #fff; /* was #def; */
-/* border: 2px solid #861f41; -- removed - was  2px solid #005a9c */
+/* border: 2px solid #861f41; -- removed -- was  2px solid #005a9c */
   cursor: pointer;
 }
 
