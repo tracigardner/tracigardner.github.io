@@ -447,12 +447,13 @@ dl dd {
 
 dl.faq .desc {
   margin: 0;
-  margin-top: 0.25em;
+  margin-top: 0.5em; /* was .25em */
   padding: 0.25em;
   font-size: 110%;
   display: none;
   background-color: #efefef; /* was #fed; */
   border: 6px double #861f41; /* added */
+  padding: 0 5px 5px 20px; /* added */
 }
 
 dl.faq button:hover,
