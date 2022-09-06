@@ -451,14 +451,15 @@ dl.faq .desc {
   padding: 0.25em;
   font-size: 110%;
   display: none;
-  background-color: #fed;
+  background-color: #efefef; /* was #fed; */
+  border: 6px double #861f41; /* added */
 }
 
 dl.faq button:hover,
 dl.faq button:focus {
   padding: 2px 6px;
-  background-color: #efefef; /* was #def; */
-  border: 6px double #861f41; /* was  2px solid #005a9c */
+  background-color: #fff; /* was #def; */
+  border: 2px solid #861f41; /* was  2px solid #005a9c */
   cursor: pointer;
 }
 
@@ -474,11 +475,6 @@ dl.faq button[aria-expanded="true"]::before {
   left: -4px;
   top: 2px;
 }
-
-
-
-
-
 
 
 
