@@ -424,6 +424,10 @@ a.activeMenuItem {
     color:#D14604
 }
 
+.faq dd {
+    margin-bottom: 12px;
+}
+
 
 /*
     copied over code for dropdown lists
