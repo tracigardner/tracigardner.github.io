@@ -274,7 +274,7 @@ a:hover, li a:hover {
 	border: 6px solid #861f41;
 	border-style: double;
 	box-sizing: border-box;
-	padding: 0 5px 5px 20px;
+	padding: 10px 5px 5px 20px;
 }
 .listDS li {
 	margin-top: 18px;
