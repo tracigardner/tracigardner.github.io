@@ -4,6 +4,10 @@
 body {
      font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";   
     }
+.tw-header {
+    margin-top: 9px;
+    border: 3px solid #861f41;
+}
 .masthead h1 {
     font-weight: bold;
     color: #861f41;
@@ -22,6 +26,15 @@ h3 {
 h4 {
     color: #e87722;
     }
+
+.ptop-row {
+    padding-top: 9px;
+}
+.border-left-line {
+    border-left: 1px solid #d7d2cb;
+}
+
+
 /* Code for button links */
 .btn-home {
 	border-radius:9px;
