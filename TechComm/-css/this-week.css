@@ -33,7 +33,10 @@ h4 {
 .border-left-line {
     border-left: 1px solid #d7d2cb;
 }
-
+.border-top-line {
+    border-top: 1px solid #d7d2cb;
+    padding: 6px;
+}
 
 /* Code for button links */
 .btn-home {
@@ -46,6 +49,12 @@ h4 {
 	background-color: #e87722;
     color: #000000;
 }
+
+/* Footer */
+.footer-bkgd {
+    border: 3px solid #861f41;
+    background-color: #861f41;
+}
 .footer {
         color: #ffffff;
         background-color: #861f41;
@@ -55,3 +64,6 @@ h4 {
         color: #ffffff;
         text-decoration: underline;
     }
+.footer-divider-line {
+    border-top: 1px solid #e87722;
+}
