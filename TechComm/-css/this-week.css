@@ -49,6 +49,10 @@ h4 {
   border: 1px solid #861f41;
 }
 
+.trow-right {
+  border-left: 1px solid #861f41;
+}
+
 /* Code for button links */
 .btn-home {
 	border-radius:9px;
