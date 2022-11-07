@@ -38,6 +38,15 @@ h4 {
     padding: 6px;
 }
 
+/* Stripes for Div Rows */
+.trow:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.trow:nth-child(even) {
+  background-color: #e5e1e6;
+}
+
 /* Code for button links */
 .btn-home {
 	border-radius:9px;
