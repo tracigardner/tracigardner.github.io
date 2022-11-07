@@ -27,6 +27,14 @@ h4 {
     color: #e87722;
     }
 
+.skipline li {
+    margin-bottom: 9px;
+}
+.null li {
+    margin-bottom: 0px;
+}
+
+
 .ptop-row {
     padding-top: 9px;
 }
