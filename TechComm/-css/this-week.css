@@ -41,6 +41,7 @@ h4 {
 /* Stripes for Div Rows */
 .trow:nth-child(odd) {
   background-color: #ffffff;
+  border: 1px solid #e5e1e6;
 }
 
 .trow:nth-child(even) {
