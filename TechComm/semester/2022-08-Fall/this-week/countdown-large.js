@@ -44,7 +44,7 @@ function CountBack(secs) {
 }
 
 function putspan(backcolor, forecolor) {
- document.write("<span id='cntdwn' style='background-color:" + backcolor + "; color:" + forecolor + ";'></span>");
+ document.write("<span id='cntdwn' style='background-color:" + backcolor + "; color:" + forecolor + "font-size:200px;'></span>");
 }
 /* original function
 function putspan(backcolor, forecolor) {
