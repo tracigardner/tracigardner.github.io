@@ -51,7 +51,7 @@ function putspan(backcolor, forecolor) {
  document.write("<table width='516' cellpadding='6'>");
  document.write("<tr><td bgcolor='#FFFFFF'>");
  document.write("<center><span id='cntdwn' style='background-color:" + backcolor + 
-                "; color:" + forecolor + "; font-family:verdana; font-size:medium;'></span>");
+                "; color:" + forecolor + "; font-family:verdana; font-size:large;'></span>");
  document.write("</center></td></tr></table>");
 }
 */
