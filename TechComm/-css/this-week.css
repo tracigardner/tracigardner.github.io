@@ -90,3 +90,6 @@ h4 {
 .footer-divider-line {
     border-top: 1px solid #e87722;
 }
+#cntdwn {
+    font-size: 2rem;
+}
