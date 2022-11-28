@@ -41,6 +41,9 @@ h4 {
 .border-left-line {
     border-left: 1px solid #d7d2cb;
 }
+.border-bottom-line {
+    border-bottom: 1px solid #d7d2cb;
+}
 .border-top-line {
     border-top: 1px solid #d7d2cb;
     padding: 6px;
