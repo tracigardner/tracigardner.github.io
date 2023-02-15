@@ -26,6 +26,10 @@ h3 {
 h4 {
     color: #e87722;
     }
+a, a:link, a:visited, a:hover, a:active {
+    color: #e87722;
+    text-decoration: underline;
+} 
 
 .skipline li {
     margin-bottom: 9px;
