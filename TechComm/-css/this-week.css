@@ -111,3 +111,12 @@ a, a:link, a:visited, a:hover, a:active {
     text-align: left;
     vertical-align: top;
 }
+.table-topleft:nth-child(odd) {
+  background-color: #ffffff;
+  border: 1px solid #861f41;
+}
+
+.table-topleft:nth-child(even) {
+  background-color: #e5e1e6;
+  border: 1px solid #861f41;
+}
