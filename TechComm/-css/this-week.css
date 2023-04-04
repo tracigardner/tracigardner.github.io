@@ -56,7 +56,10 @@ a, a:link, a:visited, a:hover, a:active {
     border-top: 1px solid #d7d2cb;
     padding: 6px;
 }
-
+.border-top-dline {
+    border-top: 3px solid #861f41;
+    padding: 6px;
+}
 /* Stripes for Div Rows */
 .trow:nth-child(odd) {
   background-color: #ffffff;
