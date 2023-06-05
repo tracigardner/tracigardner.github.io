@@ -2,7 +2,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: #333333;
-    // background-color: aliceblue;
+    background-color: #f2f0f2;
 }
 
 a {
@@ -10,4 +10,13 @@ a {
     text-decoration: underline;
     font-weight: bolder;
     /* applesauce love setting */
+}
+
+.sidemenu {
+    background-color: #F2F0F2;
+}
+
+.sidemenu a {
+    color: #e87722;
+    text-decoration: underline;
 }
