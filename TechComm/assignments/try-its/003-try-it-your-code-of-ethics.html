@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>TITLE HERE</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>TITLE HERE</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+        <p style="padding: 12px; border: 3px double #861f41; background-color: #fff8dc; font-size: 24px;">You can use your textbook, any notes that you have, and the available course pages in Canvas for help as you work on these questions.</p>
+        <p>This activity asks you to think about your experience in the workplace, either by observation or as an employee. You will share a writing strategy that you have seen or used in a workplace that you would recommend to someone or try yourself.&nbsp;</p>
+        <p><strong>Assessment:</strong> Canvas automatically marks your work Complete when you submit it. All you have to do is TRY the activity. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
+
+
+        <h2>Question 1</h2>
+
+        <p><img style="float: right; margin: 0px 0px 15px 15px;" src="https://tracigardner.github.io/TechComm/-images/memes/moral-gray-area-lolcat.jpg" alt="gray lolcat with the caption, Moral gray area cat ponders ur ethical dilemma" width="400" height="300" />Find the codes of ethic for your intended profession. Most disciplines will have several. For example, a quick Google search for "Code of ethics for engineers" presented over 3 million hits. So narrow your search. Instead of engineering, try electrical engineering. Here are some examples:</p>
+        <ul>
+            <li>An electrical engineer would probably focus on the <a href="http://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank" rel="noopener">IEEE Code of Ethics</a>.</li>
+            <li>A biologist might focus on the <a href="https://conbio.org/about-scb/who-we-are/code-of-ethics" target="_blank" rel="noopener">Code of Ethics for the Society for Conservation Biology</a>.</li>
+        </ul>
+        <p>Once you identify the principles for your field, do the following:</p>
+        <ol>
+            <li>Find the code of ethics for your profession.</li>
+            <li>Read it.</li>
+            <li>
+                In a thoughtful response of 150-200 words (75 pts), consider the following questions:
+                <ul>
+                    <li>Have you read this before? </li>
+                    <li>Have the professors in your discipline referred to this in class?</li>
+                    <li>What struck you as important or noteworthy about this code?</li>
+                    <li>Does it align with any of the definitions in the ethics chapter of our text?</li>
+                    <li>Have you seen this code in practice -- for example in an internship or co-op or summer employment?</li>
+                </ul>
+            </li>
+        </ol>
+        <ul>
+            <li>Where do you find principles explicitly related to writing or communication in the code of ethics for your field?</li>
+            <li>Where are connections less obvious?</li>
+            <li>Are there ideas about writing and communication that you think they are missing?</li>
+        </ul>
+        <p>After you analyze the code for your field, share what you have found in your submission, including this information:</p>
+        <ul>
+            <li>Identify your field and the relevant ethical code.</li>
+            <li>Provide a link to your ethical code.</li>
+            <li>Talk about what you found about writing and communication in your field&rsquo;s ethical code. What makes something an ethical document in your field?</li>
+        </ul>
+        <p>Canvas is set so that you must post your response before seeing the response of others.</p>
+        <p>4. Respond to a post by one of your classmates (25 pts).</p>
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
