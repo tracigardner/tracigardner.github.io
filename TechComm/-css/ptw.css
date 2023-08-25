@@ -424,6 +424,10 @@ dt {
   background-color: #861f41;
   color: #ffffff;
 }
+.syllabusTable td {
+  vertical-align: top;
+  color: #c64600;
+}
 
 div.wrapright,
 img.wrapright,
