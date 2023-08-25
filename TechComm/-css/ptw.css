@@ -430,8 +430,8 @@ dt {
 }
 
 .syllabusCalendar td {
-  background-color: #e87722;
-  color: #000000;
+  background-color: #e87722 !important;
+  color: #000000 !important;
 }
 
 div.wrapright,
