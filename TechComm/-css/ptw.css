@@ -432,6 +432,7 @@ dt {
 .calendar td {
   background-color: #e87722 !important;
   color: #000000 !important;
+  font-weight: bold;
 }
 
 div.wrapright,
