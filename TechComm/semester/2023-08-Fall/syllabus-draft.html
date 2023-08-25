@@ -20,7 +20,7 @@
             $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
             $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
             $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-            $('helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
         });
     </script>
 
@@ -35,9 +35,6 @@
             s.parentNode.insertBefore(gcse, s);
         })();
     </script>
-
-
-
 </head>
 
 <body>
@@ -45,11 +42,11 @@
     <div id="topinfo"></div>
     <script>
         if (window.location !== window.parent.location) {
-            document.getElementById("demo").innerHTML = "<div id=&rsquo;content&rsquo;></div>"
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("topinfo").innerHTML = "<header><div id=&rsquo;top-rectangle&rsquo; style=&rsquo;background-color: #861f41;&rsquo;>&nbsp;</div><div id=&rsquo;jumbotron&rsquo;></div></header><div id=&rsquo;topnav&rsquo;></div><main style=&rsquo;vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;&rsquo;><div style=&rsquo;width: 400px;float: right;&rsquo;><gcse:search></gcse:search></div><h1>Syllabus, Technical Writing, Fall 2023</h1>"
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Syllabus, Technical Writing, Fall 2023</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
@@ -541,11 +538,11 @@
     <div id="bottominfo"></div>
     <script>
         if (window.location !== window.parent.location) {
-            document.getElementById("bottominfo").innerHTML = "<div id=&rsquo;helpbar&rsquo;></div>"
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("bottominfo").innerHTML = "</main><footer><div id=&rsquo;footer&rsquo;></div></footer>"
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
