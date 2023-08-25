@@ -397,6 +397,9 @@ dt {
   font-family: "Acherus", sans-serif;
   font-size: 16px;
 }
+.b0ld {
+  font-weight: bold;
+}
 .alternateTable {
   border-collapse: collapse;
   width: 100%;
