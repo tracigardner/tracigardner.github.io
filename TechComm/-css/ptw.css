@@ -429,6 +429,11 @@ dt {
   color: #861f41;
 }
 
+.syllabusCalendar td {
+  background-color: #e87722;
+  color: #000000;
+}
+
 div.wrapright,
 img.wrapright,
 figure.wrapright {
