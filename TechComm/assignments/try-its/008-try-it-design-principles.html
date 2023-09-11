@@ -1,107 +1,113 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Try-It #8: Using Design Principles</title>
 
-      <style>
-          body {
-              font-size: 16px;
-          }
-      </style>
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Try-It #8: Using Design Principles</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-size: 16px;
+    }
+  </style>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
-      document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Try-It #8: Using Design Principles</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Try-It #8: Identifying Document Design Principles</h1>"
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
-<p style="padding: 12px; border: 3px double #861f41; background-color: #fff8dc; font-size: 24px;">You can use your textbook, any notes that you have, and the available course pages in Canvas for help as you work on these questions.</p>
-<p>This activity asks you to evaluate how a document uses four design principles (Contrast, Repetition, Alignment, and Proximity, or CRAP). Use these same questions to check the design of your Technical Description assignment.</p>
-<p><strong>Assessment</strong>: Canvas automatically marks your work Complete when you submit it. &nbsp;All you have to do is TRY the activity. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
-<h2>Text Statement</h2>
-<p>Use embed code</p>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+    <p style="padding: 12px; border: 3px double #861f41; background-color: #fff8dc; font-size: 24px;">You can use the online texts, any notes that you have, and the available course pages in Canvas for help as you work on these questions. You can also talk to one another.</p>
+
+    <h2 style="color: #861f41; font-size: 18pt;">What You Need to Do</h2>
+    <p>Evaluate how a document uses four design principles (Contrast, Repetition, Alignment, and Proximity, or CRAP) by answering the questions below.</p>
+    <h2 style="color: #861f41; font-size: 18pt;">How This Activity Connects to the Course</h2>
+    <p>You will evaluate the design of a User Documentation webpage for your second Major Project. You can being that work by applying the document design principles in this activity to the webpage you are analyzing.</p>
+    <h2 style="color: #861f41; font-size: 18pt;">Assessment</h2>
+    <p>Canvas automatically marks your work Complete when you submit it. All you have to do is TRY the activity. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
+
+
+    <h2>Text Statement</h2>
+    <p>Use embed code</p>
     <p><iframe style="border: 0; height: 900px; width: 100%;" src="https://tracigardner.github.io/TechComm/document-design/page--put-crap-in-your-document-design.html" allowfullscreen="allowfullscreen"></iframe></p>
-  <h2>Question 1</h2>
-  <p>Choose one of the following documents you have written for this class: </p>
-  <ul>
-    <li>Introduction Video</li>
-    <li>Label Analysis Full Draft</li>
-    <li>Technical Description Rough Draft</li>
-  </ul>
-  <p>In your answer tell me which one you have chosen. </p>
-  <p>If you have not written any of the documents listed, chose something from another course and tell me about it in your answer. Webpages, interface design, posters, and slide presentations will work.</p>
-  <h2>Question 2</h2>
+    <h2>Question 1</h2>
+    <p>Choose a user documentation webpage that is suitable for the User Documentation and Reflection Memo Assignment. What document will you use? Include a link to the document.</p>
+    <p>Alternately, choose another technical writing webpage if you are not ready to choose the webpage for the second Major Project.</p>
+    <p>In your answer tell me which one you have chosen. </p>
+
+    <h2>Question 2</h2>
     <p>How does your document use the design principle of <strong>C</strong>ontrast? Consider color, tone/value, size/shape, and direction. </p>
     <p>What could you do to improve the use of Contrast in the document?</p>
-    <p>For additional help, see p. 256 of Markel &amp; Selber.</p>
-<h2>Question 3</h2>
+
+    <h2>Question 3</h2>
     <p>How does your document use the design principle of <strong>R</strong>epetition? Consider both text patterns (like typeface and font size) and visual patterns (such as use of color and size of photos).</p>
     <p>What could you do to improve the use of Repetition in the document?</p>
-    <p>For additional help, see p. 256 of Markel &amp; Selber.</p>
+
     <h2>Question 4</h2>
-  <p>How does your document use the design principle of <strong>A</strong>lignment? Consider horizontal and vertical alignment.</p>
-  <p>What could you do to improve the use of Alignment in the document?</p>
-  <p>For additional help, see p. 256 of Markel &amp; Selber.</p>
-  <h2>Question 5</h2>
-  <p>How does your document use the design principle of <strong>P</strong>roximity? </p>
-  <p>What could you do to improve the use of Proximity in the document?</p>
-  <p>For additional help, see p. 256 of Markel &amp; Selber.</p>
-  <h2>Question 6  </h2>
-  <p>I have neither given nor received unauthorized assistance on this assignment.</p>
+    <p>How does your document use the design principle of <strong>A</strong>lignment? Consider horizontal and vertical alignment.</p>
+    <p>What could you do to improve the use of Alignment in the document?</p>
+
+    <h2>Question 5</h2>
+    <p>How does your document use the design principle of <strong>P</strong>roximity? </p>
+    <p>What could you do to improve the use of Proximity in the document?</p>
+
+    <h2>Question 6 </h2>
+    <p>I have neither given nor received unauthorized assistance on this assignment.</p>
     <ul>
       <li style="margin-bottom: 9px;">True</li>
       <li style="margin-bottom: 9px;">False</li>
     </ul>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
