@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>UX Project Submission Wrapper</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'> </div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>UX Project Submission Wrapper</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+        <h3 style="color:#861f41; font-size: 15pt; border-bottom: 1px solid #861f41">What You Need to Do</h3>
+        <p><img src="https://tracigardner.github.io/TechComm/-images/noun-reflection-3339061.png" alt="Maroon Hokie looking at its reflection in a mirror" class="alignright" style="width: 249px;height: 199px;">Reflect on the work that you put into your User Documentation Revision & Memo Assignment and then record some basic information about how you worked. You&rsquo;ll return to this project wrapper after you receive feedback on your project as you complete the UX Project Feedback Wrapper.</p>
+
+        <h3 style="color:#861f41; font-size: 15pt; border-bottom: 1px solid #861f41">How This Activity Connects to the Course</h3>
+        <p>For each Major Project in the class, you&rsquo;ll complete a wrapper when you turn in your project and then another when you get feedback on your submission. These wrappers ask you to reflect on how you plan, work, adjust, and evaluate your writing and project management in this course. They should help you recognize strategies that work for you and strategies that you need to change or improve.</p>
+
+        <h3 style="color:#861f41; font-size: 15pt; border-bottom: 1px solid #861f41">Instructions</h3>
+        <ol>
+            <li>Answer each of the questions below to the best of your ability. </li>
+            <li>Know that your answers do not need to be exact. You&rsquo;ll notice ranges of numbers for some questions.</li>
+            <li>Include enough details for someone else to understand how much effort you put in as you worked.</li>
+        </ol>
+
+        <h3 style="color:#861f41; font-size: 15pt; border-bottom: 1px solid #861f41">Assessment</h3>
+        <p style="margin-bottom: 24px;">Canvas automatically marks your work Complete when you submit it. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
+
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
