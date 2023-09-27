@@ -480,7 +480,8 @@ li a:hover {
 
 .skipline li,
 .skipline dl,
-.skipline dd {
+.skipline dd,
+.skipline details {
   margin-bottom: 12px;
 }
 
