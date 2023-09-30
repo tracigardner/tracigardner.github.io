@@ -538,6 +538,11 @@ a.activeMenuItem {
   font-size: small;
 }
 
+.biblio {
+  padding-left: 40px;
+  margin-left: -40px;
+}
+
 a.activeMenuItem {
   background-color: #f00;
   font-weight: bold;
