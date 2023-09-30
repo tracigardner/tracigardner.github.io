@@ -540,7 +540,7 @@ a.activeMenuItem {
 
 .biblio {
   padding-left: 40px;
-  margin-left: -40px;
+  text-indent: -40px;
 }
 
 a.activeMenuItem {
