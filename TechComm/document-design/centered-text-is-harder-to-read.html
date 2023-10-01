@@ -1,69 +1,76 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Centered Text Is Harder to Read</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Centered Text Is Harder to Read</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Centered Text Is Harder to Read</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-<p><img style="float: right; border: 3px solid #666; margin-left: 15px; margin-bottom: 15px;" src="../-images/center-pattern-696x1024.png" alt="Zig Zag Reading Pattern Caused by Centered Text" width="271" height="399" />The <a href="https://canvas.vt.edu/courses/166227/pages/f-shaped-reading-pattern" target="_blank">F-shaped reading pattern</a> comes into play with the tip to avoid centered text alignment in your documents.</p>
-<p>When you center text, the left margin zig zags back and forth down the page (as shown in the image on the right), which makes it hard to read in the F-shaped pattern that people prefer.</p>
-<p>Instead of skimming down the left margin to look for the highlights and headings, the eye has to search back and forth for the information on the page, as shown in the image on the right.</p>
-<h2>Learn More</h2>
-<p>Watch the LinkedIn Learning tutorial video, <a href="https://www.linkedin.com/learning/the-33-laws-of-typography/09-favor-flush-left-ragged-right-body-text?autoplay=true&u=57888345" target="_blank" rel="noopener">Favor flush-left, ragged-right body text</a> (4m14s), for additional explanations and tips on this important guideline for the way that text is aligned on a page.</p>
-</div>
-<div id="bottominfo" style="clear:both;"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <p><img style="float: right; border: 3px solid #666; margin-left: 15px; margin-bottom: 15px;" src="../-images/center-pattern-696x1024.png" alt="Zig Zag Reading Pattern Caused by Centered Text" width="271" height="399" />The <a href="https://canvas.vt.edu/courses/177045/pages/f-shaped-reading-pattern" target="_blank">F-shaped reading pattern</a> comes into play with the tip to avoid centered text alignment in your documents.</p>
+
+    <p>When you center text, the left margin zig zags back and forth down the page (as shown in the image on the right), which makes it hard to read in the F-shaped pattern that people prefer.</p>
+
+    <p>Instead of skimming down the left margin to look for the highlights and headings, the eye has to search back and forth for the information on the page, as shown in the image on the right.</p>
+
+    <h2>Learn More</h2>
+    <p>Watch the LinkedIn Learning tutorial video, <a href="https://www.linkedin.com/learning/the-33-laws-of-typography/09-favor-flush-left-ragged-right-body-text?autoplay=true&u=57888345" target="_blank" rel="noopener">Favor flush-left, ragged-right body text</a> (4m14s), for additional explanations and tips on this important guideline for the way that text is aligned on a page.</p>
+
+  </div>
+  <div id="bottominfo" style="clear:both;"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
