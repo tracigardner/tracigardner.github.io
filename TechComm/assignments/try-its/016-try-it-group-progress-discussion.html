@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Try-It #15: Group Project Audience Analysis</title>
+    <title>Try-It #16: Group Progress Discussion</title>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -46,7 +46,7 @@
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Try-It #15: Group Project Audience Analysis</h1>"
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Try-It #16: Group Progress Discussion</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
@@ -68,17 +68,17 @@
         <p style="margin-bottom: 24px;">I will mark your participation in this Discussion Complete (or Incomplete) after the end of the Grace Period passes. Allow me several days to read and mark all your posts. I will assess group members individually based on their participation. Allow me several days to read and mark your work. </p>
 
         <h2 style="color: #861f41; font-size: 18pt;">How to Do It</h2>
-        <ol class="skipline">
+        <ol id="how-to-do-it" class="skipline">
             <li>Read the <a href="https://canvas.vt.edu/courses/177045/pages/progress-reports-organization" target="_blank">Progress Report: Organization page</a>, looking for details on the information that is customarily included in a progress report.</li>
 
             <li>If needed, remind yourself of the tasks you are responsible for in your group&rsquo;s proposal by reviewing the Division of Labor for Your Proposal section of your group&rsquo;s Try-It #13: Group Contract, Schedule, & Meeting Minutes.</li>
 
-            <li>Reply to this discussion with an update to your group members on the work you have so far on the <a href="https://canvas.vt.edu/courses/177045/assignments/1835482" target="_blank">Group Proposal for Your Recommendation Report</a>, following these steps:
+            <li id="update-post">In <strong>your first post</strong>, reply to this discussion with an update to your group members on the work you have so far on the <a href="https://canvas.vt.edu/courses/177045/assignments/1835482" target="_blank">Group Proposal for Your Recommendation Report</a>, following these steps:
 
-                <ol style="list-style: lower-alpha;">
-                    <li id="intro">Begin with an introduction and greeting to your group. The introduction section does not need a heading.</li>
+                <ol id="update-steps" style="list-style: lower-alpha;">
+                    <li id="intro">Begin with an <strong>introduction</strong> and greeting to your group. The introduction section does not need a heading.</li>
 
-                    <li id="headings">Create headings for these sections of your informal progress report, which follow the introduction:
+                    <li id="headings">Create <strong>headings</strong> for these sections of your informal progress report, which follow the introduction:
                         <ul class="null">
                             <li>Work Completed</li>
 
@@ -88,9 +88,9 @@
                         </ul>
                     </li>
 
-                    <li>Use <a title="How do I add and modify text in the Rich Content Editor as a student?" href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-add-and-modify-text-in-the-Rich-Content-Editor-as-a/ta-p/322" target="_blank">document design features</a> to make your headings stand out from the rest of the content in your post.
+                    <li id="doc-design">Use <a title="How do I add and modify text in the Rich Content Editor as a student?" href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-add-and-modify-text-in-the-Rich-Content-Editor-as-a/ta-p/322" target="_blank">document design features</a> to make your headings stand out from the rest of the content in your post.
                         <em>Tips:</em> You should use the <a href="https://canvas.vt.edu/courses/177045/pages/crap-design-principles" target="_blank">CRAP Design Principles</a>:
-                        <ul class="null">
+                        <ul class="null" id="crap">
                             <li><strong>C</strong>ontrast will make your headings stand out from the rest of the text.</li>
                             <li><strong>R</strong>epetition applies to using the same format for all three headings.</li>
                             <li><strong>A</strong>lignment of the headings with the body and with one another makes the text easy to read.</li>
@@ -98,118 +98,30 @@
                         </ul>
                     </li>
 
-                    <li id="work-completed">
-                        Section that
-                        tells the reader what you've been able to accomplish so far.
-                        uses specific, concrete details.
-                        organizes the information with subheadings, using these guidelines:
-                        Include a brief sentence or two of introduction between your main heading and the first subheading. This sentence can be an advance organizer.
-                        Ensure that your subheadings are visibly different from your heading. Typically that are a slightly smaller font than the heading (but still bigger than the font for the paragaphs). They can also be a different color or size.
+                    <li id="work-completed">Add details under the <strong>Work Completed</strong> heading that describes what you have accomplished so far on your sections of the proposal. Use clear and specific details.
                     </li>
 
-                    <li id="work-scheduled">Work Scheduled<br />
-                        identifies work you still have left to do.
-                        introduces the schedule with a simple explanation of the information to follow.
-                        includes a Gantt Chart with an updated schedule for the group.
-                        concludes with a brief summary of the work that still needs to be done.
+                    <li id="work-scheduled">Outline the work you still need to do under the <strong>Work Scheduled</strong> heading. Include planned dates for when you will complete the work so that your group members know when to expect your contributions.
                     </li>
 
-                    <li id="conclusion">Conclusion<br />
-
-                        wraps up the report.
-                        provides contact information should your reader have additional questions.
+                    <li id="conclusion">Wrap up your post under the <strong>Conclusion</strong> heading. If you need any help or want to ask for feedback, add your questions or concerns here.
                     </li>
 
-                    </ul>
-            </li>
-
-
-
-
-
-        </ol>
-
-
-        </li>
-
-        <li>alkjs</li>
-
-
-
-        </ol>
-
-
-
-
-
-
-
-        <p>In <strong>your first post</strong>, be sure to mention these things:</p>
-        <ul>
-            <li>Provide a bit of info about yourself (name, major, hometown, hobbies, anything that makes you YOU).</li>
-            <li>Talk about your schedule for the term and how you like to work so that you can begin to coordinate your workflows.</li>
-        </ul>
-        <p>In <strong>your second (and additional) posts</strong>, connect with other group members and negotiate how you will work together next week, when we&rsquo;ll have two group Discussions as your Try-Its for the week.</p>
-        <p><strong>Optionally</strong>, you can talk about how to inform one another if you&rsquo;ll be offline for several days as well as how to connect if someone isn&rsquo;t responding. Make whatever communication plans you want as a team.</p>
-
-
-
-
-        <ol class="skipline">
-
-            <li>Connect with the members of your group to arrange a meeting time that fits everyone&rsquo;s schedules. You can meet using whatever system works best for your group. Here are some possibilities:
-                <ul>
-                    <li>Share your sites in a Zoom meeting.</li>
-
-                    <li>Post ideas in a Canvas Group Discussion. The following links can help you:
-                        <ul class="null">
-                            <li><a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-view-my-Canvas-groups-as-a-student/ta-p/281" target="_blank">How do I view my Canvas groups as a student?</a></li>
-
-                            <li><a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-create-a-discussion-in-a-group/ta-p/350" target="_blank">How do I create a discussion in a group?</a></li>
-                        </ul>
-                    </li>
-
-                    <li>Meet in person on campus or another convenient location.</li>
-
-                </ul>
-            </li>
-
-            <li>Before you meet, review the Group Project Audience Analysis Form, choosing one of the options below:
-                <ul class="null" id="audform">
-                    <li><a href="https://canvas.vt.edu/courses/177045/files/30324774?wrap=1" target="_blank">Download Microsoft Word file</a></li>
-
-                    <li><a href="https://docs.google.com/document/d/169tVBR9hnXXaU9P-Dy_YEBJ8igvd_ZvCpZsVQe47tuA/edit?usp=sharing" target="_blank">Open the Google Doc version</a></li>
-
-                </ul>
-            </li>
-
-            <li>Meet with your group as scheduled to arrange the work on this activity. You should be able to assign sections quickly. You can also collaborate during your meeting to fill out the form together.</li>
-
-            <li>Download a copy of the Group Project Audience Analysis Form (see #2 above) for your group to fill in, and upload it to your Project Folder (which you created during Week 7).</li>
-
-            <li>Choose a leader for each section of the form. There are five sections:
-                <ol style="list-style: lower-alpha;" class="null">
-                    <li>Decision-Maker&rsquo;s Basics</li>
-                    <li>Decision-Maker&rsquo;s Social Media</li>
-                    <li>Decision-Maker&rsquo;s Professional Background</li>
-                    <li>Decision-Maker&rsquo;s Relationship to the Topic</li>
-                    <li>Apply Your Audience Profile</li>
                 </ol>
             </li>
 
-            <li>If group members will collaborate on sections, list additional group members for each section by the Helpers label.</li>
-
-            <li>Make any other decisions necessary to ensure that your group fills in all sections of the profile.</li>
-
-            <li>Choose a day and time when group members should have completed their sections so that you can turn your work in.</li>
-
-            <li>Submit your completed file here by one of the following methods:
-                <ul>
-                    <li>Upload a copy of the file</li>
-                    <li>Submit the link to your file in your Project Folder.</li>
-                </ul>
+            <li id="read-posts">Read all of the progress updates from the other members in your group.
             </li>
+
+            <li id="replies-second-post">In <strong>your second (and additional) posts</strong>, reply to other group members as appropriate. You can offer encouragement, help with challenges, and provide feedback to one another. <em>Tip:</em> The goal of your replies is to support each other and make sure you&rsquo;re making progress on your group proposal. Don&rsquo;t post replies like those in the cartoon below just to increase your number of posts (I don&rsquo;t count posts.)<br />
+                <img src="https://tracigardner.github.io/TechComm/-images/memes/discussion-meme-two-shown.jpg" alt="Two memes about college discussion posts.">
+
+
+
+            </li>
+
         </ol>
+
 
     </div>
 
