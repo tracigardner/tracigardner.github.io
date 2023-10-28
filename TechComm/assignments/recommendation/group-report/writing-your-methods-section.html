@@ -1,139 +1,156 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Writing Your Methods Section</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Writing the Methods section for a Recommendation Report">
+  <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+  <meta name="author" content="Traci Gardner">
+  <meta name="revised" content="10/28/2023" />
+  <title>Writing Your Methods Section</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
+
 <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Writing Your Methods Section</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
-  <h2 style="margin-top: 0px !important;margin-bottom: 0px !important;">Overview</h2>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+    <h2 style="margin-top: 0px !important;margin-bottom: 0px !important;">Overview</h2>
     <figure style="float: center;margin: 0px 0px 9px 9px;">
-        <img src="https://tracigardner.github.io/TechComm/-images/recommendation/Rec-report-body-methods.png" alt="Flowchart showing this is the second section of the report body: 1. Introduction. What is this document about? 2. Methods. What did you do? 3. Results. What did you see or determine? 4. Conclusions. What does it mean? 5. Recommendations. What should we do?" width="792" height="146">
+      <img src="https://tracigardner.github.io/TechComm/-images/recommendation/Rec-report-body-methods.png" alt="Flowchart showing this is the second section of the report body: 1. Introduction. What is this document about? 2. Methods. What did you do? 3. Results. What did you see or determine? 4. Conclusions. What does it mean? 5. Recommendations. What should we do?" width="792" height="146">
       <figcaption style="color: #861f41;font-size: 1em;">The Sections of the Body of the Recommendation Report</figcaption>
     </figure>
-<p>The Methods section tells your readers how you conducted your research. You explain exactly what you did to gather the information for your report. Save the details on what you found out for the Results section. Do not include them in your Methods section.</p>
-<h2>Where You Can Find Help</h2>
-<ul>
-  <li>From Markel &amp; Selber, Chapter 18:<br />
-    <ul class="skipline">
-      <li class="skipline">The details on the Methods Section, from p. 493:<br>
-        “The methods section answers the question ‘What did you do?’ In drafting the methods section, consider your readers&rsquo; knowledge of the field, their perception of you, and the uniqueness of the project, as well as their reasons for reading the report and their attitudes toward the project. Provide enough information to enable readers to understand what you did and why you did it that way. If others will be using the report to duplicate your methods, include sufficient detail.”</li>
-      <li class="skipline">Example  Methods Section, on pp. 512–515 (part of the sample recommendation report in Figure 18.8).</li>
+    <p>The Methods section tells your readers how you conducted your research. You explain exactly what you did to gather the information for your report. Save the details on what you found out for the Results section. Do not include them in your Methods section.</p>
+    <h2>Where You Can Find Help</h2>
+    <p>From <em>Howdy or Hello? Technical and Professional Communication</em></p>
+    <ul>
+      <li><a href="https://pressbooks.library.tamu.edu/howdyorhello/chapter/methods/" target="_blank">Methods</a> Section of a Recommendation Report</li>
+      <li><a href="https://pressbooks.library.tamu.edu/howdyorhello/chapter/specific-applied-best-practices/#:~:text=Specific%20Guidelines%20on%20Headings" target="_blank">Specific Guidelines on Headings</a></li>
+      <li><a href="https://pressbooks.library.tamu.edu/howdyorhello/chapter/specific-applied-best-practices/#:~:text=Bulleted%20and%20Numbered%20Lists" target="_blank">Bulleted and Numbered Lists</a></li>
+      <li><a href="https://pressbooks.library.tamu.edu/howdyorhello/chapter/specific-applied-best-practices/#:~:text=to%20formatting%20lists.-,Use%20of%20Color,-People%20love%20color" target="_blank">Use of Color</a></li>
     </ul>
-  </li>
-  <li class="skipline">LinkedIn Learning video, “<a href="https://www.linkedin.com/learning/technical-writing-reports/include-methodology-and-procedures?u=57888345" target="_target">Include methodology and procedures</a>” (4m 11s), from the Technical Writing: Reports course.</li>
-  </ul>
-<h2>How You Do It</h2>
-<ol class="skipline">
-  <li class="skipline">Add the heading for your Methods section:
-    <ol type="a">
-      <li>Add the word <em>Methods</em> as the heading at the top of the page and center the line. You can also choose the heading <em>Research Methods</em>.</li>
-      <li>Format the word so that it is clearly the heading for the page. You can use the built-in headings in your word processor. See the Tech Tip on p. 55 for help.</li>
-      <li>Skip a blank line.</li>
-    </ol>
-  </li>
-  <li class="skipline">Write the opening paragraphs for the Methods section, following the general pattern below:<br>
-  <dl>
-    <dt>Paragraph 1</dt>
-    <dd>Open your Methods section with background information that shaped your research process. This paragraph can include overarching goals that guided your research. See the first paragraph of the Research Methods section in the Sample Recommendation Report on p. 512.</dd>
-    <dt>Paragraph 2</dt>
-    <dd>Identify any key sources that guided your research process and/or specific issues that your research focused on. See the second paragraph of the Research Methods section in the Sample Recommendation Report on p. 512 of the textbook for help.</dd>
-    <dt>Paragraph 3</dt>
-    <dd>Provide an advance organizer that outlines the tasks comprising your research process. Use a numbered list for these research tasks.
-      See the third paragraph and bulleted list in the Research Methods section of the Sample Recommendation Report on p. 512 for an example. See Guidelines: Creating Effective Lists on pp. 205–206 for additional help.</dd>
-    <dt>Paragraph 4</dt>
-    <dd>Add a sentence that introduces your task-by-task explanation of your research methods. See the fourth paragraph in the Research Methods section of the Sample Recommendation Report on p. 512 for an example.</dd></dl>
-  </li>
-  <li class="skipline">.For each task you identified in your research process, add a subsection with details on your research methods. Follow these guidelines for each Task subsection:<br>
-      <div class="maroonbox" style="width: 330px;float: right;margin-left: 12px;padding: 6px;">
+
+    <p>From LinkedIn Learning</p>
+    <ul>
+      <li class="skipline">Video: “<a href="https://www.linkedin.com/learning/technical-writing-reports/include-methodology-and-procedures?u=57888345" target="_target">Include methodology and procedures</a>” (4m 11s), from the Technical Writing: Reports course.</li>
+    </ul>
+
+    <p>From <em>Technical Communication</em></p>
+    <ul>
+      <li><a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html" target="_blank">Sample Report, Figure 18.8</a></li>
+    </ul>
+
+    <h2>How You Do It</h2>
+    <ol class="skipline">
+      <li class="skipline">Add the heading for your Methods section:
+        <ol type="a">
+          <li>Add the word <em>Methods</em> as the heading at the top of the page and center the line. You can also choose the heading <em>Research Methods</em>.</li>
+          <li>Format the word so that it is clearly the heading for the page. You can use the built-in headings in your word processor.</li>
+          <li>Skip a blank line.</li>
+        </ol>
+      </li>
+      <li class="skipline">Write the opening paragraphs for the Methods section, following the general pattern below:<br>
+        <dl>
+          <dt>Paragraph 1</dt>
+          <dd>Open your Methods section with background information that shaped your research process. This paragraph can include overarching goals that guided your research. See the first paragraph of the Research Methods section in the <a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html" target="_blank">Sample Recommendation Report</a>.</dd>
+          <dt>Paragraph 2</dt>
+          <dd>Identify any key sources that guided your research process and/or specific issues that your research focused on. See the second paragraph of the Research Methods section in the <a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html" target="_blank">Sample Recommendation Report</a> for help.</dd>
+          <dt>Paragraph 3</dt>
+          <dd>Provide an <a href="https://canvas.vt.edu/courses/177045/pages/advance-organizers" target="_blank">advance organizer</a> that outlines the tasks comprising your research process. Use a numbered list for these research tasks.
+            See the third paragraph and bulleted list in the Research Methods section of the <a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html" target="_blank">Sample Recommendation Report</a> for an example. See <a href="https://pressbooks.library.tamu.edu/howdyorhello/chapter/specific-applied-best-practices/#:~:text=Bulleted%20and%20Numbered%20Lists" target="_blank">Bulleted and Numbered Lists</a> for additional help.</dd>
+          <dt>Paragraph 4</dt>
+          <dd>Add a sentence that introduces your task-by-task explanation of your research methods. See the fourth paragraph in the Research Methods section of the <a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html" target="_blank">Sample Recommendation Report</a> for an example.</dd>
+        </dl>
+      </li>
+      <li class="skipline">For each task you identified in your research process, add a subsection with details on your research methods. Follow these guidelines for each Task subsection:<br>
+        <div class="maroonbox" style="width: 330px;float: right;margin-left: 12px;padding: 6px;">
           <h4>Tips for Writing Subheadings</h4>
           <ul>
-            <li>Use the subheadings in the Methods Section of the sample recommendation report in Figure 18.8 of the textbook as a model.</li>
-            <li>Consult the advice in the “Writing Clear, Informative Headings,” section on pp. 199–202 (in Chapter 9 of the textbook).</li>
+            <li>Use the subheadings in the Methods Section of the <a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html" target="_blank">Sample Recommendation Report</a> as a model.</li>
+            <li>Consult the advice in the <a href="https://pressbooks.library.tamu.edu/howdyorhello/chapter/specific-applied-best-practices/#:~:text=Specific%20Guidelines%20on%20Headings" target="_blank">Specific Guidelines on Headings</a> section of <em>Howdy or Hello?</em>.</li>
           </ul>
         </div>
-    <dl>
-      <dt>Task Heading</dt>
-      <dd>
-          <ul>
+        <dl>
+          <dt>Task Heading</dt>
+          <dd>
+            <ul>
               <li>Begin the subsection with a subheading that identifies the task by number and provides a brief statement of the task. Ideally your subheading should be approximately 1 to 1½ lines.</li>
-              <li>Format your subheading so that it is different from the paragraphs in the body. You can use the built-in headings in your word processor. See the Tech Tip on p. 55 for help.</li>
-          </ul>
-        </dd>
-      <dt>Task Details</dt>
-        <dd>Provide the relevant details under each heading. Include the following information:
-          <ul>
-              <li>Explain  background on how your began the task, including details on people involved.</li>
+              <li>Format your subheading so that it is different from the paragraphs in the body. You can use the built-in headings in your word processor. See the <a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html#:~:text=The%20writers%20use%20the%20same%20task%20organization%20as%20in%20the%20proposal%20and%20the%20progress%20report." target="_blank">first task in the Sample Recommendation Report</a> for an example.</li>
+            </ul>
+          </dd>
+          <dt>Task Details</dt>
+          <dd>Provide the relevant details under each heading. Include the following information:
+            <ul>
+              <li>Explain background on how your began the task, including details on people involved.</li>
               <li>Provide information on how you conducted your research, moving generally in a chronological order. </li>
               <li>Explain the logic behind your methods to ensure that your readers understand your thinking.</li>
               <li>Mention any specific materials used in your research, such as questionnaires, surveys, and interview questions. Include the materials themselves in your Appendix. Add a page number to the materials in the Appendix when you first mention them in the Methods section.</li>
-              <li>Add in-text citations for outside sources that you consulted (for instance, books, websites, or videos). Follow the documentation style that is used in your field. See the <a href="https://canvas.vt.edu/courses/166227/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citations for Your Projects</a> page for help.</li>
-              <li>Review the information in your subsection, and chunk  the information into short paragraphs. The exact number of paragraphs in each of  subsections will depend upon the specific details of your research process. See p. 265 for information on chunking.</li>
-              <li>See Task 1–6 in  the Research Methods section of the Sample Recommendation Report on p. 512–515 of the textbook for help.</li>
-          </ul>
-        </dd>
-    </dl>
-  </li>
-  <li class="skipline">Compare the subheadings you have included with the tasks you have listed elsewhere in the document. Ensure that they all use the same phrasing.  </li>
-  <li class="skipline">Review your Methods section to make sure that you have included everything that answers the question, &ldquo;What did you do?&rdquo; </li>
-  <li class="skipline">Move on to the next part of the report that you want to work on.   </li>
-</ol>
-<p style="margin-top: 24px;">&nbsp;</p>
-    
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+              <li>Add in-text citations for outside sources that you consulted (for instance, books, websites, or videos). Follow the documentation style that is used in your field. See the <a href="https://canvas.vt.edu/courses/177045/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citations for Your Projects</a> page for help.</li>
+              <li>Review the information in your subsection, and chunk the information into short paragraphs. The exact number of paragraphs in each of subsections will depend upon the specific details of your research process. See the section on “Chunking” on the <a href="https://canvas.vt.edu/courses/177045/pages/document-design-more-design-principles#chunking" target="_blank">Document Design: More Design Principles page</a>.</li>
+              <li>See Task 1&ndash;6 in the <a href="https://web.archive.org/web/20230925070528/https://www.macmillanhighered.com/brainhoney/resource/6698/digital_first_content/trunk/test/techcomm11e_full/techcomm11e_full_ch18_8.html#:~:text=The%20writers%20use%20the%20same%20task%20organization%20as%20in%20the%20proposal%20and%20the%20progress%20report." target="_blank">Research Methods section of the Sample Recommendation Report</a> for help.</li>
+            </ul>
+          </dd>
+        </dl>
+      </li>
+      <li class="skipline">Compare the subheadings you have included with the tasks listed elsewhere in the document. Ensure that they all use the same phrasing. </li>
+      <li class="skipline">Review your Methods section to make sure that you have included everything that answers the question, &ldquo;What did you do?&rdquo; </li>
+      <li class="skipline">Share your draft with your group and make additional revisions as necessary to connect with the other sections of your report.</li>
+    </ol>
+    <p style="margin-top: 24px;">&nbsp;</p>
+
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
