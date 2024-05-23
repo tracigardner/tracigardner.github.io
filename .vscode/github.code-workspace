@@ -1,10 +1,8 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		}
-	],
-	"settings": {
-		"files.autoSave": "onFocusChange"
+  "folders": [
+	{
+		"path": "../.."
 	}
+],
+  "settings": {}
 }
