@@ -479,6 +479,8 @@ li a:hover {
 }
 
 .skipline li,
+.skipline ul li,
+.skipline ol li,
 .skipline dl,
 .skipline dd {
   margin-bottom: 12px;
