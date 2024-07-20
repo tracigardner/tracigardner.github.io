@@ -44,7 +44,13 @@
         if (window.location !== window.parent.location) {
             document.getElementById("demo").innerHTML = "<div id='content'></div>"
             // The page is in an iframe
-        } else {
+        }
+        else if (window.location == "https://teachingwacwithai.tracigardner.com") {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 24px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><div style='padding-left: 24px; '><h1>Try-It #5: Your Code of Ethics</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+        else {
             // The page is not in an iframe
             document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><div style='padding-left: 24px; '><h1>Try-It #5: Your Code of Ethics</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
