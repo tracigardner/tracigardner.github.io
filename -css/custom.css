@@ -7,88 +7,100 @@ You can add your own CSS here.
 Click the help icon above to learn more.
 */
 .tracigardner {
-	border: 1px solid #FF6600;
+  border: 1px solid #ff6600;
 }
 
 .noformat table,
-.noformat tr, 
+.noformat tr,
 .noformat td {
-	border: none;
+  border: none;
 }
 
 .noformatSIDE table,
-.noformatSIDE tr, 
+.noformatSIDE tr,
 .noformatSIDE td {
-	border: none;
-	padding: 0px 15px 0px 15px;
-	text-align: center;
-	vertical-align: bottom;
+  border: none;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+  vertical-align: bottom;
 }
 
 .post-header h1,
 .post-content h2 {
-	color: #660000;
+  color: #660000;
 }
 
-.post-content a:link, a:visited, a:hover, a:active,
-.post-details a:link, a:visited, a:hover, a:active,
-.widget a:link, a:visited, a:hover, a:active {
-	text-decoration: underline;
+.post-content a:link,
+a:visited,
+a:hover,
+a:active,
+.post-details a:link,
+a:visited,
+a:hover,
+a:active,
+.widget a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: underline;
 }
 
-.banner  a:link, a:visited, a:hover, a:active {
-	text-decoration: none;
-	color: #660000;
+.banner a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #660000;
 }
 
 .orangebox {
-	border: 6px solid #FF6600;
-	border-style: double;
-	box-sizing: border-box;
-	padding: 0 5px 5px 20px;
+  border: 6px solid #ff6600;
+  border-style: double;
+  box-sizing: border-box;
+  padding: 0 5px 5px 20px;
 }
 
 .maroonbox {
-	border: 6px solid #660000;
-	border-style: double;
-	box-sizing: border-box;
-	padding: 0 5px 5px 20px;
+  border: 6px solid #660000;
+  border-style: double;
+  box-sizing: border-box;
+  padding: 0 5px 5px 20px;
 }
 
 .img-border {
-	padding: 1px;
-	border: 1px solid #021a40;
+  padding: 1px;
+  border: 1px solid #021a40;
 }
 
 .orange {
-	color: #FF6600;
+  color: #ff6600;
 }
 
 .maroon {
-	color: #660000;
+  color: #660000;
 }
 
 .listDS li {
-	margin-top: 18px;
-	margin-bottom: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .null li {
-	margin-top: 0px;
-	margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .code {
-	font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .roundedcorners {
-	border:1px solid #;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;  	
+  border: 1px solid #;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 }
 
 .photocredit {
-	font-size: small;
+  font-size: small;
 }
