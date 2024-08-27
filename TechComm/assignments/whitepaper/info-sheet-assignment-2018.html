@@ -1,138 +1,141 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Info Sheet Assignment</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Info Sheet Assignment</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Info Sheet Assignment</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-<p><em>This is an archived assignment from English 3764: Technical Writing, taught at Virginia Tech during the Fall 2018 semester. Links may no longer work, and newer versions of some resources may be available.</em></p>
-<h2 style="color: #660000;">Background</h2>
-<p style="margin-bottom: 15px;">All of the projects will relate to your membership in a fictional business incubator, the&nbsp;<em>Ut Prosim</em>&nbsp;Incubator. The projects you will complete for your portfolios will be documents that you create as a member of this incubator. You will create a business and then write the pieces for your portfolio from the perspective as a starting business owner. You will collaborate with other members of the incubator and contribute materials to the endeavors that the incubator undertakes. You can read more about the incubator and how the projects connect on the <a href="white-paper-overview-2018.html"> Overview</a> page.</p>
-<h2 style="color: #660000;">The Scenario</h2>
-<p style="margin-bottom: 15px;">During your first week as an <em>Ut Prosim</em> Incubator member, you receive the following memo:</p>
-<div style="border: 3px double #ff6600; background-color: #f8f8ff; padding: 12px;">
-  <h3 style="margin-bottom: 0px; font-family: 'Arial Black', Gadget, sans-serif; font-size: xx-large;"><img style="float: left;"  src="https://canvas.vt.edu/courses/73812/files/7660230/download" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/73812/files/7660230" data-api-returntype="File" alt="Ut Prosim Incubator logo" width="123" height="123" /><span><em>&nbsp;Ut Prosim</em> Incubator</span></h3>
-  <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;1872 Inventors Way, Blacksburg, Virginia 24060</p>
-  <p style="margin-top: 0px; margin-bottom: 0px; font-size: 14px;">&nbsp;</p>
-  <h4 style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;<strong>Interoffice Memo</strong></h4>
-  <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
-  <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
-  <p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #ff6600; clear: both;"><br />
-    To: CEOs of New Incubator Companies</p>
-  <p style="margin-top: 0px; margin-bottom: 0px;">From: Traci Gardner, Ut Prosim Director</p>
-  <p style="margin-top: 0px; margin-bottom: 0px;">Subject: Your Company Info Sheet</p>
-  <p style="margin-top: 0px; margin-bottom: 0px; border-bottom: 3px solid #ff6600;">Date: August 27, 2018<br />
-    <br />
-  </p>
-  <p style="margin-bottom: 15px;">Welcome to the <em>Ut Prosim</em> Incubator! We are all so happy to have you join the Fall 2018 class of entrepreneurs.</p>
-  <p style="margin-bottom: 15px;">I know you are still settling into your office, so our first all-company meeting will not take place for a few weeks. At this meeting, you will introduce your company to the other members of the Incubator.</p>
-  <p style="margin-bottom: 15px;">The meeting will be informal, but we do want to prepare handouts and slides to share with attendees. We will also post the basic information that you provide on the Incubator website, for the possible research partners on campus, potential investors, and the public.</p>
-  <p style="margin-bottom: 15px;">Please send the following information to me by <strong>September 7</strong>:</p>
-  <ul>
-    <li>Your Company Name</li>
-    <li>Your Company CEO (use the name you want to appear in official documentation)</li>
-    <li>Your Company Mission Statement (a statement of your company&rsquo;s goals and values)</li>
-    <li>Your Company Overview (explain what you company does, including whatever research you do, products your create, or services you provide)</li>
-    <li>Your Company&rsquo;s Target Audience (who are the customers you serve or hope to serve)</li>
-  </ul>
-  <p style="margin-top: 15px;margin-bottom: 15px;">Do not worry about formatting or design in your response. We will format the information for all the companies according to the Incubator&rsquo;s branding and style guidelines.</p>
-  <p style="margin-bottom: 15px;">We will send out a meeting announcement once a place and time have been confirmed. In the mean time, if you need any help settling in, please let me know or contact my assistant, Leslie Crow &lt;lcrow@utprosimincubator.org&gt;.</p>
-</div>
-<h2 style="color: #660000;">The Project Assignment</h2>
-<p style="margin-bottom: 15px;"><strong>Step 1: Decide on the focus for your business.</strong></p>
-<p style="margin-bottom: 15px;">Decide what your company will do&mdash;will you focus on products or services? You will focus on the company that you imagine for the entire term, so choose something that you know well. Sure, you can be creative, but create something doable that you have experience with (or at least strong knowledge of). Additionally, your focus must directly relate to your major.</p>
-<p style="margin-bottom: 15px;">As long as you comply with those two stipulations, you can focus on anything you want to. You have capital, staff, and resources to do whatever you set your mind to.</p>
-<p style="margin-bottom: 15px;"><strong>Step 2: Analyze the audiences for your memo.</strong><br />
-  Review the memo above and decide who the audience is for the memo you have to write and for the information that you have to gather. Use the information from Markel, Chapter 5 to decide how the characteristics of the audiences will influence the writing that you do. Consider the questions in Figure 5.2: Audience Profile Sheet and/or the Writer&rsquo;s Checklist at the end of the chapter to guide your analysis.</p>
-<p style="margin-bottom: 15px;"><strong>Step 3: Determine the information that the memo requests.</strong><br />
-  Work through the memo above and find the information that you have to provide in your response. Once you find the list of requested information, decide on your responses. You are creating your business, so you get to create the answers for all the requested information. Don&rsquo;t get stuck on perfectionism at this point. Compile your ideas, but know you can always come back to revise.</p>
-<p style="margin-bottom: 15px;"><strong>Step 4: Write a memo to me with the details. <br />
-  </strong>Compose your memo, as requested in The Scenario above, with all the details you have gathered and created. As you work, keep the following points in mind:<strong><br />
-</strong></p>
-<ul>
-  <li>Even though sophisticated formatting is not required, ensure that your answers are easy to find and read.</li>
-  <li>Check your draft for the use of plain language.</li>
-  <li>Ensure that you follow all relevant ethical guidelines as you create your responses, using the Writer&rsquo;s Checklist at the end of Markel, Chapter 2.</li>
-  <li>Be sure that your memo makes a good impression with accuracy and correctness. It should be polished and professional.</li>
-</ul>
-<p style="margin-bottom: 15px;"><strong>Step 5: </strong><strong>Check your draft for correct use of memo format</strong>.<br />
-  Be sure that you include the memo headings (To, From, Subject, and Date). For more details on memo format, consult Chapter 14 of Markel.</p>
-<p style="margin-bottom: 15px;"><strong>Step 6. Review your draft for design and basic writing errors.</strong><br />
-  Everything you write should use accurate/appropriate image editing, grammar, spelling, punctuation, mechanics, linking, and formatting. These are important basic writing skills that you should have developed in high school. Review your project, using the Writer&rsquo;s Checklist at the end of Markel, Chapter 10.</p>
-<p style="margin-bottom: 15px;">You can also consult the information on &ldquo;Sentence-Level Issues&rdquo; in Markel, Appendix, Part D: Guidelines for Multilingual Writers (ESL). While the section is labeled for multilingual writers, it is useful for everyone. It includes explanations and examples for many common mistakes writers make.</p>
-<p style="margin-bottom: 15px;"><strong>Step 7: Submit your draft to your Writing Group in Canvas</strong>.<br />
-  Post a rough draft of your info sheet to your Writing Group in Canvas in the 08/29 Peer Feedback Discussion in Canvas. Additional instructions are in the Discussion. Post a draft of your memo by August 30. If you are late submitting a draft, your group may not have time to provide feedback.</p>
-<p style="margin-bottom: 15px;"><strong>Step 8: Provide feedback to your Writing Group in Canvas</strong>.<br />
-  Provide feedback to the members of your writing group by September 4 (end of the grace period). Use the information on the&nbsp;Writing Groups page&nbsp;to provide constructive feedback that will help your group members make concrete improvements to their drafts.&nbsp;</p>
-<p style="margin-bottom: 15px;"><strong>Step 9: Revise your draft</strong>.<br />
-  Use the feedback that you receive from your group members to revise and improve your document. You can share your draft again with your Writing Group, if you desire. As you revise, keep in mind the advice in Steps 4, 5, and 6 above, as well as the Assessment Criteria below.</p>
-<p style="margin-bottom: 15px;"><strong>Step 10: Include a polished version of your response in Project Portfolio 1, due October 1</strong>.<br />
-  Have your Info Sheet memo finished and ready for submission in your Project Portfolio 1, which is due Monday, October 1. The <a href="https://bedfordbits.colostate.edu/index.php/2013/09/09/due-dates-deadlines-and-my-late-policy/" target="_blank">grace period</a> for Project Portfolio 1 ends at 11:59PM on Thursday, October 4.</p>
-<h2 style="color: #660000;">Assessment Criteria</h2>
-<p style="margin-bottom: 15px;">Your project should meet the following criteria:</p>
-<ul>
-  <li>Makes a good first impression as a polished and professional document.</li>
-  <li>Uses memo format with the appropriate headers.</li>
-  <li>Meets the needs of the intended audience.</li>
-  <li>Uses layout and formatting that makes information easy for readers to find and read.</li>
-  <li>Is written in plain language, which communicates the ideas clearly.</li>
-  <li>Follows all relevant ethical guidelines.</li>
-  <li>Uses&nbsp;accurate/appropriate&nbsp;grammar, spelling, punctuation, mechanics, linking, and formatting.</li>
-</ul>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <p><em>This is an archived assignment from English 3764: Technical Writing, taught at Virginia Tech during the Fall 2018 semester. Links may no longer work, and newer versions of some resources may be available.</em></p>
+    <h2 style="color: #660000;">Background</h2>
+    <p style="margin-bottom: 15px;">All of the projects will relate to your membership in a fictional business incubator, the&nbsp;<em>Ut Prosim</em>&nbsp;Incubator. The projects you will complete for your portfolios will be documents that you create as a member of this incubator. You will create a business and then write the pieces for your portfolio from the perspective as a starting business owner. You will collaborate with other members of the incubator and contribute materials to the endeavors that the incubator undertakes. You can read more about the incubator and how the projects connect on the <a href="white-paper-overview-2018.html"> Overview</a> page.</p>
+    <h2 style="color: #660000;">The Scenario</h2>
+    <p style="margin-bottom: 15px;">During your first week as an <em>Ut Prosim</em> Incubator member, you receive the following memo:</p>
+    <div style="border: 3px double #e5751f; background-color: #f8f8ff; padding: 12px;">
+      <h3 style="margin-bottom: 0px; font-family: 'Arial Black', Gadget, sans-serif; font-size: xx-large;"><img style="float: left;" src="https://canvas.vt.edu/courses/73812/files/7660230/download" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/73812/files/7660230" data-api-returntype="File" alt="Ut Prosim Incubator logo" width="123" height="123" /><span><em>&nbsp;Ut Prosim</em> Incubator</span></h3>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;1872 Inventors Way, Blacksburg, Virginia 24060</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; font-size: 14px;">&nbsp;</p>
+      <h4 style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;<strong>Interoffice Memo</strong></h4>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #e5751f; clear: both;"><br />
+        To: CEOs of New Incubator Companies</p>
+      <p style="margin-top: 0px; margin-bottom: 0px;">From: Traci Gardner, Ut Prosim Director</p>
+      <p style="margin-top: 0px; margin-bottom: 0px;">Subject: Your Company Info Sheet</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; border-bottom: 3px solid #e5751f;">Date: August 27, 2018<br />
+        <br />
+      </p>
+      <p style="margin-bottom: 15px;">Welcome to the <em>Ut Prosim</em> Incubator! We are all so happy to have you join the Fall 2018 class of entrepreneurs.</p>
+      <p style="margin-bottom: 15px;">I know you are still settling into your office, so our first all-company meeting will not take place for a few weeks. At this meeting, you will introduce your company to the other members of the Incubator.</p>
+      <p style="margin-bottom: 15px;">The meeting will be informal, but we do want to prepare handouts and slides to share with attendees. We will also post the basic information that you provide on the Incubator website, for the possible research partners on campus, potential investors, and the public.</p>
+      <p style="margin-bottom: 15px;">Please send the following information to me by <strong>September 7</strong>:</p>
+      <ul>
+        <li>Your Company Name</li>
+        <li>Your Company CEO (use the name you want to appear in official documentation)</li>
+        <li>Your Company Mission Statement (a statement of your company&rsquo;s goals and values)</li>
+        <li>Your Company Overview (explain what you company does, including whatever research you do, products your create, or services you provide)</li>
+        <li>Your Company&rsquo;s Target Audience (who are the customers you serve or hope to serve)</li>
+      </ul>
+      <p style="margin-top: 15px;margin-bottom: 15px;">Do not worry about formatting or design in your response. We will format the information for all the companies according to the Incubator&rsquo;s branding and style guidelines.</p>
+      <p style="margin-bottom: 15px;">We will send out a meeting announcement once a place and time have been confirmed. In the mean time, if you need any help settling in, please let me know or contact my assistant, Leslie Crow &lt;lcrow@utprosimincubator.org&gt;.</p>
+    </div>
+    <h2 style="color: #660000;">The Project Assignment</h2>
+    <p style="margin-bottom: 15px;"><strong>Step 1: Decide on the focus for your business.</strong></p>
+    <p style="margin-bottom: 15px;">Decide what your company will do&mdash;will you focus on products or services? You will focus on the company that you imagine for the entire term, so choose something that you know well. Sure, you can be creative, but create something doable that you have experience with (or at least strong knowledge of). Additionally, your focus must directly relate to your major.</p>
+    <p style="margin-bottom: 15px;">As long as you comply with those two stipulations, you can focus on anything you want to. You have capital, staff, and resources to do whatever you set your mind to.</p>
+    <p style="margin-bottom: 15px;"><strong>Step 2: Analyze the audiences for your memo.</strong><br />
+      Review the memo above and decide who the audience is for the memo you have to write and for the information that you have to gather. Use the information from Markel, Chapter 5 to decide how the characteristics of the audiences will influence the writing that you do. Consider the questions in Figure 5.2: Audience Profile Sheet and/or the Writer&rsquo;s Checklist at the end of the chapter to guide your analysis.</p>
+    <p style="margin-bottom: 15px;"><strong>Step 3: Determine the information that the memo requests.</strong><br />
+      Work through the memo above and find the information that you have to provide in your response. Once you find the list of requested information, decide on your responses. You are creating your business, so you get to create the answers for all the requested information. Don&rsquo;t get stuck on perfectionism at this point. Compile your ideas, but know you can always come back to revise.</p>
+    <p style="margin-bottom: 15px;"><strong>Step 4: Write a memo to me with the details. <br />
+      </strong>Compose your memo, as requested in The Scenario above, with all the details you have gathered and created. As you work, keep the following points in mind:<strong><br />
+      </strong></p>
+    <ul>
+      <li>Even though sophisticated formatting is not required, ensure that your answers are easy to find and read.</li>
+      <li>Check your draft for the use of plain language.</li>
+      <li>Ensure that you follow all relevant ethical guidelines as you create your responses, using the Writer&rsquo;s Checklist at the end of Markel, Chapter 2.</li>
+      <li>Be sure that your memo makes a good impression with accuracy and correctness. It should be polished and professional.</li>
+    </ul>
+    <p style="margin-bottom: 15px;"><strong>Step 5: </strong><strong>Check your draft for correct use of memo format</strong>.<br />
+      Be sure that you include the memo headings (To, From, Subject, and Date). For more details on memo format, consult Chapter 14 of Markel.</p>
+    <p style="margin-bottom: 15px;"><strong>Step 6. Review your draft for design and basic writing errors.</strong><br />
+      Everything you write should use accurate/appropriate image editing, grammar, spelling, punctuation, mechanics, linking, and formatting. These are important basic writing skills that you should have developed in high school. Review your project, using the Writer&rsquo;s Checklist at the end of Markel, Chapter 10.</p>
+    <p style="margin-bottom: 15px;">You can also consult the information on &ldquo;Sentence-Level Issues&rdquo; in Markel, Appendix, Part D: Guidelines for Multilingual Writers (ESL). While the section is labeled for multilingual writers, it is useful for everyone. It includes explanations and examples for many common mistakes writers make.</p>
+    <p style="margin-bottom: 15px;"><strong>Step 7: Submit your draft to your Writing Group in Canvas</strong>.<br />
+      Post a rough draft of your info sheet to your Writing Group in Canvas in the 08/29 Peer Feedback Discussion in Canvas. Additional instructions are in the Discussion. Post a draft of your memo by August 30. If you are late submitting a draft, your group may not have time to provide feedback.</p>
+    <p style="margin-bottom: 15px;"><strong>Step 8: Provide feedback to your Writing Group in Canvas</strong>.<br />
+      Provide feedback to the members of your writing group by September 4 (end of the grace period). Use the information on the&nbsp;Writing Groups page&nbsp;to provide constructive feedback that will help your group members make concrete improvements to their drafts.&nbsp;</p>
+    <p style="margin-bottom: 15px;"><strong>Step 9: Revise your draft</strong>.<br />
+      Use the feedback that you receive from your group members to revise and improve your document. You can share your draft again with your Writing Group, if you desire. As you revise, keep in mind the advice in Steps 4, 5, and 6 above, as well as the Assessment Criteria below.</p>
+    <p style="margin-bottom: 15px;"><strong>Step 10: Include a polished version of your response in Project Portfolio 1, due October 1</strong>.<br />
+      Have your Info Sheet memo finished and ready for submission in your Project Portfolio 1, which is due Monday, October 1. The <a href="https://bedfordbits.colostate.edu/index.php/2013/09/09/due-dates-deadlines-and-my-late-policy/" target="_blank">grace period</a> for Project Portfolio 1 ends at 11:59PM on Thursday, October 4.</p>
+    <h2 style="color: #660000;">Assessment Criteria</h2>
+    <p style="margin-bottom: 15px;">Your project should meet the following criteria:</p>
+    <ul>
+      <li>Makes a good first impression as a polished and professional document.</li>
+      <li>Uses memo format with the appropriate headers.</li>
+      <li>Meets the needs of the intended audience.</li>
+      <li>Uses layout and formatting that makes information easy for readers to find and read.</li>
+      <li>Is written in plain language, which communicates the ideas clearly.</li>
+      <li>Follows all relevant ethical guidelines.</li>
+      <li>Uses&nbsp;accurate/appropriate&nbsp;grammar, spelling, punctuation, mechanics, linking, and formatting.</li>
+    </ul>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

@@ -1,229 +1,232 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Poster Presentation Assignment</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Poster Presentation Assignment</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Poster Presentation Assignment</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-<p><em>This is an archived assignment from English 3764: Technical Writing, taught at Virginia Tech during the Fall 2018 semester. Links may no longer work, and newer versions of some resources may be available.</em></p>
-<h2>Background</h2>
-<p  style="margin-bottom: 12px;">You will design a poster presentation, based on the details in your white paper. Your poster will be part of a poster session that the incubator sponsors for the local community. Like the white paper, the presentation will focus on the incubator goal of public outreach and education. As an extension, additional investors and clients also attend the session, so you have the potential to make critical connections for your business.</p>
-<h2>The Scenario</h2>
-<p  style="margin-bottom: 12px;">This week, you received the following memo, explaining details on your company’s participation in the December poster presentation event:</p>
-<div style="border: 3px double #ff6600; background-color: #f8f8ff; padding: 12px;">
-  <h3 style="margin-bottom: 0px; font-family: 'Arial Black', Gadget, sans-serif; font-size: xx-large;"><img style="float: left;" src="https://canvas.vt.edu/courses/73812/files/7660230/download" alt="Ut Prosim Incubator logo" width="123" height="123" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/73812/files/7660230" data-api-returntype="File" /><span><em>&nbsp;Ut Prosim</em> Incubator</span></h3>
-<p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;1872 Inventors Way, Blacksburg, Virginia 24060</p>
-<p style="margin-top: 0px; margin-bottom: 0px; font-size: 14px;">&nbsp;</p>
-<h4 style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;<strong>Interoffice Memo</strong></h4>
-<p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
-<p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
-<p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #ff6600; clear: both;"></p>
-<table border="0" cellpadding="6">
-  <tr>
-    <th width="103" align="left" valign="top" scope="row">To:</th>
-    <td width="672" align="left" valign="top">December Poster Presentation Participants</td>
-  </tr>
-  <tr>
-    <th align="left" valign="top" scope="row">From:</th>
-    <td align="left" valign="top">Traci Gardner, <em>Ut Prosim</em> Director<br />
-      Manolito Reyna Bautista, Manager of the Public Outreach Office</td>
-  </tr>
-  <tr>
-    <th align="left" valign="top" scope="row">Subject:</th>
-    <td align="left" valign="top">Preparing Your Research Poster</td>
-  </tr>
-  <tr>
-    <th align="left" valign="top" scope="row">Date:</th>
-    <td align="left" valign="top">October 29, 2018</td>
-  </tr>
-</table>
-<p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #ff6600; clear: both;"><br /></p>
-<p  style="margin-bottom: 12px;">Now that you have your  white papers well under way, it’s time to begin work on your research posters for the December poster presentation. We have invited 250 local business, university, and community leaders to the upcoming event. Members of the general public can also attend.</p>
-<p  style="margin-bottom: 12px;">Your poster presentation (like your white paper) is due by November 26.</p>
-<h3>Research Poster  Purpose and Audience</h3>
-<p  style="margin-bottom: 12px;">Your research poster focuses on the same purpose as your white paper. As explained in the call for proposals, your  research poster will inform non-expert readers about a technical topic relevant to the work and mission of your company. These documents will share what we do and why we do it with the university, alumni, and local community. Your poster will  contribute directly to our goal of public outreach and education.</p>
-<p  style="margin-bottom: 12px;">As an objective research poster, your document will either provide knowledge or information about a subject relevant to your company or provide solutions to a problem or challenge that relates to your company&mdash;or even a combination of both goals. </p>
-<p  style="margin-bottom: 12px;">The audiences for your poster presentation differs slightly from your white paper. You will communication your research to   the general public, university community, and potential investors and clients who will attend the session.</p>
-<h3>Poster Content</h3>
-<p  style="margin-bottom: 12px;">Your research poster will define or explain your topic and discuss it with the goal of informing your readers about it fully and with relevant, specific details. To follow the customary poster presentation structure, you need to shape the information into a Problem-Solution organization. Imagine that your topic either is a problem or a solution to a problem, and then discuss how to solve it or how it solves the problem.</p>
-<p  style="margin-bottom: 12px;">For instance, for a white paper that focuses on best password management strategies, the problem for your research poster would be password hacking and security. The solution would be your password management strategies.</p>
-<p  style="margin-bottom: 12px;">You should focus this structure for your poster: </p>
-<ul>
-  <li>Introduction</li>
-  <li>Problem Discussion  </li>
-  <li>Solution(s)</li>
-  <li>Conclusions &amp; Recommendations</li>
-  <li>Works Cited</li>
-</ul>
-<p  style="margin-bottom: 12px;">You should present the information in your report objectively, that is, without letting opinion shape what you have to say. Its goal is to provide a response to the question &quot;What is [your subject] all about?&quot; This doesn't mean you can't present opinions about it, but those opinions must come from experts in the field. For example, Expert A thinks the subject of your article is a fantastic option for reducing the need to irrigate crops, but Expert B is sure it won't work as planned. You can present these opposing viewpoints, and draw conclusions about why one option is preferred.<br />
-</p>
-<h3>Poster Presentation Expectations</h3>
-<ul>
-  <li style="margin-bottom: 12px;"><strong>Size</strong>: 48&quot; X 36&quot;, presented in landscape orientation (horizontal). The size is absolute, based on our display boards.</li>
-  <li style="margin-bottom: 12px;"><strong>Document Design</strong>: Use a polished, professional layout that relies on design strategies that increase the document&rsquo;s readability.  Must use appropriately-sized headings, text, and images. People need to be able to see your work.</li>
-  <li style="margin-bottom: 12px;"><strong>Graphics and Visual Elements</strong>: Include as many relevant graphical elements (e.g., photos, illustrations, graphs, tables) as necessary to present your ideas. Avoid clipart (which typically looks unpolished or unprofessional), and use only graphical elements that directly relate to the information in the presentation. All graphical elements must be your company&rsquo;s intellectual property, or you must provide complete documentation. Graphical elements that are not your own intellectual property must meet fair use guidelines.</li>
-  <li style="margin-bottom: 12px;"><strong>Research Support</strong>: Information must be supported by fully-documented research, including short, relevant quotations. In addition to citing published research studies, you can take advantage of the campus community by tapping university experts on the topic you are discussing.</li>
-  <li style="margin-bottom: 12px;"><strong>Documentation Format</strong>: APA citation style (or the appropriate style for your field, if desired&mdash;for instance, an electrical engineer can use IEEE).</li>
-  <li style="margin-bottom: 12px;"><strong>Submission Format</strong>: *.ppt, *pptx, or Google Slides link.</li>
-</ul>
-<h3>Deadlines</h3>
-<p  style="margin-bottom: 12px;">To ensure that we have time to review and edit your submission, please submit your research poster by <strong>11:59 PM on Monday, November 26</strong>. If additional time is necessary, you can take advantage of the grace period, which ends at 11:59 PM on Thursday, November 29.</p>
-<h3>Any Questions?</h3>
-<p  style="margin-bottom: 12px;">If you need any help with this project, please let either of us know or contact Traci’s assistant, Leslie Crow &lt;lcrow@utprosimincubator.org&gt;. </p>
-</div>
-<h2 style="margin-top: 12px;">Relevant Details</h2>
-<p  style="margin-bottom: 12px;"><em>Note: These details apply to all of the projects you include in your portfolio.</em></p>
-<p  style="margin-bottom: 12px;">Your company&rsquo;s address is [Your Company Name], <em>Ut Prosim</em> Incubator, 1872 Inventors Way, Suite #[you choose a number], Blacksburg, Virginia 24060. Your company&rsquo;s phone number is 540-555-5555. You may create a fictional Internet domain for your company, and use that domain for a web page address and your email addresses. If you&rsquo;d like, you may create other information (including a logo) for your company as appropriate. Be sure that you use the information that you create consistently across all of your projects.</p>
-<h2>The Project Assignment</h2>
-<p  style="margin-bottom: 12px;"><strong>Step 1: Review your notes on the topic and audiences, as established in your proposal.</strong><br />
-  Your proposal should have the basic starting information that you need to begin work on your research poster.  </p>
-<p  style="margin-bottom: 12px;"><strong>Step 2: Examine the information about research posters in the readings.</strong><br />
-  Review the following readings for specific details on the information and details to include in your research poster:</p>
-<ul>
-  <li>Markel &amp; Selber, Chapter 21: Making Oral Presentations</li>
-  <li>Markel &amp; Selber, Chapter 18: “Using a Problem-Solving Model for Preparing Recommendation Reports” (starting on p. 472)</li>
-  <li>Woolston, Chris. “<a href="https://www.nature.com/articles/nj7614-115a" target="_blank" rel="noreferrer noopener">Conference Presentations: Lead the Poster Parade</a>.” <em>Nature</em> 536 (115-17). 4 August 2016.</li>
-  <li style="margin-bottom: 12px;">Miller, Jane. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1955747/" target="_blank">Preparing and Presenting Effective Research Posters</a></li>
-</ul>
-<p  style="margin-bottom: 12px;"><strong>Step 3:</strong><strong> Examine the information about presentations in the readings.</strong><br />
-The textbook provides complete details on how to write proposals. Follow the textbook as you work on your project. In particular, be sure that you do the following:</p>
-<ul>
-  <li style="margin-bottom: 12px;">Use  “<span epub:type="label">Figure</span> <span epub:type="ordinal">18.1</span> A Problem-Solving Model for Recommendation Reports”  (on page 474 of Markel &amp; Selber) to structure your information. </li>
-  <li style="margin-bottom: 12px;">Follow the advice in the “Ethics Note: Presenting Honest Recommendations”<span style="margin-bottom: 12px;"> (on page 477 of Markel &amp; Selber)</span> to ensure your poster meets the ethical requirements of your field. </li>
-  <li style="margin-bottom: 12px;">Review the “Checklist for Preparing and Presenting an Effective Research Posters” [<em>sic</em>] (starting on page 326 of Miller) to determine the information to include on your poster. </li>
-  <li style="margin-bottom: 12px;">Follow the extensive advice in  “Best Practices for Effective Scientific Posters” to arrange your content, design your work, and polish your presentation. </li>
-  <li style="margin-bottom: 12px;">Use the details in “Appendix Part B: Documenting Your Sources” for information on APA citation style (starting on page 622 of Markel &amp; Selber) and information on IEEE citation style (starting on page 639 of Markel &amp; Selber) to gather relevant details for your documentation and citations. Note you may alternately use the citation style that is relevant for your field if you prefer.</li>
-</ul>
-<p  style="margin-bottom: 12px;"><strong>Step 3: Write and design your poster.<br />
-</strong></p>
-<div style="width: 250px;float:right;margin: 0px 0px 15px 15px;border: 3px double #FF6600;padding: 6px;">Work steadily on your poster for the entire two-week period. Do not leave the work until the last minute!</div>
-Create your research poster, as requested in The Scenario above, with all the details you have gathered in your research. Remember that your poster should be a factual and objective document. Do not include fictional information about your topic. Review the assessment guidelines below to ensure you have met all the requirements for the instructions.
-</p>
-<p  style="margin-bottom: 12px;">As you work, also keep the following points in mind:<strong><br />
-</strong></p>
-<ul>
-  <li  style="margin-bottom: 12px;">Use plain language to make the ideas easy to find and read. Refer to the resources from Module 2 as needed.</li>
-  <li  style="margin-bottom: 12px;">Follow all relevant ethical guidelines as you work using the Writer&rsquo;s Checklist at the end of Chapter 2 <span style="margin-bottom: 12px;"> (on page 40 of Markel &amp; Selber)</span>.</li>
-  <li  style="margin-bottom: 12px;">Follow the suggestions for emphasizing important information, using the Writer&rsquo;s Checklist for Chapter 9 <span style="margin-bottom: 12px;"> (on page 211 of Markel &amp; Selber) </span>to check your work.</li>
-  <li  style="margin-bottom: 12px;">Use the Writer&rsquo;s Checklist for Chapter 11 <span style="margin-bottom: 12px;"> (on page 288 of Markel &amp; Selber) to ensure that your document takes advantage of design principles to make it reader-friendly</span><span class="revise"><span style="margin-bottom: 12px;">.</span></span></li>
-  <li  style="margin-bottom: 12px;">Make a good impression with accuracy and correctness. Your document should be polished and professional.</li>
-</ul>
-<p  style="margin-bottom: 12px;"><strong>Step 4: Check your draft against the Writer&rsquo;s Checklist</strong>.<br />
-  Be sure that you include the required features for your research poster. Review your project, using <span style="margin-bottom: 12px;"> </span>the <a href="#assessment">Assessment Criteria</a> below.</p>
-<p  style="margin-bottom: 12px;"><strong>Step 5: Review your draft for design and basic writing errors.</strong><br />
-  Everything you write should use accurate/appropriate image editing, grammar, spelling, punctuation, mechanics, linking, and formatting. These are important basic writing skills that you should have developed in high school. Review your project, using the Writer&rsquo;s Checklist at the end of Markel &amp; Selber, Chapter 10 <span style="margin-bottom: 12px;"> (on page 242 of Markel &amp; Selber)</span>.</p>
-<p  style="margin-bottom: 12px;">You can also consult the information on &ldquo;Sentence-Level Issues&rdquo; in Markel &amp; Selber, &ldquo;Appendix, Part D: Guidelines for Multilingual Writers (ESL)&rdquo; <span style="margin-bottom: 12px;"> (on page 683 of Markel &amp; Selber)</span>. While the section is labeled for multilingual writers, it is useful for everyone. It includes explanations and examples for many common mistakes writers make.</p>
-<p style="margin-bottom: 12px;"><strong>Step 6: Submit your draft to your Writing Group in Canvas</strong>.<br />
-  Post a rough draft of your research poster to your Writing Group in Canvas in the 11/08 Draft Feedback Discussion in Canvas. Additional instructions are in the Discussion. Post a draft of your research poster by November 9. If you are late submitting a draft, your group may not have time to provide feedback.</p>
-<p  style="margin-bottom: 12px;"><strong>Step 7: Provide feedback to your Writing Group in Canvas</strong>.<br />
-  Provide feedback to the members of your writing group in the 11/08 Draft Feedback Discussion in Canvas, by November 12 (end of the grace period). Use the information on the&nbsp;Writing Groups page&nbsp;to provide constructive feedback that will help your group members make concrete improvements to their drafts.&nbsp;</p>
-<p  style="margin-bottom: 12px;"><strong>Step 8: Revise your draft</strong>.<br />
-  Use the feedback that you receive from your group members to revise and improve your document. You can share your draft again with your Writing Group, if you desire. As you revise, keep in mind the advice in the steps above, as well as the Assessment Criteria below.</p>
-<p  style="margin-bottom: 12px;"><strong>Step 9: Include a polished version of your project in Project Portfolio 2, due November 26</strong>.<br />
-  Have your Research Poster finished and ready for submission in your Project Portfolio 2, which is due Monday, November 26. The grace period for Project Portfolio 2 ends at 11:59PM on Thursday, November 29.</p>
-<h2 id="assessment">Assessment Criteria</h2>
-<h3>For All Technical Writing Projects</h3>
-<p  style="margin-bottom: 12px;">All technical writing projects should meet the following general criteria:</p>
-<ul>
-  <li>Makes a good first impression as a polished and professional document.</li>
-  <li>Meets the needs of the intended audience.</li>
-  <li>Demonstrates how to emphasize important information.</li>
-  <li>Uses layout and formatting that makes information easy for readers to find and read, and that follows the standards you have set for your company.</li>
-  <li>Is written in plain language, which communicates the ideas clearly.</li>
-  <li>Follows all relevant ethical guidelines.</li>
-  <li  style="margin-bottom: 12px;">Uses&nbsp;accurate/appropriate&nbsp;grammar, spelling, punctuation, mechanics, linking, and formatting.</li>
-</ul>
-<h3>For Research Posters</h3>
-<p  style="margin-bottom: 12px;">Your project should meet the following criteria for effective instructions:</p>
-<ul>
-  <li>Has a clear, compelling title that is specific to the poster.</li>
-  <li>Adopts a tone and approach that will appeal to readers.</li>
-  <li>Demonstrates a clear understanding of the research literature on this topic. </li>
-  <li>Provides details and explanation of the information arranged in this structure: 
+  </script>
+  <div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <p><em>This is an archived assignment from English 3764: Technical Writing, taught at Virginia Tech during the Fall 2018 semester. Links may no longer work, and newer versions of some resources may be available.</em></p>
+    <h2>Background</h2>
+    <p style="margin-bottom: 12px;">You will design a poster presentation, based on the details in your white paper. Your poster will be part of a poster session that the incubator sponsors for the local community. Like the white paper, the presentation will focus on the incubator goal of public outreach and education. As an extension, additional investors and clients also attend the session, so you have the potential to make critical connections for your business.</p>
+    <h2>The Scenario</h2>
+    <p style="margin-bottom: 12px;">This week, you received the following memo, explaining details on your company’s participation in the December poster presentation event:</p>
+    <div style="border: 3px double #e5751f; background-color: #f8f8ff; padding: 12px;">
+      <h3 style="margin-bottom: 0px; font-family: 'Arial Black', Gadget, sans-serif; font-size: xx-large;"><img style="float: left;" src="https://canvas.vt.edu/courses/73812/files/7660230/download" alt="Ut Prosim Incubator logo" width="123" height="123" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/73812/files/7660230" data-api-returntype="File" /><span><em>&nbsp;Ut Prosim</em> Incubator</span></h3>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;1872 Inventors Way, Blacksburg, Virginia 24060</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; font-size: 14px;">&nbsp;</p>
+      <h4 style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;<strong>Interoffice Memo</strong></h4>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #e5751f; clear: both;"></p>
+      <table border="0" cellpadding="6">
+        <tr>
+          <th width="103" align="left" valign="top" scope="row">To:</th>
+          <td width="672" align="left" valign="top">December Poster Presentation Participants</td>
+        </tr>
+        <tr>
+          <th align="left" valign="top" scope="row">From:</th>
+          <td align="left" valign="top">Traci Gardner, <em>Ut Prosim</em> Director<br />
+            Manolito Reyna Bautista, Manager of the Public Outreach Office</td>
+        </tr>
+        <tr>
+          <th align="left" valign="top" scope="row">Subject:</th>
+          <td align="left" valign="top">Preparing Your Research Poster</td>
+        </tr>
+        <tr>
+          <th align="left" valign="top" scope="row">Date:</th>
+          <td align="left" valign="top">October 29, 2018</td>
+        </tr>
+      </table>
+      <p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #e5751f; clear: both;"><br /></p>
+      <p style="margin-bottom: 12px;">Now that you have your white papers well under way, it’s time to begin work on your research posters for the December poster presentation. We have invited 250 local business, university, and community leaders to the upcoming event. Members of the general public can also attend.</p>
+      <p style="margin-bottom: 12px;">Your poster presentation (like your white paper) is due by November 26.</p>
+      <h3>Research Poster Purpose and Audience</h3>
+      <p style="margin-bottom: 12px;">Your research poster focuses on the same purpose as your white paper. As explained in the call for proposals, your research poster will inform non-expert readers about a technical topic relevant to the work and mission of your company. These documents will share what we do and why we do it with the university, alumni, and local community. Your poster will contribute directly to our goal of public outreach and education.</p>
+      <p style="margin-bottom: 12px;">As an objective research poster, your document will either provide knowledge or information about a subject relevant to your company or provide solutions to a problem or challenge that relates to your company&mdash;or even a combination of both goals. </p>
+      <p style="margin-bottom: 12px;">The audiences for your poster presentation differs slightly from your white paper. You will communication your research to the general public, university community, and potential investors and clients who will attend the session.</p>
+      <h3>Poster Content</h3>
+      <p style="margin-bottom: 12px;">Your research poster will define or explain your topic and discuss it with the goal of informing your readers about it fully and with relevant, specific details. To follow the customary poster presentation structure, you need to shape the information into a Problem-Solution organization. Imagine that your topic either is a problem or a solution to a problem, and then discuss how to solve it or how it solves the problem.</p>
+      <p style="margin-bottom: 12px;">For instance, for a white paper that focuses on best password management strategies, the problem for your research poster would be password hacking and security. The solution would be your password management strategies.</p>
+      <p style="margin-bottom: 12px;">You should focus this structure for your poster: </p>
+      <ul>
+        <li>Introduction</li>
+        <li>Problem Discussion </li>
+        <li>Solution(s)</li>
+        <li>Conclusions &amp; Recommendations</li>
+        <li>Works Cited</li>
+      </ul>
+      <p style="margin-bottom: 12px;">You should present the information in your report objectively, that is, without letting opinion shape what you have to say. Its goal is to provide a response to the question &quot;What is [your subject] all about?&quot; This doesn't mean you can't present opinions about it, but those opinions must come from experts in the field. For example, Expert A thinks the subject of your article is a fantastic option for reducing the need to irrigate crops, but Expert B is sure it won't work as planned. You can present these opposing viewpoints, and draw conclusions about why one option is preferred.<br />
+      </p>
+      <h3>Poster Presentation Expectations</h3>
+      <ul>
+        <li style="margin-bottom: 12px;"><strong>Size</strong>: 48&quot; X 36&quot;, presented in landscape orientation (horizontal). The size is absolute, based on our display boards.</li>
+        <li style="margin-bottom: 12px;"><strong>Document Design</strong>: Use a polished, professional layout that relies on design strategies that increase the document&rsquo;s readability. Must use appropriately-sized headings, text, and images. People need to be able to see your work.</li>
+        <li style="margin-bottom: 12px;"><strong>Graphics and Visual Elements</strong>: Include as many relevant graphical elements (e.g., photos, illustrations, graphs, tables) as necessary to present your ideas. Avoid clipart (which typically looks unpolished or unprofessional), and use only graphical elements that directly relate to the information in the presentation. All graphical elements must be your company&rsquo;s intellectual property, or you must provide complete documentation. Graphical elements that are not your own intellectual property must meet fair use guidelines.</li>
+        <li style="margin-bottom: 12px;"><strong>Research Support</strong>: Information must be supported by fully-documented research, including short, relevant quotations. In addition to citing published research studies, you can take advantage of the campus community by tapping university experts on the topic you are discussing.</li>
+        <li style="margin-bottom: 12px;"><strong>Documentation Format</strong>: APA citation style (or the appropriate style for your field, if desired&mdash;for instance, an electrical engineer can use IEEE).</li>
+        <li style="margin-bottom: 12px;"><strong>Submission Format</strong>: *.ppt, *pptx, or Google Slides link.</li>
+      </ul>
+      <h3>Deadlines</h3>
+      <p style="margin-bottom: 12px;">To ensure that we have time to review and edit your submission, please submit your research poster by <strong>11:59 PM on Monday, November 26</strong>. If additional time is necessary, you can take advantage of the grace period, which ends at 11:59 PM on Thursday, November 29.</p>
+      <h3>Any Questions?</h3>
+      <p style="margin-bottom: 12px;">If you need any help with this project, please let either of us know or contact Traci’s assistant, Leslie Crow &lt;lcrow@utprosimincubator.org&gt;. </p>
+    </div>
+    <h2 style="margin-top: 12px;">Relevant Details</h2>
+    <p style="margin-bottom: 12px;"><em>Note: These details apply to all of the projects you include in your portfolio.</em></p>
+    <p style="margin-bottom: 12px;">Your company&rsquo;s address is [Your Company Name], <em>Ut Prosim</em> Incubator, 1872 Inventors Way, Suite #[you choose a number], Blacksburg, Virginia 24060. Your company&rsquo;s phone number is 540-555-5555. You may create a fictional Internet domain for your company, and use that domain for a web page address and your email addresses. If you&rsquo;d like, you may create other information (including a logo) for your company as appropriate. Be sure that you use the information that you create consistently across all of your projects.</p>
+    <h2>The Project Assignment</h2>
+    <p style="margin-bottom: 12px;"><strong>Step 1: Review your notes on the topic and audiences, as established in your proposal.</strong><br />
+      Your proposal should have the basic starting information that you need to begin work on your research poster. </p>
+    <p style="margin-bottom: 12px;"><strong>Step 2: Examine the information about research posters in the readings.</strong><br />
+      Review the following readings for specific details on the information and details to include in your research poster:</p>
     <ul>
-      <li>Introduction</li>
-      <li>Problem Discussion </li>
-      <li>Solution(s)</li>
-      <li>Conclusions &amp; Recommendations</li>
-      <li>Works Cited</li>
+      <li>Markel &amp; Selber, Chapter 21: Making Oral Presentations</li>
+      <li>Markel &amp; Selber, Chapter 18: “Using a Problem-Solving Model for Preparing Recommendation Reports” (starting on p. 472)</li>
+      <li>Woolston, Chris. “<a href="https://www.nature.com/articles/nj7614-115a" target="_blank" rel="noreferrer noopener">Conference Presentations: Lead the Poster Parade</a>.” <em>Nature</em> 536 (115-17). 4 August 2016.</li>
+      <li style="margin-bottom: 12px;">Miller, Jane. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1955747/" target="_blank">Preparing and Presenting Effective Research Posters</a></li>
     </ul>
-  </li>
-  <li>Relies on sources that are accurate, unbiased, comprehensive, appropriately technical, current, and clear.</li>
-  <li>Uses quotations from research sources to support and strengthen the project.</li>
-  <li>Includes presentation graphics that meet these five characteristics (see Markel &amp; Selber, pp. 587–589):
+    <p style="margin-bottom: 12px;"><strong>Step 3:</strong><strong> Examine the information about presentations in the readings.</strong><br />
+      The textbook provides complete details on how to write proposals. Follow the textbook as you work on your project. In particular, be sure that you do the following:</p>
     <ul>
-      <li>It presents a clear, well-supported claim.</li>
-      <li>It is easy to see.</li>
-      <li>It is easy to read.</li>
-      <li>It is simple.</li>
-      <li>It is correct.</li>
-      <li>It is either your own work or meets fair use guidelines.</li>
+      <li style="margin-bottom: 12px;">Use “<span epub:type="label">Figure</span> <span epub:type="ordinal">18.1</span> A Problem-Solving Model for Recommendation Reports” (on page 474 of Markel &amp; Selber) to structure your information. </li>
+      <li style="margin-bottom: 12px;">Follow the advice in the “Ethics Note: Presenting Honest Recommendations”<span style="margin-bottom: 12px;"> (on page 477 of Markel &amp; Selber)</span> to ensure your poster meets the ethical requirements of your field. </li>
+      <li style="margin-bottom: 12px;">Review the “Checklist for Preparing and Presenting an Effective Research Posters” [<em>sic</em>] (starting on page 326 of Miller) to determine the information to include on your poster. </li>
+      <li style="margin-bottom: 12px;">Follow the extensive advice in “Best Practices for Effective Scientific Posters” to arrange your content, design your work, and polish your presentation. </li>
+      <li style="margin-bottom: 12px;">Use the details in “Appendix Part B: Documenting Your Sources” for information on APA citation style (starting on page 622 of Markel &amp; Selber) and information on IEEE citation style (starting on page 639 of Markel &amp; Selber) to gather relevant details for your documentation and citations. Note you may alternately use the citation style that is relevant for your field if you prefer.</li>
     </ul>
-  </li>
-  <li>Provides accurate and complete in-text citations for all information that is not the author’s own work (including information that is paraphrased, quoted, and summarized).</li>
-  <li>Includes a Works Cited section (e.g., bibliography) that does the following:
+    <p style="margin-bottom: 12px;"><strong>Step 3: Write and design your poster.<br />
+      </strong></p>
+    <div style="width: 250px;float:right;margin: 0px 0px 15px 15px;border: 3px double #e5751f;padding: 6px;">Work steadily on your poster for the entire two-week period. Do not leave the work until the last minute!</div>
+    Create your research poster, as requested in The Scenario above, with all the details you have gathered in your research. Remember that your poster should be a factual and objective document. Do not include fictional information about your topic. Review the assessment guidelines below to ensure you have met all the requirements for the instructions.
+    </p>
+    <p style="margin-bottom: 12px;">As you work, also keep the following points in mind:<strong><br />
+      </strong></p>
     <ul>
-      <li>identifies each source cited in the poster</li>
-      <li>contains complete and accurate information for each citation.<em></em></li>
-      <li>uses either APA citation style or the preferred citation style for your major. </li>
+      <li style="margin-bottom: 12px;">Use plain language to make the ideas easy to find and read. Refer to the resources from Module 2 as needed.</li>
+      <li style="margin-bottom: 12px;">Follow all relevant ethical guidelines as you work using the Writer&rsquo;s Checklist at the end of Chapter 2 <span style="margin-bottom: 12px;"> (on page 40 of Markel &amp; Selber)</span>.</li>
+      <li style="margin-bottom: 12px;">Follow the suggestions for emphasizing important information, using the Writer&rsquo;s Checklist for Chapter 9 <span style="margin-bottom: 12px;"> (on page 211 of Markel &amp; Selber) </span>to check your work.</li>
+      <li style="margin-bottom: 12px;">Use the Writer&rsquo;s Checklist for Chapter 11 <span style="margin-bottom: 12px;"> (on page 288 of Markel &amp; Selber) to ensure that your document takes advantage of design principles to make it reader-friendly</span><span class="revise"><span style="margin-bottom: 12px;">.</span></span></li>
+      <li style="margin-bottom: 12px;">Make a good impression with accuracy and correctness. Your document should be polished and professional.</li>
     </ul>
-  </li>
-  <li>Demonstrates a clear relationship between the graphics and the accompanying text.</li>
-</ul>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+    <p style="margin-bottom: 12px;"><strong>Step 4: Check your draft against the Writer&rsquo;s Checklist</strong>.<br />
+      Be sure that you include the required features for your research poster. Review your project, using <span style="margin-bottom: 12px;"> </span>the <a href="#assessment">Assessment Criteria</a> below.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 5: Review your draft for design and basic writing errors.</strong><br />
+      Everything you write should use accurate/appropriate image editing, grammar, spelling, punctuation, mechanics, linking, and formatting. These are important basic writing skills that you should have developed in high school. Review your project, using the Writer&rsquo;s Checklist at the end of Markel &amp; Selber, Chapter 10 <span style="margin-bottom: 12px;"> (on page 242 of Markel &amp; Selber)</span>.</p>
+    <p style="margin-bottom: 12px;">You can also consult the information on &ldquo;Sentence-Level Issues&rdquo; in Markel &amp; Selber, &ldquo;Appendix, Part D: Guidelines for Multilingual Writers (ESL)&rdquo; <span style="margin-bottom: 12px;"> (on page 683 of Markel &amp; Selber)</span>. While the section is labeled for multilingual writers, it is useful for everyone. It includes explanations and examples for many common mistakes writers make.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 6: Submit your draft to your Writing Group in Canvas</strong>.<br />
+      Post a rough draft of your research poster to your Writing Group in Canvas in the 11/08 Draft Feedback Discussion in Canvas. Additional instructions are in the Discussion. Post a draft of your research poster by November 9. If you are late submitting a draft, your group may not have time to provide feedback.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 7: Provide feedback to your Writing Group in Canvas</strong>.<br />
+      Provide feedback to the members of your writing group in the 11/08 Draft Feedback Discussion in Canvas, by November 12 (end of the grace period). Use the information on the&nbsp;Writing Groups page&nbsp;to provide constructive feedback that will help your group members make concrete improvements to their drafts.&nbsp;</p>
+    <p style="margin-bottom: 12px;"><strong>Step 8: Revise your draft</strong>.<br />
+      Use the feedback that you receive from your group members to revise and improve your document. You can share your draft again with your Writing Group, if you desire. As you revise, keep in mind the advice in the steps above, as well as the Assessment Criteria below.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 9: Include a polished version of your project in Project Portfolio 2, due November 26</strong>.<br />
+      Have your Research Poster finished and ready for submission in your Project Portfolio 2, which is due Monday, November 26. The grace period for Project Portfolio 2 ends at 11:59PM on Thursday, November 29.</p>
+    <h2 id="assessment">Assessment Criteria</h2>
+    <h3>For All Technical Writing Projects</h3>
+    <p style="margin-bottom: 12px;">All technical writing projects should meet the following general criteria:</p>
+    <ul>
+      <li>Makes a good first impression as a polished and professional document.</li>
+      <li>Meets the needs of the intended audience.</li>
+      <li>Demonstrates how to emphasize important information.</li>
+      <li>Uses layout and formatting that makes information easy for readers to find and read, and that follows the standards you have set for your company.</li>
+      <li>Is written in plain language, which communicates the ideas clearly.</li>
+      <li>Follows all relevant ethical guidelines.</li>
+      <li style="margin-bottom: 12px;">Uses&nbsp;accurate/appropriate&nbsp;grammar, spelling, punctuation, mechanics, linking, and formatting.</li>
+    </ul>
+    <h3>For Research Posters</h3>
+    <p style="margin-bottom: 12px;">Your project should meet the following criteria for effective instructions:</p>
+    <ul>
+      <li>Has a clear, compelling title that is specific to the poster.</li>
+      <li>Adopts a tone and approach that will appeal to readers.</li>
+      <li>Demonstrates a clear understanding of the research literature on this topic. </li>
+      <li>Provides details and explanation of the information arranged in this structure:
+        <ul>
+          <li>Introduction</li>
+          <li>Problem Discussion </li>
+          <li>Solution(s)</li>
+          <li>Conclusions &amp; Recommendations</li>
+          <li>Works Cited</li>
+        </ul>
+      </li>
+      <li>Relies on sources that are accurate, unbiased, comprehensive, appropriately technical, current, and clear.</li>
+      <li>Uses quotations from research sources to support and strengthen the project.</li>
+      <li>Includes presentation graphics that meet these five characteristics (see Markel &amp; Selber, pp. 587–589):
+        <ul>
+          <li>It presents a clear, well-supported claim.</li>
+          <li>It is easy to see.</li>
+          <li>It is easy to read.</li>
+          <li>It is simple.</li>
+          <li>It is correct.</li>
+          <li>It is either your own work or meets fair use guidelines.</li>
+        </ul>
+      </li>
+      <li>Provides accurate and complete in-text citations for all information that is not the author’s own work (including information that is paraphrased, quoted, and summarized).</li>
+      <li>Includes a Works Cited section (e.g., bibliography) that does the following:
+        <ul>
+          <li>identifies each source cited in the poster</li>
+          <li>contains complete and accurate information for each citation.<em></em></li>
+          <li>uses either APA citation style or the preferred citation style for your major. </li>
+        </ul>
+      </li>
+      <li>Demonstrates a clear relationship between the graphics and the accompanying text.</li>
+    </ul>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

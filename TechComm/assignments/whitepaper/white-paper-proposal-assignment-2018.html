@@ -1,218 +1,221 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>White Paper Proposal(2018)</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>White Paper Proposal(2018)</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>White Paper Proposal</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-<p><em>This is an archived assignment from English 3764: Technical Writing, taught at Virginia Tech during the Fall 2018 semester. Links may no longer work, and newer versions of some resources may be available.</em></p>
-<h2 style="color: #660000;">Background</h2>
-<p style="margin-bottom: 12px;"><span style="text-align: left; vertical-align: top;">You will write a short proposal that presents the topic you will explore for your white paper and poster presentation. Your proposal should explain not only what the topic is but how it relates to your company (and therefore your career field and major) and the incubator goal of public outreach and education.</span></p>
-<h2 style="color: #660000;">The Scenario</h2>
-<p style="margin-bottom: 12px;">Today, you received the following memo, asking you to submit a proposal for a white paper and related poster presentation:</p>
-<div style="border: 3px double #ff6600; background-color: #f8f8ff; padding: 12px;">
-  <h3 style="margin-bottom: 0px; font-family: 'Arial Black', Gadget, sans-serif; font-size: xx-large;"><img style="float: left;" src="https://canvas.vt.edu/courses/73812/files/7660230/download" alt="Ut Prosim Incubator logo" width="123" height="123" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/73812/files/7660230" data-api-returntype="File" /><span><em>&nbsp;Ut Prosim</em> Incubator</span></h3>
-  <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;1872 Inventors Way, Blacksburg, Virginia 24060</p>
-  <p style="margin-top: 0px; margin-bottom: 0px; font-size: 14px;">&nbsp;</p>
-  <h4 style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;<strong>Interoffice Memo</strong></h4>
-  <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
-  <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
-  <p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #ff6600; clear: both;"><br />
-    To: All Incubator Companies</p>
-  <p style="margin-top: 0px; margin-bottom: 0px;">From: Traci Gardner, <em>Ut Prosim</em> Director</p>
-  <p style="margin-top: 0px; margin-bottom: 0px;">Subject: RFP: White Papers and Poster Presentations for December Publication</p>
-  <p style="margin-top: 0px; margin-bottom: 0px; border-bottom: 3px solid #ff6600;">Date: October 1, 2018<br />
-    <br />
-  </p>
-  <p style="margin-bottom: 12px;">Our Public Outreach Office is requesting proposals for white papers and research posters that will inform non-expert readers about a technical topic relevant to the work and mission of your company. These documents will share what we do and why we do it with the university, alumni, and local community. Your documents will also contribute directly to our goal of public outreach and education by adding to our growing library of documents that inform website readers about how science, technology, and engineering work.</p>
-  <p style="margin-bottom: 12px;">As an objective white paper, accepted documents will either provide knowledge or information about a subject relevant to your company or provide solutions to a problem or challenge that relates to your company&mdash;or even a combination of both goals. These white papers will also be the basis of a presentation that will be part of the quarterly poster session we sponsor for the local community in December. As an extension, additional investors and clients also attend the session, so you have the potential to make critical connections for your business.</p>
-  <p style="margin-bottom: 12px;">These white papers and poster presentations are due by November 26 [Portfolio 2 due date] and will be published in the December 2018 release on the Incubator website.</p>
-  <h3>White Paper Expectations</h3>
-  <ul>
-    <li style="margin-bottom: 12px;"><strong>Length</strong>: 25 pages or less.</li>
-    <li style="margin-bottom: 12px;"><strong>Document Design</strong>: Polished, professional layout the relies on design strategies that increase the document&rsquo;s readability. You are encouraged to use a non-traditional format that incorporates sidebars, columns, and other visually-interesting design strategies. Please do not include a cover page.</li>
-    <li style="margin-bottom: 12px;"><strong>Graphics and Visual Elements</strong>: Include relevant graphical elements (e.g., photos, illustrations, graphs, tables). All graphical elements must be your company&rsquo;s intellectual property, or you must provide complete documentation. Graphical elements that are not your own intellectual property must meet fair use guidelines.</li>
-    <li style="margin-bottom: 12px;"><strong>Research Support</strong>: Information must be supported by fully-documented research, including relevant quotations. In addition to citing published research studies, you can take advantage of the campus community by tapping university experts on the topic you are discussing.</li>
-    <li style="margin-bottom: 12px;"><strong>Documentation Format</strong>: APA citation style (or the appropriate style for your field, if desired&mdash;for instance, an electrical engineer can use IEEE).</li>
-    <li style="margin-bottom: 12px;"><strong>Submission Format</strong>: *.doc, *docx, *.pdf, or Google Document link.</li>
-  </ul>
-  <p style="margin-bottom: 12px;">Additional criteria and examples will be provided once proposals are accepted.</p>
-  <h3>Poster Presentation Expectations</h3>
-  <ul>
-    <li style="margin-bottom: 12px;"><strong>Size</strong>: 48" X 36", presented in landscape orientation (horizontal).</li>
-    <li style="margin-bottom: 12px;"><strong>Document Design</strong>: Polished, professional layout the relies on design strategies that increase the document&rsquo;s readability. Must use appropriately-sized headings, text, and images.</li>
-    <li style="margin-bottom: 12px;"><strong>Graphics and Visual Elements</strong>: Include as many relevant graphical elements (e.g., photos, illustrations, graphs, tables) as necessary to present your ideas. All graphical elements must be your company&rsquo;s intellectual property, or you must provide complete documentation. Graphical elements that are not your own intellectual property must meet fair use guidelines.</li>
-    <li style="margin-bottom: 12px;"><strong>Research Support</strong>: Information must be supported by fully-documented research, including short, relevant quotations. In addition to citing published research studies, you can take advantage of the campus community by tapping university experts on the topic you are discussing.</li>
-    <li style="margin-bottom: 12px;"><strong>Documentation Format</strong>: APA citation style (or the appropriate style for your field, if desired&mdash;for instance, an electrical engineer can use IEEE).</li>
-    <li style="margin-bottom: 12px;"><strong>Submission Format</strong>: *.ppt, *pptx, or Google Slides link.</li>
-  </ul>
-  <p style="margin-bottom: 12px;">Additional criteria and examples will be provided once proposals are accepted.</p>
-  <h3>Proposal Requirements</h3>
-  <p style="margin-bottom: 12px;">Your proposal should be in memo format, be no more than four pages in length, and provide the following information to help us gauge the appropriateness of the topic for December publication:</p>
-  <ul>
-    <li style="margin-bottom: 12px;"><strong>Background (or Introduction</strong>)<br />
-      Give some background on your topic, your experiences with it to date, what you already know, etc. Then clearly state, &ldquo;[We, OR your company name, OR similar] would like to produce a white paper and poster presentation on [your topic] for the following reasons: . . . .&rdquo; In your statement, explain your motivations for sharing information about the topic with the public.</li>
-    <li style="margin-bottom: 12px;"><strong>Areas to be Studied</strong><br />
-      Provide more details on the proposed topic for your white paper and poster presentation so that the Public Outreach Office understands the approach you will take. Consider the following questions: <br />
+  </script>
+  <div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <p><em>This is an archived assignment from English 3764: Technical Writing, taught at Virginia Tech during the Fall 2018 semester. Links may no longer work, and newer versions of some resources may be available.</em></p>
+    <h2 style="color: #660000;">Background</h2>
+    <p style="margin-bottom: 12px;"><span style="text-align: left; vertical-align: top;">You will write a short proposal that presents the topic you will explore for your white paper and poster presentation. Your proposal should explain not only what the topic is but how it relates to your company (and therefore your career field and major) and the incubator goal of public outreach and education.</span></p>
+    <h2 style="color: #660000;">The Scenario</h2>
+    <p style="margin-bottom: 12px;">Today, you received the following memo, asking you to submit a proposal for a white paper and related poster presentation:</p>
+    <div style="border: 3px double #e5751f; background-color: #f8f8ff; padding: 12px;">
+      <h3 style="margin-bottom: 0px; font-family: 'Arial Black', Gadget, sans-serif; font-size: xx-large;"><img style="float: left;" src="https://canvas.vt.edu/courses/73812/files/7660230/download" alt="Ut Prosim Incubator logo" width="123" height="123" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/73812/files/7660230" data-api-returntype="File" /><span><em>&nbsp;Ut Prosim</em> Incubator</span></h3>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;1872 Inventors Way, Blacksburg, Virginia 24060</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; font-size: 14px;">&nbsp;</p>
+      <h4 style="margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;<strong>Interoffice Memo</strong></h4>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
+      <p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; border-top: 3px solid #e5751f; clear: both;"><br />
+        To: All Incubator Companies</p>
+      <p style="margin-top: 0px; margin-bottom: 0px;">From: Traci Gardner, <em>Ut Prosim</em> Director</p>
+      <p style="margin-top: 0px; margin-bottom: 0px;">Subject: RFP: White Papers and Poster Presentations for December Publication</p>
+      <p style="margin-top: 0px; margin-bottom: 0px; border-bottom: 3px solid #e5751f;">Date: October 1, 2018<br />
+        <br />
+      </p>
+      <p style="margin-bottom: 12px;">Our Public Outreach Office is requesting proposals for white papers and research posters that will inform non-expert readers about a technical topic relevant to the work and mission of your company. These documents will share what we do and why we do it with the university, alumni, and local community. Your documents will also contribute directly to our goal of public outreach and education by adding to our growing library of documents that inform website readers about how science, technology, and engineering work.</p>
+      <p style="margin-bottom: 12px;">As an objective white paper, accepted documents will either provide knowledge or information about a subject relevant to your company or provide solutions to a problem or challenge that relates to your company&mdash;or even a combination of both goals. These white papers will also be the basis of a presentation that will be part of the quarterly poster session we sponsor for the local community in December. As an extension, additional investors and clients also attend the session, so you have the potential to make critical connections for your business.</p>
+      <p style="margin-bottom: 12px;">These white papers and poster presentations are due by November 26 [Portfolio 2 due date] and will be published in the December 2018 release on the Incubator website.</p>
+      <h3>White Paper Expectations</h3>
       <ul>
-        <li>What are the key points you will explore or explain?</li>
-        <li>What are some questions you will ask and try to answer in this white paper and poster presentation?</li>
-        <li>How do the areas to be studied relate to your company&rsquo;s mission?</li>
-        <li>What ethical and/or intercultural and global issues will you consider as you examine the topic you have chosen?</li>
+        <li style="margin-bottom: 12px;"><strong>Length</strong>: 25 pages or less.</li>
+        <li style="margin-bottom: 12px;"><strong>Document Design</strong>: Polished, professional layout the relies on design strategies that increase the document&rsquo;s readability. You are encouraged to use a non-traditional format that incorporates sidebars, columns, and other visually-interesting design strategies. Please do not include a cover page.</li>
+        <li style="margin-bottom: 12px;"><strong>Graphics and Visual Elements</strong>: Include relevant graphical elements (e.g., photos, illustrations, graphs, tables). All graphical elements must be your company&rsquo;s intellectual property, or you must provide complete documentation. Graphical elements that are not your own intellectual property must meet fair use guidelines.</li>
+        <li style="margin-bottom: 12px;"><strong>Research Support</strong>: Information must be supported by fully-documented research, including relevant quotations. In addition to citing published research studies, you can take advantage of the campus community by tapping university experts on the topic you are discussing.</li>
+        <li style="margin-bottom: 12px;"><strong>Documentation Format</strong>: APA citation style (or the appropriate style for your field, if desired&mdash;for instance, an electrical engineer can use IEEE).</li>
+        <li style="margin-bottom: 12px;"><strong>Submission Format</strong>: *.doc, *docx, *.pdf, or Google Document link.</li>
       </ul>
-    </li>
-    <li style="margin-bottom: 12px;"><strong>Methods of Research</strong><br />
-      Explain how you will gather the information that you present in your white paper and poster presentation. Tell the Public Outreach Office your research strategy by outlining exactly how are you planning to gather information and find answers to your questions explored in the white paper and poster presentation.</li>
-    <li style="margin-bottom: 12px;"><strong>Timetable</strong><br />
-      Share a calendar that includes the target dates for various milestones that will lead to completion of your white paper and poster presentation. Be sure that your schedule allows you to finish by the white paper and poster presentation due date, November 26 [Portfolio 2 due date].</li>
-    <li style="margin-bottom: 12px;"><strong>Qualifications</strong><br />
-      Explain why you are qualified to do this research and outline the skills you have that will help you deal with this topic effectively.</li>
-    <li style="margin-bottom: 12px;"><strong>Request for Approval</strong><br />
-      Ask for approval; ask for guidance, articulate your biggest concerns at this point; ask for suggestions about next right steps; provide contact information.</li>
-  </ul>
-  <h3>Due Dates</h3>
-  <p style="margin-bottom: 12px;"><strong>October 8, 2018</strong>: Proposal submitted as a memo, addressed to me and to Manolito Reyna Bautista, Manager of the&nbsp;Public Outreach Office</p>
-  <p style="margin-bottom: 12px;"><strong>November 26, 2018</strong>: Finished White Paper and Poster submitted [in Canvas, as part of Portfolio 2]</p>
-  <h3>Any Questions?</h3>
-  <p style="margin-bottom: 12px;">If you need any help with your proposal, please let me know or contact my assistant, Leslie Crow &lt;lcrow@utprosimincubator.org&gt;.</p>
-</div>
-<h2 style="color: #660000;">Relevant Details</h2>
-<p style="margin-bottom: 12px;"><em>Note: These details apply to all of the projects you include in your portfolio.</em></p>
-<p style="margin-bottom: 12px;">Your company&rsquo;s address is [Your Company Name], <em>Ut Prosim</em> Incubator, 1872 Inventors Way, Suite #[you choose a number], Blacksburg, Virginia 24060. Your company&rsquo;s phone number is 540-555-5555. You may create a fictional Internet domain for your company, and use that domain for a web page address and your email addresses. If you&rsquo;d like, you may create other information (including a logo) for your company as appropriate. Be sure that you use the information that you create consistently across all of your projects.</p>
-<h2 style="color: #660000;">The Project Assignment</h2>
-<p style="margin-bottom: 12px;"><strong>Step 1: Decide on the focus for your white paper and poster presentation(which you will write as future projects).</strong><br />
-  Your focus will be to inform non-expert readers about a technical topic that is related to your company (and therefore, related to your career field and major). Try to limit yourself to topics with which you have some expertise (or at least some experience) to simplify the research process. These example white papers may help you think of appropriate topics and/or approaches:</p>
-<ul>
-  <li><a href="https://www.cdc.gov/vaccinesafety/pdf/WhitePaperSafety_WEB.pdf" target="_blank" rel="noopener">White Paper on Studying the Safety of the Childhood Immunization Schedule</a> (CDC)</li>
-  <li><a href="https://www.nps.gov/tps/how-to-preserve/briefs/20-barns.htm" target="_blank" rel="noopener">The Preservation of Historic Barns</a> (National Park Service)</li>
-  <li><a href="https://www.accessscience.com/content/the-flint-water-crisis-and-its-health-consequences/BR0119171" target="_blank" rel="noopener">The Flint Water Crisis and Its Health Consequences</a> (AccessScience)</li>
-  <li><a href="https://global.nature.org/content/funding-trees-for-health" target="_blank" rel="noopener">Funding Trees for Health</a> (The Nature Conservancy)</li>
-  <li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf" target="_blank" rel="noopener">Microsoft Password Guidance</a> (MSFT) <a href="https://www.asme.org/wwwasmeorg/media/ResourceFiles/AboutASME/News%20Media/0418_CoverStoryME.pdf" target="_blank" rel="noopener"></a></li>
-  <li><a href="https://www.asme.org/topics-resources/content/the-model-of-good-health" target="_blank" rel="noopener">The Model of Good Health</a> (ASME)</li>
-</ul>
-<p style="margin-bottom: 12px;"><strong>Step 2: Examine the information about proposals in Markel &amp; Selber.</strong><br />
-  The textbook provides complete details on how to write proposals. Follow the textbook as you work on your project. In particular, be sure that you do the following:</p>
-<ul>
-  <li style="margin-bottom: 12px;">Follow the &ldquo;GUIDELINES: Demonstrating Your Professionalism in a Proposal&rdquo; (starting on page 430 of Markel &amp; Selber) to ensure you adopt the appropriate tone.</li>
-  <li style="margin-bottom: 12px;">Use the &ldquo;ETHICS NOTE: WRITING HONEST PROPOSALS&rdquo; (starting on page 430 of Markel &amp; Selber) to make your proposal professionally acceptable.</li>
-  <li style="margin-bottom: 12px;">Work through the &ldquo;GUIDELINES: Introducing a Proposal&rdquo; (starting on page 432 of Markel &amp; Selber) to gather information for your proposal&rsquo;s Background section.</li>
-  <li style="margin-bottom: 12px;">Explore the information in the &ldquo;Tech Tip: Why and How to Create a Gantt Chart&rdquo; (starting on page 436 of Markel &amp; Selber) to see an effective strategy for explaining your timetable.</li>
-</ul>
-<p style="margin-bottom: 12px;"><strong>Step 3: Write the proposals for your white paper and poster presentation.<br />
-  </strong>Compose your proposal, as requested in The Scenario above, with all the details you have gathered. Review the assessment guidelines below to ensure you have met all the requirements for the proposal. As you work, also keep the following points in mind:<strong><br />
-</strong></p>
-<ul>
-  <li>Use plain language to make the ideas in your proposal are easy to find and read. Refer to the resources from Module 2 as needed.</li>
-  <li>Follow all relevant ethical guidelines as you work using the Writer&rsquo;s Checklist at the end of Chapter 2 <span style="margin-bottom: 12px;"> (on page 40 of Markel &amp; Selber)</span>.</li>
-  <li>Follow the suggestions for emphasizing important information, using the Writer&rsquo;s Checklist for Chapter 9 <span style="margin-bottom: 12px;"> (on page 211 of Markel &amp; Selber) </span>to check your work.</li>
-  <li>Use the Writer&rsquo;s Checklist for Chapter 11 <span style="margin-bottom: 12px;"> (on page 288 of Markel &amp; Selber) to ensure that your document takes advantage of design principles to make it reader-friendly</span><span class="revise"><span style="margin-bottom: 12px;">.</span></span></li>
-  <li>Make a good impression with accuracy and correctness. Your document should be polished and professional.</li>
-</ul>
-<p style="margin-bottom: 12px;"><strong>Step 4: Check your draft against the Writer&rsquo;s Checklist</strong>.<br />
-  Be sure that you include the required features for instructions. Review your project, using the Writer's Checklist for Chapter 16<span style="margin-bottom: 12px;"> (on page 439 of Markel &amp; Selber) and </span>the <a href="#assessment">Assessment Criteria</a> below.</p>
-<p style="margin-bottom: 12px;"><strong>Step 5: Review your draft for design and basic writing errors.</strong><br />
-  Everything you write should use accurate/appropriate image editing, grammar, spelling, punctuation, mechanics, linking, and formatting. These are important basic writing skills that you should have developed in high school. Review your project, using the Writer&rsquo;s Checklist at the end of Markel &amp; Selber, Chapter 10 <span style="margin-bottom: 12px;"> (on page 242 of Markel &amp; Selber)</span>.</p>
-<p style="margin-bottom: 12px;">You can also consult the information on &ldquo;Sentence-Level Issues&rdquo; in Markel &amp; Selber, &ldquo;Appendix, Part D: Guidelines for Multilingual Writers (ESL)&rdquo; <span style="margin-bottom: 12px;"> (on page 683 of Markel &amp; Selber)</span>. While the section is labeled for multilingual writers, it is useful for everyone. It includes explanations and examples for many common mistakes writers make.</p>
-<p id="reflection"><strong>Step 6: Submit your draft to your Writing Group in Canvas</strong>.<br />
-  Post a rough draft of your Proposal to your Writing Group in Canvas in the 10/04 Draft Feedback Discussion in Canvas. Additional instructions are in the Discussion. If you do not post your draft by noon on Sunday, October 7, your group may not have time to provide feedback.</p>
-<p style="margin-bottom: 12px;"><strong>Step 7: Provide feedback to your Writing Group in Canvas</strong>.<br />
-  Provide feedback to the members of your writing group in the 10/04 Draft Feedback Discussion in Canvas, by October 8 (end of the grace period). Use the information on the Writing Groups page to provide constructive feedback that will help your group members make concrete improvements to their drafts. You are not obligated to provide feedback for any drafts posted after noon on Sunday, October 7.</p>
-<p style="margin-bottom: 12px;"><strong>Step 8: Revise your draft</strong>.<br />
-  Use the feedback that you receive from your group members to revise and improve your document. You can share your draft again with your Writing Group, if you desire. As you revise, keep in mind the advice in the steps above, as well as the Assessment Criteria below.</p>
-<p style="margin-bottom: 12px;"><strong>Step 9: Include a polished version of your project in Project Portfolio 2, due November 26</strong>.<br />
-  Have your Proposal finished and ready for submission in your Project Portfolio 2, which is due Monday, November 26. The grace period for Project Portfolio 1 ends at 11:59PM on Thursday, November 29.</p>
-<h2 id="assessment" style="color: #660000;">Assessment Criteria</h2>
-<h3>For All Technical Writing Projects</h3>
-<p style="margin-bottom: 12px;">All technical writing projects should meet the following general criteria:</p>
-<ul>
-  <li>Makes a good first impression as a polished and professional document.</li>
-  <li>Meets the needs of the intended audience.</li>
-  <li>Demonstrates how to emphasize important information.</li>
-  <li>Uses layout and formatting that makes information easy for readers to find and read, and that follows the standards you have set for your company.</li>
-  <li>Is written in plain language, which communicates the ideas clearly.</li>
-  <li>Follows all relevant ethical guidelines.</li>
-  <li>Uses&nbsp;accurate/appropriate&nbsp;grammar, spelling, punctuation, mechanics, linking, and formatting.</li>
-</ul>
-<h3>For Proposals</h3>
-<p style="margin-bottom: 12px;">Your project should meet the following criteria for effective proposals, based on the checklist at the end of Chapter 16 of Markel & Selber:</p>
-<ul>
-  <li>Meets the guidelines established in the request for proposals (see The Scenario, above).</li>
-  <li>Demonstrates professionalism and honesty.</li>
-  <li>Includes an introduction that indicates the following:
+      <p style="margin-bottom: 12px;">Additional criteria and examples will be provided once proposals are accepted.</p>
+      <h3>Poster Presentation Expectations</h3>
+      <ul>
+        <li style="margin-bottom: 12px;"><strong>Size</strong>: 48" X 36", presented in landscape orientation (horizontal).</li>
+        <li style="margin-bottom: 12px;"><strong>Document Design</strong>: Polished, professional layout the relies on design strategies that increase the document&rsquo;s readability. Must use appropriately-sized headings, text, and images.</li>
+        <li style="margin-bottom: 12px;"><strong>Graphics and Visual Elements</strong>: Include as many relevant graphical elements (e.g., photos, illustrations, graphs, tables) as necessary to present your ideas. All graphical elements must be your company&rsquo;s intellectual property, or you must provide complete documentation. Graphical elements that are not your own intellectual property must meet fair use guidelines.</li>
+        <li style="margin-bottom: 12px;"><strong>Research Support</strong>: Information must be supported by fully-documented research, including short, relevant quotations. In addition to citing published research studies, you can take advantage of the campus community by tapping university experts on the topic you are discussing.</li>
+        <li style="margin-bottom: 12px;"><strong>Documentation Format</strong>: APA citation style (or the appropriate style for your field, if desired&mdash;for instance, an electrical engineer can use IEEE).</li>
+        <li style="margin-bottom: 12px;"><strong>Submission Format</strong>: *.ppt, *pptx, or Google Slides link.</li>
+      </ul>
+      <p style="margin-bottom: 12px;">Additional criteria and examples will be provided once proposals are accepted.</p>
+      <h3>Proposal Requirements</h3>
+      <p style="margin-bottom: 12px;">Your proposal should be in memo format, be no more than four pages in length, and provide the following information to help us gauge the appropriateness of the topic for December publication:</p>
+      <ul>
+        <li style="margin-bottom: 12px;"><strong>Background (or Introduction</strong>)<br />
+          Give some background on your topic, your experiences with it to date, what you already know, etc. Then clearly state, &ldquo;[We, OR your company name, OR similar] would like to produce a white paper and poster presentation on [your topic] for the following reasons: . . . .&rdquo; In your statement, explain your motivations for sharing information about the topic with the public.</li>
+        <li style="margin-bottom: 12px;"><strong>Areas to be Studied</strong><br />
+          Provide more details on the proposed topic for your white paper and poster presentation so that the Public Outreach Office understands the approach you will take. Consider the following questions: <br />
+          <ul>
+            <li>What are the key points you will explore or explain?</li>
+            <li>What are some questions you will ask and try to answer in this white paper and poster presentation?</li>
+            <li>How do the areas to be studied relate to your company&rsquo;s mission?</li>
+            <li>What ethical and/or intercultural and global issues will you consider as you examine the topic you have chosen?</li>
+          </ul>
+        </li>
+        <li style="margin-bottom: 12px;"><strong>Methods of Research</strong><br />
+          Explain how you will gather the information that you present in your white paper and poster presentation. Tell the Public Outreach Office your research strategy by outlining exactly how are you planning to gather information and find answers to your questions explored in the white paper and poster presentation.</li>
+        <li style="margin-bottom: 12px;"><strong>Timetable</strong><br />
+          Share a calendar that includes the target dates for various milestones that will lead to completion of your white paper and poster presentation. Be sure that your schedule allows you to finish by the white paper and poster presentation due date, November 26 [Portfolio 2 due date].</li>
+        <li style="margin-bottom: 12px;"><strong>Qualifications</strong><br />
+          Explain why you are qualified to do this research and outline the skills you have that will help you deal with this topic effectively.</li>
+        <li style="margin-bottom: 12px;"><strong>Request for Approval</strong><br />
+          Ask for approval; ask for guidance, articulate your biggest concerns at this point; ask for suggestions about next right steps; provide contact information.</li>
+      </ul>
+      <h3>Due Dates</h3>
+      <p style="margin-bottom: 12px;"><strong>October 8, 2018</strong>: Proposal submitted as a memo, addressed to me and to Manolito Reyna Bautista, Manager of the&nbsp;Public Outreach Office</p>
+      <p style="margin-bottom: 12px;"><strong>November 26, 2018</strong>: Finished White Paper and Poster submitted [in Canvas, as part of Portfolio 2]</p>
+      <h3>Any Questions?</h3>
+      <p style="margin-bottom: 12px;">If you need any help with your proposal, please let me know or contact my assistant, Leslie Crow &lt;lcrow@utprosimincubator.org&gt;.</p>
+    </div>
+    <h2 style="color: #660000;">Relevant Details</h2>
+    <p style="margin-bottom: 12px;"><em>Note: These details apply to all of the projects you include in your portfolio.</em></p>
+    <p style="margin-bottom: 12px;">Your company&rsquo;s address is [Your Company Name], <em>Ut Prosim</em> Incubator, 1872 Inventors Way, Suite #[you choose a number], Blacksburg, Virginia 24060. Your company&rsquo;s phone number is 540-555-5555. You may create a fictional Internet domain for your company, and use that domain for a web page address and your email addresses. If you&rsquo;d like, you may create other information (including a logo) for your company as appropriate. Be sure that you use the information that you create consistently across all of your projects.</p>
+    <h2 style="color: #660000;">The Project Assignment</h2>
+    <p style="margin-bottom: 12px;"><strong>Step 1: Decide on the focus for your white paper and poster presentation(which you will write as future projects).</strong><br />
+      Your focus will be to inform non-expert readers about a technical topic that is related to your company (and therefore, related to your career field and major). Try to limit yourself to topics with which you have some expertise (or at least some experience) to simplify the research process. These example white papers may help you think of appropriate topics and/or approaches:</p>
     <ul>
-      <li>the problem or opportunity.</li>
-      <li>the purpose of the proposal.</li>
-      <li>the background of the problem or opportunity.</li>
-      <li>your sources of information.</li>
-      <li>the scope of the proposal.</li>
-      <li>the organization of the proposal.</li>
-      <li>the key terms that you will use in the proposal.</li>
+      <li><a href="https://www.cdc.gov/vaccinesafety/pdf/WhitePaperSafety_WEB.pdf" target="_blank" rel="noopener">White Paper on Studying the Safety of the Childhood Immunization Schedule</a> (CDC)</li>
+      <li><a href="https://www.nps.gov/tps/how-to-preserve/briefs/20-barns.htm" target="_blank" rel="noopener">The Preservation of Historic Barns</a> (National Park Service)</li>
+      <li><a href="https://www.accessscience.com/content/the-flint-water-crisis-and-its-health-consequences/BR0119171" target="_blank" rel="noopener">The Flint Water Crisis and Its Health Consequences</a> (AccessScience)</li>
+      <li><a href="https://global.nature.org/content/funding-trees-for-health" target="_blank" rel="noopener">Funding Trees for Health</a> (The Nature Conservancy)</li>
+      <li><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf" target="_blank" rel="noopener">Microsoft Password Guidance</a> (MSFT) <a href="https://www.asme.org/wwwasmeorg/media/ResourceFiles/AboutASME/News%20Media/0418_CoverStoryME.pdf" target="_blank" rel="noopener"></a></li>
+      <li><a href="https://www.asme.org/topics-resources/content/the-model-of-good-health" target="_blank" rel="noopener">The Model of Good Health</a> (ASME)</li>
     </ul>
-  </li>
-  <li>Provides a clear, specific plan for research and justifies that methodology.</li>
-  <li>Describes the qualifications and experience clearly outlining
+    <p style="margin-bottom: 12px;"><strong>Step 2: Examine the information about proposals in Markel &amp; Selber.</strong><br />
+      The textbook provides complete details on how to write proposals. Follow the textbook as you work on your project. In particular, be sure that you do the following:</p>
     <ul>
-      <li>relevant skills and past work.</li>
-      <li>relevant equipment, facilities, and experience.</li>
+      <li style="margin-bottom: 12px;">Follow the &ldquo;GUIDELINES: Demonstrating Your Professionalism in a Proposal&rdquo; (starting on page 430 of Markel &amp; Selber) to ensure you adopt the appropriate tone.</li>
+      <li style="margin-bottom: 12px;">Use the &ldquo;ETHICS NOTE: WRITING HONEST PROPOSALS&rdquo; (starting on page 430 of Markel &amp; Selber) to make your proposal professionally acceptable.</li>
+      <li style="margin-bottom: 12px;">Work through the &ldquo;GUIDELINES: Introducing a Proposal&rdquo; (starting on page 432 of Markel &amp; Selber) to gather information for your proposal&rsquo;s Background section.</li>
+      <li style="margin-bottom: 12px;">Explore the information in the &ldquo;Tech Tip: Why and How to Create a Gantt Chart&rdquo; (starting on page 436 of Markel &amp; Selber) to see an effective strategy for explaining your timetable.</li>
     </ul>
-  </li>
-  <li>Includes full documentation for all ideas, words, and visuals that the work of others (see Part B, &ldquo;Documenting Your Sources,&rdquo; in Markel &amp; Selber).</li>
-</ul>
-</div>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+    <p style="margin-bottom: 12px;"><strong>Step 3: Write the proposals for your white paper and poster presentation.<br />
+      </strong>Compose your proposal, as requested in The Scenario above, with all the details you have gathered. Review the assessment guidelines below to ensure you have met all the requirements for the proposal. As you work, also keep the following points in mind:<strong><br />
+      </strong></p>
+    <ul>
+      <li>Use plain language to make the ideas in your proposal are easy to find and read. Refer to the resources from Module 2 as needed.</li>
+      <li>Follow all relevant ethical guidelines as you work using the Writer&rsquo;s Checklist at the end of Chapter 2 <span style="margin-bottom: 12px;"> (on page 40 of Markel &amp; Selber)</span>.</li>
+      <li>Follow the suggestions for emphasizing important information, using the Writer&rsquo;s Checklist for Chapter 9 <span style="margin-bottom: 12px;"> (on page 211 of Markel &amp; Selber) </span>to check your work.</li>
+      <li>Use the Writer&rsquo;s Checklist for Chapter 11 <span style="margin-bottom: 12px;"> (on page 288 of Markel &amp; Selber) to ensure that your document takes advantage of design principles to make it reader-friendly</span><span class="revise"><span style="margin-bottom: 12px;">.</span></span></li>
+      <li>Make a good impression with accuracy and correctness. Your document should be polished and professional.</li>
+    </ul>
+    <p style="margin-bottom: 12px;"><strong>Step 4: Check your draft against the Writer&rsquo;s Checklist</strong>.<br />
+      Be sure that you include the required features for instructions. Review your project, using the Writer's Checklist for Chapter 16<span style="margin-bottom: 12px;"> (on page 439 of Markel &amp; Selber) and </span>the <a href="#assessment">Assessment Criteria</a> below.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 5: Review your draft for design and basic writing errors.</strong><br />
+      Everything you write should use accurate/appropriate image editing, grammar, spelling, punctuation, mechanics, linking, and formatting. These are important basic writing skills that you should have developed in high school. Review your project, using the Writer&rsquo;s Checklist at the end of Markel &amp; Selber, Chapter 10 <span style="margin-bottom: 12px;"> (on page 242 of Markel &amp; Selber)</span>.</p>
+    <p style="margin-bottom: 12px;">You can also consult the information on &ldquo;Sentence-Level Issues&rdquo; in Markel &amp; Selber, &ldquo;Appendix, Part D: Guidelines for Multilingual Writers (ESL)&rdquo; <span style="margin-bottom: 12px;"> (on page 683 of Markel &amp; Selber)</span>. While the section is labeled for multilingual writers, it is useful for everyone. It includes explanations and examples for many common mistakes writers make.</p>
+    <p id="reflection"><strong>Step 6: Submit your draft to your Writing Group in Canvas</strong>.<br />
+      Post a rough draft of your Proposal to your Writing Group in Canvas in the 10/04 Draft Feedback Discussion in Canvas. Additional instructions are in the Discussion. If you do not post your draft by noon on Sunday, October 7, your group may not have time to provide feedback.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 7: Provide feedback to your Writing Group in Canvas</strong>.<br />
+      Provide feedback to the members of your writing group in the 10/04 Draft Feedback Discussion in Canvas, by October 8 (end of the grace period). Use the information on the Writing Groups page to provide constructive feedback that will help your group members make concrete improvements to their drafts. You are not obligated to provide feedback for any drafts posted after noon on Sunday, October 7.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 8: Revise your draft</strong>.<br />
+      Use the feedback that you receive from your group members to revise and improve your document. You can share your draft again with your Writing Group, if you desire. As you revise, keep in mind the advice in the steps above, as well as the Assessment Criteria below.</p>
+    <p style="margin-bottom: 12px;"><strong>Step 9: Include a polished version of your project in Project Portfolio 2, due November 26</strong>.<br />
+      Have your Proposal finished and ready for submission in your Project Portfolio 2, which is due Monday, November 26. The grace period for Project Portfolio 1 ends at 11:59PM on Thursday, November 29.</p>
+    <h2 id="assessment" style="color: #660000;">Assessment Criteria</h2>
+    <h3>For All Technical Writing Projects</h3>
+    <p style="margin-bottom: 12px;">All technical writing projects should meet the following general criteria:</p>
+    <ul>
+      <li>Makes a good first impression as a polished and professional document.</li>
+      <li>Meets the needs of the intended audience.</li>
+      <li>Demonstrates how to emphasize important information.</li>
+      <li>Uses layout and formatting that makes information easy for readers to find and read, and that follows the standards you have set for your company.</li>
+      <li>Is written in plain language, which communicates the ideas clearly.</li>
+      <li>Follows all relevant ethical guidelines.</li>
+      <li>Uses&nbsp;accurate/appropriate&nbsp;grammar, spelling, punctuation, mechanics, linking, and formatting.</li>
+    </ul>
+    <h3>For Proposals</h3>
+    <p style="margin-bottom: 12px;">Your project should meet the following criteria for effective proposals, based on the checklist at the end of Chapter 16 of Markel & Selber:</p>
+    <ul>
+      <li>Meets the guidelines established in the request for proposals (see The Scenario, above).</li>
+      <li>Demonstrates professionalism and honesty.</li>
+      <li>Includes an introduction that indicates the following:
+        <ul>
+          <li>the problem or opportunity.</li>
+          <li>the purpose of the proposal.</li>
+          <li>the background of the problem or opportunity.</li>
+          <li>your sources of information.</li>
+          <li>the scope of the proposal.</li>
+          <li>the organization of the proposal.</li>
+          <li>the key terms that you will use in the proposal.</li>
+        </ul>
+      </li>
+      <li>Provides a clear, specific plan for research and justifies that methodology.</li>
+      <li>Describes the qualifications and experience clearly outlining
+        <ul>
+          <li>relevant skills and past work.</li>
+          <li>relevant equipment, facilities, and experience.</li>
+        </ul>
+      </li>
+      <li>Includes full documentation for all ideas, words, and visuals that the work of others (see Part B, &ldquo;Documenting Your Sources,&rdquo; in Markel &amp; Selber).</li>
+    </ul>
+  </div>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
