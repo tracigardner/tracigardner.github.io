@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Self-Check Options Explained</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Self-Check Options Explained</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+        <p>There are two options for all of the Self-Checks in the course:</p>
+        <ul>
+            <li>
+                You can do the self-check yourself by comparing the criteria to the information in your project.
+            </li>
+            <li>
+                You can use AI to compare the criteria to the information in your project.
+            </li>
+        </ul>
+        <p>You can choose either option. I am offering both so that you do not have to use AI if you don&rsquo;t want to. The project criteria are the same for both. The self-check that you do NOT complete is dropped.</p>
+        <h3>Some Frequently Asked Questions</h3>
+        <dl class="skipline">
+            <dt>Can I change my mind?</dt>
+            <dd>Absolutely. If you start out with the AI Self-Check, you can switch to the regular self-check and vice-versa. You simply need to earn a 1 (Complete) on one of the options.</dd>
+
+            <dt>Does it matter which AI tool I use?</dt>
+            <dd>Maybe. I design our activities to be compatible with Copilot to streamline the activities I ask you to complete. You are welcome to use other AI tools that you have access to. If an alternative tool cannot accomplish an assigned task however, you&rsquo;ll need to switch back to Copilot.
+            </dd>
+        </dl>
+
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
