@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sample UX Reflection Memo</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Sample UX Reflection Memo</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+        <meta name="viewport" content="width=<p style=" margin-bottom: 12px;">To practice analyzing the usability of a document, read the example memo below and then answer the questions in this Try-It to assess how well the memo pays attention to the user&rsquo;s experience.</p>
+        <div style="margin: 9px; padding: 15px; border: 1px solid #861f41; background-color: #fefdec;">
+            <p><span style="font-size: 14pt;"><strong>MEMORANDUM</strong></span></p>
+            <p><strong>To:</strong> Philip Bailey Sr., Verdine White, and Ralph Johnson</p>
+            <p><strong>From:</strong> Philip Bailey Jr.</p>
+            <p><strong>Date:</strong> The 21st Day of September</p>
+            <p style="padding-bottom: 6px; border-bottom: 1px solid #861f41; margin-bottom: 6px;"><strong>Subject:</strong> Readability of the EWF Wikipedia Page</p>
+            <p><strong>Introduction</strong></p>
+            <p>I have evaluated the readability of the Earth, Wind &amp; Fire Wikipedia page (<a href="https://en.wikipedia.org/wiki/Earth,_Wind_%26_Fire" target="_new">https://en.wikipedia.org/wiki/Earth,_Wind_%26_Fire</a>) and would like to share my observations with you. The goal is to assess the page's clarity and accessibility to diverse readers, which can inform revisions to enhance its readability.</p>
+            <p><strong>Readability Assessment</strong></p>
+            <p><em>Strengths</em>: The Wikipedia page on Earth, Wind &amp; Fire generally maintains a high level of readability. It employs clear and concise language, making it accessible to a broad audience. The use of headings and subheadings aids in organizing the content, and the page features an array of visuals, such as images and infographics, to enhance understanding and engagement.</p>
+            <p><em>Recommendations</em>: While the overall readability is strong, there are some areas for improvement. Certain sections may benefit from simplification of technical terminology and complex musical concepts to cater to readers with limited prior knowledge of music theory. Additionally, consider breaking down lengthy paragraphs into smaller, more scannable segments to improve comprehension.</p>
+            <p><strong>Conclusion</strong></p>
+            <p>The Earth, Wind &amp; Fire Wikipedia page offers a commendable level of readability, making it accessible to a wide range of readers. The recommended revisions focus on further enhancing clarity by simplifying technical language and improving the structure for easier navigation and understanding. College students can use this analysis as a starting point for revisions, aiming to create a more reader-friendly and informative resource on the iconic band Earth, Wind &amp; Fire.</p>
+        </div>
+
+        <div id="bottominfo"></div>
+        <script>
+            if (window.location !== window.parent.location) {
+                document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+                // The page is in an iframe
+            } else {
+                // The page is not in an iframe
+                document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+                // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+            }
+        </script>
+</body>
+
+</html>
