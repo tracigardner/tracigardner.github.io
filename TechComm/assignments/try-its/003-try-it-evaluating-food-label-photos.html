@@ -1,100 +1,103 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Try-It #3: Evaluating Food Label Photos</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Try-It #3: Evaluating Food Label Photos</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Try-It #3: Evaluating Food Label Photos</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
-<p style="padding: 12px; border: 3px double #861f41; background-color: #fff8dc; font-size: 24px;">You can use your textbook, any notes that you have, and the available course pages in Canvas for help as you work on these questions.</p>
-<p>In this activity, you will practice evaluating photos of food labels to determine if they are appropriate for the Label Analysis Assignment. The information on using photographs on pp. 337–338 of Markel &amp; Selber can help with this activity.</p>
-<p><strong>Assessment:</strong> Canvas automatically marks your work Complete when you submit it. All you have to do is TRY the activity. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
-   <h2>Question 1</h2>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+    <p style="padding: 12px; border: 3px double #861f41; background-color: #fff8dc; font-size: 24px;">You can use your textbook, any notes that you have, and the available course pages in Canvas for help as you work on these questions.</p>
+    <p>In this activity, you will practice evaluating photos of food labels to determine if they are appropriate for the Label Analysis Assignment. The information on using photographs on pp. 337–338 of Markel &amp; Selber can help with this activity.</p>
+    <p><strong>Assessment:</strong> Canvas automatically marks your work Complete when you submit it. All you have to do is TRY the activity. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
+    <h2>Question 1</h2>
     <p>Pull setup from Bank of sites. Base info:</p>
-<p>Consider the following photo and explain whether it would make a good image for the Label Analysis Assignment.</p>
-<ul>
-    <li>If it is a good image, explain why and how you would use it (what does it show about the product).</li>
-    <li>If it is a poor image, explain why you would not use it and suggest how you would improve it.</li>
-</ul>
-    
-  <h3>Photos in the Bank</h3>
+    <p>Consider the following photo and explain whether it would make a good image for the Label Analysis Assignment.</p>
     <ul>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/tomato-soup.jpg" width="200" height="200" alt="Campbell's Tomato Soup Label"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/aE1kwo" target="_blank" rel="noopener">Tomato Soup by Kevin Dooley on Flickr</a>, used under a CC-BY 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/Penfold-RobinTaylor.jpg" width="200" height="304" alt="Penfold's bottle showing portion of the label"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/aPbNp" target="_blank" rel="noopener">Penfold&rsquo;s by Robin Taylor on Flickr</a>, used under a CC-BY 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/green-giant.jpg" width="200" height="112" alt="Green Giant Corn Label"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/2mizxar" target="_blank" rel="noopener">Green Giant by emeraldschell on Flickr</a>, used under public domain.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/porkslap.jpg" width="147" height="200" alt="Can of Porkslap Pale Ale"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/6nnhEr" target="_blank" rel="noopener">Pork Slap by Jason Eppink on Flickr</a>, used under a CC-BY 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/chang.jpg" width="150" height="200" alt="Chang Beer Label"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/5UTwGj" target="_blank" rel="noopener">elephant label by neomodernist on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/perrier.jpg" width="200" height="165" alt="Can of Perrier on a wooden table"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/xQzMuz" target="_blank" rel="noopener">Perrier and... Ant by Linda Rain 714 on Flickr</a>, used under a CC-BY 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/alabama-nutrition.jpg" width="200" height="142" alt="Back of food cans, showing nutrition facts"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/2kc9B9N" target="_blank" rel="noopener">Nutrition Label on Cans by Alabama Extension on Flickr</a>, used under public domain.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/chockfullonuts.jpg" width="200" height="150" alt="Chock full o' Nuts label"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/agacn" target="_blank" rel="noopener">Chock Full o' Nuts by Sheri on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/tea.jpg" width="200" height="127" alt="Bag of Huntington Rose Tea beside a teacup with a teabag"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/2mWjbep" target="_blank" rel="noopener">DSC_6272 by Tracie Hall on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/kix-monkey.jpg" width="200" height="150" alt="Close-up of a box of Kix cereal, showing a monkey that can be punched out"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/pWzSjH" target="_blank" rel="noopener">Kix Cereal by Mike Mozart on Flickr</a>, used under a CC-BY 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/applejacks.jpg" width="200" height="133" alt="Portion of a side panel of boxes of Apple Jacks and Honey Nut Cheerios"/>Image credit: <a class="inline_disabled" href="https://flic.kr/p/kgCXoA" target="_blank" rel="noopener">Apple Jacks and Honey Nut Cheerios cereal boxes by m01229 on Flickr</a>, used under a CC-BY 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/velveeta.jpg" width="200" height="150" alt="Box of Velveeta"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/5YVMtt" target="_blank" rel="noopener">Velveeta by JHERI H on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/glory-foods.jpg" width="200" height="160" alt="Plate of greens, potatoes, and mushrooms with a bottle of Glory Hot Sauce"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/aDdos8" target="_blank" rel="noopener">Glory Foods Turnip Greens With Potatoes and Mushrooms by Glory Foods on Flickr</a>, used under a CC-BY 2.0 license.</li>
-        <li style="margin-bottom: 12px;"><img src="food-label-photos/dececcoshells.jpg" width="200" height="150" alt="DeCecco Shells pasta box"/> Image credit: <a class="inline_disabled" href="https://flic.kr/p/Mmt6bG" target="_blank" rel="noopener">DeCecco Shells Pasta box by&nbsp; Willis Lam on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
+      <li>If it is a good image, explain why and how you would use it (what does it show about the product).</li>
+      <li>If it is a poor image, explain why you would not use it and suggest how you would improve it.</li>
     </ul>
 
-<h2>Question 2</h2>
+    <h3>Photos in the Bank</h3>
+    <ul>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/tomato-soup.jpg" width="200" height="200" alt="Campbell's Tomato Soup Label" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/aE1kwo" target="_blank" rel="noopener">Tomato Soup by Kevin Dooley on Flickr</a>, used under a CC-BY 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/Penfold-RobinTaylor.jpg" width="200" height="304" alt="Penfold's bottle showing portion of the label" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/aPbNp" target="_blank" rel="noopener">Penfold&rsquo;s by Robin Taylor on Flickr</a>, used under a CC-BY 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/green-giant.jpg" width="200" height="112" alt="Green Giant Corn Label" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/2mizxar" target="_blank" rel="noopener">Green Giant by emeraldschell on Flickr</a>, used under public domain.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/porkslap.jpg" width="147" height="200" alt="Can of Porkslap Pale Ale" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/6nnhEr" target="_blank" rel="noopener">Pork Slap by Jason Eppink on Flickr</a>, used under a CC-BY 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/chang.jpg" width="150" height="200" alt="Chang Beer Label" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/5UTwGj" target="_blank" rel="noopener">elephant label by neomodernist on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/perrier.jpg" width="200" height="165" alt="Can of Perrier on a wooden table" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/xQzMuz" target="_blank" rel="noopener">Perrier and... Ant by Linda Rain 714 on Flickr</a>, used under a CC-BY 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/alabama-nutrition.jpg" width="200" height="142" alt="Back of food cans, showing nutrition facts" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/2kc9B9N" target="_blank" rel="noopener">Nutrition Label on Cans by Alabama Extension on Flickr</a>, used under public domain.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/chockfullonuts.jpg" width="200" height="150" alt="Chock full o' Nuts label" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/agacn" target="_blank" rel="noopener">Chock Full o' Nuts by Sheri on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/tea.jpg" width="200" height="127" alt="Bag of Huntington Rose Tea beside a teacup with a teabag" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/2mWjbep" target="_blank" rel="noopener">DSC_6272 by Tracie Hall on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/kix-monkey.jpg" width="200" height="150" alt="Close-up of a box of Kix cereal, showing a monkey that can be punched out" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/pWzSjH" target="_blank" rel="noopener">Kix Cereal by Mike Mozart on Flickr</a>, used under a CC-BY 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/applejacks.jpg" width="200" height="133" alt="Portion of a side panel of boxes of Apple Jacks and Honey Nut Cheerios" />Image credit: <a class="inline_disabled" href="https://flic.kr/p/kgCXoA" target="_blank" rel="noopener">Apple Jacks and Honey Nut Cheerios cereal boxes by m01229 on Flickr</a>, used under a CC-BY 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/velveeta.jpg" width="200" height="150" alt="Box of Velveeta" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/5YVMtt" target="_blank" rel="noopener">Velveeta by JHERI H on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/glory-foods.jpg" width="200" height="160" alt="Plate of greens, potatoes, and mushrooms with a bottle of Glory Hot Sauce" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/aDdos8" target="_blank" rel="noopener">Glory Foods Turnip Greens With Potatoes and Mushrooms by Glory Foods on Flickr</a>, used under a CC-BY 2.0 license.</li>
+      <li style="margin-bottom: 12px;"><img src="food-label-photos/dececcoshells.jpg" width="200" height="150" alt="DeCecco Shells pasta box" /> Image credit: <a class="inline_disabled" href="https://flic.kr/p/Mmt6bG" target="_blank" rel="noopener">DeCecco Shells Pasta box by&nbsp; Willis Lam on Flickr</a>, used under a CC-BY-SA 2.0 license.</li>
+    </ul>
+
+    <h2>Question 2</h2>
     <p>I have neither given nor received unauthorized assistance on this assignment.</p>
     <ul>
       <li>True</li>
       <li>False</li>
     </ul>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

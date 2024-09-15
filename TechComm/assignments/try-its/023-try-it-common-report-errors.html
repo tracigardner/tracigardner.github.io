@@ -1,132 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Try-It #23: Checking for Common Report Errors</title>
 
-      <style>
-          body {
-              font-size: 16px;
-          }
-      </style>
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Try-It #23: Checking for Common Report Errors</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-size: 16px;
+    }
+  </style>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<p><!-- script -->
-</p>
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <p><!-- script -->
+  </p>
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Try-It #23: Checking for Common Report Errors</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
-<p style="padding: 12px; border: 3px double #861f41; background-color: #fff8dc; font-size: 24px;">You can use your textbook, any notes that you have, and the available course pages in Canvas for help as you work on these questions.</p>
-<p>This activity asks you to apply a series of tips to your draft of the Recommendation Report, revising or adding information as you go. The questions match common errors that I see in Recommendation Reports.  You can improve your report by working through your draft and applying each of these tips.</p>
-<p><strong>Assessment</strong>: Canvas automatically marks your work Complete when you submit it. &nbsp;All you have to do is TRY the activity. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
-<h2>Setup</h2>
-<p>This Try-It works like the Self-Checks you have completed. Once you check your report, confirm that you have avoided each of the errors by marking True.</p>
-<h2>Question 1</h2>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Using a Vague or General Title</h3>
-  <p>If your title is so general that it would work on anyone&rsquo;s report, you need to revise it. Use the <a href="https://canvas.vt.edu/courses/166227/pages/effective-report-titles" target="_blank">Effective Report Titles</a> for more help. Consider these examples: </p>
-  <ul>
-    <li>Too General: Recommendation Report </li>
-    <li>Specific Examples:<br>
-      <ul class="null">
-        <li>Recommendations for Eating Kosher on Campus</li>
-        <li>Reducing Food Waste at Virginia Tech    </li>
-      </ul>
-    </li>
-  </ul>
- <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that my report has a specific title.</h3>
-  <h2>Question 2</h2>
- <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: General Table of Contents</h3>
- <p>The key here is to build a <a href="https://canvas.vt.edu/courses/166227/pages/creating-your-table-of-contents" target="_blank">detailed and specific Table of Contents</a>. Your table of contents should show the full headings and subheadings from the report. Check out the Table of Contents in the Sample Recommendation Report on p. 508 of the textbook for an example.</p>
- <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm my report includes a detailed and specific Table of Contents. </h3>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+    <p style="padding: 12px; border: 3px double #861f41; background-color: #fff8dc; font-size: 24px;">You can use your textbook, any notes that you have, and the available course pages in Canvas for help as you work on these questions.</p>
+    <p>This activity asks you to apply a series of tips to your draft of the Recommendation Report, revising or adding information as you go. The questions match common errors that I see in Recommendation Reports. You can improve your report by working through your draft and applying each of these tips.</p>
+    <p><strong>Assessment</strong>: Canvas automatically marks your work Complete when you submit it. &nbsp;All you have to do is TRY the activity. It&rsquo;s okay if you make mistakes. Recognize however that if you have not put in an effort to do the work, I may remove the Complete mark.</p>
+    <h2>Setup</h2>
+    <p>This Try-It works like the Self-Checks you have completed. Once you check your report, confirm that you have avoided each of the errors by marking True.</p>
+    <h2>Question 1</h2>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Using a Vague or General Title</h3>
+    <p>If your title is so general that it would work on anyone&rsquo;s report, you need to revise it. Use the <a href="https://canvas.vt.edu/courses/166227/pages/effective-report-titles" target="_blank">Effective Report Titles</a> for more help. Consider these examples: </p>
+    <ul>
+      <li>Too General: Recommendation Report </li>
+      <li>Specific Examples:<br>
+        <ul class="null">
+          <li>Recommendations for Eating Kosher on Campus</li>
+          <li>Reducing Food Waste at Virginia Tech </li>
+        </ul>
+      </li>
+    </ul>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that my report has a specific title.</h3>
+    <h2>Question 2</h2>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: General Table of Contents</h3>
+    <p>The key here is to build a <a href="https://canvas.vt.edu/courses/166227/pages/creating-your-table-of-contents" target="_blank">detailed and specific Table of Contents</a>. Your table of contents should show the full headings and subheadings from the report. Check out the Table of Contents in the Sample Recommendation Report on p. 508 of the textbook for an example.</p>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm my report includes a detailed and specific Table of Contents. </h3>
 
-  <h2>Question 3</h2>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Using General Headings and/or Subheadings, OR Using No Headings and/or Subheadings</h3>
-  <p>Headings and subheadings help your reader navigate a document. They are like a signposts that tell the reader where to find specific information.</p>
-  <p>Check the Table of Contents in the Sample Recommendation Report on p. 508 of the textbook to see appropriate headings. See &ldquo;Titles and Headings&rdquo; in Chapter 11 of Markel and Selber&rsquo;s <em>Technical Communication</em> (pp. 275–277) for help writing your headings and subheadings.</p>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I have  used specific headings and subheadings in my report.</h3>
-<h2>Question 4</h2>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Not Documenting Outside Sources</h3>
-  <p>You need to be sure of  the following  in your report:</p>
-  <ul>
-    <li>Any words, phrases, and sentences that you have taken from another source are enclosed in quotation marks.</li>
-    <li>Information that is quoted, paraphrased, or summarized from another source is indicated with a citation.</li>
-  </ul>
-  <p>See the <a href="https://canvas.vt.edu/courses/166227/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citation</a> page for additional help.</p>
+    <h2>Question 3</h2>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Using General Headings and/or Subheadings, OR Using No Headings and/or Subheadings</h3>
+    <p>Headings and subheadings help your reader navigate a document. They are like a signposts that tell the reader where to find specific information.</p>
+    <p>Check the Table of Contents in the Sample Recommendation Report on p. 508 of the textbook to see appropriate headings. See &ldquo;Titles and Headings&rdquo; in Chapter 11 of Markel and Selber&rsquo;s <em>Technical Communication</em> (pp. 275–277) for help writing your headings and subheadings.</p>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I have used specific headings and subheadings in my report.</h3>
+    <h2>Question 4</h2>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Not Documenting Outside Sources</h3>
+    <p>You need to be sure of the following in your report:</p>
+    <ul>
+      <li>Any words, phrases, and sentences that you have taken from another source are enclosed in quotation marks.</li>
+      <li>Information that is quoted, paraphrased, or summarized from another source is indicated with a citation.</li>
+    </ul>
+    <p>See the <a href="https://canvas.vt.edu/courses/166227/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citation</a> page for additional help.</p>
     <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I have placed all direct quotations in quotation marks and credited my sources in the body of my report.</h3>
-  <h2>Question 5</h2>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Not Including a Bibliography or References Page</h3>
-  <p>All the sources you use in your project should be listed in a bibliography at the end of the project. See the page on <a href="https://canvas.vt.edu/courses/166227/pages/providing-your-references" target="_blank">Writing Your References section</a> and the <a href="https://canvas.vt.edu/courses/166227/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citation</a> page for help.</p>
-    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I have listed  all of my sources in my References section.</h3>
-  <h2>Question 6</h2>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Typos and Spelling Errors</h3>
-  <p>This error is probably obvious, but you would be surprised how often it trips people up. In particular, be sure that you always check the names of people involved. You want to be sure that you spell the name of the person you send the report to and other colleagues and clients correctly. When you make errors with people’s names, readers may question your attention to accuracy.</p>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I have spellchecked my work and double-checked that I have spelled all names correctly.</h3>
-  <h2>Question 7</h2>
-  <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Using the Wrong Name for Virginia Tech</h3>
-  <p>The official name for the university is Virginia Polytechnic Institute and State University. The short version of the name is Virginia Tech. If you are using any other name, you have the wrong name. For more information, see <a href="https://career.vt.edu/job-search/presenting_yourself/resumes/common-resume-mistakes.html" target="_blank">https://career.vt.edu/job-search/presenting_yourself/resumes/common-resume-mistakes.html</a></p>
-     <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I used the correct name of our university in my report (if I mentioned it).</h3>
-  <ul>
-    <li>True, or Irrelevant</li>
-    <li>False<br>
-    </li>
-  </ul>
-  <h2>Question 8</h2>
-  <p>I have neither given nor received unauthorized assistance on this assignment.</p>
+    <h2>Question 5</h2>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Not Including a Bibliography or References Page</h3>
+    <p>All the sources you use in your project should be listed in a bibliography at the end of the project. See the page on <a href="https://canvas.vt.edu/courses/166227/pages/providing-your-references" target="_blank">Writing Your References section</a> and the <a href="https://canvas.vt.edu/courses/166227/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citation</a> page for help.</p>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I have listed all of my sources in my References section.</h3>
+    <h2>Question 6</h2>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Typos and Spelling Errors</h3>
+    <p>This error is probably obvious, but you would be surprised how often it trips people up. In particular, be sure that you always check the names of people involved. You want to be sure that you spell the name of the person you send the report to and other colleagues and clients correctly. When you make errors with people’s names, readers may question your attention to accuracy.</p>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I have spellchecked my work and double-checked that I have spelled all names correctly.</h3>
+    <h2>Question 7</h2>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">Common Error: Using the Wrong Name for Virginia Tech</h3>
+    <p>The official name for the university is Virginia Polytechnic Institute and State University. The short version of the name is Virginia Tech. If you are using any other name, you have the wrong name. For more information, see <a href="https://career.vt.edu/job-search/presenting_yourself/resumes/common-resume-mistakes.html" target="_blank">https://career.vt.edu/job-search/presenting_yourself/resumes/common-resume-mistakes.html</a></p>
+    <h3 style="color: #861f41;font-size: 15px;font-weight: bold;">I confirm that I used the correct name of our university in my report (if I mentioned it).</h3>
+    <ul>
+      <li>True, or Irrelevant</li>
+      <li>False<br>
+      </li>
+    </ul>
+    <h2>Question 8</h2>
+    <p>I have neither given nor received unauthorized assistance on this assignment.</p>
     <ul>
       <li style="margin-bottom: 9px;">True</li>
       <li style="margin-bottom: 9px;">False</li>
     </ul>
     <h2>&nbsp;</h2>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
