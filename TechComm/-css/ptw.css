@@ -489,9 +489,14 @@ li a:hover {
 .spacer details {
   margin-bottom: 18px !important;
 }
-.null ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
+
+.null li,
+.null ul li,
+.null ol li,
+.null dl,
+.null dd {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 div.wrapright,
