@@ -489,11 +489,7 @@ li a:hover {
 .spacer details {
   margin-bottom: 18px !important;
 }
-.null li,
-.null ul li,
-.null ol li,
-.null dl,
-.null dd {
+.null ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
