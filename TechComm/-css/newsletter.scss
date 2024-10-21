@@ -162,12 +162,13 @@ a:active {
 
 /* horizontal bar graph */
 
+/*
 .dl {
   display: flex;
   background-color: white;
   flex-direction: column;
   width: 100%;
-  /* max-width: 700px; */
+  max-width: 700px;
   position: relative;
   padding: 20px;
 }
@@ -183,7 +184,7 @@ a:active {
   margin-bottom: 20px;
   margin-left: 130px;
 }
-
+*/
 .text {
   display: flex;
   align-items: center;
@@ -193,12 +194,13 @@ a:active {
   position: absolute;
   left: 0;
   justify-content: flex-end;
+  ]
 }
 
 .percentage {
   font-size: .9em;
   line-height: 1;
-  width: 100%;
+  width: 50%;
   height: 40px;
   margin-left: 130px;
   background: repeating-linear-gradient(to left,
