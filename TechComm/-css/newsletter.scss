@@ -243,12 +243,12 @@ a:active {
 /* vertical bar chart */
 
 #q-graph {
-  display: block;
+  display: flex;
   /* fixes layout wonkiness in FF1.5 */
   position: relative;
-  width: 600px;
+  /* width: 600px; */
   height: 150px;
-  margin: 1.1em 0 0;
+  /* margin: 1.1em 0 0; */
   padding: 0;
   background: transparent;
   font-size: 11px;
@@ -299,6 +299,7 @@ a:active {
   padding: 0.5em 1em;
 }
 
+/*
 #q-graph thead th.sent {
   top: 0;
   left: 0;
@@ -310,33 +311,33 @@ a:active {
   line-height: 2;
   left: 0;
 }
-
+*/
 #q-graph tbody tr {
   height: 296px;
   padding-top: 2px;
-  border-right: 1px dotted #C4C4C4;
+  border-right: 1px solid $shadow-color;
   color: #AAA;
 }
 
 #q-graph #not {
-  left: 0;
+  left: 15px;
 }
 
 #q-graph #slightly {
-  left: 150px;
+  left: 30px;
 }
 
 #q-graph #somewhat {
-  left: 300px;
+  left: 45px;
 }
 
 #q-graph #very {
-  left: 450px;
+  left: 60px;
   border-right: none;
 }
 
 #q-graph #extremely {
-  left: 600px;
+  left: 75px;
   border-right: none;
 }
 
