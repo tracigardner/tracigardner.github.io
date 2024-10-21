@@ -75,7 +75,7 @@ $shadow-color: rgba(180, 180, 180, 0.69);
   }
 }
 
-@for $i from 1 through 100 {
+@for $i from 0 through 100 {
   .percentage-#{$i} {
     &:after {
       $value: (

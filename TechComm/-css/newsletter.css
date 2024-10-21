@@ -59,6 +59,10 @@
   background-color: #aaa;
 }
 
+.percentage-0:after {
+  width: 0%;
+}
+
 .percentage-1:after {
   width: 1%;
 }
