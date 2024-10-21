@@ -664,7 +664,7 @@ a:active {
   left: 100%;
   top: 50%;
   bottom: auto;
-  margin: -2.5em 0 0 5em;
+  margin: 1em 0 0 5em;
 }
 
 #q-graph thead th {
@@ -736,13 +736,13 @@ a:active {
 
 #q-graph .sent {
   left: 13px;
-  background-color: #39cccc;
+  background-color: #e5751f;
   border-color: transparent;
 }
 
 #q-graph .paid {
   left: 77px;
-  background-color: #7fdbff;
+  background-color: #861f41;
   border-color: transparent;
 }
 

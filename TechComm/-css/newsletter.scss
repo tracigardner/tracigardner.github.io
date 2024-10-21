@@ -241,8 +241,6 @@ a:active {
 }
 
 /* vertical bar chart */
-$color-paid: #7fdbff;
-$color-sent: #39cccc;
 
 #q-graph {
   display: block;
@@ -364,13 +362,13 @@ $color-sent: #39cccc;
 
 #q-graph .sent {
   left: 13px;
-  background-color: $color-sent;
+  background-color: $secondary-color;
   border-color: transparent;
 }
 
 #q-graph .paid {
   left: 77px;
-  background-color: $color-paid;
+  background-color: $primary-color;
   border-color: transparent;
 }
 
