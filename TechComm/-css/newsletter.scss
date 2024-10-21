@@ -8,9 +8,15 @@
 }
 }
 
+$primary-color: #861f41;
+$hover-color: #e5751f;
+$backgd-color: #F4F5F6;
+$shadow-color: rgba(180, 180, 180, 0.69);
+
 body {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
     "DejaVu Sans", Verdana, "sans-serif";
+  color: $shadow-color;
 }
 
 .b0ld {
@@ -19,7 +25,7 @@ body {
 
 .tw-header {
   margin-top: 9px;
-  border: 3px solid #861f41;
+  border: 3px solid $primary-color;
 }
 
 .masthead h1 {
