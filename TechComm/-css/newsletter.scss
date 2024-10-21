@@ -224,7 +224,7 @@ a:active {
   &:hover,
   &:focus {
     &:after {
-      background-color: #aaa;
+      background-color: $hover-color;
     }
   }
 }
