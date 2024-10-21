@@ -244,19 +244,6 @@ a:active {
 $color-paid: #7fdbff;
 $color-sent: #39cccc;
 
-body,
-html {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "fira-sans-2", Verdana, sans-serif;
-}
-
 #q-graph {
   display: block;
   /* fixes layout wonkiness in FF1.5 */
@@ -272,7 +259,6 @@ body {
 #q-graph caption {
   caption-side: top;
   width: 600px;
-  text-transform: uppercase;
   letter-spacing: .5px;
   top: -40px;
   position: relative;
@@ -334,20 +320,25 @@ body {
   color: #AAA;
 }
 
-#q-graph #q1 {
+#q-graph #not {
   left: 0;
 }
 
-#q-graph #q2 {
+#q-graph #slightly {
   left: 150px;
 }
 
-#q-graph #q3 {
+#q-graph #somewhat {
   left: 300px;
 }
 
-#q-graph #q4 {
+#q-graph #very {
   left: 450px;
+  border-right: none;
+}
+
+#q-graph #extremely {
+  left: 600px;
   border-right: none;
 }
 
