@@ -178,7 +178,7 @@ a:active {
 }
 */
 .text {
-  display: flex;
+  display: block;
   align-items: center;
   height: 40px;
   width: 130px;
@@ -191,7 +191,7 @@ a:active {
 .percentage {
   font-size: 0.9em;
   line-height: 1;
-  width: 50%;
+  width: 100%;
   height: 40px;
   margin-left: 130px;
   background: repeating-linear-gradient(to left, #ddd, #ddd 1px, #fff 1px, #fff 5%);
