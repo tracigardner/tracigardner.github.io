@@ -619,7 +619,8 @@ a:active {
 /* vertical bar chart */
 .simple-bar-chart {
   --line-count: 10;
-  --line-color: currentcolor;
+  --line-color: #ffffff;
+  /* currentcolor */
   --line-opacity: 0.25;
   --item-gap: 2%;
   --item-default-color: #060606;
@@ -649,10 +650,11 @@ a:active {
 }
 
 .simple-bar-chart > .item {
-  height: calc(1% * var(--val));
+  height: calc(2% * var(--val));
+  /* was 1% */
   background-color: var(--clr, var(--item-default-color));
   position: relative;
-  animation: item-height 1s ease forwards;
+  /* animation: item-height 1s ease forwards */
 }
 
 @keyframes item-height {
