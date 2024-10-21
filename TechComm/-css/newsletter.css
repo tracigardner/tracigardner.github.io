@@ -184,18 +184,21 @@ a:active {
   width: 130px;
   background-color: white;
   position: absolute;
-  left: 0;
+  left: 15px;
   justify-content: flex-end;
 }
 
 .percentage {
   font-size: 0.9em;
   line-height: 1;
-  width: 100%;
+  width: 75%;
   height: 40px;
   margin-left: 130px;
-  margin-right: -130px;
-  background: repeating-linear-gradient(to left, #ddd, #ddd 1px, #fff 1px, #fff 5%);
+  /*  background: repeating-linear-gradient(to left,
+      #ddd,
+      #ddd 1px,
+      #fff 1px,
+      #fff 5%); */
 }
 .percentage:after {
   content: "";
