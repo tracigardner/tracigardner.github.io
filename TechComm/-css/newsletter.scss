@@ -241,213 +241,60 @@ a:active {
 }
 
 /* vertical bar chart */
+.simple-bar-chart {
+  --line-count: 10;
+  --line-color: currentcolor;
+  --line-opacity: 0.25;
+  --item-gap: 2%;
+  --item-default-color: #060606;
 
-.barcontainer {
+  height: 10rem;
+  display: grid;
+  grid-auto-flow: column;
+  gap: var(--item-gap);
+  align-items: end;
+  padding-inline: var(--item-gap);
+  --padding-block: 1.5rem;
+  /*space for labels*/
+  padding-block: var(--padding-block);
   position: relative;
-  border: 3px solid black;
-  border-radius: 5px 5px 0 0;
-  width: 100%;
-  /* was 80% */
-  margin: 0 auto;
-  min-height: 25vw;
-  max-height: 50vw;
-  min-width: 40%;
-  max-width: 60%;
-  z-index: 1;
+  isolation: isolate;
 }
 
-.barcontainerheader {
-  display: inline;
+.simple-bar-chart::after {
+  content: "";
   position: absolute;
-  width: 100%;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  background: $secondary-color;
-  border-bottom: 3px solid black;
-  font-size: 1.5em;
-  color: white;
-  text-align: center;
-  text-shadow: 2px 2px 0 black;
-  z-index: 0;
+  inset: var(--padding-block) 0;
+  z-index: -1;
+  --line-width: 1px;
+  --line-spacing: calc(100% / var(--line-count));
+  background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+  box-shadow: 0 var(--line-width) 0 var(--line-color);
+  opacity: var(--line-opacity);
 }
 
-.bar {
-  position: absolute;
-  display: inline-block;
-  bottom: 0;
-  border: 1px solid black;
-  border-radius: 6px 6px 0 0;
-  background: $secondary-color;
-  width: 10%;
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 0 black;
-  box-shadow: 4px 0 8px #888;
-}
-
-.barlabel {
-  position: absolute;
-  border-top: 2px solid black;
-  background: #888;
-  bottom: 0;
-  width: 100%;
-  text-shadow: 1px 1px 0px black;
-  color: white;
-}
-
-.bar:nth-child(2) {
-  left: 5%;
-}
-
-.bar:nth-child(3) {
-  left: 20%;
-}
-
-.bar:nth-child(4) {
-  left: 35%;
-}
-
-.bar:nth-child(5) {
-  left: 50%;
-}
-
-.bar:nth-child(6) {
-  left: 65%;
-}
-
-.bar:nth-child(7) {
-  left: 80%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ORIGINAL TEST CODE
-
-#q-graph {
-  display: block;
-  /* fixes layout wonkiness in FF1.5 
-position: relative;
-width: 11600px;
-height: 150px;
-margin: 1.1em 0 0;
-padding: 0;
-background: transparent;
-font-size: 1rem;
-}
-
-#q-graph caption {
-  caption-side: top;
-  letter-spacing: .5px;
+.simple-bar-chart>.item {
+  height: calc(1% * var(--val));
+  background-color: var(--clr, var(--item-default-color));
   position: relative;
-  z-index: 10;
-  font-weight: bold;
+  animation: item-height 1s ease forwards
 }
 
-#q-graph tr,
-#q-graph th,
-#q-graph td {
-  position: absolute;
-  bottom: 0;
-  width: 150px;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-#q-graph td {
-  transition: all .3s ease;
-
-  &:hover {
-    background-color: desaturate(#85144b, 100);
-    opacity: .9;
-    color: white;
+@keyframes item-height {
+  from {
+    height: 0
   }
 }
 
-
-#q-graph thead tr {
-  left: 100%;
-  top: 50%;
-  bottom: auto;
-  margin: -2.5em 0 0 5em;
+.simple-bar-chart>.item>* {
+  position: absolute;
+  text-align: center
 }
 
-#q-graph thead th {
-  width: 7.5em;
-  height: auto;
-  padding: 0.5em 1em;
+.simple-bar-chart>.item>.label {
+  inset: 100% 0 auto 0
 }
 
-#q-graph thead th.sent {
-  top: 0;
-  left: 0;
-  line-height: 2;
+.simple-bar-chart>.item>.value {
+  inset: auto 0 100% 0
 }
-
-#q-graph tbody tr {
-  height: 296px;
-  padding-top: 2px;
-  color: #AAA;
-}
-
-#q-graph #not {
-  left: 15px;
-}
-
-#q-graph #slightly {
-  left: 45px;
-}
-
-#q-graph #somewhat {
-  left: 75px;
-}
-
-#q-graph #very {
-  left: 105px;
-  border-right: none;
-}
-
-#q-graph #extremely {
-  left: 135px;
-  border-right: none;
-}
-
-#q-graph tbody th {
-  bottom: -1.75em;
-  vertical-align: top;
-  font-weight: normal;
-  color: #333;
-}
-
-#q-graph .bar {
-  width: 15px;
-  border: 1px solid;
-  border-bottom: none;
-  color: #000;
-}
-
-#q-graph .bar p {
-  margin: 5px 0 0;
-  padding: 0;
-  opacity: .4;
-}
-
-#q-graph .sent {
-  left: 13px;
-  background-color: $secondary-color;
-  border-color: transparent;
-}
-
-*/
