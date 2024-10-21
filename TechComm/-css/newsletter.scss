@@ -161,6 +161,7 @@ a:active {
 }
 
 /* horizontal bar graph */
+
 /*
 .dl {
   display: flex;
@@ -185,27 +186,27 @@ a:active {
 }
 */
 .text {
-  display: block;
+  display: flex;
   align-items: center;
   height: 40px;
   width: 130px;
   background-color: white;
   position: absolute;
-  left: 15px;
+  left: 0;
   justify-content: flex-end;
 }
 
 .percentage {
   font-size: .9em;
   line-height: 1;
-  width: 75%;
+  width: 100%;
   height: 40px;
   margin-left: 130px;
-  /*  background: repeating-linear-gradient(to left,
+  background: repeating-linear-gradient(to left,
       #ddd,
       #ddd 1px,
       #fff 1px,
-      #fff 5%); */
+      #fff 5%);
 
   &:after {
     content: "";
