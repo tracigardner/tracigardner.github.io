@@ -617,21 +617,100 @@ a:active {
 }
 
 /* vertical bar chart */
+.barcontainer {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  /* was 80% */
+  margin: 0 auto;
+  min-height: 25vw;
+  max-height: 50vw;
+  min-width: 40%;
+  max-width: 60%;
+  z-index: 1;
+}
+
+.barcontainerheader {
+  display: inline;
+  position: absolute;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: #e5751f;
+  border-bottom: 3px solid black;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+  z-index: 0;
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  border: 1px solid black;
+  border-radius: 6px 6px 0 0;
+  background: #e5751f;
+  width: 10%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  box-shadow: 4px 0 8px #888;
+}
+
+.barlabel {
+  position: absolute;
+  border-top: 2px solid black;
+  background: #888;
+  bottom: 0;
+  width: 100%;
+  text-shadow: 1px 1px 0px black;
+  color: white;
+}
+
+.bar:nth-child(2) {
+  left: 5%;
+}
+
+.bar:nth-child(3) {
+  left: 20%;
+}
+
+.bar:nth-child(4) {
+  left: 35%;
+}
+
+.bar:nth-child(5) {
+  left: 50%;
+}
+
+.bar:nth-child(6) {
+  left: 65%;
+}
+
+.bar:nth-child(7) {
+  left: 80%;
+}
+
+/* ORIGINAL TEST CODE
+
 #q-graph {
   display: block;
-  /* fixes layout wonkiness in FF1.5 */
-  position: relative;
-  width: 11600px;
-  height: 150px;
-  /* margin: 1.1em 0 0; */
-  padding: 0;
-  background: transparent;
-  font-size: 1rem;
+  /* fixes layout wonkiness in FF1.5 
+position: relative;
+width: 11600px;
+height: 150px;
+margin: 1.1em 0 0;
+padding: 0;
+background: transparent;
+font-size: 1rem;
 }
 
 #q-graph caption {
   caption-side: top;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   position: relative;
   z-index: 10;
   font-weight: bold;
@@ -646,26 +725,27 @@ a:active {
   z-index: 2;
   margin: 0;
   padding: 0;
-  /* text-align: center; */
+  text-align: center;
 }
 
 #q-graph td {
-  transition: all 0.3s ease;
-}
-#q-graph td:hover {
-  background-color: #4d4d4d;
-  opacity: 0.9;
-  color: white;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: desaturate(#85144b, 100);
+    opacity: .9;
+    color: white;
+  }
 }
 
-/*
+
 #q-graph thead tr {
   left: 100%;
   top: 50%;
   bottom: auto;
   margin: -2.5em 0 0 5em;
 }
-*/
+
 #q-graph thead th {
   width: 7.5em;
   height: auto;
@@ -678,13 +758,12 @@ a:active {
   line-height: 2;
 }
 
-/*
 #q-graph tbody tr {
   height: 296px;
   padding-top: 2px;
   color: #AAA;
 }
-*/
+
 #q-graph #not {
   left: 15px;
 }
@@ -724,11 +803,13 @@ a:active {
 #q-graph .bar p {
   margin: 5px 0 0;
   padding: 0;
-  opacity: 0.4;
+  opacity: .4;
 }
 
 #q-graph .sent {
   left: 13px;
-  background-color: #e5751f;
+  background-color: $secondary-color;
   border-color: transparent;
-}/*# sourceMappingURL=newsletter.css.map */
+}
+
+*//*# sourceMappingURL=newsletter.css.map */
