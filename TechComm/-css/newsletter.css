@@ -194,6 +194,7 @@ a:active {
   width: 100%;
   height: 40px;
   margin-left: 130px;
+  margin-right: -130px;
   background: repeating-linear-gradient(to left, #ddd, #ddd 1px, #fff 1px, #fff 5%);
 }
 .percentage:after {
