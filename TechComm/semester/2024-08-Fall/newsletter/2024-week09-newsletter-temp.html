@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test of copy</title>
+	<style>
+	.percentage:after {
+  content: "";
+  display: block;
+  background-color: #3d9970;
+}
+.percentage-20:after {
+  width: 20%;
+}
+.percentage-30:after {
+  width: 30%;
+}
+		@for $i from 1 through 100 {
+  .percentage-#{$i}:after {
+    $value: ($i * 1%);
+    width: $value;
+  }
+}
+	</style>
+</head>
+
+<body>
+<table>
+<h2>Question Breakdown</h2>
+<div>
+  <div>
+    <div>
+      <div>
+        <h3>&nbsp;</h3>
+      </div>
+      <div>      </div>
+    </div>
+    <div>
+      <div>
+        <table>
+          <caption>
+            <strong>How Was Your Mood Last Week? </strong>
+          </caption>
+          <thead>
+            <tr>
+              <th width="85" scope="col">Answer Text</th>
+              <th width="94" scope="col">Responses</th>
+              <th width="334" scope="col" aria-hidden="true">Answer Distribution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th align="left" valign="top" scope="row">☀ Sunshine</th>
+              <td align="right" class="percentage">12 %</td>
+              <td aria-hidden="true"><div alt="Graph bar" title="Correct Answer"></div></td>
+            </tr>
+            <tr>
+              <th align="left" valign="top" scope="row">⛅ Cloudy</th>
+              <td align="right" class="percentage">48 %</td>
+              <td aria-hidden="true"><div alt="Graph bar" title="Incorrect Answer"></div></td>
+            </tr>
+            <tr>
+              <th align="left" valign="top" scope="row"><span aria-hidden="true">🌧 Rainy</span></th>
+              <td align="right" class="percentage">24 %</td>
+              <td aria-hidden="true"><div alt="Graph bar" title="Incorrect Answer"></div></td>
+            </tr>
+            <tr>
+              <th align="left" valign="top" scope="row">⛈ Thundery</th>
+              <td align="right" class="percentage">17 %</td>
+              <td aria-hidden="true"><div alt="Graph bar" title="Incorrect Answer"></div></td>
+            </tr>
+            <tr>
+              <th align="left" valign="top" scope="row">🌈Rainbo<span aria-hidden="true">w</span></th>
+              <td align="right" class="percentage">0 %</td>
+              <td aria-hidden="true"><div alt="Graph bar" title="Incorrect Answer"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* CSS Document */
+@for $i from 1 through 100 {
+  .percentage-#{$i}:after {
+    $value: (
+      $i * 1%
+    );
+  width: $value;
+}
+}
+
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, "sans-serif";
+}
+
+.b0ld {
+  font-weight: bold;
+}
+
+.tw-header {
+  margin-top: 9px;
+  border: 3px solid #861f41;
+}
+
+.masthead h1 {
+  font-weight: bold;
+  color: #861f41;
+  text-shadow: 1px 1px 1px rgba(180, 180, 180, 0.69);
+  margin-bottom: 3px;
+}
+
+.masthead h2 {
+  margin-top: 0px;
+  font-size: 18px;
+  color: #e87722;
+}
+
+h3 {
+  color: #861f41;
+  margin-bottom: 9px;
+}
+
+h4 {
+  color: #e87722;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #e87722;
+  text-decoration: underline;
+}
+
+.skipline li {
+  margin-bottom: 9px;
+}
+
+.null li {
+  margin-bottom: 0px;
+}
+
+.alignright {
+  float: right;
+  margin: 0px 0px 3px 9px;
+}
+
+.ptop-row {
+  padding-top: 9px;
+}
+
+.border-left-line {
+  border-left: 1px solid #d7d2cb;
+}
+
+.border-bottom-line {
+  border-bottom: 1px solid #d7d2cb;
+}
+
+.border-top-line {
+  border-top: 1px solid #d7d2cb;
+  padding: 6px;
+}
+
+.border-top-dline {
+  border-top: 3px double #861f41;
+  padding: 6px;
+}
+
+/* Stripes for Div Rows */
+.trow:nth-child(odd) {
+  background-color: #ffffff;
+  border: 1px solid #861f41;
+}
+
+.trow:nth-child(even) {
+  background-color: #e5e1e6;
+  border: 1px solid #861f41;
+}
+
+.trow-right {
+  border-left: 1px solid #861f41;
+}
+
+/* Code for button links */
+.btn-home {
+  border-radius: 9px;
+  background-color: #861f41;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-home:hover {
+  background-color: #e87722;
+  color: #000000;
+}
+
+/* Footer */
+.footer-bkgd {
+  border: 3px solid #861f41;
+  background-color: #861f41;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #861f41;
+  font-size: 0.87rem;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-divider-line {
+  border-top: 1px solid #e87722;
+}
+
+.cntdwn {
+  background-color: #861f41;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+/* Table settings */
+.table-topleft table,
+.table-topleft tr,
+.table-topleft td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.table-topleft:nth-child(odd) {
+  background-color: #ffffff;
+  border: 1px solid #861f41;
+}
+
+.table-topleft:nth-child(even) {
+  background-color: #e5e1e6;
+  border: 1px solid #861f41;
+}
+
+/*# sourceMappingURL=this-week.css.map */
+
+.percentage:after {
+  content: "";
+  display: block;
+  background-color: #3d9970;
+}
+
+.percentage-20:after {
+  width: 20%;
+}
+
+.percentage-30:after {
+  width: 30%;
+}
