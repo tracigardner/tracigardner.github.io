@@ -270,4 +270,25 @@ h2 {
 
 .simple-bar-chart > .item > .value {
   inset: auto 0 100% 0;
+}
+
+/* open circle style pie chart (speed dial system) */
+.pie {
+  --w: 150px;
+  width: var(--w);
+  aspect-ratio: 1;
+  display: inline-grid;
+  place-content: center;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.pie:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  background: conic-gradient(var(--c) calc(var(--p) * 1%), rgba(0, 0, 0, 0) 0);
 }/*# sourceMappingURL=newsletter.css.map */
