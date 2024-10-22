@@ -154,18 +154,21 @@ a:active {
 }
 
 /* horizontal bar graph */
-.chart body {
+/*
+  .chart body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
   color: #f8f8f8;
   font-size: 1.125rem;
+
   margin: 0;
   min-height: 100vh;
-  background-color: #ffffff;
-}
 
+  background-color: #ffffff;
+} */
 /*
 section {
   width: 100%;
