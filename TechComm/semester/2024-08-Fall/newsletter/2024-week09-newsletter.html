@@ -89,12 +89,48 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 border-left-line">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <!-- <h3>🌡️Your Mood Last Week</h3>
-                        <div class="horiz-body horiz-section"> -->
-                        <h3 style="background-color: #ffffff;margin-bottom: 6px;color: #861f41;">🌡️Your Mood Last Week</h3>
+
+
+
+            <div class="col-sm-6 border-left-line" id="column2">
+
+                <div class="row" id="mood-row">
+                    <div class="col-sm-12" id="moodhead">
+                        <h3>🌡️Your Mood Last Week</h3>
+                    </div>
+                </div>
+                <div class="row" id="mood-graph">
+                    <div class="col-sm-6" id="mood-labels" style="vertical-align: top;width: 150px;text-align: right;font-weight: bold;">
+                        <p>🌞&nbsp;Sunshine&nbsp;&nbsp;&nbsp;</p>
+                        <p>⛅&nbsp;Cloudy&nbsp;&nbsp;&nbsp;</p>
+                        <p>🌧️&nbsp;Rainy&nbsp;&nbsp;&nbsp;</p>
+                        <p>⛈️&nbsp;Thundery&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+
+                    <div class="col-sm-6" id="mood-bars">
+
+                        <ul class="chart" style="width: 100;text-align: left;">
+                            <li style="grid-column: 1 / span 12">
+                                <span>12</span>
+                            </li>
+
+                            <li style="grid-column: 1 / span 48">
+                                <span>48%</span>
+                            </li>
+
+                            <li style="grid-column: 1 / span 24">
+                                <span>24%</span>
+                            </li>
+
+                            <li style="grid-column: 1 / span 17">
+                                <span>17%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 
+                    <div class="horiz-body horiz-section">
                         <table style="margin-bottom: 18px;" role="presentation">
                             <caption style="font-size: 0px;caption-side: top;visibility: hidden;">Table of Mood Responses for the Course</caption>
                             <thead>
@@ -134,39 +170,10 @@
                             </tbody>
                         </table>
 
-
-                        <!--
-                        <ul class="chart">
-                            <li style="background-color: #ffffff !important;grid-column: 1 / span 75">
-                                <h3 style="background-color: #ffffff;margin-bottom: 0px;">🌡️Your Mood Last Week</h3>
-                            </li>
-                            <li style="grid-column: 1 / span 24">
-                                <span class="chart-reverse">🌞&nbsp;Sunshine</span>
-                                <span>12%</span>
-                            </li>
-
-                            <li style="grid-column: 1 / span 48">
-                                <span class="chart-reverse">⛅&nbsp;Cloudy</span>
-                                <span>48%</span>
-                            </li>
-
-                            <li style="grid-column: 1 / span 30">
-                                <span class="chart-reverse">🌧️&nbsp;Rainy</span>
-                                <span>24%</span>
-                            </li>
-
-                            <li style="grid-column: 1 / span 27">
-                                <span class="chart-reverse">⛈️&nbsp;Thundery</span>
-                                <span>17%</span>
-                            </li>
-
-                        </ul> -->
-
-
-                        <!--    </div> -->
-
-
-                        <h3 class="border-top-line">📄 Assignments This Week</h3>
+                    </div> -->
+                <div class="row border-top-line">
+                    <div class="col-sm-12">
+                        <h3>📄 Assignments This Week</h3>
                         <p>Find full details on the readings and supporting material in <a href="https://canvas.vt.edu/courses/177045/pages/week-01-instructions-course-intro" target="_blank">Week 9 Module Overview on Canvas</a>.</p>
                         <p style="background-color: #e5751f;color: #ffffff;padding-left: 3px;font-size: 1.25rem;">Due Friday, August 26<br>
                             Grace Period ends Wednesday, August 30</p>
