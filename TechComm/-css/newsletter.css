@@ -277,6 +277,7 @@ h2 {
   --w: 150px;
   width: var(--w);
   aspect-ratio: 1;
+  position: relative;
   display: inline-grid;
   place-content: center;
   margin: 5px;
@@ -291,4 +292,6 @@ h2 {
   border-radius: 50%;
   inset: 0;
   background: conic-gradient(var(--c) calc(var(--p) * 1%), rgba(0, 0, 0, 0) 0);
+  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
 }/*# sourceMappingURL=newsletter.css.map */
