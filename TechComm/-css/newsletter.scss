@@ -161,13 +161,13 @@ a:active {
 }
 
 /* horizontal bar graph */
-
-.horiz-body {
+.chart body {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  color: #000000;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+  color: #f8f8f8;
   font-size: 1.125rem;
 
   margin: 0;
@@ -176,16 +176,22 @@ a:active {
   background-color: #ffffff;
 }
 
-.horiz-section {
+/*
+section {
   width: 100%;
   max-width: 30rem;
   padding: 1.5rem 1.5rem 2rem;
   border: 2px solid #a7a8aa;
   border-radius: 0.5rem;
   margin: auto;
-}
+} 
 
-.horiz-chart ul {
+h2 {
+  color: #861f41;
+  margin-bottom: 9px;
+} */
+
+.chart {
   display: grid;
   grid-template-columns: auto;
   grid-auto-columns: 1fr;
@@ -198,7 +204,7 @@ a:active {
   list-style-type: none;
 }
 
-.horiz li {
+.chart li {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -209,92 +215,16 @@ a:active {
   padding: 0.25rem 0.5rem;
 }
 
-.horiz li span {
+.chart li span {
   font-weight: bold;
 }
 
-
-
-
-
-/* 888888888888888888888888888888888888888888
-.dl {
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  width: 100%;
-  max-width: 700px;
-  position: relative;
-  padding: 20px;
+.chart-reverse {
+  background-color: #ffffff;
+  color: #861f41;
+  font-weight: bold;
 }
 
-.dt {
-  align-self: flex-start;
-  width: 100%;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-  font-size: .9rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-left: 130px;
-}
-*/
-.text {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 130px;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  justify-content: flex-end;
-}
-
-.percentage {
-  font-size: .9em;
-  line-height: 1;
-  width: 100%;
-  height: 40px;
-  margin-left: 130px;
-  background: repeating-linear-gradient(to left,
-      #ddd,
-      #ddd 1px,
-      #fff 1px,
-      #fff 5%);
-
-  &:after {
-    content: "";
-    display: block;
-    background-color: $primary-color;
-    width: 50px;
-    margin-bottom: 10px;
-    height: 90%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color .3s ease;
-    cursor: pointer;
-  }
-
-  &:hover,
-  &:focus {
-    &:after {
-      background-color: $hover-color;
-    }
-  }
-}
-
-@for $i from 0 through 100 {
-  .percentage-#{$i} {
-    &:after {
-      $value: (
-        $i * 1%
-      );
-    width: $value;
-  }
-}
-}
 
 /* vertical bar chart */
 
