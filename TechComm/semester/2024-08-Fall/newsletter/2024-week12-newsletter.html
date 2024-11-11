@@ -39,9 +39,9 @@
     </header>
     <div class="container-fluid ptop-row">
         <div id="newsletter-content" class="row">
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-sm-12">
+            <div class="col-sm-6" id="top-col-left">
+                <div class="row" id="events-row">
+                    <div class="col-sm-12" id="events-content">
                         <h3>📆 Events This Week </h3>
                         <p>Here&rsquo;s what&rsquo;s coming up:</p>
 
@@ -70,8 +70,9 @@
                         <p>Remember that you can use the grace period if you need so that you are able to mark the holidays you celebrate.</p>
                     </div>
                 </div>
-                <div class="row border-top-line">
-                    <div class="col-sm-12" style="margin-bottom: 36px;">
+
+                <div class="row border-top-line" id="outline-row">
+                    <div class="col-sm-12" id="outline-col">
 
                         <h3><img src="images/noun-table-of-contents-6368952-861F41.png" alt="Outline Icon" style="width: 36px;height: 36px;">&nbsp;Your Report Outline</h3>
                         <p>Your group should have collaborated to create an outline for your Recommendation Report last week.</p>
@@ -100,46 +101,39 @@
                         </div>
                     </div>
 
-
                 </div>
-
             </div>
 
-            <div class="col-sm-6 border-left-line" id="column2">
+            <div class="col-sm-6 border-left-line" id="top-col-right">
+                <div class="col-sm-12" id="keeping-up-content">
+                    <h3><i class="fa-solid fa-clock"></i>&nbsp;Keeping Up?</h3>
+                    <p>Wondering how others in the class are doing? This graph tells you how you are keeping up with the work in the course:</p>
 
-                <div class="row border-top-line">
-                    <div class="col-sm-12" style="margin-bottom: 36px;">
-                        <h3><i class="fa-solid fa-book-open"></i>&nbsp;Research Status</h3>
-                        <p>Everyone who has ever participated in a group project knows that one of the biggest concerns people have is over equal contributions to the project. Now that you&rsquo;ve had some time to work together, I asked you whether you were concerned about equal participation in the group&rsquo;s work. Here&rsquo;s what you said:</p>
-                        <img src="images/2024-week12-status-research.jpg" class="img-fluid" alt="Bar graph showing student satisfaction in group collaboration">
+                    <p style="text-align: center;"><img src="images/2024-week12-keeping-up.jpg" class="img-fluid" alt="Bar graph indicating how comfortable you are with integrating quotations into text in your documents"></p>
 
-                    </div>
-
-                    <div class="row" id="longdesc-research-status-row" style="clear:all;">
-                        <div class="col-sm-12" id="longdesc-research-status-col">
+                    <div class="row" id="longdesc-keeping-up-row" style="clear:all;">
+                        <div class="col-sm-12" id="Longdesc-keeping-up-col">
                             <details style="margin-left: 15px;margin-bottom: 12px;">
-                                <summary><em>Description of Research Status Graph</em></summary>
-                                <h4 style="margin-left: 15px;">Research Status</h4>
-                                <p style="margin-left: 15px;">What is the status of the research for your group&rsquo;s Recommendation Report?<br><br>Results:</p>
+                                <summary><em>Description of the Keeping Up Graph</em></summary>
+                                <h4 style="margin-left: 15px;">Keeping Up?</h4>
+                                <p style="margin-left: 15px;">How are you keeping up with the work in this course at this point?<br><br>Results:</p>
                                 <ul style="margin-left: 15px;">
-                                    <li>5%: We have not begun our research.</li>
-                                    <li>13%: We need to gather more primary and secondary research before we can write our report.</li>
-                                    <li>3%: We need to gather some secondary research before we can write our report.</li>
-                                    <li>34%: We need to gather some primary research before we can write our report.</li>
-                                    <li>34%: We have most of our primary and secondary research that we need to write our report.</li>
-                                    <li>11%: We have all of the primary and secondary research that we need to write our report.</li>
+                                    <li>&nbsp;&nbsp;3% said, &ldquo;I&rsquo;m working ahead.&rdquo;</li>
+                                    <li>42% said, &ldquo;I&rsquo;m on track. I&rsquo;m getting things done by the target due dates.&rdquo;</li>
+                                    <li>34% said, &ldquo;I&rsquo;m a little behind. I need to catch up on one or two things.&rdquo;</li>
+                                    <li>11% said, &ldquo;I&rsquo;m about a week behind.&rdquo;</li>
+                                    <li>11% said, &ldquo;I&rsquo;m more than a week behind.&rdquo;</li>
+
                                 </ul>
                             </details>
                         </div>
                     </div>
-
-
                 </div>
 
-                <div class="row" id="group-visuals-row">
+                <div class="row border-top-line" id="group-visuals-row">
                     <div class="col-sm-12" id="group-visuals-content-col">
                         <h3><i class="fa-solid fa-image"></i> Report Visuals</h3>
-                        <p>I believe that supporting one another is one of the most important things a group can do. Learning to help people do their best work is a critical workplace skill. To find out how your group is doing, I asked you to tell me how supportive the other members of your group have been to you:</p>
+                        <p>Visuals are a great way to show your reader information that may be harder to understand with just words and paragraphs. Most of you are planning on including at least one visual in the section of rhe report you&rsquo;re writing. See the details in the graph below:</p>
 
                         <p><img src="images/2024-week12-visuals.jpg" class="img-fluid" alt="Horizontal bar graph"></p>
 
@@ -168,70 +162,57 @@
         </div>
 
         <div class="row border-top-line">
-            <div class="col-sm-12">
-                <h3><i class="fa-solid fa-clock"></i>&nbsp;Keeping Up?</h3>
-                <p>As you collaborate on your Recommendation Report, you&rsquo;ll add quotations from your research to support your position. You never just drop in a quotation however. You should always integrate your quotations by introducing them and then explaining their significance after you&rsquo;ve shared them.</p>
+            <div class="col-sm-12" style="margin-bottom: 36px;">
+                <h3><i class="fa-solid fa-book-open"></i>&nbsp;Research Status</h3>
+                <p>At this point, you should be finished or almost finished with your research for the Recommendation Report. So you can see how your progress compares to others in the course, I asked you to tell me about the status of your research. The results are in the graph below.</p>
+                <img src="images/2024-week12-status-research.jpg" class="img-fluid" alt="Bar graph showing student satisfaction in group collaboration">
 
-                <p>Because integrating quotations is critical to strong writing, I asked you to tell me how comfortable you are with the process. Your response is summarized in the bar graph below:</p>
+            </div>
 
-                <p style="text-align: center;"><img src="images/2024-week12-keeping-up.jpg" class="img-fluid" alt="Bar graph indicating how comfortable you are with integrating quotations into text in your documents"></p>
-
-                <div class="row" id="longdesc-keeping-up-row" style="clear:all;">
-                    <div class="col-sm-12" id="Longdesc-keeping-up-col">
-                        <details style="margin-left: 15px;margin-bottom: 12px;">
-                            <summary><em>Description of the Keeping Up Graph</em></summary>
-                            <h4 style="margin-left: 15px;">Keeping Up?</h4>
-                            <p style="margin-left: 15px;">How are you keeping up with the work in this course at this point?<br><br>Results:</p>
-                            <ul style="margin-left: 15px;">
-                                <li>&nbsp;&nbsp;3% said, &ldquo;I&rsquo;m working ahead.&rdquo;</li>
-                                <li>42% said, &ldquo;I&rsquo;m on track. I&rsquo;m getting things done by the target due dates.&rdquo;</li>
-                                <li>34% said, &ldquo;I&rsquo;m a little behind. I need to catch up on one or two things.&rdquo;</li>
-                                <li>11% said, &ldquo;I&rsquo;m about a week behind.&rdquo;</li>
-                                <li>11% said, &ldquo;I&rsquo;m more than a week behind.&rdquo;</li>
-
-                            </ul>
-                        </details>
-                    </div>
+            <div class="row" id="longdesc-research-status-row" style="clear:all;">
+                <div class="col-sm-12" id="longdesc-research-status-col">
+                    <details style="margin-left: 15px;margin-bottom: 12px;">
+                        <summary><em>Description of Research Status Graph</em></summary>
+                        <h4 style="margin-left: 15px;">Research Status</h4>
+                        <p style="margin-left: 15px;">What is the status of the research for your group&rsquo;s Recommendation Report?<br><br>Results:</p>
+                        <ul style="margin-left: 15px;">
+                            <li>5%: We have not begun our research.</li>
+                            <li>13%: We need to gather more primary and secondary research before we can write our report.</li>
+                            <li>3%: We need to gather some secondary research before we can write our report.</li>
+                            <li>34%: We need to gather some primary research before we can write our report.</li>
+                            <li>34%: We have most of our primary and secondary research that we need to write our report.</li>
+                            <li>11%: We have all of the primary and secondary research that we need to write our report.</li>
+                        </ul>
+                    </details>
                 </div>
+            </div>
 
-                <h4>Looking for Help Integrating Quotations?</h4>
-                <p>Try these resources for ways to add quotations from your research to the documents you write:</p>
-                <ul>
-                    <li><a href="https://canvas.vt.edu/courses/196807/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citations for Your Projects</a>, from this course.</li>
 
-                    <li><a href="https://writingcenter.unc.edu/tips-and-tools/quotations/" target="_blank">Quotations</a>, from the Writing Center at UNC Charlotte.</li>
+        </div>
+    </div>
+    </div>
 
-                    <li><a href="https://writingcenter.gmu.edu/articles/8230" target="_blank">Tips for Integrating Quotations</a>, from the Writing Center at George Mason. </li>
-
-                    <li><a href="https://pressbooks.bccampus.ca/technicalwriting/chapter/appendixc-integratingevidence/" target="_blank">Integrating Source Evidence into Your Writing</a>, from <em>Technical Writing Essentials</em>.</li>
-                </ul>
+    <div class="row border-top-line">
+        <div class="col-sm-12">
+            <h3><i class="fa-solid fa-circle-question"></i> Have Questions?</h3>
+            <ul class="skipline">
+                <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/196807/discussion_topics/1920339" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
                 </li>
-                </ul>
+                <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-use-the-Inbox-as-a-student/ta-p/532" target="_blank">Canvas Inbox</a>.</li>
+                <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/nkJJnAqHLxi17f778" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
 
-            </div>
+            </ul>
         </div>
-
-        <div class="row border-top-line">
-            <div class="col-sm-12">
-                <h3><i class="fa-solid fa-circle-question"></i> Have Questions?</h3>
-                <ul class="skipline">
-                    <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/196807/discussion_topics/1920339" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
-                    </li>
-                    <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-use-the-Inbox-as-a-student/ta-p/532" target="_blank">Canvas Inbox</a>.</li>
-                    <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/nkJJnAqHLxi17f778" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="row justify-content-lg-around border-top-line">
-            <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/196807" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
-                        Home</strong></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
-                        Docs</strong></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
-                        Chat</strong></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
-                        Online</strong></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
-                        4Help</strong></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_166227&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
-                        Traci</strong></a></p>
-        </div>
+    </div>
+    <div class="row justify-content-lg-around border-top-line">
+        <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/196807" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
+                    Home</strong></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
+                    Docs</strong></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
+                    Chat</strong></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
+                    Online</strong></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
+                    4Help</strong></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_166227&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
+                    Traci</strong></a></p>
+    </div>
     </div>
     <div id="footer" class="row footer-bkgd">
         <div class="col-sm-12">
