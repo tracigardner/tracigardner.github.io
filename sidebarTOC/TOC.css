@@ -1,40 +1,41 @@
 .TOCsidebar {
-width: 250px;
-background-color: #f8f9fa;
-border-right: 1px solid #ddd;
-padding: 10px;
+  width: 250px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  padding: 10px;
 }
 .TOCsidebar ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .TOCsidebar li {
-margin: 5px 0;
+  margin: 5px 0;
 }
 .TOCsidebar a {
-text-decoration: none;
-color: #333;
-display: block;
-padding: 5px 10px;
-border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 .TOCsidebar a:hover {
-background-color: #e9ecef;
+  background-color: #e9ecef;
+  color: #e5751f;
 }
 .TOCsidebar a.TOCcurrent {
-background-color: #007bff;
-color: white;
+  background-color: #e5751f;
+  color: white;
 }
 .TOCchapter {
-cursor: pointer;
-font-weight: bold;
-margin: 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px 0;
 }
 .TOCchapter ul {
-display: none;
-padding-left: 15px;
+  display: none;
+  padding-left: 15px;
 }
 .TOCchapter.TOCopen ul {
-display: block;
+  display: block;
 }
