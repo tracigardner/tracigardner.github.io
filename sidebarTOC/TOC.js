@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Automatically highlight the current page based on the URL
   const links = document.querySelectorAll(".TOCsidebar a");
-  const currentPage = window.location.href;
+  let currentPage = window.location.href.split("#")[0]; // Strip anchor id from the URL
+  // drop this old code-- const currentPage = window.location.href; //
 
   links.forEach((link) => {
     if (link.href === currentPage) {
