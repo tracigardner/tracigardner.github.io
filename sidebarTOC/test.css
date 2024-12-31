@@ -1,0 +1,170 @@
+/* Header */
+.header-main-area {
+  border-top: 6px solid #861f41;
+  border-radius: 4px;
+}
+.header-main-area a {
+  text-decoration: none;
+}
+.header-main-area a:hover {
+  color: #861f41;
+}
+.site-branding {
+  margin: 14px 0px;
+}
+
+/* Site Menu Font */
+.main-navigation,
+.site-info {
+  background-color: #861f41;
+}
+.main-navigation ul {
+  text-transform: none;
+}
+.main-navigation a {
+  color: #ffffff !important;
+}
+
+/* TOC for Sidebar */
+.TOCsidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 10px;
+}
+.TOCsidebar h2 {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.TOCsidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.TOCsidebar li {
+  margin: 5px 0;
+}
+.TOCsidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.TOCsidebar a:hover {
+  background-color: #861f41;
+  color: #ffffff;
+}
+.TOCsidebar a.TOCcurrent {
+  background-color: #861f41;
+  color: white;
+}
+.TOCchapter {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.TOCchapter ul {
+  display: none;
+  padding-left: 15px;
+}
+.TOCchapter.TOCopen ul {
+  display: block;
+}
+
+/* Site Footer */
+.site-info {
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+.site-info a {
+  color: #ffffff !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+.site-info a:hover {
+  background-color: #861f41;
+  padding: 9px;
+}
+
+/* Page Design */
+.entry-title {
+  color: #861f41;
+  margin-left: -14px !important;
+}
+h2::before {
+  content: "\00a0 ";
+}
+h2 {
+  margin-top: 2rem;
+  margin-left: -14px;
+  color: #ffffff;
+  background-color: #861f41;
+  border-radius: 4px;
+}
+h3,
+h5 {
+  color: #861f41;
+}
+h4 {
+  color: #861f41;
+}
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #861f41;
+}
+.attribution-paragraph {
+  padding-top: 0;
+  border-top: 1px solid #861f41;
+  border-bottom: 1px solid #861f41;
+  margin-bottom: 24px;
+  margin-left: -14px;
+}
+.border-between {
+  border-top: 1px solid #861f41;
+  padding: 12px 0px;
+}
+.reference {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.attrib-cc {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-left: 36px;
+}
+
+/* Figures, Images */
+figcaption {
+  font-size: 0.9rem;
+}
+.photo-image {
+  float: right;
+  width: 240px;
+  margin: 0px 0px 6px 15px;
+}
+.photo-image figcaption {
+  text-align: right;
+}
+.photo-image img {
+  width: 240px;
+  height: 240px;
+}
+
+/* Bibliography & Citations */
+.csl-bib-body {
+  line-height: 1.35;
+  margin-left: 2em;
+  text-indent: -2em;
+}
+
+.csl-entry {
+  margin-bottom: 12px;
+}
+
+figcaption a {
+  color: #861f41 !important;
+}
