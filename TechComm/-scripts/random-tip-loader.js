@@ -1,6 +1,6 @@
 // Configuration: Set the number of tips and the file path
 const totalTips = 3; // Total number of tip files (e.g., tip1.html to tip10.html)
-const tipBasePath = "../tips/"; // Path where tip files are stored (e.g., "tips/")
+const tipBasePath = "/TechComm/tips/"; // Path where tip files are stored (e.g., "tips/")
 
 // Function to load a random tip
 function loadRandomTip() {
