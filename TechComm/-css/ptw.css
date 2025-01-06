@@ -582,6 +582,14 @@ a.activeMenuItem {
   background-color: #e87722;
 }
 
+.tips-style h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #861f41;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
 /*
     Copied from Canvas stylesheet to create pill style
 */
