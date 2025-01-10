@@ -17,13 +17,16 @@
 
     <style>
         .data-table {
-            margin: 12px 48px;
+            margin: 12px 64px;
         }
 
         .maroon-back {
             background-color: #861f41;
             color: #ffffff;
-            font-size: 48px !important;
+        }
+
+        .maroon-back-font {
+            font-size: 480px !important;
             font-weight: bold;
         }
 
@@ -68,7 +71,7 @@
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>TITLE HERE</h1>"
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Kinds of Work in the Course</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
@@ -80,7 +83,7 @@
                 </div>
             </div>
             <div class="row orange-border-bottom">
-                <div class="col-sm-6 maroon-back">
+                <div class="col-sm-6 maroon-back maroon-back-font">
                     <p>01<br>
                         Skip Check-Ins
                     </p>
