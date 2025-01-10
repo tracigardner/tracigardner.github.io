@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Pathways Feedback</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Pathways Feedback</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Pathways Feedback</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
-<h2><img src="../../-images/noun_Checklist_3724325.png" width="204" height="248" alt="Computer screen showing an email message" style="float:right;margin: 0px 0px 12px 12px;" />What I Want You to Do</h2>
-<p>Think about your accomplishments in the course and assess your ability to complete the tasks outlined in the following questions. Your response will not damage your course points total, no matter how you answer.</p>
-<h2>Why I Want You to Do It</h2>
-<p>This is a Pathways course meeting the Discourse (Area 1) goals, and I am required to report on what students learn in the course. I need you to tell me about how well you meet the student learning outcomes for this course. Your response will help me improve the course to help students meet these learning outcomes as they complete the course.</p>
-<h2>How You Do It</h2>
-<ol class="skipline">
-  <li class="skipline">Reflect on your work in the entire course as you answer the questions below.</li>
-  <li class="skipline">
-    <p>Answer the questions honestly. Your responses will not influence your course grade.</p>
-  </li>
-</ol>
-<h2>Obtaining the Points for Your Work</h2>
-<ul class="skipline">
-  <li>Be sure to track your work in your <a href="https://canvas.vt.edu/courses/146101/pages/weekly-work-log-guidelines" target="_blank">Weekly Work Log</a>. </li>
-  <li>Watch for feedback comments from me—find <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-view-annotation-feedback-comments-from-my-instructor/ta-p/523" target="_blank">feedback in annotations</a> and <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-view-assignment-comments-from-my-instructor/ta-p/283" target="_blank">comments</a> on your submissions in Canvas. </li>
-</ul>
-<p>Work is always marked as either 1 for Complete or 0 for Incomplete:</p>
-<ul>
-  <li>I will mark  this activity <em>Complete</em> in Canvas Grades, usually within 24–48 hours after the end of the grace period.</li>
-  <li>I will mark this activity <em>Incomplete</em> in Canvas Grades if you do not submit your draft  by the end of the grace period.</li>
-</ul>
-<p>&nbsp;</p>
-</div>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+    <h2><img src="../../-images/noun_Checklist_3724325.png" width="204" height="248" alt="Computer screen showing an email message" style="float:right;margin: 0px 0px 12px 12px;" />What I Want You to Do</h2>
+    <p>Think about your accomplishments in the course and assess your ability to complete the tasks outlined in the following questions. Your response will not damage your course points total, no matter how you answer.</p>
+    <h2>Why I Want You to Do It</h2>
+    <p>This is a Pathways course meeting the Discourse (Area 1) goals, and I am required to report on what students learn in the course. I need you to tell me about how well you meet the student learning outcomes for this course. Your response will help me improve the course to help students meet these learning outcomes as they complete the course.</p>
+    <h2>How You Do It</h2>
+    <ol class="skipline">
+      <li class="skipline">Reflect on your work in the entire course as you answer the questions below.</li>
+      <li class="skipline">
+        <p>Answer the questions honestly. Your responses will not influence your course grade.</p>
+      </li>
+    </ol>
+    <h2>Obtaining the Points for Your Work</h2>
+    <ul class="skipline">
+      <li>Be sure to track your work in your <a href="https://canvas.vt.edu/courses/146101/pages/weekly-work-log-guidelines" target="_blank">Weekly Work Log</a>. </li>
+      <li>Watch for feedback comments from me—find <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-view-annotation-feedback-comments-from-my-instructor/ta-p/523" target="_blank">feedback in annotations</a> and <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-view-assignment-comments-from-my-instructor/ta-p/283" target="_blank">comments</a> on your submissions in Canvas. </li>
+    </ul>
+    <p>Work is always marked as either 1 for Complete or 0 for Incomplete:</p>
+    <ul>
+      <li>I will mark this activity <em>Complete</em> in Canvas Grades, usually within 24–48 hours after the end of the grace period.</li>
+      <li>I will mark this activity <em>Incomplete</em> in Canvas Grades if you do not submit your draft by the end of the grace period.</li>
+    </ul>
+    <p>&nbsp;</p>
+  </div>
   <script>
-    if ( window.location !== window.parent.location ) {
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
   </script>
-  </body>
+</body>
+
 </html>

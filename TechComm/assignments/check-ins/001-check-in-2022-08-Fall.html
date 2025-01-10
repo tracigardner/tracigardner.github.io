@@ -1,124 +1,127 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Check-In #1, Week 1</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Check-In #1, Week 1</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
+
 <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Check-In #1, Week 1</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
-<h2>Quiz Instructions</h2>
-  <p>Answer the following questions to let me know about you and how you are doing in the course. There are no right or wrong answers.</p>
-  <p>I will only see the survey statistics and answers in summary. I won&rsquo;t see your name with your answers. Your responses will not help or hurt you in the course.</p>
-  <p>I will use your responses to customize the course. I may also share some of your responses with the class.</p>
-<p style="border-bottom: 1px solid #861f41;">&nbsp;</p>
-<p>How are you feeling about this course after doing the work for the first week? </p>
-<ul>
-  <li>Inspired or empowered </li>
-  <li>Angry or upset </li>
-  <li>Confused </li>
-  <li>Nervous or anxious </li>
-  <li>I feel normal </li>
-  <li>Fearful or afraid </li>
-  <li>Happy or content </li>
-  <li>Sad or unhappy </li>
-  <li>Prefer not to say</li>
-</ul>
-<p>How well do you understand the six Characteristics of a Technical Document?  </p>
-<ul>
-  <li>I understand everything and can even think of ways to use the information. </li>
-  <li>I understand everything but I don't know how I can use it. </li>
-  <li>I understand some but am confused about some. </li>
-  <li>I am completely lost or I understand very little. </li>
-</ul>
-<p>How confident are you that your Accountability Group will help keep you on track during this term?</p>
-<ul>
-  <li>Completely confident </li>
-  <li>Fairly confident </li>
-  <li>Somewhat confident </li>
-  <li>Slightly confident </li>
-  <li>Not confident at all </li>
-  <li>I'm not sure what the Accountability Groups are.</li>
-</ul>
-<p>How much effort did you put into your self-introduction video? Remember your answer is anonymous. </p>
-<ul>
-  <li>I've put in a high level of effort. </li>
-  <li>I've worked, but I could put in more effort. </li>
-  <li>I've put forth some effort, but not much. </li>
-  <li>I didn't or haven't put in much effort at all. </li>
-  <li>I didn't complete the self-introduction video.</li>
-</ul>
-<p>What time of day do you usually check in on Canvas?</p>
-<ul>
-  <li>I'm an early bird. I am up and working first thing in the morning. </li>
-  <li>I'm a morning person, but I won't be up and working before dawn. </li>
-  <li>I'm a midday person. You'll find me working any time from 10am to 2pm. </li>
-  <li>I'm an afternoon person. I'm likely to work any time from noon to 6pm.</li>
-  <li>I'm an early evening person. You'll find me working from 6pm to 10pm. </li>
-  <li>I'm a late evening person. I do most of my work from 9pm to midnight. </li>
-  <li>I'm a night owl. You'll find me working late into the night and sometimes in the wee hours of the morning.</li>
-</ul>
-<p>Do you understand the built-in Styles feature in your word processor? The Styles feature in Word is discussed on p. 55 of the textbook (<a href="https://canvas.vt.edu/courses/166227/files/23683824/" target="_blank">image of the page</a>). </p>
-<ul>
-  <li>I understand it and use it all the time. </li>
-  <li>I understand it but I don't use it.</li>
-  <li> I understand it some but don't understand why it's useful. </li>
-  <li>I don't know about it or I understand very little.</li>
-</ul>
-<p>&nbsp;</p>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+    <h2>Quiz Instructions</h2>
+    <p>Answer the following questions to let me know about you and how you are doing in the course. There are no right or wrong answers.</p>
+    <p>I will only see the survey statistics and answers in summary. I won&rsquo;t see your name with your answers. Your responses will not help or hurt you in the course.</p>
+    <p>I will use your responses to customize the course. I may also share some of your responses with the class.</p>
+    <p style="border-bottom: 1px solid #861f41;">&nbsp;</p>
+    <p>How are you feeling about this course after doing the work for the first week? </p>
+    <ul>
+      <li>Inspired or empowered </li>
+      <li>Angry or upset </li>
+      <li>Confused </li>
+      <li>Nervous or anxious </li>
+      <li>I feel normal </li>
+      <li>Fearful or afraid </li>
+      <li>Happy or content </li>
+      <li>Sad or unhappy </li>
+      <li>Prefer not to say</li>
+    </ul>
+    <p>How well do you understand the six Characteristics of a Technical Document? </p>
+    <ul>
+      <li>I understand everything and can even think of ways to use the information. </li>
+      <li>I understand everything but I don't know how I can use it. </li>
+      <li>I understand some but am confused about some. </li>
+      <li>I am completely lost or I understand very little. </li>
+    </ul>
+    <p>How confident are you that your Accountability Group will help keep you on track during this term?</p>
+    <ul>
+      <li>Completely confident </li>
+      <li>Fairly confident </li>
+      <li>Somewhat confident </li>
+      <li>Slightly confident </li>
+      <li>Not confident at all </li>
+      <li>I'm not sure what the Accountability Groups are.</li>
+    </ul>
+    <p>How much effort did you put into your self-introduction video? Remember your answer is anonymous. </p>
+    <ul>
+      <li>I've put in a high level of effort. </li>
+      <li>I've worked, but I could put in more effort. </li>
+      <li>I've put forth some effort, but not much. </li>
+      <li>I didn't or haven't put in much effort at all. </li>
+      <li>I didn't complete the self-introduction video.</li>
+    </ul>
+    <p>What time of day do you usually check in on Canvas?</p>
+    <ul>
+      <li>I'm an early bird. I am up and working first thing in the morning. </li>
+      <li>I'm a morning person, but I won't be up and working before dawn. </li>
+      <li>I'm a midday person. You'll find me working any time from 10am to 2pm. </li>
+      <li>I'm an afternoon person. I'm likely to work any time from noon to 6pm.</li>
+      <li>I'm an early evening person. You'll find me working from 6pm to 10pm. </li>
+      <li>I'm a late evening person. I do most of my work from 9pm to midnight. </li>
+      <li>I'm a night owl. You'll find me working late into the night and sometimes in the wee hours of the morning.</li>
+    </ul>
+    <p>Do you understand the built-in Styles feature in your word processor? The Styles feature in Word is discussed on p. 55 of the textbook (<a href="https://canvas.vt.edu/courses/166227/files/23683824/" target="_blank">image of the page</a>). </p>
+    <ul>
+      <li>I understand it and use it all the time. </li>
+      <li>I understand it but I don't use it.</li>
+      <li> I understand it some but don't understand why it's useful. </li>
+      <li>I don't know about it or I understand very little.</li>
+    </ul>
+    <p>&nbsp;</p>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

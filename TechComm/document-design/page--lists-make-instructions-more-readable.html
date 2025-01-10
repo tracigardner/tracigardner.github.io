@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Lists Make Instructions More Readable</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Lists Make Instructions More Readable</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Lists Make Instructions More Readable</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-<p>Today&rsquo;s post focuses on organizing information by using lists. Bullet lists and numbered lists make related information easy to read, and because they are offset from the margins, lists stand out and catch the reader&rsquo;s eye. Consider this example of a text written in a paragraph:</p>
-<blockquote style="margin-top: 0px;">
-<h2 style="font-size: normal; padding: 21px; margin-top: 0px; margin-bottom: 0px;">How To Fill Out Form I-765</h2>
-<p style="padding: 0px 21px 0px 21px; margin-top: 0px; margin-bottom: 21px; margin-right: 21px;">Type or print legibly in black ink. If extra space is needed to complete any item, attach a continuation sheet, write your name and Alien Registration Number (A-Number) (if any), at the top of each sheet of paper, indicate the Part and item number to which your answer refers, and date and sign each sheet. Answer all questions fully and accurately. State that an item is not applicable with &ldquo;N/A.&rdquo; If the answer is none, write &ldquo;None.&rdquo;</p>
-<p style="margin-top: 0px; margin-bottom: 21px; margin-right: 21px; text-align: right;">&mdash;From Instructions for Application for Employment Authorization, <br />Department of Homeland Security <!-- original link: https://www.uscis.gov/sites/default/files/files/form/i-765instr.pdf --></p>
-</blockquote>
-<p>You can read through the information, but it could be better with the right formatting. Compare the paragraph version above to this revision, which uses numbered lists:</p>
-<blockquote>
-<h2 style="padding: 21px; margin-top: 0px; margin-bottom: 0px;">How To Fill Out Form I-765</h2>
-<ol style="padding: 0px 21px 0px 45px; margin-top: 0px; margin-bottom: 21px; margin-right: 21px;">
-<li style="margin-bottom: 9px;">Type or print legibly in black ink.</li>
-<li style="margin-bottom: 9px;">If extra space is needed to complete any item
-<ol type="a">
-<li>Attach a continuation sheet</li>
-<li>Write your name and Alien Registration Number (A-Number) (if any), at the top of each sheet of paper</li>
-<li>Indicate the Part and item number to which your answer refers,</li>
-<li>Date and sign each sheet.</li>
-</ol>
-</li>
-<li style="margin-bottom: 9px;">Answer all questions fully and accurately. State that an item is not applicable with &ldquo;N/A.&rdquo; If the answer is none, write &ldquo;None.&rdquo;</li>
-</ol>
-</blockquote>
-<p>It should be immediately obvious that the version with the lists is easier to read. It provides a structure that works well with the <a href="https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/" target="_blank">F-shaped reading pattern</a>.</p>
-<p>I have two resources that you should read to learn more about using lists:</p>
-<ol>
-<li style="margin-bottom: 9px;">Read all four pages of Grammar Girl&rsquo;s <a href="http://www.quickanddirtytips.com/education/grammar/formatting-vertical-lists" target="_blank" rel="noopener">Formatting Vertical Lists</a> (or listen to the podcast). The information will tell you when to use a colon with a list, whether to capitalize list items, how to use other punctuation, and why list items should be parallel.</li>
-<li style="margin-bottom: 9px;">Read <a href="http://accessibility.umn.edu/core-skills/bulleted-numbered-lists" target="_blank" rel="noopener">Bulleted &amp; Numbered Lists</a> from the University of Minnesota&rsquo;s Accessible U. This resource will tell you how to format your lists so that they work well with screenreaders and other assistive technologies.</li>
-</ol>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <p>Today&rsquo;s post focuses on organizing information by using lists. Bullet lists and numbered lists make related information easy to read, and because they are offset from the margins, lists stand out and catch the reader&rsquo;s eye. Consider this example of a text written in a paragraph:</p>
+    <blockquote style="margin-top: 0px;">
+      <h2 style="font-size: normal; padding: 21px; margin-top: 0px; margin-bottom: 0px;">How To Fill Out Form I-765</h2>
+      <p style="padding: 0px 21px 0px 21px; margin-top: 0px; margin-bottom: 21px; margin-right: 21px;">Type or print legibly in black ink. If extra space is needed to complete any item, attach a continuation sheet, write your name and Alien Registration Number (A-Number) (if any), at the top of each sheet of paper, indicate the Part and item number to which your answer refers, and date and sign each sheet. Answer all questions fully and accurately. State that an item is not applicable with &ldquo;N/A.&rdquo; If the answer is none, write &ldquo;None.&rdquo;</p>
+      <p style="margin-top: 0px; margin-bottom: 21px; margin-right: 21px; text-align: right;">&mdash;From Instructions for Application for Employment Authorization, <br />Department of Homeland Security <!-- original link: https://www.uscis.gov/sites/default/files/files/form/i-765instr.pdf --></p>
+    </blockquote>
+    <p>You can read through the information, but it could be better with the right formatting. Compare the paragraph version above to this revision, which uses numbered lists:</p>
+    <blockquote>
+      <h2 style="padding: 21px; margin-top: 0px; margin-bottom: 0px;">How To Fill Out Form I-765</h2>
+      <ol style="padding: 0px 21px 0px 45px; margin-top: 0px; margin-bottom: 21px; margin-right: 21px;">
+        <li style="margin-bottom: 9px;">Type or print legibly in black ink.</li>
+        <li style="margin-bottom: 9px;">If extra space is needed to complete any item
+          <ol type="a">
+            <li>Attach a continuation sheet</li>
+            <li>Write your name and Alien Registration Number (A-Number) (if any), at the top of each sheet of paper</li>
+            <li>Indicate the Part and item number to which your answer refers,</li>
+            <li>Date and sign each sheet.</li>
+          </ol>
+        </li>
+        <li style="margin-bottom: 9px;">Answer all questions fully and accurately. State that an item is not applicable with &ldquo;N/A.&rdquo; If the answer is none, write &ldquo;None.&rdquo;</li>
+      </ol>
+    </blockquote>
+    <p>It should be immediately obvious that the version with the lists is easier to read. It provides a structure that works well with the <a href="https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/" target="_blank">F-shaped reading pattern</a>.</p>
+    <p>I have two resources that you should read to learn more about using lists:</p>
+    <ol>
+      <li style="margin-bottom: 9px;">Read all four pages of Grammar Girl&rsquo;s <a href="http://www.quickanddirtytips.com/education/grammar/formatting-vertical-lists" target="_blank" rel="noopener">Formatting Vertical Lists</a> (or listen to the podcast). The information will tell you when to use a colon with a list, whether to capitalize list items, how to use other punctuation, and why list items should be parallel.</li>
+      <li style="margin-bottom: 9px;">Read <a href="http://accessibility.umn.edu/core-skills/bulleted-numbered-lists" target="_blank" rel="noopener">Bulleted &amp; Numbered Lists</a> from the University of Minnesota&rsquo;s Accessible U. This resource will tell you how to format your lists so that they work well with screenreaders and other assistive technologies.</li>
+    </ol>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

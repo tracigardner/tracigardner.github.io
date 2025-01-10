@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Audience Analysis</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Audience Analysis</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Audience Analysis</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-<p>The ability to figure out who will read your documents and what they will be looking for can make or break a piece of technical writing. Get your audience wrong, and whatever you write will be useless.&nbsp;</p>
-<p>For everything you write in this course, you need to identify who your readers are and why they are reading your document. Watch the <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fcollections%2F6565562559234142208%3Fu%3D57888345" target="_blank" rel="noopener">Audience Analysis Playlist</a> (12m 22s) that I created on LinkedIn Learning, which consists of three short videos (free with your VT login).  Follow these <a href="https://4help.vt.edu/sp?id=kb_article&sys_id=100db6e90f266500d3254b9ce1050e9e#Logging_In" target="_blank">instructions to login</a>.</p>
-<p style="font-weight: bold;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fevaluate-audience-needs?u=57888345" target="_blank"><img style="float: left; margin: 0px 15px 15px 0px;" src="https://tracigardner.github.io/TechComm/-images/video-images/evaluate-audience-needs.jpg" alt="view video page for Evaluate audience needs" /></a>Video: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fevaluate-audience-needs?u=57888345" target="_blank">Evaluate audience needs</a></p>
-<p>From Course: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fwelcome-to-writing-technical-reports?u=57888345" target="_blank">Technical Writing: Reports</a> with Judy Steiner-Williams</p>
-<p>&nbsp;</p>
-<p style="font-weight: bold;clear:both;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fexamine-the-technical-audience?u=57888345"><img style="float: left; margin: 0px 15px 15px 0px;" src="https://tracigardner.github.io/TechComm/-images/video-images/examine-the-technical-audience.jpg" alt="view video page for Examine the technical audience" /></a>Video: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fexamine-the-technical-audience?u=57888345
+  </script>
+  <div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <p>The ability to figure out who will read your documents and what they will be looking for can make or break a piece of technical writing. Get your audience wrong, and whatever you write will be useless.&nbsp;</p>
+    <p>For everything you write in this course, you need to identify who your readers are and why they are reading your document. Watch the <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fcollections%2F6565562559234142208%3Fu%3D57888345" target="_blank" rel="noopener">Audience Analysis Playlist</a> (12m 22s) that I created on LinkedIn Learning, which consists of three short videos (free with your VT login). Follow these <a href="https://4help.vt.edu/sp?id=kb_article&sys_id=100db6e90f266500d3254b9ce1050e9e#Logging_In" target="_blank">instructions to login</a>.</p>
+    <p style="font-weight: bold;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fevaluate-audience-needs?u=57888345" target="_blank"><img style="float: left; margin: 0px 15px 15px 0px;" src="https://tracigardner.github.io/TechComm/-images/video-images/evaluate-audience-needs.jpg" alt="view video page for Evaluate audience needs" /></a>Video: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fevaluate-audience-needs?u=57888345" target="_blank">Evaluate audience needs</a></p>
+    <p>From Course: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fwelcome-to-writing-technical-reports?u=57888345" target="_blank">Technical Writing: Reports</a> with Judy Steiner-Williams</p>
+    <p>&nbsp;</p>
+    <p style="font-weight: bold;clear:both;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fexamine-the-technical-audience?u=57888345"><img style="float: left; margin: 0px 15px 15px 0px;" src="https://tracigardner.github.io/TechComm/-images/video-images/examine-the-technical-audience.jpg" alt="view video page for Examine the technical audience" /></a>Video: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fexamine-the-technical-audience?u=57888345
 " target="_blank">Examine the technical audience</a></p>
-<p>From Course: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fwelcome-to-writing-technical-reports?u=57888345" target="_blank">Technical Writing: Reports</a> with Judy Steiner-Williams</p>
-<p>&nbsp;</p>
-<p style="font-weight: bold;;clear:both;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Funderstand-the-nontechnical-audience?u=57888345"><img style="float: left; margin: 0px 15px 15px 0px;" src="https://tracigardner.github.io/TechComm/-images/video-images/understand-the-nontechnical-audience.jpg" alt="view video page for Understand the nontechnical audience" /></a>Video: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Funderstand-the-nontechnical-audience?u=57888345" target="_blank">Understand the nontechnical audience</a></p>
-<p>From Course: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fwelcome-to-writing-technical-reports?u=57888345" target="_blank">Technical Writing: Reports</a> with Judy Steiner-Williams</p>
-<p>&nbsp;</p>
-<p style="clear:both;">After watching the videos, you can write a reply that considers one of the following questions:</p>
-<ul>
-<li>How does the advice in the videos compare to that in the textbook?</li>
-<li>Describe a situation when you encountered a document that didn&rsquo;t fulfill your needs as a reader. What would you do to improve the document?</li>
-<li>Tell us about a situation when a document fit your needs perfectly. What did it do well? How would it need to change for a different group of readers?</li>
-</ul>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+    <p>From Course: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fwelcome-to-writing-technical-reports?u=57888345" target="_blank">Technical Writing: Reports</a> with Judy Steiner-Williams</p>
+    <p>&nbsp;</p>
+    <p style="font-weight: bold;;clear:both;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Funderstand-the-nontechnical-audience?u=57888345"><img style="float: left; margin: 0px 15px 15px 0px;" src="https://tracigardner.github.io/TechComm/-images/video-images/understand-the-nontechnical-audience.jpg" alt="view video page for Understand the nontechnical audience" /></a>Video: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Funderstand-the-nontechnical-audience?u=57888345" target="_blank">Understand the nontechnical audience</a></p>
+    <p>From Course: <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-reports%2Fwelcome-to-writing-technical-reports?u=57888345" target="_blank">Technical Writing: Reports</a> with Judy Steiner-Williams</p>
+    <p>&nbsp;</p>
+    <p style="clear:both;">After watching the videos, you can write a reply that considers one of the following questions:</p>
+    <ul>
+      <li>How does the advice in the videos compare to that in the textbook?</li>
+      <li>Describe a situation when you encountered a document that didn&rsquo;t fulfill your needs as a reader. What would you do to improve the document?</li>
+      <li>Tell us about a situation when a document fit your needs perfectly. What did it do well? How would it need to change for a different group of readers?</li>
+    </ul>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-    <meta charset="utf-8">
-    <title>Week 13 Instructions, Spring 2023</title>
+  <meta charset="utf-8">
+  <title>Week 13 Instructions, Spring 2023</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Week Thirteen Instructions, Spring 2023</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
     <ul class="pill">
-<li><span style="font-size: 12pt;"><strong>Time Required</strong></span></li>
-<li><span style="font-size: 12pt;">8–10 hours, including reading time</span></li>
-</ul>
-  <p>&nbsp;</p>
+      <li><span style="font-size: 12pt;"><strong>Time Required</strong></span></li>
+      <li><span style="font-size: 12pt;">8–10 hours, including reading time</span></li>
+    </ul>
+    <p>&nbsp;</p>
     <p>Welcome to Week Thirteen of the course. This week you will continue work on your Recommendation Report. You will finish any work remaining on the body of your report and move on to the front and back matter.</p>
     <figure style="float: center;margin: 9px;"> <img src="../../-images/recommendation/Rec-report-front-matter-all.png" alt="Flowchart showing the items in the report's front matter: 1. Letter of Transmittal: Introduce the primary readers to the purpose and content. 2. Title Page: List the title, author, and date as well as the recipient. 3. Abstract: Provide a brief technical summary for readers familiar with the topic. 4. Table of Contents: List headings and sub-headings with page numbers or links. 5. Executive Summary: Summarize the background, findings, and implications for management." width="765" height="103">
       <figcaption style="color: #861f41;font-size: 1em;">The Sections of the Front Matter of the Recommendation Report</figcaption>
-  </figure>
-  <figure style="float: center;margin: 9px;"> <img src="../../-images/recommendation/Rec-report-back-matter-all.png" alt="Flowchart showing the sections of the back matter: 1. References. List all of the sources for your report, using the style preferred by your field. 2. Appendixes. Provide any supplemental information that is too bulky to include in the body of the report." width="379" height="103">
+    </figure>
+    <figure style="float: center;margin: 9px;"> <img src="../../-images/recommendation/Rec-report-back-matter-all.png" alt="Flowchart showing the sections of the back matter: 1. References. List all of the sources for your report, using the style preferred by your field. 2. Appendixes. Provide any supplemental information that is too bulky to include in the body of the report." width="379" height="103">
       <figcaption style="color: #861f41;font-size: 1em;">The Sections of the Back Matter of the Recommendation Report</figcaption>
     </figure>
     <p style="margin-top: 9px;">If you work diligently, you should have a full draft of your report by the end of the week. After Break, you will complete your draft. The Grace Period for all open work in the course closes at 11:59 PM on Friday, April 28.</p>
@@ -66,102 +68,103 @@
     <ul>
       <li><a href="https://en.wikipedia.org/wiki/Arab_Americans#Arab_American_Heritage_Month" target="_blank">Arab American Heritage Month</a> continues through April 30.</li>
       <li><a href="https://en.wikipedia.org/wiki/Yom_HaShoah" target="_blank">Yom HaSho’ah, or Holocaust Remembrance Day</a>, begins at sunset on Monday, April 17 and lasts until sunset on the 18th.</li>
-      <li><a href="https://en.wikipedia.org/wiki/Ramadan" target="_blank">Ramadan</a> ends at sundown on  Friday, April 21. </li>
-      <li><a href="https://en.wikipedia.org/wiki/Eid_al-Fitr" target="_blank">Eid al-Fitr</a> is the day Muslims  break the 40-day fast of Ramadan. It begins at sundown on Friday, April 21 and lasts 24 hours.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Ramadan" target="_blank">Ramadan</a> ends at sundown on Friday, April 21. </li>
+      <li><a href="https://en.wikipedia.org/wiki/Eid_al-Fitr" target="_blank">Eid al-Fitr</a> is the day Muslims break the 40-day fast of Ramadan. It begins at sundown on Friday, April 21 and lasts 24 hours.</li>
       <li><a href="https://en.wikipedia.org/wiki/Earth_Day" target="_blank">Earth Day</a> is Saturday, April 22.</li>
     </ul>
     <p>If you observe these holidays or events and need me to adjust your due dates, send me a message in Canvas.</p>
-  <p style="border-bottom: 2px solid #861f41;clear: both;"></p>
-<h2>Objectives for this Module</h2>
-<p>After completing this week&rsquo;s activities, you address the following course objectives:</p>
-<ul>
-<li>Analyze the rhetorical situation and determine the appropriate audience or users of written communication, considering the needs of global audiences and people with disabilities. [<strong><abbr title="Course Learning Objective">CLO</abbr> 1</strong>]</li>
-<li>Prepare to conduct research appropriate to workplace problem solving, such as literature review, evaluation of online resources, interview, and site inspection. [<em><strong><abbr title="Course Learning Objective">CLO</abbr></strong></em> 2]</li>
-<li>Consider the ethical and human implications of my situation. [<strong><abbr title="Course Learning Objective">CLO</abbr> 3</strong>]</li>
-<li>Use conventions of various workplace genres, such as proposals, instructions, correspondence, reports, and slide decks, with understanding of how the genre conventions can be used as heuristics and as principles of arrangement. [<strong><abbr title="Course Learning Objective">CLO</abbr> 4</strong>]</li>
-<li>Collaborate with classmates in planning, researching, writing, revising, and presenting information. [<strong><abbr title="Course Learning Objective">CLO</abbr> 5</strong>]</li>
-</ul>
-<p style="border-bottom: 2px solid #861f41;"></p>
-<h2 style="color: #861f41; margin-top: 9px;">Activities to Complete</h2>
-<div style="border: 3px double #e87722; padding: 12px; margin-bottom: 18px;background-color: #f7f6f7;">
-  <p style="margin-bottom: 3px; margin-top: 0px;"><strong>Due Dates </strong></p>
-  <ul style="margin-top: 3px; margin-bottom: 12px;">
-    <li>All work is due by 11:59 PM on Friday, April 21.</li>
-    <li>Grace Period:
-      <ul>
-        <li>Ends at 11:59 PM on Wednesday,December 6 for your Check-in Survey.</li>
-        <li>Ends at 11:59 PM on Friday, April 28 for the rest of the week’s work. </li>
+    <p style="border-bottom: 2px solid #861f41;clear: both;"></p>
+    <h2>Objectives for this Module</h2>
+    <p>After completing this week&rsquo;s activities, you address the following course objectives:</p>
+    <ul>
+      <li>Analyze the rhetorical situation and determine the appropriate audience or users of written communication, considering the needs of global audiences and people with disabilities. [<strong><abbr title="Course Learning Objective">CLO</abbr> 1</strong>]</li>
+      <li>Prepare to conduct research appropriate to workplace problem solving, such as literature review, evaluation of online resources, interview, and site inspection. [<em><strong><abbr title="Course Learning Objective">CLO</abbr></strong></em> 2]</li>
+      <li>Consider the ethical and human implications of my situation. [<strong><abbr title="Course Learning Objective">CLO</abbr> 3</strong>]</li>
+      <li>Use conventions of various workplace genres, such as proposals, instructions, correspondence, reports, and slide decks, with understanding of how the genre conventions can be used as heuristics and as principles of arrangement. [<strong><abbr title="Course Learning Objective">CLO</abbr> 4</strong>]</li>
+      <li>Collaborate with classmates in planning, researching, writing, revising, and presenting information. [<strong><abbr title="Course Learning Objective">CLO</abbr> 5</strong>]</li>
+    </ul>
+    <p style="border-bottom: 2px solid #861f41;"></p>
+    <h2 style="color: #861f41; margin-top: 9px;">Activities to Complete</h2>
+    <div style="border: 3px double #e87722; padding: 12px; margin-bottom: 18px;background-color: #f7f6f7;">
+      <p style="margin-bottom: 3px; margin-top: 0px;"><strong>Due Dates </strong></p>
+      <ul style="margin-top: 3px; margin-bottom: 12px;">
+        <li>All work is due by 11:59 PM on Friday, April 21.</li>
+        <li>Grace Period:
+          <ul>
+            <li>Ends at 11:59 PM on Wednesday,December 6 for your Check-in Survey.</li>
+            <li>Ends at 11:59 PM on Friday, April 28 for the rest of the week’s work. </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <h3 style="color: #e87722;">📚 To Read This Week</h3>
+    <ul>
+      <li>Chapter 7 of Markel &amp; Selber, &ldquo;Organizing Your Information&rdquo;</li>
+      <li>Chapter 18 of Markel &amp; Selber, &ldquo;Writing Recommendation Reports&rdquo; </li>
+      <li><a href="https://canvas.vt.edu/courses/166227/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a></li>
+      <li><a href="https://docs.google.com/document/d/1teTNbjazuXFOQTxOv2nUG8vW2OoHAa0dwyLIx9BYo9U/edit?usp=sharing" target="_blank">Tip Sheet: Recommendation Report</a></li>
+      <li><a href="https://canvas.vt.edu/courses/166227/pages/technical-help-with-documentation-in-word-processors" target="_blank"> Technical Help with Documentation in Word Processors</a></li>
+    </ul>
+    <p style="border-bottom: 2px solid #861f41;"></p>
+    <h3 style="color: #e87722;margin-top: 18px;">📝 To Write This Week</h3>
+    <ul class="skipline">
+      <li>Develop the front matter for your <a href="https://canvas.vt.edu/courses/166227/assignments/1668900" target="_blank"> Recommendation Report</a>, using the these resources:
+        <ul class="null">
+          <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-letter-of-transmittal" target="_blank">Writing Your Letter of Transmittal</a></li>
+          <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-title-page" target="_blank">Writing Your Title Page</a></li>
+          <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-abstract" target="_blank">Writing Your Abstract</a></li>
+          <li><a href="https://canvas.vt.edu/courses/166227/pages/creating-your-table-of-contents" target="_blank">Creating Your Table of Contents</a></li>
+          <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-executive-summary" target="_blank">Writing Your Executive Summary</a></li>
         </ul>
-    </li>
-  </ul>
-</div>
-<h3 style="color: #e87722;">📚 To Read This Week</h3>
-<ul>
-  <li>Chapter 7 of Markel &amp; Selber, &ldquo;Organizing Your Information&rdquo;</li>
-  <li>Chapter 18 of Markel &amp; Selber, &ldquo;Writing Recommendation Reports&rdquo;  </li>
-  <li><a href="https://canvas.vt.edu/courses/166227/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a></li>
-  <li><a href="https://docs.google.com/document/d/1teTNbjazuXFOQTxOv2nUG8vW2OoHAa0dwyLIx9BYo9U/edit?usp=sharing" target="_blank">Tip Sheet: Recommendation Report</a></li>
-  <li><a href="https://canvas.vt.edu/courses/166227/pages/technical-help-with-documentation-in-word-processors" target="_blank"> Technical Help with Documentation in Word Processors</a></li>
-  </ul>
-<p style="border-bottom: 2px solid #861f41;"></p>
-<h3 style="color: #e87722;margin-top: 18px;">📝 To Write This Week</h3>
-<ul class="skipline">
-<li>Develop the front matter for your <a href="https://canvas.vt.edu/courses/166227/assignments/1668900" target="_blank"> Recommendation Report</a>, using the these resources:
-  <ul class="null"> 
-    <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-letter-of-transmittal" target="_blank">Writing Your Letter of Transmittal</a></li>
-    <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-title-page" target="_blank">Writing Your Title Page</a></li>
-    <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-abstract" target="_blank">Writing Your Abstract</a></li>
-    <li><a href="https://canvas.vt.edu/courses/166227/pages/creating-your-table-of-contents" target="_blank">Creating Your Table of Contents</a></li>
-    <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-executive-summary" target="_blank">Writing Your Executive Summary</a></li>
-    </ul>
-</li>
+      </li>
 
-<li>Develop the back matter for your <a href="https://canvas.vt.edu/courses/166227/assignments/1668900" target="_blank"> Recommendation Report</a>, using the these resources:
-  <ul class="null">
-      <li><a href="https://canvas.vt.edu/courses/166227/pages/providing-your-references" target="_blank">Writing Your References</a></li>
-      <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-appendixes" target="_blank">Writing Your Appendixes</a></li>
-  </ul>
-</li>
-<li>Try out strategies from the course by submitting these activities:
-  <ul class="null">
-    <li><a href="https://canvas.vt.edu/courses/166227/quizzes/417857" target="_blank">Try-It #23: Checking for Common Report Errors</a></li>
-    <li><a href="https://canvas.vt.edu/courses/166227/quizzes/417866" target="_blank" >Try-It #24: Use of Images Review</a></li>
+      <li>Develop the back matter for your <a href="https://canvas.vt.edu/courses/166227/assignments/1668900" target="_blank"> Recommendation Report</a>, using the these resources:
+        <ul class="null">
+          <li><a href="https://canvas.vt.edu/courses/166227/pages/providing-your-references" target="_blank">Writing Your References</a></li>
+          <li><a href="https://canvas.vt.edu/courses/166227/pages/writing-your-appendixes" target="_blank">Writing Your Appendixes</a></li>
+        </ul>
+      </li>
+      <li>Try out strategies from the course by submitting these activities:
+        <ul class="null">
+          <li><a href="https://canvas.vt.edu/courses/166227/quizzes/417857" target="_blank">Try-It #23: Checking for Common Report Errors</a></li>
+          <li><a href="https://canvas.vt.edu/courses/166227/quizzes/417866" target="_blank">Try-It #24: Use of Images Review</a></li>
+        </ul>
+      </li>
     </ul>
-</li>
-</ul>
-<p style="border-bottom: 2px solid #861f41;"></p>
-<h3 style="color: #e87722;">💬 To Discuss This Week</h3>
-<ul class="skipline">
-    
-<li>Optional ways to discuss class issues:
-  <ul class="skipline">
-    <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/166227/discussion_topics/1519606" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
-    </li>
-    <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-use-the-Inbox-as-a-student/ta-p/532" target="_blank">Canvas Inbox</a>.</li>
-    <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/fftB6YmWQoz5z6Hb6" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
-  </ul>
-</li>
-</ul>
+    <p style="border-bottom: 2px solid #861f41;"></p>
+    <h3 style="color: #e87722;">💬 To Discuss This Week</h3>
+    <ul class="skipline">
+
+      <li>Optional ways to discuss class issues:
+        <ul class="skipline">
+          <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/166227/discussion_topics/1519606" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
+          </li>
+          <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Student-Guide/How-do-I-use-the-Inbox-as-a-student/ta-p/532" target="_blank">Canvas Inbox</a>.</li>
+          <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/fftB6YmWQoz5z6Hb6" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+        </ul>
+      </li>
+    </ul>
     <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
-<h3 style="color: #e87722;">📓 To Check-In This Week</h3>
-<ul class="null">
-  <li>Fill out the <a href="https://canvas.vt.edu/courses/166227/quizzes/417828" target="_blank" >Week 13 Check-In Survey</a> to let me know how you are doing in the course.</li>
-</ul>
-<p>&nbsp;</p>
-<p style="font-size: 1px; border-bottom: 2px solid #861F41;">&nbsp;</p>
-<p class="photocredit">&nbsp;</p>
-<p>&nbsp;</p>
-      </div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+    <h3 style="color: #e87722;">📓 To Check-In This Week</h3>
+    <ul class="null">
+      <li>Fill out the <a href="https://canvas.vt.edu/courses/166227/quizzes/417828" target="_blank">Week 13 Check-In Survey</a> to let me know how you are doing in the course.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p style="font-size: 1px; border-bottom: 2px solid #861F41;">&nbsp;</p>
+    <p class="photocredit">&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

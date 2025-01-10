@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact Info</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Contact Info</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Contact Info</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-  <h2>Students in Traci&rsquo;s Courses</h2>
-  <p>If you are a student in Traci&rsquo;s Technical Writing course, <strong>do not use this form</strong>. Instead, you can message me directly in Canvas, using the <a href="https://community.canvaslms.com/docs/DOC-10701#jive_content_id_Conversations">Conversations Inbox tool</a>. Because Canvas messages are secure, they meet all <a href="https://registrar.vt.edu/FERPA.html">FERPA requirements</a> and protect your privacy. I only answer student messages via Canvas for this reason. </p>
-  <h2>Everyone Else</h2>
-  <p>Otherwise, if you have questions or comments related to this site, please use this form to contact me.<br>
-  </p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQjdp2bvSi_84vbxCb7LEsJ6P900BEAn9ylp71WmPvsKzcQA/viewform?embedded=true" width="640" height="751" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <h2>Students in Traci&rsquo;s Courses</h2>
+    <p>If you are a student in Traci&rsquo;s Technical Writing course, <strong>do not use this form</strong>. Instead, you can message me directly in Canvas, using the <a href="https://community.canvaslms.com/docs/DOC-10701#jive_content_id_Conversations">Conversations Inbox tool</a>. Because Canvas messages are secure, they meet all <a href="https://registrar.vt.edu/FERPA.html">FERPA requirements</a> and protect your privacy. I only answer student messages via Canvas for this reason. </p>
+    <h2>Everyone Else</h2>
+    <p>Otherwise, if you have questions or comments related to this site, please use this form to contact me.<br>
+    </p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQjdp2bvSi_84vbxCb7LEsJ6P900BEAn9ylp71WmPvsKzcQA/viewform?embedded=true" width="640" height="751" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

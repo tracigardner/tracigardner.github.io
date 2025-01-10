@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Adding Visuals to Your User Manual</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Adding Visuals to Your User Manual</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 30px 15px 30px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Adding Visuals to Your User Manual</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
-<p>Visuals are an important part of your instructions. They complement the written description and step-by-step instructions, showing the reader what to expect or do. Imagine assembly instructions without images, like these:</p>
-<p><strong>Rubbermaid Portable Closet Assembly Instructions</strong></p>
-<ol>
-<li>Assemble the bottom of the frame.</li>
-<li>Slide fabric cover "N" over poles.</li>
-<li>Assemble the center of the frame.</li>
-<li>Assemble the top of the frame.</li>
-<li>Insert floor support "O" Attach assembled top frame to bottom frame.</li>
-<li>Attach Cross Wires "K" to top of the frame.</li>
-<li>Slide cover up and over the top frame and then pull cover down.</li>
-</ol>
-<p>How likely do you think you would be to put that closet together correctly using only those instructions? Now compare that text-only version to the <a href="https://tracigardner.github.io/TechComm/-pdfs/rubbermaid-assembly-instructions-1807509.pdf" target="_blank">real version, with labeled part list and illustrated instructions</a>. Better, huh?</p>
-<p>Visuals can make or break a User Manual. To learn more about the kinds of visuals that are frequently used in instructions, watch the LinkedIn Learning video <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-quick-start-guides%2Fincorporate-visuals-into-your-quickstart-guide?u=57888345" target="_blank">Incorporate visuals into your quickstart guide</a> (4m 52s).</p>
-<p style="margin: 24px 0px 24px 0px;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-quick-start-guides%2Fincorporate-visuals-into-your-quickstart-guide?u=57888345" target="_blank"><img src="../-images/video-images/incorporate-visuals-into-your-quickstart-guide.png" width="499" height="358" alt="Screenshot from the video Incorporate visuals into your quickstart guide"></a></p>
-<p>After you watch the video, add a comment that tells us some of your ideas for adding visuals to your user manual. Search through the ideas of other students to see if anyone else has an idea that could benefit your user manual. If you find something, leave a comment that explains how you might build on the original idea.</p>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div id="postBody" style='background-color: #fefefe;padding: 15px 30px 15px 30px;'>
+    <p>Visuals are an important part of your instructions. They complement the written description and step-by-step instructions, showing the reader what to expect or do. Imagine assembly instructions without images, like these:</p>
+    <p><strong>Rubbermaid Portable Closet Assembly Instructions</strong></p>
+    <ol>
+      <li>Assemble the bottom of the frame.</li>
+      <li>Slide fabric cover "N" over poles.</li>
+      <li>Assemble the center of the frame.</li>
+      <li>Assemble the top of the frame.</li>
+      <li>Insert floor support "O" Attach assembled top frame to bottom frame.</li>
+      <li>Attach Cross Wires "K" to top of the frame.</li>
+      <li>Slide cover up and over the top frame and then pull cover down.</li>
+    </ol>
+    <p>How likely do you think you would be to put that closet together correctly using only those instructions? Now compare that text-only version to the <a href="https://tracigardner.github.io/TechComm/-pdfs/rubbermaid-assembly-instructions-1807509.pdf" target="_blank">real version, with labeled part list and illustrated instructions</a>. Better, huh?</p>
+    <p>Visuals can make or break a User Manual. To learn more about the kinds of visuals that are frequently used in instructions, watch the LinkedIn Learning video <a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-quick-start-guides%2Fincorporate-visuals-into-your-quickstart-guide?u=57888345" target="_blank">Incorporate visuals into your quickstart guide</a> (4m 52s).</p>
+    <p style="margin: 24px 0px 24px 0px;"><a href="https://www.linkedin.com/checkpoint/enterprise/login/57888345?pathWildcard=57888345&application=learning&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Ftechnical-writing-quick-start-guides%2Fincorporate-visuals-into-your-quickstart-guide?u=57888345" target="_blank"><img src="../-images/video-images/incorporate-visuals-into-your-quickstart-guide.png" width="499" height="358" alt="Screenshot from the video Incorporate visuals into your quickstart guide"></a></p>
+    <p>After you watch the video, add a comment that tells us some of your ideas for adding visuals to your user manual. Search through the ideas of other students to see if anyone else has an idea that could benefit your user manual. If you find something, leave a comment that explains how you might build on the original idea.</p>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

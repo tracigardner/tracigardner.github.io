@@ -1,143 +1,147 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Week Two Instructions, Spring 2022</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Week Two Instructions, Spring 2022</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Week Two Instructions, Spring 2022</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
-<ul class="pill">
-<li><span style="font-size: 12pt;"><strong>Time Required</strong></span></li>
-<li><span style="font-size: 12pt;">6 to 8 hours, including reading time</span></li>
-</ul>
-<p><img style="float: right; margin: 0px 0px 15px 15px;" src="https://tracigardner.github.io/TechComm/-images/null-by-beryl-chan.jpg" alt="Asian woman reading text on an iPad" width="500" height="333" />Technical writing is any kind of writing you might be called upon to produce for an audience in your particular workplace. The term refers not only to complex, lengthy, heavily-illustrated documents like reports and user guides, but also to shorter pieces of writing like memos, letters, and progress reports.</p>
-<p>But guess what? Technical writing can take place outside the workplace as well: Did you ever</p>
-<ul>
-<li>write down a recipe for someone?</li>
-<li>tell someone how to get somewhere?</li>
-<li>describe the exact tool to use for a project?</li>
-<li>persuade someone to buy a particular item?</li>
-<li>outline the rules for a particular D&amp;D setting?</li>
-</ul>
-<p>All of these kinds of communicating are technical writing&mdash;and I bet you have a lot of experience with that kind of technical writing.</p>
-<p>This week&rsquo;s activities introduce you  to the process of technical writing in general as well as to the ethical and legal considerations that influence technical writing.</p>
-<p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
-<h2 style="color: #861f41;">Objectives for this Module</h2>
-<p>After completing this week&rsquo;s activities, you will be able to</p>
-<ul>
-<li>Choose and propose a website for a recommendation report.&nbsp;<em><strong>(<abbr title="Course Learning Objective">CLO</abbr> 4)</strong></em></li>
-<li>Evaluate the ethical implications of your communications.&nbsp;<em><strong>(<abbr title="Course Learning Objective">CLO</abbr> 1, 2)</strong></em></li>
-<li>Explain and apply the principles of plain language to your written communications.&nbsp;<em><strong>(<abbr title="Course Learning Objective">CLO</abbr> 1)</strong></em></li>
-</ul>
-<p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
-<h2 style="color: #861f41; margin-top: 9px;">Activities to Complete</h2>
-  <div style="border: 3px double #e87722; padding: 12px; margin-bottom: 18px;background-color: #f7f6f7;">
-<p style="margin-bottom: 3px; margin-top: 0px;"><strong>Due Dates </strong></p>
-<ul style="margin-top: 3px; margin-bottom: 12px;">
-<li style="margin-bottom: 12px;">All work is due by 11:59 PM on Friday, January 28, 2022.</li>
-<li style="margin-bottom: 12px;">Grace Period: 
-  <ul>
-    <li>Ends at 11:59 PM on Wednesday, February 2 for your Work Log.</li>
-    <li>Ends at 11:59 PM on Friday, April 29 for the rest of the week’s work.</li>
-  </ul>
-</li>
-</ul>
-</div>
-<h3 style="color: #e87722;">📚 To Read This Week</h3>
-<ul>
-<li>From Markel &amp; Selber, <em>Technical Communication:</em>
-  <ul>
-    <li>Ch. 2: &ldquo;Understanding Ethical and Legal Considerations&rdquo;</li>
-    <li><a title="Principles for Ethical Communication" href="https://canvas.vt.edu/courses/146101/pages/principles-for-ethical-communication" target="_blank" >Principles for Ethical Communication</a> (extra summary of list from Chapter 2)</li>
-    <li>Ch. 3. &ldquo;Writing Technical Documents&rdquo;</li>
-    </ul></li>
-<li>Course Webpages:
-  <ul>
-    <li><a href="https://canvas.vt.edu/courses/146101/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a></li>
-    <li> <a href="https://canvas.vt.edu/courses/146101/pages/recommendation-report-website-requirements" target="_blank">Recommendation Report Website Requirements</a></li>
-    <li><a href="https://canvas.vt.edu/courses/146101/pages/recommendation-website-examples" target="_blank">Recommendation Report Website Examples</a></li>
-  </ul>
-    </li>
-  </ul>
-  <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
-<h3 style="color: #861f41;">📝 To Write This Week</h3>
-<ul class="skipline">
-  <li>Complete the <a href="https://canvas.vt.edu/courses/146101/quizzes/334533" target="_blank">Chapter 02 Review</a> and the <a href="https://canvas.vt.edu/courses/146101/quizzes/334522" target="_blank">Chapter 03 Review</a>.</li>
-    <li>Submit your <a href="https://canvas.vt.edu/courses/146101/assignments/1351549" target="_blank" >Recommendation Website Proposal</a>.</li>
-</ul>
-    <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
-<h3 style="color: #e87722;">💬 To Discuss This Week</h3>
-<ul class="skipline">
-  <li>Check in with your Accountability Group, according to the agreement that you have made. You do not need to post in Canvas. Use whatever tool your group has agreed to.
-    <ul>
-      <li>Encourage members of your Accountability Group to stay on track by submitting the <a href="https://canvas.vt.edu/courses/146101/assignments/1351549" target="_blank" >Recommendation Website Proposal</a> this week if possible.</li>
-      <li>Remind your group that Work Logs have a 5-day grace period and must be submitted by February 2.</li>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+    <ul class="pill">
+      <li><span style="font-size: 12pt;"><strong>Time Required</strong></span></li>
+      <li><span style="font-size: 12pt;">6 to 8 hours, including reading time</span></li>
     </ul>
-  </li>
-</ul>
+    <p><img style="float: right; margin: 0px 0px 15px 15px;" src="https://tracigardner.github.io/TechComm/-images/null-by-beryl-chan.jpg" alt="Asian woman reading text on an iPad" width="500" height="333" />Technical writing is any kind of writing you might be called upon to produce for an audience in your particular workplace. The term refers not only to complex, lengthy, heavily-illustrated documents like reports and user guides, but also to shorter pieces of writing like memos, letters, and progress reports.</p>
+    <p>But guess what? Technical writing can take place outside the workplace as well: Did you ever</p>
+    <ul>
+      <li>write down a recipe for someone?</li>
+      <li>tell someone how to get somewhere?</li>
+      <li>describe the exact tool to use for a project?</li>
+      <li>persuade someone to buy a particular item?</li>
+      <li>outline the rules for a particular D&amp;D setting?</li>
+    </ul>
+    <p>All of these kinds of communicating are technical writing&mdash;and I bet you have a lot of experience with that kind of technical writing.</p>
+    <p>This week&rsquo;s activities introduce you to the process of technical writing in general as well as to the ethical and legal considerations that influence technical writing.</p>
     <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
-<h3 style="color: #e87722;">📓 To Track This Week</h3>
-<ul>
-  <li>Track and reflect on the work you have done for the week in your <a href="https://canvas.vt.edu/courses/146101/assignments/1376846" target="_blank">Work Log for the Week of 01/24</a>, reviewing the <a href="https://canvas.vt.edu/courses/146101/pages/weekly-work-log-guidelines" target="_blank">Weekly Work Log Guidelines</a> if needed.</li>
-</ul>
-<p>&nbsp;</p>
+    <h2 style="color: #861f41;">Objectives for this Module</h2>
+    <p>After completing this week&rsquo;s activities, you will be able to</p>
+    <ul>
+      <li>Choose and propose a website for a recommendation report.&nbsp;<em><strong>(<abbr title="Course Learning Objective">CLO</abbr> 4)</strong></em></li>
+      <li>Evaluate the ethical implications of your communications.&nbsp;<em><strong>(<abbr title="Course Learning Objective">CLO</abbr> 1, 2)</strong></em></li>
+      <li>Explain and apply the principles of plain language to your written communications.&nbsp;<em><strong>(<abbr title="Course Learning Objective">CLO</abbr> 1)</strong></em></li>
+    </ul>
+    <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
+    <h2 style="color: #861f41; margin-top: 9px;">Activities to Complete</h2>
+    <div style="border: 3px double #e87722; padding: 12px; margin-bottom: 18px;background-color: #f7f6f7;">
+      <p style="margin-bottom: 3px; margin-top: 0px;"><strong>Due Dates </strong></p>
+      <ul style="margin-top: 3px; margin-bottom: 12px;">
+        <li style="margin-bottom: 12px;">All work is due by 11:59 PM on Friday, January 28, 2022.</li>
+        <li style="margin-bottom: 12px;">Grace Period:
+          <ul>
+            <li>Ends at 11:59 PM on Wednesday, February 2 for your Work Log.</li>
+            <li>Ends at 11:59 PM on Friday, April 29 for the rest of the week’s work.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <h3 style="color: #e87722;">📚 To Read This Week</h3>
+    <ul>
+      <li>From Markel &amp; Selber, <em>Technical Communication:</em>
+        <ul>
+          <li>Ch. 2: &ldquo;Understanding Ethical and Legal Considerations&rdquo;</li>
+          <li><a title="Principles for Ethical Communication" href="https://canvas.vt.edu/courses/146101/pages/principles-for-ethical-communication" target="_blank">Principles for Ethical Communication</a> (extra summary of list from Chapter 2)</li>
+          <li>Ch. 3. &ldquo;Writing Technical Documents&rdquo;</li>
+        </ul>
+      </li>
+      <li>Course Webpages:
+        <ul>
+          <li><a href="https://canvas.vt.edu/courses/146101/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a></li>
+          <li> <a href="https://canvas.vt.edu/courses/146101/pages/recommendation-report-website-requirements" target="_blank">Recommendation Report Website Requirements</a></li>
+          <li><a href="https://canvas.vt.edu/courses/146101/pages/recommendation-website-examples" target="_blank">Recommendation Report Website Examples</a></li>
+        </ul>
+      </li>
+    </ul>
+    <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
+    <h3 style="color: #861f41;">📝 To Write This Week</h3>
+    <ul class="skipline">
+      <li>Complete the <a href="https://canvas.vt.edu/courses/146101/quizzes/334533" target="_blank">Chapter 02 Review</a> and the <a href="https://canvas.vt.edu/courses/146101/quizzes/334522" target="_blank">Chapter 03 Review</a>.</li>
+      <li>Submit your <a href="https://canvas.vt.edu/courses/146101/assignments/1351549" target="_blank">Recommendation Website Proposal</a>.</li>
+    </ul>
+    <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
+    <h3 style="color: #e87722;">💬 To Discuss This Week</h3>
+    <ul class="skipline">
+      <li>Check in with your Accountability Group, according to the agreement that you have made. You do not need to post in Canvas. Use whatever tool your group has agreed to.
+        <ul>
+          <li>Encourage members of your Accountability Group to stay on track by submitting the <a href="https://canvas.vt.edu/courses/146101/assignments/1351549" target="_blank">Recommendation Website Proposal</a> this week if possible.</li>
+          <li>Remind your group that Work Logs have a 5-day grace period and must be submitted by February 2.</li>
+        </ul>
+      </li>
+    </ul>
+    <p style="border-bottom: 2px solid #861f41;">&nbsp;</p>
+    <h3 style="color: #e87722;">📓 To Track This Week</h3>
+    <ul>
+      <li>Track and reflect on the work you have done for the week in your <a href="https://canvas.vt.edu/courses/146101/assignments/1376846" target="_blank">Work Log for the Week of 01/24</a>, reviewing the <a href="https://canvas.vt.edu/courses/146101/pages/weekly-work-log-guidelines" target="_blank">Weekly Work Log Guidelines</a> if needed.</li>
+    </ul>
+    <p>&nbsp;</p>
 
-<p style="border-top: 2px solid #861f41; margin-top: 60px;">Photo credit: <a href="https://flic.kr/p/iD9rwH">null by Beryl Chan on Flickr</a>, used under public domain.</p>
-<p>&nbsp;</p>
-      </div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+    <p style="border-top: 2px solid #861f41; margin-top: 60px;">Photo credit: <a href="https://flic.kr/p/iD9rwH">null by Beryl Chan on Flickr</a>, used under public domain.</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

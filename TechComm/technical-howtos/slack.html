@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Help with Slack</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Help with Slack</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Help with Slack</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 0px 6px;">
-  <p style="margin-top: 15px;"><img src="https://3764su17.tracigardner.com/wp-content/uploads/2017/01/slack-logo-150x150.jpg" alt="Slack Logo" width="125" height="125" style="float: right;margin-left: 12px;" >I have set up Slack for office hours and drop-in conversations. Slack is a team chat tool used by a variety of businesses to connect people online. If you’ve used a chat tool before, you should be able to use Slack easily.</p>
-  <p>Our Slack Team is at <a href="https://hokietengrrl.slack.com/" target="_blank">https://hokietengrrl.slack.com/</a>. You can access Slack in your browser or <a href="https://slack.com/downloads" target="_blank">download a desktop or mobile app</a>. If you want to stay on top of messages without logging in on the website, I highly recommend the mobile app, which will give you updates on your phone.</p>
-  <h2 id="signingup">Signing Up</h2>
-  <p>Joining our course Slack team is easy.  I will send everyone who is enrolled in the course an invitation link to join the HokieTengrrl team. If you do not receive an invitation, email me from your vt.edu email address, and I will send you another one.</p>
-  <p>The Slack site has step-by-step instructions on <a href="https://get.slack.help/hc/en-us/articles/212675257-Creating-a-Slack-account" target="_blank">Join a Slack Workspace</a> that you can follow. Scroll down to the section on accepting an invitation.</p>
-  <h2 id="username">Choosing Your Username</h2>
-  <p><strong>Use your first and last name as your username in our Slack team.</strong> For instance, a student named Janaette Floyd would choose a username like @janaettefloyd.</p>
-  <p>Why? Your username needs to identify who you are to me. I need your name to find your work in Canvas.</p>
-  <p>Name-based nicknames are generally okay (e.g., Daniel Jones could choose the username @dan.jones or @danny.jones). You can also use your middle name if that is what people call you in person. To protect your privacy, do not use your PID or any other code or alternate name.</p>
-  <p>If you are transitioning or cannot use your real name for some other reason, you can contact me by email and we will come up with an alternative. This is a private space, open only to members of the course. That said, I understand the need to be safe online, so do not stress if you need an accommodation here. Just contact me.</p>
-  <h2 id="tutorials">Tutorials</h2>
-  <p>Slack has a &ldquo;<a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users" target="_blank">Getting Started for New Users Resource</a>,&rdquo; which steps through the basic commands that you will use. Additionally, LinkedIn Learning offers <a href="https://www.linkedin.com/learning/slack-essential-training/communicate-and-collaborate-with-slack?u=57888345" target="_blank">Slack Essential Training</a>,  a course that has useful sections you can watch to see the commands demonstrated (free with your vt.edu login).</p>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 0px 6px;">
+    <p style="margin-top: 15px;"><img src="https://3764su17.tracigardner.com/wp-content/uploads/2017/01/slack-logo-150x150.jpg" alt="Slack Logo" width="125" height="125" style="float: right;margin-left: 12px;">I have set up Slack for office hours and drop-in conversations. Slack is a team chat tool used by a variety of businesses to connect people online. If you’ve used a chat tool before, you should be able to use Slack easily.</p>
+    <p>Our Slack Team is at <a href="https://hokietengrrl.slack.com/" target="_blank">https://hokietengrrl.slack.com/</a>. You can access Slack in your browser or <a href="https://slack.com/downloads" target="_blank">download a desktop or mobile app</a>. If you want to stay on top of messages without logging in on the website, I highly recommend the mobile app, which will give you updates on your phone.</p>
+    <h2 id="signingup">Signing Up</h2>
+    <p>Joining our course Slack team is easy. I will send everyone who is enrolled in the course an invitation link to join the HokieTengrrl team. If you do not receive an invitation, email me from your vt.edu email address, and I will send you another one.</p>
+    <p>The Slack site has step-by-step instructions on <a href="https://get.slack.help/hc/en-us/articles/212675257-Creating-a-Slack-account" target="_blank">Join a Slack Workspace</a> that you can follow. Scroll down to the section on accepting an invitation.</p>
+    <h2 id="username">Choosing Your Username</h2>
+    <p><strong>Use your first and last name as your username in our Slack team.</strong> For instance, a student named Janaette Floyd would choose a username like @janaettefloyd.</p>
+    <p>Why? Your username needs to identify who you are to me. I need your name to find your work in Canvas.</p>
+    <p>Name-based nicknames are generally okay (e.g., Daniel Jones could choose the username @dan.jones or @danny.jones). You can also use your middle name if that is what people call you in person. To protect your privacy, do not use your PID or any other code or alternate name.</p>
+    <p>If you are transitioning or cannot use your real name for some other reason, you can contact me by email and we will come up with an alternative. This is a private space, open only to members of the course. That said, I understand the need to be safe online, so do not stress if you need an accommodation here. Just contact me.</p>
+    <h2 id="tutorials">Tutorials</h2>
+    <p>Slack has a &ldquo;<a href="https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-users" target="_blank">Getting Started for New Users Resource</a>,&rdquo; which steps through the basic commands that you will use. Additionally, LinkedIn Learning offers <a href="https://www.linkedin.com/learning/slack-essential-training/communicate-and-collaborate-with-slack?u=57888345" target="_blank">Slack Essential Training</a>, a course that has useful sections you can watch to see the commands demonstrated (free with your vt.edu login).</p>
     <p>
-  <a href="https://www.linkedin.com/learning/slack-essential-training/communicate-and-collaborate-with-slack?u=57888345" target="_blank"><img src="https://tracigardner.github.io/TechComm/-images/video-images/slack-video.jpg" width="500" height="284" alt="Slack course screenshot" style="border: 1px solid #dedede;"/></a>
-  </p>
+      <a href="https://www.linkedin.com/learning/slack-essential-training/communicate-and-collaborate-with-slack?u=57888345" target="_blank"><img src="https://tracigardner.github.io/TechComm/-images/video-images/slack-video.jpg" width="500" height="284" alt="Slack course screenshot" style="border: 1px solid #dedede;" /></a>
+    </p>
     <p>If you want to learn even more about Slack, try the <a href="https://get.slack.help/hc/en-us/categories/202622877-Slack-Guides" target="_blank">Slack Resources on the Slack website</a>.</p>
 
-  <h2 id="posting">Posting</h2>
-  <p>Posting is easy. Just choose the channel and type. There are <a href="https://slack.com/blog/collaboration/designing-and-formatting-messages-in-slack" target="_blank">design and formatting instructions</a> that allow you to add bold, italics, and other features.  </p>
-  <p>You can <a href="https://get.slack.help/hc/en-us/articles/205240127-Mention-a-team-member" target="_blank">tag people by their usernames</a>. Try out the tab key on your keyboard for auto-complete.</p>
-  <p><a target="_blank" rel="noopener noreferrer" href="https://slack.com/help/articles/115000769927-Use-threads-to-organize-discussions-"><span dir="auto">Use threads to organize discussions</span></a>.</p>
-  <p><a target="_blank" rel="noopener noreferrer" href="https://slack.com/help/articles/201355156-Configure-your-Slack-notifications"><span dir="auto">Configure your Slack notifications</span></a> (especially if you do not want notifications when you are not available)  </p>
-  <h2 id="emoji">Using Emoji<img src="https://3764su17.tracigardner.com/wp-content/uploads/poodle_1f429.png" alt="Poodle Emoji" width="36" height="36"></h2>
-  <p><a href="https://slack.com/help/articles/202931348-Use-emoji-and-reactions" target="_blank">Emoji</a> work pretty much as they do in any other app. Either click the smiley button at the end of the input field and choose your emoji from the pop-up box, OR if you know what you want, type it, such as :poodle: (My family has poodles, so :poodle: is my favorite.)  </p>
-  <h2 id="sharing">Sharing Your Work</h2>
-  <p>Please do not upload your files to Slack. We are a free team, so we are limited to 5GB for the entire class. That means that we don&rsquo;t have enough space to upload drafts of your writing projects. Instead share your drafts in Discussions in Canvas.</p>
-  <p>&nbsp;</p>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+    <h2 id="posting">Posting</h2>
+    <p>Posting is easy. Just choose the channel and type. There are <a href="https://slack.com/blog/collaboration/designing-and-formatting-messages-in-slack" target="_blank">design and formatting instructions</a> that allow you to add bold, italics, and other features. </p>
+    <p>You can <a href="https://get.slack.help/hc/en-us/articles/205240127-Mention-a-team-member" target="_blank">tag people by their usernames</a>. Try out the tab key on your keyboard for auto-complete.</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://slack.com/help/articles/115000769927-Use-threads-to-organize-discussions-"><span dir="auto">Use threads to organize discussions</span></a>.</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://slack.com/help/articles/201355156-Configure-your-Slack-notifications"><span dir="auto">Configure your Slack notifications</span></a> (especially if you do not want notifications when you are not available) </p>
+    <h2 id="emoji">Using Emoji<img src="https://3764su17.tracigardner.com/wp-content/uploads/poodle_1f429.png" alt="Poodle Emoji" width="36" height="36"></h2>
+    <p><a href="https://slack.com/help/articles/202931348-Use-emoji-and-reactions" target="_blank">Emoji</a> work pretty much as they do in any other app. Either click the smiley button at the end of the input field and choose your emoji from the pop-up box, OR if you know what you want, type it, such as :poodle: (My family has poodles, so :poodle: is my favorite.) </p>
+    <h2 id="sharing">Sharing Your Work</h2>
+    <p>Please do not upload your files to Slack. We are a free team, so we are limited to 5GB for the entire class. That means that we don&rsquo;t have enough space to upload drafts of your writing projects. Instead share your drafts in Discussions in Canvas.</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

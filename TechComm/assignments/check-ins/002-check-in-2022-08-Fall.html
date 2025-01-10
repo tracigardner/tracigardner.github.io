@@ -1,113 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Check-In #2, Week 2</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Check-In #2, Week 2</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
+
 <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Check-In #2, Week 2</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
-<h2>Quiz Instructions</h2>
-  <p>Answer the following questions to let me know about you and how you are doing in the course. There are no right or wrong answers.</p>
-  <p>I will only see the survey statistics and answers in summary. I won&rsquo;t see your name with your answers. Your responses will not help or hurt you in the course.</p>
-  <p>I will use your responses to customize the course. I may also share some of your responses with the class.</p>
-<p style="border-bottom: 1px solid #861f41;">&nbsp;</p>
-<p>Have you arranged access to the textbook (Technical Communication (13th ed) by Mike Markel &amp; Stuart Selber?</p>
-<ul>
-  <li> I have access to either a print copy or digital access to the 13th ed of Technical Communication. </li>
-  <li>I have access to an older edition of Technical Communication. </li>
-  <li>I've ordered the textbook, but it has not arrived yet. </li>
-  <li>I have not found a way to access the textbook yet, but I will work on it soon.</li>
-  <li>I don't plan on getting the textbook. If I need it for something, I'll ask someone in class to help me.</li>
-</ul>
-<p>How much time did you spend on the course this week? Include time spent reading and writing. </p>
-<ul>
-  <li>Less than 2 hours </li>
-  <li>2–3 hours </li>
-  <li>4–6 hours </li>
-  <li>7–8 hours </li>
-  <li>More than 8 hours</li>
-</ul>
-<p>How well do you understand the connection between the Try-It activities and the Full Drafts? </p>
-<ul>
-  <li>I understand the connection and know how to use my responses to the Try-Its when I work on my Full Draft. </li>
-  <li>I understand the connection, but I’m not sure how to use my responses to the Try-Its when I work on my Full Draft. </li>
-  <li>I understand some of the connection, but it’s not completely clear to me.</li>
-  <li>I am completely lost, or I understand very little.</li>
-</ul>
-<p>How has your Accountabilty Group connected this week?  </p>
-<ul>
-  <li>We connected digitally, through the system we chose during the first week. </li>
-  <li>We met face-to-face. </li>
-  <li>We met face-to-face and connected digitally. </li>
-  <li>We are going to connect soon, but have not done so yet. </li>
-  <li>We don’t have a plan to connect, or I was unable to connect.</li>
-</ul>
-<p>If you connected with your Accountability Group, how many people in the group connected?</p>
-<ul>
-  <li>Everyone </li>
-  <li>Almost everyone </li>
-  <li>About 1/2 of the group </li>
-  <li>About a 1/3 of the group or less </li>
-  <li>Not applicable</li>
-</ul>
-<p>What specific questions do you have about the course? I'll use your questions to build an FAQ. Remember that if you have a private question, you should use the Canvas Inbox to contact me.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+    <h2>Quiz Instructions</h2>
+    <p>Answer the following questions to let me know about you and how you are doing in the course. There are no right or wrong answers.</p>
+    <p>I will only see the survey statistics and answers in summary. I won&rsquo;t see your name with your answers. Your responses will not help or hurt you in the course.</p>
+    <p>I will use your responses to customize the course. I may also share some of your responses with the class.</p>
+    <p style="border-bottom: 1px solid #861f41;">&nbsp;</p>
+    <p>Have you arranged access to the textbook (Technical Communication (13th ed) by Mike Markel &amp; Stuart Selber?</p>
+    <ul>
+      <li> I have access to either a print copy or digital access to the 13th ed of Technical Communication. </li>
+      <li>I have access to an older edition of Technical Communication. </li>
+      <li>I've ordered the textbook, but it has not arrived yet. </li>
+      <li>I have not found a way to access the textbook yet, but I will work on it soon.</li>
+      <li>I don't plan on getting the textbook. If I need it for something, I'll ask someone in class to help me.</li>
+    </ul>
+    <p>How much time did you spend on the course this week? Include time spent reading and writing. </p>
+    <ul>
+      <li>Less than 2 hours </li>
+      <li>2–3 hours </li>
+      <li>4–6 hours </li>
+      <li>7–8 hours </li>
+      <li>More than 8 hours</li>
+    </ul>
+    <p>How well do you understand the connection between the Try-It activities and the Full Drafts? </p>
+    <ul>
+      <li>I understand the connection and know how to use my responses to the Try-Its when I work on my Full Draft. </li>
+      <li>I understand the connection, but I’m not sure how to use my responses to the Try-Its when I work on my Full Draft. </li>
+      <li>I understand some of the connection, but it’s not completely clear to me.</li>
+      <li>I am completely lost, or I understand very little.</li>
+    </ul>
+    <p>How has your Accountabilty Group connected this week? </p>
+    <ul>
+      <li>We connected digitally, through the system we chose during the first week. </li>
+      <li>We met face-to-face. </li>
+      <li>We met face-to-face and connected digitally. </li>
+      <li>We are going to connect soon, but have not done so yet. </li>
+      <li>We don’t have a plan to connect, or I was unable to connect.</li>
+    </ul>
+    <p>If you connected with your Accountability Group, how many people in the group connected?</p>
+    <ul>
+      <li>Everyone </li>
+      <li>Almost everyone </li>
+      <li>About 1/2 of the group </li>
+      <li>About a 1/3 of the group or less </li>
+      <li>Not applicable</li>
+    </ul>
+    <p>What specific questions do you have about the course? I'll use your questions to build an FAQ. Remember that if you have a private question, you should use the Canvas Inbox to contact me.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>

@@ -1,123 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Trip Report</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Trip Report</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Trip Report</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
-  <h2>Activity Details</h2>
-  <p>This is an optional activity, worth 20 points.</p>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+    <h2>Activity Details</h2>
+    <p>This is an optional activity, worth 20 points.</p>
     <ul>
-      
-      <li>Due Date:  11:59 PM on Friday, April 30.</li>
+
+      <li>Due Date: 11:59 PM on Friday, April 30.</li>
       <li>End of Grace Period: 11:59 PM on Monday, May 3. </li>
     </ul>
-  <h2>Goals</h2>
-<ul>
-  <li>Analyze the rhetorical situation and determine the appropriate audience or users of written communication, considering the needs of global audiences and people with disabilities. [<abbr title="Course Learning Objective">CLO</abbr> 1]</li>
-  <li>Use conventions of various workplace genres, such as proposals, instructions, correspondence, reports, and slide decks, with understanding of how the genre conventions can be used as heuristics and as principles of arrangement. [<abbr title="Course Learning Objective">CLO</abbr> 4]</li>
-  <li>Apply principles of effective visual design for print and electronic presentation, including hierarchical, chronological, and spatial arrangements. [<abbr title="Course Learning Objective">CLO</abbr> 6]</li>
-  <li>Identify and apply the principles of effective style in the composing of usable, reader-centered written communications. [<abbr title="Course Learning Objective">CLO</abbr> 7]</li>
-</ul>
-<h2><img src="../../../-images/noun_facilities_2261662.png" width="200" height="199" alt="Meeting room showing a table with two chairs and a screen with a pie chart and text displayed" style="float:right;margin: 0px 0px 12px 12px;" />The Task</h2>
-<h3>What I Want You to Do</h3>
-<p>Attend an online meeting or event related to your field and then write a trip report that documents the event. [note: because of COVID-19, please stick with online meetings and events only for this activity.]</p>
-<h3>Why I Want You to Do It</h3>
-<p> Trip reports document what happened during a trip. Some companies use the reports to show how the goals for the trip were met. Others use the reports to share what happened with the rest of the organization. This is a standard writing task that will help prepare you for the workplace.</p>
-<h3>How You Do It</h3>
-<ol class="skipline">
-  <li class="skipline">Choose an online  event  that will expand your knowledge of your career field. You can attend any of the following for this activity:
-    <ul class="null">
-      <li>Any colloquium, presentation, or special event offered by the Department or College of your major</li>
-      <li>Business meetings and/or special events sponsored by professional fraternities, honor societies, or special groups related to your major</li>
-      <li>Any event offered by <a href="https://career.vt.edu/events.html" target="_blank">Virginia Tech&rsquo;s Career and Professional Development Center</a></li>
-      <li>Any professional conference/convention attendance related to your major or career</li>
+    <h2>Goals</h2>
+    <ul>
+      <li>Analyze the rhetorical situation and determine the appropriate audience or users of written communication, considering the needs of global audiences and people with disabilities. [<abbr title="Course Learning Objective">CLO</abbr> 1]</li>
+      <li>Use conventions of various workplace genres, such as proposals, instructions, correspondence, reports, and slide decks, with understanding of how the genre conventions can be used as heuristics and as principles of arrangement. [<abbr title="Course Learning Objective">CLO</abbr> 4]</li>
+      <li>Apply principles of effective visual design for print and electronic presentation, including hierarchical, chronological, and spatial arrangements. [<abbr title="Course Learning Objective">CLO</abbr> 6]</li>
+      <li>Identify and apply the principles of effective style in the composing of usable, reader-centered written communications. [<abbr title="Course Learning Objective">CLO</abbr> 7]</li>
     </ul>
-    If you want to attend an event that is not covered by the list, you can write me to ask if it will count. In your email, be sure to explain how the event is a professional activities that relate to your major and/or career plans.</li>
-    <li>Familiarize yourself with the characteristics and features of trip reports. The following readings offer advice on writing trip reports:
-      <ul class="null">
-      <li>Example Trip Report, pp. 376–378 of Markel and Selber</li>
-      <li><a href="https://www.astm.org/SNEWS/OCTOBER_2002/howto_oct02.html" target="_blank">The Art of the Trip Report</a>, from ASTM International</li>
-      <li><a href="https://btw-assignments.tracigardner.com/wp-content/uploads/AFTrip-report.pdf" target="_blank">Trip Report Template</a>, from <em>The Tongue and Quill, Air Force Handbook 33-337</em></li>
-      </ul></li>
-  <li>Go to the event or on the trip, and gather information for your report. Take notes on what happens and gather or download any materials that you can use as you write your report. You can take photos  or screenshots as well. </li>
-  <li>Write a one-page Trip Report in your word processor, using memo format. Keep the following requirements in mind:
-      <ul class="null">
-        <li>Explain the goals for the trip.</li>
-        <li>Discuss what actually happened.</li>
-        <li>Conclude with the lessons learned and/or any follow-up that needs to take place.</li>
-        <li>
-          <p>Use professional design and formatting that makes positive use of the <a href="https://canvas.vt.edu/courses/146101/pages/crap-design-principles" target="_blank">CRAP Design Principles</a><strong>.</strong>        </p>
-        </li>
-      </ul>
-    </li>
- <li>Submit your position statement:
-   <ul class="null">
-     <li>Submit your work here by 11:59 PM on Friday, April 30.</li>
-     <li>If you need more time, use the grace period and submit your work by 11:59 PM on Monday, May 3. </li>
-   </ul>
-    </li>
-</ol>
-<h2>Obtaining the Points for Your Work</h2>
-<p>This activity is worth 20 points. Be sure to complete the following tasks:</p>
-<ul>
-  <li>Track your work in your <a title="Weekly Work Log Guidelines" href="https://canvas.vt.edu/courses/146101/pages/weekly-work-log-guidelines" target="_blank" rel="noopener" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/132039/pages/weekly-work-log-guidelines" data-api-returntype="Page">Weekly Work Log</a>.</li>
-  <li>Wait for me to give you points for your answers. Canvas cannot automatically grade written text, so I will confirm that you met the requirements of the activity and add your points manually. </li>
-</ul>
-    
+    <h2><img src="../../../-images/noun_facilities_2261662.png" width="200" height="199" alt="Meeting room showing a table with two chairs and a screen with a pie chart and text displayed" style="float:right;margin: 0px 0px 12px 12px;" />The Task</h2>
+    <h3>What I Want You to Do</h3>
+    <p>Attend an online meeting or event related to your field and then write a trip report that documents the event. [note: because of COVID-19, please stick with online meetings and events only for this activity.]</p>
+    <h3>Why I Want You to Do It</h3>
+    <p> Trip reports document what happened during a trip. Some companies use the reports to show how the goals for the trip were met. Others use the reports to share what happened with the rest of the organization. This is a standard writing task that will help prepare you for the workplace.</p>
+    <h3>How You Do It</h3>
+    <ol class="skipline">
+      <li class="skipline">Choose an online event that will expand your knowledge of your career field. You can attend any of the following for this activity:
+        <ul class="null">
+          <li>Any colloquium, presentation, or special event offered by the Department or College of your major</li>
+          <li>Business meetings and/or special events sponsored by professional fraternities, honor societies, or special groups related to your major</li>
+          <li>Any event offered by <a href="https://career.vt.edu/events.html" target="_blank">Virginia Tech&rsquo;s Career and Professional Development Center</a></li>
+          <li>Any professional conference/convention attendance related to your major or career</li>
+        </ul>
+        If you want to attend an event that is not covered by the list, you can write me to ask if it will count. In your email, be sure to explain how the event is a professional activities that relate to your major and/or career plans.
+      </li>
+      <li>Familiarize yourself with the characteristics and features of trip reports. The following readings offer advice on writing trip reports:
+        <ul class="null">
+          <li>Example Trip Report, pp. 376–378 of Markel and Selber</li>
+          <li><a href="https://www.astm.org/SNEWS/OCTOBER_2002/howto_oct02.html" target="_blank">The Art of the Trip Report</a>, from ASTM International</li>
+          <li><a href="https://btw-assignments.tracigardner.com/wp-content/uploads/AFTrip-report.pdf" target="_blank">Trip Report Template</a>, from <em>The Tongue and Quill, Air Force Handbook 33-337</em></li>
+        </ul>
+      </li>
+      <li>Go to the event or on the trip, and gather information for your report. Take notes on what happens and gather or download any materials that you can use as you write your report. You can take photos or screenshots as well. </li>
+      <li>Write a one-page Trip Report in your word processor, using memo format. Keep the following requirements in mind:
+        <ul class="null">
+          <li>Explain the goals for the trip.</li>
+          <li>Discuss what actually happened.</li>
+          <li>Conclude with the lessons learned and/or any follow-up that needs to take place.</li>
+          <li>
+            <p>Use professional design and formatting that makes positive use of the <a href="https://canvas.vt.edu/courses/146101/pages/crap-design-principles" target="_blank">CRAP Design Principles</a><strong>.</strong> </p>
+          </li>
+        </ul>
+      </li>
+      <li>Submit your position statement:
+        <ul class="null">
+          <li>Submit your work here by 11:59 PM on Friday, April 30.</li>
+          <li>If you need more time, use the grace period and submit your work by 11:59 PM on Monday, May 3. </li>
+        </ul>
+      </li>
+    </ol>
+    <h2>Obtaining the Points for Your Work</h2>
+    <p>This activity is worth 20 points. Be sure to complete the following tasks:</p>
+    <ul>
+      <li>Track your work in your <a title="Weekly Work Log Guidelines" href="https://canvas.vt.edu/courses/146101/pages/weekly-work-log-guidelines" target="_blank" rel="noopener" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/132039/pages/weekly-work-log-guidelines" data-api-returntype="Page">Weekly Work Log</a>.</li>
+      <li>Wait for me to give you points for your answers. Canvas cannot automatically grade written text, so I will confirm that you met the requirements of the activity and add your points manually. </li>
+    </ul>
+
   </div>
   <script>
-    if ( window.location !== window.parent.location ) {
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
   </script>
-  </body>
+</body>
+
 </html>

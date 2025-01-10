@@ -1,165 +1,168 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Week 10 Instructions</title>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Week 10 Instructions</title>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- My Custom CSS -->
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+  <!-- Latest compiled JavaScript -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- include scripts -->
-    <script>
-    $(document).ready(function(){
-       $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-       $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-       $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-       $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-    });
-    </script>
-    
+  <!-- My Custom CSS -->
+  <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+  <!-- include scripts -->
   <script>
-  (function() {
-    var cx = '004254621551572523759:n3ows2swaxg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+    $(document).ready(function () {
+      $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+      $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+      $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+      $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+    });
+  </script>
+
+  <script>
+    (function () {
+      var cx = '004254621551572523759:n3ows2swaxg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 </head>
-  <body>
-<!-- script -->
-<div id="topinfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+
+<body>
+  <!-- script -->
+  <div id="topinfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("demo").innerHTML = "<div id='content'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Week 10 Instructions</h1>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-<div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
-<ul class="pill">
-<li><span style="font-size: 12pt;"><strong>Time Required</strong></span></li>
-<li><span style="font-size: 12pt;">7&ndash;8 hours, including reading time</span></li>
-</ul>
+  </script>
+  <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+    <ul class="pill">
+      <li><span style="font-size: 12pt;"><strong>Time Required</strong></span></li>
+      <li><span style="font-size: 12pt;">7&ndash;8 hours, including reading time</span></li>
+    </ul>
     <p style="margin-top: 9px;">This week you will continue work on your Recommendation Report. You will finish any work remaining on the body of your report and move on to the front and back matter.</p>
     <figure style="float: center;margin: 9px;">
-        <img src="../../-images/recommendation/Rec-report-front-matter-all.png" alt="Flowchart showing the items in the report's front matter: 1. Letter of Transmittal: Introduce the primary readers to the purpose and content. 2. Title Page: List the title, author, and date as well as the recipient. 3. Abstract: Provide a brief technical summary for readers familiar with the topic. 4. Table of Contents: List headings and sub-headings with page numbers or links. 5. Executive Summary: Summarize the background, findings, and implications for management." width="765" height="103">
-        <figcaption style="color: #861f41;font-size: 1em;">The Sections of the Front Matter of the Recommendation Report</figcaption>
-  </figure>
-  <figure style="float: center;margin: 9px;">
-        <img src="../../-images/recommendation/Rec-report-back-matter-all.png" alt="Flowchart showing the sections of the back matter: 1. References. List all of the sources for your report, using the style preferred by your field. 2. Appendixes. Provide any supplemental information that is too bulky to include in the body of the report." width="379" height="103">
+      <img src="../../-images/recommendation/Rec-report-front-matter-all.png" alt="Flowchart showing the items in the report's front matter: 1. Letter of Transmittal: Introduce the primary readers to the purpose and content. 2. Title Page: List the title, author, and date as well as the recipient. 3. Abstract: Provide a brief technical summary for readers familiar with the topic. 4. Table of Contents: List headings and sub-headings with page numbers or links. 5. Executive Summary: Summarize the background, findings, and implications for management." width="765" height="103">
+      <figcaption style="color: #861f41;font-size: 1em;">The Sections of the Front Matter of the Recommendation Report</figcaption>
+    </figure>
+    <figure style="float: center;margin: 9px;">
+      <img src="../../-images/recommendation/Rec-report-back-matter-all.png" alt="Flowchart showing the sections of the back matter: 1. References. List all of the sources for your report, using the style preferred by your field. 2. Appendixes. Provide any supplemental information that is too bulky to include in the body of the report." width="379" height="103">
       <figcaption style="color: #861f41;font-size: 1em;">The Sections of the Back Matter of the Recommendation Report</figcaption>
-  </figure>
-<p style="margin-top: 9px;">If you work diligently, you should have a full draft of your report before you leave for Thanksgiving break. When you return, you will have a week to revise and review. Your full report (and any other outstanding work in the course) will be due by Friday, December 3, 2021.</p>
-<p style="font-size: 1px; border-bottom: 2px solid #861F41;">&nbsp;</p>
-<h2 style="color: #861f41; margin-top: 9px;">What You Will Learn &amp; Practice</h2>
-<ul class="skipline">
-  <li>How to analyze your audience and purpose so that you can choose supporting material that is convincing to your readers and decide the best way to present information clearly and effectively. [<abbr title="Course Learning Objective">CLO</abbr> 1]</li>
-  <li>How to find and evaluate ethical evidence in secondary sources, such as books, articles, podcasts, and videos, and through primary research, such as observation, inspection, experiment, and interview, that supports your position, that supports your position. [<abbr title="Course Learning Objective">CLO</abbr>s 2 &amp; 3] </li>
-  <li>How to write documents you may encounter in the workplace, such as letters, memos, instructions, proposals, reports, and presentations. [<abbr title="Course Learning Objective">CLO</abbr> 4]</li>
-  <li>Collaborate with classmates in planning, researching, writing, revising, and presenting information. [<abbr title="Course Learning Objective">CLO</abbr> 5]</li>
-  <li>How to use colors, layout, and formatting that make your documents understandable and easy to read and how to  take advantage of design principles, including contrast, repetition, alignment, and proximity, to communicate your ideas effectively. [<abbr title="Course Learning Objective">CLO</abbr> 6]</li>
-</ul>
+    </figure>
+    <p style="margin-top: 9px;">If you work diligently, you should have a full draft of your report before you leave for Thanksgiving break. When you return, you will have a week to revise and review. Your full report (and any other outstanding work in the course) will be due by Friday, December 3, 2021.</p>
     <p style="font-size: 1px; border-bottom: 2px solid #861F41;">&nbsp;</p>
-<h2 style="margin-top: 9px;">Activities to Complete</h2>
-  <div style="border: 3px double #e87722; padding: 12px; margin-bottom: 18px;background-color: #f7f6f7;">
-<p style="margin-bottom: 3px; margin-top: 0px;"><strong>Due Dates </strong></p>
-<ul style="margin-top: 3px; margin-bottom: 12px;">
-<li style="margin-bottom: 12px;">Suggested Due Date: Friday, November 19, 2021, by 11:59 PM</li>
-<li style="margin-bottom: 12px;">Firm Due Dates (no grace period):
-  <ul>
-    <li>Friday, November 19, 2021, by 11:59 PM, for the <a href="https://canvas.vt.edu/courses/136796/discussion_topics/1095457" target="_blank">Last-Chance Recommendation Report Feedback Discussion</a></li>
-  </ul>
-</li>
-<li>Grace Period: 
-  <ul>
-    <li>Wednesday, December 1, 2021, by 11:59 PM, for your Work Log.</li>
-    <li>Ends at 11:59 PM on Friday, December 3 for the rest of the week’s work.</li>
+    <h2 style="color: #861f41; margin-top: 9px;">What You Will Learn &amp; Practice</h2>
+    <ul class="skipline">
+      <li>How to analyze your audience and purpose so that you can choose supporting material that is convincing to your readers and decide the best way to present information clearly and effectively. [<abbr title="Course Learning Objective">CLO</abbr> 1]</li>
+      <li>How to find and evaluate ethical evidence in secondary sources, such as books, articles, podcasts, and videos, and through primary research, such as observation, inspection, experiment, and interview, that supports your position, that supports your position. [<abbr title="Course Learning Objective">CLO</abbr>s 2 &amp; 3] </li>
+      <li>How to write documents you may encounter in the workplace, such as letters, memos, instructions, proposals, reports, and presentations. [<abbr title="Course Learning Objective">CLO</abbr> 4]</li>
+      <li>Collaborate with classmates in planning, researching, writing, revising, and presenting information. [<abbr title="Course Learning Objective">CLO</abbr> 5]</li>
+      <li>How to use colors, layout, and formatting that make your documents understandable and easy to read and how to take advantage of design principles, including contrast, repetition, alignment, and proximity, to communicate your ideas effectively. [<abbr title="Course Learning Objective">CLO</abbr> 6]</li>
     </ul>
-</li>
-</ul>
-</div>
-<h3>📚 To Read This Week</h3>
-<ul>
-  <li>Chapter 18 of Markel &amp; Selber, &quot;Writing Recommendation Reports&quot;</li>
-  <li>Chapter 11 of Markel &amp; Selber, “Designing Print and Online Documents”</li>
-  <li><a href="https://canvas.vt.edu/courses/136796/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a></li>
-  <li><a href="https://canvas.vt.edu/courses/136796/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citations for Your Projects</a></li>
-  <li><a href="https://canvas.vt.edu/courses/136796/pages/professional-design-for-reports" target="_blank">Professional Design for Reports</a></li>
-</ul>
-<h3 style="margin-top: 18px;">📝 To Write This Week</h3>
-        <div class="maroonbox" style="width: 360px;float: right;margin: 0px 18px 18px 18px;padding: 6px;">
-            <h4 style="margin-bottom: 0px;">Feedback on These Activities</h4>
-            <p>I will see the work you do for these seven activities when I read the draft that you submit for feedback or submit your best draft. Each of these activities provides you with the instructions for the section and advice on how to compose the sections effectively.</p>
-        </div>
-      <ul>
-        <li>Recommendation Report Front Matter:
+    <p style="font-size: 1px; border-bottom: 2px solid #861F41;">&nbsp;</p>
+    <h2 style="margin-top: 9px;">Activities to Complete</h2>
+    <div style="border: 3px double #e87722; padding: 12px; margin-bottom: 18px;background-color: #f7f6f7;">
+      <p style="margin-bottom: 3px; margin-top: 0px;"><strong>Due Dates </strong></p>
+      <ul style="margin-top: 3px; margin-bottom: 12px;">
+        <li style="margin-bottom: 12px;">Suggested Due Date: Friday, November 19, 2021, by 11:59 PM</li>
+        <li style="margin-bottom: 12px;">Firm Due Dates (no grace period):
           <ul>
-            <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-letter-of-transmittal" target="_blank">Writing Your Letter of Transmittal</a></li>
-            <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-title-page" target="_blank">Writing Your Title Page</a></li>
-            <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-abstract" target="_blank">Writing Your Abstract</a></li>
-            <li><a href="https://canvas.vt.edu/courses/136796/pages/creating-your-table-of-contents" target="_blank">Creating Your Table of Contents</a></li>
-            <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-executive-summary" target="_blank">Writing Your Executive Summary</a></li>
+            <li>Friday, November 19, 2021, by 11:59 PM, for the <a href="https://canvas.vt.edu/courses/136796/discussion_topics/1095457" target="_blank">Last-Chance Recommendation Report Feedback Discussion</a></li>
           </ul>
         </li>
-        <li>Recommendation Report Back Matter:
+        <li>Grace Period:
           <ul>
-            <li><a href="https://canvas.vt.edu/courses/136796/pages/providing-your-references" target="_blank">Writing Your References</a></li>
-            <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-appendixes" target="_blank">Writing Your Appendixes</a></li>
+            <li>Wednesday, December 1, 2021, by 11:59 PM, for your Work Log.</li>
+            <li>Ends at 11:59 PM on Friday, December 3 for the rest of the week’s work.</li>
           </ul>
         </li>
       </ul>
-
-<h3>💬 To Discuss This Week</h3>
-<ul class="skipline">
-  <li>Post any <a href="https://canvas.vt.edu/courses/136796/discussion_topics/1102612" target="_blank">Questions about the Recommendation Report</a> that you have (optional). You can check this Discussion for answers as well.</li>
-  <li>
-    <p>Participate in the <a href="https://canvas.vt.edu/courses/136796/discussion_topics/1095457" target="_blank">Last-Chance Recommendation Report Feedback Discussion</a>.</p>
+    </div>
+    <h3>📚 To Read This Week</h3>
     <ul>
-      <li>Follow the directions in the Last-Chance Recommendation Report Feedback Discussion to share what you have created with the class for peer feedback.</li>
-      <li>After peer review partners are assigned (Saturday, November 20, 2021), read drafts from your classmates and offer feedback on how to revise. Feedback is due by 11:59 PM on Wednesday, December 1, 2021. If you can, however, share your feedback sooner.      </li>
-  </ul>
-  </li>
-</ul>
+      <li>Chapter 18 of Markel &amp; Selber, &quot;Writing Recommendation Reports&quot;</li>
+      <li>Chapter 11 of Markel &amp; Selber, “Designing Print and Online Documents”</li>
+      <li><a href="https://canvas.vt.edu/courses/136796/pages/recommendation-report-criteria" target="_blank">Recommendation Report Criteria</a></li>
+      <li><a href="https://canvas.vt.edu/courses/136796/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citations for Your Projects</a></li>
+      <li><a href="https://canvas.vt.edu/courses/136796/pages/professional-design-for-reports" target="_blank">Professional Design for Reports</a></li>
+    </ul>
+    <h3 style="margin-top: 18px;">📝 To Write This Week</h3>
+    <div class="maroonbox" style="width: 360px;float: right;margin: 0px 18px 18px 18px;padding: 6px;">
+      <h4 style="margin-bottom: 0px;">Feedback on These Activities</h4>
+      <p>I will see the work you do for these seven activities when I read the draft that you submit for feedback or submit your best draft. Each of these activities provides you with the instructions for the section and advice on how to compose the sections effectively.</p>
+    </div>
+    <ul>
+      <li>Recommendation Report Front Matter:
+        <ul>
+          <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-letter-of-transmittal" target="_blank">Writing Your Letter of Transmittal</a></li>
+          <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-title-page" target="_blank">Writing Your Title Page</a></li>
+          <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-abstract" target="_blank">Writing Your Abstract</a></li>
+          <li><a href="https://canvas.vt.edu/courses/136796/pages/creating-your-table-of-contents" target="_blank">Creating Your Table of Contents</a></li>
+          <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-executive-summary" target="_blank">Writing Your Executive Summary</a></li>
+        </ul>
+      </li>
+      <li>Recommendation Report Back Matter:
+        <ul>
+          <li><a href="https://canvas.vt.edu/courses/136796/pages/providing-your-references" target="_blank">Writing Your References</a></li>
+          <li><a href="https://canvas.vt.edu/courses/136796/pages/writing-your-appendixes" target="_blank">Writing Your Appendixes</a></li>
+        </ul>
+      </li>
+    </ul>
 
-<h3>📓 To Track This Week</h3>
-<ul>
-  <li>Track and reflect on the work you have done for the week in your <a href="https://canvas.vt.edu/courses/136796/assignments/1214963" target="_blank">Work Log for the Week of 11/15</a>, reviewing the <a href="https://canvas.vt.edu/courses/136796/pages/weekly-work-log-guidelines" target="_blank">Weekly Work Log Guidelines</a> if needed.</li>
-</ul>
-<p>&nbsp;</p>
-<p style="margin-top: 24px;">&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-      </div>
-      <script language="JavaScript">
+    <h3>💬 To Discuss This Week</h3>
+    <ul class="skipline">
+      <li>Post any <a href="https://canvas.vt.edu/courses/136796/discussion_topics/1102612" target="_blank">Questions about the Recommendation Report</a> that you have (optional). You can check this Discussion for answers as well.</li>
+      <li>
+        <p>Participate in the <a href="https://canvas.vt.edu/courses/136796/discussion_topics/1095457" target="_blank">Last-Chance Recommendation Report Feedback Discussion</a>.</p>
+        <ul>
+          <li>Follow the directions in the Last-Chance Recommendation Report Feedback Discussion to share what you have created with the class for peer feedback.</li>
+          <li>After peer review partners are assigned (Saturday, November 20, 2021), read drafts from your classmates and offer feedback on how to revise. Feedback is due by 11:59 PM on Wednesday, December 1, 2021. If you can, however, share your feedback sooner. </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>📓 To Track This Week</h3>
+    <ul>
+      <li>Track and reflect on the work you have done for the week in your <a href="https://canvas.vt.edu/courses/136796/assignments/1214963" target="_blank">Work Log for the Week of 11/15</a>, reviewing the <a href="https://canvas.vt.edu/courses/136796/pages/weekly-work-log-guidelines" target="_blank">Weekly Work Log Guidelines</a> if needed.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p style="margin-top: 24px;">&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+  <script language="JavaScript">
     <!-- Hide JavaScript...
     var LastUpdated = document.lastModified;
     var LastUpdatedDate = LastUpdated.slice(0,10);
     document.writeln ("Last updated " + LastUpdatedDate);
     // End Hiding -->
-          </script>
-<div id="bottominfo"></div>
-<script>
-    if ( window.location !== window.parent.location ) {
+  </script>
+  <div id="bottominfo"></div>
+  <script>
+    if (window.location !== window.parent.location) {
       document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
       // The page is in an iframe
     } else {
       // The page is not in an iframe
       document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-       // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+      // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
     }
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
