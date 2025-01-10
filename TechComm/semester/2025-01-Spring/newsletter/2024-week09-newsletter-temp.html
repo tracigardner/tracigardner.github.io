@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test of copy</title>
+	<style>
+	.percentage:after {
+  content: "";
+  display: block;
+  background-color: #3d9970;
+}
+.percentage-20:after {
+  width: 20%;
+}
+.percentage-30:after {
+  width: 30%;
+}
+		@for $i from 1 through 100 {
+  .percentage-#{$i}:after {
+    $value: ($i * 1%);
+    width: $value;
+  }
+}
+	</style>
+</head>
+
+<body>
+<h2>Question Breakdown</h2>
+	
+	<div>
+	  <div>
+	    <div aria-hidden="true">How well do you understand what you need to contribute to your group&rsquo;s proposal for the recommendation report? </div>
+      </div>
+	  <div>
+	    <div></div>
+      </div>
+</div>
+	<div>
+	<div>
+	<table>
+	<table>
+	<tbody>
+	  <tr>
+	    <th style="text-align: left" scope="row"><table>
+	      <tbody>
+	        <tr>
+            <tr>
+	            <th style="text-align: left" scope="row"><span aria-hidden="true">I understand everything and can even think of ways to present some of the information.</span></th>
+	            <td><div>13 respondents</div></td>
+	            <td>27 %</td>
+	            <td aria-hidden="true"><div alt="Graph bar" title="Correct Answer"></div></td>
+            </tr>
+	        <tr>
+	          <th style="text-align: left" scope="row">I understand everything but I'm not sure how to write it yet.<span aria-hidden="true"></span></th>
+	          <td><div>23 respondents</div></td>
+	          <td>48 %</td>
+	          <td aria-hidden="true"><div alt="Graph bar" title="Incorrect Answer"></div></td>
+            </tr>
+	        <tr>
+	          <th style="text-align: left" scope="row">I understand some of what I need to do but not everything.</th>
+	          <td><div>12 respondents</div></td>
+	          <td>25 %</td>
+	          <td aria-hidden="true"><div alt="Graph bar" title="Incorrect Answer"></div></td>
+            </tr>
+	        <tr>
+	          <th style="text-align: left" scope="row">I am completely lost or I understand very little.</th>
+	          <td></td>
+	          <td>0 %</td>
+	          <td aria-hidden="true">        
+            </tr>
+          </tbody>
+        </table></th>
+	  </tr>
+	</tbody>
+</table>
+	<br>
+	<p>&nbsp;</p>
+	
+	
+	
+
+</body>
+</html>
