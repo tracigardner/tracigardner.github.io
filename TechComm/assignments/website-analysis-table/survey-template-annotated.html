@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Title Here</title>
+    <title>Annotated Website Survey Memo Template</title>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,6 +27,7 @@
             vertical-align: top;
             border-left: 1px solid #861f41;
             border-bottom: 1px solid #861f41;
+            background-color: #dedede;
 
         }
 
@@ -34,6 +35,15 @@
             vertical-align: top;
             padding-bottom: 24px;
             border-left: 1px solid #861f41;
+        }
+
+        .memo-hdr {
+            font-weight: bold;
+        }
+
+        .example h3 {
+            margin-top: 0;
+            border-top: 1px solid #eeeeee;
         }
 
         .example h4 {
@@ -45,6 +55,14 @@
         .example ul li {
             margin-left: -30px;
             margin-bottom: 6px;
+        }
+
+        .no-margin-top {
+            margin-top:
+        }
+
+        .no-margin-bottom {
+            margin-bottom: 0px;
         }
 
         .sub td {
@@ -85,17 +103,17 @@
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>TITLE HERE</h1>"
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Annotated Website Survey Memo Template</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
     <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
         <table class="example">
-            <caption style="caption-side:bottom">Figure 1. Full Block Letter Format with Explanation of Format Elements</caption>
+            <caption style="caption-side:bottom">Survey of Website Writing Template with Annotations</caption>
             <thead>
                 <tr>
-                    <th style="width: 66%">Letter in Full Block Format</th>
-                    <th>Explanation of Format Elements</th>
+                    <th style="width: 66%">Survey Template with Placeholder Text</th>
+                    <th>Explanation of Template Elements</th>
                 </tr>
             </thead>
             <tbody>
@@ -104,7 +122,8 @@
                         <h2>MEMO</h2>
                     </td>
                     <td>
-                        <h3>Document Title</h3>
+                        <h3 class="no-margin-bottom">Document Title</h3>
+                        <p class="no-margin-top">Include “Memo” or “Memorandum” as the document title.</p>
                     </td>
                 </tr>
 
@@ -114,19 +133,19 @@
         <td style="padding-bottom: 12px;border-bottom: 3px solid #333333;">
             <table class="sub">
                 <tr>
-                    <td style="width: 120px">To:</td>
+                    <td class="memo-hdr" style="width: 120px">To:</td>
                     <td>Traci Gardner</td>
                 </tr>
                 <tr>
-                    <td>From:</td>
+                    <td class="memo-hdr">From:</td>
                     <td>Your Full Name</td>
                 </tr>
                 <tr>
-                    <td>Date:</td>
+                    <td class="memo-hdr">Date:</td>
                     <td>January 21, 2025</td>
                 </tr>
                 <tr>
-                    <td>Subject:</td>
+                    <td class="memo-hdr">Subject:</td>
                     <td>Types of Writing in Electrical Engineering </td>
                 </tr>
             </table>
@@ -141,6 +160,7 @@
             <p style="margin-top: 12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi e vel arcu. Quisque neque diam, consequat vitae enim vel, dignis non erat eu aliquet. Aliquam fringilla nibh risus, eget molestie te vehicula et massa nec bibendum. Donec commodo ut est sed pretium. Etiam non tristique justo.</p>
         </td>
         <td>
+            <h2>Memo Body</h2>
             <h3>Memo Introduction</h3>
         </td>
     </tr>
@@ -150,7 +170,7 @@
             <p>Nullam eleifend lorem enim, in eleifend neque suscipit sed. Maecenas sollicitudin purus id orci posuere, ac tempus leo venenatis. Nulla bibendum odio mi, non luctus ante convallis et. Donec eleifend nisl vel sapien tincidunt ultricies. Vivamus congue nunc rutrum orci malesuada ornare. Aenean venenatis vitae lect turpis.</p>
         </td>
         <td>
-            <h3>placeholder</h3>
+            <h3>Approach Paragraph</h3>
         </td>
     </tr>
     <tr>
@@ -159,7 +179,10 @@
             <p>From my research, I discovered that those who work in my field generally spend their time writing [identify 1], [identify 2], [identify 3], and [identify 4].</p>
         </td>
         <td>
-            <h3>placeholder</h3>
+            <h3>Types of Writing Paragraph</h3>
+            <ul>
+                <li>Advance Organizer</li>
+            </ul>
         </td>
     </tr>
     <tr>
@@ -168,7 +191,7 @@
             <p>Vivamus aliquam eges magna in mattis. Quisque laoreet placerat risus. Cras tempus, orci eu gravida interdum, libero odio vestibulum orci, id tincidunt quam sem a elit. Donec rhoncus urna nec neque interdum laoreet.</p>
         </td>
         <td>
-            <h3>placeholder</h3>
+            <h3>Writing Type Sub-section 1</h3>
         </td>
     </tr>
     <tr>
@@ -177,7 +200,7 @@
             <p>Etiam varius tortor ut vehicula tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tempor tincidunt nunc. Duis nec tellus ac odio viverra tristique eu vel ligula. Duis pretium vehicula accumsan. Suspendisse congue, nisl ac vehicula imperdiet, lacus ante laoreet diam, non semper tellus neque in quam. Sed scelerisque blandit justo eget dictum.</p>
         </td>
         <td>
-            <h3>placeholder</h3>
+            <h3>Writing Type Sub-section 2</h3>
         </td>
     </tr>
     <tr>
@@ -186,7 +209,7 @@
             <p>Morbi convallis efficitur diam, non lobortis leo fringilla vel. Proin molestie pellentesque enim vitae lacinia. In massa purus, ultrices faucibus accumsan nec, commodo sed felis. Maecenas at semper elit, ut porttitor odio. Donec tristique faucibus congue. Suspendisse bibendum augue et sapien fringilla feugiat. Integer faucibus augue non enim ultricies, ut aliquam sapien congue.</p>
         </td>
         <td>
-            <h3>placeholder</h3>
+            <h3>Writing Type Sub-section 3</h3>
         </td>
     </tr>
     <tr>
@@ -195,7 +218,7 @@
             <p>Aliquam ac neque tincidunt, convallis ligula et, pellentesque augue. Cras auctor sapien sem, ac viverra massa iaculis nec. Duis neque odio, luctus quis massa et, laoreet vehicula sem. Morbi eget libero sem. Phasellus auctor, massa ut porttitor dignissim, quam metus auctor enim, ut accumsan nibh justo ut eros. Nulla facilisi. Nulla viverra pharetra neque vel convallis. Phasellus ornare nunc eget magna tempor, sed convallis lorem aliquet. Maecenas mattis orci vulputate lacus tempor, vitae lacinia quam sollicitudin.</p>
         </td>
         <td>
-            <h3>placeholder</h3>
+            <h3>Writing Type Sub-section 4</h3>
         </td>
     </tr>
     <tr>
@@ -205,10 +228,17 @@
             <p>If you have any questions about my research or my conclusions, please write to me at youremail@vt.edu.</p>
         </td>
         <td>
-            <h3>placeholder</h3>
+            <h3>Conclusions Section</h3>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            <p>If you have any questions about my research or my conclusions, please write to me at youremail@vt.edu.</p>
+        </td>
+        <td>
+            <h3>Conclusion Paragraph</h3>
+        </td>
+    </tr>
     </tbody>
     </table>
 
