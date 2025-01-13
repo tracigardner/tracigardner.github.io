@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Professional Bio with AI</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Professional Bio with AI</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+
+        <h2>AI Prompts and Instructions for Your Professional Bio</h2>
+        <h3>General Description of the Process</h3>
+        <p>You&rsquo;ll upload your resume to Copilot and ask it to write your first draft. You&rsquo;ll then revise the draft before sharing it with your group.</p>
+        <p><strong>Be sure to save the responses AI gives you.</strong> It&rsquo;s your guarantee if any issues about how you used the tool come up.</p>
+        <ol class="skipline">
+            <li>
+                <div class="maroonbox" style="width: 300px;float: right;margin-left: 12px;padding: 9px;">
+                    <h4 style="font-weight: bold;color: #861f41;">Why Copilot &amp; your VT Login?</h4>
+                    <p><img src="../../-images/Microsoft_365_Copilot_Icon.svg.png" style="width: 64px;height: 64px;float: right;" alt="">You will upload your resume for this activity. That means you are uploading very personal information&mdash;and that info needs to stay private!</p>
+
+                    <p>Virginia Tech has an agreement with Microsoft that protects your personal information and will NOT save your info in the training database.</p>
+                </div>
+                Save your resume as a PDF so that you can upload it to Copilot.
+            </li>
+            <li>Open the <a href="" target="_blank">Copilot Prompt for Your Bio</a>.</li>
+            <li>Open Copilot in your web browser and log into the tool using your VT.EDU username and password.
+            </li>
+            <li>Copy the prompt from the <a href="" target="_blank">Copilot Prompt PDF</a> and paste it into the question area on Copilot. </li>
+
+            <li>Click the Upload button <i class="fa-solid fa-paperclip"></i> in the Copilot question area, and upload the PDF draft of your resume.</li>
+            <li>Click the Send button <i class="fa-regular fa-paper-plane"></i> in Copilot and wait for the response. Here&rsquo;s an <a href="" target="_blank">example response</a> to a resume from Career Services.</li>
+            <li>Click the Export button <i class="fa-solid fa-download"></i> to save your response as a PDF. Save it in case I ask for it later.</li>
+
+            <li>Go back to the Introduce Yourself (Project Groups Discussion), and follow the rest of the instructions and the advice from Copilot to revise and submit your bio.</li>
+        </ol>
+
+
+
+        <p style="margin-top: 24px;">&nbsp;</p>
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
