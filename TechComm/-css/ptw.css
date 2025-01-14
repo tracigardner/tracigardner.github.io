@@ -437,7 +437,13 @@ dt {
   font-size: 18px;
   font-weight: 600;
 }
-
+.datesTable th,
+.datesTable td {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
+}
 .calendar td {
   background-color: #ffbd94 !important;
   color: #000000 !important;
