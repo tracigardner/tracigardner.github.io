@@ -406,7 +406,6 @@ dt {
   margin: 6px 6px 6px 6px;
   table-layout: fixed;
 }
-
 .alternateTable td,
 .alternateTable th {
   border: 1px solid #ddd;
@@ -423,6 +422,8 @@ dt {
   background-color: #dedede;
   vertical-align: top;
 }
+
+/* Syllabus Table */
 .syllabusTable th {
   background-color: #861f41;
   color: #ffffff;
@@ -432,19 +433,35 @@ dt {
   color: #861f41;
 }
 
+/* Dates Table */
+.datesTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+  table-layout: fixed;
+}
 .datesTable caption {
   color: #e5751f;
   font-size: 18px;
   font-weight: 600;
   border-bottom: 1px solid #861f41;
 }
-.datesTable th,
-.datesTable td {
+.datesTable td,
+.datesTable th {
   padding: 12px;
   text-align: left;
-  background-color: #dedede;
+  border-bottom: 1px solid #861f41;
   vertical-align: top;
 }
+.datesTable tr:nth-child(odd) {
+  background-color: green;
+}
+.datesTable th {
+  background-color: red;
+}
+
+/* other */
+
 .calendar td {
   background-color: #ffbd94 !important;
   color: #000000 !important;
