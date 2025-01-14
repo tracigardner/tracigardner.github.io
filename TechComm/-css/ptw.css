@@ -438,6 +438,7 @@ dt {
   border-collapse: collapse;
   width: 100%;
   margin: 6px 6px 6px 6px;
+  padding: 9px;
   table-layout: fixed;
 }
 .datesTable caption {
@@ -454,10 +455,10 @@ dt {
   vertical-align: top;
 }
 .datesTable tr:nth-child(odd) {
-  background-color: green;
+  background-color: #f2f2f2;
 }
 .datesTable th {
-  background-color: red;
+  background-color: #dedede;
 }
 
 /* other */
