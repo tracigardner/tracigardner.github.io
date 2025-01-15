@@ -461,6 +461,12 @@ dt {
   background-color: #dedede;
 }
 
+/* styles for readings pages */
+.readings h3 {
+  border-bottom: 1px solid #861f41;
+  margin-bottom: 0px;
+}
+
 /* other */
 
 .calendar td {
