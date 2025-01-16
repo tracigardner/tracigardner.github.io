@@ -406,15 +406,16 @@ dt {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  opacity: 1;
+  border-bottom: 1px dotted #d7d2cb; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  background-color: d7d2cb;
+  color: #000000;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
