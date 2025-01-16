@@ -407,20 +407,35 @@ dt {
   position: relative;
   display: inline-block;
   opacity: 1;
-  border-bottom: 1px dotted #d7d2cb; /* If you want dots under the hoverable text */
+  border-bottom: 1px dotted #333333; /* If you want dots under the hoverable text */
+  font-family: "Acherus", sans-serif;
+  font-size: 16px;
 }
 
-/* Tooltip text */
+/* Tooltip text from https://www.w3schools.com/css/css_tooltip.asp */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: d7d2cb;
+  width: 240px;
+  background-color: #d7d2cb;
   color: #000000;
-  text-align: center;
-  padding: 5px 0;
+  text-align: left;
+  padding: 9px;
   border-radius: 6px;
+  font-family: "Acherus", sans-serif;
+  font-size: 16px;
 
-  /* Position the tooltip text - see examples below! */
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #d7d2cb transparent transparent;
+  }
+
+  /* Position the tooltip text */
   position: absolute;
   z-index: 1;
 }
