@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Week 05 Readings</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Week 05 Readings</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+        <div class="readings">
+            <div id="usability">
+                <h3>Usability</h3>
+                <p>The readability of a document is fundamental to its success. These readings address ways to give the reader or viewer a positive user experience. They are important to every project in the course.</p>
+                <ul>
+                    <li><a href="https://boisestate.pressbooks.pub/anintroductiontotechnicalcommunication/chapter/chapter-9-usability-testing-2/" target="_blank">Ch 9: Usability</a> (An Introduction to Technical Communication)</li>
+                    <li><a href="https://www.uxmatters.com/mt/archives/2020/05/how-to-test-the-usability-of-documents.php" target="_blank">How to Test the Usability of Documents</a> (UX Matters)</li>
+                    <li><a href="https://idratherbewriting.com/2011/07/22/a-few-notes-from-usability-testing-video-tutorials-get-watched-text-gets-skipped/" target="_blank">A Few Notes from Usability Testing: Video Tutorials Get Watched, Text Gets Skipped</a> (I&rsquo;d Rather Be Writing)</li>
+                </ul>
+            </div>
+            <div id="cat-name2">
+                <h3>Accessibility</h3>
+                <p>Paying attention to accessibility ensures that everyone can use the documents that you write. The benefit of accessibility is that an accessible document is a well-designed document. Everything you write for this course should be accessible.</p>
+                <ul>
+                    <li><a href="https://developers.google.com/tech-writing/accessibility" target="_blank">Tech Writing for Accessibility</a> (Technical Writing Courses for Engineers, Google Developers)
+                        <ul>
+                            <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/inclusive-design" target="_blank">Design inclusive writing</a></li>
+                            <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text" target="_blank">Write helpful alt text</a></li>
+                            <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/sufficient-contrast" target="_blank">Use sufficient contrast</a></li>
+                            <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/inclusive-language" target="_blank">Choose inclusive language</a></li>
+                            <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/visual-cues" target="_blank">Add accessible visuals to writing</a></li>
+                            <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/editing-accessibility" target="_blank">Edit for accessibility</a></li>
+                            <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/conclusion" target="_blank">Conclusion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://developers.google.com/style/accessibility" target="_blank">Write accessible documentation</a> (Google developer documentation style guide)</li>
+                </ul>
+            </div>
+            <div id="chunking">
+                <h3>Chunking</h3>
+                <p>Breaking your document into small chunks makes it easier for readers. By avoiding overly long paragraphs, you can increase your document&rsquo;s readability.</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/learning/writing-with-impact/managing-paragraph-lengths?u=57888345" target="_blank">Managing paragraph lengths</a> (LinkedIn Learning)</li>
+                    <li><a href="https://www.nngroup.com/articles/chunking/" target="_blank">How Chunking Helps Content Processing</a> (Nielsen Norman Group)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
