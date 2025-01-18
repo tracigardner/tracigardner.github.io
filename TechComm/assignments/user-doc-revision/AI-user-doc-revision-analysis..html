@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Identifying Kinds of Writing with AI</title>
+    <title>AI Revision Analysis of User Documentation</title>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,7 +15,12 @@
     <!-- My Custom CSS -->
     <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <style>
+        h3 {
+            font-weight: 600;
+        }
+    </style>
+
 
     <!-- include scripts -->
     <script>
@@ -49,36 +54,45 @@
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Identifying Kinds of Writing with AI</h1>"
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>AI Revision Analysis of User Documentation</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
-    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+    <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
         <p><em>This is an optional activity.</em></p>
 
         <h2>What You Can Do</h2>
         <p><img src="https://tracigardner.github.io/TechComm/-images/noun-ai-analysis-6718660-861F41.png" alt="Maroon and orange robot looking at a piece of paper" style="width: 170px;height: 236
-        px;float:right;margin: 0px 0px 12px 12px;" />If you&rsquo;re unable to determine the kind of writing you have found for your <a href="https://canvas.vt.edu/courses/205859/assignments/2273825" target="_blank">Survey of Web Writing assignment</a>, use this strategy for help.</p>
+        px;float:right;margin: 0px 0px 12px 12px;" />Use Copilot to analyze the user documentation you&rsquo;ve chosen for your project and ask it to provide some feedback on how to improve documentation. <em style="background-color: #fff8dc;">You&rsquo;re still responsible for evaluating the accuracy of Copilot&rsquo;s advice and deciding how to implement the revision.</em></p>
 
         <h2>Why I Want You to Do It</h2>
-        <p>Generative AI can do lots more than just write your assignment for you (which we all know is a violation of the Honor Code). This activity shows you a way that you can use AI as a helper when you get stuck on an assignment. Even though AI can help, you still need to review what it tells you and confirm what it says.</p>
+        <p>Generative AI can do a lot more than just write your assignment for you (which we all know is a violation of the Honor Code). This activity shows you a way that you can use AI as a helper. If you&rsquo;re not sure where to start your user revision or you just want some help, use this strategy to identify on some aspects of the documentation that need to be revised.</p>
         <details>
             <summary class="btn btn-primary" role="button" style="background-color: #e5e1e6;border: 1px solid #75787b;color: #333333;text-align: center;text-decoration: none;border-radius: 9px;">Show/Hide Relevant Course Objectives</summary>
             <div id="reveal" class="maroonbox" style="margin-left: 36px;margin-right: 36px;background-color: #efefef;">
                 <h2>Relevant Course Objectives</h2>
                 <ul>
-                    <li>Assemble and analyze research from diverse sources appropriate to problem solving (e.g, literature review, evaluation of online resources, interviewing, and site inspection) <strong>[<abbr title="Course Learning Objective">CLO</abbr> 1]</strong></li>
                     <li>Analyze the context; determine appropriate audiences for or users of planned communications; assess needs of global audiences and people with disabilities. <strong>[<abbr title="Course Learning Objective">CLO</abbr> 2]</strong></li>
+                    <li>Practice workplace genres related to specific fields (e.g., proposals, instructions, correspondence, reports, technical specifications and slide decks); illustrate how genre conventions can serve as heuristics and as principles of arrangement <strong>[<abbr title="Course Learning Objective">CLO</abbr> 3]</strong></li>
+                    <li>Design and evaluate strategies for testing the usability and overall effectiveness of documents <strong>[<abbr title="Course Learning Objective">CLO</abbr> 5]</strong></li>
+                    <li>Illustrate the ethical and human implications of research findings and workplace products on diverse audiences <strong>[<abbr title="Course Learning Objective">CLO</abbr> 6]</strong></li>
                 </ul>
             </div>
         </details>
         <h2>Where You Can Find Help</h2>
         <ul class="skipline">
-            <li><a href="https://canvas.vt.edu/courses/205859/pages/resources-for-identifying-types-of-writing" target="_blank">Resources for Identifying Types of Writing</a></li>
+            <li><a href="https://canvas.vt.edu/courses/205859/pages/week-02-readings" target="_blank">Week 02 Readings</a><br>
+                Rhetorical Situation, Correspondence, Organization</li>
+            <li><a href="https://canvas.vt.edu/courses/205859/pages/week-03-readings" target="_blank">Week 03 Readings</a><br>
+                Ethics</li>
+            <li><a href="https://canvas.vt.edu/courses/205859/pages/week-04-readings" target="_blank">Week 04 Readings</a><br>
+                Plain Language, Document Design, Instructions, Intercultural Communication</li>
+            <li><a href="https://canvas.vt.edu/courses/205859/pages/week-05-readings" target="_blank">Week 05 Readings</a><br>
+                Usability, Accessibility, Chunking</li>
         </ul>
         <h2>How You Do It</h2>
         <ol class="skipline">
-            <li>Decide how you want to share your sample document with AI. You have these options:
+            <li>Decide how you want to share your user documentation with AI. You have these options:
                 <ul class="null">
                     <li><strong>Upload</strong>: Upload a PDF of your sample document.</li>
                     <li><strong>Paste</strong>: Copy the sample document and paste it into the prompt.</li>
@@ -88,30 +102,28 @@
             </li>
 
             <li>If you are uploading a PDF, prepare your document. Download it if necessary, and save the sample as a PDF.</li>
-            <li>Open the <a href="https://canvas.vt.edu/courses/205859/files/37070404?wrap=1" target="_blank">Copilot Prompt to Determine Kind of Writing PDF</a>.</li>
-            <li>
+            <li>Open the <a href="" target="_blank">Copilot Prompt to Analyze Your User Documentation</a>
+            <li>Open Copilot in your web browser and log into the tool using your VT.EDU username and password.
                 <div class="maroonbox" style="width: 300px;float: right;margin-left: 12px;margin-bottom: 12px;"><strong style="color: #861F41;padding-right: 6px;">Allowed Use of AI</strong><br />
-                    <p><img src="../../-images/noun-allowed-6163137-861F41.png" style="width:64px;height: 64px;float:right;" alt="">You <strong>can</strong> use Copilot or another Generative AI tool of your choice in this activity to help determine the kind of writing for your <a href="https://canvas.vt.edu/courses/205859/assignments/2273825" target="_blank">Survey of Web Writing assignment</a>. </p>
-                    <p><strong>Be sure to save the responses AI gives you.</strong> You need the information for your Submission Wrapper.</p>
+                    <p><img src="../../-images/noun-allowed-6163137-861F41.png" style="width:64px;height: 64px;float:right;" alt="">You <strong>can</strong> use Copilot or another Generative AI tool of your choice in this activity to help determine areas of the User Documentation to revise. </p>
+                    <p><strong>Be sure to save the responses AI gives you.</strong> You will need them later when you submit your work.</p>
                     <strong style="color: #861F41;padding-right: 6px;">Prohibited Use of AI</strong>
-                    <p><img src="../../-images/noun-prohibited-7099292-E5751F.png" style="width:64px;height: 64px;float:right;" alt="">You <strong>cannot</strong> ask AI to write or revise your drafts or final submissions for you. Doing so directly violates the <a href="https://honorsystem.vt.edu/honor_code_policy_test/policy-and-manual/definitions_of_academic_misconduct.html" target="_blank">Cheating and Plagiarism sections of the Virginia Tech Honor Code</a>.
+                    <p><img src="../../-images/noun-prohibited-7099292-E5751F.png" style="width:64px;height: 64px;float:right;" alt="">You <strong>cannot</strong> ask AI to revise the user documentation for you. Doing so directly violates the <a href="https://honorsystem.vt.edu/honor_code_policy_test/policy-and-manual/definitions_of_academic_misconduct.html" target="_blank">Cheating and Plagiarism sections of the Virginia Tech Honor Code</a>.
                     </p>
-
                 </div>
-                Open Copilot in your web browser and log into the tool using your VT.EDU username and password.
             </li>
-            <li>Copy the prompt you want to use (Upload, Paste, or Link) from the <a href="https://canvas.vt.edu/courses/205859/files/37070404?wrap=1" target="_blank">Copilot Prompt to Determine Kind of Writing PDF</a> and paste it into the question area on Copilot.</li>
-            <li>Fill in the blank in the first sentence of the prompt with the name of your career field (e.g., electrical engineer, software developer, financial analyst).</li>
+            <li>Copy the relevant prompt you want to use (Upload, Paste, or Link) from the <a href="https://canvas.vt.edu/courses/205859/files/37070404?wrap=1" target="_blank">Copilot Prompt to Determine Kind of Writing PDF</a> and paste it into the question area on Copilot.</li>
+
             <li>Add the sample document you want to analyze using one of these options:
                 <ul class="null">
-                    <li><strong>Upload</strong>: Click the Upload button <i class="fa-solid fa-paperclip"></i> in the Copilot question area, and upload the PDF draft of your Survey of Website Writing in Your Field Informal Report.</li>
-                    <li><strong>Paste</strong>: Copy your sample document, and then paste it below the prompt in the Copilot question area.</li>
-                    <li><strong>Link</strong>: Copy the link to your sample document, and then paste it below the prompt in the Copilot question area.</li>
+                    <li><strong>Upload</strong>: Click the Upload button <i class="fa-solid fa-paperclip"></i> in the Copilot question area, and upload the PDF of the user documentation.</li>
+                    <li><strong>Paste</strong>: Copy the user documentation, and then paste it below the prompt in the Copilot question area.</li>
+                    <li><strong>Link</strong>: Copy the link to the user documentation, and then paste it below the prompt in the Copilot question area.</li>
                 </ul>
             </li>
-            <li>Click the Send button <i class="fa-regular fa-paper-plane"></i> in Copilot and wait for the response. Here&rsquo;s an <a href="https://canvas.vt.edu/courses/205859/files/37070405?wrap=1" target="_blank">example response</a> to a <a href="https://www.royalbuildingproducts.com/sites/rbp/files/2019-05/rbp_2019_cdn_alum_tech_specifications.pdf" target="_blank">Aluminum Specifications</a> document.</li>
+            <li>Click the Send button <i class="fa-regular fa-paper-plane"></i> in Copilot and wait for the response. Here&rsquo;s an <a href="" target="_blank">example response</a> to a <a href="" target="_blank">xxx</a> document.</li>
             <li>Click the Export button <i class="fa-solid fa-download"></i> to and save your response as a PDF.</li>
-            <li>Review the AI response to determine if you agree. Use the information to update your <a href="https://canvas.vt.edu/courses/205859/assignments/2273825" target="_blank">Survey of Web Writing assignment</a>.</li>
+            <li>Review the AI response to determine if you agree. Use the information to begin revising the user documentation.</li>
 
             <li>Answer the quiz questions below to let me know if this activity helped you with your assignment. I want to evaluate this use of AI before I use it again in this course or a future one.</li>
 
@@ -122,7 +134,6 @@
         <p>This activity is optional. There is no assessment attached.</p>
 
         <p style="margin-top: 24px;">&nbsp;</p>
-
     </div>
     <div id="bottominfo"></div>
     <script>
