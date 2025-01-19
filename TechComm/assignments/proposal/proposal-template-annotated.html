@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Annotated Proposal Template</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Example Documents Tables */
+        .example {
+            border: 1px solid #861f41;
+            border-collapse: collapse;
+            margin-top: 24px;
+        }
+
+        .example th {
+            vertical-align: top;
+            border-left: 1px solid #861f41;
+            border-bottom: 1px solid #861f41;
+            background-color: #dedede;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        .example td {
+            vertical-align: top;
+            padding-bottom: 24px;
+            border-left: 1px solid #861f41;
+            border-top: 0;
+            border-bottom: 0;
+            padding: 6px;
+        }
+
+        .memo-hdr {
+            font-weight: bold;
+        }
+
+        .example h3 {
+            margin-top: 0;
+        }
+
+        .example h4 {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+
+        .example ul li {
+            margin-bottom: 6px;
+        }
+
+        .explainer h2,
+        .explainer h3,
+        .explainer h4 {
+            margin-bottom: 0px;
+        }
+
+        .explainer p {
+            margin-top: 0px;
+        }
+
+        .sub td {
+            border-left: 0;
+        }
+    </style>
+
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Annotated Proposal Template</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+
+        <p>The template below shows the general layout of your proposal and instructions for writing it. Note these two important details:</p>
+        <ul class="skipline">
+            <li>The layout in the table includes more vertical space between the sections to allow for the full explanation.</li>
+            <!-- CHECK
+            
+            
+            <li>The example does not include footnotes; however, your project should include footnotes for the course readings you use to support your analysis and revision.</li> -->
+            <li>The document is also missing page numbers. Your PDF memo should have page numbers (either at the top of each page or the bottom of each page)/</li>
+        </ul>
+
+        <p><!-- UPDATE LINK -->Check out the <a href="" target="_blank">Proposal Template (Format Only)</a> to see exactly what your memo should look like.</p>
+
+        <table class="example">
+            <caption style="caption-side:bottom">Proposal Template with Annotations</caption>
+            <thead>
+                <tr>
+                    <th style="width: 66%">Proposal Template<br>
+                        <span class="small" style="font-weight: normal;">This column shows the layout of your proposal and includes instructions for writing the content.</span>
+                    </th>
+                    <th>Explanation of Template Elements<br>
+                        <span class="small" style="font-weight: normal;">This column explains the format of the proposal.</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>MEMORANDUM</h2>
+                    </td>
+                    <td class="explainer">
+                        <h2>Document Title</h2>
+                        <ul>
+                            <li>Include &ldquo;Memo&rdquo; or &ldquo;Memorandum&rdquo; as the document title.</li>
+                            <li>Do <strong>not</strong> include any other title.</li>
+                            <li>Do <strong>not</strong> include the assignment name.</li>
+                        </ul>
+                    </td>
+                </tr>
+
+    </div>
+    </div>
+    <tr>
+        <td style="padding-bottom: 12px;">
+            <table class="sub">
+                <tr>
+                    <td class="memo-hdr" style="width: 120px">To:</td>
+                    <td>Traci Gardner</td>
+                </tr>
+                <tr>
+                    <td class="memo-hdr">From:</td>
+                    <td>Your Full Name</td>
+                </tr>
+                <tr>
+                    <td class="memo-hdr">Date:</td>
+                    <td>January 21, 2025</td>
+                </tr>
+                <tr>
+                    <td class="memo-hdr">Subject:</td>
+                    <td>Revision of the 4Help Documentation on &ldquo;Resetting Your Forgotten VT Username (PID) or Guest Password from 4Help Portal&rdquo;</td>
+                </tr>
+            </table>
+        </td>
+        <td class="explainer">
+            <h3>Memo Headers</h3>
+            <ul>
+                <li>Every memo begins with a memo headers: To, From, Date, and Subject.</li>
+                <li>Follow each header with the pertinent information.</li>
+                <li>Align the memo headers align vertically.</li>
+                <li>Use the same size and style for all the Memo Headers.</li>
+                <li>Double space (leave 1 blank line) between headers.</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <p style="margin-top: 12px;">Follow these instructions for the Introduction:</p>
+            <ul class="skipline">
+                <li>Briefly introduce the user documentation you have revised and redesigned: its title, its intended audience, etc.</li>
+                <li>Connect to the original, unrevised version of the user documentation using one of these methods:
+                    <ul class="null">
+                        <li>Link to the original version (the unrevised version) of the user documentation online.</li>
+                        <li>Upload a copy of the original version with your submission, and refer to the attached original in your Introduction.</li>
+                    </ul>
+                </li>
+                <li>End with a purpose statement that indicates
+                    <ul class="null">
+                        <li>your overall evaluation of the original document&rsquo;s usability.</li>
+                        <li>a summary of the changes you have made to the document, which works as an <a href="https://canvas.vt.edu/courses/205859/pages/advance-organizers" target="_blank">Advance Organizer</a>.</li>
+                        <li>what effect you believe these changes have had on its rhetorical success and overall usability.</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+        <td class="explainer">
+            <h3>Memo Body</h3>
+            <ul>
+                <li>Do <strong>not</strong> indent paragraphs</li>
+                <li>Use hierarchical headings, in bold. Your title should be the largest and then work down from there.</li>
+            </ul>
+            <h3>Memo Introduction</h3>
+            <ul>
+                <li>This is the intro paragraph. There is no need to give an introduction a heading, as it&rsquo;s obvious it&rsquo;s the intro.</li>
+                <li>Follow the instructions in the memo to write the intro.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            <h3>Plain Language Revision</h3>
+            <p style="margin-top: 12px;">Follow these instructions for the Plain Language Revision section:</p>
+            <ul>
+                <li>Begin with an evaluation of the original document&rsquo;s usability in terms of its writing style.</li>
+                <li>Discuss the document&rsquo;s language, addressing these questions and connecting to the course readings:
+                    <ul class="null">
+                        <li>Is the language plain, overly formal and jargon-filled, or a mixture of both?</li>
+                        <li>How easy is the original content to understand?</li>
+                        <li>What rules of plain language does the content break?</li>
+                        <li>How does your revision alleviate these problems and improve usability?</li>
+                    </ul>
+                </li>
+                <li>Incorporate examples of original content and your revisions to demonstrate the impact of your work. Explain how your revisions address the original document&rsquo;s shortcomings.</li>
+            </ul>
+        </td>
+        <td class="explainer">
+            <h3>Plain Language Revision Section</h3>
+            <ul>
+                <li>Begin all main sections with a First-level Heading (using the same size and style).</li>
+                <li>Include your section content in a paragraph under the heading.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Redesign</h3>
+            <p style="margin-top: 12px;">Follow these instructions for the Redesign section:</p>
+            <ul>
+                <li>Begin with an evaluation of the original document&rsquo;s usability in terms of design.</li>
+                <li>Discuss the document&rsquo;s original design, addressing these questions and connecting to the course readings:
+                    <ul class="null">
+                        <li>What rules of design does the user documentation break (contrast, repetition, alignment, proximity, white space, typography)?</li>
+                        <li>What changes have you made and how do your changes improve usability?</li>
+                    </ul>
+                </li>
+                <li>Incorporate examples of the original design and your redesign. Explain how your redesign addresses the original document&rsquo;s shortcomings.</li>
+            </ul>
+        </td>
+        <td>
+            <h3 class="explainer">Redesign Section</h3>
+            <ul>
+                <li>Add another main section with a First-level Heading (using the same size and style).</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h3>Ethical, Legal, and Cultural Considerations</h3>
+            <p style="margin-top: 12px;">Follow these instructions for the Ethical, Legal, and Cultural Considerations section:</p>
+            <ul>
+                <li>Begin with an evaluation of the original document&rsquo;s ethical, legal, and cultural considerations.</li>
+                <li>Discuss the document&rsquo;s consideration of these aspects, addressing these questions and connecting to the course readings:
+                    <ul>
+                        <li>What ethical, legal, and cultural considerations does it exclude? </li>
+                        <li>What changes have you made, and how do your changes improve how the document addresses ethical, legal, and cultural considerations?</li>
+                    </ul>
+                </li>
+                <li>Incorporate examples of the original document and your revisions. Explain how your revisions address the original document&rsquo;s shortcomings.</li>
+            </ul>
+        </td>
+        <td class="explainer">
+            <h3>Ethical, Legal, and Cultural Considerations Section</h3>
+            <ul>
+                <li>Add another main section with a First-level Heading (using the same size and style).</li>
+                <li>If desired, add subsections with Second-level Subheadings (using the same size and style for all subheadings) for each of the three considerations (i.e., Ethical Considerations, Legal Considerations, Cultural Considerations).</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Rhetorical Analysis</h3>
+            <p style="margin-top: 12px;">Follow these instructions for the Rhetorical Analysis section:</p>
+            <ul>
+                <li>Begin with an evaluation of the original document&rsquo;s appropriateness for its rhetorical situation.</li>
+                <li>Discuss the document&rsquo;s rhetorical elements, addressing these questions and connecting to the course readings:
+                    <ul>
+                        <li>How does the document adapt the information to its purpose?</li>
+                        <li>What does the document do to adapt the content to its audience(s)? How effectively does it address the audience(s)?</li>
+                        <li>What changes have you made, and how do your changes
+                            increase the document&rsquo;s rhetorical power&mdash;its ability to accomplish its goal and connect with its audience?</li>
+                    </ul>
+                </li>
+                <li>Incorporate examples of the original document and your revisions. Explain how your revisions address the original document&rsquo;s shortcomings.</li>
+            </ul>
+        </td>
+        <td class="explainer">
+            <h3>Rhetorical Analysis Section</h3>
+            <ul>
+                <li>Add another main section with a First-level Heading (using the same size and style).</li>
+                <li>If desired, add subsections with Second-level Subheadings (using the same size and style for all subheadings) for rhetorical elements (i.e., Audience, Purpose).</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h3>Conclusion</h3>
+            <p style="margin-top: 12px;">Follow these instructions for the Conclusion:</p>
+            <ul>
+                <li>Reiterate your evaluation of the original document and how your revisions/redesign have improved it in terms of rhetoric and usability.</li>
+                <li>Answer the following question in this section: <em>What did you learn about usability by completing this project?</em></li>
+                <li>End with your contact information so that the reader can follow up, if they desire. Here&rsquo;s an example:
+                    <p>If you have any questions about my revision of the 4Help Documentation on &ldquo;Resetting Your Forgotten VT Username (PID) or Guest Password from 4Help Portal&rdquo;, please write to me at youremail@vt.edu.</p>
+                </li>
+        </td>
+        <td class="explainer">
+            <h3>Conclusion</h3>
+            <ul>
+                <li>Add another main section with a First-level Heading (using the same size and style).</li>
+                <li>Keep it simple.</li>
+                <li>Do <strong>not</strong> add your name or a signature block.</li>
+            </ul>
+
+        </td>
+    </tr>
+    </tbody>
+    </table>
+
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
