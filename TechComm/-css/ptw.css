@@ -468,6 +468,7 @@ dt {
 .readings {
   column-count: 2;
 }
+
 .readings h3 {
   border-bottom: 1px solid #861f41;
   margin-bottom: 0px;
