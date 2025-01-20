@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Proposal Template (Format Only)</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Example Documents Tables */
+        .example {
+            border: 1px solid #861f41;
+            border-collapse: collapse;
+            margin-top: 24px;
+        }
+
+        .example th {
+            vertical-align: top;
+            border-left: 1px solid #861f41;
+            border-bottom: 1px solid #861f41;
+            background-color: #dedede;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        .example td {
+            vertical-align: top;
+            padding-bottom: 24px;
+            border-left: 1px solid #861f41;
+            border-top: 0;
+            border-bottom: 0;
+            padding: 6px;
+        }
+
+        .memo-hdr {
+            font-weight: bold;
+        }
+
+        .example h3 {
+            margin-top: 0;
+        }
+
+        .example h4 {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+
+        .example ul li {
+            margin-bottom: 6px;
+        }
+
+        .explainer h2,
+        .explainer h3,
+        .explainer h4 {
+            margin-bottom: 0px;
+        }
+
+        .explainer p {
+            margin-top: 0px;
+        }
+
+        .sub td {
+            border-left: 0;
+        }
+    </style>
+
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Proposal Template (Format Only)</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+
+        <p>The template below shows the general layout of your proposal and instructions for writing it. Note these important details:</p>
+        <ul class="skipline">
+            <li>The layout in the table includes more vertical space between the sections to allow for the full explanation.</li>
+
+            <li>The example does not include footnotes; however, your project may include footnotes in the Project Methodology section for key information you will use in your project.</li>
+
+            <li>The document is also missing page numbers. Your PDF memo should have page numbers (either at the top of each page or the bottom of each page)/</li>
+        </ul>
+
+        <p>Check out the <a href="https://canvas.vt.edu/courses/205859/pages/annotated-proposal-template" target="_blank">Annotated Proposal Template</a> for details on the information your proposal should include.</p>
+        <div class="example" style="padding: 36px;border: 1px solid #861f41;background-color: #FFFAFA;">
+            <h2>MEMORANDUM</h2>
+
+            <div class="container-fluid" style="padding: 0;">
+                <div class="row">
+                    <div class="col-sm-2 memo-hdr">To:</div>
+
+                    <div class="col-sm-8">Traci Gardner</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 memo-hdr">From:</div>
+                    <div class="col-sm-8">Your Full Name</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 memo-hdr">Date:</div>
+
+                    <div class="col-sm-8">January 21, 2025</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 memo-hdr">Subject:</div>
+
+                    <div class="col-sm-8">Improving the Usability of the <em>Simple Sabotage Field Manual</em></div>
+                </div>
+            </div>
+
+            <p style="margin-top: 12px;">Morbi e vel arcu. Quisque neque diam, consequat vitae enim vel, dignis non erat eu aliquet. Aliquam fringilla nibh risus, eget molestie te vehicula et massa nec bibendum. Donec commodo ut est sed pretium. Etiam non tristique justo. Aute qui sint sunt ut ad aute sunt sunt officia qui consectetur aliquip: &ldquo;<a href="https://www.gutenberg.org/files/26184/26184-h/26184-h.htm" target="_blank"><em>Simple Sabotage Field Manual</em></a>.&rdquo; </p>
+
+            <p>To explain how we will improve the <em>Simple Sabotage Field Manual</em>, this proposal covers background and rationale for the project, the methodology and resources we&rsquo;ll use, details on the project audience, our group&rsquo;s personnel, and the project timetable.</p>
+
+            <h3>Project Overview and Rationale</h3>
+            <p>Occaecat officia consequat ipsum consequat commodo et. Excepteur magna velit anim anim reprehenderit esse ad sit deserunt tempor aliqua. Enim ut laborum minim laborum aliqua ea.</p>
+
+            <p>Minim ex Lorem exercitation consequat aliquip proident. Cillum duis velit deserunt exercitation labore laboris elit anim. Veniam elit deserunt sit excepteur do. Adipisicing in pariatur mollit qui. Mollit irure et aliquip esse deserunt officia proident dolore occaecat eiusmod aute. Est ad occaecat sint eiusmod.</p>
+
+            <p>Velit proident nisi occaecat duis amet culpa officia do cupidatat non sunt incididunt. Enim nostrud culpa sit id minim laborum culpa. Reprehenderit incididunt ullamco reprehenderit aute occaecat et aliquip do ex do officia cupidatat do anim.</p>
+            <figure>
+                <img src="../../-images/noun-square-997765-861F41.png" alt="Placeholder image showing a current issue on the website">
+                <figcaption>Image of Revised Document, Showing Improved Exercitation Proident Cillum</figcaption>
+            </figure>
+
+            <p>Irure fugiat incididunt commodo minim non et culpa irure ut dolor ex anim ipsum commodo. Incididunt officia sunt sint ad cupidatat minim nisi reprehenderit ad in. Pariatur reprehenderit deserunt sint duis laborum do enim cupidatat ea do incididunt dolore non. Ipsum et proident in exercitation ad veniam proident laborum qui reprehenderit.</p>
+
+            <h3>Project Methodology and Resources</h3>
+            <p>Mollit reprehenderit quis id nulla nisi occaecat deserunt culpa laborum exercitation fugiat duis. Exercitation esse exercitation nulla ea magna. Ipsum ea pariatur magna duis ea consectetur dolore est sunt sint occaecat.</p>
+
+            <h3>Project Audience </h3>
+            <p>Sit sint aliqua do aliqua. Anim ullamco excepteur consectetur laboris veniam do aliqua laboris. Voluptate quis et ullamco consectetur eu est ad incididunt exercitation irure deserunt do eiusmod irure. Ipsum fugiat non elit elit laboris consectetur excepteur eiusmod irure ex eu.</p>
+
+            <h3>Project Personnel</h3>
+            <p>Excepteur excepteur ut Lorem occaecat. Sint consectetur velit ea aliqua. Consequat do ea nulla occaecat laboris consequat ipsum reprehenderit magna et eu consectetur. Sint Lorem ut excepteur Lorem et amet aute aute do veniam excepteur.</p>
+
+            <h3>Project Timetable</h3>
+            <p>Proident aliqua est dolore est officia irure. Proident ipsum velit quis officia quis ut officia commodo. Laboris est consequat eu pariatur. Nostrud cillum ex commodo voluptate deserunt sint aliquip ipsum esse officia ad aliquip. Adipisicing ea dolor amet duis aute officia duis proident non.</p>
+
+
+            <h3>Conclusion</h3>
+            <p>Adipisicing in velit incididunt Lorem consectetur veniam nulla esse aliquip minim ullamco ea. Labore dolor ut aliquip reprehenderit ea eiusmod quis deserunt aliquip. Ipsum Lorem eiusmod et dolore anim magna ipsum et.</p>
+
+            <p>If you have any questions about my revision of the 4Help Documentation on &ldquo;Resetting Your Forgotten VT Username (PID) or Guest Password from 4Help Portal&rdquo;, please write to me at youremail@vt.edu.</p>
+
+        </div>
+        <div id="bottominfo"></div>
+        <script>
+            if (window.location !== window.parent.location) {
+                document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+                // The page is in an iframe
+            } else {
+                // The page is not in an iframe
+                document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+                // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+            }
+        </script>
+</body>
+
+</html>
