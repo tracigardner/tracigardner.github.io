@@ -706,6 +706,16 @@ a.activeMenuItem {
   margin-bottom: 12px;
 }
 
+/* taken from tsc.tracigardner.com */
+
+.attribution-paragraph {
+  padding-top: 0;
+  border-top: 1px solid #861f41;
+  border-bottom: 1px solid #861f41;
+  margin-bottom: 24px;
+  margin-left: -14px;
+}
+
 /*
     copied over code for dropdown lists
     from https://stackoverflow.com/questions/29063244/consistent-styling-for-nested-lists-with-bootstrap
