@@ -15,6 +15,32 @@
     <!-- Newsletter CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <style>
+        .piechart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: conic-gradient(#861f41 0deg, #861f41 266deg,
+                    #2cd5c4 266deg, #2cd5c4 334deg,
+                    #e5751f 334deg, #e5751f 342deg,
+                    #d7d2cb 342deg, #d7d2cb 360deg);
+            position: relative;
+            margin: 0;
+            outline: 1px solid #ccc;
+        }
+
+        .legend span:after {
+            display: inline-block;
+            content: "";
+            width: 0.8em;
+            height: 0.8em;
+            margin-left: 0.4em;
+            height: 0.8em;
+            border-radius: 0.2em;
+            background: currentColor;
+        }
+    </style>
+
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
     <title>Week 3 Newsletter</title>
 </head>
@@ -47,7 +73,16 @@
                 <h3>🚨 Don&rsquo;t Fall Behind: Get Started Now!</h3>
                 <p style="margin-bottom: 60px;">How are you doing on the first Major Project, Survey of Website Writing in Your Field Informal Report? Here&rsquo;s what you said last week:</p>
 
-                <div class="simple-bar-chart" style="margin-bottom: 27px;">
+                <div class="piechart"></div>
+                <p class="legend">74% Not Started<span style="color:#861f41"></span><br>
+                    19% Websites Chosen<span style="color:#2cd5c4"></span><br>
+                    &nbsp;&nbsp;3% Template Form Begun<span style="color:#e5751f"></span><br>
+                    &nbsp;&nbsp;4% Project Submitted<span style="color:#d7d2cb"></span>
+                </p>
+
+
+
+                <div class="simple-bar-chart" style="margin-top: 750px;margin-bottom: 27px;">
 
                     <div class="item" style="--clr: #e5751f; --val: 74">
                         <div class="label">Not Started</div>
