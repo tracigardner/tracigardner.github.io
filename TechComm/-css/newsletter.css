@@ -2,7 +2,8 @@
 /*setting up colors */
 /* all the rest */
 body {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "DejaVu Sans", Verdana, "sans-serif";
 }
 
 .b0ld {
@@ -106,6 +107,31 @@ a:active {
 .btn-home:hover {
   background-color: #e5751f;
   color: #000000;
+}
+
+/* alternate table */
+
+.alternateTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+  table-layout: fixed;
+}
+.alternateTable td,
+.alternateTable th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.alternateTable tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.alternateTable th {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
 }
 
 /* Footer */
@@ -241,7 +267,11 @@ h2 {
   z-index: -1;
   --line-width: 1px;
   --line-spacing: calc(100% / var(--line-count));
-  background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+  background-image: repeating-linear-gradient(
+    to top,
+    transparent 0 calc(var(--line-spacing) - var(--line-width)),
+    var(--line-color) 0 var(--line-spacing)
+  );
   box-shadow: 0 var(--line-width) 0 var(--line-color);
   opacity: var(--line-opacity);
 }
@@ -292,6 +322,14 @@ h2 {
   border-radius: 50%;
   inset: 0;
   background: conic-gradient(var(--c) calc(var(--p) * 1%), rgba(0, 0, 0, 0) 0);
-  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
-  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
-}/*# sourceMappingURL=newsletter.css.map */
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    rgba(0, 0, 0, 0) calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    rgba(0, 0, 0, 0) calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+} /*# sourceMappingURL=newsletter.css.map */
