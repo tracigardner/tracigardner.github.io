@@ -296,6 +296,8 @@ h2 {
 
 .simple-bar-chart > .item > .label {
   inset: 100% 0 auto 0;
+  text-align: left;
+  border-right: 1px solid #e5751f;
 }
 
 .simple-bar-chart > .item > .value {
