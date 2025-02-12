@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://tracigardner.github.io/sidebarTOC/test.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* TOC for Sidebar */
+        .TOCsidebar {
+            width: 250px;
+            background-color: #f8f9fa;
+            border: 1px solid #aaaaaa;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .TOCsidebar h2 {
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+
+        .TOCsidebar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .TOCsidebar li {
+            margin: 5px 0;
+        }
+
+        .TOCsidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .TOCsidebar a:hover {
+            background-color: #861f41;
+            color: #ffffff;
+        }
+
+        .TOCsidebar a.TOCcurrent {
+            background-color: #861f41;
+            color: white;
+        }
+
+        .TOCchapter {
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .TOCchapter span {
+            display: block;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .TOCchapter.TOCopen span {
+            background-color: #ddd;
+        }
+
+        .TOCchapter ul {
+            display: none;
+            padding-left: 15px;
+        }
+
+        .TOCchapter.TOCopen ul {
+            display: block;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="TOCsidebar">
+        <h2>Chapters</h2>
+        <ul>
+            <li class="TOCchapter" data-chapter="foundational">
+                <span>Foundational Concepts</span>
+                <ul>
+                    <li><a href="https://tsc.tracigardner.com/TechandSciComm/foundational-concepts/sample-page/">What Is Technical Communication?</a></li>
+                    <li><a href="https://tsc.tracigardner.com/TechandSciComm/foundational-concepts/the-rhetorical-situation/">The Rhetorical Situation</a></li>
+                    <li><a href="#">Topic 3</a></li>
+                </ul>
+            </li>
+            <li class="TOCchapter" data-chapter="correspondence">
+                <span>Correspondence</span>
+                <ul>
+                    <li><a href="https://tsc.tracigardner.com/TechandSciComm/correspondence/">Correspondence Overview</a></li>
+                    <li><a href="https://tsc.tracigardner.com/TechandSciComm/correspondence/letter-components/">Letter Components</a></li>
+                    <li><a href="https://tsc.tracigardner.com/TechandSciComm/correspondence/memo-components/">Memo Components</a></li>
+                    <li><a href="https://tsc.tracigardner.com/TechandSciComm/correspondence/email-components/">Email Components</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const chapters = document.querySelectorAll(".TOCchapter span");
+
+            // Toggle chapters on click and store in localStorage
+            chapters.forEach((chapterSpan) => {
+                chapterSpan.addEventListener("click", function () {
+                    const parentChapter = this.parentElement;
+                    parentChapter.classList.toggle("TOCopen");
+
+                    // Store state in localStorage
+                    if (parentChapter.classList.contains("TOCopen")) {
+                        localStorage.setItem("openChapter", parentChapter.dataset.chapter);
+                    } else {
+                        localStorage.removeItem("openChapter");
+                    }
+                });
+            });
+
+            // Retrieve open chapter from localStorage
+            const openChapter = localStorage.getItem("openChapter");
+            if (openChapter) {
+                const chapterToOpen = document.querySelector(`.TOCchapter[data-chapter="${openChapter}"]`);
+                if (chapterToOpen) {
+                    chapterToOpen.classList.add("TOCopen");
+                }
+            }
+
+            // Normalize URL function to remove trailing slashes
+            function normalizeURL(url) {
+                return url.replace(/\/$/, ""); // Removes trailing slash
+            }
+
+            // Highlight the current page in the sidebar
+            const links = document.querySelectorAll(".TOCsidebar a");
+            const currentPage = normalizeURL(window.location.href.split("#")[0]); // Strip anchor ID and normalize
+
+            console.log("Current Page:", currentPage); // Debugging URL matching
+
+            links.forEach((link) => {
+                if (normalizeURL(link.href) === currentPage) {
+                    link.classList.add("TOCcurrent");
+                    console.log("Matched link:", link.href); // Debugging matched link
+
+                    // Open the corresponding chapter
+                    const parentChapter = link.closest(".TOCchapter");
+                    if (parentChapter) {
+                        parentChapter.classList.add("TOCopen");
+                        localStorage.setItem("openChapter", parentChapter.dataset.chapter); // Store it
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

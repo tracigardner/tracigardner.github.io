@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://tracigardner.github.io/sidebarTOC/test.css" rel="stylesheet" type="text/css" />
     <style>
         /* TOC for Sidebar */
         .TOCsidebar {
@@ -54,6 +53,17 @@
             margin: 5px 0;
         }
 
+        .TOCchapter span {
+            display: block;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .TOCchapter.TOCopen span {
+            background-color: #ddd;
+        }
+
         .TOCchapter ul {
             display: none;
             padding-left: 15px;
@@ -62,12 +72,15 @@
         .TOCchapter.TOCopen ul {
             display: block;
         }
-    </style>
 
+        play: block;
+        }
+    </style>
     <title>Document</title>
 </head>
 
 <body>
+    <h1>sidebar code</h1>
     <div class="TOCsidebar">
         <h2>Chapters</h2>
         <ul>
@@ -150,27 +163,56 @@
         </ul>
 
     </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const chapters = document.querySelectorAll(".TOCchapter");
+            const chapters = document.querySelectorAll(".TOCchapter span");
 
-            chapters.forEach((chapter) => {
-                chapter.addEventListener("click", function () {
-                    chapter.classList.toggle("TOCopen");
+            // Toggle chapters on click and store in localStorage
+            chapters.forEach((chapterSpan) => {
+                chapterSpan.addEventListener("click", function () {
+                    const parentChapter = this.parentElement;
+                    parentChapter.classList.toggle("TOCopen");
+
+                    // Store state in localStorage
+                    if (parentChapter.classList.contains("TOCopen")) {
+                        localStorage.setItem("openChapter", parentChapter.dataset.chapter);
+                    } else {
+                        localStorage.removeItem("openChapter");
+                    }
                 });
             });
 
-            // Automatically highlight the current page based on the URL
+            // Retrieve open chapter from localStorage
+            const openChapter = localStorage.getItem("openChapter");
+            if (openChapter) {
+                const chapterToOpen = document.querySelector(`.TOCchapter[data-chapter="${openChapter}"]`);
+                if (chapterToOpen) {
+                    chapterToOpen.classList.add("TOCopen");
+                }
+            }
+
+            // Normalize URL function to remove trailing slashes
+            function normalizeURL(url) {
+                return url.replace(/\/$/, ""); // Removes trailing slash
+            }
+
+            // Highlight the current page in the sidebar
             const links = document.querySelectorAll(".TOCsidebar a");
-            let currentPage = window.location.href.split("#")[0]; // Strip anchor id from the URL
-            // drop this old code-- const currentPage = window.location.href; //
+            const currentPage = normalizeURL(window.location.href.split("#")[0]); // Strip anchor ID and normalize
+
+            console.log("Current Page:", currentPage); // Debugging URL matching
 
             links.forEach((link) => {
-                if (link.href === currentPage) {
+                if (normalizeURL(link.href) === currentPage) {
                     link.classList.add("TOCcurrent");
+                    console.log("Matched link:", link.href); // Debugging matched link
+
+                    // Open the corresponding chapter
                     const parentChapter = link.closest(".TOCchapter");
                     if (parentChapter) {
                         parentChapter.classList.add("TOCopen");
+                        localStorage.setItem("openChapter", parentChapter.dataset.chapter); // Store it
                     }
                 }
             });
