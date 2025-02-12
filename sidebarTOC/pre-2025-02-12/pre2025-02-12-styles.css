@@ -1,0 +1,48 @@
+/* TOC for Sidebar */
+.TOCsidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.TOCsidebar h2 {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.TOCsidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.TOCsidebar li {
+  margin: 5px 0;
+}
+.TOCsidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.TOCsidebar a:hover {
+  background-color: #861f41;
+  color: #ffffff;
+}
+.TOCsidebar a.TOCcurrent {
+  background-color: #861f41;
+  color: white;
+}
+.TOCchapter {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.TOCchapter ul {
+  display: none;
+  padding-left: 15px;
+}
+.TOCchapter.TOCopen ul {
+  display: block;
+}
