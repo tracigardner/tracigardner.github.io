@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #f4f4f4;
+            padding: 10px;
+            height: 100vh;
+            overflow-y: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .chapter {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ddd;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .chapter::after {
+            content: '\25B6';
+            /* Right arrow */
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        .chapter.open::after {
+            transform: rotate(90deg);
+        }
+
+        .subpages {
+            list-style: none;
+            padding-left: 20px;
+            margin: 0;
+            display: none;
+        }
+
+        .subpages a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        .subpages a.active {
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="chapter" onclick="toggleChapter(this)">Chapter 1</div>
+        <ul class="subpages">
+            <li><a href="chapter1-topic1.html">Topic 1</a></li>
+            <li><a href="chapter1-topic2.html">Topic 2</a></li>
+            <li><a href="chapter1-topic3.html">Topic 3</a></li>
+        </ul>
+
+        <div class="chapter" onclick="toggleChapter(this)">Chapter 2</div>
+        <ul class="subpages">
+            <li><a href="chapter2-topic1.html">Topic 1</a></li>
+            <li><a href="chapter2-topic2.html">Topic 2</a></li>
+            <li><a href="chapter2-topic3.html">Topic 3</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleChapter(element) {
+            let subpages = element.nextElementSibling;
+            let isOpen = subpages.style.display === 'block';
+            subpages.style.display = isOpen ? 'none' : 'block';
+            element.classList.toggle('open', !isOpen);
+        }
+
+        function highlightCurrentPage() {
+            let links = document.querySelectorAll('.subpages a');
+            let currentPage = window.location.pathname.split('/').pop().split('#')[0];
+            links.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                    let chapter = link.closest('.subpages');
+                    chapter.style.display = 'block'; // Keep open
+                    chapter.previousElementSibling.classList.add('open');
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", highlightCurrentPage);
+    </script>
+</body>
+
+</html>
