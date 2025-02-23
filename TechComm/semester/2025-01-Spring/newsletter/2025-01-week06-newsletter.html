@@ -16,17 +16,87 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
     <style>
+        /*      .piechart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: conic-gradient(#861f41 0deg, #861f41 281deg,
+                    #2cd5c4 281deg, #2cd5c4 324deg,
+                    #e5751f 324deg, #e5751f 360deg);
+            position: relative;
+            margin: 0px 0px 0px 24px;
+            outline: 1px solid #ccc;
+        }
+*/
         .piechart {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            background-image: conic-gradient(#861f41 0deg, #861f41 50deg,
-                    #2cd5c4 50deg, #2cd5c4 169deg,
-                    #e5751f 169deg, #e5751f 324deg,
-                    #d7d2cb 324deg, #d7d2cb 360deg);
+            /* The pie segments:
+           - 0° to 281°: ~78%
+           - 281° to 324°: ~12%
+           - 324° to 360°: ~10%
+      */
+            background-image: conic-gradient(#861f41 0deg,
+                    #861f41 281deg,
+                    #2cd5c4 281deg,
+                    #2cd5c4 324deg,
+                    #e5751f 324deg,
+                    #e5751f 360deg);
             position: relative;
-            margin: 0px 0px 0px 24px;
+            margin: 24px;
             outline: 1px solid #ccc;
+        }
+
+        /* Base styling for our labels */
+        .piechart span {
+            position: absolute;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            /* Center the label at its coordinate */
+            transform: translate(-50%, -50%);
+        }
+
+        /*
+      To position the labels we can calculate a point along the radial bisector
+      of each segment. In this example we assume the center of the pie is at (100px, 100px)
+      and choose a radius (say 70px) for label placement.
+      
+      For a given angle A (measured clockwise from the top), we can use:
+        x = centerX + radius * sin(A)
+        y = centerY - radius * cos(A)
+      
+      Based on the conic gradient, the segments are:
+        Segment 1: 0° to 281°  → midpoint ~140.5°
+        Segment 2: 281° to 324° → midpoint ~302.5°
+        Segment 3: 324° to 360° → midpoint ~342°
+      
+      (Angles are in degrees.)
+    */
+        .label1 {
+            /* For A = 140.5° */
+            left: calc(100px + 70px * sin(140.5deg));
+            /* approximately 145px */
+            top: calc(100px - 70px * cos(140.5deg));
+            /* approximately 154px */
+        }
+
+        .label2 {
+            /* For A = 302.5° */
+            left: calc(100px + 70px * sin(302.5deg));
+            /* approximately 41px */
+            top: calc(100px - 70px * cos(302.5deg));
+            /* approximately 62px */
+        }
+
+        .label3 {
+            /* For A = 342° */
+            left: calc(100px + 70px * sin(342deg));
+            /* approximately 78px */
+            top: calc(100px - 70px * cos(342deg));
+            /* approximately 33px */
         }
 
         .piechart2 {
@@ -202,18 +272,27 @@
             <h3 class="border-top-line">📝 Learning Preferences</h3>
 
             <h2></h2>
-            <p>When figuring out how to do something new, the majority of you rely on:</p>
+            <p>When figuring out how to do something new, most of you rely on written instructions. Figure 2 has the numbers:</p>
+            <div class="piechart" style="margin-left: 63px;">
+                <span class="label1">Written Instructions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>78%</span>
+                <span class="label2">Videos<br>12%</span>
+                <span class="label3">People<br>&nbsp;&nbsp;10%</span>
+            </div>
+            <p style="margin-top: 12px;" class="small">Figure 2. How You Prefer to Learn Something New</p>
+
             <ul>
                 <li><span class="highlight">78%</span> prefer written instructions.</li>
                 <li><span class="highlight">12%</span> turn to videos first.</li>
                 <li><span class="highlight">10%</span> ask a teacher, friend, or family member.</li>
             </ul>
-            <p>This insight helps tailor resources for the class, so expect more structured written guides moving forward.</p>
+            <p>I&rsquo;ll use this information to help tailor resources for the class, so expect more structured written guides moving forward.</p>
 
         </div>
 
         <div class="col-sm-6 border-left-line">
             <h3>Paragraph Length Tips</h3>
+
+            <p>Your feedback tells me that you prefer written instructions to videos, so here are some tips to supplement the &ldquo;Managing Paragraph Lengths&rdquo; video.</p>
 
             <p>Paragraph length plays a key role in making technical writing clear and easy to read. Too long, and your audience may struggle to follow your point. Too short, and your writing can feel disjointed. So how do you find the right balance?</p>
 
@@ -222,9 +301,9 @@
 
             <h4>📏 Aim for Readable Lengths</h4>
             <ul>
-                <li><span class="highlight">3-5 sentences</span> is a good target for most technical writing.</li>
+                <li><span class="highlight">3&ndash;5 sentences</span> is a good target for most technical writing.</li>
                 <li>Longer paragraphs (6+ sentences) should be used only when necessary to explain complex concepts.</li>
-                <li>Shorter paragraphs (1-2 sentences) can be useful for emphasis but should be used sparingly.</li>
+                <li>Shorter paragraphs (1&ndash;2 sentences) can be useful for emphasis but should be used sparingly.</li>
             </ul>
 
             <h4>🖥️ Consider Your Format</h4>
@@ -234,28 +313,8 @@
                 <li>Headings and subheadings to organize content.</li>
                 <li>Whitespace to improve readability.</li>
             </ul>
-
-            <h4>✅ Edit for Clarity</h4>
-            <p>When revising, check your paragraphs for length and readability. Ask yourself:</p>
-            <ul>
-                <li>Does this paragraph cover only one idea?</li>
-                <li>Is the information easy to scan and understand?</li>
-                <li>Would splitting this paragraph improve clarity?</li>
-            </ul>
-
-
-
-
-
-
-
-
-
         </div>
-
-
     </div>
-
 
 
     <div id="row-middle" class="row border-top-line">
