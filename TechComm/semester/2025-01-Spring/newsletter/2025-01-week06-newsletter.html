@@ -71,6 +71,51 @@
             font-size: 24px;
             font-weight: bold;
         }
+
+        /* bar graph code */
+        /* Container for the bar graph */
+        .graph {
+            width: 100%;
+            max-width: 600px;
+            height: 30px;
+            display: flex;
+            border: 1px solid #000;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Common styling for both sections */
+        .graph>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .extremelylikely {
+            width: 27%;
+            background-color: #508890;
+        }
+
+        .verylikely {
+            width: 41%;
+            background-color: #861f41;
+        }
+
+        .somewhatlikely {
+            width: 17%;
+            background-color: #d7d2cb;
+        }
+
+        .slightlylikely {
+            width: 12%;
+            background-color: #e5751f;
+        }
+
+        .notatalllikely {
+            width: 3%;
+            background-color: #ce0058;
+        }
     </style>
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
@@ -99,41 +144,65 @@
     <div id="top-row" class="row border-top-line">
         <div id="top-article" class="col-sm-6">
 
-            <h3>⏳ Submit Before Spring Break</h3>
+            <h3>⏳ Spring Break Milestones</h3>
 
             <p>We&rsquo;re closing in on Spring Break, and with it comes an important milestone: wrapping up your first two Major Projects.</p>
 
             <p>The <span class="highlight">Survey of Website Writing in Your Field Informal Report</span> Checkpoint Deadline has passed, and now the next big deadline is coming up: the <span class="highlight">User Documentation Revision & Reflection Memo</span> is due this Friday, February 28.</p>
 
-            <p>After Spring Break, your focus will shift entirely to group collaboration. Every week, you&rsquo;ll meet with your project team, complete collaborative activities like Try-Its, and work on three Major Projects due in the second half of the semester.</p>
+            <p>After Spring Break, your focus will shift entirely to group collaboration. Every week, you&rsquo;ll meet with your project team, complete collaborative activities (like Try-Its), and work on the three Major Projects due in the second half of the semester.</p>
 
-            <p>That means now is the time to make sure these first two projects are submitted so you can go into the second half of the term without unfinished work hanging over you.</p>
         </div>
 
         <div class="col-sm-6 border-left-line">
 
-            <h3>📩 How Ready is the Class?</h3>
+            <h3>📩 Are You Ready?</h3>
             <p>According to the latest check-in survey, here&rsquo;s how you feel about meeting the March 8 deadline:</p>
+
+            <div class="graph">
+                <div class="extremelylikely">27%</div>
+                <div class="verylikely">41%</div>
+                <div class="somewhatlikely">17%</div>
+                <div class="slightlylikely">12%</div>
+                <div class="notatalllikely">3%</div>
+            </div>
             <ul>
                 <li><span class="highlight">27%</span> say they are &ldquo;Extremely Likely&rdquo; to submit on time.</li>
                 <li><span class="highlight">41%</span> say they are &ldquo;Very Likely.&rdquo;</li>
                 <li><span class="highlight">17%</span> say they are &ldquo;Somewhat Likely.&rdquo;</li>
                 <li><span class="highlight">12%</span> say they are &ldquo;Slightly Likely.&rdquo;</li>
+                <li><span class="highlight">3%</span> say they are &ldquo;Not At All Likely.&rdquo;</li>
             </ul>
 
-            <p>If you&rsquo;re in the &ldquo;Somewhat Likely&rdquo; or &ldquo;Slightly Likely&rdquo; groups, take action now to move those projects forward. The sooner you submit, the sooner you can focus fully on your next set of challenges.</p>
 
-            <p class="encouragement">Don&rsquo;t let unfinished work pile up&mdash;get these projects done now so you can start the second half of the semester strong! 🚀</p>
+
+
+            <p>If you&rsquo;re in the &ldquo;Somewhat Likely,&rdquo; &ldquo;Slightly Likely,&rdquo; or &ldquo;Not At All Likely&rsquo; groups, take action now to move those projects forward. The sooner you submit, the sooner you can focus fully on your next set of challenges.</p>
+
+
         </div>
 
     </div>
+
+
+    <div class="row border-top-line">
+        <div class="col-sm-12">
+            <h3>What&rsquo;s It All Mean? Here&rsquo;s What to Do Now!</h3>
+
+            <p>That means now is the time to make sure these first two projects are submitted so you can go into the second half of the term without unfinished work hanging over you.</p>
+
+            <p class="encouragement">Don&rsquo;t let unfinished work pile up&mdash;get these projects done now so you can start the second half of the semester strong! 🚀</p>
+
+        </div>
+
     </div>
+
 
 
 
     <div class="row border-top-line">
         <div class="col-sm-6">
-            <h2>📊 How’s the Class Doing?</h2>
+            <h3>📊 How’s the Class Doing?</h3>
             <p>We’re six weeks into the semester, and here’s how you reported feeling about your effort in the course:</p>
             <ul>
                 <li><span class="highlight">34%</span> say they’re working "Somewhat Hard" to keep up.</li>
@@ -196,7 +265,7 @@
 
     <div class="row border-top-line">
         <div class="col-sm-12">
-            <h2>📌 Key Takeaways</h2>
+            <h3>📌 Key Takeaways</h3>
             <ul>
                 <li>Many of you are working hard, but time management is key as deadlines approach.</li>
                 <li>Written instructions are the go-to for most of you, so expect more structured guides.</li>
