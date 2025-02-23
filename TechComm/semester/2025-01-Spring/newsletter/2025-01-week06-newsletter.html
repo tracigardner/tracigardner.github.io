@@ -53,12 +53,12 @@
            - 281° to 324°: ~12%
            - 324° to 360°: ~10%
       */
-            background-image: conic-gradient(#861f41 0deg,
-                    #861f41 281deg,
-                    #000000 281deg,
-                    #000000 324deg,
-                    #642667 324deg,
-                    #642667 360deg);
+            background-image: conic-gradient(#e5e1e6 0deg,
+                    #e5e1e6 281deg,
+                    #ffffff 281deg,
+                    #ffffff 324deg,
+                    #2dc5c4 324deg,
+                    #2dc5c4 360deg);
             position: relative;
             margin: 24px;
             outline: 1px solid #ccc;
@@ -67,10 +67,10 @@
         /* Base styling for our labels */
         .piechart span {
             position: absolute;
-            color: #fff;
+            color: #000000;
             font-weight: bold;
             font-size: 14px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
             /* Center the label at its coordinate */
             transform: translate(-50%, -50%);
         }
@@ -264,9 +264,9 @@
             <h3 class="border-top-line">📝 Learning Preferences</h3>
             <p>When figuring out how to do something new, most of you rely on written instructions. Figure 2 has the numbers:</p>
             <div class="piechart" style="margin-left: 63px;">
-                <span class="label1" style="text-shadow: 2px 2px #000000;">Written Instructions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>78%</span>
-                <span class="label2" style="text-shadow: 2px 2px #000000;">Videos<br>12%</span>
-                <span class="label3" style="text-shadow: 2px 2px #000000;">People<br>&nbsp;&nbsp;10%</span>
+                <span class="label1">Written Instructions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>78%</span>
+                <span class="label2">Videos<br>12%</span>
+                <span class="label3">People<br>&nbsp;&nbsp;10%</span>
             </div>
             <p style="margin-top: 12px;" class="small">Figure 2. How You Prefer to Learn Something New</p>
 
