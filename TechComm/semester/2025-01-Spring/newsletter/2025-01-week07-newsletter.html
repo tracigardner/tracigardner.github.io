@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Weekly Preview for Technical Writing Courses">
+    <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+    <meta name="author" content="Traci Gardner">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Newsletter CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <style>
+        #helpbar a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        #footer a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #c64600;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #c64600;
+        }
+
+        .piechart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* The pie segments:
+           - 0° to 281°: ~78%
+           - 281° to 324°: ~12%
+           - 324° to 360°: ~10%
+      */
+            background-image: conic-gradient(#d7d2cb 0deg,
+                    #d7d2cb 281deg,
+                    #ffffff 281deg,
+                    #ffffff 324deg,
+                    #2dc5c4 324deg,
+                    #2dc5c4 360deg);
+            position: relative;
+            margin: 24px;
+            outline: 1px solid #d7d2cb;
+        }
+
+        /* Base styling for our labels */
+        .piechart span {
+            position: absolute;
+            color: #000000;
+            font-weight: bold;
+            font-size: 14px;
+            /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
+            /* Center the label at its coordinate */
+            transform: translate(-50%, -50%);
+        }
+
+        /*
+      To position the labels we can calculate a point along the radial bisector
+      of each segment. In this example we assume the center of the pie is at (100px, 100px)
+      and choose a radius (say 70px) for label placement.
+      
+      For a given angle A (measured clockwise from the top), we can use:
+        x = centerX + radius * sin(A)
+        y = centerY - radius * cos(A)
+      
+      Based on the conic gradient, the segments are:
+        Segment 1: 0° to 281°  → midpoint ~140.5°
+        Segment 2: 281° to 324° → midpoint ~302.5°
+        Segment 3: 324° to 360° → midpoint ~342°
+      
+      (Angles are in degrees.)
+    */
+        .label1 {
+            /* For A = 140.5° */
+            left: calc(100px + 70px * sin(140.5deg));
+            /* approximately 145px */
+            top: calc(100px - 70px * cos(140.5deg));
+            /* approximately 154px */
+        }
+
+        .label2 {
+            /* For A = 302.5° */
+            left: calc(100px + 70px * sin(302.5deg));
+            /* approximately 41px */
+            top: calc(100px - 70px * cos(302.5deg));
+            /* approximately 62px */
+        }
+
+        .label3 {
+            /* For A = 342° */
+            left: calc(100px + 70px * sin(342deg));
+            /* approximately 78px */
+            top: calc(100px - 70px * cos(342deg));
+            /* approximately 33px */
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c64600;
+        }
+
+        .key ul li {
+            margin-bottom: 12px;
+        }
+
+        .alternateTable td {
+            padding: 6px !important;
+        }
+
+        .embiggen-font {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* bar graph code */
+        /* Container for the bar graph */
+        .graph {
+            width: 100%;
+            /* max-width: 600px; */
+            height: 30px;
+            display: flex;
+            border: 1px solid #d7d2cb;
+        }
+
+        /* Common styling for both sections */
+        .graph>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .unequalyes {
+            width: 75%;
+            background-color: #861f41;
+        }
+
+        .unequalno {
+            width: 25%;
+            background-color: #e5e1e6;
+            color: #ffffff !important;
+        }
+
+        .scheduleyes {
+            width: 63%;
+            background-color: #c64600;
+        }
+
+        .scheduleno {
+            width: 37%;
+            background-color: #e5e1e6;
+
+        }
+
+        .conflictyes {
+            width: 43%;
+            background-color: #508590;
+        }
+
+        .conflictno {
+            width: 57%;
+            background-color: #e5e1e6;
+        }
+
+        .qualityyes {
+            width: 40%;
+            background-color: #642667;
+        }
+
+        .qualityno {
+            width: 60%;
+            background-color: #e5e1e6;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <title>Week 7 Newsletter</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid tw-header">
+            <div class="row justify-content-center">
+                <div class="col-md-12 masthead">
+                    <h1 class="text-center">Week 7 Newsletter</h1>
+                </div>
+            </div>
+            <div class="row masthead">
+                <div class="col-sm-6">
+                    <h2 class="text-left highlight" style="font-size: 21px;">Traci&rsquo;s English 3764 Course</h2>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-right highlight" style="font-size: 21px;">March 3, 2025</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="top-row" class="row border-top-line">
+        <div id="top-article" class="col-sm-6">
+
+            <h3>🌴 Spring Break is 6 Days Away&mdash;Are You Ready?</h3>
+            <p>Spring Break is right around the corner, which means two things: 1) It&rsquo;s time to finish your first two Major Projects, and 2) When you return, we&rsquo;ll dive into group projects. Getting your work submitted now will help you start the second half of the semester stress-free.</p>
+
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+
+            <h3>⏳ Two Major Projects Due Before Break</h3>
+            <p>Here&rsquo;s a quick reminder of what&rsquo;s due:</p>
+            <ul>
+                <li><span class="highlight">Survey of Website Writing in Your Field Informal Report:</span> Checkpoint Deadline has passed—if you haven&rsquo;t submitted, take action now.</li>
+                <li><span class="highlight">User Documentation Revision & Reflection Memo:</span> Target Due Date is this Friday, February 28.</li>
+            </ul>
+            <p>The sooner you submit, the sooner you can fully relax during Spring Break. If you&rsquo;re still working on these projects, plan time this week to wrap them up.</p>
+        </div>
+    </div>
+
+    <div class="row border-top-line">
+        <div class="col-sm-12">
+            <h3>🛠️ Staying on Top of Course Announcements</h3>
+            <p>In the recent check-in, I asked how you prefer to get updates about the course. Here&rsquo;s what you said:</p>
+            <ul>
+                <li><span class="highlight">65%</span> read <span class="highlight">Canvas Announcements</span> first.</li>
+                <li><span class="highlight">33%</span> check <span class="highlight">Canvas Inbox messages</span> first.</li>
+                <li><span class="highlight">3%</span> rely on <span class="highlight">Canvas notifications</span>.</li>
+            </ul>
+            <p>Since most of you check Canvas Announcements first, that&rsquo;s where I&rsquo;ll continue posting important updates. If you want to make sure you don&rsquo;t miss anything, double-check your notification settings in Canvas to send announcements to your email or phone.</p>
+        </div>
+    </div>
+
+    <div class="row border-top-line">
+        <div class="col-sm-6">
+            <h3>🤝 Group Projects Start After Break: What Are Your Concerns?</h3>
+            <p>Once we return from break, you&rsquo;ll start working on group projects. Many of you have concerns about collaboration, and here are the biggest ones:</p>
+
+            <div class="graph">
+                <div class="unequalyes" style="color: #ffffff;">75%</div>
+                <div class="unequalno" style="color: #000000 !important;">25%</div>
+            </div>
+            <p><span class="highlight">75%</span> worry about <span class="highlight">unequal contributions</span>.</p>
+
+            <div class="graph">
+                <div class="scheduleyes" style="color: #ffffff;">63%</div>
+                <div class="scheduleno" style="color: #000000 !important;">37%</div>
+            </div>
+            <p><span class="highlight">63%</span> are concerned about <span class="highlight">scheduling group meetings</span>.</p>
+
+            <div class="graph">
+                <div class="conflictyes" style="color: #ffffff;">43%</div>
+                <div class="conflictno" style="color: #000000 !important;">57%</div>
+            </div>
+            <p><span class="highlight">43%</span> anticipate <span class="highlight">conflicts over work styles or communication</span>.</p>
+
+            <div class="graph">
+                <div class="qualityyes" style="color: #ffffff;">40%</div>
+                <div class="qualityno" style="color: #000000 !important;">60%</div>
+            </div>
+            <p><span class="highlight">40%</span> are focused on maintaining <span class="highlight">project quality across different sections</span>.</p>
+
+            </ul>
+            <p>These are valid concerns, but good communication and planning can help. As we start group work, I&rsquo;ll share strategies to keep collaboration smooth and productive.</p>
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+            <h3>📝 How Do You Feel About Writing in Groups?</h3>
+            <p>Here&rsquo;s how the class feels about collaborative writing:</p>
+            <ul>
+                <li><span class="highlight">8%</span> <span class="highlight">love</span> working in groups.</li>
+                <li><span class="highlight">10%</span> <span class="highlight">like</span> it.</li>
+                <li><span class="highlight">40%</span> feel neutral.</li>
+                <li><span class="highlight">28%</span> <span class="highlight">dislike</span> it.</li>
+                <li><span class="highlight">15%</span> <span class="highlight">hate</span> it.</li>
+            </ul>
+            <p>Whether you enjoy group work or not, it&rsquo;s a key part of technical writing. Learning how to collaborate effectively will be a valuable skill in any career.</p>
+
+        </div>
+    </div>
+
+
+    <div class="row border-top-line">
+        <div class="col-sm-12">
+            <h3>📌 Key Takeaways</h3>
+            <ul>
+                <li>Submit your <span class="highlight">two Major Projects</span> before Spring Break to stay on track.</li>
+                <li>Check <span class="highlight">Canvas Announcements</span> for important updates and adjust your notifications if needed.</li>
+                <li>Prepare for <span class="highlight">group projects</span> by thinking about how to communicate and collaborate effectively.</li>
+            </ul>
+
+            <p class="encouragement">Spring Break is almost here! Finish strong so you can enjoy your time off and come back ready for the next phase of the course. 🚀</p>
+
+            <p class="encouragement">Keep up the great work! Stay focused, use the resources available, and don&rsquo;t hesitate to reach out if you need support. 🚀</p>
+
+        </div>
+
+    </div>
+
+
+    <div id=" row-four" class="row border-top-line">
+        <div class="col-sm-12">
+            <h3>❓ Have Questions?</h3>
+            <ul class="skipline">
+                <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/205859/discussion_topics/2046259" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
+                </li>
+                <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-is-the-Inbox/ta-p/55" target="_blank">Canvas Inbox</a>.</li>
+                <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/o3rsG26ZhgPxyCr69" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="helpbar" class="row justify-content-center border-top-line" style="text-align: center;">
+        <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/205859" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
+                    Home</span></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
+                    Docs</span></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
+                    Chat</span></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
+                    Online</span></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
+                    4Help</span></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_205859&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
+                    Traci</span></a></p>
+    </div>
+    <div id="footer" class="row footer-bkgd">
+        <div class="col-sm-12" style="text-align: center;">
+            <p class="footer">© 2025 Traci Gardner. This newsletter is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.</p>
+            <p class="footer-divider-line"></p>
+            <address class="footer" style="text-align: center;">
+                Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
+            </address>
+        </div>
+    </div>
+    <p style="margin-top: 9px;"></p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
