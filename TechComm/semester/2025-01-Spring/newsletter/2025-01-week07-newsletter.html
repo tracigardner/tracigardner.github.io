@@ -44,75 +44,60 @@
             color: #c64600;
         }
 
-        .piechart {
+        .piecontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pie-chart-container {
+            position: relative;
             width: 200px;
             height: 200px;
+            margin: 0 auto;
+            /* Centering the pie chart container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pie-chart {
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
-            /* The pie segments:
-           - 0° to 281°: ~78%
-           - 281° to 324°: ~12%
-           - 324° to 360°: ~10%
-      */
-            background-image: conic-gradient(#d7d2cb 0deg,
-                    #d7d2cb 281deg,
-                    #ffffff 281deg,
-                    #ffffff 324deg,
-                    #2dc5c4 324deg,
-                    #2dc5c4 360deg);
-            position: relative;
-            margin: 24px;
-            outline: 1px solid #d7d2cb;
-        }
-
-        /* Base styling for our labels */
-        .piechart span {
+            background: conic-gradient(#ce0058 0% 8%,
+                    /* pink - Love working in groups - 8% */
+                    #d7d2cb 8% 18%,
+                    /* cadet blue tint - Like it - 10% */
+                    #ed8b00 18% 58%,
+                    /* va sunset - Neutral - 40% */
+                    #508590 58% 86%,
+                    /* light teal - Dislike it - 28% */
+                    #2cd5c4 86% 100%
+                    /* vib turq - Hate it - 15% */
+                );
             position: absolute;
-            color: #000000;
-            font-weight: bold;
-            font-size: 14px;
-            /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
-            /* Center the label at its coordinate */
-            transform: translate(-50%, -50%);
         }
 
-        /*
-      To position the labels we can calculate a point along the radial bisector
-      of each segment. In this example we assume the center of the pie is at (100px, 100px)
-      and choose a radius (say 70px) for label placement.
-      
-      For a given angle A (measured clockwise from the top), we can use:
-        x = centerX + radius * sin(A)
-        y = centerY - radius * cos(A)
-      
-      Based on the conic gradient, the segments are:
-        Segment 1: 0° to 281°  → midpoint ~140.5°
-        Segment 2: 281° to 324° → midpoint ~302.5°
-        Segment 3: 324° to 360° → midpoint ~342°
-      
-      (Angles are in degrees.)
-    */
-        .label1 {
-            /* For A = 140.5° */
-            left: calc(100px + 70px * sin(140.5deg));
-            /* approximately 145px */
-            top: calc(100px - 70px * cos(140.5deg));
-            /* approximately 154px */
+        .legend {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Left aligning the legend */
         }
 
-        .label2 {
-            /* For A = 302.5° */
-            left: calc(100px + 70px * sin(302.5deg));
-            /* approximately 41px */
-            top: calc(100px - 70px * cos(302.5deg));
-            /* approximately 62px */
+        .legend div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
         }
 
-        .label3 {
-            /* For A = 342° */
-            left: calc(100px + 70px * sin(342deg));
-            /* approximately 78px */
-            top: calc(100px - 70px * cos(342deg));
-            /* approximately 33px */
+        .legend span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
         }
 
         .highlight {
@@ -165,22 +150,31 @@
 
         .scheduleyes {
             width: 63%;
-            background-color: #c64600;
+            background-color: #003c71;
         }
 
         .scheduleno {
             width: 37%;
             background-color: #e5e1e6;
+        }
 
+        .balanceyes {
+            width: 63%;
+            background-color: #c64600;
+        }
+
+        .balanceno {
+            width: 37%;
+            background-color: #e5e1e6;
         }
 
         .conflictyes {
-            width: 43%;
+            width: 33%;
             background-color: #508590;
         }
 
         .conflictno {
-            width: 57%;
+            width: 67%;
             background-color: #e5e1e6;
         }
 
@@ -254,7 +248,7 @@
 
     <div class="row border-top-line">
         <div class="col-sm-6">
-            <h3>🤝 Group Projects Start After Break: What Are Your Concerns?</h3>
+            <h3>🤝 Concerns about Group Projects</h3>
             <p>Once we return from break, you&rsquo;ll start working on group projects. Many of you have concerns about collaboration, and here are the biggest ones:</p>
 
             <div class="graph">
@@ -270,18 +264,24 @@
             <p><span class="highlight">63%</span> are concerned about <span class="highlight">scheduling group meetings</span>.</p>
 
             <div class="graph">
-                <div class="conflictyes" style="color: #ffffff;">43%</div>
-                <div class="conflictno" style="color: #000000 !important;">57%</div>
+                <div class="balanceyes" style="color: #ffffff;">43%</div>
+                <div class="balanceno" style="color: #000000 !important;">57%</div>
             </div>
-            <p><span class="highlight">43%</span> anticipate <span class="highlight">conflicts over work styles or communication</span>.</p>
+            <p><span class="highlight">43%</span> worry about <span class="highlight">balancing individual work with group assignments</span>.</p>
 
             <div class="graph">
                 <div class="qualityyes" style="color: #ffffff;">40%</div>
                 <div class="qualityno" style="color: #000000 !important;">60%</div>
             </div>
-            <p><span class="highlight">40%</span> are focused on maintaining <span class="highlight">project quality across different sections</span>.</p>
+            <p><span class="highlight">40%</span> are focused on maintaining <span class="highlight">project quality across different project sections</span>.</p>
 
-            </ul>
+            <div class="graph">
+                <div class="conflictyes" style="color: #ffffff;">33%</div>
+                <div class="conflictno" style="color: #000000 !important;">67%</div>
+            </div>
+            <p><span class="highlight">33%</span> anticipate <span class="highlight">conflicts over work styles or communication</span>.</p>
+
+
             <p>These are valid concerns, but good communication and planning can help. As we start group work, I&rsquo;ll share strategies to keep collaboration smooth and productive.</p>
 
         </div>
@@ -289,13 +289,17 @@
         <div class="col-sm-6 border-left-line">
             <h3>📝 How Do You Feel About Writing in Groups?</h3>
             <p>Here&rsquo;s how the class feels about collaborative writing:</p>
-            <ul>
-                <li><span class="highlight">8%</span> <span class="highlight">love</span> working in groups.</li>
-                <li><span class="highlight">10%</span> <span class="highlight">like</span> it.</li>
-                <li><span class="highlight">40%</span> feel neutral.</li>
-                <li><span class="highlight">28%</span> <span class="highlight">dislike</span> it.</li>
-                <li><span class="highlight">15%</span> <span class="highlight">hate</span> it.</li>
-            </ul>
+            <div class="pie-chart-container">
+                <div class="pie-chart"></div>
+            </div>
+            <div class="legend">
+                <div><span style="background:#ce0058"></span>8% Love working in groups</div>
+                <div><span style="background:#d7d2cb"></span>10% Like it</div>
+                <div><span style="background:#ed8b00"></span>40% Are neutral</div>
+                <div><span style="background:#508590"></span>28% Dislike it</div>
+                <div><span style="background:#2cd5c4"></span>15% Hate it</div>
+            </div>
+
             <p>Whether you enjoy group work or not, it&rsquo;s a key part of technical writing. Learning how to collaborate effectively will be a valuable skill in any career.</p>
 
         </div>
