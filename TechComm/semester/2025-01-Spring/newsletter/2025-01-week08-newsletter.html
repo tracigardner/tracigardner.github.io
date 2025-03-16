@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Weekly Preview for Technical Writing Courses">
+    <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+    <meta name="author" content="Traci Gardner">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Newsletter CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <style>
+        #helpbar a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        #footer a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #c64600;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #c64600;
+        }
+
+        .piecontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .pie-chart-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            /* Centering the pie chart container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pie-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#ce0058 0% 8%,
+                    /* pink - Love working in groups - 8% */
+                    #d7d2cb 8% 18%,
+                    /* cadet blue tint - Like it - 10% */
+                    #ed8b00 18% 58%,
+                    /* va sunset - Neutral - 40% */
+                    #508590 58% 86%,
+                    /* light teal - Dislike it - 28% */
+                    #2cd5c4 86% 100%
+                    /* vib turq - Hate it - 15% */
+                );
+            position: absolute;
+        }
+
+        .legend {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Left aligning the legend */
+        }
+
+        .legend div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .legend span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c64600;
+        }
+
+        .key ul li {
+            margin-bottom: 12px;
+        }
+
+        .alternateTable td {
+            padding: 6px !important;
+        }
+
+        .embiggen-font {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* bar graph code */
+        /* Container for the bar graph */
+        .graph {
+            width: 100%;
+            /* max-width: 600px; */
+            height: 30px;
+            display: flex;
+            border: 1px solid #d7d2cb;
+        }
+
+        /* Common styling for both sections */
+        .graph>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .unequalyes {
+            width: 75%;
+            background-color: #861f41;
+        }
+
+        .unequalno {
+            width: 25%;
+            background-color: #e5e1e6;
+            color: #ffffff !important;
+        }
+
+        .scheduleyes {
+            width: 63%;
+            background-color: #003c71;
+        }
+
+        .scheduleno {
+            width: 37%;
+            background-color: #e5e1e6;
+        }
+
+        .balanceyes {
+            width: 43%;
+            background-color: #c64600;
+        }
+
+        .balanceno {
+            width: 57%;
+            background-color: #e5e1e6;
+        }
+
+        .qualityyes {
+            width: 40%;
+            background-color: #642667;
+        }
+
+        .qualityno {
+            width: 60%;
+            background-color: #e5e1e6;
+        }
+
+        .conflictyes {
+            width: 33%;
+            background-color: #ce0058;
+        }
+
+        .conflictno {
+            width: 67%;
+            background-color: #e5e1e6;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <title>Week 8 Newsletter</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid tw-header">
+            <div class="row justify-content-center">
+                <div class="col-md-12 masthead">
+                    <h1 class="text-center">Week 8 Newsletter</h1>
+                </div>
+            </div>
+            <div class="row masthead">
+                <div class="col-sm-6">
+                    <h2 class="text-left highlight" style="font-size: 21px;">Traci&rsquo;s English 3764 Course</h2>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-right highlight" style="font-size: 21px;">March 17, 2025</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="top-row" class="row border-top-line">
+        <div id="top-article" class="col-sm-6">
+            <h3>📆 Mid-Semester: How&rsquo;s It Going?</h3>
+            <p>We&rsquo;re officially halfway through the semester! Here&rsquo;s how you reported feeling about the course:</p>
+            <ul>
+                <li><span class="highlight">&nbsp;&nbsp;7%</span> are feeling "Great!"</li>
+                <li><span class="highlight">57%</span> said they&rsquo;re feeling "Good."</li>
+                <li><span class="highlight">35%</span> feel "Okay."</li>
+
+                <li><span class="highlight">&nbsp;&nbsp;2%</span> are feeling "Bad."</li>
+            </ul>
+            <p>Overall, most of you are in a good place, but if you&rsquo;re feeling overwhelmed, <span style="background-color: palegoldenrod">don&rsquo;t hesitate to reach out for support&mdash;whether from your group, campus resources, or me</span>.</p>
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+            <h3>📚 Keeping Up With the Work</h3>
+            <p>As we move into the second half of the term, staying on track is key. Here&rsquo;s where the class stands on keeping up with assignments:</p>
+            <ul>
+                <li><span class="highlight">33%</span> are staying on track and rarely need the Grace Period.</li>
+                <li><span class="highlight">57%</span> are a little behind and need to catch up on one or two things.</li>
+                <li><span class="highlight">11%</span> are a week or more behind.</li>
+            </ul>
+            <p>If you need to catch up, now is a great time to set aside a few focused work sessions. Prioritize the most urgent tasks first, and remember that late work is still accepted within the Grace Period!</p>
+
+        </div>
+    </div>
+
+    <div class="row border-top-line">
+        <div class="col-sm-6">
+            <h3>🤝 Group Collaboration: Making Connections</h3>
+            <p>With group projects in full swing, connecting with your team is critical. Here&rsquo;s how many members you were able to connect with this past week:</p>
+            <ul>
+                <li><span class="highlight">30%</span> connected with everyone in their group.</li>
+                <li><span class="highlight">17%</span> connected with all but one group member.</li>
+                <li><span class="highlight">20%</span> connected with most members.</li>
+                <li><span class="highlight">15%</span> connected with only one or two members.</li>
+                <li><span class="highlight">17%</span> haven&rsquo;t connected with anyone yet.</li>
+            </ul>
+            <p>If you haven&rsquo;t been able to connect with your group yet, now&rsquo;s the time to check in! Send a message in Canvas, set up a quick meeting, or touch base in your group&rsquo;s discussion space. Consistent communication will make your projects much easier.</p>
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+
+            <p>PLACEHOLDER</p>
+
+        </div>
+    </div>
+
+
+    <div class="row border-top-line">
+        <div class="col-sm-6">
+            <h3>📌 Key Takeaways</h3>
+            <ul>
+                <li>We&rsquo;re at the <strong>halfway point!</strong> Take stock of where you are and set goals for the rest of the semester.</li>
+                <li>If you&rsquo;re <strong>falling behind</strong>, set aside time to catch up&mdash;small, steady progress makes a big difference.</li>
+                <li><strong>Connect with your group.</strong> Even a quick check-in can keep things running smoothly.</li>
+            </ul>
+
+            <p class="encouragement">Keep up the great work! You&rsquo;ve made it this far&mdash;let&rsquo;s finish the semester strong. 🚀</p>
+
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+            <h3>❓ Have Questions?</h3>
+            <ul class="skipline">
+                <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/205859/discussion_topics/2046259" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
+                </li>
+                <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-is-the-Inbox/ta-p/55" target="_blank">Canvas Inbox</a>.</li>
+                <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/o3rsG26ZhgPxyCr69" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="helpbar" class="row justify-content-center border-top-line" style="text-align: center;">
+        <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/205859" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
+                    Home</span></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
+                    Docs</span></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
+                    Chat</span></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
+                    Online</span></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
+                    4Help</span></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_205859&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
+                    Traci</span></a></p>
+    </div>
+    <div id="footer" class="row footer-bkgd">
+        <div class="col-sm-12" style="text-align: center;">
+            <p class="footer">© 2025 Traci Gardner. This newsletter is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.</p>
+            <p class="footer-divider-line"></p>
+            <address class="footer" style="text-align: center;">
+                Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
+            </address>
+        </div>
+    </div>
+    <p style="margin-top: 9px;"></p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
