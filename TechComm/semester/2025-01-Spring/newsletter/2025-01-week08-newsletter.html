@@ -55,24 +55,17 @@
             margin-bottom: 12px;
         }
 
-        .ncontainer {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
         .chart-container {
             display: flex;
             justify-content: space-around;
             align-items: flex-end;
-            height: 250px;
+            height: 150px;
+            /* Adjusted height */
             padding: 20px;
             border-bottom: 2px solid #333;
             position: relative;
+            margin-bottom: 40px;
+            /* Extra space for labels */
         }
 
         .bar-wrapper {
@@ -80,6 +73,8 @@
             flex-direction: column;
             align-items: center;
             position: relative;
+            margin-bottom: 10px;
+            /* Ensure proper spacing for labels */
         }
 
         .bar {
@@ -94,39 +89,39 @@
         }
 
         .bar-label {
-            margin-top: 5px;
+            margin-top: 10px;
             font-size: 14px;
-            max-width: 80px;
+            max-width: 100px;
             text-align: center;
         }
 
-        /* Set the height relative to the 250px container */
+        /* Adjusted heights */
         .bar-30 {
-            height: 75px;
+            height: 90px;
             background-color: #861f41;
         }
 
         .bar-17 {
-            height: 42px;
+            height: 51px;
             background-color: #e5751f;
         }
 
         .bar-20 {
-            height: 50px;
+            height: 60px;
             background-color: #508590;
         }
 
         .bar-15 {
-            height: 38px;
+            height: 45px;
             background-color: #ce0058;
         }
 
         .bar-17-alt {
-            height: 42px;
+            height: 51px;
             background-color: #75787b;
         }
 
-        /* Grid lines for better readability */
+        /* Grid lines for better readability (only up to 50%) */
         .grid-lines {
             position: absolute;
             width: 100%;
@@ -147,42 +142,22 @@
         }
 
         .line-10 {
-            top: 90%;
-        }
-
-        .line-20 {
             top: 80%;
         }
 
-        .line-30 {
-            top: 70%;
-        }
-
-        .line-40 {
+        .line-20 {
             top: 60%;
         }
 
-        .line-50 {
-            top: 50%;
-        }
-
-        .line-60 {
+        .line-30 {
             top: 40%;
         }
 
-        .line-70 {
-            top: 30%;
-        }
-
-        .line-80 {
+        .line-40 {
             top: 20%;
         }
 
-        .line-90 {
-            top: 10%;
-        }
-
-        .line-100 {
+        .line-50 {
             top: 0%;
             font-weight: bold;
         }
@@ -253,7 +228,8 @@
 
     <div class="row border-top-line">
         <div class="col-sm-6">
-            <h3>🤝 Group Connections</h3>
+
+            <h3>🤝 Group Collaboration: Making Connections</h3>
             <p>With group projects in full swing, connecting with your team is critical. Here&rsquo;s how many members you were able to connect with this past week:</p>
 
             <div class="chart-container" role="img" aria-labelledby="chart-title">
@@ -264,11 +240,6 @@
                     <div class="grid-line line-30">30%</div>
                     <div class="grid-line line-40">40%</div>
                     <div class="grid-line line-50">50%</div>
-                    <div class="grid-line line-60">60%</div>
-                    <div class="grid-line line-70">70%</div>
-                    <div class="grid-line line-80">80%</div>
-                    <div class="grid-line line-90">90%</div>
-                    <div class="grid-line line-100">100%</div>
                 </div>
 
                 <div class="bar-wrapper">
@@ -327,8 +298,8 @@
             </table>
 
             <p>If you haven&rsquo;t been able to connect with your group yet, now&rsquo;s the time to check in! Send a message in Canvas, set up a quick meeting, or touch base in your group&rsquo;s discussion space. Consistent communication will make your projects much easier.</p>
-
         </div>
+
 
         <div class="col-sm-6 border-left-line">
             <h3>🚨 Navigating Group Conflicts</h3>
