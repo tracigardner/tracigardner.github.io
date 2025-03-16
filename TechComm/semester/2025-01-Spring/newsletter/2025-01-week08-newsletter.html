@@ -64,17 +64,13 @@
             padding: 20px;
             border-bottom: 2px solid #333;
             position: relative;
-            margin-bottom: 40px;
-            /* Extra space for labels */
         }
 
-        .bar-wrapper {
+        .bars-wrapper {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            margin-bottom: 10px;
-            /* Ensure proper spacing for labels */
+            justify-content: space-around;
+            align-items: flex-end;
+            width: 100%;
         }
 
         .bar {
@@ -86,13 +82,6 @@
             border-radius: 5px 5px 0 0;
             transition: height 0.5s ease-in-out;
             position: relative;
-        }
-
-        .bar-label {
-            margin-top: 10px;
-            font-size: 14px;
-            max-width: 100px;
-            text-align: center;
         }
 
         /* Adjusted heights */
@@ -160,6 +149,20 @@
         .line-50 {
             top: 0%;
             font-weight: bold;
+        }
+
+        /* Labels BELOW chart */
+        .labels-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            /* Space between chart and labels */
+        }
+
+        .bar-label {
+            font-size: 14px;
+            max-width: 100px;
+            text-align: center;
         }
 
         /* Hide the table visually but keep it readable for screen readers */
@@ -231,7 +234,6 @@
 
             <h3>🤝 Group Collaboration: Making Connections</h3>
             <p>With group projects in full swing, connecting with your team is critical. Here&rsquo;s how many members you were able to connect with this past week:</p>
-
             <div class="chart-container" role="img" aria-labelledby="chart-title">
                 <span id="chart-title" class="sr-only">Group Collaboration Data - Number of Members Connected</span>
                 <div class="grid-lines">
@@ -242,26 +244,22 @@
                     <div class="grid-line line-50">50%</div>
                 </div>
 
-                <div class="bar-wrapper">
+                <div class="bars-wrapper">
                     <div class="bar bar-30" role="img" aria-label="30% connected with everyone">30%</div>
-                    <div class="bar-label">Connected with everyone</div>
-                </div>
-                <div class="bar-wrapper">
                     <div class="bar bar-17" role="img" aria-label="17% connected with all but one">17%</div>
-                    <div class="bar-label">Connected with all but one</div>
-                </div>
-                <div class="bar-wrapper">
                     <div class="bar bar-20" role="img" aria-label="20% connected with most members">20%</div>
-                    <div class="bar-label">Connected with most members</div>
-                </div>
-                <div class="bar-wrapper">
                     <div class="bar bar-15" role="img" aria-label="15% connected with one or two">15%</div>
-                    <div class="bar-label">Connected with one or two</div>
-                </div>
-                <div class="bar-wrapper">
                     <div class="bar bar-17-alt" role="img" aria-label="17% did not connect with anyone">17%</div>
-                    <div class="bar-label">Did not connect with anyone</div>
                 </div>
+            </div>
+
+            <!-- Labels BELOW the chart -->
+            <div class="labels-container">
+                <div class="bar-label">Connected with everyone</div>
+                <div class="bar-label">Connected with all but one</div>
+                <div class="bar-label">Connected with most members</div>
+                <div class="bar-label">Connected with one or two</div>
+                <div class="bar-label">Did not connect with anyone</div>
             </div>
 
             <!-- Hidden data table for screen readers -->
