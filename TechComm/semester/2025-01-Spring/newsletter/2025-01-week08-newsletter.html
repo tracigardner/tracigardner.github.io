@@ -55,58 +55,148 @@
             margin-bottom: 12px;
         }
 
-        .barcontainer {
+        .ncontainer {
             max-width: 800px;
             margin: 0 auto;
             background: #ffffff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        .chart {
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 250px;
+            padding: 20px;
+            border-bottom: 2px solid #333;
+            position: relative;
+        }
+
+        .bar-wrapper {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-top: 20px;
+            align-items: center;
+            position: relative;
         }
 
         .bar {
-            display: flex;
-            align-items: center;
+            width: 50px;
             color: white;
-            padding: 8px;
-            border-radius: 5px;
-            transition: width 0.5s ease-in-out;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            border-radius: 5px 5px 0 0;
+            transition: height 0.5s ease-in-out;
+            position: relative;
         }
 
-        .bar span {
-            padding-left: 10px;
+        .bar-label {
+            margin-top: 5px;
+            font-size: 14px;
+            max-width: 80px;
+            text-align: center;
         }
 
+        /* Set the height relative to the 250px container */
         .bar-30 {
-            width: 30%;
+            height: 75px;
             background-color: #861f41;
         }
 
         .bar-17 {
-            width: 17%;
+            height: 42px;
             background-color: #e5751f;
         }
 
         .bar-20 {
-            width: 20%;
+            height: 50px;
             background-color: #508590;
         }
 
         .bar-15 {
-            width: 15%;
+            height: 38px;
             background-color: #ce0058;
         }
 
         .bar-17-alt {
-            width: 17%;
+            height: 42px;
             background-color: #75787b;
+        }
+
+        /* Grid lines for better readability */
+        .grid-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .grid-line {
+            position: absolute;
+            width: 100%;
+            border-top: 1px dashed #ccc;
+            text-align: right;
+            font-size: 12px;
+            color: #777;
+            padding-right: 5px;
+        }
+
+        .line-10 {
+            top: 90%;
+        }
+
+        .line-20 {
+            top: 80%;
+        }
+
+        .line-30 {
+            top: 70%;
+        }
+
+        .line-40 {
+            top: 60%;
+        }
+
+        .line-50 {
+            top: 50%;
+        }
+
+        .line-60 {
+            top: 40%;
+        }
+
+        .line-70 {
+            top: 30%;
+        }
+
+        .line-80 {
+            top: 20%;
+        }
+
+        .line-90 {
+            top: 10%;
+        }
+
+        .line-100 {
+            top: 0%;
+            font-weight: bold;
+        }
+
+        /* Hide the table visually but keep it readable for screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
         }
     </style>
 
@@ -166,15 +256,75 @@
             <h3>🤝 Group Connections</h3>
             <p>With group projects in full swing, connecting with your team is critical. Here&rsquo;s how many members you were able to connect with this past week:</p>
 
-            <div class="barcontainer">
-                <div class="chart">
-                    <div class="bar bar-30">30% <span>Connected with everyone</span></div>
-                    <div class="bar bar-17">17% <span>Connected with all but one</span></div>
-                    <div class="bar bar-20">20% <span>Connected with most members</span></div>
-                    <div class="bar bar-15">15% <span>Connected with one or two</span></div>
-                    <div class="bar bar-17-alt">17% <span>Did not connect with anyone</span></div>
+            <div class="chart-container" role="img" aria-labelledby="chart-title">
+                <span id="chart-title" class="sr-only">Group Collaboration Data - Number of Members Connected</span>
+                <div class="grid-lines">
+                    <div class="grid-line line-10">10%</div>
+                    <div class="grid-line line-20">20%</div>
+                    <div class="grid-line line-30">30%</div>
+                    <div class="grid-line line-40">40%</div>
+                    <div class="grid-line line-50">50%</div>
+                    <div class="grid-line line-60">60%</div>
+                    <div class="grid-line line-70">70%</div>
+                    <div class="grid-line line-80">80%</div>
+                    <div class="grid-line line-90">90%</div>
+                    <div class="grid-line line-100">100%</div>
+                </div>
+
+                <div class="bar-wrapper">
+                    <div class="bar bar-30" role="img" aria-label="30% connected with everyone">30%</div>
+                    <div class="bar-label">Connected with everyone</div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar bar-17" role="img" aria-label="17% connected with all but one">17%</div>
+                    <div class="bar-label">Connected with all but one</div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar bar-20" role="img" aria-label="20% connected with most members">20%</div>
+                    <div class="bar-label">Connected with most members</div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar bar-15" role="img" aria-label="15% connected with one or two">15%</div>
+                    <div class="bar-label">Connected with one or two</div>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="bar bar-17-alt" role="img" aria-label="17% did not connect with anyone">17%</div>
+                    <div class="bar-label">Did not connect with anyone</div>
                 </div>
             </div>
+
+            <!-- Hidden data table for screen readers -->
+            <table class="sr-only">
+                <caption>Group Collaboration Data</caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Connected with everyone</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>Connected with all but one</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <td>Connected with most members</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Connected with one or two</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>Did not connect with anyone</td>
+                        <td>17%</td>
+                    </tr>
+                </tbody>
+            </table>
 
             <p>If you haven&rsquo;t been able to connect with your group yet, now&rsquo;s the time to check in! Send a message in Canvas, set up a quick meeting, or touch base in your group&rsquo;s discussion space. Consistent communication will make your projects much easier.</p>
 
