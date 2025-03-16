@@ -176,6 +176,34 @@
             clip: rect(0, 0, 0, 0);
             border: 0;
         }
+
+        .custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .custom-list li {
+            display: flex;
+            align-items: flex-start;
+            /* Align items to the top */
+            margin-bottom: 12px;
+        }
+
+        .bullet {
+            font-size: 1.2em;
+            margin-right: 8px;
+            align-self: flex-start;
+            /* Ensure the bullet aligns to the top */
+        }
+
+        .text {
+            display: block;
+            /* Ensures the entire text block behaves as one unit */
+            line-height: 1.5;
+            /* Improves readability */
+            flex: 1;
+            /* Allows the text to take up remaining space in the flex container */
+        }
     </style>
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
@@ -206,25 +234,42 @@
             <h3>📆 Mid-Semester Check-In</h3>
             <p>We&rsquo;re officially halfway through the semester! Here&rsquo;s how you reported feeling about the course:</p>
             <ul>
-                <li><span class="highlight">&nbsp;&nbsp;7%</span> are feeling "Great!"</li>
-                <li><span class="highlight">57%</span> said they&rsquo;re feeling "Good."</li>
-                <li><span class="highlight">35%</span> feel "Okay."</li>
-
-                <li><span class="highlight">&nbsp;&nbsp;2%</span> are feeling "Bad."</li>
+                <li><span class="highlight">&nbsp;&nbsp;7%</span> are feeling &ldquo;Great!&rdquo;</li>
+                <li><span class="highlight">57%</span> said they&rsquo;re feeling &ldquo;Good.&rdquo;</li>
+                <li><span class="highlight">35%</span> feel &ldquo;Okay.&rdquo;</li>
+                <li><span class="highlight">&nbsp;&nbsp;2%</span> are feeling &ldquo;Bad.&rdquo;</li>
             </ul>
-            <p>Overall, most of you are in a good place, but if you&rsquo;re feeling overwhelmed, <span style="background-color: palegoldenrod">don&rsquo;t hesitate to reach out for support&mdash;whether from your group, campus resources, or me</span>.</p>
+            <p>Overall, most of you are in a good place, but if you&rsquo;re feeling overwhelmed, here are a few suggestions:</p>
+
+            <ul class="skipline">
+                <li><span class="highlight">Prioritize & Plan:</span> Break tasks into smaller steps and set mini-deadlines. </li>
+                <li><span class="highlight">Reach Out for Support:</span> Connect with your project group. A quick question or discussion can provide clarity and ease stress.</li>
+                <li><span class="highlight">Take Breaks & Recharge:</span> Working non-stop can make stress worse. Step away from the screen, go for a walk, or practice deep breathing&mdash;short breaks boost productivity!</li>
+            </ul>
+
+            </p>
 
         </div>
 
         <div class="col-sm-6 border-left-line">
             <h3>📚 Keeping Up</h3>
-            <p>As we move into the second half of the term, staying on track is key. Here&rsquo;s where the class stands on keeping up with assignments:</p>
+            <p>As we move into the second half of the term, staying on track is key. Here&rsquo;s how the class is keeping up:</p>
             <ul>
                 <li><span class="highlight">33%</span> are staying on track and rarely need the Grace Period.</li>
                 <li><span class="highlight">57%</span> are a little behind and need to catch up on one or two things.</li>
                 <li><span class="highlight">11%</span> are a week or more behind.</li>
             </ul>
-            <p>If you need to catch up, now is a great time to set aside a few focused work sessions. Prioritize the most urgent tasks first, and remember that late work is still accepted within the Grace Period!</p>
+            <p>If you need to catch up, don&rsquo;t panic! Use these strategies to get back on track:</p>
+
+            <ul class="custom-list">
+                <li><span class="bullet">📅</span> <span class="text"><span class="highlight">Make a Catch-Up Plan:</span> List everything you need to complete, sort the list by most to least urgent, and set deadlines for each task.</span></li>
+                <li><span class="bullet">⏲️</span> <span class="text"><span class="highlight">Use Timed Study Sessions:</span> Try the Pomodoro Technique—work for 25 minutes, then take a 5-minute break.</span></li>
+
+                <li><span class="bullet">🏆</span> <span class="text"><span class="highlight">Reward Yourself for Progress:</span> Set small rewards after completing tasks to stay motivated.</span></li>
+
+                <li><span class="bullet">🎧</span> <span class="text"><span class="highlight">Try Focus Music or White Noise:</span> Listening to instrumental music can help you concentrate better.</span></li>
+
+            </ul>
 
         </div>
     </div>
