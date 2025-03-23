@@ -55,157 +55,6 @@
             margin-bottom: 12px;
         }
 
-        .chart-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-end;
-            height: 150px;
-            /* Adjusted height */
-            border-bottom: 2px solid #333;
-            position: relative;
-        }
-
-        .bars-wrapper {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-end;
-            width: 100%;
-        }
-
-        .bar {
-            width: 50px;
-            color: white;
-            font-size: 15pt;
-            font-weight: bold;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            border-radius: 5px 5px 0 0;
-            transition: height 0.5s ease-in-out;
-            position: relative;
-        }
-
-        /* Adjusted heights */
-        .bar-30 {
-            height: 90px;
-            background-color: #861f41;
-        }
-
-        .bar-17 {
-            height: 51px;
-            background-color: #e5751f;
-        }
-
-        .bar-20 {
-            height: 60px;
-            background-color: #508590;
-        }
-
-        .bar-15 {
-            height: 45px;
-            background-color: #ce0058;
-        }
-
-        .bar-17-alt {
-            height: 51px;
-            background-color: #75787b;
-        }
-
-        /* Grid lines for better readability (only up to 50%) */
-        .grid-lines {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            pointer-events: none;
-        }
-
-        .grid-line {
-            position: absolute;
-            width: 100%;
-            border-top: 1px dashed #ccc;
-            text-align: right;
-            font-size: 12px;
-            color: #777;
-            padding-right: 5px;
-        }
-
-        .line-10 {
-            top: 80%;
-        }
-
-        .line-20 {
-            top: 60%;
-        }
-
-        .line-30 {
-            top: 40%;
-        }
-
-        .line-40 {
-            top: 20%;
-        }
-
-        .line-50 {
-            top: 0%;
-            font-weight: bold;
-        }
-
-        /* Labels BELOW chart */
-        .labels-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 15px;
-            /* Space between chart and labels */
-        }
-
-        .bar-label {
-            font-size: 14px;
-            max-width: 100px;
-            text-align: center;
-        }
-
-        /* Hide the table visually but keep it readable for screen readers */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
-        }
-
-        .custom-list {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .custom-list li {
-            display: flex;
-            align-items: flex-start;
-            /* Align items to the top */
-            margin-bottom: 12px;
-        }
-
-        .bullet {
-            font-size: 1.2em;
-            margin-right: 8px;
-            align-self: flex-start;
-            /* Ensure the bullet aligns to the top */
-        }
-
-        .text {
-            display: block;
-            /* Ensures the entire text block behaves as one unit */
-            line-height: 1.5;
-            /* Improves readability */
-            flex: 1;
-            /* Allows the text to take up remaining space in the flex container */
-        }
-
         .prop-sect li {
             margin-bottom: 12px;
         }
@@ -213,6 +62,28 @@
         .section-title {
             font-weight: bold;
             color: #861f41;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 0.1em 0.3em;
+            font-family: monospace;
+            font-size: 0.95em;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin: 1em 0;
+            padding-left: 1em;
+            color: #555;
+            font-style: italic;
+        }
+
+        .example {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3a7ca5;
+            padding: 0.75em;
+            margin: 1em 0;
         }
     </style>
 
@@ -240,8 +111,88 @@
     </header>
 
     <div id="top-row" class="row border-top-line">
+        <div class="col-sm-6">
+            <h3>Advice for Strong Proposals</h3>
 
-        <div id="top-article" class="col-sm-12 border-left-line">
+            <p>What separates a decent proposal from a strong, persuasive one? Below are five practical strategies to help your team write with clarity, credibility, and confidence.</p>
+
+            <h4>1. Be Clear About the Problem You&rsquo;re Solving</h4>
+            <p>Readers need to understand why your project matters. What challenge or opportunity are you responding to? Avoid vague claims. Instead, ground your rationale in the scenario, user needs, or relevant research.</p>
+
+            <blockquote>&ldquo;We chose this topic because it impacts both productivity and safety for on-campus workers.&rdquo;</blockquote>
+
+            <h4>2. Break Down Your Methods Thoughtfully</h4>
+            <p>Your methods section should show you have a plan&mdash;but it doesn&rsquo;t need to include every detail. Focus on the major steps, the tools or platforms you&rsquo;ll use, and why those choices make sense for your audience and goals.</p>
+
+            <ul>
+                <li>What types of research or analysis will you do?</li>
+                <li>How will you collect or organize information?</li>
+                <li>What formats or technologies will you use?</li>
+            </ul>
+
+            <h4>3. Write for a Reader Who Has Questions</h4>
+            <p>Imagine a busy reader skimming your proposal: what would they need to know to say "yes" to your idea? Use headings, bullets, and concise language to guide their reading. Don&rsquo;t make them search for your main points.</p>
+
+            <h4>4. Show Your Team Is Organized</h4>
+            <p>Use the <strong>Personnel</strong> and <strong>Timetable</strong> sections to demonstrate that your team is ready to follow through. Be honest and realistic about what each person will do and when tasks will happen. It builds trust.</p>
+
+            <blockquote>&ldquo;Alex will lead the usability testing phase during Weeks 4&ndash;5, while Priya will handle design mockups in Weeks 2&ndash;3.&rdquo;</blockquote>
+
+            <h4>5. Don&rsquo;t Skip the Small Stuff</h4>
+            <p>Strong proposals get the details right. Use correct names in the memo headers. Double-check your links. Write a meaningful subject line. Proofread. These small signals tell your reader that your team cares about quality.</p>
+
+            <p><strong class="highlight">Final Tip:</strong> A good proposal doesn&rsquo;t just explain your project&mdash;it convinces your reader that it&rsquo;s worth doing and that your team is capable of doing it well.</p>
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+            <h3>Add Better Hyperlinks</h3>
+
+            <p>When you refer to a webpage or resource in your writing, linking directly to it is more than just convenient—it&rsquo;s a professional, reader-friendly move that shows you&rsquo;ve done your homework. But how you link also matters.</p>
+
+            <h4>Why Direct Links Matter</h4>
+            <ul>
+                <li>They make it easy for your reader to follow up or verify information.</li>
+                <li>They build credibility by showing exactly where your sources come from.</li>
+                <li>They reduce confusion—especially in digital formats where readers expect to click and explore.</li>
+            </ul>
+
+            <h4>Best Practices for Writing Accessible, Clear Links</h4>
+            <p>Avoid vague phrases like <strong>"click here"</strong> or just pasting in long URLs. Instead, write links that are:</p>
+            <ul>
+                <li><strong>Descriptive</strong>: Tell the reader what they&rsquo;ll find if they click.</li>
+                <li><strong>Contextual</strong>: Fit the link naturally into your sentence.</li>
+                <li><strong>Accessible</strong>: Useful for people using screen readers or keyboard navigation.</li>
+            </ul>
+
+            <h4>✅ Good vs. Not-So-Good Examples</h4>
+
+            <div class="example">
+                <strong>❌ Avoid:</strong><br>
+                <code>Click <a href="https://canvas.vt.edu/courses/205859/pages/strong-subject-lines">here</a> to see the assignment page.</code><br><br>
+                <strong>Why it’s a problem:</strong> The phrase "Click here" doesn&rsquo;t tell the reader what the link is for. It also assumes they&rsquo;re using a mouse or trackpad.
+            </div>
+
+            <div class="example">
+                <strong>✅ Better:</strong><br>
+                <code>See the <a href="https://canvas.vt.edu/courses/205859/pages/strong-subject-lines" target="_blank">Strong Subject Lines guide on Canvas</a> for examples and tips.</code><br><br>
+                <strong>Why it works:</strong> The link clearly describes what the page is about and fits smoothly into the sentence.
+            </div>
+
+            <h4>💡 Bonus Tip: Link Titles or Headings</h4>
+            <p>Whenever possible, use the actual title of the page you&rsquo;re linking to. That helps readers recognize the content and confirms they&rsquo;re in the right place when they click.</p>
+
+            <blockquote>&ldquo;Refer to the <a href="https://canvas.vt.edu/courses/205859/pages/progress-reports-gantt-charts" target="_blank">Progress Reports: Gantt Charts</a> page for visual planning strategies.&rdquo;</blockquote>
+
+            <p>When your links are thoughtful, readable, and accessible, they support your credibility—and they help your audience stay focused on your message.</p>
+
+        </div>
+
+    </div>
+
+
+    <div id="mid-row" class="row border-top-line">
+        <div id="top-article" class="col-sm-12">
             <h3>💼 Required Sections for Your Proposal</h3>
 
             <p>Each section of your proposal has a job to do&mdash;together, they show your readers what you're planning, why it matters, and how you&rsquo;ll get it done. </p>
