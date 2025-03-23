@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Weekly Preview for Technical Writing Courses">
+    <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+    <meta name="author" content="Traci Gardner">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Newsletter CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <style>
+        #helpbar a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        #footer a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #c64600;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #c64600;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c64600;
+        }
+
+        .key ul li {
+            margin-bottom: 12px;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 150px;
+            /* Adjusted height */
+            border-bottom: 2px solid #333;
+            position: relative;
+        }
+
+        .bars-wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            width: 100%;
+        }
+
+        .bar {
+            width: 50px;
+            color: white;
+            font-size: 15pt;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            border-radius: 5px 5px 0 0;
+            transition: height 0.5s ease-in-out;
+            position: relative;
+        }
+
+        /* Adjusted heights */
+        .bar-30 {
+            height: 90px;
+            background-color: #861f41;
+        }
+
+        .bar-17 {
+            height: 51px;
+            background-color: #e5751f;
+        }
+
+        .bar-20 {
+            height: 60px;
+            background-color: #508590;
+        }
+
+        .bar-15 {
+            height: 45px;
+            background-color: #ce0058;
+        }
+
+        .bar-17-alt {
+            height: 51px;
+            background-color: #75787b;
+        }
+
+        /* Grid lines for better readability (only up to 50%) */
+        .grid-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .grid-line {
+            position: absolute;
+            width: 100%;
+            border-top: 1px dashed #ccc;
+            text-align: right;
+            font-size: 12px;
+            color: #777;
+            padding-right: 5px;
+        }
+
+        .line-10 {
+            top: 80%;
+        }
+
+        .line-20 {
+            top: 60%;
+        }
+
+        .line-30 {
+            top: 40%;
+        }
+
+        .line-40 {
+            top: 20%;
+        }
+
+        .line-50 {
+            top: 0%;
+            font-weight: bold;
+        }
+
+        /* Labels BELOW chart */
+        .labels-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            /* Space between chart and labels */
+        }
+
+        .bar-label {
+            font-size: 14px;
+            max-width: 100px;
+            text-align: center;
+        }
+
+        /* Hide the table visually but keep it readable for screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .custom-list li {
+            display: flex;
+            align-items: flex-start;
+            /* Align items to the top */
+            margin-bottom: 12px;
+        }
+
+        .bullet {
+            font-size: 1.2em;
+            margin-right: 8px;
+            align-self: flex-start;
+            /* Ensure the bullet aligns to the top */
+        }
+
+        .text {
+            display: block;
+            /* Ensures the entire text block behaves as one unit */
+            line-height: 1.5;
+            /* Improves readability */
+            flex: 1;
+            /* Allows the text to take up remaining space in the flex container */
+        }
+
+        .prop-sect li {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #861f41;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <title>Week 9 Newsletter</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid tw-header">
+            <div class="row justify-content-center">
+                <div class="col-md-12 masthead">
+                    <h1 class="text-center">Week 9 Newsletter</h1>
+                </div>
+            </div>
+            <div class="row masthead">
+                <div class="col-sm-6">
+                    <h2 class="text-left highlight" style="font-size: 21px;">Traci&rsquo;s English 3764 Course</h2>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-right highlight" style="font-size: 21px;">March 24, 2025</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="top-row" class="row border-top-line">
+        <div id="top-article" class="col-sm-12">
+            <h3>💼 Required Sections for Your Proposal</h3>
+
+            <p>Each section of your proposal has a job to do&mdash;together, they show your readers what you're planning, why it matters, and how you&rsquo;ll get it done. </p>
+
+            <p>Use this guide as you work through each part of the document with your group. For examples and explanations, check out the <a href="https://canvas.vt.edu/courses/205859/assignments/2273850" target="_blank">Proposal Assignment</a> and the <a href="https://canvas.vt.edu/courses/205859/pages/annotated-proposal-template" target="_blank">Annotated Proposal Template</a>.</p>
+
+            <table class="alternateTable">
+                <caption>Table 1. Required Sections of Your Proposal</caption>
+                <thead>
+                    <tr>
+                        <th style="width: 33%;">Section</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-clipboard-list"></i> Memo Headers</span><br></td>
+                        <td>Start with the basics. Use standard memo format with To, From, Date, and Subject fields. Be sure you use the correct name for the To and From, and include a <a href="https://canvas.vt.edu/courses/205859/pages/strong-subject-lines" target="_blank">Strong Subject Line</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-elevator"></i> Introduction</span></td>
+                        <td>This is your elevator pitch. Introduce the project you&rsquo;re proposing, name your topic, and briefly state your goal. Think of it as the &ldquo;why you&rsquo;re writing&rdquo; part.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-lightbulb-on"></i> Overview &amp; Rationale</span></td>
+                        <td>Explain what your project will cover and why it matters. What problem are you addressing or what opportunity are you exploring? You&rsquo;re making the case that your project matters&mdash;back it up with reasoning and maybe a little context.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-screwdriver-wrench"></i> Methods and Resources</span></td>
+                        <td>Here&rsquo;s the how. Describe what you&rsquo;ll do to complete the project and what tools or sources you&rsquo;ll use. Be specific enough to sound prepared, but don&rsquo;t overdo it.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-book-open-reader"></i> Project Audience</span></td>
+                        <td>Tell us who your Recommendation Report is for and how you&rsquo;re keeping their needs in mind. Focus on the person who can decide to implement the recommendations you suggest.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-people-group"></i> Personnel</span></td>
+                        <td>Who&rsquo;s doing what? What are their qualifications? Outline each team member&rsquo;s roles and responsibilities.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-chart-gantt"></i> Timetable</span></td>
+                        <td>Break it down week by week or by project phases. Show you&rsquo;ve thought through how and when everything will get done. Present the details with a <a title="Progress Reports: Gantt Charts" href="https://canvas.vt.edu/courses/205859/pages/progress-reports-gantt-charts" target="_blank">Gantt Chart</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="section-title"><i class="fa-solid fa-2x fa-check-circle"></i> Conclusion</span></td>
+                        <td>Wrap it up by summarizing your proposal and emphasizing the value of your project. Keep it confident and forward-looking. Remember to include contact information so the reader can follow-up.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="row border-top-line">
+            <div class="col-sm-6">
+
+                <h3>🤝 Group Proposals: Getting Clearer</h3>
+                <p>Many of you are getting a strong handle on what to do for your part of the recommendation report:</p>
+                <ul>
+                    <li><strong>54%</strong> Understand the task but still figuring out how to write it</li>
+                    <li><strong>21%</strong> Confident and even thinking ahead about presentation</li>
+                    <li><strong>23%</strong> Some clarity, but still unsure about parts</li>
+                    <li><strong>&nbsp;&nbsp;3%</strong> Feeling lost (don&rsquo;t stay there&mdash;reach out!)</li>
+                </ul>
+                <p>If you&rsquo;re still unsure, check in with your team, revisit the proposal resources, or ask questions in class or on Canvas.</p>
+            </div>
+
+
+            <div class="col-sm-6 border-left-line">
+                <h3>☁️ Mood Check: A Bit Cloudy</h3>
+                <p>This week&rsquo;s mood was a mixed forecast&mdash;but leaning toward overcast skies:</p>
+                <ul>
+                    <li><span class="emoji">☀️</span> Sunshine: <strong>28%</strong></li>
+                    <li><span class="emoji">☁️</span> Cloudy: <strong>36%</strong></li>
+                    <li><span class="emoji">🌧️</span> Rainy: <strong>23%</strong></li>
+                    <li><span class="emoji">⛈️</span> Thundery: <strong>13%</strong></li>
+                    <li><span class="emoji">🌈</span> Rainbow: <strong>0%</strong></li>
+                </ul>
+                <p>If you&rsquo;re feeling stuck in the drizzle, you&rsquo;re not alone&mdash;and there&rsquo;s still time to regroup. More on that below!</p>
+
+            </div>
+        </div>
+
+
+        <div class="row border-top-line">
+            <div class="col-sm-6">
+                <h3>📌 Key Takeaways</h3>
+                <ul>
+                    <li>⛅ Most students are feeling a little cloudy&mdash;stay connected and ask for help if you&rsquo;re stuck.</li>
+                    <li>📋 Only one-third of the class is avoiding the &ldquo;5 mistakes&rdquo;well&mdash;check in with your habits and course pacing.</li>
+                    <li>🧠 Most of you understand your group project role&mdash;now focus on turning ideas into strong, clear writing.</li>
+                    <li>🔄 Build in time for revision&mdash;it&rsquo;s key to earning a Complete and making your writing stronger.</li>
+                </ul>
+
+
+
+            </div>
+
+            <div class="col-sm-6 border-left-line">
+                <h3>❓ Have Questions?</h3>
+                <ul class="skipline">
+                    <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/205859/discussion_topics/2046259" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
+                    </li>
+                    <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-is-the-Inbox/ta-p/55" target="_blank">Canvas Inbox</a>.</li>
+                    <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/o3rsG26ZhgPxyCr69" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="helpbar" class="row justify-content-center border-top-line" style="text-align: center;">
+            <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/205859" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
+                        Home</span></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
+                        Docs</span></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
+                        Chat</span></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
+                        Online</span></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
+                        4Help</span></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_205859&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
+                        Traci</span></a></p>
+        </div>
+        <div id="footer" class="row footer-bkgd">
+            <div class="col-sm-12" style="text-align: center;">
+                <p class="footer">© 2025 Traci Gardner. This newsletter is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.</p>
+                <p class="footer-divider-line"></p>
+                <address class="footer" style="text-align: center;">
+                    Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
+                </address>
+            </div>
+        </div>
+        <p style="margin-top: 9px;"></p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
