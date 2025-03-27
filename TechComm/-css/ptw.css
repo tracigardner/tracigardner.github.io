@@ -351,6 +351,9 @@ dt {
   font-size: 42px;
   font-weight: bold;
 }
+h1 {
+  color: #861f41;
+}
 h2 {
   color: #e87722;
   font-size: 21px;
