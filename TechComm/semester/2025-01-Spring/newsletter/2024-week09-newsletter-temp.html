@@ -2,68 +2,186 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<title>Writing Insights Newsletter Week 8</title>
+	<meta charset="UTF-8">
+	<title>Week 9 Newsletter</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<style>
 		body {
 			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-			margin: 2rem auto;
+			margin: 1em auto;
 			max-width: 700px;
 			color: #333;
 			line-height: 1.6;
 		}
 
 		h1,
-		h2 {
-			color: #2c3e50;
+		h2,
+		h3 {
+			color: #005f73;
 		}
 
 		h1 {
-			border-bottom: 3px solid #ddd;
-			padding-bottom: 0.5rem;
+			border-bottom: 3px solid #94d2bd;
+			padding-bottom: 0.3em;
 		}
 
-		.highlight {
-			background-color: #f0f8ff;
-			padding: 0.75rem;
-			border-left: 5px solid #007acc;
-			margin: 1rem 0;
+		article {
+			background-color: #f7f9fa;
+			padding: 1em;
+			border-left: 5px solid #3d5a80;
+			margin: 1.5em 0;
 		}
 
 		ul {
-			padding-left: 1.25rem;
+			padding-left: 1.5em;
 		}
 
 		.emoji {
-			font-size: 1.2rem;
+			font-size: 1.2em;
 		}
 
-		a {
-			color: #007acc;
-			text-decoration: none;
+		.highlight {
+			background-color: #e0fbfc;
+			padding: 0.5em;
+			border-left: 4px solid #3d5a80;
+			margin: 1em 0;
 		}
 
-		a:hover {
-			text-decoration: underline;
+		canvas {
+			display: block;
+			margin: 1em auto;
+			max-width: 100%;
 		}
 	</style>
 </head>
 
 <body>
-	<h1>📬 Writing Insights Newsletter&mdash;Week 8</h1>
+
+	<h1>🗞️ Week 9 Writing Insights</h1>
 
 
+	<article>
+		<h2>🤝 Group Work Challenges</h2>
+		<p>Your responses highlight the ongoing difficulties of coordinating group work in an asynchronous course. Here&rsquo;s what stood out:</p>
+		<ul>
+			<li>Difficulty aligning schedules for meetings and collaboration</li>
+			<li>Uneven participation, with some members missing deadlines or not contributing</li>
+			<li>Frustration with having to wait on others to complete shared tasks</li>
+			<li>Requests for alternatives to group work when teams are non-functional</li>
+		</ul>
+
+		<div class="highlight">
+			<strong>How I&rsquo;m Responding:</strong>
+			<ul>
+				<li>📩 Reaching out to teams that reported issues to offer support and mediation</li>
+				<li>🧭 Offering guidance for setting team expectations and managing work distribution</li>
+				<li>🔄 Making space for individual options when group dynamics aren&rsquo;t working</li>
+			</ul>
+		</div>
+	</article>
+
+	<article>
+		<h2>📝 Assignment Complexity</h2>
+		<p>Many of you shared concerns about how assignments are presented. The main takeaway: instructions feel harder to navigate than they should be.</p>
+		<ul>
+			<li>Task descriptions feel overly long or complicated</li>
+			<li>Hyperlinks and rubrics feel scattered or overwhelming</li>
+			<li>You&rsquo;d prefer clearer, more concise explanations of what each assignment requires</li>
+		</ul>
+
+		<div class="highlight">
+			<strong>How I&rsquo;m Responding:</strong>
+			<ul>
+				<li>👓 Auditing upcoming assignments for clarity and conciseness</li>
+				<li>🧾 Reducing hyperlink clutter and isolating the essentials</li>
+				<li>✅ Updating instructions to focus more directly on task completion requirements</li>
+			</ul>
+		</div>
+	</article>
 
 
-	<h2></h2>
-
-
-	<h2>✅ Looking Ahead</h2>
+	<h2>📬 Looking Ahead</h2>
 	<ul>
-		<li>🔍 Finalize your group&rsquo;s proposal draft&mdash;clarity and alignment are key!</li>
-		<li>🗓️ Keep pace with weekly deliverables&mdash;avoid bottlenecks before Spring gets too hectic</li>
-		<li>💬 Watch for peer feedback prompts coming soon</li>
+		<li>🧾 You can always ask for a progress update on your major project completions.</li>
+		<li>⏳ If you &rsquo;re behind, don&rsquo;t panic. Focus on the next step forward&mdash;and communicate.</li>
+		<li>🙋 If your team isn&rsquo;t working well, I&rsquo;m here to brainstorm solutions with you.</li>
 	</ul>
+
+	<p>You&rsquo;re doing thoughtful, complex work in a course that asks a lot&mdash;especially in a fully online format. Keep going, and let me know how I can continue supporting your learning.</p>
+
+	<article>
+		<h2>📌 Key Takeaways</h2>
+		<ul>
+			<li>Most students found the proposal design review activity at least somewhat useful, with one-third rating it as &ldquo;very useful.&rdquo; </li>
+			<li>Over half of the class feels the workload is manageable, but a substantial portion is starting to feel pressure.</li>
+			<li>Nearly half of you are experiencing some imbalance in school-life-work responsibilities&mdash;a normal but important signal at this stage.</li>
+			<li>Over half of you say you &rsquo;re doing &ldquo;okay&rdquo; personally, with a third feeling &ldquo;good&rdquo; or better. I&rsquo;m here to support anyone sliding toward burnout.</li>
+			<li>Group work continues to be a pain point, especially in asynchronous settings. Clearer expectations and flexible solutions are on the way.</li>
+			<li>Several of you expressed that assignment instructions feel overly complex. I&rsquo;m actively simplifying and streamlining where possible.</li>
+		</ul>
+		<p>Thanks again for your honest feedback&mdash;it helps me shape the course around what&rsquo;s working and what needs more attention.</p>
+	</article>
+
+	<script>
+		new Chart(document.getElementById('proposalChart'), {
+			type: 'pie',
+			data: {
+				labels: ['Somewhat useful', 'Very useful', 'Slightly useful', 'Not at all useful', 'Extremely useful'],
+				datasets: [{
+					data: [43, 33, 17, 4, 2],
+					backgroundColor: ['#861f41', '#2cd5c4', '#e5751f', '#508590', '#ce0058']
+				}]
+			}
+		});
+
+		new Chart(document.getElementById('workloadChart'), {
+			type: 'bar',
+			data: {
+				labels: ['Easy to manage', 'Difficult to manage', 'Very easy', 'Very difficult'],
+				datasets: [{
+					label: 'Workload Responses',
+					data: [52, 39, 4, 4],
+					backgroundColor: '#e5751f'
+				}]
+			},
+			options: { indexAxis: 'y' }
+		});
+
+		new Chart(document.getElementById('balanceChart'), {
+			type: 'doughnut',
+			data: {
+				labels: ['Slightly unbalanced', 'Well-balanced', 'Very unbalanced', 'Very well-balanced'],
+				datasets: [{
+					data: [48, 22, 22, 9, 0],
+					backgroundColor: ['#861f41', '#ce0058', '#e5751f', '#508590']
+				}]
+			}
+		});
+
+		new Chart(document.getElementById('wellbeingChart'), {
+			type: 'bar',
+			data: {
+				labels: ['Okay 😕', 'Good 😊', 'Great 😁', 'Terrible 😞', 'Prefer not to say 🤐'],
+				datasets: [{
+					label: 'Wellbeing',
+					data: [57, 28, 9, 4, 2],
+					backgroundColor: '#861f41'
+				}]
+			},
+			options: {
+				scales: {
+					y: {
+						max: 50,
+						beginAtZero: true,
+						title: {
+							display: true,
+							text: 'Percentage (%)'
+						}
+					}
+				}
+			}
+		});
+	</script>
 
 </body>
 

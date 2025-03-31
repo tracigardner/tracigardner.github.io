@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Weekly Preview for Technical Writing Courses">
+    <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+    <meta name="author" content="Traci Gardner">
+    <!-- js for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Newsletter CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <style>
+        #helpbar a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        #footer a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #c64600;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #c64600;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c64600;
+        }
+
+        .key ul li {
+            margin-bottom: 12px;
+        }
+
+        .prop-sect li {
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #861f41;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 0.1em 0.3em;
+            font-family: monospace;
+            font-size: 1em;
+            color: #000000;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin: 1em 0;
+            padding-left: 1em;
+            color: #555;
+            font-style: italic;
+        }
+
+        .example {
+            background-color: #f9f9f9;
+            border-left: 4px solid #861f41;
+            padding: 0.75em;
+            margin: 1em 0;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <title>Week 10 Newsletter</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid tw-header">
+            <div class="row justify-content-center">
+                <div class="col-md-12 masthead">
+                    <h1 class="text-center">Week 10 Newsletter</h1>
+                </div>
+            </div>
+            <div class="row masthead">
+                <div class="col-sm-6">
+                    <h2 class="text-left highlight" style="font-size: 21px;">Traci&rsquo;s English 3764 Course</h2>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-right highlight" style="font-size: 21px;">March 31, 2025</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="top-row" class="row border-top-line">
+        <div id="attractions-content" class="col-sm-6">
+            <h3>🗓️ Coming Later This Week</h3>
+            <p>Watch for these Announcements for more help with your research and other work:</p>
+            <ul class="skipline">
+                <li>What to Do When Your Group Isn&rsquo;t Communicating</li>
+                <li>Secondary Research That Stands Out</li>
+                <li>Juggling School, Life, &amp; Work</li>
+                <li>Quick Ways to Reset and Relieve Stress</li>
+            </ul>
+        </div>
+        <div id="workload" class="col-sm-6 border-left-line">
+            <h3>⚒️ Managing the Workload</h3>
+            <p>A majority of you are managing well, but a solid third are starting to feel the pressure. </p>
+
+            <canvas id="workloadChart"></canvas>
+            <details>
+                <summary>Long Description of the Chart</summary>
+                <ul>
+                    <li>4% Very easy to manage</li>
+                    <li>52% Easy to manage</li>
+                    <li>39% Difficult to manage</li>
+                    <li>4% Very difficult to manage</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+
+
+    <div id="row-two" class="row border-top-line">
+        <div class="col-sm-12">
+
+            <h3>⚖️ School-Life-Work Balance?</h3>
+        </div>
+    </div>
+    <div id="row-two-articles" class="row">
+        <div class="col-sm-6">
+            <p>It&rsquo;s common to feel slightly unbalanced at this point in the semester&mdash;especially in a course that asks you to juggle group work, writing, and deadlines across multiple projects.</p>
+
+            <p>If you&rsquo;re feeling stretched thin, you're not alone: nearly two-thirds of the class (70%, shown as orange and turquoise in the donut graph) described their current balance as slightly or very unbalanced.</p>
+
+            <p>Watch Announcements later this week for strategies to keep things balanced.</p>
+        </div>
+        <div class="col-sm-6">
+            <canvas id="balanceChart" style="max-width: 300px; height: auto;"></canvas>
+            <details style="margin-top: 15px;">
+                <summary>Long Description of the Chart</summary>
+                <ul>
+                    <li>&nbsp;&nbsp;9% Very well-balanced</li>
+                    <li>21% Well-balanced</li>
+                    <li>49% Slightly unbalanced</li>
+                    <li>21% Very unbalanced</li>
+
+                </ul>
+            </details>
+        </div>
+
+    </div>
+    </div>
+
+    <div id="row-three">
+
+        <div class="col-sm-6 border-left-line">
+            <h3>🔗 Writing Accessible, Clear Links</h3>
+
+        </div>
+    </div>
+
+    <div id="mid-row" class="row border-top-line">
+        <div id="top-article" class="col-sm-12">
+            <h3>💼 Required Sections for Your Proposal</h3>
+
+        </div>
+
+    </div>
+
+    <div class="row border-top-line">
+        <div class="col-sm-12">
+            <h3>❓ Have Questions?</h3>
+            <ul class="skipline">
+                <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/205859/discussion_topics/2046259" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
+                </li>
+                <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-is-the-Inbox/ta-p/55" target="_blank">Canvas Inbox</a>.</li>
+                <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/o3rsG26ZhgPxyCr69" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="helpbar" class="row justify-content-center border-top-line" style="text-align: center;">
+        <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/205859" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
+                    Home</span></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
+                    Docs</span></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
+                    Chat</span></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
+                    Online</span></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
+                    4Help</span></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_205859&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
+                    Traci</span></a></p>
+    </div>
+    <div id="footer" class="row footer-bkgd">
+        <div class="col-sm-12" style="text-align: center;">
+            <p class="footer">© 2025 Traci Gardner. This newsletter is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.</p>
+            <p class="footer-divider-line"></p>
+            <address class="footer" style="text-align: center;">
+                Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
+            </address>
+        </div>
+    </div>
+    <p style="margin-top: 9px;"></p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        new Chart(document.getElementById('proposalChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Somewhat useful', 'Very useful', 'Slightly useful', 'Not at all useful', 'Extremely useful'],
+                datasets: [{
+                    data: [43, 33, 17, 4, 2],
+                    backgroundColor: ['#861f41', '#2cd5c4', '#e5751f', '#508590', '#ce0058']
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('workloadChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Very easy', 'Easy to manage', 'Difficult to manage', 'Very difficult'],
+                datasets: [{
+                    data: [4, 52, 39, 4],
+                    backgroundColor: '#e5751f'
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('balanceChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Very well-balanced', 'Well-balanced', 'Slightly unbalanced', 'Very unbalanced'],
+                datasets: [{
+                    data: [9, 21, 49, 21],
+                    backgroundColor: ['#861f41', '#ce0058', '#e5751f', '#508590']
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('wellbeingChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Okay 😕', 'Good 😊', 'Great 😁', 'Terrible 😞', 'Prefer not to say 🤐'],
+                datasets: [{
+                    label: 'Wellbeing',
+                    data: [57, 28, 9, 4, 2],
+                    backgroundColor: '#861f41'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        max: 50,
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Percentage (%)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
+
+<div id="" class="col-sm-6 border-left-line">
+    <h3>Something</h3>
+
+
+</div>
