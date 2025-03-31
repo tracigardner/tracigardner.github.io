@@ -52,6 +52,7 @@
             color: #c64600;
         }
 
+        /* bar graph for school-life-work balance */
         .chart-container {
             display: flex;
             justify-content: space-around;
@@ -103,6 +104,22 @@
             background-color: #508590;
         }
 
+
+        /* Labels BELOW chart */
+        .labels-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            /* Space between chart and labels */
+        }
+
+        .bar-label {
+            font-size: 14px;
+            max-width: 100px;
+            text-align: center;
+        }
+
+        /* highlight response box in open feedback section */
         .highlight-response {
             background-color: #F2F0F2;
             padding: 6px;
@@ -111,6 +128,7 @@
             margin-left: 9px;
         }
 
+        /* list with emoji as bullets */
         .custom-list {
             list-style: none;
             padding-left: 0;
@@ -218,7 +236,7 @@
         <div class="col-sm-6">
 
             <div class="chart-container" role="img" aria-labelledby="chart-title">
-                <span id="chart-title" class="sr-only">Group Collaboration Data - Number of Members Connected</span>
+                <span id="chart-title" class="sr-only">School-Life-Work Balance</span>
                 <div class="bars-wrapper">
                     <div class="bar bar-9" role="img" aria-label="9% Very well-balanced">9%</div>
                     <div class="bar bar-21" role="img" aria-label="21% Well-balanced">21%</div>
