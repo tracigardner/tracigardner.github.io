@@ -52,40 +52,38 @@
             color: #c64600;
         }
 
-        .key ul li {
+        .highlight-response {
+            background-color: #F2F0F2;
+            padding: 6px;
             margin-bottom: 12px;
         }
 
-        .prop-sect li {
+        .custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .custom-list li {
+            display: flex;
+            align-items: flex-start;
+            /* Align items to the top */
             margin-bottom: 12px;
         }
 
-        .section-title {
-            font-weight: bold;
-            color: #861f41;
+        .bullet {
+            font-size: 1.2em;
+            margin-right: 8px;
+            align-self: flex-start;
+            /* Ensure the bullet aligns to the top */
         }
 
-        code {
-            background-color: #f4f4f4;
-            padding: 0.1em 0.3em;
-            font-family: monospace;
-            font-size: 1em;
-            color: #000000;
-        }
-
-        blockquote {
-            border-left: 4px solid #ccc;
-            margin: 1em 0;
-            padding-left: 1em;
-            color: #555;
-            font-style: italic;
-        }
-
-        .example {
-            background-color: #f9f9f9;
-            border-left: 4px solid #861f41;
-            padding: 0.75em;
-            margin: 1em 0;
+        .text {
+            display: block;
+            /* Ensures the entire text block behaves as one unit */
+            line-height: 1.5;
+            /* Improves readability */
+            flex: 1;
+            /* Allows the text to take up remaining space in the flex container */
         }
     </style>
 
@@ -144,7 +142,7 @@
     <div id="row-two" class="row border-top-line">
         <div class="col-sm-12">
 
-            <h3>⚖️ School-Life-Work Balance?</h3>
+            <h3 style="text-align: center;">⚖️ School-Life-Work Balance?</h3>
         </div>
     </div>
     <div id="row-two-articles" class="row">
@@ -157,7 +155,7 @@
         </div>
         <div class="col-sm-6">
             <canvas id="balanceChart" style="max-width: 300px; height: auto;"></canvas>
-            <details style="margin-top: 15px;">
+            <details style="margin-top: 15px;margin-bottom: 15px;">
                 <summary>Long Description of the Chart</summary>
                 <ul>
                     <li>&nbsp;&nbsp;9% Very well-balanced</li>
@@ -172,23 +170,90 @@
     </div>
     </div>
 
-    <div id="row-three">
+    <div id="row-three" class="row border-top-line">
+        <div class="col-sm-12">
 
-        <div class="col-sm-6 border-left-line">
-            <h3>🔗 Writing Accessible, Clear Links</h3>
-
+            <h3 style="text-align: center;">🗣️ What You Told Me (Open-Ended Feedback)</h3>
         </div>
     </div>
 
-    <div id="mid-row" class="row border-top-line">
-        <div id="top-article" class="col-sm-12">
-            <h3>💼 Required Sections for Your Proposal</h3>
+    <div id="row-three-content" class="row">
+        <div class="col-sm-6">
+            <h4>🤝 Group Work Challenges</h4>
+            <p>Your responses highlight the ongoing difficulties of coordinating group work in an asynchronous course. Here&rsquo;s what stood out:</p>
+            <ul>
+                <li>Difficulty aligning schedules for meetings and collaboration</li>
+                <li>Uneven participation, with some members missing deadlines or not contributing</li>
+                <li>Frustration with having to wait on others to complete shared tasks</li>
+                <li>Requests for alternatives to group work when teams are non-functional</li>
+            </ul>
 
+            <div class="highlight-response">
+                <strong>How I&rsquo;m Responding</strong>
+                <ul class="custom-list">
+                    <li><span class="bullet">📩</span> <span class="text">Reaching out to teams that reported issues to offer support and mediation</span></li>
+
+                    <li><span class="bullet">🧭</span> <span class="text">Offering guidance for setting team expectations and managing work distribution</span></li>
+
+                    <li><span class="bullet">🔄</span> <span class="text">Making space for individual options when group dynamics aren&rsquo;t working</span></li>
+                </ul>
+            </div>
         </div>
 
+        <div class="col-sm-6 border-left-line">
+            <h4>📝 Assignment Complexity</h4>
+            <p>Many of you shared concerns about how assignments are presented. The main takeaway: instructions feel harder to navigate than they should be.</p>
+            <ul>
+                <li>Task descriptions feel overly long or complicated</li>
+                <li>Hyperlinks and rubrics feel scattered or overwhelming</li>
+                <li>You&rsquo;d prefer clearer, more concise explanations of what each assignment requires</li>
+            </ul>
+
+            <div class="highlight-response">
+                <strong>How I&rsquo;m Responding</strong>
+                <ul class="custom-list">
+                    <li><span class="bullet">👓</span> <span class="text">Auditing upcoming assignments for clarity and conciseness</span></li>
+                    <li><span class="bullet">🧾</span> <span class="text">Reducing hyperlink clutter and isolating the essentials</span></li>
+                    <li><span class="bullet">✅</span> <span class="text">Updating instructions to focus more directly on task completion requirements</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
     </div>
 
     <div class="row border-top-line">
+        <div class="col-sm-12">
+            <h2>📬 Looking Ahead</h2>
+            <ul>
+                <li>🧾 You can always ask for a progress update on your major project completions.</li>
+                <li>⏳ If you &rsquo;re behind, don&rsquo;t panic. Focus on the next step forward&mdash;and communicate.</li>
+                <li>🙋 If your team isn&rsquo;t working well, I&rsquo;m here to brainstorm solutions with you.</li>
+            </ul>
+
+            <p>You&rsquo;re doing thoughtful, complex work in a course that asks a lot&mdash;especially in a fully online format. Keep going, and let me know how I can continue supporting your learning.</p>
+
+            <article>
+                <h2>📌 Key Takeaways</h2>
+                <ul>
+                    <li>Most students found the proposal design review activity at least somewhat useful, with one-third rating it as &ldquo;very useful.&rdquo; </li>
+                    <li>Over half of the class feels the workload is manageable, but a substantial portion is starting to feel pressure.</li>
+                    <li>Nearly half of you are experiencing some imbalance in school-life-work responsibilities&mdash;a normal but important signal at this stage.</li>
+                    <li>Over half of you say you &rsquo;re doing &ldquo;okay&rdquo; personally, with a third feeling &ldquo;good&rdquo; or better. I&rsquo;m here to support anyone sliding toward burnout.</li>
+                    <li>Group work continues to be a pain point, especially in asynchronous settings. Clearer expectations and flexible solutions are on the way.</li>
+                    <li>Several of you expressed that assignment instructions feel overly complex. I&rsquo;m actively simplifying and streamlining where possible.</li>
+                </ul>
+                <p>Thanks again for your honest feedback&mdash;it helps me shape the course around what&rsquo;s working and what needs more attention.</p>
+            </article>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div id="questions" class="row border-top-line">
         <div class="col-sm-12">
             <h3>❓ Have Questions?</h3>
             <ul class="skipline">
