@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-    <title>Course Changes</title>
+    <meta charset="utf-8">
+    <title>Fact Sheet Collection Assignment</title>
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -14,67 +16,119 @@
     <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
 
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
 </head>
 
 <body>
-    <div class="maroonbox container">
-        <div class="row">
-            <div class="col-sm-1"><span style="font-size: 36px;padding-top: 0;margin-top: 0;">⚠️</span></div>
-            <div class="col-sm-11">
-                <p style="font-weight: bold;">Read this entire document. This information amends the course documents and makes changes to the course requirements.</p>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Fact Sheet Collection Assignment</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+
+
+        <div class="maroonbox container">
+            <div class="row">
+                <div class="col-sm-1"><span style="font-size: 36px;padding-top: 0;margin-top: 0;">⚠️</span></div>
+                <div class="col-sm-11">
+                    <p style="font-weight: bold;">Read this entire document. This information amends the course documents and makes changes to the course requirements.</p>
+                </div>
             </div>
         </div>
+
+        <p style="margin-top: 15px;">In response to your feedback, I am making some changes to the course that I hope will help with the two main challenges you mentioned in last week&rsquo;s Check-In Survey: (1) Group Challenges, and (2) Assignment Confusion.</p>
+        <p>applesauce</p>
+
+        <h2 style="color:#861f41;border-bottom: 1px solid #e5751f;">Some Course Details</h2>
+
+        <ul style="list-style-type:disc;">
+            <li style="margin-bottom: 12px;">The Project Management unit requires group work. Collaborative project management is a program requirement. You cannot complete these projects individually. </li>
+            <li style="margin-bottom: 12px;">The longer, detailed assignments will continue to be available because some students prefer the full details on the course work.</li>
+        </ul>
+
+        <h2 style="color:#861f41;border-bottom: 1px solid #e5751f;">Assignment Changes</h2>
+
+
+        <ol style="list-style-type:decimal;">
+            <li style="margin-bottom: 12px;">The <a href="https://canvas.vt.edu/courses/205859/assignments/2273851" target="_blank">Recommendation Report Assignment</a> is being replaced by the <a href="https://canvas.vt.edu/courses/205859/assignments/2380220" target="_blank">Fact Sheet Collection Assignment</a>. This new assignment should relieve group challenges by shifting to more individual responsibility.<br />
+                <br />
+                Here are the important details:
+
+                <ol style="list-style-type:lower-alpha;">
+                    <li style="margin-bottom: 12px;font-weight: bold;">The Fact Sheet Collection is still a group assignment; however, I will grade it individually.</li>
+                    <li style="margin-bottom: 12px;"><strong>Required Group Work:</strong> Each group must meet to make some basic decisions to coordinate the collection, including writing the front matter.
+                        <ol style="list-style-type:lower-roman;">
+                            <li style="margin-bottom: 12px;">Group members who do not contribute to group decision-making and group meetings earn an Incomplete on weekly activities.</li>
+                            <li style="margin-bottom: 12px;">Group leaders may make binding decisions with the group members who do participate (with one exception, see iv).</li>
+                            <li style="margin-bottom: 12px;">Binding decisions means that group members who choose not to participate are bound by the decisions that those who do contribute make.</li>
+                            <li style="margin-bottom: 12px;">The Exception: Group members are free to choose their own fact sheet topics, as long as they do not choose a topic that has already been claimed (first come, first served).</li>
+                        </ol>
+                    </li>
+                    <li style="margin-bottom: 12px;"><strong>Required Individual Work:</strong> Each group member will write a fact sheet that is added to the collection.
+                        <ol style="list-style-type:lower-roman;">
+                            <li style="margin-bottom: 12px;">⚠️ Group members who do not submit a draft of a fact sheet by the Target Due Date will earn an Incomplete. This requirement is intended to keep any group member from preventing the group from waiting to submit their work.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li style="margin-bottom: 12px;"><strong>Other assignments in the course will necessarily change.</strong> I will update assignments and other resources as quickly as I can. These changes mean the following for you:
+                <ol style="list-style-type:lower-alpha;">
+                    <li style="margin-bottom: 12px;">You will still use the research your groups gather this week.</li>
+                    <li style="margin-bottom: 12px;">⚠️ Do <strong>NOT</strong> work ahead. Give me a chance to update the relevant assignments.</li>
+                    <li style="margin-bottom: 12px;">If you have not turned in your Group Proposal, continue that work. Here&rsquo;s why:
+                        <ol style="list-style-type:lower-roman;">
+                            <li style="margin-bottom: 12px;">The website your group chooses will be the website your Fact Sheet Collection focuses on.</li>
+                            <li style="margin-bottom: 12px;">If you choose not to participate in the proposal, you will still be required to use the website your group chooses.</li>
+                        </ol>
+
+
+                    </li>
+                </ol>
+            </li>
+        </ol>
     </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
 
-    <p style="margin-top: 15px;">In response to your feedback, I am making some changes to the course that I hope will help with the two main challenges you mentioned in last week&rsquo;s Check-In Survey: (1) Group Challenges, and (2) Assignment Confusion.</p>
-    <p>applesauce</p>
-
-    <h2 style="color:#861f41;border-bottom: 1px solid #e5751f;">Some Course Details</h2>
-
-    <ul style="list-style-type:disc;">
-        <li style="margin-bottom: 12px;">The Project Management unit requires group work. Collaborative project management is a program requirement. You cannot complete these projects individually. </li>
-        <li style="margin-bottom: 12px;">The longer, detailed assignments will continue to be available because some students prefer the full details on the course work.</li>
-    </ul>
-
-    <h2 style="color:#861f41;border-bottom: 1px solid #e5751f;">Assignment Changes</h2>
-
-
-    <ol style="list-style-type:decimal;">
-        <li style="margin-bottom: 12px;">The <a href="https://canvas.vt.edu/courses/205859/assignments/2273851" target="_blank">Recommendation Report Assignment</a> is being replaced by the <a href="https://canvas.vt.edu/courses/205859/assignments/2380220" target="_blank">Fact Sheet Collection Assignment</a>. This new assignment should relieve group challenges by shifting to more individual responsibility.<br />
-            <br />
-            Here are the important details:
-
-            <ol style="list-style-type:lower-alpha;">
-                <li style="margin-bottom: 12px;font-weight: bold;">The Fact Sheet Collection is still a group assignment; however, I will grade it individually.</li>
-                <li style="margin-bottom: 12px;"><strong>Required Group Work:</strong> Each group must meet to make some basic decisions to coordinate the collection, including writing the front matter.
-                    <ol style="list-style-type:lower-roman;">
-                        <li style="margin-bottom: 12px;">Group members who do not contribute to group decision-making and group meetings earn an Incomplete on weekly activities.</li>
-                        <li style="margin-bottom: 12px;">Group leaders may make binding decisions with the group members who do participate (with one exception, see iv).</li>
-                        <li style="margin-bottom: 12px;">Binding decisions means that group members who choose not to participate are bound by the decisions that those who do contribute make.</li>
-                        <li style="margin-bottom: 12px;">The Exception: Group members are free to choose their own fact sheet topics, as long as they do not choose a topic that has already been claimed (first come, first served).</li>
-                    </ol>
-                </li>
-                <li style="margin-bottom: 12px;"><strong>Required Individual Work:</strong> Each group member will write a fact sheet that is added to the collection.
-                    <ol style="list-style-type:lower-roman;">
-                        <li style="margin-bottom: 12px;">⚠️ Group members who do not submit a draft of a fact sheet by the Target Due Date will earn an Incomplete. This requirement is intended to keep any group member from preventing the group from waiting to submit their work.</li>
-                    </ol>
-                </li>
-            </ol>
-        </li>
-        <li style="margin-bottom: 12px;"><strong>Other assignments in the course will necessarily change.</strong> I will update assignments and other resources as quickly as I can. These changes mean the following for you:
-            <ol style="list-style-type:lower-alpha;">
-                <li style="margin-bottom: 12px;">You will still use the research your groups gather this week.</li>
-                <li style="margin-bottom: 12px;">⚠️ Do <strong>NOT</strong> work ahead. Give me a chance to update the relevant assignments.</li>
-                <li style="margin-bottom: 12px;">If you have not turned in your Group Proposal, continue that work. Here&rsquo;s why:
-                    <ol style="list-style-type:lower-roman;">
-                        <li style="margin-bottom: 12px;">The website your group chooses will be the website your Fact Sheet Collection focuses on.</li>
-                        <li style="margin-bottom: 12px;">If you choose not to participate in the proposal, you will still be required to use the website your group chooses.</li>
-                    </ol>
-
-
-                </li>
-            </ol>
-
+</html>
 </body>
 
 </html>
