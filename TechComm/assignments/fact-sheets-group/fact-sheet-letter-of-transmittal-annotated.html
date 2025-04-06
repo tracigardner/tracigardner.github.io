@@ -77,6 +77,36 @@
         .tightpara p {
             margin: 0px 0px 0px 0px;
         }
+
+        .letterhead {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+            border-bottom: 2px solid #ccc;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            max-height: 90px;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        .letterhead-text {
+            text-align: center;
+            flex: 1;
+        }
+
+        .letterhead-text h2 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .letterhead-text sp {
+            margin: 0.25em 0 0 0;
+        }
     </style>
 
 
@@ -135,10 +165,22 @@
 
 
                 <tr>
-                    <td style="margin: 0px 24px 0px 24px;">
-                        <h2 style="text-align: center;font-weight: bold;margin-bottom: 0px;"><span style="color: #861f41;">Maroon</span> <span style="font-size: 18px;">+</span> <span style="color: #c64600;">Orange</span> <span style="color: #000000;">Digital</span></h2>
-                        <p style="margin-top: 0px;text-align: center;">1872 Drillfield Drive<br>
-                            Blacksburg, VA 24060</p>
+                    <td>
+
+                        <div class="letterhead">
+                            <img src="../../-images/maroon-and-orange/maroon-orange-recolored.png" alt="Maroon + Orange Digital Logo" class="logo">
+                            <div class="letterhead-text">
+                                <h2>
+                                    <span style="color: #861f41;">Maroon</span>
+                                    <span style="font-size: 18px;">+</span>
+                                    <span style="color: #c64600;">Orange</span>
+                                    <span style="color: #000000;">Digital</span>
+                                </h2>
+                                <p class="tightpara" style="margin-bottom: 0;">1872 Drillfield Drive</p>
+                                <p class="tightpara">Blacksburg, VA 24060</p>
+                            </div>
+                        </div>
+
                         <p style="margin-top: 24px;margin-bottom: 36px;">April 29, 2025</p>
                     </td>
                     <td>
