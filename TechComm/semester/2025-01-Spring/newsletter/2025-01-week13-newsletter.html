@@ -18,37 +18,26 @@
 
     <style>
         .chart-container {
-            width: 100%;
             max-width: 700px;
-            margin: 0 auto;
+            margin: auto;
         }
 
         .chart {
             display: flex;
             align-items: flex-end;
+            justify-content: space-between;
             height: 300px;
-            /* Fixed height for consistent bar scaling */
-            gap: 1.5vw;
+            /* This is the full height reference */
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
             padding: 1em;
-            border-left: 2px solid #000;
-            border-bottom: 2px solid #000;
         }
 
         .bar {
-            flex: 1;
-            min-width: 50px;
+            width: 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 0.8em;
-            text-align: center;
-        }
-
-        .bar-inner {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
             justify-content: flex-end;
         }
 
@@ -57,8 +46,9 @@
         }
 
         .label {
-            margin-top: 0.5em;
-            word-wrap: break-word;
+            margin-top: 8px;
+            text-align: center;
+            font-size: 0.8em;
         }
     </style>
 
@@ -112,39 +102,26 @@
                         <h3>📄&nbsp;Draft By Friday?</h3>
                         <p>If you&rsquo;re on track in the course, you and your group should have a full draft of your Recommendation Report or Fact Sheet Collection by Friday. Here&rsquo;s how likely you felt you were to meet that goal:</p>
 
-                        <div class="chart-container">
-                            <h2>Likelihood Responses</h2>
-                            <div class="chart">
-                                <div class="bar">
-                                    <div class="bar-inner">
-                                        <div class="bar-rect" style="height: 4.6%; background-color: #75787b;"></div>
-                                    </div>
-                                    <div class="label">2%<br>Not at all likely</div>
-                                </div>
-                                <div class="bar">
-                                    <div class="bar-inner">
-                                        <div class="bar-rect" style="height: 16%; background-color: #CE0058;"></div>
-                                    </div>
-                                    <div class="label">7%<br>Slightly likely</div>
-                                </div>
-                                <div class="bar">
-                                    <div class="bar-inner">
-                                        <div class="bar-rect" style="height: 100%; background-color: #508590;"></div>
-                                    </div>
-                                    <div class="label">44%<br>Somewhat likely</div>
-                                </div>
-                                <div class="bar">
-                                    <div class="bar-inner">
-                                        <div class="bar-rect" style="height: 66%; background-color: #E5751F;"></div>
-                                    </div>
-                                    <div class="label">29%<br>Very likely</div>
-                                </div>
-                                <div class="bar">
-                                    <div class="bar-inner">
-                                        <div class="bar-rect" style="height: 41%; background-color: #861f41;"></div>
-                                    </div>
-                                    <div class="label">18%<br>Extremely likely</div>
-                                </div>
+                        <div class="chart">
+                            <div class="bar">
+                                <div class="bar-rect" style="height: 7px; background-color: #75787b;"></div>
+                                <div class="label">2%<br>Not at all likely</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-rect" style="height: 25px; background-color: #CE0058;"></div>
+                                <div class="label">7%<br>Slightly likely</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-rect" style="height: 162px; background-color: #508590;"></div>
+                                <div class="label">44%<br>Somewhat likely</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-rect" style="height: 106px; background-color: #E5751F;"></div>
+                                <div class="label">29%<br>Very likely</div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-rect" style="height: 66px; background-color: #861f41;"></div>
+                                <div class="label">18%<br>Extremely likely</div>
                             </div>
                         </div>
 
@@ -152,7 +129,7 @@
                         <div class="row" id="longdesc-draftb4-row" style="clear:all;">
                             <div class="col-sm-12" id="Longdesc-draftb4-col">
                                 <details style="margin-left: 15px;margin-bottom: 12px;">
-                                    <summary><em>Description of the Draft Before Thanksgiving Graph</em></summary>
+                                    <summary><em>Description of the Draft By Friday Graph</em></summary>
                                     <p style="margin-left: 15px;">How likely is your group to have a full draft of your Recommendation Report before Thanksgiving Break?<br><br>Results:</p>
                                     <ul style="margin-left: 15px;">
                                         <li>&nbsp;&nbsp;2% said, &ldquo;Not at all likely&rdquo;</li>
