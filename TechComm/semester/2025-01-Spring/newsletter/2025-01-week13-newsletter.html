@@ -9,6 +9,9 @@
     <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
     <meta name="author" content="Traci Gardner">
 
+    <!-- js for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -102,35 +105,14 @@
                         <h3>📄&nbsp;Draft By Friday?</h3>
                         <p>If you&rsquo;re on track in the course, you and your group should have a full draft of your Recommendation Report or Fact Sheet Collection by Friday. Here&rsquo;s how likely you felt you were to meet that goal:</p>
 
-                        <div class="chart">
-                            <div class="bar">
-                                <div class="bar-rect" style="height: 7px; background-color: #75787b;"></div>
-                                <div class="label">2%<br>Not at all likely</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-rect" style="height: 25px; background-color: #CE0058;"></div>
-                                <div class="label">7%<br>Slightly likely</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-rect" style="height: 162px; background-color: #508590;"></div>
-                                <div class="label">44%<br>Somewhat likely</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-rect" style="height: 106px; background-color: #E5751F;"></div>
-                                <div class="label">29%<br>Very likely</div>
-                            </div>
-                            <div class="bar">
-                                <div class="bar-rect" style="height: 66px; background-color: #861f41;"></div>
-                                <div class="label">18%<br>Extremely likely</div>
-                            </div>
-                        </div>
 
+                        <canvas id="draftChart"></canvas>
 
                         <div class="row" id="longdesc-draftb4-row" style="clear:all;">
                             <div class="col-sm-12" id="Longdesc-draftb4-col">
                                 <details style="margin-left: 15px;margin-bottom: 12px;">
                                     <summary><em>Description of the Draft By Friday Graph</em></summary>
-                                    <p style="margin-left: 15px;">How likely is your group to have a full draft of your Recommendation Report before Thanksgiving Break?<br><br>Results:</p>
+                                    <p style="margin-left: 15px;">How likely is your group to have a full draft of your project by Friday?<br><br>Results:</p>
                                     <ul style="margin-left: 15px;">
                                         <li>&nbsp;&nbsp;2% said, &ldquo;Not at all likely&rdquo;</li>
                                         <li>&nbsp;&nbsp;7% said, &ldquo;Slightly likely&rdquo;</li>
@@ -145,48 +127,37 @@
 
                     </div>
                 </div>
+
                 <div class="row border-top-line" id="coursegrade-report">
                     <div class="col-sm-12" id="coursegrade-col">
 
                         <h3>🎯&nbsp;Course Goals</h3>
                         <p>Last week, I asked how you felt you were meeting your goals in the course.</p>
 
-                        <p>The graph below shows what you said before I released the grade estimates yesterday:</p>
-                        <img src="images/2024-week13-coursegoals.jpg" class="img-fluid" alt="Bar graph showing student satisfaction in group collaboration">
+                        <p>The graph below shows what you said:</p>
 
-
-                        <div class="row" id="longdesc-coursegrade-row" style="clear:all;">
-                            <div class="col-sm-12" id="longdesc-coursegrade-col">
-                                <details style="margin-left: 15px;margin-bottom: 12px;">
-                                    <summary><em>Description of the Report Outline Graph</em></summary>
-                                    <p style="margin-left: 15px;">How do you feel about meeting the course grade you set as your goal by the end of the term?<br><br>Results:</p>
-                                    <ul style="margin-left: 15px;">
-                                        <li>20% Great 😁</li>
-                                        <li>39% Good 😊</li>
-                                        <li>22% Okay 😕</li>
-                                        <li>11% Worried 😰</li>
-                                        <li>&nbsp;&nbsp;2% Terrible 😞</li>
-                                        <li>&nbsp;&nbsp;4% I&rsquo;m not sure 😕</li>
-                                        <li>&nbsp;&nbsp;2% Prefer not to say 🤐</li>
-                                    </ul>
-                                </details>
-                            </div>
-                        </div>
-
-                        <h4>⚠️&nbsp;Not Reaching Your Goal?</h4>
-                        <p>If you&rsquo;re not on track to meet your goals, check out the tips for improving your grade in the right column.</p>
-
-
+                        <canvas id="goalsChart"></canvas>
+                        <details>
+                            <summary>Long Description of the Chart</summary>
+                            <ul>
+                                <li>16% Great 😁</li>
+                                <li>29% Good 😊</li>
+                                <li>33% Okay 😕</li>
+                                <li>18% Worried 😰</li>
+                                <li>&nbsp;&nbsp;2% Terrible 😞</li>
+                                <li>&nbsp;&nbsp;2% I&rsquo;m not sure 😕</li>
+                            </ul>
+                        </details>
                     </div>
+
+                    <h4 style="margin-top: 15px;">⚠️&nbsp;Not Reaching Your Goal?</h4>
+                    <p>If you&rsquo;re not on track to meet your goals, check out the tips for improving your grade in the right column.</p>
+
 
                 </div>
 
-
-
-
-
-
             </div>
+
 
             <div class="col-sm-6 border-left-line" id="top-col-right">
 
@@ -334,6 +305,61 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        new Chart(document.getElementById('proposalChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Somewhat useful', 'Very useful', 'Slightly useful', 'Not at all useful', 'Extremely useful'],
+                datasets: [{
+                    data: [43, 33, 17, 4, 2],
+                    backgroundColor: ['#861f41', '#2cd5c4', '#e5751f', '#508590', '#ce0058']
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('goalsChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Great 😁', 'Good 😊', 'Okay 😕', 'Worried 😓', 'Terrible 😞'],
+                datasets: [{
+                    data: [16, 29, 33, 18, 2, 2],
+                    backgroundColor: '#e5751f'
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('draftChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Not likely', 'Slightly likely', 'Somewhat likely', 'Very likely', 'Extremely likely'],
+                datasets: [{
+                    data: [2, 7, 44, 29, 18],
+                    backgroundColor: '#861f41'
+                }]
+            },
+            options: {
+                indexAxis: 'x',
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+
+
+
+
 </body>
 
 </html>
