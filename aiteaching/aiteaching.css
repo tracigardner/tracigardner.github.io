@@ -23,3 +23,9 @@ a:visited {
 .skipline li {
   margin-bottom: 1rem;
 }
+
+.biblio {
+  list-style: none;
+  padding-left: 22px;
+  text-indent: -22px;
+}
