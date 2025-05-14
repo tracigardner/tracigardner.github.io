@@ -11,6 +11,13 @@ h5,
 h6 {
   color: #506590;
 }
+img {
+  border-radius: 6px;
+}
+
+figcaption {
+  text-align: right;
+}
 
 a:link,
 a:active,
