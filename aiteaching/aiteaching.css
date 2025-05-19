@@ -154,3 +154,27 @@ ul#glossaryList li {
   background-color: #f6f7fa;
   font-weight: 600;
 }
+/* alternate table */
+
+.alternateTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+  table-layout: fixed;
+}
+.alternateTable td,
+.alternateTable th {
+  border: 1px solid #dedede;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.alternateTable tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.alternateTable th {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
+}
