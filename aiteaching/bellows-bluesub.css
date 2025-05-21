@@ -1,0 +1,103 @@
+/* Skin  Modified for aiteaching */
+.bellows.bellows-skin-vanilla {
+  background: #f9f9f9;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.17);
+}
+.bellows.bellows-skin-vanilla .bellows-nav .bellows-target,
+.bellows.bellows-skin-vanilla .bellows-nav .bellows-custom-content {
+  color: #506590;
+  font-weight: 600;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0
+  > .bellows-target,
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0
+  > .bellows-custom-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0.bellows-has-custom-content
+  > .bellows-target {
+  border-bottom: none;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0
+  > .bellows-target:hover {
+  background: #f2f2f2;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0.bellows-active
+  > .bellows-target {
+  background: #f2f2f2;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0.bellows-current-menu-item
+  > .bellows-target,
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0.bellows-current-menu-ancestor
+  > .bellows-target {
+  background: #f2f2f2;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-item-level-0
+  > .bellows-target
+  .bellows-subtoggle {
+  background: none;
+}
+.bellows.bellows-skin-vanilla .bellows-nav .bellows-submenu {
+  background: #506590; /* bkgd for submenus */
+}
+.bellows.bellows-skin-vanilla .bellows-nav .bellows-submenu .bellows-target,
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-submenu
+  .bellows-custom-content,
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-submenu
+  .bellows-widget
+  .textwidget {
+  color: #ffffff; /* color for submenus */
+  border-bottom: 1px solid #eee;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-submenu
+  .bellows-has-custom-content
+  > .bellows-target {
+  border-bottom: none;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-submenu
+  .bellows-target:hover {
+  background: #7788aa; /* bkgd for submenu hover */
+  color: #ffffff;
+}
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-submenu
+  .bellows-current-menu-item
+  > .bellows-target,
+.bellows.bellows-skin-vanilla
+  .bellows-nav
+  .bellows-submenu
+  .bellows-current-menu-ancestor
+  > .bellows-target {
+  background: #f9f9f9;
+  color: #506590; /* color for current page */
+}
+.bellows-menu-toggle.bellows-menu-toggle-skin-vanilla {
+  background: #f9f9f9;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.17);
+  color: #506590;
+}
