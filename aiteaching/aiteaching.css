@@ -46,6 +46,10 @@ figcaption {
   margin-bottom: 1rem;
 }
 
+.null li {
+  margin-bottom: 0;
+}
+
 .biblio {
   list-style: none;
   padding-left: 22px;
