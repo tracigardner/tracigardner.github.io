@@ -7,6 +7,7 @@
 .bellows.bellows-skin-vanilla .bellows-nav .bellows-custom-content {
   color: #506590;
   font-weight: 600;
+  text-decoration: none !important; /* removes underline on links */
 }
 .bellows.bellows-skin-vanilla
   .bellows-nav
