@@ -61,6 +61,31 @@ figcaption {
   text-indent: -22px;
 }
 
+/* Navigation Triangle for Details > Summary; */
+/* It's not showing by default in the theme   */
+/* Hide the browser’s default marker */
+details summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Add your own marker using ::before */
+details summary::before {
+  content: "►";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  transition: transform 0.2s ease;
+  color: #506590;
+}
+
+/* Rotate the triangle when open */
+details[open] summary::before {
+  content: "▼";
+  color: #506590;
+}
+
 /* reduce header white space from 28px */
 .site-title,
 .site-title a {
