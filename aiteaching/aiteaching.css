@@ -47,7 +47,8 @@ figcaption {
   font-size: 0.9rem;
 }
 
-.skipline li {
+.skipline li,
+.skipline dd {
   margin-bottom: 1rem;
 }
 
@@ -59,6 +60,12 @@ figcaption {
   list-style: none;
   padding-left: 22px;
   text-indent: -22px;
+}
+
+/* last modified styles */
+.post-modified-info {
+  margin-top: 48px;
+  border-top: 3px solid #506590;
 }
 
 /* Navigation Triangle for Details > Summary; */
