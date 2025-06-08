@@ -16,12 +16,15 @@ body {
 /* general updates */
 
 h1,
-h2,
 h3,
-h4,
-h5,
-h6 {
+h5 {
   color: #506590;
+}
+
+h2,
+h4,
+h6 {
+  color: #861f41;
 }
 
 a:link,
