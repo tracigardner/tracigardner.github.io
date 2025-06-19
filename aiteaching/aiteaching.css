@@ -222,3 +222,8 @@ ul#glossaryList li {
   background-color: #dedede;
   vertical-align: top;
 }
+
+.alternateTable caption {
+  caption-side: bottom;
+  text-align: left;
+}
