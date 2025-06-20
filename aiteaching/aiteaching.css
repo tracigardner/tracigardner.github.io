@@ -227,3 +227,13 @@ ul#glossaryList li {
   caption-side: bottom;
   text-align: left;
 }
+
+#question-frame h4,
+#question-frame p,
+#question-frame li {
+  margin-left: 24px;
+}
+
+#question-frame h4 {
+  margin-bottom: 0px;
+}
