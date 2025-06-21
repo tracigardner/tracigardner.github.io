@@ -65,6 +65,10 @@ figcaption {
   text-indent: -22px;
 }
 
+blockquote {
+  font-size: 1rem;
+}
+
 /* last modified styles */
 .post-modified-info {
   margin-top: 48px;
