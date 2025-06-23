@@ -241,3 +241,49 @@ ul#glossaryList li {
 #question-frame h4 {
   margin-bottom: 0px;
 }
+
+/*** Tablepress css ***/
+.tablepress thead {
+  --text-color: #333;
+  --head-text-color: #ffffff;
+  --head-bg-color: #506590;
+  --head-active-bg-color: #7788aa;
+  --head-active-text-color: #ffffff;
+  --head-sort-arrow-color: #ffffff;
+}
+
+.tablepress thead th {
+  position: relative;
+  background-color: var(--head-bg-color);
+  color: var(--head-text-color);
+  z-index: 1;
+}
+
+.tablepress thead th::before,
+.tablepress thead th::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.tablepress thead th::before {
+  top: 0;
+  height: 5px; /* 3px + 2px */
+  background: linear-gradient(#861f41 3px, #e5751f 3px);
+}
+
+.tablepress thead th::after {
+  bottom: 0;
+  height: 5px; /* 2px + 3px */
+  background: linear-gradient(#e5751f 2px, #861f41 2px);
+}
+
+.tablepress thead .dt-orderable-asc:hover,
+.tablepress thead .dt-orderable-desc:hover,
+.tablepress thead .dt-ordering-asc,
+.tablepress thead .dt-ordering-desc {
+  background-color: #7788aa;
+  color: var(--head-active-text-color);
+}
