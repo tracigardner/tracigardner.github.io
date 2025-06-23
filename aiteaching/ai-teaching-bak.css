@@ -1,17 +1,4 @@
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-}
-
-/* reducing left-right margin 
-.hm-container {
-    margin: 1px 1px;
-    } */
-
-/* remove title from homepage
-.page-id-38 .entry-title {
-  display: none;
-} */
+/* general updates */
 
 .screen-reader-text {
   position: absolute;
@@ -21,8 +8,6 @@ body {
   height: 1px;
   overflow: hidden;
 }
-
-/* general updates */
 
 h1,
 h3,
@@ -59,8 +44,7 @@ figcaption {
   font-size: 0.9rem;
 }
 
-.skipline li,
-.skipline dd {
+.skipline li {
   margin-bottom: 1rem;
 }
 
@@ -75,8 +59,7 @@ figcaption {
 }
 
 blockquote {
-  font-size: 1em;
-  padding: 9px 18px;
+  font-size: 1rem;
 }
 
 /* last modified styles */
@@ -85,8 +68,8 @@ blockquote {
   border-top: 3px solid #506590;
 }
 
-/* Navigation Triangle for Details > Summary; */
-/* It's not showing by default in the theme   */
+/* Navigation Triangle for Details Summary */
+
 /* Hide the browser’s default marker */
 details summary {
   list-style: none;
@@ -145,18 +128,6 @@ details[open] summary::before {
   -webkit-box-sizing: border-box;
 }
 
-/*  saving as backup
- .header-main-area {
-	border-top: 3px solid #861f41;
-}
-
-.site-footer{
-	border-top: 1px solid #e5751f;
-	  outline: 3px solid #861f41;
-}
-
- */
-
 /* additional hdr/nav css */
 .site-title,
 .site-title a:link,
@@ -202,6 +173,36 @@ details[open] summary::before {
   border: 3px double #506590;
 }
 
+/* prev/next styles */
+.toc-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  position: relative;
+}
+
+.toc-nav-wrapper .toc-nav-prev {
+  margin-right: auto;
+}
+
+.toc-nav-wrapper .toc-nav-next {
+  margin-left: auto;
+}
+
+.toc-nav-wrapper a {
+  background-color: #506590;
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.toc-nav-wrapper a:hover {
+  background-color: #7788aa;
+}
+
 /* Glossary Styles */
 ul#glossaryList li {
   margin-bottom: 9px;
@@ -212,6 +213,7 @@ ul#glossaryList li {
   background-color: #f6f7fa;
   font-weight: 600;
 }
+
 /* alternate table */
 
 .alternateTable {
@@ -220,33 +222,8 @@ ul#glossaryList li {
   margin: 6px 6px 6px 6px;
   table-layout: fixed;
 }
-
-.alternateTable th[scope="col"] {
-  padding: 12px;
-  text-align: left;
-  background-color: #dedede;
-  vertical-align: top;
-}
-
-/* Odd-numbered header rows */
-.alternateTable tbody tr:nth-child(odd) th[scope="row"] {
-  background-color: #f9f9f9;
-  color: #404040;
-  text-align: left;
-  padding: 12px;
-  vertical-align: top;
-}
-
-/* Even-numbered rows */
-.alternateTable tbody tr:nth-child(even) th[scope="row"] {
-  background-color: #ffffff;
-  color: #404040;
-  text-align: left;
-  padding: 12px;
-  vertical-align: top;
-}
-
-.alternateTable td {
+.alternateTable td,
+.alternateTable th {
   border: 1px solid #dedede;
   padding: 12px;
   vertical-align: top;
@@ -254,6 +231,12 @@ ul#glossaryList li {
 
 .alternateTable tr:nth-child(odd) {
   background-color: #f9f9f9;
+}
+.alternateTable th {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
 }
 
 .alternateTable caption {
@@ -274,50 +257,4 @@ ul#glossaryList li {
 /* Sitemap */
 .wsp-pages-title {
   display: none;
-}
-
-/*** Tablepress css ***/
-.tablepress thead {
-  --text-color: #333;
-  --head-text-color: #ffffff;
-  --head-bg-color: #506590;
-  --head-active-bg-color: #7788aa;
-  --head-active-text-color: #ffffff;
-  --head-sort-arrow-color: #ffffff;
-}
-
-.tablepress thead th {
-  position: relative;
-  background-color: var(--head-bg-color);
-  color: var(--head-text-color);
-  z-index: 1;
-}
-
-.tablepress thead th::before,
-.tablepress thead th::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.tablepress thead th::before {
-  top: 0;
-  height: 5px; /* 3px + 2px */
-  background: linear-gradient(#861f41 3px, #e5751f 3px);
-}
-
-.tablepress thead th::after {
-  bottom: 0;
-  height: 5px; /* 2px + 3px */
-  background: linear-gradient(#e5751f 2px, #861f41 2px);
-}
-
-.tablepress thead .dt-orderable-asc:hover,
-.tablepress thead .dt-orderable-desc:hover,
-.tablepress thead .dt-ordering-asc,
-.tablepress thead .dt-ordering-desc {
-  background-color: #7788aa;
-  color: var(--head-active-text-color);
 }
