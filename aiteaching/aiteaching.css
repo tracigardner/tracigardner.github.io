@@ -210,6 +210,32 @@ ul#glossaryList li {
   margin: 6px 6px 6px 6px;
   table-layout: fixed;
 }
+
+.alternateTable th[scope="col"] {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
+}
+
+/* Odd-numbered header rows */
+.alternateTable tbody tr:nth-child(odd) th[scope="row"] {
+  background-color: #f9f9f9;
+  color: #333333;
+  text-align: left;
+  padding: 12px;
+  vertical-align: top;
+}
+
+/* Even-numbered rows */
+.alternateTable tbody tr:nth-child(even) th[scope="row"] {
+  background-color: #ffffff;
+  color: #333333;
+  text-align: left;
+  padding: 12px;
+  vertical-align: top;
+}
+
 .alternateTable td {
   border: 1px solid #dedede;
   padding: 12px;
@@ -218,30 +244,6 @@ ul#glossaryList li {
 
 .alternateTable tr:nth-child(odd) {
   background-color: #f9f9f9;
-}
-.alternateTable th[scope="col"] {
-  padding: 12px;
-  text-align: left;
-  background-color: #dedede;
-  vertical-align: top;
-}
-
-.alternateTable th[scope="row"] {
-  /* Styles for row headers (leftmost column) */
-  background-color: #ffffff;
-  color: #333333;
-  text-align: left;
-  padding: 12px;
-  vertical-align: top;
-}
-
-.alternateTable th[scope="row"]:nth-child(odd) {
-  /* Styles for row headers (leftmost column) */
-  background-color: #f9f9f9;
-  color: #333333;
-  text-align: left;
-  padding: 12px;
-  vertical-align: top;
 }
 
 .alternateTable caption {
