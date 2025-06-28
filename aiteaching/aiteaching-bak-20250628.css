@@ -1,18 +1,3 @@
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-}
-
-/* reducing left-right margin 
-.hm-container {
-    margin: 1px 1px;
-    } */
-
-/* remove title from homepage
-.page-id-38 .entry-title {
-  display: none;
-} */
-
 .screen-reader-text {
   position: absolute;
   left: -10000px;
@@ -202,36 +187,6 @@ details[open] summary::before {
   border: 3px double #506590;
 }
 
-/* prev/next styles */
-.toc-nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2em;
-  position: relative;
-}
-
-.toc-nav-wrapper .toc-nav-prev {
-  margin-right: auto;
-}
-
-.toc-nav-wrapper .toc-nav-next {
-  margin-left: auto;
-}
-
-.toc-nav-wrapper a {
-  background-color: #506590;
-  color: #fff;
-  padding: 10px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
-}
-
-.toc-nav-wrapper a:hover {
-  background-color: #7788aa;
-}
-
 /* Glossary Styles */
 ul#glossaryList li {
   margin-bottom: 9px;
@@ -304,50 +259,4 @@ ul#glossaryList li {
 /* Sitemap */
 .wsp-pages-title {
   display: none;
-}
-
-/*** Tablepress css ***/
-.tablepress thead {
-  --text-color: #333;
-  --head-text-color: #ffffff;
-  --head-bg-color: #506590;
-  --head-active-bg-color: #7788aa;
-  --head-active-text-color: #ffffff;
-  --head-sort-arrow-color: #ffffff;
-}
-
-.tablepress thead th {
-  position: relative;
-  background-color: var(--head-bg-color);
-  color: var(--head-text-color);
-  z-index: 1;
-}
-
-.tablepress thead th::before,
-.tablepress thead th::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.tablepress thead th::before {
-  top: 0;
-  height: 5px; /* 3px + 2px */
-  background: linear-gradient(#861f41 3px, #e5751f 3px);
-}
-
-.tablepress thead th::after {
-  bottom: 0;
-  height: 5px; /* 2px + 3px */
-  background: linear-gradient(#e5751f 2px, #861f41 2px);
-}
-
-.tablepress thead .dt-orderable-asc:hover,
-.tablepress thead .dt-orderable-desc:hover,
-.tablepress thead .dt-ordering-asc,
-.tablepress thead .dt-ordering-desc {
-  background-color: #7788aa;
-  color: var(--head-active-text-color);
 }
