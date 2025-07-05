@@ -307,6 +307,8 @@ ul#glossaryList li {
 }
 
 /*** Tablepress css ***/
+/*** From Plugin Options Tab ***/
+
 .tablepress thead {
   --text-color: #333;
   --head-text-color: #ffffff;
@@ -350,4 +352,33 @@ ul#glossaryList li {
 .tablepress thead .dt-ordering-desc {
   background-color: #7788aa;
   color: var(--head-active-text-color);
+}
+
+#width-tablecol th.column-1 {
+  width: 50%;
+}
+
+#width-tablecol ul,
+#width-tablecol ol {
+  margin: 0 0 1.5em 0;
+  padding-left: 2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  border: 1px solid #506590;
 }
