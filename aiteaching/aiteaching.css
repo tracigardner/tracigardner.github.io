@@ -80,10 +80,10 @@ blockquote {
 }
 
 .byline {
-  padding-top: 0;
-  border-top: 1px solid #506590;
-  border-bottom: 1px solid #506590;
+  border-top: 3px solid #506590;
+  border-bottom: 3px solid #506590;
   margin-bottom: 24px;
+  padding: 9px;
 }
 
 .series-overview {
