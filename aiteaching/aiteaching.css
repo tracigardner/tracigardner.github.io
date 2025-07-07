@@ -28,12 +28,14 @@ h1,
 h3,
 h5 {
   color: #506590;
+  clear: none;
 }
 
 h2,
 h4,
 h6 {
   color: #861f41;
+  clear: none;
 }
 
 a:link,
@@ -87,7 +89,20 @@ blockquote {
 }
 
 .series-overview {
-  font-style: italic;
+  width: 270px;
+  float: right;
+  border: 3px solid #506590;
+  padding: 0px 9px 27px;
+  margin-left: 15px;
+}
+
+.series-overview h2 {
+  color: #506290;
+  font-size: 1.25rem;
+}
+
+.series-list {
+  margin: -15px;
 }
 
 /* last modified styles */
