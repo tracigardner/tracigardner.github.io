@@ -317,6 +317,11 @@ ul#glossaryList li {
   text-align: left;
 }
 
+#question-frame {
+  border: 6px double #506590;
+  padding: 12px;
+}
+
 #question-frame h4,
 #question-frame p,
 #question-frame li {
