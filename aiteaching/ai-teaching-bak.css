@@ -1,0 +1,260 @@
+/* general updates */
+
+.screen-reader-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+h1,
+h3,
+h5 {
+  color: #506590;
+}
+
+h2,
+h4,
+h6 {
+  color: #861f41;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+  color: #506590;
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 6px;
+}
+
+.focal {
+  float: right;
+  margin: 0px 15px 15px 21px;
+}
+
+figcaption {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.skipline li {
+  margin-bottom: 1rem;
+}
+
+.null li {
+  margin-bottom: 0;
+}
+
+.biblio {
+  list-style: none;
+  padding-left: 22px;
+  text-indent: -22px;
+}
+
+blockquote {
+  font-size: 1rem;
+}
+
+/* last modified styles */
+.post-modified-info {
+  margin-top: 48px;
+  border-top: 3px solid #506590;
+}
+
+/* Navigation Triangle for Details Summary */
+
+/* Hide the browser’s default marker */
+details summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Add your own marker using ::before */
+details summary::before {
+  content: "►";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  transition: transform 0.2s ease;
+  color: #506590;
+}
+
+/* Rotate the triangle when open */
+details[open] summary::before {
+  content: "▼";
+  color: #506590;
+}
+
+/* reduce header white space from 28px */
+.site-title,
+.site-title a {
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-branding {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* VT borders for header & footer */
+
+#site-navigation,
+.site-footer {
+  border-top: 3px solid #861f41;
+  border-bottom: 3px solid #861f41;
+  position: relative;
+}
+
+#site-navigation:before,
+.site-footer:before {
+  position: absolute;
+  display: block;
+  content: "";
+  border-top: 2px solid #e5751f;
+  border-bottom: 2px solid #e5751f;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* additional hdr/nav css */
+.site-title,
+.site-title a:link,
+.site-title a:active,
+.site-title a:hover,
+.site-title a:visited {
+  color: #506590;
+}
+.hm-nwrap {
+  background-color: #506590;
+}
+.main-navigation,
+.site-info {
+  background-color: #506590;
+}
+.main-navigation a {
+  color: #ffffff;
+}
+.main-navigation ul {
+  text-transform: none;
+}
+.site-info {
+  background-color: #506590;
+  color: #ffffff;
+  font-weight: bold;
+}
+.site-info a:link,
+.site-info a:active,
+.site-info a:hover,
+.site-info a:visited {
+  color: #ffffff;
+  font-weight: bold;
+}
+.entry-title,
+.entry-title h1 {
+  color: #506590 !important;
+}
+
+/* Page Contents Styles */
+#ez-toc-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 3px double #506590;
+}
+
+/* prev/next styles */
+.toc-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  position: relative;
+}
+
+.toc-nav-wrapper .toc-nav-prev {
+  margin-right: auto;
+}
+
+.toc-nav-wrapper .toc-nav-next {
+  margin-left: auto;
+}
+
+.toc-nav-wrapper a {
+  background-color: #506590;
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.toc-nav-wrapper a:hover {
+  background-color: #7788aa;
+}
+
+/* Glossary Styles */
+ul#glossaryList li {
+  margin-bottom: 9px;
+}
+.ln-letters a {
+  font-size: 1rem !important;
+  color: #506590;
+  background-color: #f6f7fa;
+  font-weight: 600;
+}
+
+/* alternate table */
+
+.alternateTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+  table-layout: fixed;
+}
+.alternateTable td,
+.alternateTable th {
+  border: 1px solid #dedede;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.alternateTable tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.alternateTable th {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
+}
+
+.alternateTable caption {
+  caption-side: bottom;
+  text-align: left;
+}
+
+#question-frame h4,
+#question-frame p,
+#question-frame li {
+  margin-left: 24px;
+}
+
+#question-frame h4 {
+  margin-bottom: 0px;
+}
+
+/* Sitemap */
+.wsp-pages-title {
+  display: none;
+}

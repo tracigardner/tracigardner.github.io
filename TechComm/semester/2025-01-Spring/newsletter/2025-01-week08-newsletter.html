@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Weekly Preview for Technical Writing Courses">
+    <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+    <meta name="author" content="Traci Gardner">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Newsletter CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <style>
+        #helpbar a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        #footer a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #c64600;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #c64600;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c64600;
+        }
+
+        .key ul li {
+            margin-bottom: 12px;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 150px;
+            /* Adjusted height */
+            border-bottom: 2px solid #333;
+            position: relative;
+        }
+
+        .bars-wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            width: 100%;
+        }
+
+        .bar {
+            width: 50px;
+            color: white;
+            font-size: 15pt;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            border-radius: 5px 5px 0 0;
+            transition: height 0.5s ease-in-out;
+            position: relative;
+        }
+
+        /* Adjusted heights */
+        .bar-30 {
+            height: 90px;
+            background-color: #861f41;
+        }
+
+        .bar-17 {
+            height: 51px;
+            background-color: #e5751f;
+        }
+
+        .bar-20 {
+            height: 60px;
+            background-color: #508590;
+        }
+
+        .bar-15 {
+            height: 45px;
+            background-color: #ce0058;
+        }
+
+        .bar-17-alt {
+            height: 51px;
+            background-color: #75787b;
+        }
+
+        /* Grid lines for better readability (only up to 50%) */
+        .grid-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .grid-line {
+            position: absolute;
+            width: 100%;
+            border-top: 1px dashed #ccc;
+            text-align: right;
+            font-size: 12px;
+            color: #777;
+            padding-right: 5px;
+        }
+
+        .line-10 {
+            top: 80%;
+        }
+
+        .line-20 {
+            top: 60%;
+        }
+
+        .line-30 {
+            top: 40%;
+        }
+
+        .line-40 {
+            top: 20%;
+        }
+
+        .line-50 {
+            top: 0%;
+            font-weight: bold;
+        }
+
+        /* Labels BELOW chart */
+        .labels-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            /* Space between chart and labels */
+        }
+
+        .bar-label {
+            font-size: 14px;
+            max-width: 100px;
+            text-align: center;
+        }
+
+        /* Hide the table visually but keep it readable for screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        .custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .custom-list li {
+            display: flex;
+            align-items: flex-start;
+            /* Align items to the top */
+            margin-bottom: 12px;
+        }
+
+        .bullet {
+            font-size: 1.2em;
+            margin-right: 8px;
+            align-self: flex-start;
+            /* Ensure the bullet aligns to the top */
+        }
+
+        .text {
+            display: block;
+            /* Ensures the entire text block behaves as one unit */
+            line-height: 1.5;
+            /* Improves readability */
+            flex: 1;
+            /* Allows the text to take up remaining space in the flex container */
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <title>Week 8 Newsletter</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid tw-header">
+            <div class="row justify-content-center">
+                <div class="col-md-12 masthead">
+                    <h1 class="text-center">Week 8 Newsletter</h1>
+                </div>
+            </div>
+            <div class="row masthead">
+                <div class="col-sm-6">
+                    <h2 class="text-left highlight" style="font-size: 21px;">Traci&rsquo;s English 3764 Course</h2>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-right highlight" style="font-size: 21px;">March 17, 2025</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="top-row" class="row border-top-line">
+        <div id="top-article" class="col-sm-6">
+            <h3>📆 Mid-Semester Check-In</h3>
+            <p>We&rsquo;re officially halfway through the semester! Here&rsquo;s how you reported feeling about the course:</p>
+            <ul>
+                <li><span class="highlight">&nbsp;&nbsp;7%</span> are feeling &ldquo;Great!&rdquo;</li>
+                <li><span class="highlight">57%</span> said they&rsquo;re feeling &ldquo;Good.&rdquo;</li>
+                <li><span class="highlight">35%</span> feel &ldquo;Okay.&rdquo;</li>
+                <li><span class="highlight">&nbsp;&nbsp;2%</span> are feeling &ldquo;Bad.&rdquo;</li>
+            </ul>
+            <p>Overall, most of you are in a good place, but if you&rsquo;re feeling overwhelmed, here are a few suggestions:</p>
+
+            <ul class="skipline">
+                <li><span class="highlight">Prioritize & Plan:</span> Break tasks into smaller steps and set mini-deadlines. </li>
+                <li><span class="highlight">Reach Out for Support:</span> Connect with your project group. A quick question or discussion can provide clarity and ease stress.</li>
+                <li><span class="highlight">Take Breaks & Recharge:</span> Working non-stop can make stress worse. Step away from the screen, go for a walk, or practice deep breathing&mdash;short breaks boost productivity!</li>
+            </ul>
+
+            </p>
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+            <h3>📚 Keeping Up</h3>
+            <p>As we move into the second half of the term, staying on track is key. Here&rsquo;s how the class is keeping up:</p>
+            <ul>
+                <li><span class="highlight">33%</span> are staying on track and rarely need the Grace Period.</li>
+                <li><span class="highlight">57%</span> are a little behind and need to catch up on one or two things.</li>
+                <li><span class="highlight">11%</span> are a week or more behind.</li>
+            </ul>
+            <p>If you need to catch up, don&rsquo;t panic! Use these strategies to get back on track:</p>
+
+            <ul class="custom-list">
+                <li><span class="bullet">📅</span> <span class="text"><span class="highlight">Make a Catch-Up Plan:</span> List everything you need to complete, sort the list by most to least urgent, and set deadlines for each task.</span></li>
+                <li><span class="bullet">⏲️</span> <span class="text"><span class="highlight">Use Timed Study Sessions:</span> Try the Pomodoro Technique—work for 25 minutes, then take a 5-minute break.</span></li>
+
+                <li><span class="bullet">🏆</span> <span class="text"><span class="highlight">Reward Yourself for Progress:</span> Set small rewards after completing tasks to stay motivated.</span></li>
+
+                <li><span class="bullet">🎧</span> <span class="text"><span class="highlight">Try Focus Music or White Noise:</span> Listening to instrumental music can help you concentrate better.</span></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="row border-top-line">
+        <div class="col-sm-6">
+
+            <h3>🤝 Group Connections</h3>
+            <p>With group projects in full swing, connecting with your team is critical. Here&rsquo;s how many members you were able to connect with this past week:</p>
+            <div class="chart-container" role="img" aria-labelledby="chart-title">
+                <span id="chart-title" class="sr-only">Group Collaboration Data - Number of Members Connected</span>
+
+                <div class="bars-wrapper">
+                    <div class="bar bar-30" role="img" aria-label="30% connected with everyone">30%</div>
+                    <div class="bar bar-17" role="img" aria-label="17% connected with all but one">17%</div>
+                    <div class="bar bar-20" role="img" aria-label="20% connected with most members">20%</div>
+                    <div class="bar bar-15" role="img" aria-label="15% connected with one or two">15%</div>
+                    <div class="bar bar-17-alt" role="img" aria-label="17% did not connect with anyone">17%</div>
+                </div>
+            </div>
+
+            <!-- Labels BELOW the chart -->
+            <div class="labels-container">
+                <div class="bar-label">Connected with everyone</div>
+                <div class="bar-label">Connected with all but one</div>
+                <div class="bar-label">Connected with most members</div>
+                <div class="bar-label">Connected with one or two</div>
+                <div class="bar-label">Did not connect with anyone</div>
+            </div>
+
+            <!-- Hidden data table for screen readers -->
+            <table class="sr-only">
+                <caption>Group Collaboration Data</caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Connected with everyone</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>Connected with all but one</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr>
+                        <td>Connected with most members</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Connected with one or two</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>Did not connect with anyone</td>
+                        <td>17%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p style="margin-top: 12px;">If you haven&rsquo;t been able to connect with your group yet, now&rsquo;s the time to check in! Send a message in Canvas, set up a quick meeting, or touch base in your group&rsquo;s discussion space. Consistent communication will make your projects much easier.</p>
+        </div>
+
+
+        <div class="col-sm-6 border-left-line">
+            <h3>🚨 Navigating Group Conflicts</h3>
+            <p>Noticed something off in your group? Don&rsquo;t ignore it&mdash;addressing issues early prevents bigger problems later.</p>
+
+            <ol class="skipline">
+                <li><span class="highlight">Identify the concern:</span> Is a team member unresponsive? Are tasks unclear? </li>
+                <li><span class="highlight">Document the issue</span> in a shared space like Canvas discussions or a group doc.</li>
+                <li><span class="highlight">Check with your team:</span> Does this issue need immediate attention, or can it be resolved over time?</li>
+                <li><span class="highlight">Brainstorm solutions:</span> Should you adjust deadlines? Divide work differently?</li>
+                <li><span class="highlight">Decide on the best approach</span> with a quick poll or discussion, and make sure everyone is on board with the plan.</li>
+                <li><span class="highlight">Keep track of decisions</span> and check in later to see if the solution is working.</li>
+
+        </div>
+    </div>
+
+
+    <div class="row border-top-line">
+        <div class="col-sm-6">
+            <h3>📌 Key Takeaways</h3>
+            <ul>
+                <li>We&rsquo;re at the <span class="highlight">halfway point!</span> Take stock of where you are and set goals for the rest of the semester.</li>
+                <li>If you&rsquo;re <span class="highlight">falling behind</span>, set aside time to catch up&mdash;small, steady progress makes a big difference.</li>
+                <li><span class="highlight">Connect with your group.</span> Even a quick check-in can keep things running smoothly.</li>
+            </ul>
+
+            <p class="encouragement">Keep up the great work! You&rsquo;ve made it this far&mdash;let&rsquo;s finish the semester strong. 🚀</p>
+
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+            <h3>❓ Have Questions?</h3>
+            <ul class="skipline">
+                <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/205859/discussion_topics/2046259" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
+                </li>
+                <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-is-the-Inbox/ta-p/55" target="_blank">Canvas Inbox</a>.</li>
+                <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/o3rsG26ZhgPxyCr69" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="helpbar" class="row justify-content-center border-top-line" style="text-align: center;">
+        <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/205859" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
+                    Home</span></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
+                    Docs</span></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
+                    Chat</span></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
+                    Online</span></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
+                    4Help</span></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_205859&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
+                    Traci</span></a></p>
+    </div>
+    <div id="footer" class="row footer-bkgd">
+        <div class="col-sm-12" style="text-align: center;">
+            <p class="footer">© 2025 Traci Gardner. This newsletter is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.</p>
+            <p class="footer-divider-line"></p>
+            <address class="footer" style="text-align: center;">
+                Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
+            </address>
+        </div>
+    </div>
+    <p style="margin-top: 9px;"></p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

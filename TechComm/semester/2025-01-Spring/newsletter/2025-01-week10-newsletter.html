@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Weekly Preview for Technical Writing Courses">
+    <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+    <meta name="author" content="Traci Gardner">
+    <!-- js for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Newsletter CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <style>
+        #helpbar a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        #footer a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff;
+        }
+
+        h4 {
+            color: #c64600;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a,
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #c64600;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c64600;
+        }
+
+        /* bar graph for school-life-work balance */
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 150px;
+            /* Adjusted height */
+            border-bottom: 2px solid #333;
+            position: relative;
+        }
+
+        .bars-wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            width: 100%;
+        }
+
+        .bar {
+            width: 50px;
+            color: white;
+            font-size: 15pt;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            border-radius: 5px 5px 0 0;
+            transition: height 0.5s ease-in-out;
+            position: relative;
+        }
+
+        /* Adjusted heights */
+        .bar-9 {
+            height: 27px;
+            background-color: #861f41;
+        }
+
+        .bar-21 {
+            height: 45px;
+            background-color: #ce0058;
+        }
+
+        .bar-49 {
+            height: 147px;
+            background-color: #e5751f;
+        }
+
+        .bar-21-alt {
+            height: 63px;
+            background-color: #508590;
+        }
+
+
+        /* Labels BELOW chart */
+        .labels-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            /* Space between chart and labels */
+        }
+
+        .bar-label {
+            font-size: 14px;
+            max-width: 100px;
+            text-align: center;
+        }
+
+        /* highlight response box in open feedback section */
+        .highlight-response {
+            background-color: #F2F0F2;
+            padding: 6px;
+            margin-bottom: 12px;
+            border-radius: 6px;
+            margin-left: 9px;
+        }
+
+        /* list with emoji as bullets */
+        .custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .custom-list li {
+            display: flex;
+            align-items: flex-start;
+            /* Align items to the top */
+            margin-bottom: 12px;
+        }
+
+        .bullet {
+            font-size: 1.2em;
+            margin-right: 8px;
+            align-self: flex-start;
+            /* Ensure the bullet aligns to the top */
+        }
+
+        .text {
+            display: block;
+            /* Ensures the entire text block behaves as one unit */
+            line-height: 1.5;
+            /* Improves readability */
+            flex: 1;
+            /* Allows the text to take up remaining space in the flex container */
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <title>Week 10 Newsletter</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid tw-header">
+            <div class="row justify-content-center">
+                <div class="col-md-12 masthead">
+                    <h1 class="text-center">Week 10 Newsletter</h1>
+                </div>
+            </div>
+            <div class="row masthead">
+                <div class="col-sm-6">
+                    <h2 class="text-left highlight" style="font-size: 21px;">Traci&rsquo;s English 3764 Course</h2>
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="text-right highlight" style="font-size: 21px;">March 31, 2025</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="top-row" class="row border-top-line">
+        <div id="attractions-content" class="col-sm-6">
+            <h3>🗓️ Coming Later This Week</h3>
+            <p>Watch for these Announcements for more help with your research and other work:</p>
+            <ul class="skipline">
+                <li>What to Do When Your Group Isn&rsquo;t Communicating</li>
+                <li>Secondary Research That Stands Out</li>
+                <li>Juggling School, Life, &amp; Work</li>
+                <li>Quick Ways to Reset and Relieve Stress</li>
+            </ul>
+
+            <h3>📬 Looking Ahead</h3>
+            <ul class="skipline">
+                <li>If you &rsquo;re behind, don&rsquo;t panic. Focus on the next step forward.</li>
+                <li>Connect with your group regularly, and be sure to communicate any challenges you encounter.</li>
+            </ul>
+
+        </div>
+        <div id="workload" class="col-sm-6 border-left-line">
+            <h3>⚒️ Managing the Workload</h3>
+            <p>A majority of you are managing well, but a solid third are starting to feel the pressure. </p>
+
+            <canvas id="workloadChart"></canvas>
+            <details>
+                <summary>Long Description of the Chart</summary>
+                <ul>
+                    <li>4% Very easy to manage</li>
+                    <li>52% Easy to manage</li>
+                    <li>39% Difficult to manage</li>
+                    <li>4% Very difficult to manage</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+
+
+    <div id="row-two" class="row border-top-line">
+        <div class="col-sm-12">
+
+            <h3 style="text-align: center;">⚖️ School-Life-Work Balance?</h3>
+        </div>
+    </div>
+
+    <div id="row-two-articles" class="row">
+        <div class="col-sm-6">
+            <p>It&rsquo;s common to feel slightly unbalanced at this point in the semester&mdash;especially in a course that asks you to juggle group work, writing, and deadlines across multiple projects.</p>
+
+            <p>If you&rsquo;re feeling stretched thin, you're not alone: nearly two-thirds of the class (70%, shown as orange and turquoise in the donut graph) described their current balance as slightly or very unbalanced.</p>
+
+            <p>Watch Announcements later this week for strategies to keep things balanced.</p>
+        </div>
+
+        <div class="col-sm-6">
+
+            <div class="chart-container" role="img" aria-labelledby="chart-title">
+                <span id="chart-title" class="sr-only">School-Life-Work Balance</span>
+                <div class="bars-wrapper">
+                    <div class="bar bar-9" role="img" aria-label="9% Very well-balanced">9%</div>
+                    <div class="bar bar-21" role="img" aria-label="21% Well-balanced">21%</div>
+                    <div class="bar bar-49" role="img" aria-label="49% Slightly unbalanced">49%</div>
+                    <div class="bar bar-21-alt" role="img" aria-label="21% Very unbalanced">21%</div>
+                </div>
+            </div>
+
+            <!-- Labels BELOW the chart -->
+            <div class="labels-container">
+                <div class="bar-label">Very well-balanced</div>
+                <div class="bar-label">Well-balanced</div>
+                <div class="bar-label">Slightly unbalanced</div>
+                <div class="bar-label">Very unbalanced</div>
+            </div>
+
+            <details style="margin-top: 15px;margin-bottom: 15px;">
+                <summary>Long Description of the Chart</summary>
+                <ul>
+                    <li>&nbsp;&nbsp;9% Very well-balanced</li>
+                    <li>21% Well-balanced</li>
+                    <li>49% Slightly unbalanced</li>
+                    <li>21% Very unbalanced</li>
+
+                </ul>
+            </details>
+        </div>
+
+    </div>
+    </div>
+
+    <div id="row-three" class="row border-top-line">
+        <div class="col-sm-12">
+
+            <h3 style="text-align: center;">🗣️ What You Told Me (Open-Ended Feedback)</h3>
+            <p>Last week, I asked you, &ldquo;What else would you like to tell me about the course at this point?&rdquo; These were the two biggest areas you mentioned.</p>
+        </div>
+    </div>
+
+    <div id="row-three-content" class="row">
+        <div class="col-sm-6">
+            <h3>🤝 Group Work Challenges</h3>
+            <p>Your responses highlight the ongoing difficulties of coordinating group work in our asynchronous course. Here&rsquo;s what stood out:</p>
+            <ul class="skipline">
+                <li>Difficulty aligning schedules for meetings and collaboration.</li>
+                <li>Uneven participation, with some members missing deadlines or not contributing.</li>
+                <li>Frustration with having to wait on others to complete shared tasks.</li>
+            </ul>
+
+            <div class="highlight-response">
+                <p><strong style="color: #861f41;border-bottom: 1px solid #861f41;">How I&rsquo;m Responding</strong></p>
+                <ul class="custom-list">
+                    <li><span class="bullet">📩</span> <span class="text">Reaching out to teams that have reported issues.</span></li>
+                    <li><span class="bullet">🧭</span> <span class="text">Posting announcements with helpful strategies.</span></li>
+                </ul>
+
+                <p><strong style="color: #861f41;border-bottom: 1px solid #861f41;">Pro Tips for Your Group</strong></p>
+                <ul class="custom-list">
+                    <li><span class="bullet">📅</span> <span class="text">Use a free scheduler like <a href="https://doodle.com" target="_blank"><em>Doodle</em></a> or <a href="https://when2meet.com" target="_blank"><em>When2meet</em></a> to lock in group meeting times.</span></li>
+
+                    <li><span class="bullet">📁</span> <span class="text">Clarify the roles (like group leader or scheduler) you set in your contract during Week 7. Be sure you establish specific responsibilities for each one.</span></li>
+                    <li><span class="bullet">🧩</span> <span class="text">Break group tasks into smaller pieces with individual deadlines.</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+            <h3>📝 Assignment Complexity</h3>
+            <p>Many of you shared concern that the assignment instructions feel hard to navigate or confusing. Here&rsquo;s what you said:</p>
+            <ul class="skipline">
+                <li>Task descriptions feel long or complicated. There&rsquo;s too much information.</li>
+                <li>Hyperlinks feel scattered or overwhelming. It&rsquo;s difficult to synthesize the details.</li>
+                <li>You&rsquo;d prefer more concise explanations of what each assignment requires.</li>
+            </ul>
+
+            <div class="highlight-response">
+                <p><strong style="color: #861f41;border-bottom: 1px solid #861f41;">How I&rsquo;m Responding</strong></p>
+                <ul class="custom-list">
+                    <li><span class="bullet">👓</span> <span class="text">Revising major project assignments to include a shorter, infographic version.</span></li>
+                    <li><span class="bullet">🧾</span> <span class="text">Retaining original versions for those who prefer full details and how-to&rsquo;s.</span></li>
+                </ul>
+
+                <p><strong style="color: #861f41;border-bottom: 1px solid #861f41;">Pro Tips for Your Group</strong></p>
+                <ul class="custom-list">
+                    <li><span class="bullet">🗂️</span> <span class="text">Start with the short version of the assignment.</span></li>
+
+                    <li><span class="bullet">🧭</span> <span class="text">Use the full version when you need more detail or examples. The long version exists because students in the past asked for details.</span></li>
+                    <li><span class="bullet">✅</span> <span class="text">Ask your group to agree on who's checking each requirement against the rubric before submitting.</span></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div id="questions" class="row border-top-line">
+        <div class="col-sm-12">
+            <h3>❓ Have Questions?</h3>
+            <ul class="skipline">
+                <li>Post <strong>public questions</strong> in the <a href="https://canvas.vt.edu/courses/205859/discussion_topics/2046259" target="_blank">General Q&amp;A Discussion in Canvas</a> if it can be shared with the class.<br>
+                </li>
+                <li>If you have a <strong>private question</strong>, send me a message with the <a href="https://community.canvaslms.com/t5/Canvas-Basics-Guide/What-is-the-Inbox/ta-p/55" target="_blank">Canvas Inbox</a>.</li>
+                <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/o3rsG26ZhgPxyCr69" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="helpbar" class="row justify-content-center border-top-line" style="text-align: center;">
+        <p style="padding-top: 9px;"><a class="btn btn-home" role="button" href="https://canvas.vt.edu/courses/205859" target="_blank"><span style="font-size: 30px;float: left;">🏠</span><strong>Course<br />
+                    Home</span></a> <a class="btn btn-home" role="button" href="https://community.canvaslms.com/t5/Canvas-Guides/ct-p/canvas_guides" target="_blank"><span style="font-size: 30px;float: left;">📒</span><strong>Canvas<br />
+                    Docs</span></a> <a class="btn btn-home" role="button" href="https://cases.canvaslms.com/liveagentchat?chattype=student" target="_blank"><span style="font-size: 30px;float: left;">💬</span><strong>Canvas Support<br />
+                    Chat</span></a> <a class="btn btn-home" role="button" href="https://4help.vt.edu/" target="_blank"><span style="font-size: 30px;float: left;">💻</span><strong>4Help<br />
+                    Online</span></a> <a class="btn btn-home" role="button" href="tel:+1-540-231-4357"><span style="font-size: 30px;float: left;">📱</span><strong>Phone<br />
+                    4Help</span></a> <a class="btn btn-home" role="button" href="https://canvas.vt.edu/conversations?context_id=course_205859&user_id=122383&user_name=Traci%20Gardner#filter=type=inbox" target="_blank"><span style="font-size: 30px;float: left;">📧</span><strong>Contact<br />
+                    Traci</span></a></p>
+    </div>
+    <div id="footer" class="row footer-bkgd">
+        <div class="col-sm-12" style="text-align: center;">
+            <p class="footer">© 2025 Traci Gardner. This newsletter is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.</p>
+            <p class="footer-divider-line"></p>
+            <address class="footer" style="text-align: center;">
+                Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
+            </address>
+        </div>
+    </div>
+    <p style="margin-top: 9px;"></p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        new Chart(document.getElementById('proposalChart'), {
+            type: 'pie',
+            data: {
+                labels: ['Somewhat useful', 'Very useful', 'Slightly useful', 'Not at all useful', 'Extremely useful'],
+                datasets: [{
+                    data: [43, 33, 17, 4, 2],
+                    backgroundColor: ['#861f41', '#2cd5c4', '#e5751f', '#508590', '#ce0058']
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('workloadChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Very easy', 'Easy to manage', 'Difficult to manage', 'Very difficult'],
+                datasets: [{
+                    data: [4, 52, 39, 4],
+                    backgroundColor: '#e5751f'
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('wellbeingChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Okay 😕', 'Good 😊', 'Great 😁', 'Terrible 😞', 'Prefer not to say 🤐'],
+                datasets: [{
+                    label: 'Wellbeing',
+                    data: [57, 28, 9, 4, 2],
+                    backgroundColor: '#861f41'
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        max: 50,
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Percentage (%)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+/* reducing left-right margin 
+.hm-container {
+    margin: 1px 1px;
+    } */
+
+/* remove title from homepage
+.page-id-38 .entry-title {
+  display: none;
+} */
+
+.screen-reader-text {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* general updates */
+
+h1,
+h3,
+h5 {
+  color: #506590;
+  clear: none;
+}
+
+h2,
+h4,
+h6 {
+  color: #861f41;
+  clear: none;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+  color: #506590;
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 6px;
+}
+
+.focal {
+  float: right;
+  margin: 0px 15px 15px 21px;
+}
+
+figcaption {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.skipline li,
+.skipline dd {
+  margin-bottom: 1rem;
+}
+
+.null li {
+  margin-bottom: 0;
+}
+
+.biblio {
+  list-style: none;
+  padding-left: 22px;
+  text-indent: -22px;
+}
+
+blockquote {
+  font-size: 1em;
+  padding: 9px 18px;
+}
+
+.byline {
+  border-top: 3px solid #506590;
+  border-bottom: 3px solid #506590;
+  margin-bottom: 24px;
+  padding: 9px;
+}
+
+.series-overview {
+  width: 270px;
+  float: right;
+  border: 3px solid #506590;
+  padding: 0px 9px 27px;
+  margin-left: 15px;
+}
+
+.series-overview h2 {
+  color: #506290;
+  font-size: 1.25rem;
+}
+
+.series-list {
+  margin: -15px;
+}
+
+/* last modified styles */
+.post-modified-info {
+  margin-top: 48px;
+  border-top: 3px solid #506590;
+}
+
+/* Navigation Triangle for Details > Summary; */
+/* It's not showing by default in the theme   */
+/* Hide the browser’s default marker */
+details summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+/* Add your own marker using ::before */
+details summary::before {
+  content: "►";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  transition: transform 0.2s ease;
+  color: #506590;
+}
+
+/* Rotate the triangle when open */
+details[open] summary::before {
+  content: "▼";
+  color: #506590;
+}
+
+/* reduce header white space from 28px */
+.site-title,
+.site-title a {
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-branding {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* VT borders for header & footer */
+
+#site-navigation,
+.site-footer {
+  border-top: 3px solid #861f41;
+  border-bottom: 3px solid #861f41;
+  position: relative;
+}
+
+#site-navigation:before,
+.site-footer:before {
+  position: absolute;
+  display: block;
+  content: "";
+  border-top: 2px solid #e5751f;
+  border-bottom: 2px solid #e5751f;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*  saving as backup
+ .header-main-area {
+	border-top: 3px solid #861f41;
+}
+
+.site-footer{
+	border-top: 1px solid #e5751f;
+	  outline: 3px solid #861f41;
+}
+
+ */
+
+/* additional hdr/nav css */
+.site-title,
+.site-title a:link,
+.site-title a:active,
+.site-title a:hover,
+.site-title a:visited {
+  color: #506590;
+}
+.hm-nwrap {
+  background-color: #506590;
+}
+.main-navigation,
+.site-info {
+  background-color: #506590;
+}
+.main-navigation a {
+  color: #ffffff;
+}
+.main-navigation ul {
+  text-transform: none;
+}
+.site-info {
+  background-color: #506590;
+  color: #ffffff;
+  font-weight: bold;
+}
+.site-info a:link,
+.site-info a:active,
+.site-info a:hover,
+.site-info a:visited {
+  color: #ffffff;
+  font-weight: bold;
+}
+.entry-title,
+.entry-title h1 {
+  color: #506590 !important;
+}
+
+/* Page Contents Styles */
+#ez-toc-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 3px double #506590;
+}
+
+/* prev/next styles */
+.toc-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  position: relative;
+}
+
+.toc-nav-wrapper .toc-nav-prev {
+  margin-right: auto;
+}
+
+.toc-nav-wrapper .toc-nav-next {
+  margin-left: auto;
+}
+
+.toc-nav-wrapper a {
+  background-color: #506590;
+  color: #fff;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.toc-nav-wrapper a:hover {
+  background-color: #7788aa;
+}
+
+/* Glossary Styles */
+ul#glossaryList li {
+  margin-bottom: 9px;
+}
+.ln-letters a {
+  font-size: 1rem !important;
+  color: #506590;
+  background-color: #f6f7fa;
+  font-weight: 600;
+}
+/* alternate table */
+
+.alternateTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+  table-layout: fixed;
+}
+
+.alternateTable th[scope="col"] {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
+}
+
+/* Odd-numbered header rows */
+.alternateTable tbody tr:nth-child(odd) th[scope="row"] {
+  background-color: #f9f9f9;
+  color: #404040;
+  text-align: left;
+  padding: 12px;
+  vertical-align: top;
+}
+
+/* Even-numbered rows */
+.alternateTable tbody tr:nth-child(even) th[scope="row"] {
+  background-color: #ffffff;
+  color: #404040;
+  text-align: left;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.alternateTable td {
+  border: 1px solid #dedede;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.alternateTable tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.alternateTable caption {
+  caption-side: bottom;
+  text-align: left;
+}
+
+#question-frame {
+  border: 6px double #506590;
+  padding: 12px;
+}
+
+#question-frame h4,
+#question-frame p,
+#question-frame li {
+  margin-left: 24px;
+}
+
+#question-frame h4 {
+  margin-bottom: 0px;
+}
+
+/* Sitemap */
+.wsp-pages-title {
+  display: none;
+}
+
+/*** Tablepress css ***/
+/*** From Plugin Options Tab ***/
+
+.tablepress thead {
+  --text-color: #333;
+  --head-text-color: #ffffff;
+  --head-bg-color: #506590;
+  --head-active-bg-color: #7788aa;
+  --head-active-text-color: #ffffff;
+  --head-sort-arrow-color: #ffffff;
+}
+
+.tablepress thead th {
+  position: relative;
+  background-color: var(--head-bg-color);
+  color: var(--head-text-color);
+  z-index: 1;
+}
+
+.tablepress thead th::before,
+.tablepress thead th::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.tablepress thead th::before {
+  top: 0;
+  height: 5px; /* 3px + 2px */
+  background: linear-gradient(#861f41 3px, #e5751f 3px);
+}
+
+.tablepress thead th::after {
+  bottom: 0;
+  height: 5px; /* 2px + 3px */
+  background: linear-gradient(#e5751f 2px, #861f41 2px);
+}
+
+.tablepress thead .dt-orderable-asc:hover,
+.tablepress thead .dt-orderable-desc:hover,
+.tablepress thead .dt-ordering-asc,
+.tablepress thead .dt-ordering-desc {
+  background-color: #7788aa;
+  color: var(--head-active-text-color);
+}
+
+#width-tablecol th.column-1 {
+  width: 50%;
+}
+
+#width-tablecol ul,
+#width-tablecol ol {
+  margin: 0 0 1.5em 0;
+  padding-left: 2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  border: 1px solid #506590;
+}

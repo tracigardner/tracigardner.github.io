@@ -1,0 +1,88 @@
+﻿Category,Sub-Category,URL,Name,,Description,Price,Pros,Cons,Utilization Rating [1-10]
+General Use,Conversation,https://copilot.microsoft.com,Microsoft Copilot,"<a href=""https://copilot.microsoft.com"">Microsoft Copilot</a>","Microsoft Copilot is an AI-powered productivity tool that integrates with Microsoft 365 apps, using large language models to generate text, answer questions, and create images based on prompts.
+",Free to VT account,"Seamless integration with Microsoft Office Suite.
+Enhances productivity by automating repetitive tasks.
+AI-powered suggestions for improving content and workflow.
+User-friendly and familiar interface for Office users.","Requires a subscription to Microsoft 365.
+Limited to Microsoft Office applications.
+May have privacy concerns related to data usage.",10
+General Use,Conversation,https://chat.openai.com,ChatGPT,"<a href=""https://chat.openai.com"">ChatGPT</a>","ChatGPT is an AI chatbot developed by OpenAI, capable of generating human-like text responses based on prompts, assisting with various tasks, including writing, coding, and answering questions.","Free, ChatGPT Plus: $20/month","Capable of handling a wide range of queries. Regular updates with improved functionalities. Can assist with coding, writing, and general inquiries.",Responses may sometimes be inaccurate. Limited contextual understanding in some cases. Potential privacy concerns.,9
+General Use,Conversation,https://gemini.ai,Gemini,"<a href=""https://gemini.ai"">Gemini</a>","Gemini is an advanced AI model designed to provide accurate and efficient answers, integrating seamlessly with various applications.",Varies,High accuracy and efficiency. Seamless integration with various applications.,Cost may vary based on usage. Privacy concerns.,9
+General Use,Conversation,https://claude.ai,Claude,"<a href=""https://claude.ai"">Claude</a>",Claude is an AI-driven content generation tool specializing in natural language processing and generation.,"Free, Premium options",Advanced NLP capabilities. Customizable content generation.,Limited free version. May have inaccuracies.,7
+General Use,Conversation,https://perplexity.ai,Perplexity,"<a href=""https://perplexity.ai"">Perplexity</a>",Perplexity AI is a search engine that leverages AI to provide accurate and relevant search results.,Free,Accurate and relevant search results. With references. Easy to use.,Limited features compared to traditional search engines.,9
+General Use,Conversation,https://huggingface.co/chat/,HuggingChat,"<a href=""https://huggingface.co/chat/"">HuggingChat</a>","HuggingChat is an open-source AI chatbot interface built upon Hugging Face’s technological expertise. It serves as a gateway for users to interact with various AI models, allowing them to experience the power of language generation and conversation simulation in real-time",Free,"Open-source and community-driven.
+Flexibility to customize and fine-tune models.
+Supports a wide range of languages and tasks.
+Free to use and modify.","Requires technical expertise to set up and customize.
+May not have as polished an interface as commercial products.
+Limited support compared to commercial offerings.",8
+General Use,Writing and Editing,https://deepl.com,DeepL,"<a href=""https://deepl.com"">DeepL</a>",DeepL is a leading AI-powered translation tool known for its high-quality translations.,"Free, Pro: $5.99/month",High-quality translations. Supports multiple languages.,Limited features in the free version. Subscription required for advanced features.,5
+General Use,Writing and Editing,https://notion.so,Notion AI,"<a href=""https://notion.so"">Notion AI</a>",Notion AI integrates with Notion to enhance productivity by automating content generation and organization.,"Free, Plus: $4/month",Seamless integration with Notion. Enhances productivity.,Subscription required for advanced features.,7
+General Use,Writing and Editing,https://grammarly.com,Grammarly,"<a href=""https://grammarly.com"">Grammarly</a>","Grammarly is an AI-powered writing assistant that helps with grammar, punctuation, and style suggestions.","Free, Premium: $12/month",Excellent for grammar and style improvement. Integrates with various platforms.,Subscription required for advanced features.,5
+General Use,Image and Art Generation,https://leonardo.ai,Leonardo.ai,"<a href=""https://leonardo.ai"">Leonardo.ai</a>",Leonardo.ai offers AI-powered creative tools for generating and editing images.,Varies,Powerful creative tools. High-quality image generation.,Cost may vary based on usage.,6
+General Use,Image and Art Generation,https://www.midjourney.com/home,Midjourney,"<a href=""https://www.midjourney.com/home"">Midjourney</a>","MidJourney is an AI-powered platform that creates high-quality, realistic images from textual descriptions using advanced machine learning algorithms.","Midjourney has four subscription tiers. Pay month-to-month or for the entire year for a 20% discount. Each subscription plan includes access to the Midjourney member gallery, the official Discord, general commercial usage terms, and more.",Using MidJourney can enhance creativity and produce high-quality visual content quickly,require a learning curve and come with subscription costs.,10
+General Use,Image and Art Generation,https://www.vizcom.ai/,Vizcom,"<a href=""https://www.vizcom.ai/"">Vizcom</a>","Vizcom is a digital tool that allows designers to create and visualize 3D sketches and renderings in real-time, enhancing the design process with intuitive and interactive features.
+
+
+
+
+
+",Free for Starter/ $49 for professional/ $250 professional,can streamline design workflows and improve collaboration with its intuitive interface and real-time feedback,may have limitations in customization and require a reliable ,10
+General Use,Image and Art Generation,https://openai.com/index/dall-e-3/,Dall E 3,"<a href=""https://openai.com/index/dall-e-3/"">Dall E 3</a>","
+DALL·E is an AI model developed by OpenAI that generates unique images from textual descriptions, enabling the creation of imaginative and diverse visual content.","Costs $20 per month as part of ChatGPT Plus, or it's free as part of some Microsoft tools, but some tools may watermark images. DALL-E 3 also has a usage-based pricing model, with prices per image depending on the quality and resolution. For example, a standard 1024x1024 image costs $0.040, while an HD 1024x1024 image costs $0.080.",generate unique and imaginative images from text prompts,"inconsistent results, produces similar style and requires significant computational resources.",5
+General Use,Image and Art Generation,https://app.mooed.ai/login,Mooed,"<a href=""https://app.mooed.ai/login"">Mooed</a>",Mooed.ai is a creative tool for designers to quickly generate inspiration boards using advanced AI technology.,Free,simplify project management with its user-friendly interface and task organization features,lack advanced functionalities and integrations,10
+General Use,Image and Art Generation,,Stable difussion,"<a href="""">Stable difussion</a>","Stable Diffusion is an AI model that generates high-quality, detailed images from text prompts through a process of iterative refinement, utilizing advanced diffusion techniques.","Credits are priced at $10 per 1,000 credits, which is enough credits for roughly 5,000 SDXL 1.0 images.",allows for high-quality and diverse image generation with open-source flexibility,require technical expertise to implement and optimize effectively.,?
+General Use,Image and Art Generation,Various github repositories (e.g. Automatic1111),Stable diffusion local installation,"<a href=""Various github repositories (e.g. Automatic1111)"">Stable diffusion local installation</a>",Open source installation using older diffusion model,Free,allows to tweak and experiment with the parameters and prompt locally,"older model, works well with high end GPU",7
+General Use,Image and Art Generation,https://www.adobe.com,"Adobe Suite Programs: Photoshop, Illustrator, Lightroom, InDesign","<a href=""https://www.adobe.com"">Adobe Suite Programs: Photoshop, Illustrator, Lightroom, InDesign</a>","Generative fill, text to image options",Department-based contracts: Free for AAD,Easy to use,,8
+General Use,Image and Art Generation,https://civitai.com/,Civitai,"<a href=""https://civitai.com/"">Civitai</a>",Web-based image generator,"Free, paid",Can compare models,"limited free tier, 4 images per prompt",8
+General Use,Image and Art Generation,https://skybox.blockadelabs.com/,Skybox AI,"<a href=""https://skybox.blockadelabs.com/"">Skybox AI</a>",Web-based 360 image generator,"Free, paid",simple 360 skybox for rendering,free tier limited to 15 generations per month,7
+General Use,Image and Art Generation,https://firefly.adobe.com/,Adobe Firefly,"<a href=""https://firefly.adobe.com/"">Adobe Firefly</a>",Web-based text to image generation,Free for Adobe CC subscribers,Easy web access,,8
+General Use,Video Generation,https://lumalabs.ai,Lumalabs.ai,"<a href=""https://lumalabs.ai"">Lumalabs.ai</a>",Lumalabs.ai provides AI-driven tools for video creation and editing.,"Free, Premium options",Advanced video creation tools. Easy to use.,Limited features in the free version.,6
+General Use,Video Generation,https://vidnoz.com,Vidnoz,"<a href=""https://vidnoz.com"">Vidnoz</a>",Vidnoz is an AI-powered video editing tool that simplifies the video creation process.,"Free, Pro: $15/month",Simplifies video editing. High-quality output.,Subscription required for advanced features.,6
+General Use,Presentation,https://gamma.ai,Gamma,"<a href=""https://gamma.ai"">Gamma</a>",Gamma offers AI-driven analytics and insights for data analysis and decision-making.,Varies,Advanced analytics capabilities. Enhances decision-making.,Cost may vary based on usage.,6
+General Use,Presentation,https://canva.com,Canva,"<a href=""https://canva.com"">Canva</a>",Canva is a user-friendly graphic design tool with AI-powered design suggestions and templates.,"Free, Pro: $12.95/month",User-friendly design tool. Extensive templates and design suggestions.,Subscription required for advanced features.,6
+General Use,Others,https://perplexity.ai,Perplexity,"<a href=""https://perplexity.ai"">Perplexity</a>",Leverages AI to provide accurate and relevant search results.,Free,Accurate and relevant search results. With references. Easy to use.,Limited features compared to traditional search engines.,9
+General Use,Others,ElevenLabs,ElevenLabs,"<a href=""ElevenLabs"">ElevenLabs</a>","AI-generated speech, providing realistic voice cloning and synthesis.",Free version available,"High-quality, natural-sounding voice synthesis.",Can be expensive depending on usage.,8
+General Use,Others,Suno,Suno,"<a href=""Suno"">Suno</a>",AI powered music tool,Free version available,Powerful music tool.,Free version has limited features.,8
+Teaching,Course Content Design,https://gatekeep.ai/,Gatekeep,"<a href=""https://gatekeep.ai/"">Gatekeep</a>",Generate personalized videos from prompt,Free version: limited videos per day,"Generates a 10-minute video explaining math and engineering concepts with equations, animations, and narratives.",It takes several minutes to generate one video. Sometimes the graphics may not be accurate.,5
+Teaching,Course Content Design,,Magic School AI,"<a href="""">Magic School AI</a>",Interactive AI-powered educational tool for students,Free tier available with limited features,Offers interactive lessons in various subjects with AI-driven quizzes and personalized learning paths,Limited access to advanced features without a subscription,
+Teaching,Course Content Design,,Khanmigo,"<a href="""">Khanmigo</a>",AI tutor and educational assistant developed by Khan Academy,Available for free with a Khan Academy account,"Provides tutoring and homework help in multiple subjects, offers personalized feedback and study plans",May not cover all advanced topics in detail,
+Teaching,Assignments and Test Design,https://quizlet.com,quizlet,"<a href=""https://quizlet.com"">quizlet</a>","Online learning tool that provides various study modes such as flashcards, games, and quizzes.","Free tier with basic features, premium version available.","Flashcards, practice tests, games, and collaborative study modes.","Limited features in the free version, ads in the free tier.",
+Teaching,Grading,https://www.gradescope.com,GradeScope,"<a href=""https://www.gradescope.com"">GradeScope</a>","A tool for administering and grading assessments, supporting variable-length and fixed-template assignments.","Free for instructors; 
+Institutional licenses available (VT).","Efficient grading system.
+Supports various types of assignments.
+Saves time for educators.","May have a learning curve for new users.
+Limited customization options for grading rubrics.",5
+Teaching,Plagiarism Detection,https://quillbot.com/,QuillBot,"<a href=""https://quillbot.com/"">QuillBot</a>","An AI-powered tool that supports functions like paraphrasing, grammar checking, plagiarism checking, AI detection, summarizing, and citation generation.","Free basic version; 
+Premium plans available with additional features.","Effective paraphrasing.
+Enhances writing clarity and style.
+Easy to use.","Limited functionality in the free version.
+Sometimes alters the original meaning slightly.",
+Teaching,Plagiarism Detection,https://turnitin.com,Turnitin ,"<a href=""https://turnitin.com"">Turnitin </a>",Plagiarism detection service used by educators to check for originality in students' papers.,No free version; institutional subscription required.,"Plagiarism detection, grading tools, feedback studio.","Requires institutional subscription, sometimes false positives in detection.",
+Teaching,Others,https://gatekeep.ai/,Math Engineering,"<a href=""https://gatekeep.ai/"">Math Engineering</a>",Generate personalized videos from prompt,Free version: limited videos per day,"Generates a 10-minute video explaining math and engineering concepts with equations, animations, and narratives.",It takes several minutes to generate one video. Sometimes the graphics may not be accurate.,8
+Research,Literature Review,https://consensus.app,Consensus,"<a href=""https://consensus.app"">Consensus</a>","Uses AI to aggregate and synthesize scientific research findings, offering users concise summaries of the consensus on various topics.",Free and paid plans available.,"Aggregates and synthesizes research findings.
+Provides concise summaries.
+Useful for quick insights.","Limited to available research.
+May not cover niche topics extensively.",6
+Research,Literature Review,https://typeset.io/,SciSpace,"<a href=""https://typeset.io/"">SciSpace</a>","Assists researchers in discovering, reading, and understanding scientific literature by providing AI-powered search and summarization tools.","Free basic version; 
+premium subscription for additional features.","AI-powered search and summarization.
+Helps in understanding scientific literature.
+User-friendly.","Limited features in the free version.
+Premium subscription required for full functionality.",
+Research,Citation Management,https://www.researchrabbit.ai/,ResearchRabbit,"<a href=""https://www.researchrabbit.ai/"">ResearchRabbit</a>",Publication discovery and literature mapping,Free,Visual network of articles,Can miss articles if those lack particular metadata,
+Research,Citation Management,https://zotero.org,Zotero,"<a href=""https://zotero.org"">Zotero</a>","Free, easy-to-use tool to help you collect, organize, cite, and share research.",Free to use with optional premium features.,"Bibliography and citation management, integration with word processors, online sync.",Limited storage in free version.,
+ ,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,

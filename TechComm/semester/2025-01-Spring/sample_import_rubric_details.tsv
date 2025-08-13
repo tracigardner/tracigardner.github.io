@@ -1,0 +1,6 @@
+title_or_outcome_id	description	use_range	rating_points_1	rating_title_1	rating_description_1	rating_points_2	rating_title_2	rating_description_2	rating_points_3	rating_title_3	rating_description_3	rating_points_4	rating_title_4	rating_description_4	*DO NOT COPY THIS LINE FOR IMPORT* Note: Additional rating columns can be added if needed.
+Criteria 1	Optional long description	TRUE	10	Excellent	Optional description	8	Good		6	Satisfactory		0	Incomplete
+1932391
+Criteria 3		FALSE	20	Excellent		16	Good		12	Satisfactory		0	None
+Criteria 4		FALSE	10	Complete		0	Incomplete
+1134090
