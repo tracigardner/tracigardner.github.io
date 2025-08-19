@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas Homepage</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Welcome to ENGL 3764: Technical Writing</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+        <p><strong>Add QUICKLINKS</strong></p>
+        <ul>
+            <li><a title="General Q&amp;A Discussion Board in Canvas" href="https://canvas.vt.edu/courses/216149/discussion_topics/2199196" data-course-type="discussions" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/discussion_topics/2199196" data-api-returntype="Discussion">General Q&amp;A Discussion Board in Canvas</a></li>
+            <li><a href="https://tracigardner.github.io/TechComm/semester/2025-08-Fall/ShortGuide2TW-Fall25.pdf">Technical Writing Course Overview</a> (Short Guide to the Course)</li>
+            <li><a title="Semester-Long Project Overview: Writing with Ut Prosim in Mind" href="https://canvas.vt.edu/courses/216149/pages/semester-long-project-overview-writing-with-ut-prosim-in-mind" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/semester-long-project-overview-writing-with-ut-prosim-in-mind" data-api-returntype="Page">Semester-Long Project Overview: Writing with Ut Prosim in Mind</a></li>
+            <li><a title="Report Subject Ideas by Major" href="https://canvas.vt.edu/courses/216149/pages/report-subject-ideas-by-major" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/report-subject-ideas-by-major" data-api-returntype="Page">Report Subject Ideas by Major</a></li>
+            <li><a title="Using AI Ethically in This Course" href="https://canvas.vt.edu/courses/216149/pages/using-ai-ethically-in-this-course" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/using-ai-ethically-in-this-course" data-api-returntype="Page">Using AI Ethically in This Course</a></li>
+            <li><a title="Document Samples" href="https://canvas.vt.edu/courses/216149/pages/document-samples" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/document-samples" data-api-returntype="Page">Document Samples</a></li>
+            <ul>
+                <li>This page contains samples of the major assignments, including many produced by former students. Refer to them as you work on your own submissions.</li>
+            </ul>
+            <li><a class="instructure_file_link instructure_scribd_file inline_disabled" title="Deliverable Checklist.pdf" href="https://canvas.vt.edu/courses/216149/files/40176957?wrap=1" target="_blank" rel="noopener" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176957" data-api-returntype="File">Deliverable Checklist</a><br />
+                <ul>
+                    <li>This is a single checklist that you should use when you produce any major assignment in this course. Some of it is adaptable to each assignment; the rest covers plain language and document design principles. Use this checklist as an actual checklist when preparing your own work.</li>
+                </ul>
+                <a id="40105011" class="instructure_file_link instructure_scribd_file inline_disabled" href="https://canvas.vt.edu/courses/216149/files/40176957?wrap=1" target="_blank" rel="noopener" data-canvas-previewable="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176957" data-api-returntype="File"></a>
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p><strong>English 3764: Technical Writing </strong>will enable you to gain an understanding of the theories, issues, and practices of technical communications you might encounter in the workplace, such as general correspondence, proposals, reports, and presentations.</p>
+        <p>From a foundation based on the principles of rhetoric, you will learn to analyze writing situations, consider the needs of your audience, assemble evidence, and design final documents that are user-friendly and visually persuasive. By the time this course is over, you should be able to understand these documents and produce them with ease and confidence.</p>
+        <p>In addition to quizzes, discussions, and homework, your work this semester will focus on the production of <strong>five interconnected documents</strong> that allow you to select and work with a socially-relevant subject that interests you within your major. The following two pages are designed to explain this project and help you select a subject if you don't already have one in mind:</p>
+        <p style="text-align: center;font-weight: bold; font-size: 1.5rem;"><a title="Semester-Long Project Overview: Writing with Ut Prosim in Mind" href="https://canvas.vt.edu/courses/216149/pages/semester-long-project-overview-writing-with-ut-prosim-in-mind" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/semester-long-project-overview-writing-with-ut-prosim-in-mind" data-api-returntype="Page">Semester-Long Project Overview: Writing with Ut Prosim in Mind</a></p>
+        <p style="text-align: center;font-weight: bold; font-size: 1.5rem;"><a title="Report Subject Ideas by Major" href="https://canvas.vt.edu/courses/216149/pages/report-subject-ideas-by-major" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/report-subject-ideas-by-major" data-api-returntype="Page">Report Subject Ideas by Major</a></p>
+        <p>Additionally, you will not only learn to develop essential workplace skills, create impactful content, and design for usability, but you are also permitted &mdash; if you choose &mdash; to use AI in all stages of the writing process, including</p>
+        <ul>
+            <li>Brainstorming,</li>
+            <li>Freewriting,</li>
+            <li>Research,</li>
+            <li>Outline creation,</li>
+            <li>Draft review, and</li>
+            <li>Review of deliverables, among other tasks.</li>
+        </ul>
+        <p>Please note that you are not required to use AI. If you choose to do so, you will need to follow the procedure outlined on the <a title="Using AI Ethically in This Course" href="https://canvas.vt.edu/courses/216149/pages/using-ai-ethically-in-this-course" data-course-type="wikiPages" data-published="false" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/using-ai-ethically-in-this-course" data-api-returntype="Page"><strong>Using AI Ethically in This Course page</strong></a>. <em><strong>If you choose to use AI, you must submit two assignments identified on this page.</strong></em></p>
+        <p>&nbsp;</p>
+        <h2><span><em><img id="23753820" role="presentation" src="https://canvas.vt.edu/courses/216149/files/40176971/preview" alt="" width="28" height="28" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176971" data-api-returntype="File" /></em></span> Course Objectives<strong></strong></h2>
+        <p>Having successfully completed this course, students will be able to perform the technical writing tasks defined by the learning objectives for the course:</p>
+        <ul>
+            <li class="whitespace-normal break-words">Analyze the rhetorical situation and determine the appropriate audience or users of written communication, considering the needs of global audiences and people with disabilities. [CLO 1]</li>
+            <li class="whitespace-normal break-words">Conduct research appropriate to workplace problem solving, such as literature review, evaluation of online resources, interview, and site inspection. [CLO 2]</li>
+            <li class="whitespace-normal break-words">Interpret research findings with understanding of ethical and human implications. [CLO 3]</li>
+            <li class="whitespace-normal break-words">Use conventions of various workplace genres, such as proposals, instructions, correspondence, reports, and slide decks, with understanding of how the genre conventions can be used as heuristics and as principles of arrangement. [CLO 4]</li>
+            <li class="whitespace-normal break-words">Collaborate with classmates in planning, researching, writing, revising, and presenting information. [CLO 5]</li>
+            <li class="whitespace-normal break-words">Apply principles of effective visual design for print and electronic presentation, including hierarchical, chronological, and spatial arrangements. [CLO 6]</li>
+            <li class="whitespace-normal break-words">Identify and apply the principles of effective style in the composing of usable, reader-centered written communications. [CLO 7]</li>
+        </ul>
+        <ul>
+            <li class="whitespace-normal break-words">Evaluate the ethical implications of using AI in technical writing, considering issues such as authorship, transparency, and potential biases. [CLO 8]</li>
+            <li class="whitespace-normal break-words">Apply AI tools strategically to enhance the writing process, including ideation, drafting, and revision, while maintaining the writer's voice and critical thinking skills. [CLO 9]<strong></strong></li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2><img id="23753810" role="presentation" src="https://canvas.vt.edu/courses/216149/files/40176970/preview" alt="" width="30" height="30" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176970" data-api-returntype="File" /> Texts &amp; Materials</h2>
+        <p>The free textbook for this course is <a class="inline_disabled" href="https://docs.google.com/document/d/e/2PACX-1vRIS8pYQLcWTlCcKB9Gwsnarc5AxOF7C_V7Ox8ft7OoN0kzIlB73PpeUXMpN4YwBMLLLG0ZPynPqmpF/pub" target="_blank" rel="noopener"><em><strong>Writing for Action: An Introduction to Technical Communication</strong></em></a>.</p>
+        <p>&nbsp;</p>
+        <h2><img id="23753817" role="presentation" src="https://canvas.vt.edu/courses/216149/files/40176973/preview" alt="" width="28" height="28" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176973" data-api-returntype="File" /> Course Structure</h2>
+        <p>This course consists of five modules, each containing an introductory page and broken down by week. <strong></strong><a title="Introduction to the Course" href="https://canvas.vt.edu/courses/151641/pages/introduction-to-the-course" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/151641/pages/introduction-to-the-course" data-api-returntype="Page"><strong></strong></a>To access each module, click on "Modules" in the menu at left or go directly to the <a title="Modules" href="https://canvas.vt.edu/courses/216149/modules" data-course-type="navigation" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/modules" data-api-returntype="[Module]"><strong>Modules</strong></a> page.</p>
+        <p style="padding-left: 30px;"><a title="Module 1: What is Technical Writing and Why Does it Matter?" href="https://canvas.vt.edu/courses/173236/pages/module-1-what-is-technical-writing-and-why-does-it-matter" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/173236/pages/module-1-what-is-technical-writing-and-why-does-it-matter" data-api-returntype="Page"><strong></strong></a><strong></strong></p>
+        <p><strong>Two things to remember:</strong></p>
+        <ul>
+            <li>Assignments are available via the module and at the bottom of the Syllabus page.
+                <ul>
+                    <li>They are listed, but not linked, on the introductory page for each module.</li>
+                </ul>
+            </li>
+            <li>To access readings, you must visit the module.</li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2><img id="34212817" role="presentation" src="https://canvas.vt.edu/courses/216149/files/40176974/preview" alt="" width="25" height="25" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176974" data-api-returntype="File" /> Quick Links</h2>
+        <ul>
+            <li style="text-align: left;"><strong><a title="Semester-Long Project Overview: Writing for Equity and Community Impact" href="https://canvas.vt.edu/courses/216149/pages/semester-long-project-overview-writing-for-equity-and-community-impact" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/semester-long-project-overview-writing-for-equity-and-community-impact" data-api-returntype="Page"><span style="font-size: 14pt;"><span style="font-size: 12pt;">Semester-Long Project Overview: Writing for Equity and Community Impact</span></span></a></strong></li>
+            <li style="text-align: left;"><span style="font-size: 12pt;"><a title="Report Subject Ideas by Major" href="https://canvas.vt.edu/courses/216149/pages/report-subject-ideas-by-major" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/report-subject-ideas-by-major" data-api-returntype="Page"><strong>Report Subject Ideas by Major</strong></a></span></li>
+            <li style="text-align: left;"><a title="Using AI Ethically in This Course" href="https://canvas.vt.edu/courses/216149/pages/using-ai-ethically-in-this-course" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/using-ai-ethically-in-this-course" data-api-returntype="Page"><span style="font-size: 12pt;"><strong>Using AI Ethically in This Course</strong></span></a></li>
+            <li style="text-align: left;"><a title="Document Samples" href="https://canvas.vt.edu/courses/216149/pages/document-samples" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/document-samples" data-api-returntype="Page"><span style="font-size: 12pt;"><strong>Document Samples</strong></span></a>
+                <ul>
+                    <li style="text-align: left;"><span style="font-size: 12pt;">This page contains samples of the major assignments, including many produced by former students. Refer to them as you work on your own submissions.</span></li>
+                </ul>
+            </li>
+            <li style="text-align: left;"><a id="40105011" class="instructure_file_link instructure_scribd_file inline_disabled" href="https://canvas.vt.edu/courses/216149/files/40176957?wrap=1" target="_blank" rel="noopener" data-canvas-previewable="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176957" data-api-returntype="File"><span style="font-size: 12pt;"><strong>Deliverable Checklist</strong></span></a>
+                <ul>
+                    <li style="text-align: left;"><span style="font-size: 12pt;">This is a single checklist that you should use when you produce any major assignment in this course. Some of it is adaptable to each assignment; the rest covers plain language and document design principles. Use this checklist as an actual checklist when preparing your own work.</span></li>
+                </ul>
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+        <h2><img id="23753826" role="presentation" src="https://canvas.vt.edu/courses/216149/files/40176972/preview" alt="" width="28" height="28" data-ally-user-updated-alt="" data-decorative="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/files/40176972" data-api-returntype="File" /> Instructor Contact</h2>
+        <p>Please feel free to reach out with any questions or concerns.</p>
+        <ul>
+            <li><span style="line-height: 1.5;">Jen Mooney | &nbsp;<a href="mailto:jenmoon@vt.edu" target="_blank" rel="noopener">jenmoon@vt.edu</a>) |&nbsp; 231 Shanks Hall | Zoom by appointment | <a title="About Your Teacher" href="https://canvas.vt.edu/courses/216149/pages/about-your-teacher" data-course-type="wikiPages" data-published="true" data-api-endpoint="https://canvas.vt.edu/api/v1/courses/216149/pages/about-your-teacher" data-api-returntype="Page"><strong>About Your Teacher</strong></a></span>
+                <ul>
+                    <li><strong>Details of Contact:</strong>
+                        <ul>
+                            <li><span>I check email routinely M-F and generally respond the same day. On weekends, I check email once per day and will respond within 36 hours. However, if you write to me after about 5 pm, you are unlikely to receive an answer until the next day. </span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
