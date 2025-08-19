@@ -1,0 +1,31 @@
+h1,
+h3,
+h5 {
+  color: #861f41;
+  font-weight: bold;
+}
+
+h2,
+h4,
+h6 {
+  color: #c64600;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+  font-size: 18px;
+  border-top: 1px solid #861f41;
+  padding-top: 15px;
+}
+
+a,
+a:visited,
+a:active,
+a:link,
+a:hover {
+  color: #c64600;
+}
