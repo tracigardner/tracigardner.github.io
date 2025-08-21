@@ -30,3 +30,8 @@ a:hover {
   color: #c64600;
   text-decoration: underline;
 }
+
+.badge-image img {
+  width: 64px;
+  height: 64px;
+}
