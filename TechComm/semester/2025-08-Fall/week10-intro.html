@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Week 1 Introduction, Fall 2025</title>
+    <title>Week 3 Introduction, Fall 2025</title>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -48,18 +48,22 @@
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Week 1, Introduction, Fall 2025</h1>"
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Week 3, Introduction, Fall 2025</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
-    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
+    <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 0px 6px;">
+        <figure class="badge-figure"><img src="https://tracigardner.github.io/TechComm/-images/badges/TW-m01-courseintro.png" alt="Badge for Week , maroon and orange badge with wavy edge, showing " class="badge-image" />
+            <figcaption>Badge for Week <br>Technical Writing: </figcaption>
+        </figure>
+
         <p>CONTENT HERE</p>
 
     </div>
     <div id="bottominfo"></div>
     <script>
         if (window.location !== window.parent.location) {
-            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            return;
             // The page is in an iframe
         } else {
             // The page is not in an iframe
