@@ -109,7 +109,7 @@
     <div id="bottominfo"></div>
     <script>
         if (window.location !== window.parent.location) {
-            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            return;
             // The page is in an iframe
         } else {
             // The page is not in an iframe
