@@ -28,4 +28,5 @@ a:active,
 a:link,
 a:hover {
   color: #c64600;
+  text-decoration: underline;
 }
