@@ -41,3 +41,7 @@ a:hover {
   float: right;
   margin: 0 0 15px 15px;
 }
+
+.badge-figure figcaption {
+  text-align: center;
+}
