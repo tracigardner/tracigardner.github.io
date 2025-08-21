@@ -22,6 +22,10 @@ h3 {
   padding-top: 15px;
 }
 
+.noborder {
+  border-top: 0;
+}
+
 a,
 a:visited,
 a:active,
