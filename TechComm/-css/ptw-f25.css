@@ -55,6 +55,6 @@ a:hover {
   border-top: 0;
 }
 
-,
-module-intro p {
+.module-intro p {
+  padding-left: 80px;
 }
