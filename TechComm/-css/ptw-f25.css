@@ -50,11 +50,11 @@ a:hover {
   text-align: center;
 }
 
-.module-intro h3 {
+.module-intro-hdr {
   padding-left: 40px;
   border-top: 0;
 }
 
-.module-intro p {
+.module-intro-p {
   padding-left: 80px;
 }
