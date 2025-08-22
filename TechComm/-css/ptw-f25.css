@@ -49,3 +49,12 @@ a:hover {
 .badge-figure figcaption {
   text-align: center;
 }
+
+.module-intro h3 {
+  padding-left: 40px;
+  border-top: 0;
+}
+
+,
+module-intro p {
+}
