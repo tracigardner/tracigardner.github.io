@@ -1,0 +1,28 @@
+.info-section {
+  background-color: #ffffff;
+  padding: 9px;
+  color: #333333;
+  box-shadow: 10px 10px #d7d2cb;
+  margin-top: 24px;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 600;
+  background-color: #861f41;
+  padding: 9px;
+  color: #ffffff;
+  margin-bottom: 21px;
+  display: inline-block;
+  margin-top: 0;
+  box-shadow: 10px 10px #d7d2cb;
+}
+
+p {
+  font-size: 15px !important;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
