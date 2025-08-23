@@ -26,3 +26,8 @@ p {
   font-size: 24px;
   font-weight: 600;
 }
+
+.info-section img {
+  width: 150px;
+  height: 150px;
+}
