@@ -1,12 +1,11 @@
-p,
-li {
-  font-size: 18px !important;
-}
-
 .bkgd-page {
   background-image: url("https://tracigardner.github.io/TechComm/-images/assignments/Teal_Background_Tile.png");
   background-color: #508590;
-  margin: 36px;
+}
+
+p,
+li {
+  font-size: 18px !important;
 }
 
 .info-section {
