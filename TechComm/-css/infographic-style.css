@@ -1,5 +1,6 @@
-body {
-  font-size: 18px;
+p,
+li {
+  font-size: 18px !important;
 }
 
 .info-section {
@@ -31,7 +32,3 @@ h3 {
   width: 180px;
   height: 180px;
 }
-
-/* p
-  font-size: 15px !important;
-} */
