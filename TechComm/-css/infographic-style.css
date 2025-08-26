@@ -52,6 +52,10 @@ h3 {
   box-shadow: 10px 10px #d7d2cb;
 }
 
+h4 {
+  border-bottom: 1px solid #c64600;
+}
+
 .info-section h2 {
   font-size: 24px;
   font-weight: 600;
