@@ -17,6 +17,15 @@ li {
   margin-top: 24px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h3 {
   font-size: 21px;
   font-weight: 600;
