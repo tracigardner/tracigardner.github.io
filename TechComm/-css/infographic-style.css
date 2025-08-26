@@ -4,13 +4,16 @@
 }
 
 p,
-li,
-#postBody p,
-#postBody li {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   font-size: 15px !important;
 }
 
+#postBody p,
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-size: 15px !important;
+}
 .info-section {
   background-color: #ffffff;
   padding: 9px;
@@ -20,18 +23,21 @@ li,
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
 #postBody h1,
 h2,
-#postBody h2,
 h3,
-#postBody h3,
 h4,
-#postBody h4,
 h5,
-#postBody h5,
-h6,
-#postBody h6 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
 h3 {
