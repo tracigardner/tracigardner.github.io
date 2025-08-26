@@ -5,7 +5,8 @@
 
 p,
 li {
-  font-size: 18px !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px !important;
 }
 
 .info-section {
