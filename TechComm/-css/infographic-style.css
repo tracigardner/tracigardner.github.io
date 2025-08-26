@@ -4,7 +4,9 @@
 }
 
 p,
-li {
+li,
+#postBody p,
+#postBody li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px !important;
 }
@@ -18,11 +20,17 @@ li {
 }
 
 h1,
+#postBody h1,
 h2,
+#postBody h2,
 h3,
+#postBody h3,
 h4,
+#postBody h4,
 h5,
-h6 {
+#postBody h5,
+h6,
+#postBody h6 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
