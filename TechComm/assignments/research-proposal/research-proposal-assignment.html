@@ -23,69 +23,6 @@
 
     <link href="../../-css/infographic-style.css" rel="stylesheet" type="text/css" />
 
-    <style>
-        :root {
-            --icon-size: 10px;
-            --triangle-color: #861f41;
-        }
-
-
-        details summary {
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            list-style: none;
-            user-select: none;
-        }
-
-
-        /* Remove default marker */
-        details summary::-webkit-details-marker {
-            display: none;
-        }
-
-
-        /* Triangle icon built with borders */
-        .triangle {
-            width: 0;
-            height: 0;
-            border-left: var(--icon-size) solid transparent;
-            border-right: var(--icon-size) solid transparent;
-            border-top: calc(var(--icon-size) * 1.2) solid var(--triangle-color);
-            transition: transform 0.2s ease;
-        }
-
-
-        /* Closed state: point right */
-        details:not([open]) .triangle {
-            transform: rotate(-90deg);
-        }
-
-
-        /* Summary text toggles with no JS */
-        .show-when-open,
-        .show-when-closed {
-            display: inline;
-        }
-
-        details[open] .show-when-open {
-            display: inline;
-        }
-
-        details[open] .show-when-closed {
-            display: none;
-        }
-
-        details:not([open]) .show-when-open {
-            display: none;
-        }
-
-        details:not([open]) .show-when-closed {
-            display: inline;
-        }
-    </style>
-
 
     <!-- include scripts -->
     <script>
