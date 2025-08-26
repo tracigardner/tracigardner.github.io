@@ -21,6 +21,78 @@
 
     <link href="https://tracigardner.github.io/TechComm/-css/infographic-style.css" rel="stylesheet" type="text/css" />
     <link href="../..-css/infographic-style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        :root {
+            --icon-size: 10px;
+            --triangle-color: #861f41;
+        }
+
+
+        details summary {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            list-style: none;
+            user-select: none;
+        }
+
+
+        /* Remove default marker */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+
+        /* Triangle icon built with borders */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: var(--icon-size) solid transparent;
+            border-right: var(--icon-size) solid transparent;
+            border-top: calc(var(--icon-size) * 1.2) solid var(--triangle-color);
+            transition: transform 0.2s ease;
+        }
+
+
+        /* Closed state: point right */
+        details:not([open]) .triangle {
+            transform: rotate(-90deg);
+        }
+
+
+        /* Summary text toggles with no JS */
+        .show-when-open,
+        .show-when-closed {
+            display: inline;
+        }
+
+        details[open] .show-when-open {
+            display: inline;
+        }
+
+        details[open] .show-when-closed {
+            display: none;
+        }
+
+        details:not([open]) .show-when-open {
+            display: none;
+        }
+
+        details:not([open]) .show-when-closed {
+            display: inline;
+        }
+
+
+        /* Optional: focus styles for accessibility */
+        summary:focus {
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+        }
+    </style>
+
+
     <!-- include scripts -->
     <script>
         $(document).ready(function () {
@@ -78,20 +150,28 @@
 
                 <div id="objectives" class="info-section">
                     <h3>Assignment Learning Objectives</h3>
+                    <details open>
 
-                    <p><img src="https://tracigardner.github.io/TechComm/-images/assignments/noun-mission-7864071-861F41.png" alt="" style="float: right; margin: 12px;">aasdfs You will also develop your ability to:</p>
-                    <ol class="skipline">
-                        <li><strong>Develop a clear, well-reasoned research plan</strong> that proposes a socially relevant topic suitable for technical communication and justifies its significance for further investigation.</li>
-                        <li><strong>Organize a formal research proposal using standard memo format</strong>, including eight required sections that mirror professional and academic proposal structures.</li>
-                        <li><strong>Conduct preliminary research and evaluate potential sources</strong> by identifying, summarizing, and quoting from at least five credible texts relevant to the proposed topic.</li>
-                        <li><strong>Analyze and define the intended audience</strong> for the future fact sheet, considering the audience&rsquo;s knowledge level, interests, and informational needs.</li>
-                        <li><strong>Demonstrate professional ethos</strong> by describing personal qualifications and explaining the relevance of one&rsquo;s background or academic training to the proposed topic.</li>
-                        <li><strong>Create and interpret a visual project timeline</strong> (Gantt chart or table) that outlines major stages of the research and writing process.</li>
-                        <li><strong>Apply principles of document design and visual rhetoric</strong> to improve the clarity, engagement, and usability of the proposal using headings, visuals, captions, spacing, and formatting conventions.</li>
-                        <li><strong>Cite sources accurately using a disciplinary citation style</strong> and provide a correctly formatted Works Cited or Bibliography page.</li>
-                        <li><strong>Craft a persuasive argument for project approval</strong>, summarizing the proposal&rsquo;s key points and formally requesting permission to proceed.</li>
-                    </ol>
-                    <p>This assignment strengthens your skills in project planning, audience awareness, and workplace communication.</p>
+                        <summary>
+                            <span class="triangle" aria-hidden="true"></span>
+                            <span class="show-when-open">Hide this section</span>
+                            <span class="show-when-closed">Show this section</span>
+                        </summary>
+
+                        <p style="margin-top: 12px;"><img src="https://tracigardner.github.io/TechComm/-images/assignments/noun-mission-7864071-861F41.png" alt="" style="float: right; margin: 12px;">This assignment strengthens your skills in project planning, audience awareness, and workplace communication. You will develop your ability to:</p>
+                        <ol class="skipline">
+                            <li><strong>Develop a clear, well-reasoned research plan</strong> that proposes a socially relevant topic suitable for technical communication and justifies its significance for further investigation.</li>
+                            <li><strong>Organize a formal research proposal using standard memo format</strong>, including eight required sections that mirror professional and academic proposal structures.</li>
+                            <li><strong>Conduct preliminary research and evaluate potential sources</strong> by identifying, summarizing, and quoting from at least five credible texts relevant to the proposed topic.</li>
+                            <li><strong>Analyze and define the intended audience</strong> for the future fact sheet, considering the audience&rsquo;s knowledge level, interests, and informational needs.</li>
+                            <li><strong>Demonstrate professional ethos</strong> by describing personal qualifications and explaining the relevance of one&rsquo;s background or academic training to the proposed topic.</li>
+                            <li><strong>Create and interpret a visual project timeline</strong> (Gantt chart or table) that outlines major stages of the research and writing process.</li>
+                            <li><strong>Apply principles of document design and visual rhetoric</strong> to improve the clarity, engagement, and usability of the proposal using headings, visuals, captions, spacing, and formatting conventions.</li>
+                            <li><strong>Cite sources accurately using a disciplinary citation style</strong> and provide a correctly formatted Works Cited or Bibliography page.</li>
+                            <li><strong>Craft a persuasive argument for project approval</strong>, summarizing the proposal&rsquo;s key points and formally requesting permission to proceed.</li>
+                        </ol>
+                    </details>
+
                 </div>
 
                 <div id="audience" class="info-section">
