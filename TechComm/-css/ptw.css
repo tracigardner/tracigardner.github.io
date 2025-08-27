@@ -7,326 +7,12 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-/* Font Families */
-/* Acherus */
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_thin.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_thin.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_thin.ttf)
-      format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_thinitalic.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_thinitalic.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_thinitalic.ttf)
-      format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_light.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_light.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_light.ttf)
-      format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_lightitalic.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_lightitalic.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_lightitalic.ttf)
-      format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_regular.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_regular.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_regular.ttf)
-      format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_italic.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_italic.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_italic.ttf)
-      format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_medium.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_medium.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_medium.ttf)
-      format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_mediumitalic.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_mediumitalic.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_mediumitalic.ttf)
-      format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_bold.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_bold.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_bold.ttf)
-      format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_bolditalic.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_bolditalic.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_bolditalic.ttf)
-      format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_extrabold.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_extrabold.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_extrabold.ttf)
-      format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_extrabolditalic.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_extrabolditalic.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_extrabolditalic.ttf)
-      format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_black.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_black.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_black.ttf)
-      format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: Acherus;
-  src: url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_blackitalic.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_blackitalic.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/acherusgrotesque/acherusgrotesque_blackitalic.ttf)
-      format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-
-/* Gineso Font */
-
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConThi.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConThi.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConThi.ttf)
-      format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConThiIt.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConThiIt.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConThiIt.ttf)
-      format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConLig.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConLig.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConLig.ttf)
-      format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConLigIt.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConLigIt.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConLigIt.ttf)
-      format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConReg.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConReg.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConReg.ttf)
-      format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConRegIt.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConRegIt.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConRegIt.ttf)
-      format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBoo.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBoo.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBoo.ttf)
-      format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBooIt.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBooIt.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBooIt.ttf)
-      format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConDem.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConDem.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConDem.ttf)
-      format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConDemIt.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConDemIt.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConDemIt.ttf)
-      format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBol.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBol.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBol.ttf)
-      format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBolIt.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBolIt.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBolIt.ttf)
-      format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBla.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBla.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBla.ttf)
-      format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: gineso-condensed;
-  src: url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBlaIt.woff2)
-      format("woff2"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBlaIt.woff)
-      format("woff"),
-    url(https://www.assets.cms.vt.edu/fonts/gineso-condensed/Gineso-ConBlaIt.ttf)
-      format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-
 /* * * * * * * * * * * */
 /* the various styles */
 /* * * * * * * * * * * */
 
 body {
-  font-family: "Acherus", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
 }
 h1,
@@ -341,10 +27,10 @@ ol,
 td,
 dd,
 dt {
-  font-family: "Acherus", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .boo ul li {
-  font-family: "Acherus", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
 }
 .jumbotron h1 {
@@ -355,7 +41,7 @@ h1 {
   color: #861f41;
 }
 h2 {
-  color: #e87722;
+  color: #c64600;
   font-size: 21px;
 }
 h3 {
@@ -363,7 +49,7 @@ h3 {
   font-size: 18px;
 }
 h4 {
-  color: #e87722;
+  color: #c64600;
 }
 .navbar-nav > li > a {
   padding-top: 5px !important;
@@ -373,13 +59,13 @@ h4 {
   min-height: 32px !important;
 }
 #vtNav {
-  background-color: #e87722;
+  background-color: #c64600;
   color: #fefefe;
   border: none;
   border-radius: 0px;
 }
 #vtNav a {
-  background-color: #e87722;
+  background-color: #c64600;
   color: #fefefe;
   font-size: 18px;
   text-decoration: none;
@@ -397,7 +83,7 @@ ol li,
 td,
 dd,
 dt {
-  font-family: "Acherus", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
 }
 .b0ld {
@@ -505,7 +191,7 @@ figcaption,
 a,
 li a {
   text-decoration: underline;
-  color: #e87722;
+  color: #c64600;
 }
 a:hover,
 li a:hover {
@@ -513,7 +199,7 @@ li a:hover {
   color: #861f41;
 }
 .orangebox {
-  border: 6px solid #e87722;
+  border: 6px solid #c64600;
   border-style: double;
   box-sizing: border-box;
   padding: 0 5px 5px 20px;
@@ -563,7 +249,7 @@ a.activeMenuItem {
 }
 
 .page-header-sidebar {
-  border-bottom: 1px solid #e87722;
+  border-bottom: 1px solid #c64600;
   margin: 40px 0 20px;
   padding: 15px 15px 15px 15px;
   font-size: 18px;
@@ -573,7 +259,7 @@ a.activeMenuItem {
 .page-header-content {
   margin: 40px 0 20px;
   padding-bottom: 9px;
-  border-bottom: 1px solid #e87722;
+  border-bottom: 1px solid #c64600;
 }
 
 .alignnone {
@@ -607,7 +293,7 @@ a.activeMenuItem {
 }
 
 .page-header-sidebar {
-  border-bottom: 1px solid #e87722;
+  border-bottom: 1px solid #c64600;
   margin: 40px 0 20px;
   padding: 15px 15px 15px 15px;
   font-size: 18px;
@@ -617,7 +303,7 @@ a.activeMenuItem {
 .page-header-content {
   margin: 40px 0 20px;
   padding-bottom: 9px;
-  border-bottom: 1px solid #e87722;
+  border-bottom: 1px solid #c64600;
 }
 
 /* 
@@ -630,7 +316,7 @@ a.activeMenuItem {
   text-decoration: none;
 }
 .btn-home:hover {
-  background-color: #e87722;
+  background-color: #c64600;
 }
 
 .tips-style {
