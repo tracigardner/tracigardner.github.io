@@ -312,11 +312,13 @@ a.activeMenuItem {
 .btn-home {
   border-radius: 9px;
   background-color: #861f41;
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
 }
 .btn-home:hover {
-  background-color: #c64600;
+  background-color: #ffffff;
+  color: #861f41 !important;
+  border: 1px solid #861f41;
 }
 
 .tips-style {
