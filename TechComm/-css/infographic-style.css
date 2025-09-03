@@ -3,6 +3,11 @@
   background-color: #508590;
 }
 
+.bkgd-anno {
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/hexagons-teal_640.jpg");
+  background-color: #508590;
+}
+
 p,
 li {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
