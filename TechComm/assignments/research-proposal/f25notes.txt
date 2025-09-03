@@ -1,0 +1,44 @@
+This badge is awarded to students in Traci Gardner’s English 3764 course: Technical Writing who submit all Module 2 requirements, which focus on rhetorical awareness and reader-centered communication.
+
+
+Submission of all Module 2 requirements, focusing on developing rhetorical awareness.
+
+
+“Please create a Canvas Classic Quiz (QTI 1.2) package that I can import directly. The quiz should be packaged as a .zip with both imsmanifest.xml and quiz.xml. Each item should include Canvas metadata (question_type, points_possible), use true/false idents for True/False questions, and score 1 point for correct answers and 0 for incorrect answers.”
+
+
+
+        <div style="padding: 12px;border: 6px double #508590;background-color: #edf3f4;" id="">
+            <h3 style="color: #861f41;font-size: 18px;"><strong>Title</strong></h3>
+
+            <details style="margin-bottom: 15px;" id="">
+                <summary>question</summary>
+                <p style="margin-left: 48px;">answer</p>
+                </summary>
+            </details>
+
+            <details style="margin-bottom: 15px;" id="">
+                <summary>question</summary>
+                <p style="margin-left: 48px;">answer</p>
+                </summary>
+            </details>
+
+            <details style="margin-bottom: 15px;" id="">
+                <summary>question</summary>
+                <p style="margin-left: 48px;">answer</p>
+                </summary>
+            </details>
+
+            <details style="margin-bottom: 15px;" id="">
+                <summary>question</summary>
+                <p style="margin-left: 48px;">answer</p>
+                </summary>
+            </details>
+
+            <details style="margin-bottom: 15px;" id="">
+                <summary>question</summary>
+                <p style="margin-left: 48px;">answer</p>
+                </summary>
+            </details>
+        </div>
+	<p>&nbsp;</p>
