@@ -58,6 +58,14 @@ h3 {
   box-shadow: 10px 10px #d7d2cb;
 }
 
+.anno h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #861f41;
+  margin-bottom: 21px;
+  margin-top: 0;
+}
+
 h4 {
   border-bottom: 1px solid #c64600;
 }
