@@ -27,6 +27,13 @@ li {
   box-shadow: 10px 10px #d7d2cb;
   margin-top: 24px;
 }
+.anno-section {
+  background-color: #ffffff;
+  padding: 9px;
+  color: #333333;
+  box-shadow: none;
+  margin-top: 24px;
+}
 
 h1,
 h2,
