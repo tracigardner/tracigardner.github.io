@@ -17,7 +17,15 @@
 
     <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://tracigardner.github.io/TechComm/-css/infographic-style.css" rel="stylesheet" type="text/css" />
+    <style>
+        details {
+            margin-bottom: 15px;
+        }
+
+        details p {
+            margin-left: 48px;
+        }
+    </style>
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
 
@@ -60,44 +68,50 @@
     <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 0px 6px;">
         <p>CONTENT HERE</p>
 
+        <div id="duedates">
+            <h3>Due Dates &amp; the Grace Period</h3>
 
-        <body style="padding: 0 6px 0 6px;">
-            <div class="bkgd-page">
-                <div id="pagewidth" style="margin: 36px;">
-                    <p>&nbsp;</p>
-                    <h2 style="font-size: 36px;padding-top: 24px;background-color: #861f41;padding: 9px;color: #ffffff; box-shadow: 10px 10px #d7d2cb;">Research Proposal for Informational Report</h2>
+            <details id="dd-sep5">
+                <summary>Is this assignment due September 5th? Or do we have the whole semester?</summary>
+                <p>The Subject Selection Message has a Target Due Date of September 5. The semester-long <em>Ut Prosim</em> projects are due on various dates throughout the term. A list of Target Due Dates for assignments through September 26 is on <a href="https://canvas.vt.edu/courses/216149/assignments/syllabus" target="_blank">the Syllabus page</a>. Scroll down past the course policies manual.</p>
+                </summary>
+            </details>
 
-                    <div id="duedates" class="info-section">
-                        <h3>Due Dates</h3>
+            <details id="dd-alldates">
+                <summary>Is there an easily accessible list of deadlines for that assignment?</summary>
+                <p>The deadlines for each week are available in the Module for that week. Additionally, a list of Target Due Dates for assignments through September 26 is on <a href="https://canvas.vt.edu/courses/216149/assignments/syllabus" target="_blank">the Syllabus page</a>. Scroll down past the course policies manual. More dates will be listed as I add the course material.</p>
+                </summary>
+            </details>
 
-                        <details closed>
+            <details id="dd-sameday">
+                <summary>All of the assignments are due on the same day every week, so I&rsquo;m struggling to find time.</summary>
+                <p>Staggered deadlines&mdash;quizzes on Tuesday, discussions on Wednesday, projects on Thursday&mdash;rarely fit everyone&rsquo;s schedules. Instead, each week has one Target Due Date at the end of the week. The idea is to give you the freedom to manage your own time each week. Plan your own milestones, and complete all work by that Target Due Date. If you need more time any week, use the Grace Period.</p>
+                </summary>
+            </details>
 
-                            <summary>
-                                <span class="triangle" aria-hidden="true"></span>
-                                <span class="show-when-open"><strong>Is this assignment due September 5th? Or do we have the whole semester?</strong></span>
-                                <span class="show-when-closed"><strong>The Subject Selection Message has a Target Due Date of September 5. The semester-long <em>Ut Prosim</em> projects are due on various dates throughout the term. A list of Target Due Dates for assignments through September 26 is on <a href="https://canvas.vt.edu/courses/216149/assignments/syllabus">the Syllabus page</a>. Scroll down past the course policies manual.</strong></span>
-                            </summary>
+            <details id="dd-grace">
+                <summary>I'm still a little confused about the grace period deadline.</summary>
+                <p>The deadlines for each week are available in the Module for that week. Additionally, a list of Target Due Dates for assignments through September 26 is on <a href="https://canvas.vt.edu/courses/216149/assignments/syllabus" target="_blank">the Syllabus page</a>. Scroll down past the course policies manual. More dates will be listed as I add the course material.</p>
+                </summary>
+            </details>
 
-                        </details>
-                    </div>
-
+        </div>
 
 
 
-
-                </div>
-                <div id="bottominfo"></div>
-                <script>
-                    if (window.location !== window.parent.location) {
-                        document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
-                        // The page is in an iframe
-                    } else {
-                        // The page is not in an iframe
-                        document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-                        // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
-                    }
-                </script>
-        </body>
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
 
 </html>
 
