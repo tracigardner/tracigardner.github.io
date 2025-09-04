@@ -75,6 +75,7 @@ h3 {
   display: inline-block;
   margin-top: 0;
   box-shadow: none;
+  border: none !important;
 }
 
 .anno-maroon {
