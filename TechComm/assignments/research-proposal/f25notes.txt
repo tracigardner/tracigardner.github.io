@@ -42,3 +42,9 @@ Submission of all Module 2 requirements, focusing on developing rhetorical aware
             </details>
         </div>
 	<p>&nbsp;</p>
+	
+	
+	
+                    <div style="background:#fff; border:1px dashed #e5e7eb; padding:10px 12px; border-radius:10px; margin:0 0 12px 0;">
+                        
+                    </div>
