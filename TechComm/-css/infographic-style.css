@@ -83,8 +83,7 @@ h3 {
   background-color: #861f41;
   padding: 9px;
   color: #ffffff;
-  margin-bottom: 21px;
-  display: inline-block;
+  margin-bottom: 0 !important;
   margin-top: 0;
   box-shadow: none;
 }
