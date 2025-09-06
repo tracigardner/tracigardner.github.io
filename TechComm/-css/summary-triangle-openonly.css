@@ -1,3 +1,14 @@
+/* This style manages the triangle indicator and changing    */
+/* text for the detail/summary element. To use, you need the */
+/* following code within the detail element:                 */
+/* <details open> 
+  <summary> 
+  <span class="triangle" aria-hidden="true"> </span> 
+  <span class="show-when-open"> Hide this section</span> 
+  <span class="show-when-closed"> Show this section</span>
+  </summary> 
+*/
+
 :root {
   --icon-size: 10px;
   --triangle-color: #861f41;
@@ -32,7 +43,7 @@ details:not([open]) .triangle {
   transform: rotate(-90deg);
 }
 
-/* Text toggling (base behavior for all details) */
+/* Summary text toggles with no JS */
 .show-when-open,
 .show-when-closed {
   display: inline;
@@ -52,16 +63,4 @@ details:not([open]) .show-when-open {
 
 details:not([open]) .show-when-closed {
   display: inline;
-}
-
-/* --- Versions --- */
-
-/* Version 1: Open by default */
-.details-open[open] {
-  /* nothing extra needed, just a semantic marker */
-}
-
-/* Version 2: Closed by default */
-.details-closed {
-  /* start closed unless explicitly opened by user */
 }

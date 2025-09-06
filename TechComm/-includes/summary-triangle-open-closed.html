@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        Skip to content Chat history You said: I'm pasting in code that you wrote in another chat. It set the default for a details summary HTML element to default to open, showing a triangle icon that rotated when the element was closed. I want you to create a new version that defaults to CLOSE, with the triangle icon feature. Add supplemental CSS & HTML or edit the existing CSS & HTML so that both versions can work on the same HTML page.
+
+        <style>
+        /* This style manages the triangle indicator and changing    */
+        /* text for the detail/summary element. To use, you need the */
+        /* following code within the detail element:                 */
+        /* <details open> 
+  <summary> 
+  <span class="triangle" aria-hidden="true"> </span> 
+  <span class="show-when-open"> Hide this section</span> 
+  <span class="show-when-closed"> Show this section</span>
+  </summary> 
+*/
+
+        :root {
+            --icon-size: 10px;
+            --triangle-color: #861f41;
+        }
+
+        details summary {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            list-style: none;
+            user-select: none;
+        }
+
+        /* Remove default marker */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Triangle icon built with borders */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: var(--icon-size) solid transparent;
+            border-right: var(--icon-size) solid transparent;
+            border-top: calc(var(--icon-size) * 1.2) solid var(--triangle-color);
+            transition: transform 0.2s ease;
+        }
+
+        /* Closed state: point right */
+        details:not([open]) .triangle {
+            transform: rotate(-90deg);
+        }
+
+        /* Summary text toggles with no JS */
+        .show-when-open,
+        .show-when-closed {
+            display: inline;
+        }
+
+        details[open] .show-when-open {
+            display: inline;
+        }
+
+        details[open] .show-when-closed {
+            display: none;
+        }
+
+        details:not([open]) .show-when-open {
+            display: none;
+        }
+
+        details:not([open]) .show-when-closed {
+            display: inline;
+        }
+    </style>
+
+    <details open>
+
+        <summary>
+            <span class="triangle" aria-hidden="true"></span>
+            <span class="show-when-open"><strong>Hide this section</strong></span>
+            <span class="show-when-closed"><strong>Show this section</strong></span>
+        </summary>
+
+        <p style="margin-top: 12px;"><img src="https://tracigardner.github.io/TechComm/-images/assignments/noun-mission-7864071-861F41.png" alt="" style="float: right; margin: 12px;">By completing this assignment, you will develop your ability to:</p>
+        <ul class="skipline">
+            <li style="background-color: #fff8dc">Translate specialized or technical information from your informational report into a clear, helpful document that supports real-world action or decision-making by a non-expert audience.</li>
+            <li>Design a usable, accessible document that meets the needs of a specific audience by applying plain language principles, strong visual communication strategies, and effective document design (CRAP: contrast, repetition, alignment, proximity).</li>
+            <li>Choose the most appropriate user-facing document type (e.g., instructions, flowchart, learning aid, troubleshooting guide) based on your topic, the needs of your audience, and the social value or community issue connected to your report subject.</li>
+            <li>Demonstrate audience awareness by tailoring your tone, structure, and content to support users in understanding, navigating, or acting on a complex subject with ease and confidence.</li>
+            <li>Incorporate and explain visuals (such as diagrams, screenshots, or icons) to increase the clarity, accessibility, and effectiveness of your user document.</li>
+            <li style="background-color: #fff8dc">Reflect on your design and communication decisions by writing a clear, well-structured memo that explains how your document supports users and connects to your informational report topic.</li>
+        </ul>
+    </details>
+    ChatGPT said:
+    Got it! ✅ You want to keep your current open-by-default version and add a closed-by-default version, both with the rotating triangle and toggle text.
+
+    Here’s an updated version that allows both to coexist on the same page. I added a .details-open and .details-closed class so you can explicitly control which style you want.
+
+    <style>
+        :root {
+            --icon-size: 10px;
+            --triangle-color: #861f41;
+        }
+
+        details summary {
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            list-style: none;
+            user-select: none;
+        }
+
+        /* Remove default marker */
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Triangle icon built with borders */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: var(--icon-size) solid transparent;
+            border-right: var(--icon-size) solid transparent;
+            border-top: calc(var(--icon-size) * 1.2) solid var(--triangle-color);
+            transition: transform 0.2s ease;
+        }
+
+        /* Closed state: point right */
+        details:not([open]) .triangle {
+            transform: rotate(-90deg);
+        }
+
+        /* Text toggling (base behavior for all details) */
+        .show-when-open,
+        .show-when-closed {
+            display: inline;
+        }
+
+        details[open] .show-when-open {
+            display: inline;
+        }
+
+        details[open] .show-when-closed {
+            display: none;
+        }
+
+        details:not([open]) .show-when-open {
+            display: none;
+        }
+
+        details:not([open]) .show-when-closed {
+            display: inline;
+        }
+
+        /* --- Versions --- */
+
+        /* Version 1: Open by default */
+        .details-open[open] {
+            /* nothing extra needed, just a semantic marker */
+        }
+
+        /* Version 2: Closed by default */
+        .details-closed {
+            /* start closed unless explicitly opened by user */
+        }
+    </style>
+
+    <!-- Open by default -->
+    <details class="details-open" open>
+        <summary>
+            <span class="triangle" aria-hidden="true"></span>
+            <span class="show-when-open"><strong>Hide this section</strong></span>
+            <span class="show-when-closed"><strong>Show this section</strong></span>
+        </summary>
+        <p>This section starts open.</p>
+    </details>
+
+    <!-- Closed by default -->
+    <details class="details-closed">
+        <summary>
+            <span class="triangle" aria-hidden="true"></span>
+            <span class="show-when-open"><strong>Hide this section</strong></span>
+            <span class="show-when-closed"><strong>Show this section</strong></span>
+        </summary>
+        <p>This section starts closed.</p>
+    </details>
+    How it works:
+    Use <details class="details-open" open> → starts open.
+
+        Use <details class="details-closed"> (no open attribute) → starts closed.
+
+            Both share the same CSS for the rotating triangle and toggle text, so they look consistent.
+
+
+</body>
+
+</html>
