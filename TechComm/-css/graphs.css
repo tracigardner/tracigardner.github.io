@@ -1,0 +1,29 @@
+.piechart {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    #861f41 0deg,
+    #861f41 266deg,
+    #2cd5c4 266deg,
+    #2cd5c4 334deg,
+    #e5751f 334deg,
+    #e5751f 342deg,
+    #d7d2cb 342deg,
+    #d7d2cb 360deg
+  );
+  position: relative;
+  margin: 0px 0px 0px 24px;
+  outline: 1px solid #ccc;
+}
+
+.legend span:after {
+  display: inline-block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 0.2em;
+  background: currentColor;
+}
