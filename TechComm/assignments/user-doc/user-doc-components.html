@@ -21,6 +21,28 @@
 
     <link href="https://tracigardner.github.io/TechComm/-css/infographic-style.css" rel="stylesheet" type="text/css" />
 
+    <style>
+        .content-row-style {
+            margin-bottom: 24px;
+        }
+
+        .number-style {
+            color: #ed8b00;
+            font-size: 54pt;
+            font-weight: bold;
+            text-shadow: 3px 3px #861f41;
+        }
+
+        .content-style {
+            background-color: #ed8b00;
+            color: #ffffff;
+            padding: 6px;
+            box-shadow: 6px 6px #861f41;
+        }
+    </style>
+
+
+
     <!-- include scripts -->
     <script>
         $(document).ready(function () {
@@ -61,19 +83,75 @@
         <div class="row" id="responsive-row">
             <div class="col-sm-12" id="responsive-col">
                 <div id="background-pattern" class="bkgd-anno container-fluid" style="background-color: #508590;padding: 0 6px 0 6px;width: 100%;">
-                    <div id="pagewidth" class="container-fluid" style="margin: 36px;width: 90%;background-color: #ffffff;">
+                    <div id="pagewidth" class="container-fluid" style="margin: 36px;width: 90%;">
 
-                        <div id="page-title" class="anno-section container-fluid">
-                            <h2 style="font-size: 30px;color: #508590;border: 0;">Components of User Documents</h2>
+                        <div id="page-title" class="anno-section container-fluid" style="margin: 0px !important;">
+                            <h2 style="font-size: 30px;color: #861f41;border: 0;text-align: center;margin-bottom: 24px;">Components of User Documents</h2>
+                            <div id="content-layout" class="container-fluid">
 
-                            <div style="background-color: #edf3f4;padding: 9px;border: 1px solid #508590">
+                                <!-- ROW ONE: TITLE -->
+                                <div id="content-row-01" class="row content-row-style">
+                                    <div id="content-num01" class="col-sm-1 number-style">
+                                        1
+                                    </div>
+                                    <div id="spacer-01" class="col-sm-1">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div id="content-title" class="col-sm-10 content-style">
+                                        <span style="font-size: 24px;font-weight: bold;">Title</span><br>Clear, concise; use “how to” phrasing or a gerund (-ing verb).
+                                    </div>
+                                </div>
+
+                                <!-- ROW TWO: DATE -->
+                                <div id=" content-row-02" class="row content-row-style">
+                                    <div id="content-num02" class="col-sm-1 number-style">
+                                        2
+                                    </div>
+                                    <div id="spacer-01" class="col-sm-1">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div id="content-date" class="col-sm-10 content-style">
+                                        <span style="font-size: 24px;font-weight: bold;">Date</span><br>
+                                        Indicates currency and version context.
+                                    </div>
+                                </div>
+
+                                <!-- ROW THREE: TOC -->
+                                <div id="content-row-03" class="row content-row-style">
+                                    <div id="content-num03" class="col-sm-1 number-style">
+                                        3
+                                    </div>
+                                    <div id="spacer-03" class="col-sm-1">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div id="content-toc" class="col-sm-10 content-style">
+                                        <span style="font-size: 24px;font-weight: bold;">xxx</span><br>xxx
+                                    </div>
+                                </div>
+
+
+                                <!-- ROW FOUR: XXX -->
+                                <div id="content-row-04" class="row content-row-style">
+                                    <div id="content-num04" class="col-sm-1 number-style">
+                                        4
+                                    </div>
+                                    <div id="spacer-04" class="col-sm-1">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div id="content-intro" class="col-sm-10 content-style">
+                                        <span style="font-size: 24px;font-weight: bold;">xxx</span><br>xxx
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <p style="font-size: 360px;">&nbsp;</p>
+
+                            <div style="padding: 9px;border: 1px solid #508590">
                                 <ol>
-                                    <li>
-                                        <strong>Title</strong>: Clear, concise; use &ldquo;how to&rdquo; phrasing or a gerund (-ing verb).
-                                    </li>
-                                    <li>
-                                        <strong>Date</strong>: Indicates currency and version context.
-                                    </li>
+
                                     <li>
                                         <strong>Table of Contents</strong> <em>(Optional, for multi-task, multi-section, or manual-length documents)</em>.
                                     </li>
