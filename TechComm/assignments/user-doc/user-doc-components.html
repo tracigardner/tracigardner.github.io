@@ -81,145 +81,144 @@
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
-    <div class="container-fluid" id="responsive-layer" style="max-width: 1200px;">
-        <div class="row" id="responsive-row">
-            <div class="col-sm-22" id="responsive-col">
-                <div id="background-pattern" class="bkgd-anno container-fluid" style="background-color: #508590;padding: 0 6px 0 6px;width: 100%;">
-                    <div id="pagewidth" class="container-fluid" style="margin: 36px;width: 90%;background-color: #ffffff;">
+    <div id="pagewidth" class="container-fluid">
 
-                        <div id="page-title" class="anno-section container-fluid" style="margin: 0px !important;">
-                            <h2 style="color: #ffffff;font-size: 30px;background-color: #508590;border: 0;text-align: center;padding: 9px;box-shadow: 6px 6px #d7d2cb;margin-bottom: 24px;">Components of User Documents</h2>
-                            <div id="content-layout" class="container-fluid">
-
-                                <!-- ROW ONE: TITLE -->
-                                <div id="content-row-01" class="row content-row-style">
-                                    <div id="content-num01" class="col-sm-3 number-style">
-                                        1
-                                    </div>
-                                    <div id="content-title" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Title</span><br>Clear, concise; use “how to” phrasing or a gerund (-ing verb).
-                                    </div>
-                                </div>
-
-                                <!-- ROW TWO: DATE -->
-                                <div id=" content-row-02" class="row content-row-style">
-                                    <div id="content-num02" class="col-sm-3 number-style">
-                                        2
-                                    </div>
-                                    <div id="content-date" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Date</span><br>
-                                        Indicates currency and version context.
-                                    </div>
-                                </div>
-
-                                <!-- ROW THREE: TOC -->
-                                <div id="content-row-03" class="row content-row-style">
-                                    <div id="content-num03" class="col-sm-3 number-style">
-                                        3
-                                    </div>
-                                    <div id="content-toc" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Table of Contents <em>(optional)</em></span><br>for multi-task, multi-section, or manual-length documents
-                                    </div>
-                                </div>
-
-                                <!-- ROW FOUR: INTRO -->
-                                <div id="content-row-04" class="row content-row-style">
-                                    <div id="content-num04" class="col-sm-3 number-style">
-                                        4
-                                    </div>
-                                    <div id="content-intro" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Introduction</span><br>State task and scope, audience/background needs, purpose/outcome, when to use, and an overview.
-                                    </div>
-                                </div>
-
-                                <!-- ROW FIVE: GENERAL NOTICES -->
-                                <div id="content-row-05" class="row content-row-style">
-                                    <div id="content-num05" class="col-sm-3 number-style">
-                                        5
-                                    </div>
-                                    <div id="content-gennotices" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">General Notices</span><br>Notes, Cautions, Warnings, Dangers to highlight risks or key exceptions.
-                                    </div>
-                                </div>
-
-                                <!-- ROW SIX: BKGD -->
-                                <div id="content-row-06" class="row content-row-style">
-                                    <div id="content-num06" class="col-sm-3 number-style">
-                                        6
-                                    </div>
-                                    <div id="content-bkgd" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Technical Background or Theory</span><br>(Optional): Concepts/definitions needed to understand the procedure.
-                                    </div>
-                                </div>
-
-                                <!-- ROW SEVEN: EQUIPMENT -->
-                                <div id="content-row-07" class="row content-row-style">
-                                    <div id="content-num07" class="col-sm-3 number-style">
-                                        7
-                                    </div>
-                                    <div id="content-equipment" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">List of Equipment and Supplies</span><br>Tools, equipment, and consumables (add specs like brand, size, amount as needed).
-                                    </div>
-                                </div>
-
-                                <!-- ROW EIGHT: DIRECTIONS -->
-                                <div id="content-row-08" class="row content-row-style">
-                                    <div id="content-num08" class="col-sm-3 number-style">
-                                        8
-                                    </div>
-                                    <div id="content-directions" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Directions (Steps)</span><br>Step-by-step instructions with appropriate formatting and visuals:
-                                        <ul class="null">
-                                            <li><strong>Fixed-order steps</strong>: Numbered list.</li>
-                                            <li><strong>Variable-order steps</strong>: Bulleted list.</li>
-                                            <li><strong>Alternate steps</strong>: Bulleted options with &ldquo;OR.&rdquo;</li>
-                                            <li><strong>Nested steps</strong>: Indented substeps (a, b, c...).</li>
-                                            <li><strong>&ldquo;Stepless&rdquo; instructions</strong>: General guidance when steps don&rsquo;t fit.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!-- ROW NINE: CONCLUSION -->
-                                <div id="content-row-09" class="row content-row-style">
-                                    <div id="content-num09" class="col-sm-3 number-style">
-                                        9
-                                    </div>
-                                    <div id="content-conclusion" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Conclusion</span><br>Wrap-up, troubleshooting guidance, and contact information.
-                                    </div>
-                                </div>
-
-                                <!-- ROW TEN: BACK MATTER -->
-                                <div id="content-row-10" class="row content-row-style">
-                                    <div id="content-num10" class="col-sm-3 number-style">
-                                        10
-                                    </div>
-                                    <div id="content-backmatter" class="col-sm-9 content-style">
-                                        <span style="font-size: 24px;font-weight: bold;">Back Matter</span><br>References, glossary/appendix, index, technical specifications.
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                        <p style="padding-bottom: 18px;">&nbsp;</p>
-                    </div>
+        <!--  PAGE TITLE -->
+        <div id="page-title-section" class="row">
+            <div id="page-title-column" class="col-sm-12" style="background-color: #861f41;border-bottom: 9px solid #e5751f;margin-bottom: 24px;">
+                <h2 id="page-title" style="color: #ffffff;font-size: 30px;border: 0;text-align: center;padding: 9px;">Components of User Documents</h2>
+                <div id="content-layout" class="container-fluid">
                 </div>
             </div>
         </div>
 
-        <div id="bottominfo"></div>
-        <script>
-            if (window.location !== window.parent.location) {
-                return;
-                // The page is in an iframe
-            } else {
-                // The page is not in an iframe
-                document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-                // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
-            }
-        </script>
+        <!-- ROW ONE: TITLE -->
+        <div id="content-row-01" class="row content-row-style">
+            <div id="content-num01" class="col-sm-3 number-style">
+                1
+            </div>
+            <div id="content-title" class="col-sm-9 content-style" style="margin-right: 24px;">
+                <span style="font-size: 24px;font-weight: bold;">Title</span><br>Clear, concise; use “how to” phrasing or a gerund (-ing verb).
+            </div>
+        </div>
+
+        <!-- ROW TWO: DATE -->
+        <div id=" content-row-02" class="row content-row-style">
+            <div id="content-num02" class="col-sm-3 number-style">
+                2
+            </div>
+            <div id="content-date" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">Date</span><br>
+                Indicates currency and version context.
+            </div>
+        </div>
+
+        <!-- ROW THREE: TOC -->
+        <div id="content-row-03" class="row content-row-style">
+            <div id="content-num03" class="col-sm-3 number-style">
+                3
+            </div>
+            <div id="content-toc" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">Table of Contents <em>(optional)</em></span><br>for multi-task, multi-section, or manual-length documents
+            </div>
+        </div>
+
+        <!-- ROW FOUR: INTRO -->
+        <div id="content-row-04" class="row content-row-style">
+            <div id="content-num04" class="col-sm-3 number-style">
+                4
+            </div>
+            <div id="content-intro" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">Introduction</span><br>State task and scope, audience/background needs, purpose/outcome, when to use, and an overview.
+            </div>
+        </div>
+
+        <!-- ROW FIVE: GENERAL NOTICES -->
+        <div id="content-row-05" class="row content-row-style">
+            <div id="content-num05" class="col-sm-3 number-style">
+                5
+            </div>
+            <div id="content-gennotices" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">General Notices</span><br>Notes, Cautions, Warnings, Dangers to highlight risks or key exceptions.
+            </div>
+        </div>
+
+        <!-- ROW SIX: BKGD -->
+        <div id="content-row-06" class="row content-row-style">
+            <div id="content-num06" class="col-sm-3 number-style">
+                6
+            </div>
+            <div id="content-bkgd" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">Technical Background or Theory</span><br>(Optional): Concepts/definitions needed to understand the procedure.
+            </div>
+        </div>
+
+        <!-- ROW SEVEN: EQUIPMENT -->
+        <div id="content-row-07" class="row content-row-style">
+            <div id="content-num07" class="col-sm-3 number-style">
+                7
+            </div>
+            <div id="content-equipment" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">List of Equipment and Supplies</span><br>Tools, equipment, and consumables (add specs like brand, size, amount as needed).
+            </div>
+        </div>
+
+        <!-- ROW EIGHT: DIRECTIONS -->
+        <div id="content-row-08" class="row content-row-style">
+            <div id="content-num08" class="col-sm-3 number-style">
+                8
+            </div>
+            <div id="content-directions" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">Directions (Steps)</span><br>Step-by-step instructions with appropriate formatting and visuals:
+                <ul class="null">
+                    <li><strong>Fixed-order steps</strong>: Numbered list.</li>
+                    <li><strong>Variable-order steps</strong>: Bulleted list.</li>
+                    <li><strong>Alternate steps</strong>: Bulleted options with &ldquo;OR.&rdquo;</li>
+                    <li><strong>Nested steps</strong>: Indented substeps (a, b, c...).</li>
+                    <li><strong>&ldquo;Stepless&rdquo; instructions</strong>: General guidance when steps don&rsquo;t fit.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ROW NINE: CONCLUSION -->
+        <div id="content-row-09" class="row content-row-style">
+            <div id="content-num09" class="col-sm-3 number-style">
+                9
+            </div>
+            <div id="content-conclusion" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">Conclusion</span><br>Wrap-up, troubleshooting guidance, and contact information.
+            </div>
+        </div>
+
+        <!-- ROW TEN: BACK MATTER -->
+        <div id="content-row-10" class="row content-row-style">
+            <div id="content-num10" class="col-sm-3 number-style">
+                10
+            </div>
+            <div id="content-backmatter" class="col-sm-9 content-style">
+                <span style="font-size: 24px;font-weight: bold;">Back Matter</span><br>References, glossary/appendix, index, technical specifications.
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+    <p style="padding-bottom: 18px;">&nbsp;</p>
+    </div>
+
+
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            return;
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
 </body>
 
 </html>
