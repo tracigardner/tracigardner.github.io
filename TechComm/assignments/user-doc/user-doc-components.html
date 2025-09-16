@@ -19,15 +19,13 @@
 
     <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css" />
 
-    <link href="https://tracigardner.github.io/TechComm/-css/infographic-style.css" rel="stylesheet" type="text/css" />
-
     <style>
         .content-row-style {
             margin-bottom: 24px;
         }
 
         .number-style {
-            color: #508590;
+            color: #861f41;
             font-size: 54pt;
             font-weight: bold;
             text-shadow: 3px 3px #d7d2cb;
@@ -35,11 +33,14 @@
         }
 
         .content-style {
-            background-color: #ffffff;
-            color: #508590;
+            background-color: #861f41;
+            color: #ffffff;
             padding: 12px;
-            border: 3px solid #508590;
-            box-shadow: 6px 6px #d7d2cb;
+            border-bottom: 6px solid #333333;
+        }
+
+        .nothing {
+            box-shadow: 6px 6px #333333;
         }
     </style>
 
@@ -81,12 +82,12 @@
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
-    <div id="pagewidth" class="container-fluid">
+    <div id="pagewidth" class="container-fluid" style="background-color: #edf3f4;">
 
         <!--  PAGE TITLE -->
         <div id="page-title-section" class="row">
-            <div id="page-title-column" class="col-sm-12" style="background-color: #861f41;border-bottom: 9px solid #e5751f;margin-bottom: 24px;">
-                <h2 id="page-title" style="color: #ffffff;font-size: 30px;border: 0;text-align: center;padding: 9px;">Components of User Documents</h2>
+            <div id="page-title-column" class="col-sm-12" style="background-color: #508590;border-bottom: 9px solid #333333;margin-bottom: 24px;">
+                <h2 id="page-title" style="color: #ffffff;font-size: 36px;border: 0;text-align: center;padding: 9px;text-shadow: 4px 4px #333333;">Components of User Documents</h2>
                 <div id="content-layout" class="container-fluid">
                 </div>
             </div>
@@ -94,10 +95,10 @@
 
         <!-- ROW ONE: TITLE -->
         <div id="content-row-01" class="row content-row-style">
-            <div id="content-num01" class="col-sm-3 number-style">
-                1
+            <div id="content-num01" class="col-sm-3 anumber-style">
+                <span style="color: #508590;font-size: 54pt;font-weight: bold;text-shadow: 3px 3px #333333;text-align: right;">1</span>
             </div>
-            <div id="content-title" class="col-sm-9 content-style" style="margin-right: 24px;">
+            <div id="content-title" class="col-sm-9 acontent-style" style="background-color: #508590;border-bottom: 6px solid #333333;color: #ffffff;">
                 <span style="font-size: 24px;font-weight: bold;">Title</span><br>Clear, concise; use “how to” phrasing or a gerund (-ing verb).
             </div>
         </div>
