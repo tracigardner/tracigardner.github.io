@@ -86,7 +86,7 @@
     <div id="topinfo"></div>
     <script>
         if (window.location !== window.parent.location) {
-            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            document.getElementById("topinfo").innerHTML = "<div id='content'></div>"
             // The page is in an iframe
         } else {
             // The page is not in an iframe
@@ -260,16 +260,7 @@
         </div>
     </div>
 
-    <script>
-        if (window.location !== window.parent.location) {
-            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
-            // The page is in an iframe
-        } else {
-            // The page is not in an iframe
-            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
-            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
-        }
-    </script>
+
 </body>
 
 </html>
