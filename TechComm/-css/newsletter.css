@@ -2,8 +2,7 @@
 /*setting up colors */
 /* all the rest */
 body {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "DejaVu Sans", Verdana, "sans-serif";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .b0ld {
@@ -25,7 +24,7 @@ body {
 .masthead h2 {
   margin-top: 0px;
   font-size: 18px;
-  color: #e5751f;
+  color: #c64600;
 }
 
 h3 {
@@ -34,7 +33,7 @@ h3 {
 }
 
 h4 {
-  color: #e5751f;
+  color: #c64600;
 }
 
 a,
@@ -42,7 +41,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #e5751f;
+  color: #c64600;
   text-decoration: underline;
 }
 
@@ -105,7 +104,7 @@ a:active {
 }
 
 .btn-home:hover {
-  background-color: #e5751f;
+  background-color: #c64600;
   color: #000000;
 }
 
@@ -152,7 +151,7 @@ a:active {
 }
 
 .footer-divider-line {
-  border-top: 1px solid #e5751f;
+  border-top: 1px solid #c64600;
 }
 
 .cntdwn {
@@ -297,7 +296,7 @@ h2 {
 .simple-bar-chart > .item > .label {
   inset: 100% 0 auto 0;
   text-align: left;
-  border-right: 1px solid #e5751f;
+  border-right: 1px solid #c64600;
 }
 
 .simple-bar-chart > .item > .value {
