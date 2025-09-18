@@ -32,7 +32,7 @@
         a:active,
         a:link,
         a:hover {
-            color: #c64600;
+            color: #1c5eac;
             text-decoration: underline;
         }
 
@@ -46,12 +46,11 @@
 
         .container-fluid {
             min-height: 100vh;
-            padding: ;
             background-color: #e5e1e6;
         }
 
         .band {
-            background-color: #861f41;
+            background-color: #1c5eac;
             height: 36px;
             width: 100%;
             /* ensure full width */
@@ -65,8 +64,14 @@
             background-color: #ffffff;
             padding: 20px;
             /* keep the rectangle clearly separate from the page background */
-            box-shadow: 6px 6px #c64600;
+            box-shadow: 6px 6px #1c5eac;
             margin-bottom: 48px;
+            margin-top: -1px;
+        }
+
+        .highlight {
+            color: #1c5eac;
+            font-weight: bold;
         }
 
         /* Title style */
@@ -74,7 +79,7 @@
             font-size: 39px;
             margin: 0;
             background-color: #e5e1e6;
-            color: #c64600;
+            color: #1c5eac;
             font-weight: bold;
             text-align: center;
             text-shadow: 2px 2px #ffffff;
@@ -82,10 +87,17 @@
         }
 
         h2 {
-            color: #861f41;
+            color: #ffffff;
             font-weight: bold;
             border-bottom: 0px;
-            text-shadow: 2px 2px #ffffff;
+            font-size: 18pt;
+            background-color: #1c5eac;
+            display: inline-block;
+            margin-left: 18px;
+            margin-bottom: -9px;
+            padding: 9px 36px;
+            box-shadow: none;
+            border: none;
         }
     </style>
 </head>
@@ -103,47 +115,33 @@
                         Topic &amp; Audience</h1>
                 </div>
             </div>
-            <!-- Row 2 Header -->
-            <div class="row content-row" id="row-topic-heading">
-                <div class="col-sm-12" id="col-topic-heading">
-                    <h2 id="heading-topic-proposal">The Topic for Your Research Proposal</h2>
-                </div>
-            </div>
+
             <!-- Row 2: Topic for Research Proposal -->
             <div class="row content-row" id="row-topic-proposal">
-                <div class="col-sm-12" id="col-topic-proposal">
-                    <div class="container-fluid content-col">
-                        <div class="row">
+                <h2 id="heading-topic-proposal">The Topic for Your<br> Research Proposal</h2>
+                <div class="col-sm-12 content-col" id="col-topic-proposal" style="margin-top: -px; margin-bottom: 0px;padding: 24px;">
+                    <p><img src="blueprint-research-proposal-v2.png" style="width: 50%;float: right;margin-left: 15px;">Your document is like a <span class="highlight">blueprint</span>.</p>
 
-                            <div class="col-sm-6">
-                                <p>Your document is like a blueprint. You are planning your Informational Report for Non-Experts. Your plan shows your audience the details that will help them understand your vision and ask you to continue your work.</p>
-                                <ul>
-                                    <li>HOW provide a clear, detailed plan for the Informational Report you will write as part of the <em>Ut Prosim</em> project.</li>
-                                    <li> WHAT Your goal is is to set forth a topic to study for the informational report for non-expert readers </li>
-                                    <li>Tell me why --justify its importance.</li>
-                                    <li>and</li>
-                                </ul>
-                                <p>Give me: </p>
-                                <ul style="margin-left: 24px;">
-                                    <li>potential research sources for your project.</li>
-                                    <li>details on the non-expert audience for your report.</li>
-                                    <li>your qualifications for the project.</li>
-                                    <li>planned work schedule for the project.</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6"><img src="https://tracigardner.github.io/TechComm/assignments/research-proposal/blueprint-research-proposal-v2.png"></div>
-                        </div>
-                    </div>
+                    <p>You are planning your Informational Report for Non-Experts. Your plan shows your audience the details that will help them understand your vision and ask you to continue your work.</p>
+                    <ul>
+                        <li>HOW provide a clear, detailed plan for the Informational Report you will write as part of the <em>Ut Prosim</em> project.</li>
+                        <li> WHAT Your goal is is to set forth a topic to study for the informational report for non-expert readers </li>
+                        <li>Tell me why --justify its importance.</li>
+                        <li>and</li>
+                    </ul>
+                    <p>Give me: </p>
+                    <ul style="margin-left: 24px;">
+                        <li>potential research sources for your project.</li>
+                        <li>details on the non-expert audience for your report.</li>
+                        <li>your qualifications for the project.</li>
+                        <li>planned work schedule for the project.</li>
+                    </ul>
                 </div>
             </div>
-            <!-- Row 3 Header -->
-            <div class="row content-row" id="row-topic-inforpthdr">
-                <div class="col-sm-12" id="col-topic-inforpthdr">
-                    <h2 id="heading-topic-proposal">The Topic for Your Informational Report</h2>
-                </div>
-            </div>
+
             <!-- Row 3: Topic for Informational Report -->
             <div class="row content-row" id="row-topic-inforeport">
+                <h2 id="heading-topic-proposal">The Topic for Your<br>Informational Report</h2>
                 <div class="col-sm-12 content-col" id="col-topic-inforeport">
                     <p>Further, you need to establish exactly how your major relates to this topic. Simply using technology to make visualizations is not the point. Here is the list of topics for Computer Science on the <a href="https://canvas.vt.edu/courses/216149/pages/report-subject-ideas-by-major" target="_blank">Report Subject Ideas by Major page</a>:</p>
                     <ul class="skipline">
@@ -157,27 +155,19 @@
                     <p><a href="https://canvas.vt.edu/courses/216149/pages/semester-long-project-overview-writing-with-ut-prosim-in-mind" target="_blank">Semester-Long Project Overview: Writing with Ut Prosim in Mind</a></p>
                 </div>
             </div>
-            <!-- Row 4 Header -->
-            <div class="row content-row" id="row-audience-proposal-heading">
-                <div class="col-sm-12" id="col-audience-proposal-heading">
-                    <h2 id="heading-topic-proposal">The Audience for Your Research Proposal</h2>
-                </div>
-            </div>
+
             <!-- Row 4: Audience for Research Proposal -->
             <div class="row content-row" id="row-audience-proposal">
+                <h2 id="heading-topic-proposal">The Audience for Your<br> Research Proposal</h2>
                 <div class="col-sm-12 content-col" id="col-audience-proposal">
                     <p>Write your message to Traci Gardner, your teacher for the course.</p>
                     <p>She&rsquo;s the person who you need to convince that you have chosen a significant and appropriate topic for your <em>Ut Prosim</em> project and that you are prepared to write the informational report for non-expert readers.</p>
                 </div>
             </div>
-            <!-- Row 5 Header -->
-            <div class="row content-row" id="row-audience-inforeport-heading">
-                <div class="col-sm-12" id="col-audience-inforeport-heading">
-                    <h2 id="heading-audience-inforeport-proposal">The Audience for Your Informational Report</h2>
-                </div>
-            </div>
+
             <!-- Row 5: Audience for Informational Report -->
             <div class="row content-row" id="row-audience-inforeport">
+                <h2 id="heading-audience-inforeport-proposal">The Audience for Your <br>Informational Report</h2>
                 <div class="col-sm-12 content-col" id="col-audience-inforeport">
                     <p>You also need to narrow your audience for whatever topic you choose. Here are some additional details on your audience:</p>
                     <blockquote>
