@@ -14,21 +14,6 @@
             background-color: #ffffff;
         }
 
-        .bkgd-dots {
-            background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
-            background-size: 600px;
-            width: 100%;
-            height: 100%;
-            background-color: #508590;
-        }
-
-        .content-container {
-            background-color: #ffffff;
-            padding: 24px;
-            margin: 39px;
-            border: 6px solid #385d65;
-        }
-
         h1,
         h2,
         h3,
@@ -61,9 +46,24 @@
             margin-bottom: 15px;
         }
 
+        .bkgd-grid {
+            background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/grid-e5e1e6.png");
+            background-size: 450px;
+            width: 100%;
+            height: 100%;
+            background-color: #edf3f4;
+        }
+
+        .content-container {
+            background-color: #ffffff;
+            padding: 12px;
+            margin: 24px;
+            border: 3px solid #508590
+        }
+
+
         .content-row {
             margin: 0px;
-
         }
 
         .content-col {
@@ -85,12 +85,14 @@
         /* Title style */
         #title-heading {
             font-size: 27px;
-            margin: 0;
-            color: #508590;
+            margin: 24px;
+            padding: 12px;
+            color: #ffffff;
             font-weight: bold;
             text-align: center;
             border-bottom: 0;
-
+            background-color: #508590;
+            border: 3px solid #508590
         }
 
         h2 {
@@ -102,10 +104,13 @@
         h3 {
             color: #ffffff;
             background-color: #508590;
-            padding: 9px;
+            padding: 12px 69px 12px 12px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
             font-weight: bold;
             display: inline-block;
-            border: 6px solid #385d65;
+            margin-left: -25px;
+            /* border: 6px solid #385d65; */
         }
 
         h4 {
@@ -120,21 +125,22 @@
 </head>
 
 <body>
-    <div class="container-fluid bkgd-dots" id="page-container">
+    <div class="container-fluid bkgd-grid" id="page-container">
         <p>&nbsp;</p>
+        <h2 id="title-heading">Testing the Subject & Audience for Your Informational Report</h2>
         <div id="interior-margin" class="content-container">
             <!-- Title row -->
             <div class="row content-row" id="row-title">
                 <div class="col-sm-12" id="col-title">
-                    <h2 id="title-heading">Testing the Subject & Audience for Your Informational Report</h2>
+
                 </div>
             </div>
 
             <!-- Row 2: Background/Intro -->
             <div class="row content-row" id="row-topic-proposal">
                 <div class="col-sm-12 content-col" id="col-topic-proposal">
-                    <p>I asked a lot of you to narrow the subject and audience for your Informational Report. You need to focus more BEFORE you submit your Research Proposal. If your subject and audience are not on target, you&rsquo;ll need to revise your proposal.</p>
-                    <p>Use this process to test your subject and audience. You must be able to answer &ldquo;Yes&rdquo; to every question to have a subject that works.</p>
+
+                    <p><strong>Instructions: </strong>Use this process to test your subject and audience. You must be able to answer &ldquo;Yes&rdquo; to every question to have a subject that works.</p>
                 </div>
             </div>
 
@@ -142,9 +148,10 @@
 
 
         <!-- Row 2: major -->
-        <div class="content-container" is="major">
+        <div class="content-container" id="major">
             <div class="row content-row" id="row-major">
                 <div class="col-sm-12 content-col" id="col-major">
+
                     <h3>The Major Test</h3>
 
                     <div class="row">
