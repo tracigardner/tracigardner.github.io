@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checking for Specific Details in Your Progress Report</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Checking for Specific Details in Your Progress Report</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+        <p id="specifics">Your Progress Report should use concrete, specific details to describe your work. Tell your reader (me, in this case) precisely what you have done and how you&rsquo;ll complete the remaining work. The examples below demonstrate how to make sure you use details. Revise your Progress Report as necessary.</p>
+        <table class="alternateTable">
+            <tbody>
+                <tr>
+                    <th width="25%" scope="col">Rather than general information like this</th>
+                    <th width="75%" scope="col">Use specific language like this</th>
+                </tr>
+                <tr>
+                    <td>I have been making good progress on my work.</td>
+                    <td>Since my proposal to write an informational report on copyright, intellectual property rights, and Creative Commons for the Board of Directors of <span style="color: #861f41;">Maroon</span>
+                        <span style="font-size: 18px;">+</span>
+                        <span style="color: #c64600;">Orange</span>
+                        <span style="color: #121212;">Digital&rsquo;s</span> Teen Artists&rsquo; Studio was approved, I have focused on gathering research and analyzing the information for useful definitions and explanations of the purpose for the concepts. I am especially interested in finding sources that discuss the benefits of establishing ownership for creative works&mdash;both benefits for the artists and for public art lovers.
+                    </td>
+                </tr>
+                <tr>
+                    <td>I have scheduled time to complete my remaining research.</td>
+                    <td>I have scheduled the following work periods to complete the remaining research and write my report:
+                        <img src="https://tracigardner.github.io/TechComm/assignments/progress-report/gantt-chart.png" alt="Gantt Chart with work schedule" style="text-align: center;>" </td>
+                </tr>
+                <tr>
+                    <td>We revised the schedule.</td>
+                    <td>After reviewing the readings on Recommendation Reports, we revised our work schedule to add specific time to focus on formatting our report for document design and ensuring our phrasing is consistent. We want to pay particular attention to match the subheadings from one section to the next so that the connections among the information where clear and easy to follow.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 24px;">&nbsp;</p>
+
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
