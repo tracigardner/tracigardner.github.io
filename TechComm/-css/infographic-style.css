@@ -9,6 +9,12 @@
   height: 100%;
   background-color: #508590;
 }
+
+.bkgd-graph {
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper.png");
+  background-color: #508590;
+}
+
 p,
 li {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
