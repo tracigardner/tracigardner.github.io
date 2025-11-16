@@ -10,9 +10,14 @@
   background-color: #508590;
 }
 
-.bkgd-graph {
+.bkgd-graph-teal {
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper-508590.png");
+  background-color: #508590;
+}
+.bkgd-graph-white {
   background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper.png");
   background-color: #508590;
+  border-radius: 24px;
 }
 
 p,
