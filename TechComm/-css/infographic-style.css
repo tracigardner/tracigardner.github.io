@@ -11,7 +11,6 @@
 }
 
 .bkgd-graph-teal {
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper-508590.png");
   background-color: #508590;
 }
 .bkgd-graph-white {
@@ -19,8 +18,7 @@
   background-color: #508590;
   border-radius: 24px;
 }
-
-p,
+<img src="" style="float:right;width: 372px;height: 164px;" > p,
 li {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   font-size: 15px !important;
