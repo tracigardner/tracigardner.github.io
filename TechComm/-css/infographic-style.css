@@ -74,6 +74,14 @@ h3 {
   box-shadow: 10px 10px #d7d2cb;
 }
 
+.essentials h3 {
+  font-size: 21px;
+  font-weight: 600;
+  padding: 9px;
+  color: #508590;
+  margin-bottom: 21px;
+}
+
 .anno-teal {
   font-size: 18px;
   font-weight: 600;
