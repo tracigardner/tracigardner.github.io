@@ -9,7 +9,6 @@
   height: 100%;
   background-color: #508590;
 }
-
 .bkgd-teal {
   background-color: #508590;
 }
@@ -19,11 +18,10 @@
   border-radius: 24px;
 }
 .bkgd-plus-teal {
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/plus-sign-508590.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper.png");
   background-color: #508590;
   border-radius: 24px;
 }
-
 p,
 li {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
