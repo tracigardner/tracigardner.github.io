@@ -44,6 +44,10 @@ li {
   list-style-type: "✔  ";
 }
 
+.fifteenline li {
+  margin-bottom: 0.75rem;
+}
+
 /****************/
 /*** Headings ***/
 /****************/
