@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Week 5 Introduction, Fall 2025</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Week 5 Introduction, Fall 2025</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 0px 6px;">
+        <figure class="badge-figure"><img src="https://tracigardner.github.io/TechComm/-images/badges/TW-m09-proposals-submission.png" alt="Badge for Week 3, maroon and orange badge with wavy edge, showing a Gantt Chart" class="badge-image" />
+            <figcaption>Badge for Week 04<br>Technical Writing:<br>Submitting Your Proposal</figcaption>
+        </figure>
+        <h2><img src="https://tracigardner.github.io/TechComm/-images/noun-overview-7898613-861F41.png" alt="" style="vertical-align: bottom;width: 24px;height: 24px;"> Topic Overview</h2>
+
+        <p>In this module, you&rsquo;ll review material from Weeks 3 and 4 as you prepare to submit your proposal. Your focus is checking your project against the criteria for proposals and for plain language and then revising as necessary to ensure you have a ready-to-submit proposal.</p>
+
+        <h2 style="font-family: arial, helvetica, sans-serif;color: #c64600; font-size: 21px;margin-top: 36px;"><img src="https://tracigardner.github.io/TechComm/-images/syll-images/noun-objective-4199831-861F41.png" alt="" style="vertical-align: bottom;width: 24px;height: 24px;"> Module Learning Outcomes</h2>
+        <p>By the end of this module, you will be able to:</p>
+        <ul>
+            <li>Identify the purpose and key components of a research proposal.</li>
+            <li>Choose and define a focused research topic that relates to your major and promotes community benefit.</li>
+            <li>Support your proposal with credible background research.</li>
+            <li>Organize and format your proposal to meet professional standards.</li>
+            <li>Write clearly and concisely using plain language techniques.</li>
+            <li>Revise texts to increase their readability.</li>
+        </ul>
+    </div>
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            return;
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+</body>
+
+</html>
