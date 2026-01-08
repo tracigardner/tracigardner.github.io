@@ -105,13 +105,15 @@ h3.ess {
 h3.utprosim {
   font-size: 21px;
   font-weight: 600;
-  background-color: #ffffff;
-  padding: 9px;
-  color: #508590;
+  background-color: #508590;
+  border-radius: 6px;
+  padding: 3px 9px 6px 9px;
+  color: #ffffff;
   margin-bottom: 21px;
   margin-top: 0;
   box-shadow: none;
   border-top: 0;
+  display: inline-block;
 }
 
 h4 {
