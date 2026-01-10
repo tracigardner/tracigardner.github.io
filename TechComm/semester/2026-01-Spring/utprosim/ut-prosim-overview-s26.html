@@ -55,6 +55,103 @@
             border: 0;
             margin: 6px 0px 0px 0px;
         }
+
+
+        /* Responsive circle that stays perfectly round */
+        .utprosim-badge {
+            width: min(320px, 92vw);
+            aspect-ratio: 1 / 1;
+
+            border: 2px solid #1f3f4a;
+            /* dark blue-green like your image */
+            border-radius: 50%;
+            background: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto;
+            /* centers if block-level */
+        }
+
+        /* Inner layout tuned to match the screenshot spacing */
+        .utprosim-badge__inner {
+            width: 82%;
+            height: 82%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: clamp(14px, 3.5vw, 22px);
+            text-align: center;
+        }
+
+        /* Title styling */
+        .utprosim-badge__title {
+            font-family: inherit;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+
+            font-size: clamp(16px, 3.6vw, 22px);
+            line-height: 1.15;
+        }
+
+        /* Italic line for UT PROSIM */
+        .utprosim-badge__italics {
+            font-style: italic;
+        }
+
+        /* Dots row */
+        .utprosim-badge__dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: clamp(6px, 1.6vw, 10px);
+        }
+
+        /* Dots: no border in your image */
+        .utprosim-badge__dot {
+            width: clamp(10px, 2.4vw, 14px);
+            height: clamp(10px, 2.4vw, 14px);
+            border-radius: 50%;
+        }
+
+        /* Colors (match your step shadows; last one is olive/green in the screenshot) */
+        .dot-01 {
+            background: #861f41;
+        }
+
+        /* maroon */
+        .dot-02 {
+            background: #c64600;
+        }
+
+        /* orange */
+        .dot-03 {
+            background: #f7ea48;
+        }
+
+        /* yellow */
+        .dot-04 {
+            background: #642667;
+        }
+
+        /* purple */
+        .dot-05 {
+            background: #003c71;
+        }
+
+        /* blue */
+        .dot-06 {
+            background: #2cd5c4;
+        }
+
+        /* vibrant turquoise */
     </style>
 
     <!-- include scripts -->
@@ -195,46 +292,61 @@
                     <div class="row">
                         <div class="col-sm-4">
 
+                            <div class="utprosim-badge" role="img" aria-label="The Semester-Long Project: Ut Prosim in Action">
+                                <div class="utprosim-badge__inner">
+
+                                    <div class="utprosim-badge__title">
+                                        <div>The</div>
+                                        <div>Semester-Long</div>
+                                        <div>Project:</div>
+                                        <div class="utprosim-badge__italics">Ut Prosim</div>
+                                        <div>in Action</div>
+                                    </div>
+
+                                    <div class="utprosim-badge__dots" aria-label="Six major projects">
+                                        <span class="utprosim-badge__dot dot-01" aria-hidden="true"></span>
+                                        <span class="utprosim-badge__dot dot-02" aria-hidden="true"></span>
+                                        <span class="utprosim-badge__dot dot-03" aria-hidden="true"></span>
+                                        <span class="utprosim-badge__dot dot-04" aria-hidden="true"></span>
+                                        <span class="utprosim-badge__dot dot-05" aria-hidden="true"></span>
+                                        <span class="utprosim-badge__dot dot-06" aria-hidden="true"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
                             <p>
                                 These six projects are designed to work together. Across the semester, you&rsquo;ll move from choosing a topic to explaining it clearly for different real-world audiences.
                             </p>
 
-                            <div style="
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 6px;
-    padding: 10px 12px;
-    margin: 12px 0 14px 0;
-    box-shadow: 10px 10px #861f41;
-  ">
+                            <div style="background-color: #ffffff;border: 2px solid #000000;border-radius: 6px;padding: 10px 12px;margin: 12px 0 14px 0;box-shadow: 10px 10px #861f41;">
 
-                                <h4 style="margin-top: 0; margin-bottom: 10px;">
-                                    What Stays the Same / What Changes
+                                <h4 style="margin-top: 0; margin-bottom: 8px;">
+                                    Across All Six Projects
                                 </h4>
 
-                                <div class="row">
-                                    <div class="col-xs-6" style="border-right: 1px solid #861f41;">
-                                        <p style="margin: 0 0 6px 0;">
-                                            <strong>Stays the Same</strong>
-                                        </p>
-                                        <ul style="margin: 0; padding-left: 18px;">
-                                            <li>Your topic</li>
-                                            <li>Your core research</li>
-                                        </ul>
-                                    </div>
+                                <p style="margin-bottom: 6px;">
+                                    <strong>What stays the same</strong>
+                                </p>
+                                <ul style="margin: 0 0 10px 0; padding-left: 18px;">
+                                    <li>Your topic</li>
+                                    <li>Your core research</li>
+                                </ul>
 
-                                    <div class="col-xs-6">
-                                        <p style="margin: 0 0 6px 0;">
-                                            <strong>Changes</strong>
-                                        </p>
-                                        <ul style="margin: 0; padding-left: 18px;">
-                                            <li>Audience</li>
-                                            <li>Purpose</li>
-                                            <li>Document type</li>
-                                            <li>Level of detail</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <hr style="margin: 8px 0; border-top: 1px solid #861f41;">
+
+                                <p style="margin-bottom: 6px;">
+                                    <strong>What changes each time</strong>
+                                </p>
+                                <ul style="margin: 0; padding-left: 18px;">
+                                    <li>Audience</li>
+                                    <li>Purpose</li>
+                                    <li>Document type</li>
+                                    <li>Level of detail</li>
+                                </ul>
 
                             </div>
 
@@ -245,11 +357,6 @@
                             <p>
                                 Together, these projects show how technical writing can serve others by making complex information clear, usable, and easier to access.
                             </p>
-
-
-
-
-
 
 
                         </div>
