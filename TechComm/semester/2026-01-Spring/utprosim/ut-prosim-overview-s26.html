@@ -65,6 +65,33 @@
         }
 
 
+        /* checkbox to-do style ul list */
+
+        ul.checklist {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        ul.checklist li {
+            position: relative;
+            padding-left: 32px;
+            margin: 10px 0;
+        }
+
+        /* checkmark */
+        ul.checklist li::after {
+            content: "✓";
+            position: absolute;
+            left: 3px;
+            top: 0.05em;
+            font-size: 21px;
+            font-weight: 900;
+            color: #c64600;
+        }
+
+
+
         /* Responsive circle that stays perfectly round */
         .utprosim-badge {
             width: min(240px, 92vw);
@@ -265,13 +292,13 @@
             <div id="focus-major" class="info-section-utprosim">
                 <h3 class="utprosim">Choosing a Technical Topic That Matters</h3>
                 <p>
-                <figure style="width: 240px;float: right;margin: 12px;"><img src="https://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/environmental-engineer-explaining.png" alt="A student studying environmental engineering, standing outdoors at a field site, explaining a concept to a small group of community members" style="width: 240px;height: 240px;border: 3px solid #508590;border-radius: 6px;">
+                <figure style="width: 240px;float: right;margin: 12px;"><img src="https://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/environmental-engineer-explaining.png" alt="An environmental engineering student, standing outdoors at a field site, explaining a concept to a small group of community members" style="width: 240px;height: 240px;border: 3px solid #508590;border-radius: 6px;">
                     <figcaption><em>Figure 3. Student, standing near a river, explaining an environmental concept to community members. Created with ChatGPT 5.2.</em></figcaption>
                 </figure>
                 </p>
-                <p>You&rsquo;ll choose one technical topic to focus on all semester. Keep these requirements in mind as you choose. Your topic must be:</p>
+                <p>You&rsquo;ll choose one technical topic to focus on all semester. Be sure you can check off each of these requirements as you choose. Your topic must be:</p>
 
-                <ul class="skipline">
+                <ul class="skipline checklist">
                     <li>
                         <strong>Related to your major:</strong> Choose a technical object, process, practice, or idea related to your major that you can research confidently. Check out <a href="https://canvas.vt.edu/courses/224896/pages/report-subject-ideas-by-major" target="_blank">Report Subject Ideas by Major page</a> for help.
                     </li>
@@ -509,50 +536,51 @@
 
             <!-- final words -->
             <div id="final-words" class="info-section-utprosim">
-                <h3 class="utprosim">What You&rsquo;ll Leave With</h3>
-                <figure style="width: 240px;float: right;margin: 12px;"><img src="https://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/presenting--in-the-workplace.png" alt="Student presents a technical report during a small meeting, holding a printed document with charts while referencing related visuals on a laptop at the table." style="float: right;margin: 12px;width: 240px;height: 240px;border: 3px solid #508590;border-radius: 6px;">
+
+                <h3 class="utprosim">Putting It All Together</h3>
+
+                <p>
+                <figure style="width: 240px;float: right;margin: 12px;">
+                    <img src="https://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/presenting--in-the-workplace.png" alt="Student presents a technical report during a small meeting, holding a printed document with charts while referencing related visuals on a laptop at the table." style="width: 240px;height: 240px;border: 3px solid #508590;border-radius: 6px;">
                     <figcaption><em>Figure 4. Student presents a technical report during a small meeting. Created with ChatGPT 5.2.</em></figcaption>
                 </figure>
+                </p>
 
-                <p>By the end of the semester, you will have:</p>
+                <p>
+                    Over the course of the semester, you&rsquo;ll complete six connected technical writing projects focused on one meaningful topic from your field. Together, these projects show how a single subject can be researched, explained, and adapted for different audiences, purposes, and formats.
+                </p>
+
+                <p>
+                    By working through the projects as a set, you&rsquo;ll develop both concrete writing artifacts and transferable communication skills. By the end of the semester, you&rsquo;ll have:
+                </p>
 
                 <ul class="skipline">
                     <li>
-                        <strong>A connected portfolio of technical documents</strong><br>
-                        Six related projects focused on one topic from your field, written for different audiences and purposes.
+                        <strong>A coherent portfolio of work</strong> that demonstrates how technical writing functions across genres and audiences.
                     </li>
-
                     <li>
-                        <strong>Experience adapting information for real readers</strong><br>
-                        Practice explaining the same subject clearly across genres, formats, and levels of detail.
+                        <strong>Experience adapting information</strong> so it is clear, usable, and appropriate for non-expert readers.
                     </li>
-
                     <li>
-                        <strong>Stronger professional writing habits</strong><br>
-                        Building knowledge over time, revising ideas, and communicating with clarity and intention.
-                    </li>
-
-                    <li>
-                        <strong>A clearer sense of how technical writing works in practice</strong><br>
-                        Writing that supports decisions, actions, and real-world use&mdash;not just grades.
+                        <strong>Stronger professional writing habits</strong> developed through research, revision, and audience awareness.
                     </li>
                 </ul>
 
-                <p>As you work, keep this question in mind:</p>
-
-                <p style="padding-left: 40px; font-size: 14pt;">
-                    <strong>Who benefits from this writing, and how can I help them understand and use it more effectively?</strong>
+                <p>
+                    What connects these outcomes is not just the topic you chose, but the way you approached each writing task. Throughout the semester, all six projects are guided by the same central question:
                 </p>
 
-                <p>Takeaway: This semester-long project prepares you to use technical writing as a practical, responsible skill you can carry beyond the classroom.
+                <p style="font-size: 14pt !important;margin-left: 40px;color: #c64600;font-weight: bold;"> Who benefits from this writing, and how can I help them understand and use it?</p>
+
+                <p style="margin-top: 18px;">
+                    <strong>Takeaway:</strong> This semester-long project prepares you to use technical writing as a practical skill beyond the classroom—communicating clearly, responsibly, and with real people in mind.
                 </p>
-
-
-
             </div>
 
-            <p style="padding-bottom: 18px;">&nbsp;</p>
         </div>
+
+        <p style="padding-bottom: 18px;">&nbsp;</p>
+    </div>
     </div>
 
     <script>
