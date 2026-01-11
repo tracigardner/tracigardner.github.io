@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+        }
+
+        /* --- Global rhythm + scannability --- */
+        .info-section-utprosim {
+            margin: 28px 0;
+            padding: 18px 18px 10px 18px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            background: #ffffff;
+        }
+
+        .utprosim {
+            margin: 0 0 12px 0;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 2px solid #508590;
+            color: #508590;
+            background: #ffffff;
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            font-size: 9pt;
+            font-style: italic;
+            margin-top: 6px;
+        }
+
+        .img-frame {
+            width: 240px;
+            height: 240px;
+            border: 3px solid #508590;
+            border-radius: 6px;
+        }
+
+        .img-frame-short {
+            width: 240px;
+            height: 160px;
+            border: 3px solid #508590;
+            border-radius: 6px;
+        }
+
+        /* Micro-leads replace paragraphs */
+        .micro-lead {
+            margin: 0 0 10px 0;
+            font-size: 12pt;
+            line-height: 1.35;
+        }
+
+        /* Icon bullets for infographic feel */
+        .icon-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 10px 0 0 0;
+        }
+
+        .icon-list li {
+            margin: 10px 0;
+            padding: 10px 12px;
+            border: 2px solid #000000;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+
+        .icon-list .kicker {
+            display: inline-block;
+            font-weight: 800;
+            margin-right: 6px;
+            color: #c64600;
+        }
+
+        /* Callouts */
+        .callout {
+            margin-top: 14px;
+            padding: 12px 14px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            background: #f5f1f6;
+        }
+
+        .callout strong {
+            color: #c64600;
+        }
+
+        /* Requirement chips / grouped lists */
+        .chip-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 10px 0 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .chip {
+            border: 2px solid #000000;
+            border-radius: 10px;
+            padding: 10px 12px;
+            background: #ffffff;
+        }
+
+        .chip .label {
+            font-weight: 800;
+            color: #c64600;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .mini {
+            font-size: 10.5pt;
+            line-height: 1.35;
+            margin: 8px 0 0 0;
+        }
+
+        /* Tight quote/question */
+        .big-question {
+            margin: 12px 0 0 0;
+            padding: 12px 14px;
+            border-left: 6px solid #508590;
+            background: #ffffff;
+            font-size: 14pt;
+            line-height: 1.35;
+        }
+
+        /* --- Badge (circle) --- */
+        .utprosim-badge {
+            width: min(240px, 92vw);
+            aspect-ratio: 1 / 1;
+            border: 2px solid #1f3f4a;
+            border-radius: 50%;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .utprosim-badge__inner {
+            width: 82%;
+            height: 82%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(12px, 3.2vw, 18px);
+            text-align: center;
+        }
+
+        .utprosim-badge__title {
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            font-size: clamp(16px, 3.6vw, 22px);
+            line-height: 1.12;
+            text-transform: uppercase;
+        }
+
+        .utprosim-badge__italics {
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        .utprosim-badge__dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(6px, 1.6vw, 10px);
+        }
+
+        .utprosim-badge__dot {
+            width: clamp(10px, 2.4vw, 14px);
+            height: clamp(10px, 2.4vw, 14px);
+            border-radius: 50%;
+        }
+
+        .dot-01 {
+            background: #861f41;
+        }
+
+        .dot-02 {
+            background: #c64600;
+        }
+
+        .dot-03 {
+            background: #f7ea48;
+        }
+
+        .dot-04 {
+            background: #642667;
+        }
+
+        .dot-05 {
+            background: #003c71;
+        }
+
+        .dot-06 {
+            background: #2cd5c4;
+        }
+
+        /* Left column panel in projects section */
+        .panel {
+            background-color: #f5f1f6;
+            border-radius: 10px;
+            padding: 18px;
+            border: 2px solid #000000;
+        }
+
+        .panel h4 {
+            margin: 14px 0 8px 0;
+            font-size: 15px;
+            color: #000000;
+        }
+
+        .panel ul {
+            margin: 6px 0 0 0;
+            padding-left: 22px;
+        }
+
+        /* Step cards (keep your look, tighten copy) */
+        .step-card {
+            background-color: #ffffff;
+            border: 2px solid #000000;
+            border-radius: 6px;
+            padding: 6px 10px 8px 10px;
+            color: #000000;
+            margin: 0 15px 15px 15px;
+            display: inline-block;
+            width: calc(100% - 30px);
+        }
+
+        .step-num {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .step-left {
+            padding-top: 6px;
+        }
+
+        .step-right {
+            border-left: 1px solid #000000;
+        }
+
+        .shadow-01 {
+            box-shadow: 15px 15px #861f41;
+        }
+
+        .shadow-02 {
+            box-shadow: 15px 15px #c64600;
+        }
+
+        .shadow-03 {
+            box-shadow: 15px 15px #f7ea48;
+        }
+
+        .shadow-04 {
+            box-shadow: 15px 15px #642667;
+        }
+
+        .shadow-05 {
+            box-shadow: 15px 15px #003c71;
+        }
+
+        .shadow-06 {
+            box-shadow: 15px 15px #2cd5c4;
+        }
+
+        .border-01 {
+            border-left: 3px solid #861f41;
+        }
+
+        .border-02 {
+            border-left: 3px solid #c64600;
+        }
+
+        .border-03 {
+            border-left: 3px solid #f7ea48;
+        }
+
+        .border-04 {
+            border-left: 3px solid #642667;
+        }
+
+        .border-05 {
+            border-left: 3px solid #003c71;
+        }
+
+        .border-06 {
+            border-left: 3px solid #2cd5c4;
+        }
+
+        .tight {
+            margin: 6px 0 0 0;
+            line-height: 1.3;
+        }
+    </style>
+
+
+    <div class="bkgd-graph-white">
+        <div id="pagewidth" style="margin: 0px 36px;">
+            <p>&nbsp;</p>
+
+            <h2 style="
+      font-size: 36px;
+      text-align: center;
+      padding: 16px 12px;
+      color: #508590;
+      border: 3px solid #508590;
+      border-radius: 8px;
+      background-color: #ffffff;
+      margin: 0 0 18px 0;">
+                Our Semester-Long Focus:<br>
+                <em>Ut Prosim</em> in Action
+            </h2>
+
+
+            <!-- 1) ONE TOPIC / SIX PROJECTS -->
+            <div id="task" class="info-section-utprosim">
+                <h3 class="utprosim" style="margin-bottom: 14px;">
+                    One Topic, One Focus <span style="font-size:30px;">&rarr;</span> Six Major Projects
+                </h3>
+
+                <figure style="width: 240px; float: right; margin: 0 0 12px 12px;">
+                    <img class="img-frame" src="https://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/student-at-computer-library.png" alt="Student working on a project at the library. The student has a book, a spiral notebook, and a laptop computer.">
+                    <figcaption><em>Figure 1. Student working on a writing project. Created with ChatGPT 5.2.</em></figcaption>
+                </figure>
+
+                <p class="micro-lead">
+                    One technical topic. Six documents. Less starting over.
+                </p>
+
+                <ul class="icon-list">
+                    <li><span class="kicker">🔍 One research effort:</span> Use the same core research across every major project.</li>
+                    <li><span class="kicker">✍️ Stronger writing:</span> Your explanations improve as you revise and build expertise.</li>
+                    <li><span class="kicker">♻️ Reuse and adapt:</span> Repurpose what you&rsquo;ve written instead of restarting each time.</li>
+                    <li><span class="kicker">👥 Real audiences:</span> Practice communicating the same topic for different readers and purposes.</li>
+                </ul>
+            </div>
+
+
+            <!-- 2) UT PROSIM -->
+            <div id="utprosim-focus" class="info-section-utprosim">
+                <h3 class="utprosim">Focusing on <em>Ut Prosim</em></h3>
+
+                <figure style="width: 240px; float: right; margin: 0 0 12px 12px;">
+                    <img class="img-frame-short" src="http://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/RS190384_20230711_Campus_Summer_LH_0006_web.jpg" alt="The words Ut Prosim carved into the Hokie Stone outside Fralin Hall">
+                    <figcaption>Figure 2. July 11th, 2023 &ndash; Ut Prosim carved into Hokie Stone outside Fralin Hall (Photo by Luke Hayes/Virginia Tech)</figcaption>
+                </figure>
+
+                <p class="micro-lead">
+                    <em>Ut Prosim</em> means using your skills to help others. In this course, you do that through writing.
+                </p>
+
+                <ul class="icon-list">
+                    <li><span class="kicker">🧭 Service:</span> Use your expertise in ways that help people and communities.</li>
+                    <li><span class="kicker">🛠 Practical help:</span> Clear documents reduce confusion and make information usable.</li>
+                    <li><span class="kicker">🧑‍🤝‍🧑 Real readers:</span> You write for people who may be busy, stressed, or new to the topic.</li>
+                </ul>
+
+                <div class="callout">
+                    <strong>Bottom line:</strong> When technical writing is clear and audience-focused, it becomes a way to serve others by making information usable.
+                </div>
+
+                <p class="mini" style="margin-top: 14px; padding-top: 10px; border-top: 1px solid #000000;">
+                    <sup>1</sup> Read more about <em>Ut Prosim</em> in the 2022 VT News article &ldquo;<a href="https://news.vt.edu/articles/2022/11/cm-service.html" target="_blank" rel="noopener">&lsquo;<em>Ut Prosim</em>&rsquo;: More than a motto at Virginia Tech</a>.&rdquo;
+                </p>
+            </div>
+
+
+            <!-- 3) CHOOSING A TOPIC -->
+            <div id="focus-major" class="info-section-utprosim">
+                <h3 class="utprosim">Choosing a Technical Topic That Matters</h3>
+
+                <figure style="width: 240px; float: right; margin: 0 0 12px 12px;">
+                    <img class="img-frame" src="https://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/environmental-engineer-explaining.png" alt="A student studying environmental engineering, standing outdoors at a field site, explaining a concept to a small group of community members">
+                    <figcaption><em>Figure 3. Student explaining an environmental concept to community members. Created with ChatGPT 5.2.</em></figcaption>
+                </figure>
+
+                <p class="micro-lead">
+                    Pick one technical topic from your major that you can explain clearly to non-experts.
+                </p>
+
+                <ul class="chip-grid">
+                    <li class="chip">
+                        <span class="label">🎓 From your major</span>
+                        Technical object, process, practice, or idea you can research confidently.
+                        <div class="mini">Need ideas? See the <a href="https://canvas.vt.edu/courses/224896/pages/report-subject-ideas-by-major" target="_blank" rel="noopener">Report Subject Ideas by Major</a> page.</div>
+                    </li>
+
+                    <li class="chip">
+                        <span class="label">🌍 Useful in the real world</span>
+                        Connect to a genuine need&mdash;something people need to understand, use, or navigate.
+                    </li>
+
+                    <li class="chip">
+                        <span class="label">🧠 Clear for non-experts</span>
+                        Explain it without assuming specialized background knowledge.
+                    </li>
+
+                    <li class="chip">
+                        <span class="label">🧩 Works across six documents</span>
+                        Enough depth and flexibility for different audiences, purposes, and formats.
+                        <div class="mini">
+                            See <a href="" target="_blank" rel="noopener">How One Topic Becomes Six Documents</a>.
+                        </div>
+                    </li>
+
+                    <li class="chip">
+                        <span class="label">✨ You care about it</span>
+                        Choose something you want to learn more about all semester.
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- 4) PROJECT OVERVIEW -->
+            <div id="project-overview" class="info-section-utprosim">
+                <h3 class="utprosim">How the Six Projects Work Together</h3>
+
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <!-- LEFT: visual map + stays/changes -->
+                        <div class="col-sm-5">
+                            <div class="panel">
+
+                                <div class="utprosim-badge" role="img" aria-label="The Semester-Long Project: Ut Prosim in Action">
+                                    <div class="utprosim-badge__inner">
+                                        <div class="utprosim-badge__title">
+                                            THE SEMESTER-LONG<br>
+                                            PROJECT:<br>
+                                            <span class="utprosim-badge__italics">UT PROSIM</span><br>
+                                            IN ACTION
+                                        </div>
+
+                                        <div class="utprosim-badge__dots" aria-label="Six major projects">
+                                            <span class="utprosim-badge__dot dot-01" aria-hidden="true"></span>
+                                            <span class="utprosim-badge__dot dot-02" aria-hidden="true"></span>
+                                            <span class="utprosim-badge__dot dot-03" aria-hidden="true"></span>
+                                            <span class="utprosim-badge__dot dot-04" aria-hidden="true"></span>
+                                            <span class="utprosim-badge__dot dot-05" aria-hidden="true"></span>
+                                            <span class="utprosim-badge__dot dot-06" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="micro-lead" style="margin-top: 14px;">
+                                    Same topic. New purpose each time.
+                                </p>
+
+                                <h4>Across all six projects</h4>
+
+                                <p class="tight"><strong>🔒 What stays the same</strong></p>
+                                <ul>
+                                    <li>Your topic</li>
+                                    <li>Your project research</li>
+                                </ul>
+
+                                <hr style="margin: 12px 0; border-top: 1px solid #861f41;">
+
+                                <p class="tight"><strong>🔄 What changes each time</strong></p>
+                                <ul>
+                                    <li>Audience</li>
+                                    <li>Purpose</li>
+                                    <li>Genre</li>
+                                    <li>Level of detail</li>
+                                </ul>
+
+                                <h4>Why the sequence matters</h4>
+                                <p class="tight">
+                                    Build expertise, test explanations, and improve clarity as you go.
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                        <!-- RIGHT: six steps (tightened copy) -->
+                        <div class="col-sm-7">
+
+                            <div class="step-card shadow-01">
+                                <div class="row">
+                                    <div class="col-sm-3 step-left">
+                                        <div>Step <span class="step-num">01</span></div>
+                                    </div>
+                                    <div class="col-sm-9 step-right border-01">
+                                        <h4>Subject Selection Form</h4>
+                                        <p class="tight">Submit your topic for approval and explain your plan in a short form.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card shadow-02">
+                                <div class="row">
+                                    <div class="col-sm-3 step-left">
+                                        <div>Step <span class="step-num">02</span></div>
+                                    </div>
+                                    <div class="col-sm-9 step-right border-02">
+                                        <h4>Research Proposal</h4>
+                                        <p class="tight">Define scope, questions, and sources&mdash;including a brief literature review.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card shadow-03">
+                                <div class="row">
+                                    <div class="col-sm-3 step-left">
+                                        <div>Step <span class="step-num">03</span></div>
+                                    </div>
+                                    <div class="col-sm-9 step-right border-03">
+                                        <h4>User Document</h4>
+                                        <p class="tight">Create a quick, usable guide (instructions, checklist, or how-to handout).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card shadow-04">
+                                <div class="row">
+                                    <div class="col-sm-3 step-left">
+                                        <div>Step <span class="step-num">04</span></div>
+                                    </div>
+                                    <div class="col-sm-9 step-right border-04">
+                                        <h4>Progress Report</h4>
+                                        <p class="tight">Report what&rsquo;s done, what&rsquo;s next, and what&rsquo;s challenging.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card shadow-05">
+                                <div class="row">
+                                    <div class="col-sm-3 step-left">
+                                        <div>Step <span class="step-num">05</span></div>
+                                    </div>
+                                    <div class="col-sm-9 step-right border-05">
+                                        <h4>Informational Report</h4>
+                                        <p class="tight">Explain your topic for non-expert decision-makers so they can act with confidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card shadow-06">
+                                <div class="row">
+                                    <div class="col-sm-3 step-left">
+                                        <div>Step <span class="step-num">06</span></div>
+                                    </div>
+                                    <div class="col-sm-9 step-right border-06">
+                                        <h4>Fact Sheet</h4>
+                                        <p class="tight">Translate the essentials into a highly visual, easy-to-scan one-pager.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 5) FINAL (still draft, made lighter + more infographic-like) -->
+            <div id="final-words" class="info-section-utprosim">
+                <h3 class="utprosim">What You&rsquo;ll Leave With</h3>
+
+                <figure style="width: 240px; float: right; margin: 0 0 12px 12px;">
+                    <img class="img-frame" src="https://tracigardner.github.io/TechComm/semester/2026-01-Spring/utprosim/presenting--in-the-workplace.png" alt="College student in a maroon shirt presents a technical report during a small meeting, holding a printed document with charts while referencing related visuals on a laptop at the table.">
+                    <figcaption><em>Figure 4. Student presenting technical writing in a workplace setting. Created with ChatGPT 5.2.</em></figcaption>
+                </figure>
+
+                <p class="micro-lead">
+                    By the end of the semester, you leave with:
+                </p>
+
+                <ul class="icon-list">
+                    <li><span class="kicker">📁 Portfolio:</span> Six connected documents on one technical topic.</li>
+                    <li><span class="kicker">🔁 Adaptation:</span> Practice shifting audience, purpose, genre, and detail.</li>
+                    <li><span class="kicker">🧠 Transfer:</span> Skills you can use in internships, research, and professional work.</li>
+                </ul>
+
+                <div class="big-question">
+                    <strong>Guiding question:</strong> Who benefits from this writing, and how can I help them understand and use it more effectively?
+                </div>
+
+                <div class="callout">
+                    <strong>Takeaway:</strong> Technical writing is a practical skill you can carry beyond this course&mdash;because clear information helps real people do real things.
+                </div>
+            </div>
+
+            <p style="padding-bottom: 18px;">&nbsp;</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
