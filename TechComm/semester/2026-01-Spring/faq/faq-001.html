@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Course FAQ</title>
+    <style>
+        :root {
+            --brand: #861f41;
+            /* swap to your brand */
+            --ink: #1f2937;
+            --muted: #6b7280;
+            --bg: #ffffff;
+            --card: #f9fafb;
+            --ring: #e5e7eb;
+            --radius: 14px;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            margin: 0;
+        }
+
+        .wrap {
+            max-width: 1100px;
+            margin: auto;
+            padding: 24px;
+        }
+
+        .hero {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 12px
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 4vw, 40px);
+            margin: 0
+        }
+
+        .meta {
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 14px 0 20px
+        }
+
+        .search {
+            flex: 1;
+            min-width: 240px;
+            display: flex;
+            align-items: center;
+            background: var(--card);
+            border: 1px solid var(--ring);
+            border-radius: 999px;
+            padding: 10px 14px
+        }
+
+        .search input {
+            border: 0;
+            background: transparent;
+            outline: none;
+            flex: 1;
+            font-size: 16px
+        }
+
+        .chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .chip {
+            border: 1px solid var(--ring);
+            background: #fff;
+            border-radius: 999px;
+            padding: 8px 12px;
+            font-size: 14px;
+            cursor: pointer
+        }
+
+        .chip.active {
+            background: var(--brand);
+            border-color: var(--brand);
+            color: #fff
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 18px
+        }
+
+        @media (max-width:900px) {
+            .layout {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .side {
+            position: sticky;
+            top: 12px;
+            height: fit-content;
+            background: var(--card);
+            border: 1px solid var(--ring);
+            border-radius: var(--radius);
+            padding: 14px
+        }
+
+        .side h3 {
+            margin: 0 0 10px;
+            font-size: 16px
+        }
+
+        .side ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 8px
+        }
+
+        .side a {
+            display: block;
+            text-decoration: none;
+            color: var(--ink);
+            background: #fff;
+            border: 1px solid var(--ring);
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 14px
+        }
+
+        .side a:hover {
+            border-color: var(--brand)
+        }
+
+        .faq {
+            display: grid;
+            gap: 10px
+        }
+
+        details {
+            background: #fff;
+            border: 1px solid var(--ring);
+            border-radius: var(--radius);
+            padding: 0
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px
+        }
+
+        summary::-webkit-details-marker {
+            display: none
+        }
+
+        summary:focus {
+            outline: 2px solid var(--brand);
+            outline-offset: 2px;
+            border-radius: calc(var(--radius) - 2px)
+        }
+
+        .q {
+            font-weight: 600
+        }
+
+        .tags {
+            margin-left: auto;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap
+        }
+
+        .tag {
+            font-size: 12px;
+            color: var(--muted);
+            border: 1px dashed var(--ring);
+            border-radius: 999px;
+            padding: 3px 8px
+        }
+
+        .a {
+            padding: 0 16px 16px;
+            color: #11172a;
+            line-height: 1.55
+        }
+
+        .pin {
+            display: inline-block;
+            background: var(--brand);
+            color: #fff;
+            font-size: 12px;
+            border-radius: 6px;
+            padding: 2px 6px;
+            margin-left: 6px
+        }
+
+        .util {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px
+        }
+
+        .btn {
+            border: 1px solid var(--ring);
+            border-radius: 8px;
+            padding: 6px 10px;
+            font-size: 13px;
+            background: #fff;
+            cursor: pointer
+        }
+
+        .btn:hover {
+            border-color: var(--brand)
+        }
+
+        .empty {
+            padding: 18px;
+            border: 1px dashed var(--ring);
+            border-radius: 12px;
+            color: var(--muted);
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="hero">
+            <h1>Course FAQ</h1>
+            <div class="meta">Find quick answers about deadlines, teamwork, AI use, and more.</div>
+        </div>
+
+        <div class="toolbar" role="search">
+            <div class="search">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24">
+                    <path d="M21 21l-4.3-4.3m1.3-4.7a7 7 0 11-14 0 7 7 0 0114 0z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <input id="q" type="search" placeholder="Search questions &amp; answers…" aria-label="Search FAQ" />
+            </div>
+            <div class="chips" aria-label="Filter by category">
+                <button class="chip active" data-cat="all" aria-pressed="true">All</button>
+                <button class="chip" data-cat="policies">Policies</button>
+                <button class="chip" data-cat="deadlines">Deadlines</button>
+                <button class="chip" data-cat="teams">Teams</button>
+                <button class="chip" data-cat="ai">AI Use</button>
+                <button class="chip" data-cat="grading">Grading</button>
+            </div>
+        </div>
+
+        <div class="layout">
+            <nav class="side" aria-label="Jump to section">
+                <h3>Quick jumps</h3>
+                <ul>
+                    <li><a href="#policies">Policies</a></li>
+                    <li><a href="#deadlines">Deadlines</a></li>
+                    <li><a href="#teams">Teams</a></li>
+                    <li><a href="#ai">AI Use</a></li>
+                    <li><a href="#grading">Grading</a></li>
+                </ul>
+            </nav>
+
+            <main id="top" class="faq" aria-live="polite">
+                <!-- Example Q&A items. Duplicate/replace to reach ~40. -->
+                <details data-cat="policies" open>
+                    <summary>
+                        <span class="q"></span>
+                        <span class="pin">Top</span>
+                        <span class="tags"><span class="tag">deadlines</span></span>
+                    </summary>
+                    <div class="a">
+
+                        <div class="util">
+                            <button class="btn" data-copy="Late work policy details…">Copy answer</button>
+                            <a class="btn" href="#late-work" aria-label="Permalink to this question">Permalink</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details data-cat="ai" id="ai">
+                    <summary>
+                        <span class="q">What is the policy on AI tools?</span>
+                        <span class="tags"><span class="tag">ai</span><span class="tag">policies</span></span>
+                    </summary>
+                    <div class="a">
+                        <p>Clarify permitted vs. restricted uses, citation/trace requirements, and examples of appropriate use.</p>
+                        <div class="util">
+                            <button class="btn" data-copy="AI policy summary…">Copy answer</button>
+                            <a class="btn" href="#ai" aria-label="Permalink to this question">Permalink</a>
+                        </div>
+                    </div>
+                </details>
+
+                <details data-cat="teams" id="teams">
+                    <summary>
+                        <span class="q">How are team roles assigned?</span>
+                        <span class="tags"><span class="tag">teams</span></span>
+                    </summary>
+                    <div class="a">
+                        <p>Explain role rotation, peer evaluation, and conflict resolution steps.</p>
+                        <div class="util">
+                            <button class="btn" data-copy="Team roles &amp; rotation…">Copy answer</button>
+                            <a class="btn" href="#teams" aria-label="Permalink to this question">Permalink</a>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Add ~37 more details blocks, varying data-cat and ids -->
+            </main>
+        </div>
+
+        <div class="empty" id="empty" hidden>No results. Try a different term or clear filters.</div>
+    </div>
+
+    <script>
+        // Live search across questions + answers
+        const input = document.getElementById('q');
+        const items = [...document.querySelectorAll('details[data-cat]')];
+        const empty = document.getElementById('empty');
+
+        function applyFilters() {
+            const term = (input.value || '').toLowerCase().trim();
+            const active = document.querySelector('.chip.active')?.dataset.cat || 'all';
+            let visible = 0;
+
+            items.forEach(d => {
+                const hay = (d.querySelector('.q')?.textContent + ' ' + d.querySelector('.a')?.textContent).toLowerCase();
+                const matchesTerm = !term || hay.includes(term);
+                const matchesCat = active === 'all' || d.dataset.cat === active;
+                const show = matchesTerm && matchesCat;
+                d.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+
+            empty.hidden = visible !== 0;
+        }
+
+        input.addEventListener('input', applyFilters);
+
+        // Category chip toggles
+        document.querySelectorAll('.chip').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.chip').forEach(c => { c.classList.remove('active'); c.setAttribute('aria-pressed', 'false'); });
+                btn.classList.add('active'); btn.setAttribute('aria-pressed', 'true');
+                applyFilters();
+            });
+        });
+
+        // Copy answer utility
+        document.querySelectorAll('.btn[data-copy]').forEach(b => {
+            b.addEventListener('click', async () => {
+                try {
+                    await navigator.clipboard.writeText(b.dataset.copy);
+                    b.textContent = 'Copied!';
+                    setTimeout(() => b.textContent = 'Copy answer', 1200);
+                } catch (e) { alert('Copy failed'); }
+            });
+        });
+
+        // Keyboard affordance: open/close on Enter when summary focused (native works, but this improves UX)
+        document.querySelectorAll('summary').forEach(s => {
+            s.setAttribute('tabindex', '0');
+            s.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); s.click(); }
+            });
+        });
+    </script>
+</body>
+
+</html>
