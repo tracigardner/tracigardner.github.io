@@ -28,6 +28,7 @@
         h3 {
             border-top: none;
             padding-top: 0;
+            text-transform: capitalize;
         }
 
         ol li::marker {
@@ -44,8 +45,15 @@
             border-bottom: 0;
         }
 
+        .null li::marker {
+            font-weight: 500;
+            color: #000000;
+        }
+
+
         .left-indent {
             margin-left: 24px;
+            list-style-type: disc;
         }
     </style>
 
@@ -89,14 +97,13 @@
     </script>
     <div id="postBody" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
 
-        <p>DELETE ME???????<br><br>The information and resources on this page provide the basic details you need to get started in the course.</p>
-
-        <div>
-
-            <h2>Start Here: Technical Writing (ENGL 3764)</h2>
+        <div id="start-here">
+            <h2><img src="https://tracigardner.github.io/TechComm/-images/newsletters/noun-start-button-5256663-861F41.png" alt="" style="width: 30px; height: 30px; margin-right: 6px;">Start Here: Technical Writing (ENGL 3764)</h2>
 
             <p>Welcome to Technical Writing! This course will help you write clear, effective, and ethical documents for real workplace situations. Everything you need is organized in weekly modules in Canvas.</p>
+
             <ol>
+                <!-- Item 1: What this course is -->
                 <li>
                     <h3>What this course is</h3>
                     <p>
@@ -104,161 +111,124 @@
                         You will focus on one semester-long topic and create multiple professional documents (proposals, reports, instructions, and visual materials).
                     </p>
                     <ul class="left-indent">
-                        <li><a href="https://canvas.vt.edu/courses/224896/pages/syllabus-for-technical-writing-spring-2026" target="_blank">Open the Syllabus (PDF)</a> (course overview, schedule, grading basics, use of AI)</li>
-                        <li><a href="https://canvas.vt.edu/courses/224896/pages/technical-writing-course-policies" target="_blank">Open the Course Policies (PDF)</a> (detailed policies and support resources)</li>
+                        <li><a href="https://canvas.vt.edu/courses/224896/pages/syllabus-for-technical-writing-spring-2026" target="_blank">Open the Syllabus (PDF)</a> (course overview, schedule, grading basics, use of AI).</li>
+                        <li><a href="https://canvas.vt.edu/courses/224896/pages/technical-writing-course-policies" target="_blank">Open the Course Policies (PDF)</a> (detailed policies and support resources).</li>
                     </ul>
                 </li>
 
+                <!-- Item 2: How the course works each week -->
                 <li>
                     <h3>How the course works each week</h3>
                     <p>🎒 <strong>Weekly modules = your weekly &ldquo;backpack.&rdquo;</strong>
                         Each module includes a short introduction page, links to readings, and links to all assignments for the week.</p>
                     <p><strong>Weekly flow:</strong> Open the module → Read/Review → Complete activities → Submit work</p>
                     <ul class="left-indent">
-                        <li><a href="https://canvas.vt.edu/courses/224896/modules">Go to Modules</a> (course readings and activities, arranged by the week)</li>
+                        <li><a href="https://canvas.vt.edu/courses/224896/modules">Go to Modules</a> (course readings and activities, arranged by the week).</li>
                     </ul>
                 </li>
 
-
-
+                <!-- Item 3: What to do first -->
                 <li>
                     <h3>What to do first</h3>
                     <p>
                         ✅ <strong>Use this checklist to get started.</strong>
                     </p>
-                    <ol class="null left-indent" style="list-style-type: lower-alpha">
+                    <ul class="null left-indent" style="list-style-type: lower-alpha">
                         <li>Read this Start Here page.</li>
                         <li>Open the Syllabus and Course Policies (links above).</li>
-                        <li>Check <a href="#"><strong>Announcements</strong></a> in Canvas.</li>
-                        <li>Open <a href="#"><strong>Module 1</strong></a> and start with the Module Introduction page.</li>
-                        <li>Post course questions in <a href="#"><strong>General Q&amp;A</strong></a>.</li>
-                    </ol>
+                        <li>Check <a href="https://canvas.vt.edu/courses/224896/announcements">Announcements</a> in Canvas.</li>
+                        <li>Begin Module 1, starting with the <a href="https://canvas.vt.edu/courses/224896/pages/week-1-introduction-intro-to-technical-writing?module_item_id=3822884" target="_blank">Week 1 Introduction page</a>.</li>
+                        <li>Post course questions in <a href="https://canvas.vt.edu/courses/224896/discussion_topics/2310546" target="_blank">General Q&amp;A</a>.</li>
+                    </ul>
                 </li>
 
+                <!-- Item 4: Where to find everything -->
+                <li>
+                    <h3>Where to find everything (quick map 🗺️)</h3>
+                    <ul class="null" style="list-style-type: none;">
+                        <li>📦 <a href="https://canvas.vt.edu/courses/224896/modules" target="_blank">Modules</a>: where you start every week.</li>
+                        <li>📝 <a href="https://canvas.vt.edu/courses/224896/assignments" target="_blank">Assignments</a>: directions, rubrics, and submission links.</li>
+                        <li>📣 <a href="https://canvas.vt.edu/courses/224896/announcements" target="_blank">Announcements</a>: required updates and weekly guidance.</li>
+                        <li>📊 <a href="https://canvas.vt.edu/courses/224896/grades" target="_blank">Grades</a>: your progress and feedback.</li>
+                        <li>✉️ <a href="https://canvas.vt.edu/conversations" target="_blank">Inbox</a>: private messages (grades, accommodations, individual questions).</li>
+                    </ul>
+                </li>
+
+
+                <!-- Item 5: Due dates, flexibility, and revisions -->
+                <li>*************
+                    <h3>Due dates, flexibility, and revisions</h3>
+                    <p>
+                        ⏰ <strong>Target Due Dates keep you on track.</strong>
+                        Aim for the target due date each week so you don&rsquo;t fall behind.
+                    </p>
+                    <p>
+                        🗓️ <strong>Grace Periods give you built-in flexibility.</strong>
+                        Most assignments include an automatic extension (no request needed).
+                    </p>
+                    <p>
+                        🔁 <strong>Major projects may be revised.</strong>
+                        If a major project doesn&rsquo;t meet the standard at first, you will typically have a revision window after feedback.
+                    </p>
+                    <p>
+                        <a href="#"><strong>Read the Late Policy &amp; Grace Period details</strong></a>
+                    </p>
+                </li>
+
+                <!-- Item 6: Grading -->
+                <li>
+                    <h3>Grading (at a glance)</h3>
+                    <p>
+                        🎯 <strong>Homework:</strong> Complete / Incomplete (strong effort + meets requirements + submitted before the grace period ends).
+                    </p>
+                    <p>
+                        🧾 <strong>Major Projects:</strong> graded with rubrics and a workplace-ready standard; revision may be available after feedback.
+                    </p>
+                    <p>
+                        <a href="#"><strong>See grading details and project weights</strong></a>
+                    </p>
+                </li>
+
+                <!-- Item 7: Using AI -->
+                <li>
+                    <h3>Using AI in this course (quick version)</h3>
+                    <p>
+                        🤖 <strong>AI is part of modern technical writing.</strong>
+                        You may use AI for tasks like brainstorming, organization, research support (with verification), and draft review when assignments allow it.
+                    </p>
+                    <ul>
+                        <li><strong>Recommended:</strong> Microsoft Copilot (VT-approved)</li>
+                        <li><strong>Always:</strong> You are responsible for what you submit.</li>
+                        <li><strong>Not allowed (in most cases):</strong> having AI write or revise your drafts for you.</li>
+                    </ul>
+                    <p>
+                        <a href="#"><strong>Read the full AI policy and documentation expectations</strong></a>
+                    </p>
+                </li>
+
+                <!-- Item 8: Help -->
+                <li>
+                    <h3>Help and support</h3>
+                    <p>
+                        🛟 <strong>Ask questions early and often.</strong>
+                    </p>
+                    <ul>
+                        <li><strong>General course questions:</strong> <a href="#">General Q&amp;A Discussion Board</a></li>
+                        <li><strong>Private questions (grades, accommodations):</strong> <a href="#">Canvas Inbox</a></li>
+                        <li><strong>Writing support:</strong> <a href="#">Writing Center</a></li>
+                        <li><strong>Technical support:</strong> <a href="#">Canvas Help / VT 4Help</a></li>
+                    </ul>
+                </li>
+
+                <h3>Ready to begin?</h3>
+
+                <p>
+                    👉 <a href="#"><strong>Go to Module 1</strong></a>
+                </p>
             </ol>
-            <hr>
-
-
-            <h3>4) Where to find everything (quick map)</h3>
-
-            <ul>
-                <li>📦 <strong>Modules</strong>: where you start every week</li>
-                <li>📝 <strong>Assignments</strong>: directions, rubrics, and submission links</li>
-                <li>📣 <strong>Announcements</strong>: required updates and weekly guidance</li>
-                <li>📊 <strong>Grades</strong>: your progress and feedback</li>
-                <li>✉️ <strong>Inbox</strong>: private messages (grades, accommodations, individual questions)</li>
-            </ul>
-
-
-            <hr>
-
-
-            <h3>5) Due dates, flexibility, and revisions</h3>
-
-            <p>
-                ⏰ <strong>Target Due Dates keep you on track.</strong>
-                Aim for the target due date each week so you don&rsquo;t fall behind.
-            </p>
-
-            <p>
-                🗓️ <strong>Grace Periods give you built-in flexibility.</strong>
-                Most assignments include an automatic extension (no request needed).
-            </p>
-
-            <p>
-                🔁 <strong>Major projects may be revised.</strong>
-                If a major project doesn&rsquo;t meet the standard at first, you will typically have a revision window after feedback.
-            </p>
-
-            <p>
-                <a href="#"><strong>Read the Late Policy &amp; Grace Period details</strong></a>
-            </p>
-
-
-            <hr>
-
-
-            <h3>6) Grading (at a glance)</h3>
-
-            <p>
-                🎯 <strong>Homework:</strong> Complete / Incomplete (strong effort + meets requirements + submitted before the grace period ends).
-            </p>
-
-            <p>
-                🧾 <strong>Major Projects:</strong> graded with rubrics and a workplace-ready standard; revision may be available after feedback.
-            </p>
-
-            <p>
-                <a href="#"><strong>See grading details and project weights</strong></a>
-            </p>
-
-
-            <hr>
-
-
-            <h3>7) Using AI in this course (quick version)</h3>
-
-            <p>
-                🤖 <strong>AI is part of modern technical writing.</strong>
-                You may use AI for tasks like brainstorming, organization, research support (with verification), and draft review when assignments allow it.
-            </p>
-
-            <ul>
-                <li><strong>Recommended:</strong> Microsoft Copilot (VT-approved)</li>
-                <li><strong>Always:</strong> You are responsible for what you submit.</li>
-                <li><strong>Not allowed (in most cases):</strong> having AI write or revise your drafts for you.</li>
-            </ul>
-
-            <p>
-                <a href="#"><strong>Read the full AI policy and documentation expectations</strong></a>
-            </p>
-
-
-            <hr>
-
-
-            <h3>8) Help and support</h3>
-
-            <p>
-                🛟 <strong>Ask questions early and often.</strong>
-            </p>
-
-            <ul>
-                <li><strong>General course questions:</strong> <a href="#">General Q&amp;A Discussion Board</a></li>
-                <li><strong>Private questions (grades, accommodations):</strong> <a href="#">Canvas Inbox</a></li>
-                <li><strong>Writing support:</strong> <a href="#">Writing Center</a></li>
-                <li><strong>Technical support:</strong> <a href="#">Canvas Help / VT 4Help</a></li>
-            </ul>
-
-
-            <hr>
-
-
-            <h3>Ready to begin?</h3>
-
-            <p>
-                👉 <a href="#"><strong>Go to Module 1</strong></a>
-            </p>
-
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <body>
-
-        </body>
+    </div>
+</body>
 
 </html>
