@@ -251,7 +251,7 @@
 
         .gradeTable td,
         .gradeTable th {
-            border: 1px solid #ddd;
+            border: 2px solid #000000 !important;
             padding: 12px;
             vertical-align: top;
         }
@@ -267,8 +267,65 @@
             vertical-align: top;
         }
 
-        table th {
-            font-weight: 700;
+        .ai-rules {
+            margin-top: 12px;
+        }
+
+        .ai-rule {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-left: 6px solid;
+            background-color: #f9f9f9;
+        }
+
+        .ai-icon {
+            font-size: 2.4rem;
+            margin-right: 12px;
+            line-height: 1;
+        }
+
+        .ai-text {
+            line-height: 1.5;
+        }
+
+        /* semantic color cues */
+        .ai-allowed {
+            border-color: #508590;
+        }
+
+        .ai-responsibility {
+            border-color: #df9566;
+        }
+
+        .ai-not-allowed {
+            border-color: #e2669b;
+        }
+
+        .help-hub {
+            margin-top: 6px;
+        }
+
+        .help-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .help-item:last-child {
+            border-bottom: none;
+        }
+
+        .help-icon {
+            font-size: 1.6rem;
+            margin-right: 12px;
+            line-height: 1;
+        }
+
+        .help-text {
+            line-height: 1.5;
         }
     </style>
 
@@ -580,7 +637,7 @@
                         <div class="col-sm-12 start-box" style="padding: 0;">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-12 start-header start-header-landgrantgrey">
+                                    <div class="col-sm-12 start-header start-header-yellow">
                                         <h3 class="font-black">How does grading work?</h3>
                                     </div>
                                     <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
@@ -591,26 +648,26 @@
                                                 <table class="table table-bordered align-middle gradeTable">
                                                     <thead>
                                                         <tr>
-                                                            <th scope="col" style="background-color: #ffffff !important;"></th>
-                                                            <th scope="col" style="vertical-align: top;background-color: #ffffff !important;">🎯 Homework (15%)</th>
-                                                            <th scope="col" style="vertical-align: top;background-color: #ffffff !important;">🧾 Major Projects (85%)</th>
+                                                            <th scope="col" style="background-color: #ffffff  !important;">&nbsp;</th>
+                                                            <th scope="col" style="vertical-align: top;background-color: #faf291 !important;border-left: 2px solid #000000;">🎯 Homework (15%)</th>
+                                                            <th scope="col" style="vertical-align: top;background-color: #faf291 !important;border-left: 2px solid #000000;">🧾 Major Projects (85%)</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <th scope="row" style="vertical-align: top;">Grade</th>
-                                                            <td style="vertical-align: top;">Up to 100 points OR Complete / Incomplete.</td>
-                                                            <td style="vertical-align: top;">Up to 100 points. Weight varies by project.</td>
+                                                            <td style="vertical-align: top;border-left: 2px solid #000000;">Up to 100 points OR Complete / Incomplete.</td>
+                                                            <td style="vertical-align: top;border-left: 2px solid #000000;">Up to 100 points. Weight varies by project.</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row" style="vertical-align: top;background-color: #ffffff !important;">Expectations</th>
-                                                            <td style="vertical-align: top;">Strong effort + meets requirements + submitted before the grace period ends.</td>
-                                                            <td style="vertical-align: top;">Detailed in rubric + workplace-ready + submitted before the grace period ends.</td>
+                                                            <td style="vertical-align: top;border-left: 2px solid #000000;">Strong effort + meets requirements + submitted before the grace period ends.</td>
+                                                            <td style="vertical-align: top;border-left: 2px solid #000000;">Detailed in rubric + workplace-ready + submitted before the grace period ends.</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row" style="vertical-align: top;">Revision</th>
-                                                            <td style="vertical-align: top;">Unlimited until the end of the grace period.</td>
-                                                            <td style="vertical-align: top;">May be available after feedback, up to the Revision Deadline.</td>
+                                                            <td style="vertical-align: top;border-left: 2px solid #000000;">Unlimited until the end of the grace period.</td>
+                                                            <td style="vertical-align: top;border-left: 2px solid #000000;">May be available after feedback, up to the Revision Deadline.</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -640,19 +697,46 @@
                                         <h3 class="font-black">Can I Use AI in this course? (quick version)</h3>
                                     </div>
                                     <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
-                                        <p>
-                                            🤖 <strong>AI is part of modern technical writing.</strong>
-                                            You may use AI for tasks like brainstorming, organization, research support (with verification), and draft review when assignments allow it.
-                                        </p>
-                                        <ul class="left-indent">
-                                            <li><strong>Recommended:</strong> Microsoft Copilot (VT-approved)</li>
-                                            <li><strong>Always:</strong> You are responsible for what you submit.</li>
-                                            <li style="margin-bottom: 18px;"><strong>Not allowed (in most cases):</strong> Having AI write or revise your drafts for you.</li>
-                                        </ul>
+                                        <div class="col-sm-12" style="background-color:#ffffff;padding:12px;">
 
-                                        <ul class="left-indent">
-                                            <li>??? <a href="https://canvas.vt.edu/courses/224896/pages/syllabus-for-technical-writing-spring-2026" target="_blank">Read the full AI policy in the Syllabus.</a></li>
-                                        </ul>
+                                            <p>
+                                                🤖 <strong>AI is part of modern technical writing.</strong>
+                                                You may use AI for tasks like brainstorming, organization, research support (with verification), and draft review when assignments allow it.
+                                            </p>
+
+                                            <div class="ai-rules">
+
+                                                <div class="ai-rule ai-allowed">
+                                                    <div class="ai-icon" aria-hidden="true">✔</div>
+                                                    <div class="ai-text">
+                                                        <strong>Recommended:</strong> Microsoft Copilot (VT-approved)
+                                                    </div>
+                                                </div>
+
+                                                <div class="ai-rule ai-responsibility">
+                                                    <div class="ai-icon" aria-hidden="true">⚠</div>
+                                                    <div class="ai-text">
+                                                        <strong>Always:</strong> You are responsible for what you submit.
+                                                    </div>
+                                                </div>
+
+                                                <div class="ai-rule ai-not-allowed">
+                                                    <div class="ai-icon" aria-hidden="true">✖</div>
+                                                    <div class="ai-text">
+                                                        <strong>Not allowed (in most cases):</strong> Having AI write or revise your drafts for you.
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <p class="mt-3">
+                                                <a href="https://canvas.vt.edu/courses/224896/pages/syllabus-for-technical-writing-spring-2026" target="_blank">
+                                                    Read the full AI policy in the Syllabus.
+                                                </a>
+                                            </p>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -664,28 +748,93 @@
                         <div class="col-sm-12 start-box" style="padding: 0;">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-12 start-header start-header-hokiestone">
+                                    <div class="col-sm-12 start-header start-header-landgrantgrey">
                                         <h3 class="font-black">Where can I find Help and support?</h3>
                                     </div>
                                     <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
-                                        <ul>
-                                            <li><strong>General course questions:</strong> <a href="https://canvas.vt.edu/courses/224896/discussion_topics/2310546" target="_blank">General Q&amp;A Discussion Board</a></li>
-                                            <li><strong>Private questions (grades, accommodations):</strong> <a href="https://canvas.vt.edu/conversations" target="_blank">Canvas Inbox</a></li>
-                                            <li><strong>Writing support:</strong> <a href="https://lib.vt.edu/study-learn/writing-center.html" target="_blank">Writing Center</a></li>
-                                            <li><strong>Technical support:</strong> <a href="https://4help.vt.edu/" target="_blank">VT 4Help</a></li>
-                                        </ul>
+                                        <div class="col-sm-12" style="background-color:#ffffff;padding:12px;">
+
+                                            <div class="help-hub">
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">💬</div>
+                                                    <div class="help-text">
+                                                        <strong>General course questions</strong><br>
+                                                        Use the
+                                                        <a href="https://canvas.vt.edu/courses/224896/discussion_topics/2310546" target="_blank">
+                                                            General Q&amp;A Discussion Board
+                                                        </a>
+                                                        for questions others may have too.
+                                                    </div>
+                                                </div>
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">✉️</div>
+                                                    <div class="help-text">
+                                                        <strong>Private or sensitive questions</strong><br>
+                                                        Contact me through the
+                                                        <a href="https://canvas.vt.edu/conversations" target="_blank">
+                                                            Canvas Inbox
+                                                        </a>
+                                                        for grades, accommodations, or individual concerns.
+                                                    </div>
+                                                </div>
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">✍️</div>
+                                                    <div class="help-text">
+                                                        <strong>Writing support</strong><br>
+                                                        Get help with drafts and revision strategies from the
+                                                        <a href="https://lib.vt.edu/study-learn/writing-center.html" target="_blank">
+                                                            Writing Center
+                                                        </a>.
+                                                    </div>
+                                                </div>
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">🛠️</div>
+                                                    <div class="help-text">
+                                                        <strong>Technical issues</strong><br>
+                                                        Contact
+                                                        <a href="https://4help.vt.edu/" target="_blank">
+                                                            VT 4Help</a>
+                                                        for Canvas or technology questions.
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Row 7: Using AI in this course (quick version) -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 font-white" style="background-color: #508590;">
+                                        <p class="footer"><small>© 2026 Traci Gardner. Licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License, unless noted otherwise.</small></p>
+                                    </div>
 
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
+
+    </div>
+
+    </div>
     </div>
     </div>
 </body>
