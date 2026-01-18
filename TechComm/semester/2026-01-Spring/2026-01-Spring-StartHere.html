@@ -19,6 +19,30 @@
 
     <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css" />
 
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+
     <style>
         .maroonbox ul li {
             line-height: 2.4rem;
@@ -55,36 +79,6 @@
             list-style-type: disc;
         }
 
-        dd {
-            margin-bottom: 15px;
-        }
-    </style>
-
-    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
-
-    <!-- include scripts -->
-    <script>
-        $(document).ready(function () {
-            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-        });
-    </script>
-
-    <script>
-        (function () {
-            var cx = '004254621551572523759:n3ows2swaxg';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-        })();
-    </script>
-
-    <style>
         .bkgd-graph-white {
             background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper.png");
             background-color: #508590;
@@ -155,6 +149,9 @@
             background-color: #508590;
         }
 
+        .start-header-skippersmoke {
+            background-color: #e5e1e6;
+        }
 
         .font-white {
             color: #ffffff;
@@ -240,6 +237,38 @@
         .map-stop p {
             font-size: 1rem;
             line-height: 1.4;
+        }
+
+
+        /* grade table */
+
+        .gradeTable {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6px 6px 6px 6px;
+            table-layout: fixed;
+        }
+
+        .gradeTable td,
+        .gradeTable th {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .gradeTable tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        .gradeTable th {
+            padding: 12px;
+            text-align: left;
+            background-color: #f2f2f2;
+            vertical-align: top;
+        }
+
+        table th {
+            font-weight: 700;
         }
     </style>
 
@@ -479,7 +508,6 @@
                         </div>
                     </div>
 
-
                     <!-- Row 5: How does the schedule work -->
                     <div class="row mt-4">
                         <div class="col-sm-12 start-box" style="padding: 0;">
@@ -496,7 +524,7 @@
                                                 <!-- Target Due Dates -->
                                                 <div class="col-md-4">
                                                     <div class="start-box h-100">
-                                                        <div class="start-header start-header-landgrantgrey">
+                                                        <div class="start-header start-header-impactorange">
                                                             <h4 class="font-black mb-0 mt-0 p-2"><span style="float: left;font-size: 24px;">⏰</span> Target Due Dates</h4>
                                                         </div>
                                                         <div class="p-3" style="background-color:#ffffff;">
@@ -510,7 +538,7 @@
                                                 <!-- Grace Periods -->
                                                 <div class="col-md-4">
                                                     <div class="start-box h-100">
-                                                        <div class="start-header start-header-landgrantgrey">
+                                                        <div class="start-header start-header-impactorange">
                                                             <h4 class="font-black mb-0 mt-0 p-2"><span style="float: left;font-size: 24px;">🗓️</span> Grace Periods</h4>
                                                         </div>
                                                         <div class="p-3" style="background-color:#ffffff;">
@@ -524,7 +552,7 @@
                                                 <!-- Revision Windows -->
                                                 <div class="col-md-4">
                                                     <div class="start-box h-100">
-                                                        <div class="start-header start-header-landgrantgrey">
+                                                        <div class="start-header start-header-impactorange">
                                                             <h4 class="font-black mb-0 mt-0 p-2"><span style="float: left;font-size: 24px;">🔁</span> Revision Windows</h4>
                                                         </div>
                                                         <div class="p-3" style="background-color:#ffffff;">
@@ -552,26 +580,51 @@
                         <div class="col-sm-12 start-box" style="padding: 0;">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-sm-12 start-header start-header-yellow">
+                                    <div class="col-sm-12 start-header start-header-landgrantgrey">
                                         <h3 class="font-black">How does grading work?</h3>
                                     </div>
                                     <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
-                                        <p class="mb-0 pb-0">🎯 <strong>Homework (15%)</strong></p>
-                                        <ul class="left-indent">
-                                            <li><span style="color: #508590;"><strong>Grade:</strong></span> Up to 100 points OR Complete / Incomplete. </li>
-                                            <li><span style="color: #508590;"><strong>Expectations:</strong></span> Strong effort + meets requirements + submitted before the grace period ends.</li>
-                                            <li class="mb-3"><span style="color: #508590;"><strong>Revision:</strong></span> Unlimited until the end of the grace period.</li>
-                                        </ul>
 
-                                        <p class="mb-0 pb-0">🧾 <strong>Major Projects (85%)</strong></p>
-                                        <ul class="left-indent">
-                                            <li><span style="color: #508590;"><strong>Grade:</strong></span> Up to 100 points. Weight varies by project.</li>
-                                            <li><span style="color: #508590;"><strong>Expectations:</strong></span> Detailed in rubric + workplace-ready + submitted before the grace period ends.</li>
-                                            <li class="mb-3"><span style="color: #508590;"><strong>Revision:</strong></span> May be available after feedback, up to the Revision Deadline.</li>
-                                        </ul>
-                                        <ul class="left-indent">
-                                            <li>??? <a href="https://canvas.vt.edu/courses/224896/pages/syllabus-for-technical-writing-spring-2026" target="_blank">See grading details and project weights in the Syllabus.</a></li>
-                                        </ul>
+                                        <div class="col-sm-12" style="background-color:#ffffff;padding:12px;">
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered align-middle gradeTable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col" style="background-color: #ffffff !important;"></th>
+                                                            <th scope="col" style="vertical-align: top;background-color: #ffffff !important;">🎯 Homework (15%)</th>
+                                                            <th scope="col" style="vertical-align: top;background-color: #ffffff !important;">🧾 Major Projects (85%)</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row" style="vertical-align: top;">Grade</th>
+                                                            <td style="vertical-align: top;">Up to 100 points OR Complete / Incomplete.</td>
+                                                            <td style="vertical-align: top;">Up to 100 points. Weight varies by project.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" style="vertical-align: top;background-color: #ffffff !important;">Expectations</th>
+                                                            <td style="vertical-align: top;">Strong effort + meets requirements + submitted before the grace period ends.</td>
+                                                            <td style="vertical-align: top;">Detailed in rubric + workplace-ready + submitted before the grace period ends.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row" style="vertical-align: top;">Revision</th>
+                                                            <td style="vertical-align: top;">Unlimited until the end of the grace period.</td>
+                                                            <td style="vertical-align: top;">May be available after feedback, up to the Revision Deadline.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <p class="mt-2">
+                                                <a href="https://canvas.vt.edu/courses/224896/pages/syllabus-for-technical-writing-spring-2026" target="_blank">
+                                                    See grading details and project weights in the Syllabus.
+                                                </a>
+                                            </p>
+
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
