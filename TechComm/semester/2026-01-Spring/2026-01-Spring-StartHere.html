@@ -164,6 +164,7 @@
             color: #000000;
         }
 
+        /* what to do first section */
         .checklist {
             list-style: none;
             padding-left: 0;
@@ -195,6 +196,52 @@
         .checklist li:hover {
             background-color: #f7f7f7;
         }
+
+        /* where can i find everything section */
+        .map-horizontal {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 18px;
+            position: relative;
+            margin: 24px 12px;
+        }
+
+        .map-horizontal::before {
+            content: "";
+            position: absolute;
+            top: 22px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: #508590;
+            z-index: 0;
+        }
+
+        .map-stop {
+            text-align: center;
+            max-width: 160px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .map-dot {
+            width: 51px;
+            height: 51px;
+            margin: 0 auto 9px auto;
+            background-color: #ffffff;
+            border: 3px solid #508590;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4rem;
+        }
+
+        .map-stop p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
     </style>
 
 
@@ -218,7 +265,7 @@
         <div class="bkgd-graph-white">
             <div id="pagewidth" style="margin: 0px 36px;">
                 <p>&nbsp;</p>
-
+                <!-- title block -->
                 <div class="container-fluid" style="background-color: #ffffff;padding: 9px;border: 3px solid #508590;border-radius: 6px;"">
                     <div class=" row">
                     <div class="col-sm-3 text-center">
@@ -351,13 +398,62 @@
                                     <h3 class="font-black">Where Can I find Everything?</h3>
                                 </div>
                                 <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
-                                    <ul class="null" style="list-style-type: none;">
-                                        <li>📦 <a href="https://canvas.vt.edu/courses/224896/modules" target="_blank">Modules</a>: where you start every week.</li>
-                                        <li>📝 <a href="https://canvas.vt.edu/courses/224896/assignments" target="_blank">Assignments</a>: directions, rubrics, and submission links.</li>
-                                        <li>📣 <a href="https://canvas.vt.edu/courses/224896/announcements" target="_blank">Announcements</a>: required updates and weekly guidance.</li>
-                                        <li>📊 <a href="https://canvas.vt.edu/courses/224896/grades" target="_blank">Grades</a>: your progress and feedback.</li>
-                                        <li>✉️ <a href="https://canvas.vt.edu/conversations" target="_blank">Inbox</a>: private messages (grades, accommodations, individual questions).</li>
-                                    </ul>
+                                    <p>Here&rsquo;s a quick map of Canvas locations you&rsquo;ll use all semester:</p>
+
+                                    <div class="map-horizontal">
+
+                                        <div class="map-stop">
+                                            <div class="map-dot">📦</div>
+                                            <p>
+                                                <strong>
+                                                    <a href="https://canvas.vt.edu/courses/224896/modules" target="_blank">Modules</a>
+                                                </strong><br>
+                                                Where you start every week.
+                                            </p>
+                                        </div>
+
+                                        <div class="map-stop">
+                                            <div class="map-dot">📝</div>
+                                            <p>
+                                                <strong>
+                                                    <a href="https://canvas.vt.edu/courses/224896/assignments" target="_blank">Assignments</a>
+                                                </strong><br>
+                                                Directions, rubrics, and submissions.
+                                            </p>
+                                        </div>
+
+                                        <div class="map-stop">
+                                            <div class="map-dot">📣</div>
+                                            <p>
+                                                <strong>
+                                                    <a href="https://canvas.vt.edu/courses/224896/announcements" target="_blank">Announcements</a>
+                                                </strong><br>
+                                                Required updates and weekly guidance.
+                                            </p>
+                                        </div>
+
+                                        <div class="map-stop">
+                                            <div class="map-dot">📊</div>
+                                            <p>
+                                                <strong>
+                                                    <a href="https://canvas.vt.edu/courses/224896/grades" target="_blank">Grades</a>
+                                                </strong><br>
+                                                Your progress and feedback.
+                                            </p>
+                                        </div>
+
+                                        <div class="map-stop">
+                                            <div class="map-dot">✉️</div>
+                                            <p>
+                                                <strong>
+                                                    <a href="https://canvas.vt.edu/conversations" target="_blank">Inbox</a>
+                                                </strong><br>
+                                                Private messages and questions.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
