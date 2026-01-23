@@ -88,7 +88,7 @@
             // The page is in an iframe
         } else {
             // The page is not in an iframe
-            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1 style='clear:both;'>Components of User Documents</h1>"
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1 style='clear:both;'>Required Components of Step-by-Step Instructions</h1>"
             // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
@@ -101,7 +101,8 @@
             <div id="page-title-section" class="row g-0">
                 <div id="page-title-column" class="col-sm-12 px-0" style="background-color: #508590;border-bottom: 9px solid #385d65;margin-bottom: 24px;">
                     <h2 id="page-title" style="color: #ffffff;font-size: 36px;border: 0;text-align: center;padding: 9px;text-shadow: 0px 3px #385d65;">
-                        Components of User Documents
+                        Required Components of <br>
+                        Step-by-Step Instructions
                     </h2>
                 </div>
             </div>
@@ -126,25 +127,19 @@
                     2
                 </div>
                 <div id="content-date" class="col-sm-10 content-style">
-                    <span class="content-name">Date</span><br>
-                    Indicates currency and version context.
+                    <span class="content-name">Date</span>
+                    <ul>
+                        <li>Lists the creation date, to indicate currency and version context.</li>
+
+                        <li style="border-bottom: 0;">Uses the same format as other dates in the instructions.</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- ROW THREE: TOC -->
+            <!-- ROW THREE: INTRODUCTION -->
             <div id="content-row-03" class="row content-row-style">
                 <div id="content-num03" class="col-sm-2 number-style" style="text-align: right;">
                     3
-                </div>
-                <div id="content-toc" class="col-sm-10 content-style">
-                    <span class="content-name">Table of Contents</span> <em>(optional)</em><br>Is included when the document has multiple tasks, sections, or is manual-length.
-                </div>
-            </div>
-
-            <!-- ROW FOUR: INTRO -->
-            <div id="content-row-04" class="row content-row-style">
-                <div id="content-num04" class="col-sm-2 number-style">
-                    4
                 </div>
                 <div id="content-intro" class="col-sm-10 content-style">
                     <span class="content-name">Introduction</span>
@@ -158,13 +153,13 @@
                 </div>
             </div>
 
-            <!-- ROW FIVE: GENERAL NOTICES -->
+            <!-- ROW FOUR: GENERAL NOTICES -->
             <div id="content-row-05" class="row content-row-style">
                 <div id="content-num05" class="col-sm-2 number-style">
-                    5
+                    4
                 </div>
                 <div id="content-gennotices" class="col-sm-10 content-style">
-                    <span class="content-name">General Notices</span> <em>(optional)</em>
+                    <span class="content-name">General Notices</span>
                     <ul>
                         <li>Uses <strong>Danger</strong> to show risk of death or severe injury.</li>
                         <li>Uses <strong>Warning</strong> to show risk of harm or major damage.</li>
@@ -174,20 +169,24 @@
                 </div>
             </div>
 
-            <!-- ROW SIX: BKGD -->
+            <!-- ROW FIVE: BKGD -->
             <div id="content-row-06" class="row content-row-style">
                 <div id="content-num06" class="col-sm-2 number-style">
-                    6
+                    5
                 </div>
                 <div id="content-bkgd" class="col-sm-10 content-style">
-                    <span class="content-name">Technical Background or Theory</span> <em>(optional)</em><br>Provides definitions or explains concepts needed to understand the procedure.
+                    <span class="content-name">Technical Background or Theory</span>
+                    <ul>
+                        <li>Provides definitions for technical terminology.</li>
+                        <li>Explains concepts needed to understand the procedure.</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- ROW SEVEN: EQUIPMENT -->
+            <!-- ROW SIX: EQUIPMENT -->
             <div id="content-row-07" class="row content-row-style">
                 <div id="content-num07" class="col-sm-2 number-style">
-                    7
+                    6
                 </div>
                 <div id="content-equipment" class="col-sm-10 content-style">
                     <span class="content-name">List of Equipment and Supplies</span><br>
@@ -199,10 +198,10 @@
                 </div>
             </div>
 
-            <!-- ROW EIGHT: DIRECTIONS -->
+            <!-- ROW SEVEN: DIRECTIONS -->
             <div id="content-row-08" class="row content-row-style">
                 <div id="content-num08" class="col-sm-2 number-style">
-                    8
+                    7
                 </div>
                 <div id="content-directions" class="col-sm-10 content-style">
                     <span class="content-name">Directions (Steps)</span>
@@ -221,10 +220,10 @@
                 </div>
             </div>
 
-            <!-- ROW NINE: CONCLUSION -->
+            <!-- ROW EIGHT: CONCLUSION -->
             <div id="content-row-09" class="row content-row-style">
                 <div id="content-num09" class="col-sm-2 number-style">
-                    9
+                    8
                 </div>
                 <div id="content-conclusion" class="col-sm-10 content-style">
                     <span class="content-name">Conclusion</span>
@@ -236,17 +235,16 @@
                 </div>
             </div>
 
-            <!-- ROW TEN: BACK MATTER -->
+            <!-- ROW NINE: REFERENCES -->
             <div id="content-row-10" class="row content-row-style">
                 <div id="content-num10" class="col-sm-2 number-style">
-                    10
+                    9
                 </div>
                 <div id="content-backmatter" class="col-sm-10 content-style">
-                    <span class="content-name">Back Matter <em>(optional)</em></span>
+                    <span class="content-name">References <em>(optional)</em></span>
                     <ul>
-                        <li>Includes references.</li>
-                        <li>Adds glossary, appendix, or index.</li>
-                        <li style="border-bottom: 0;">Provides technical specifications.</li>
+                        <li>Lists bibliographic information for the sources used in the instructions, if needed.</li>
+                        <li style="border-bottom: 0;">Uses your field&rsquo;s bibliographic format (e.g., electrical engineers use IEEE). </li>
                     </ul>
                 </div>
             </div>
