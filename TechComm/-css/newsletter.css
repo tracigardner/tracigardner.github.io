@@ -2,7 +2,7 @@
 /*setting up colors */
 /* all the rest */
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 
 .b0ld {
@@ -24,7 +24,7 @@ body {
 .masthead h2 {
   margin-top: 0px;
   font-size: 18px;
-  color: #c64600;
+  color: #e5751f;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h3 {
 }
 
 h4 {
-  color: #c64600;
+  color: #e5751f;
 }
 
 a,
@@ -41,7 +41,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #c64600;
+  color: #e5751f;
   text-decoration: underline;
 }
 
@@ -104,33 +104,8 @@ a:active {
 }
 
 .btn-home:hover {
-  background-color: #c64600;
+  background-color: #e5751f;
   color: #000000;
-}
-
-/* alternate table */
-
-.alternateTable {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 6px 6px 6px 6px;
-  table-layout: fixed;
-}
-.alternateTable td,
-.alternateTable th {
-  border: 1px solid #ddd;
-  padding: 12px;
-  vertical-align: top;
-}
-
-.alternateTable tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-.alternateTable th {
-  padding: 12px;
-  text-align: left;
-  background-color: #dedede;
-  vertical-align: top;
 }
 
 /* Footer */
@@ -151,7 +126,7 @@ a:active {
 }
 
 .footer-divider-line {
-  border-top: 1px solid #c64600;
+  border-top: 1px solid #e5751f;
 }
 
 .cntdwn {
@@ -266,11 +241,7 @@ h2 {
   z-index: -1;
   --line-width: 1px;
   --line-spacing: calc(100% / var(--line-count));
-  background-image: repeating-linear-gradient(
-    to top,
-    transparent 0 calc(var(--line-spacing) - var(--line-width)),
-    var(--line-color) 0 var(--line-spacing)
-  );
+  background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
   box-shadow: 0 var(--line-width) 0 var(--line-color);
   opacity: var(--line-opacity);
 }
@@ -295,8 +266,6 @@ h2 {
 
 .simple-bar-chart > .item > .label {
   inset: 100% 0 auto 0;
-  text-align: left;
-  border-right: 1px solid #c64600;
 }
 
 .simple-bar-chart > .item > .value {
@@ -323,14 +292,6 @@ h2 {
   border-radius: 50%;
   inset: 0;
   background: conic-gradient(var(--c) calc(var(--p) * 1%), rgba(0, 0, 0, 0) 0);
-  -webkit-mask: radial-gradient(
-    farthest-side,
-    rgba(0, 0, 0, 0) calc(99% - var(--b)),
-    #000 calc(100% - var(--b))
-  );
-  mask: radial-gradient(
-    farthest-side,
-    rgba(0, 0, 0, 0) calc(99% - var(--b)),
-    #000 calc(100% - var(--b))
-  );
-} /*# sourceMappingURL=newsletter.css.map */
+  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}/*# sourceMappingURL=newsletter.css.map */
