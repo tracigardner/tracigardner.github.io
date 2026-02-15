@@ -16,6 +16,15 @@
 <body style="margin: 0; padding: 24px; font-family: Arial, Helvetica, sans-serif; background: #ffffff; color: #1a1a1a;">
 
     <div style="max-width: 900px; margin: 0 auto;">
+
+        <h1 style="font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">
+            Grade Distribution
+        </h1>
+
+        <p style="font-size: 14px; margin: 0 0 16px 0; line-height: 1.4;">
+            Bar chart showing the number of students in each grade range.
+        </p>
+
         <!-- Accessible fallback table -->
         <div style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;">
             <table>
@@ -51,8 +60,9 @@
             </table>
         </div>
 
-        <div style="border: 1px solid #dddddd; border-radius: 10px; padding: 16px;">
-            <canvas id="gradeChart" role="img" aria-label="Bar chart of grade distribution. F range: 7 students. D range: 7 students. C range: 37 students. B range: 20 students. A range: 15 students." style="width: 100%; height: 420px;"></canvas>
+        <!-- Fixed-height container -->
+        <div style="border: 1px solid #dddddd; border-radius: 10px; padding: 16px; height: 480px;">
+            <canvas id="gradeChart" role="img" aria-label="Bar chart of grade distribution. F range: 7 students. D range: 7 students. C range: 37 students. B range: 20 students. A range: 15 students." style="width: 100%; height: 100%;"></canvas>
         </div>
 
     </div>
@@ -61,7 +71,6 @@
         const labels = ["F", "D+, D, D-", "C+, C, C-", "B+, B, B-", "A, A-"];
         const counts = [7, 7, 37, 20, 15];
 
-        // Colors aligned with new order (F → A)
         const barColors = ["#75787b", "#642667", "#c64600", "#508590", "#861f41"];
 
         const ctx = document.getElementById("gradeChart").getContext("2d");
