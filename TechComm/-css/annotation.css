@@ -32,7 +32,8 @@
 }
 
 .memo {
-  margin-top: 24px;
+  margin-top: 24px !important;
+  font-weight: bold;
 }
 
 .example h4 {
@@ -49,6 +50,7 @@
 .explainer h3,
 .explainer h4 {
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 .explainer p {
