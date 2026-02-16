@@ -31,6 +31,10 @@
   margin-top: 0;
 }
 
+.memo {
+  margin-top: 24px;
+}
+
 .example h4 {
   font-weight: bold;
   font-size: 15px;
