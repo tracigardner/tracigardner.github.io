@@ -1,0 +1,56 @@
+/* Example Documents Tables */
+.example {
+  border: 1px solid #861f41;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.example th {
+  vertical-align: top;
+  border-left: 1px solid #861f41;
+  border-bottom: 1px solid #861f41;
+  background-color: #dedede;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.example td {
+  vertical-align: top;
+  padding-bottom: 24px;
+  border-left: 1px solid #861f41;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 6px;
+}
+
+.memo-hdr {
+  font-weight: bold;
+}
+
+.example h3 {
+  margin-top: 0;
+}
+
+.example h4 {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.example ul li {
+  margin-bottom: 6px;
+}
+
+.explainer h2,
+.explainer h3,
+.explainer h4 {
+  margin-bottom: 0px;
+}
+
+.explainer p {
+  margin-top: 0px;
+}
+
+.sub td {
+  border-left: 0;
+}
