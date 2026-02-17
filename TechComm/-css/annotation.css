@@ -1,4 +1,30 @@
 /* Example Documents Tables */
+td {
+  vertical-align: top;
+}
+
+table {
+  border: 1px solid #861f41;
+  border-collapse: collapse;
+}
+
+th {
+  vertical-align: top;
+  border-left: 1px solid #861f41;
+  border-bottom: 1px solid #861f41;
+  background-color: #dedede;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+td {
+  vertical-align: top;
+  border-left: 1px solid #861f41;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 6px;
+}
+
 .example {
   border: 1px solid #861f41;
   border-collapse: collapse;
@@ -55,6 +81,24 @@
 
 .explainer p {
   margin-top: 0px;
+}
+
+.explainer h2 {
+  margin-top: 0px !important;
+}
+
+.explainer ul li {
+  margin-bottom: 6px;
+}
+
+.tightpara p {
+  margin: 0px 0px 0px 0px;
+}
+
+.logo {
+  max-height: 90px;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .sub td {
