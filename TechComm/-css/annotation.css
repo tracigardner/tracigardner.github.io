@@ -104,3 +104,7 @@ td {
 .sub td {
   border-left: 0;
 }
+
+.sub {
+  border: 0 !important;
+}
