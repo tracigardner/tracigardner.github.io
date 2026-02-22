@@ -102,6 +102,17 @@ h3.ess {
   border: 0;
 }
 
+h3.docorder {
+  color: #861f41;
+  font-weight: bold;
+  box-shadow: none;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  border: 0;
+}
+
 h3.utprosim {
   font-size: 21px;
   font-weight: 600;
