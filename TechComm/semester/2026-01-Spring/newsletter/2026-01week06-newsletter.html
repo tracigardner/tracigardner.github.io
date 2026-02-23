@@ -33,6 +33,32 @@
             color: #c64600 !important;
             font-weight: bold;
         }
+
+        /* Notices css */
+        .notices {
+            font-weight: bold;
+            border: 3px solid #000000;
+            padding: 3px;
+        }
+
+        .danger {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+
+        .warning {
+            background-color: #FFA500;
+            color: #000000;
+        }
+
+        .caution {
+            background-color: #ffff00;
+            color: #000000;
+        }
+
+        .notice-note {
+            color: #000000;
+        }
     </style>
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
@@ -52,7 +78,7 @@
                     <h2 class="text-left">Traci&rsquo;s English 3764 Course</h2>
                 </div>
                 <div class="col-sm-6">
-                    <h2 class="text-right">September 29, 2025</h2>
+                    <h2 class="text-right">February 23, 2026</h2>
                 </div>
             </div>
         </div>
@@ -72,7 +98,7 @@
                     <h3 style="padding-top: 12px;">👩‍💻 Week 5 Grace Period</h3>
 
                     <ul class="skipline" style="clear:both;">
-                        <li>Any work from last week must be submitted by <strong>11:59 PM on Wednesday, October 1</strong>.
+                        <li>Any work from last week must be submitted by <strong>11:59 PM on Wednesday, February 25</strong>.
                         </li>
                     </ul>
 
@@ -147,28 +173,52 @@
 
     <div class="row border-top-line">
         <div class="col-sm-12">
-            <h3><i class="fa-duotone fa-solid fa-toolbox" style="font-size: 2rem;float: left;margin-right: 12px;--fa-primary-color: #861f41; --fa-secondary-color: #e5751f; --fa-secondary-opacity: 1;"></i> Word Processor Documentation Tools</h3>
-            <p>Most word processors have tools to streamline the process of adding documentation to your projects. Use the basic information below to find the tools and practice using them.</p>
-            <p>For more detailed information about these tools, check out the <a href="https://canvas.vt.edu/courses/224896/pages/documentation-and-citations-for-your-projects" target="_blank">links to LinkedIn Learning videos and to documentation websites</a> on the Documentations and Citations page in Canvas.</p>
+            <h3><i class="fa-duotone fa-solid fa-toolbox" style="font-size: 2rem;float: left;margin-right: 12px;--fa-primary-color: #861f41; --fa-secondary-color: #e5751f; --fa-secondary-opacity: 1;"></i> Notices in Instructions</h3>
 
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4 style="font-size: 1.1rem;color: #861f41;font-weight: bold;border-bottom: 1px solid #861f41;">In Microsoft Word</h4>
-                    <p><img src="../../../-images/Word.png" alt="Google Docs logo" style="float: right;margin: 0px 15px 21px 15px;height: 112px">Find documentation tools in the <strong>References</strong> tab on the ribbon. In the <strong>Footnotes</strong> section of the ribbon, use <strong>Insert Footnote</strong> or <strong>Insert Endnote</strong> to add the number reference to your document. Next, type your information in the footnote or endnote area.</p>
+            <p>Notices are short, clearly labeled statements that alert readers to risks, prevent mistakes, or offer helpful guidance right before (or beside) a relevant step.</p>
 
-                    <p>Find tools for in-text citations and your bibliography in the <strong>Citations &amp; Bibliography</strong> section of the ribbon. Choose <strong>Insert Citation</strong> to add a parenthetical citation. Use the <strong>Manage Sources, Style,</strong> and <strong>Bibliography</strong> commands to add your sources to the document and generate your reference list. </p>
-
-                </div>
-                <div class="col-sm-6">
-                    <h4 style="font-size: 1.1rem;color: #861f41;font-weight: bold;border-bottom: 1px solid #861f41;"> In Google Docs</h4>
-                    <p><img src="../../../-images/google-docs.png" alt="Google Docs logo" style="float: right;margin: 0px 15px 21px 15px;width: 82px">Add footnotes by choosing the <strong>Insert</strong> menu and then the <strong>Footnotes</strong> command. You can then type your information in the footnote area.</p>
-                    <p>Use the <strong>Tools</strong> menu and the <strong>Citations</strong> command to show the sidebar where you can add your sources. After adding your sources, you can add in-text citations by hovering over the source in the sidebar and using the <strong>Cite</strong> command.</p>
-
-                    <em>Google Docs does not have an option for endnotes.</em>
-                </div>
-            </div>
+            <p>Step-by-step instructions often include notices&mdash;but each type has a specific purpose. Use them correctly.</p>
 
         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <h3 class="notices danger"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;Danger</h3>
+            <p>Use <strong>Danger</strong> when there is risk of death or severe injury.</p>
+
+        </div>
+        <div class="col-sm-3">
+            <h3 class="notices warning"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;Warning</h3>
+            <p>Use <strong>Warning</strong> when there is risk of harm or major damage.</p>
+
+        </div>
+        <div class="col-sm-3">
+            <h3 class="notices caution"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;Caution</h3>
+            <p>Use <strong>Caution</strong> when there is possible risk.</p>
+
+        </div>
+        <div class="col-sm-3">
+            <h3 class="notices notice-note"> Note</h3>
+            <p>Use <strong>Note</strong> to provide helpful tips, clarification, or troubleshooting guidance.</p>
+        </div>
+    </div>
+    <p>These are not interchangeable labels. They signal the level of risk to your reader. If everything is labeled &ldquo;Warning,&rdquo; then nothing stands out.</p>
+
+    <ul>
+        <li>Does my task involve real safety risks?</li>
+        <li>Am I overstating danger?</li>
+        <li>Would a &ldquo;Note&rdquo; be more appropriate than a &ldquo;Caution&rdquo;?</li>
+        <li>Is the notice placed immediately before the risky step?</li>
+    </ul>
+
+    <p>Clear notices increase credibility and usability. Misused notices reduce trust.</p>
+
+    <p>Be precise. Your readers are counting on it.</p>
+
+    </div>
+    </div>
+
+    </div>
     </div>
     <div id=" row-four" class="row border-top-line">
         <div class="col-sm-12">
