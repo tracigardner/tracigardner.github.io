@@ -9,8 +9,12 @@
     <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
     <meta name="author" content="Traci Gardner">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <!-- Newsletter CSS -->
     <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
@@ -31,7 +35,14 @@
 
         h4 {
             color: #c64600 !important;
+            font-size: 1.08rem;
             font-weight: bold;
+        }
+
+        h5 {
+            color: #861f41 !important;
+            font-size: 1.08rem;
+
         }
 
         /* Notices css */
@@ -103,38 +114,73 @@
                         </li>
                     </ul>
 
-                    <h3 class="border-top-line"><i class="fa-duotone fa-regular fa-code-compare" style="font-size: 2rem;--fa-primary-color: #861f41; --fa-secondary-color: #e5751f; --fa-secondary-opacity: 1;"></i> Documentation Options</h3>
-                    <p>Depending upon the system that you choose, you may use footnotes, endnotes, or in-text citations.</p>
-                    <p>These three options differ in the information they include and in where they belong in the document. The exact details depend upon the documentation system you&rsquo;re using. That said, here are the major differences to keep in mind:</p>
+                    <h3 class="border-top-line"><img src="https://tracigardner.github.io/TechComm/-images/newsletters/noun-instructions-7777433-333333.png" alt="" style="width: 36px;height: 36px;">Focus on Instructions</h3>
+                    <p>For the User Document assignment you&rsquo;re starting this week, you are writing <strong>step-by-step instructions</strong>. It&rsquo;s a genre (or kind of writing) that is often confused with process description.</p>
 
-                    <table class="alternateTable">
-                        <caption class="small">Table 2. Documentation Options</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 25%">Documentation Option</th>
-                                <th scope="col">Information Included</th>
-                                <th scope="col">Location of the Information</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                    <div id="comp-table-basics" class="row">
+                        <div id="basics-col" class="col-sm-12">
+                            <h4>The Basics</h4>
+                        </div>
+                    </div>
+                    <div id="basics-content" class="row">
+                        <div id="processdesc" class="col-sm-6">
+                            <h5>Process Description</h5>
+                            <ul>
+                                <li>A process description explains how something works.</li>
+                                <li>If your document mostly explains background, theory, or how a system functions, you&rsquo;re describing a process.</li>
+                            </ul>
+                        </div>
+                        <div id="instruct" class="col-sm-6 border-left-line">
+                            <h5>Instructions</h5>
+                            <ul>
+                                <li>Step-by-step instructions tell someone how to do something. </li>
+                                <li>If your document guides a reader through clear actions they can complete, you&rsquo;re writing instructions.</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                            <tr>
-                                <td>Footnotes</td>
-                                <td>The name(s) of the author(s), source title, and relevant page number or similar details.</td>
-                                <td>Footnote number immediately follows the relevant information in the document. Documentation information is at the bottom (the foot) of the page where the reference is mentioned.</td>
-                            </tr>
-                            <tr>
-                                <td>Endnotes</td>
-                                <td>The name(s) of the author(s), source title, and relevant page number or similar details.</td>
-                                <td>Endnote number immediately after relevant information in the text of the document. Documentation information is on a separate page (or pages), at the end of a document, in a numbered list in the order they appear in the document.</td>
-                            </tr>
-                            <tr>
-                                <td>In-Text Citations</td>
-                                <td>The name(s) of the author(s), sometimes the year of publication, and often the relevant page number or similar details. Typically in parentheses. Example: (Tyson, 2025).</td>
-                                <td>Either immediately after the reference in the document or at the end of the sentence (or other passage) that refers to the source.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div id="example-row-title" class="row" style="margin-top: 15px;">
+                        <div id="diffshdg" class="col-sm-12">
+                            <h4>Compare the Difference</h4>
+                        </div>
+                    </div>
+
+                    <div id="example-row1" class="row">
+                        <div id="pd-ex1" class="col-sm-6">
+                            <h5>Process Description</h5>
+                            <ul>
+                                <li>Explaining how a rain barrel collects water.</li>
+                            </ul>
+                        </div>
+                        <div id="inst-ex1" class="col-sm-6 border-left-line">
+                            <h5>Instructions</h5>
+                            <ul>
+                                <li>Showing a homeowner how to install a rain barrel.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="example-row2" class="row">
+                        <div id="pd-ex2" class="col-sm-6">
+                            <ul>
+                                <li>Explaining how a platform routes messages.</li>
+                            </ul>
+                        </div>
+                        <div id="inst-ex2" class="col-sm-6 border-left-line">
+                            <ul>
+                                <li>Showing a user how to create an account and post.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <h3>Still not sure? Try these tests.</h3>
+                    <p>Your User Document must help someone <strong>act</strong>.</p>
+                    <ul>
+                        <li>🔢 Are there clearly ordered steps?</li>
+                        <li>✍️ Do steps begin with action verbs?</li>
+                        <li>🎯 Could someone follow your document and finish a task?</li>
+                    </ul>
 
                 </div>
 
@@ -172,55 +218,53 @@
         </div>
     </div>
 
-    <div class="row border-top-line">
-        <div class="col-sm-12">
-            <h3><i class="fa-duotone fa-solid fa-toolbox" style="font-size: 2rem;float: left;margin-right: 12px;--fa-primary-color: #861f41; --fa-secondary-color: #e5751f; --fa-secondary-opacity: 1;"></i> Notices in Instructions</h3>
+    <div id="notices-article" style="margin-left: 15px;">
 
-            <p>Notices are short, clearly labeled statements that alert readers to risks, prevent mistakes, or offer helpful guidance right before (or beside) a relevant step.</p>
+        <div id="notices-intro-row" class="row border-top-line">
+            <div id="notices-intro" class="col-sm-12">
+                <h3><i class="fa-solid fa-bell-on" style="color: #861f41;"></i> Notices in Instructions</h3>
 
-            <p>Step-by-step instructions often include notices&mdash;but each type has a specific purpose. Use them correctly.</p>
+                <p>Notices are short, clearly labeled statements that alert readers to risks, prevent mistakes, or offer helpful guidance right before (or beside) a relevant step.</p>
 
+                <p style="margin-bottom: 3px;">Step-by-step instructions often include notices&mdash;but each type has a specific purpose and associated color, explained below:</p>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
+        <div id="notices-labelshdgs" class="row"">
+            <div class=" col-sm-3">
             <h3 class="notices danger"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;Danger</h3>
-            <p>Use <strong>Danger</strong> when there is risk of death or severe injury.</p>
-
         </div>
         <div class="col-sm-3">
             <h3 class="notices warning"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;Warning</h3>
-            <p>Use <strong>Warning</strong> when there is risk of harm or major damage.</p>
-
         </div>
         <div class="col-sm-3">
             <h3 class="notices caution"><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;Caution</h3>
-            <p>Use <strong>Caution</strong> when there is possible risk.</p>
-
         </div>
         <div class="col-sm-3">
             <h3 class="notices notice-note"> Note</h3>
-            <p>Use <strong>Note</strong> to provide helpful tips, clarification, or troubleshooting guidance.</p>
         </div>
     </div>
-    <p>These are not interchangeable labels. They signal the level of risk to your reader. If everything is labeled &ldquo;Warning,&rdquo; then nothing stands out.</p>
+    <div id="notices-labelsexpl" class="row"">
+            <div class=" col-sm-3">
+        <p style="margin-left: 1px;">Use <strong>Danger</strong>, with a red label, when there is risk of death or severe injury.</p>
 
-    <ul>
-        <li>Does my task involve real safety risks?</li>
-        <li>Am I overstating danger?</li>
-        <li>Would a &ldquo;Note&rdquo; be more appropriate than a &ldquo;Caution&rdquo;?</li>
-        <li>Is the notice placed immediately before the risky step?</li>
-    </ul>
+    </div>
+    <div class="col-sm-3">
+        <p>Use <strong>Warning</strong>, with an orange label, when there is risk of harm or major damage.</p>
 
-    <p>Clear notices increase credibility and usability. Misused notices reduce trust.</p>
+    </div>
+    <div class="col-sm-3">
+        <p>Use <strong>Caution</strong>, with a yellow label, when there is possible risk.</p>
 
-    <p>Be precise. Your readers are counting on it.</p>
-
+    </div>
+    <div class="col-sm-3">
+        <p>Use <strong>Note</strong> to provide helpful tips, clarification, or troubleshooting guidance.</p>
+    </div>
+    </div>
+    <div id="notoices-concl" class="row">
+        <p><img alt="" src="https://tracigardner.github.io/TechComm/-images/arrow icon.png" style="float: left;width: 36px;height: 36px;margin: 0 15px 15px 0" />These are not interchangeable labels. They signal the level of risk to your reader. If everything is labeled &ldquo;Warning,&rdquo; then nothing stands out.</p>
     </div>
     </div>
 
-    </div>
-    </div>
     <div id=" row-four" class="row border-top-line">
         <div class="col-sm-12">
             <h3><img src="../../../-images/newsletters/noun-question-670402-C64600.png" alt="scale" style="width: 33px;height: 33px;float: left;margin-right: 12px;"> Have Questions?</h3>
