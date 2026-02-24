@@ -4,6 +4,13 @@ body {
   border: 6px solid #642667;
 }
 
+h3 {
+  color: #642667;
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .pgtitle {
   background-color: #642667;
   color: #ffffff;
@@ -12,9 +19,18 @@ body {
   margin-bottom: 0px;
 }
 
-.dashed-left-box {
+.dashed-left {
   border-right: 6px dashed #642667;
-  border-bottom: 6px dashed #642667;
-  background-color: #efe9ef;
   padding: 15px 18px;
+}
+.dashed-bottom {
+  border-bottom: 6px dashed #642667;
+}
+
+.purple-light {
+  background-color: #efe9ef;
+}
+
+.checkmark {
+  list-style-type: "✔  ";
 }
