@@ -1,0 +1,19 @@
+/* Styles for the User Document Infographics and Related Pages */
+
+body {
+  background-color: #edf3f4;
+}
+
+.pgtitle {
+  background-color: #642667;
+  color: #ffffff;
+  font-size: 36px;
+  padding: 9px;
+  margin-bottom: 0px;
+}
+
+.content-pane {
+  background-color: #ffffff;
+  border: 6px solid #642667;
+  margin: 0px;
+}
