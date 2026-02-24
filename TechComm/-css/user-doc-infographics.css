@@ -1,7 +1,7 @@
 /* Styles for the User Document Infographics and Related Pages */
 
 body {
-  background-color: #edf3f4;
+  border: 6px solid #642667;
 }
 
 .pgtitle {
@@ -12,8 +12,9 @@ body {
   margin-bottom: 0px;
 }
 
-.content-pane {
-  background-color: #ffffff;
-  border: 6px solid #642667;
-  margin: 0px;
+.dashed-left-box {
+  border-right: 6px dashed #642667;
+  border-bottom: 6px dashed #642667;
+  background-color: #efe9ef;
+  padding: 15px 18px;
 }
