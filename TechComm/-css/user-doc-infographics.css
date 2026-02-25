@@ -25,7 +25,7 @@ h3 {
   padding: 15px 18px;
 }
 .dashed-right {
-  border-bottom: 6px dashed #642667;
+  border-right: 6px dashed #642667;
   padding: 15px 18px;
 }
 .dashed-bottom {
@@ -33,11 +33,14 @@ h3 {
   padding: 15px 18px;
 }
 .dashed-top {
-  border-right: 6px dashed #642667;
+  border-top: 6px dashed #642667;
   padding: 15px 18px;
 }
 .dashed-none {
   padding: 15px 18px;
+}
+.pad-only {
+  padding: none;
 }
 
 .purple-light {
