@@ -21,11 +21,22 @@ h3 {
 }
 
 .dashed-left {
-  border-right: 6px dashed #642667;
+  border-left: 6px dashed #642667;
+  padding: 15px 18px;
+}
+.dashed-right {
+  border-bottom: 6px dashed #642667;
   padding: 15px 18px;
 }
 .dashed-bottom {
   border-bottom: 6px dashed #642667;
+  padding: 15px 18px;
+}
+.dashed-top {
+  border-right: 6px dashed #642667;
+  padding: 15px 18px;
+}
+.dashed-none {
   padding: 15px 18px;
 }
 
