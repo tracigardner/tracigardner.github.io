@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing for Reading Patterns</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://tracigardner.github.io/TechComm/-css/infographic-style.css" rel="stylesheet" type="text/css" />
+
+    <link href="../../-css/infographic-style.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://tracigardner.github.io/TechComm/-css/summary-triangle.css" rel="stylesheet" type="text/css" />
+
+    <link href="../../-css/summary-triangle.css" rel="stylesheet" type="text/css" />
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+</head>
+
+<body style="padding: 0 6px 0 6px;">
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Designing for Reading Patterns</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+
+
+    <h1>Designing for Reading Patterns</h1>
+
+    <p>The two most common reading patterns are the Z-pattern and the F-pattern. These names come from shape of the way the reader&rsquo;s eyes move across a page or screen.</p>
+
+
+    <h2>Z-Pattern (Visual + Immediate)</h2>
+
+    <p>The front page should quickly grab attention and guide the reader through the main idea.</p>
+
+    <h3>How Readers Move</h3>
+
+    <pre>
+LEFT → RIGHT
+     ↘
+LEFT → RIGHT
+    </pre>
+
+    <h3>Suggested Layout</h3>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td><strong>Top Left</strong><br>Logo or organization name</td>
+            <td><strong>Top Right</strong><br>Title or headline</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <strong>Center</strong><br>Image, graphic, or key statistic
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Bottom Left</strong><br>Short description</td>
+            <td><strong>Bottom Right</strong><br>Key takeaway or action</td>
+        </tr>
+    </table>
+
+    <h3>Purpose</h3>
+
+    <ul>
+        <li>Introduce the topic quickly</li>
+        <li>Highlight the main idea</li>
+        <li>Encourage the reader to continue</li>
+    </ul>
+
+    <hr>
+
+    <h2>F-Pattern (Structured + Scannable)</h2>
+
+    <p>The back page provides more detailed information. Readers will scan rather than read everything.</p>
+
+    <h3>How Readers Move</h3>
+
+    <pre>
+LEFT → RIGHT
+LEFT → RIGHT (shorter)
+↓
+↓
+    </pre>
+
+    <h3>Suggested Layout</h3>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td><strong>Top Section</strong><br>Main heading + key facts</td>
+        </tr>
+        <tr>
+            <td><strong>Middle Section</strong><br>Subheading + short explanation</td>
+        </tr>
+        <tr>
+            <td><strong>Lower Section</strong><br>Additional details or data</td>
+        </tr>
+    </table>
+
+    <h3>Example Content Structure</h3>
+
+    <ul>
+        <li><strong>Key Facts</strong>
+            <ul>
+                <li>Bullet point</li>
+                <li>Bullet point</li>
+            </ul>
+        </li>
+
+        <li><strong>Why It Matters</strong>
+            <ul>
+                <li>Short paragraph with important terms</li>
+            </ul>
+        </li>
+
+        <li><strong>Additional Information</strong>
+            <ul>
+                <li>Extra details or statistics</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Purpose</h3>
+
+    <ul>
+        <li>Help readers find information quickly</li>
+        <li>Break content into clear sections</li>
+        <li>Make scanning easy</li>
+    </ul>
+
+    =====================================================================
+    <h2>Putting It Together</h2>
+
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <th>Front Page</th>
+            <th>Back Page</th>
+        </tr>
+        <tr>
+            <td>Z-Pattern</td>
+            <td>F-Pattern</td>
+        </tr>
+        <tr>
+            <td>Visual and engaging</td>
+            <td>Organized and detailed</td>
+        </tr>
+        <tr>
+            <td>Quick understanding</td>
+            <td>Easy scanning</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
