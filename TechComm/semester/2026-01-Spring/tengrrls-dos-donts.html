@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengrrl's Do's & Don'ts for Workplace Writing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #e4e0e6;
+            --accent: #8d1f4b;
+            --line: #9a989c;
+            --text: #111111;
+            --item-height: 136px;
+            --circle-size: 108px;
+            --capsule-radius: 68px;
+            --content-gap: 34px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        .poster {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 56px 54px 64px;
+        }
+
+        .page-title {
+            color: var(--accent);
+            font-size: clamp(2.6rem, 5.5vw, 5rem);
+            line-height: 1.05;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin: 0 0 26px;
+        }
+
+        .title-rule {
+            height: 4px;
+            background: var(--accent);
+            border: 0;
+            opacity: 1;
+            margin: 0 0 46px;
+        }
+
+        .timeline {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 42px;
+            row-gap: 10px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: calc(50% - 3px);
+            width: 6px;
+            border-radius: 999px;
+            background-image: linear-gradient(to bottom, var(--line) 0 55%, rgba(0, 0, 0, 0) 55% 100%);
+            background-size: 6px 18px;
+            background-repeat: repeat-y;
+        }
+
+        .entry {
+            display: contents;
+        }
+
+        .capsule-wrap,
+        .desc-wrap {
+            min-height: 150px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .capsule-wrap.right,
+        .desc-wrap.right {
+            grid-column: 2;
+        }
+
+        .capsule-wrap.left,
+        .desc-wrap.left {
+            grid-column: 1;
+        }
+
+        .capsule {
+            position: relative;
+            width: 100%;
+            min-height: var(--item-height);
+            border-radius: var(--capsule-radius);
+            display: flex;
+            align-items: center;
+            padding: 18px 30px;
+            overflow: hidden;
+        }
+
+        .capsule.left {
+            justify-content: flex-start;
+            padding-left: 132px;
+            padding-right: 42px;
+        }
+
+        .capsule.right {
+            justify-content: flex-start;
+            padding-left: 28px;
+            padding-right: 132px;
+        }
+
+        .num-circle {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: var(--circle-size);
+            height: var(--circle-size);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.45);
+            font-size: 3.25rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.03em;
+            color: #000;
+        }
+
+        .capsule.left .num-circle {
+            left: 14px;
+        }
+
+        .capsule.right .num-circle {
+            right: 14px;
+        }
+
+        .headline {
+            font-size: clamp(1.2rem, 2vw, 2rem);
+            line-height: 1.25;
+            font-weight: 600;
+            margin: 0;
+            max-width: 90%;
+        }
+
+        .desc {
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            line-height: 1.45;
+            font-weight: 400;
+            margin: 6px 0 0;
+            max-width: 92%;
+        }
+
+        .desc-wrap.left .desc {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4px 14px 0 8px;
+        }
+
+        .desc-wrap.right .desc {
+            padding: 6px 6px 0 18px;
+        }
+
+        .peach {
+            background: #f5c4a2;
+        }
+
+        .lilac {
+            background: #c99edd;
+        }
+
+        .aqua {
+            background: #aad3d7;
+        }
+
+        .butter {
+            background: #e8df9d;
+        }
+
+        .pink {
+            background: #e7a5cf;
+        }
+
+        .salmon {
+            background: #f4aea7;
+        }
+
+        .lavender {
+            background: #bfaeeb;
+        }
+
+        .green {
+            background: #b9d7a7;
+        }
+
+        .sky {
+            background: #abd7e3;
+        }
+
+        .sand {
+            background: #f0ce96;
+        }
+
+        @media (max-width: 991.98px) {
+            .poster {
+                padding: 32px 22px 48px;
+            }
+
+            .timeline {
+                grid-template-columns: 1fr;
+                row-gap: 18px;
+            }
+
+            .timeline::before {
+                display: none;
+            }
+
+            .capsule-wrap.left,
+            .capsule-wrap.right,
+            .desc-wrap.left,
+            .desc-wrap.right {
+                grid-column: 1;
+            }
+
+            .desc-wrap.left .desc,
+            .desc-wrap.right .desc {
+                text-align: left;
+                padding: 0 4px 0 4px;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            :root {
+                --item-height: 120px;
+                --circle-size: 88px;
+                --capsule-radius: 60px;
+            }
+
+            .capsule.left {
+                padding-left: 108px;
+                padding-right: 20px;
+            }
+
+            .capsule.right {
+                padding-left: 20px;
+                padding-right: 108px;
+            }
+
+            .num-circle {
+                font-size: 2.4rem;
+            }
+
+            .headline {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="poster">
+        <h1 class="page-title">Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts<br>for Workplace Writing</h1>
+        <hr class="title-rule">
+
+        <section class="timeline" aria-label="Ten workplace writing guidelines">
+            <article class="entry">
+                <div class="capsule-wrap left">
+                    <div class="capsule left peach">
+                        <div class="num-circle">01.</div>
+                        <h2 class="headline">Ready for the Workplace</h2>
+                    </div>
+                </div>
+                <div class="desc-wrap right">
+                    <p class="desc">Successful documents are ready for the workplace. Don&rsquo;t include the name of the assignment, course, or other course information.</p>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="desc-wrap left">
+                    <p class="desc">Include the word chunking and wall of text.</p>
+                </div>
+                <div class="capsule-wrap right">
+                    <div class="capsule right lilac">
+                        <div class="num-circle">02.</div>
+                        <h2 class="headline">Break Up Large Paragraphs</h2>
+                    </div>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="capsule-wrap left">
+                    <div class="capsule left aqua">
+                        <div class="num-circle">03.</div>
+                        <h2 class="headline">Left Align for Readability</h2>
+                    </div>
+                </div>
+                <div class="desc-wrap right">
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="desc-wrap left">
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="capsule-wrap right">
+                    <div class="capsule right butter">
+                        <div class="num-circle">04.</div>
+                        <h2 class="headline">All Figures Need Captions</h2>
+                    </div>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="capsule-wrap left">
+                    <div class="capsule left pink">
+                        <div class="num-circle">05.</div>
+                        <h2 class="headline">Use the Correct Format</h2>
+                    </div>
+                </div>
+                <div class="desc-wrap right">
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="desc-wrap left">
+                    <p class="desc">Use bibliographical citations on your references page, no matter what citation system your field uses. Links are NOT citations.</p>
+                </div>
+                <div class="capsule-wrap right">
+                    <div class="capsule right salmon">
+                        <div class="num-circle">06.</div>
+                        <h2 class="headline">Links Are Not a Bibliography</h2>
+                    </div>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="capsule-wrap left">
+                    <div class="capsule left lavender">
+                        <div class="num-circle">07.</div>
+                        <h2 class="headline">Keep Related Content Together</h2>
+                    </div>
+                </div>
+                <div class="desc-wrap right">
+                    <p class="desc">Proximity&mdash;especially for headings. good grief.</p>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="desc-wrap left">
+                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="capsule-wrap right">
+                    <div class="capsule right green">
+                        <div class="num-circle">08.</div>
+                        <h2 class="headline">Limit All Caps</h2>
+                    </div>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="capsule-wrap left">
+                    <div class="capsule left sky">
+                        <div class="num-circle">09.</div>
+                        <h2 class="headline">Use Readable Font Size</h2>
+                    </div>
+                </div>
+                <div class="desc-wrap right">
+                    <p class="desc">The text in this visual is too small to read. As a guideline, the font size in the visuals needs to be at least as big as the font size of the text in the document.</p>
+                </div>
+            </article>
+
+            <article class="entry">
+                <div class="desc-wrap left">
+                    <p class="desc">Document titles, headings, subheadings, and subject lines should all use title case. Capitalize the first letter of all major words.</p>
+                </div>
+                <div class="capsule-wrap right">
+                    <div class="capsule right sand">
+                        <div class="num-circle">10.</div>
+                        <h2 class="headline">Use Title Case</h2>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
+</body>
+
+</html>
