@@ -4,410 +4,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tengrrl's Do's & Don'ts for Workplace Writing</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts for Workplace Writing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <style>
         :root {
-            --bg: #e4e0e6;
-            --accent: #8d1f4b;
-            --line: #9a989c;
+            --bg: #e8e3e7;
+            --title-berry: #8b204d;
+            --center-line: #9e9a9d;
             --text: #111111;
-            --item-height: 136px;
-            --circle-size: 108px;
-            --capsule-radius: 68px;
-            --content-gap: 34px;
-        }
 
-        * {
-            box-sizing: border-box;
+            --c1: #f4c5a3;
+            --c1-circle: #f6e8dc;
+
+            --c2: #c79bd6;
+            --c2-circle: #f0ddf7;
+
+            --c3: #a8cfd2;
+            --c3-circle: #dcedef;
+
+            --c4: #e2db98;
+            --c4-circle: #f4efcf;
+
+            --c5: #e4a6cf;
+            --c5-circle: #f6deef;
+
+            --c6: #f3b1aa;
+            --c6-circle: #f8ddd9;
+
+            --c7: #c3b1ea;
+            --c7-circle: #ece6fb;
+
+            --c8: #b7d4a3;
+            --c8-circle: #e3edd8;
+
+            --c9: #a7d7e3;
+            --c9-circle: #dceff4;
+
+            --c10: #efcd98;
+            --c10-circle: #f7ead4;
         }
 
         body {
             margin: 0;
             background: var(--bg);
             color: var(--text);
-            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-family: "Trebuchet MS", "Avenir Next", "Segoe UI", sans-serif;
         }
 
         .poster {
-            max-width: 1120px;
+            max-width: 980px;
             margin: 0 auto;
-            padding: 56px 54px 64px;
+            padding: 3.5rem 2rem 4rem;
         }
 
-        .page-title {
-            color: var(--accent);
-            font-size: clamp(2.6rem, 5.5vw, 5rem);
-            line-height: 1.05;
+        .poster-title {
+            color: var(--title-berry);
+            font-size: clamp(2.3rem, 5vw, 4.2rem);
+            line-height: 1.08;
             font-weight: 500;
             letter-spacing: 0.02em;
-            margin: 0 0 26px;
+            margin: 0 0 1.25rem;
         }
 
         .title-rule {
             height: 4px;
-            background: var(--accent);
-            border: 0;
-            opacity: 1;
-            margin: 0 0 46px;
+            background: var(--title-berry);
+            margin-bottom: 2.75rem;
         }
 
         .timeline {
             position: relative;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 42px;
-            row-gap: 10px;
         }
 
         .timeline::before {
             content: "";
             position: absolute;
+            left: 50%;
             top: 0;
             bottom: 0;
-            left: calc(50% - 3px);
-            width: 6px;
-            border-radius: 999px;
-            background-image: linear-gradient(to bottom, var(--line) 0 55%, rgba(0, 0, 0, 0) 55% 100%);
-            background-size: 6px 18px;
-            background-repeat: repeat-y;
+            width: 0;
+            border-left: 6px dashed var(--center-line);
+            transform: translateX(-50%);
+            z-index: 0;
         }
 
-        .entry {
-            display: contents;
+        .row-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin: 0 0 0.7rem;
+            position: relative;
+            z-index: 1;
         }
 
-        .capsule-wrap,
-        .desc-wrap {
-            min-height: 150px;
+        .cell {
+            min-height: 132px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
         }
 
-        .capsule-wrap.right,
-        .desc-wrap.right {
-            grid-column: 2;
+        .desc-cell {
+            padding: 0 1.2rem;
         }
 
-        .capsule-wrap.left,
-        .desc-wrap.left {
-            grid-column: 1;
+        .row-left .desc-cell {
+            justify-content: flex-end;
+            text-align: right;
+            padding-right: 1.8rem;
+            padding-left: 0.75rem;
+        }
+
+        .row-right .desc-cell {
+            justify-content: flex-start;
+            text-align: left;
+            padding-left: 1.8rem;
+            padding-right: 0.75rem;
+        }
+
+        .capsule-cell {
+            padding: 0;
         }
 
         .capsule {
-            position: relative;
             width: 100%;
-            min-height: var(--item-height);
+            min-height: 132px;
             display: flex;
             align-items: center;
-            padding: 18px 30px;
-            overflow: visible;
+            gap: 1.2rem;
+            box-sizing: border-box;
+            position: relative;
         }
 
-        .capsule.left {
-            justify-content: flex-start;
-            padding-left: 132px;
-            padding-right: 42px;
-            border-radius: var(--capsule-radius) 0 0 var(--capsule-radius);
+        /* Left-side capsule: rounded on outer left, flat at center/right */
+        .row-left .capsule {
+            border-radius: 999px 0 0 999px;
+            padding: 0 0 0 1rem;
         }
 
-        .capsule.right {
-            justify-content: flex-start;
-            padding-left: 28px;
-            padding-right: 132px;
-            border-radius: 0 var(--capsule-radius) var(--capsule-radius) 0;
+        /* Right-side capsule: flat at center/left, rounded on outer right */
+        .row-right .capsule {
+            border-radius: 0 999px 999px 0;
+            padding: 0 1rem 0 0;
+            flex-direction: row-reverse;
         }
 
-        .num-circle {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: var(--circle-size);
-            height: var(--circle-size);
+        .number-circle {
+            width: 108px;
+            height: 108px;
+            min-width: 108px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255, 255, 255, 0.45);
-            font-size: 3.25rem;
-            font-weight: 700;
+            font-size: 3.45rem;
             line-height: 1;
-            letter-spacing: -0.03em;
+            font-weight: 700;
             color: #000;
-        }
-
-        .capsule.left .num-circle {
-            left: 14px;
-        }
-
-        .capsule.right .num-circle {
-            right: 14px;
-        }
-
-        .capsule-wrap.left {
-            padding-right: 0;
-        }
-
-        .capsule-wrap.right {
-            padding-left: 0;
+            position: relative;
+            z-index: 2;
         }
 
         .headline {
-            font-size: clamp(1.2rem, 2vw, 2rem);
-            line-height: 1.25;
+            font-size: clamp(1.7rem, 2vw, 2.25rem);
+            line-height: 1.18;
             font-weight: 600;
-            margin: 0;
-            max-width: 90%;
+            letter-spacing: 0.01em;
+            padding: 0.25rem 0;
         }
 
         .desc {
-            font-size: clamp(1rem, 1.5vw, 1.2rem);
-            line-height: 1.45;
-            font-weight: 400;
-            margin: 6px 0 0;
+            font-size: 1.08rem;
+            line-height: 1.33;
             max-width: 92%;
         }
 
-        .desc-wrap.left .desc {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 4px 14px 0 8px;
+        .c1 {
+            background: var(--c1);
         }
 
-        .desc-wrap.right .desc {
-            padding: 6px 6px 0 18px;
+        .c1 .number-circle {
+            background: var(--c1-circle);
         }
 
-        .peach {
-            background: #f5c4a2;
+        .c2 {
+            background: var(--c2);
         }
 
-        .lilac {
-            background: #c99edd;
+        .c2 .number-circle {
+            background: var(--c2-circle);
         }
 
-        .aqua {
-            background: #aad3d7;
+        .c3 {
+            background: var(--c3);
         }
 
-        .butter {
-            background: #e8df9d;
+        .c3 .number-circle {
+            background: var(--c3-circle);
         }
 
-        .pink {
-            background: #e7a5cf;
+        .c4 {
+            background: var(--c4);
         }
 
-        .salmon {
-            background: #f4aea7;
+        .c4 .number-circle {
+            background: var(--c4-circle);
         }
 
-        .lavender {
-            background: #bfaeeb;
+        .c5 {
+            background: var(--c5);
         }
 
-        .green {
-            background: #b9d7a7;
+        .c5 .number-circle {
+            background: var(--c5-circle);
         }
 
-        .sky {
-            background: #abd7e3;
+        .c6 {
+            background: var(--c6);
         }
 
-        .sand {
-            background: #f0ce96;
+        .c6 .number-circle {
+            background: var(--c6-circle);
         }
 
-        @media (max-width: 991.98px) {
+        .c7 {
+            background: var(--c7);
+        }
+
+        .c7 .number-circle {
+            background: var(--c7-circle);
+        }
+
+        .c8 {
+            background: var(--c8);
+        }
+
+        .c8 .number-circle {
+            background: var(--c8-circle);
+        }
+
+        .c9 {
+            background: var(--c9);
+        }
+
+        .c9 .number-circle {
+            background: var(--c9-circle);
+        }
+
+        .c10 {
+            background: var(--c10);
+        }
+
+        .c10 .number-circle {
+            background: var(--c10-circle);
+        }
+
+        @media (max-width: 900px) {
             .poster {
-                padding: 32px 22px 48px;
+                padding: 2rem 1rem 3rem;
             }
 
-            .timeline {
+            .row-item {
                 grid-template-columns: 1fr;
-                row-gap: 18px;
+                gap: 0.75rem;
+                margin-bottom: 1.5rem;
             }
 
             .timeline::before {
-                display: none;
+                left: 1.15rem;
+                transform: none;
             }
 
-            .capsule-wrap.left,
-            .capsule-wrap.right,
-            .desc-wrap.left,
-            .desc-wrap.right {
-                grid-column: 1;
+            .cell,
+            .desc-cell {
+                min-height: unset;
             }
 
-            .desc-wrap.left .desc,
-            .desc-wrap.right .desc {
-                text-align: left;
-                padding: 0 4px 0 4px;
-                max-width: 100%;
-            }
-        }
-
-        @media (max-width: 575.98px) {
-            :root {
-                --item-height: 120px;
-                --circle-size: 88px;
-                --capsule-radius: 60px;
+            .capsule-cell {
+                order: 1;
             }
 
-            .capsule.left {
-                padding-left: 108px;
-                padding-right: 20px;
-                border-radius: 56px 0 0 56px;
+            .desc-cell {
+                order: 2;
+                text-align: left !important;
+                padding: 0 0.5rem 0 2rem !important;
             }
 
-            .capsule.right {
-                padding-left: 20px;
-                padding-right: 108px;
-                border-radius: 0 56px 56px 0;
+            .capsule,
+            .row-left .capsule,
+            .row-right .capsule {
+                width: calc(100% - 1.6rem);
+                margin-left: 1.6rem;
+                border-radius: 999px;
+                padding: 0 1rem;
+                flex-direction: row;
             }
 
-            .num-circle {
-                font-size: 2.4rem;
+            .number-circle {
+                width: 88px;
+                height: 88px;
+                min-width: 88px;
+                font-size: 2.7rem;
             }
 
             .headline {
-                font-size: 1.1rem;
+                font-size: 1.6rem;
+            }
+
+            .desc {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 
 <body>
-    <main class="poster">
-        <h1 class="page-title">Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts<br>for Workplace Writing</h1>
-        <hr class="title-rule">
+    <div class="poster">
+        <h1 class="poster-title">Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts<br />for Workplace Writing</h1>
+        <div class="title-rule"></div>
 
-        <section class="timeline" aria-label="Ten workplace writing guidelines">
-            <article class="entry">
-                <div class="capsule-wrap left">
-                    <div class="capsule left peach">
-                        <div class="num-circle">01.</div>
-                        <h2 class="headline">Ready for the Workplace</h2>
+        <div class="timeline">
+
+            <div class="row-item row-left">
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        Successful documents are ready for the workplace. Don&rsquo;t include
+                        the name of the assignment, course, or other course information.
                     </div>
                 </div>
-                <div class="desc-wrap right">
-                    <p class="desc">Successful documents are ready for the workplace. Don&rsquo;t include the name of the assignment, course, or other course information.</p>
-                </div>
-            </article>
-
-            <article class="entry">
-                <div class="desc-wrap left">
-                    <p class="desc">Include the word chunking and wall of text.</p>
-                </div>
-                <div class="capsule-wrap right">
-                    <div class="capsule right lilac">
-                        <div class="num-circle">02.</div>
-                        <h2 class="headline">Break Up Large Paragraphs</h2>
+                <div class="cell capsule-cell">
+                    <div class="capsule c1">
+                        <div class="headline">Ready for the Workplace</div>
+                        <div class="number-circle">01.</div>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article class="entry">
-                <div class="capsule-wrap left">
-                    <div class="capsule left aqua">
-                        <div class="num-circle">03.</div>
-                        <h2 class="headline">Left Align for Readability</h2>
+            <div class="row-item row-right">
+                <div class="cell capsule-cell">
+                    <div class="capsule c2">
+                        <div class="headline">Break Up Large Paragraphs</div>
+                        <div class="number-circle">02.</div>
                     </div>
                 </div>
-                <div class="desc-wrap right">
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </article>
-
-            <article class="entry">
-                <div class="desc-wrap left">
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="capsule-wrap right">
-                    <div class="capsule right butter">
-                        <div class="num-circle">04.</div>
-                        <h2 class="headline">All Figures Need Captions</h2>
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        include the word chunking and wall of text
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article class="entry">
-                <div class="capsule-wrap left">
-                    <div class="capsule left pink">
-                        <div class="num-circle">05.</div>
-                        <h2 class="headline">Use the Correct Format</h2>
+            <div class="row-item row-left">
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                 </div>
-                <div class="desc-wrap right">
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </article>
-
-            <article class="entry">
-                <div class="desc-wrap left">
-                    <p class="desc">Use bibliographical citations on your references page, no matter what citation system your field uses. Links are NOT citations.</p>
-                </div>
-                <div class="capsule-wrap right">
-                    <div class="capsule right salmon">
-                        <div class="num-circle">06.</div>
-                        <h2 class="headline">Links Are Not a Bibliography</h2>
+                <div class="cell capsule-cell">
+                    <div class="capsule c3">
+                        <div class="headline">Left Align for Readability</div>
+                        <div class="number-circle">03.</div>
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article class="entry">
-                <div class="capsule-wrap left">
-                    <div class="capsule left lavender">
-                        <div class="num-circle">07.</div>
-                        <h2 class="headline">Keep Related Content Together</h2>
+            <div class="row-item row-right">
+                <div class="cell capsule-cell">
+                    <div class="capsule c4">
+                        <div class="headline">All Figures Need Captions</div>
+                        <div class="number-circle">04.</div>
                     </div>
                 </div>
-                <div class="desc-wrap right">
-                    <p class="desc">Proximity&mdash;especially for headings. good grief.</p>
-                </div>
-            </article>
-
-            <article class="entry">
-                <div class="desc-wrap left">
-                    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="capsule-wrap right">
-                    <div class="capsule right green">
-                        <div class="num-circle">08.</div>
-                        <h2 class="headline">Limit All Caps</h2>
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                 </div>
-            </article>
+            </div>
 
-            <article class="entry">
-                <div class="capsule-wrap left">
-                    <div class="capsule left sky">
-                        <div class="num-circle">09.</div>
-                        <h2 class="headline">Use Readable Font Size</h2>
+            <div class="row-item row-left">
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        Use bibliographical citations on your references page, no matter
+                        what citation system your field uses. Links are NOT citations.
                     </div>
                 </div>
-                <div class="desc-wrap right">
-                    <p class="desc">The text in this visual is too small to read. As a guideline, the font size in the visuals needs to be at least as big as the font size of the text in the document.</p>
-                </div>
-            </article>
-
-            <article class="entry">
-                <div class="desc-wrap left">
-                    <p class="desc">Document titles, headings, subheadings, and subject lines should all use title case. Capitalize the first letter of all major words.</p>
-                </div>
-                <div class="capsule-wrap right">
-                    <div class="capsule right sand">
-                        <div class="num-circle">10.</div>
-                        <h2 class="headline">Use Title Case</h2>
+                <div class="cell capsule-cell">
+                    <div class="capsule c5">
+                        <div class="headline">Use the Correct Format</div>
+                        <div class="number-circle">05.</div>
                     </div>
                 </div>
-            </article>
-        </section>
-    </main>
+            </div>
+
+            <div class="row-item row-right">
+                <div class="cell capsule-cell">
+                    <div class="capsule c6">
+                        <div class="headline">Links Are Not a Bibliography</div>
+                        <div class="number-circle">06.</div>
+                    </div>
+                </div>
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        Proximity&mdash;especially for headings. good grief.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-item row-left">
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                </div>
+                <div class="cell capsule-cell">
+                    <div class="capsule c7">
+                        <div class="headline">Keep Related Content Together</div>
+                        <div class="number-circle">07.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-item row-right">
+                <div class="cell capsule-cell">
+                    <div class="capsule c8">
+                        <div class="headline">Limit All Caps</div>
+                        <div class="number-circle">08.</div>
+                    </div>
+                </div>
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        The text in this visual is too small to read. As a guideline, the
+                        font size in the visuals needs to be at least as big as the font
+                        size of the text in the document.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-item row-left">
+                <div class="cell desc-cell">
+                    <div class="desc">
+                        Document titles, headings, subheadings, and subject lines should
+                        all use title case. Capitalize the first letter of all major words.
+                    </div>
+                </div>
+                <div class="cell capsule-cell">
+                    <div class="capsule c9">
+                        <div class="headline">Use Readable Font Size</div>
+                        <div class="number-circle">09.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-item row-right">
+                <div class="cell capsule-cell">
+                    <div class="capsule c10">
+                        <div class="headline">Use Title Case</div>
+                        <div class="number-circle">10.</div>
+                    </div>
+                </div>
+                <div class="cell desc-cell">
+                    <div class="desc"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
