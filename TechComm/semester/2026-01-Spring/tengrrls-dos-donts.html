@@ -101,23 +101,24 @@
             position: relative;
             width: 100%;
             min-height: var(--item-height);
-            border-radius: var(--capsule-radius);
             display: flex;
             align-items: center;
             padding: 18px 30px;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .capsule.left {
             justify-content: flex-start;
             padding-left: 132px;
             padding-right: 42px;
+            border-radius: var(--capsule-radius) 0 0 var(--capsule-radius);
         }
 
         .capsule.right {
             justify-content: flex-start;
             padding-left: 28px;
             padding-right: 132px;
+            border-radius: 0 var(--capsule-radius) var(--capsule-radius) 0;
         }
 
         .num-circle {
@@ -144,6 +145,14 @@
 
         .capsule.right .num-circle {
             right: 14px;
+        }
+
+        .capsule-wrap.left {
+            padding-right: 0;
+        }
+
+        .capsule-wrap.right {
+            padding-left: 0;
         }
 
         .headline {
@@ -252,11 +261,13 @@
             .capsule.left {
                 padding-left: 108px;
                 padding-right: 20px;
+                border-radius: 56px 0 0 56px;
             }
 
             .capsule.right {
                 padding-left: 20px;
                 padding-right: 108px;
+                border-radius: 0 56px 56px 0;
             }
 
             .num-circle {
@@ -397,9 +408,6 @@
             </article>
         </section>
     </main>
-</body>
-
-</html>
 </body>
 
 </html>
