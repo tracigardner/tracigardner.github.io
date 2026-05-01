@@ -45,9 +45,9 @@
                     {
                         label: 'Time Students Have Left',
                         data: [
-                            { x: '2026-04-27T23:59:00', y: 100 },
-                            { x: '2026-05-01T11:00:00', y: 62 },
-                            { x: '2026-05-06T23:59:00', y: 0 }
+                            { x: '2026-04-27', y: 100 },
+                            { x: '2026-05-01', y: 62 },
+                            { x: '2026-05-06', y: 0 }
                         ],
                         borderColor: '#e87722',
                         backgroundColor: '#e87722',
@@ -68,9 +68,9 @@
                     {
                         label: 'Teacher Workload',
                         data: [
-                            { x: '2026-04-27T23:59:00', y: 9.5 },
-                            { x: '2026-05-01T11:00:00', y: 29.8 },
-                            { x: '2026-05-06T23:59:00', y: 100 }
+                            { x: '2026-04-27', y: 9.5 },
+                            { x: '2026-05-01', y: 29.8 },
+                            { x: '2026-05-06', y: 100 }
                         ],
                         borderColor: '#861f41',
                         backgroundColor: '#861f41',
@@ -137,13 +137,17 @@
                     x: {
                         type: 'time',
                         time: {
+                            unit: 'day',                  // forces date-based ticks
+                            displayFormats: {
+                                day: 'MMM d'             // e.g., Apr 27, May 1
+                            },
                             tooltipFormat: 'MMM d, yyyy h:mm a'
                         },
                         title: {
                             display: true,
-                            text: 'Time Left to Submit Your Work'
+                            text: 'Time'
                         }
-                    },
+                    }
                     y: {
                         min: 0,
                         max: 100,
