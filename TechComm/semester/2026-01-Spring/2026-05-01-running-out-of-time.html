@@ -9,10 +9,21 @@
     <script src="https://cdn.jsdelivr.net/npm/luxon"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <style>
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            height: 60vh;
+            min-height: 420px;
+            margin: 40px auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="width: 90%; max-width: 850px; margin: 40px auto;">
+    <div class="chart-container">
         <canvas id="deadlineChart"></canvas>
     </div>
 
@@ -37,14 +48,17 @@
                             { x: '2026-05-06T23:59:00', y: 0 }
                         ],
                         borderColor: '#e87722',
+                        backgroundColor: '#e87722',
                         borderWidth: 4,
                         tension: 0.45,
                         pointRadius: 5,
                         datalabels: {
                             anchor: 'end',
-                            align: 'right',
+                            align: function (context) {
+                                return context.dataIndex === 2 ? 'left' : 'right';
+                            },
                             offset: 6,
-                            formatter: (value, context) => {
+                            formatter: function (value, context) {
                                 return labels[context.dataIndex] + '\n' + value.y + '%';
                             }
                         }
@@ -57,14 +71,17 @@
                             { x: '2026-05-06T23:59:00', y: 100 }
                         ],
                         borderColor: '#861f41',
+                        backgroundColor: '#861f41',
                         borderWidth: 4,
                         tension: 0.45,
                         pointRadius: 5,
                         datalabels: {
                             anchor: 'end',
-                            align: 'right',
+                            align: function (context) {
+                                return context.dataIndex === 2 ? 'left' : 'right';
+                            },
                             offset: 6,
-                            formatter: (value, context) => {
+                            formatter: function (value, context) {
                                 return labels[context.dataIndex] + '\n' + value.y + '%';
                             }
                         }
@@ -73,22 +90,33 @@
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 layout: {
                     padding: {
-                        left: 30   // adds breathing room from y-axis
+                        top: 40,
+                        right: 120,
+                        bottom: 20,
+                        left: 30
                     }
                 },
                 plugins: {
                     title: {
                         display: true,
-                        text: 'Time Left to Submit Fact Sheets vs. Amount of Work to Grade',
+                        text: 'Time Left to Submit Fact Sheets vs. Amount of Work to Submitted',
+                        color: '#861f41',
                         font: {
-                            size: 20
+                            size: '20',
+                        },
+                        padding: {
+                            bottom: 30
                         }
+                    },
+                    legend: {
+                        position: 'bottom'
                     },
                     datalabels: {
                         color: '#000',
-                        backgroundColor: 'rgba(229, 225, 230, .75)', // 75% transparent skipper smoke
+                        backgroundColor: 'rgba(229, 225, 230, .75)',
                         borderRadius: 4,
                         padding: {
                             top: 4,
@@ -99,7 +127,8 @@
                         font: {
                             weight: 'bold'
                         },
-                        clamp: true
+                        clamp: true,
+                        clip: false
                     }
                 },
                 scales: {
@@ -110,7 +139,7 @@
                         },
                         title: {
                             display: true,
-                            text: 'Time'
+                            text: 'Time Left to Submit Your Work'
                         }
                     },
                     y: {
@@ -118,7 +147,7 @@
                         max: 100,
                         title: {
                             display: true,
-                            text: 'Percentage'
+                            text: 'Amount of Work Submitted'
                         },
                         ticks: {
                             callback: value => value + '%'
