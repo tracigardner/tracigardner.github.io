@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Time vs. Teacher Workload</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+
+<body>
+    <div style="width: 90%; max-width: 850px; margin: 40px auto;">
+        <canvas id="deadlineChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('deadlineChart');
+
+        const labels = [
+            'Early Submissions',
+            'Target Deadline',
+            'End of Grace Period'
+        ];
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [
+                    {
+                        label: 'Time Students Have Left',
+                        data: [
+                            { x: '2026-04-27T23:59:00', y: 100 },
+                            { x: '2026-05-01T11:00:00', y: 62 },
+                            { x: '2026-05-06T23:59:00', y: 0 }
+                        ],
+                        borderColor: '#e87722',
+                        borderWidth: 4,
+                        tension: 0.45,
+                        pointRadius: 5,
+                        datalabels: {
+                            anchor: 'end',
+                            align: 'right',
+                            offset: 6,
+                            formatter: (value, context) => {
+                                return labels[context.dataIndex] + '\n' + value.y + '%';
+                            }
+                        }
+                    },
+                    {
+                        label: 'Teacher Workload',
+                        data: [
+                            { x: '2026-04-27T23:59:00', y: 9.5 },
+                            { x: '2026-05-01T11:00:00', y: 29.8 },
+                            { x: '2026-05-06T23:59:00', y: 100 }
+                        ],
+                        borderColor: '#861f41',
+                        borderWidth: 4,
+                        tension: 0.45,
+                        pointRadius: 5,
+                        datalabels: {
+                            anchor: 'end',
+                            align: 'right',
+                            offset: 6,
+                            formatter: (value, context) => {
+                                return labels[context.dataIndex] + '\n' + value.y + '%';
+                            }
+                        }
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                layout: {
+                    padding: {
+                        left: 30   // adds breathing room from y-axis
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Time Left to Submit Fact Sheets vs. Amount of Work to Grade',
+                        font: {
+                            size: 20
+                        }
+                    },
+                    datalabels: {
+                        color: '#000',
+                        backgroundColor: 'rgba(229, 225, 230, .75)', // 75% transparent skipper smoke
+                        borderRadius: 4,
+                        padding: {
+                            top: 4,
+                            bottom: 4,
+                            left: 6,
+                            right: 6
+                        },
+                        font: {
+                            weight: 'bold'
+                        },
+                        clamp: true
+                    }
+                },
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                            tooltipFormat: 'MMM d, yyyy h:mm a'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Time'
+                        }
+                    },
+                    y: {
+                        min: 0,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: 'Percentage'
+                        },
+                        ticks: {
+                            callback: value => value + '%'
+                        }
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+    </script>
+</body>
+
+</html>
