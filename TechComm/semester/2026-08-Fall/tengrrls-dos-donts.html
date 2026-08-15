@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts for Workplace Writing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --center-line: #508590;
+            --text: #111111;
+
+            --c1: #f4c5a3;
+            --c1-circle: #f6e8dc;
+
+            --c2: #c79bd6;
+            --c2-circle: #f0ddf7;
+
+            --c3: #a8cfd2;
+            --c3-circle: #dcedef;
+
+            --c4: #e2db98;
+            --c4-circle: #f4efcf;
+
+            --c5: #e4a6cf;
+            --c5-circle: #f6deef;
+
+            --c6: #f3b1aa;
+            --c6-circle: #f8ddd9;
+
+            --c7: #c3b1ea;
+            --c7-circle: #ece6fb;
+
+            --c8: #b7d4a3;
+            --c8-circle: #e3edd8;
+
+            --c9: #a7d7e3;
+            --c9-circle: #dceff4;
+
+            --c10: #efcd98;
+            --c10-circle: #f7ead4;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+        }
+
+        a {
+            color: #6b2f5b;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            background-color: #f4efcf;
+        }
+
+        .poster {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 3.5rem 2rem 4rem;
+        }
+
+        .poster-title {
+            color: #508590;
+            font-size: clamp(2.3rem, 5vw, 4.2rem);
+            line-height: 1.08;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin: 0 0 1.25rem;
+        }
+
+        .title-rule {
+            height: 6px;
+            background: #508590;
+            margin-bottom: 2.75rem;
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 0;
+            border-left: 6px dashed #508590;
+            transform: translateX(-50%);
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        .row-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            margin: 0 0 0.7rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cell {
+            min-height: 132px;
+            display: flex;
+            align-items: center;
+        }
+
+        .desc-cell {
+            padding: 0 1.2rem;
+        }
+
+        .row-right .desc-cell {
+            justify-content: flex-start;
+            text-align: left;
+            padding-right: 1.8rem;
+            padding-left: 0.75rem;
+        }
+
+        .row-left .desc-cell {
+            justify-content: flex-start;
+            text-align: left;
+            padding-left: 1.8rem;
+            padding-right: 0.75rem;
+        }
+
+        .capsule-cell {
+            padding: 0;
+        }
+
+        .capsule {
+            width: 100%;
+            min-height: 132px;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Left-side capsule: rounded on outer left, flat at center/right */
+        .row-left .capsule {
+            border-radius: 999px 0 0 999px;
+            padding: 0 0 0 1rem;
+        }
+
+        /* Right-side capsule: flat at center/left, rounded on outer right */
+        .row-right .capsule {
+            border-radius: 0 999px 999px 0;
+            padding: 0 1rem 0 0;
+            flex-direction: row-reverse;
+        }
+
+        .number-circle {
+            width: 108px;
+            height: 108px;
+            min-width: 108px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.45rem;
+            line-height: 1;
+            font-weight: 700;
+            color: #000;
+            position: relative;
+            z-index: 2;
+        }
+
+        .headline {
+            font-size: clamp(1.7rem, 2vw, 2.25rem);
+            line-height: 1.18;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            padding: 0.25rem 0;
+        }
+
+        .desc {
+            font-size: 1.08rem;
+            line-height: 1.33;
+            max-width: 92%;
+        }
+
+        .c1 {
+            background: var(--c1);
+        }
+
+        .c1 .number-circle {
+            background: var(--c1-circle);
+        }
+
+        .c2 {
+            background: var(--c2);
+        }
+
+        .c2 .number-circle {
+            background: var(--c2-circle);
+        }
+
+        .c3 {
+            background: var(--c3);
+        }
+
+        .c3 .number-circle {
+            background: var(--c3-circle);
+        }
+
+        .c4 {
+            background: var(--c4);
+        }
+
+        .c4 .number-circle {
+            background: var(--c4-circle);
+        }
+
+        .c5 {
+            background: var(--c5);
+        }
+
+        .c5 .number-circle {
+            background: var(--c5-circle);
+        }
+
+        .c6 {
+            background: var(--c6);
+        }
+
+        .c6 .number-circle {
+            background: var(--c6-circle);
+        }
+
+        .c7 {
+            background: var(--c7);
+        }
+
+        .c7 .number-circle {
+            background: var(--c7-circle);
+        }
+
+        .c8 {
+            background: var(--c8);
+        }
+
+        .c8 .number-circle {
+            background: var(--c8-circle);
+        }
+
+        .c9 {
+            background: var(--c9);
+        }
+
+        .c9 .number-circle {
+            background: var(--c9-circle);
+        }
+
+        .c10 {
+            background: var(--c10);
+        }
+
+        .c10 .number-circle {
+            background: var(--c10-circle);
+        }
+
+        @media (max-width: 900px) {
+            .poster {
+                padding: 2rem 1rem 3rem;
+            }
+
+            .row-item {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .timeline::before {
+                left: 1.15rem;
+                transform: none;
+            }
+
+            .cell,
+            .desc-cell {
+                min-height: unset;
+            }
+
+            .capsule-cell {
+                order: 1;
+            }
+
+            .desc-cell {
+                order: 2;
+                text-align: left !important;
+                padding: 0 0.5rem 0 2rem !important;
+            }
+
+            .capsule,
+            .row-right .capsule,
+            .row-left .capsule {
+                width: calc(100% - 1.6rem);
+                margin-left: 1.6rem;
+                border-radius: 999px;
+                padding: 0 1rem;
+                flex-direction: row;
+            }
+
+            .number-circle {
+                width: 88px;
+                height: 88px;
+                min-width: 88px;
+                font-size: 2.7rem;
+            }
+
+            .headline {
+                font-size: 1.6rem;
+            }
+
+            .desc {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bkgd-pattern" style="background-image: url(https://tracigardner.github.io/TechComm/-images/backgrounds/RS200052_20240916_Hokie_Stone_LH_0008_web-450wx300h.jpg); width: 96%; height: 96%; background-color: #dedede;">
+        <p>&nbsp;</p>
+        <div id="pagecontent" style="margin: 24px 36px;background-color: #ffffff;padding: 24px;border: 6px solid #508590;border-radius: 24px;">
+            <div class="poster">
+                <h1 class="poster-title">Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts<br />for Workplace Writing</h1>
+                <div class="title-rule"></div>
+
+                <div class="timeline">
+
+                    <!-- 1. Workplace ready -->
+                    <div class="row-item row-left">
+                        <div class="cell capsule-cell">
+                            <div class="capsule c1">
+                                <div class="number-circle">01</div>
+                                <div class="headline">Ready for the Workplace</div>
+                            </div>
+                        </div>
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                Successful documents are ready for the workplace. Don&rsquo;t include the name of the assignment, the class, or other course information.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. chunk paragraphs -->
+                    <div class="row-item row-right">
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                Long paragraphs confront the reader with a difficult-to-read wall of text. <a href="https://www.linkedin.com/learning/writing-with-impact/managing-paragraph-lengths?autoplay=true&u=57888345" target="_blank">Chunk long paragraphs</a> into smaller elements to increase readability.
+                            </div>
+                        </div>
+                        <div class="cell capsule-cell">
+                            <div class="capsule c2">
+                                <div class="number-circle">02</div>
+                                <div class="headline ps-3">Break Up Large Paragraphs</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. left aligned -->
+                    <div class="row-item row-left">
+                        <div class="cell capsule-cell">
+                            <div class="capsule c3">
+                                <div class="number-circle">03</div>
+                                <div class="headline">Left Align for Readability</div>
+                            </div>
+                        </div>
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                <a href="https://www.linkedin.com/learning/the-33-laws-of-typography/09-favor-flush-left-ragged-right-body-text?u=57888345" target="_blank">Left-aligned, ragged right</a> paragraphs and headings are easiest to read. Centered and justified paragraphs are more difficult to scan and follow, especially in longer passages.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. figs & captions -->
+                    <!-- backup link: https://web.archive.org/web/20260809080915/https://chec.engineering.cornell.edu/visuals/captions-for-figures-in-documents/ -->
+                    <div class="row-item row-right">
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                Include <a href="https://chec.engineering.cornell.edu/visuals/captions-for-figures-in-documents/" target="_blank">clear, consistent captions</a> so readers understand what they&rsquo;re seeing and why it matters. Use a two-part format: a label and number (e.g., Figure 1:) followed by a brief, descriptive title (e.g., How a Dog&rsquo;s Teeth Are Arranged).
+                            </div>
+                        </div>
+                        <div class="cell capsule-cell">
+                            <div class="capsule c4">
+                                <div class="number-circle">04</div>
+                                <div class="headline ps-3">All Visuals Need Captions</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. memo/letter format -->
+                    <div class="row-item row-left">
+                        <div class="cell capsule-cell">
+                            <div class="capsule c5">
+                                <div class="number-circle">05</div>
+                                <div class="headline">Use the Correct Format</div>
+                            </div>
+                        </div>
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                <a href="https://canvas.vt.edu/courses/235156/pages/annotated-letter-format" target="_blank">Letters</a> and <a href="https://canvas.vt.edu/courses/235156/pages/annotated-memo-format" target="_blank">memos</a> have distinct structures and conventions, so don&rsquo;t mix elements or leave out key parts. Use the appropriate format to ensure your document is clear, complete, and professional.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. links are not bib-->
+                    <div class="row-item row-right">
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                Use <a href="https://www.linkedin.com/learning/the-best-of-word-tips-weekly/add-and-edit-citations-3?u=57888345" target="_blank">bibliographical citations</a> on your references page, no matter what citation system your field uses. Links are NOT citations. They lack the details needed to identify and retrieve a source reliably.
+                            </div>
+                        </div>
+                        <div class="cell capsule-cell">
+                            <div class="capsule c6">
+                                <div class="number-circle">06</div>
+                                <div class="headline ps-3">Links Are Not a Bibliography</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. proximity -->
+                    <div class="row-item row-left">
+                        <div class="cell capsule-cell">
+                            <div class="capsule c7">
+                                <div class="number-circle">07</div>
+                                <div class="headline">Keep Related Content Together</div>
+                            </div>
+                        </div>
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                Place connected information together on the same page. Keep headings with their opening paragraphs and pair visuals with their captions and references. Make the most of <a href="https://canvas.vt.edu/courses/235156/pages/crap-contrast-repetition-alignment-and-proximity" target="_blank">the design principle of proximity</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. all caps -->
+                    <div class="row-item row-right">
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                <a href="https://www.linkedin.com/learning/the-33-laws-of-typography/17-avoid-all-caps-and-underlined-text?u=57888345" target="_blank" title="Avoid All Caps and Underlined Text">Avoid all caps</a> in body text and headings, since it&rsquo;s harder to read. Save all caps for purposeful uses&mdash;like acronyms&mdash;where they can add emphasis without &ldquo;yelling&rdquo; at the reader.
+                            </div>
+                        </div>
+                        <div class="cell capsule-cell">
+                            <div class="capsule c8">
+                                <div class="number-circle">08</div>
+                                <div class="headline ps-3">Limit All Caps</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. small text font -->
+                    <div class="row-item row-left">
+                        <div class="cell capsule-cell">
+                            <div class="capsule c9">
+                                <div class="number-circle">09</div>
+                                <div class="headline">Use Readable Font Size</div>
+                            </div>
+                        </div>
+                        <div class="cell desc-cell">
+                            <div class="desc">
+                                Text should be <a href="https://www.linkedin.com/learning/creating-inclusive-content/guidelines-for-inclusive-type-formatting-24469515?u=57888345" target="_blank">easy to read at a glance</a>. Use at least 10&ndash;12 pt font in your document, and keep text in visuals the same size or larger so readers don&rsquo;t have to strain to see it.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. title case -->
+                    <!-- backup: https://web.archive.org/web/20260726171929/https://www.grammarly.com/blog/punctuation-capitalization/capitalization-in-titles/ -->
+                    <div class="row-item row-right">
+                        <div class="cell desc-cell">
+                            <div class="desc">Use <a href="https://www.grammarly.com/blog/capitalization-in-the-titles/" target="_blank" title="Capitalization in Titles: Rules and Examples">title case</a> for document titles, headings, subheadings, and subject lines to create a professional look. Capitalize the first and last words and all major words.</div>
+                        </div>
+                        <div class="cell capsule-cell">
+                            <div class="capsule c10">
+                                <div class="number-circle">10</div>
+                                <div class="headline ps-3">Use Title Case</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <p>&nbsp;</p>
+            <p style="border-top: 1px solid #508590;padding-top: 9px;font-size: .9rem">Background image: September 16th, 2024 - Detail of a Hokie stone wall. (Photo by Luke Hayes/Virginia Tech)<br><br>
+                Text Copyright © 2026 Traci Gardner. Licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+        </div>
+        <p>&nbsp;</p>
+    </div>
+
+
+</body>
+
+</html>
