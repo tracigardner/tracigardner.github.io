@@ -93,6 +93,17 @@ h3 {
   box-shadow: 10px 10px #d7d2cb;
 }
 
+h3.scenario {
+  background-color: #edf3f4;
+  color: #861f41;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5px;
+  box-shadow: none;
+  border-top: 0;
+  display: flex;
+  margin-top: 0;
+}
+
 h3.ess {
   color: #861f41;
   font-weight: bold;
