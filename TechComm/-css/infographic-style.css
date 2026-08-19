@@ -97,7 +97,7 @@ h3.scenario {
   background-color: #edf3f4;
   color: #861f41;
   border-bottom: 1px solid #cccccc;
-  padding-bottom: 5px;
+  padding: 0 0 5px 0 !important;
   box-shadow: none;
   border-top: 0;
   display: flex;
