@@ -11,6 +11,14 @@
 
     <title>Academic Writing vs. Technical Communication</title>
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -39,6 +47,14 @@
             color: var(--text);
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.35;
+        }
+
+        .bkgd-page {
+            background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
+            background-size: 600px;
+            width: 100%;
+            height: 100%;
+            background-color: #508590;
         }
 
         .infographic {
@@ -362,367 +378,372 @@
 <body>
 
     <main class="infographic">
+        <div class="bkgd-page">
+            <p>&nbsp;</p>
+            <div id="pagewidth" style="margin: 36px;padding: 24px;background-color: #ffffff;">
+                <!-- TITLE -->
 
-        <!-- TITLE -->
+                <header class="title-area">
 
-        <header class="title-area">
+                    <h1>
+                        Academic Writing vs.<br>
+                        Technical Communication
+                    </h1>
 
-            <h1>
-                Academic Writing vs.<br>
-                Technical Communication
-            </h1>
+                    <p>
+                        Different goals. Different audiences. Different approaches.
+                    </p>
 
-            <p>
-                Different goals. Different audiences. Different approaches.
-            </p>
-
-        </header>
-
-
-        <!-- INTRO -->
-
-        <section class="intro-grid">
-
-            <div class="intro-side academic">
-
-                <h2>
-                    Academic Writing
-                </h2>
-
-                <p>
-                    Writing to demonstrate<br>
-                    what you know.
-                </p>
-
-            </div>
+                </header>
 
 
-            <div class="intro-center">
+                <!-- INTRO -->
 
-                <div class="shift-circle">
+                <section class="intro-grid">
 
-                    <div>
+                    <div class="intro-side academic">
 
-                        <span class="small">
-                            FROM
-                        </span>
+                        <h2>
+                            Academic Writing
+                        </h2>
 
-                        <span class="large">
-                            &ldquo;WHAT I KNOW&rdquo;
-                        </span>
-
-                        <span class="small">
-                            TO
-                        </span>
-
-                        <span class="large">
-                            &ldquo;WHAT YOU NEED&rdquo;
-                        </span>
+                        <p>
+                            Writing to demonstrate<br>
+                            what you know.
+                        </p>
 
                     </div>
 
-                </div>
 
-            </div>
+                    <div class="intro-center">
+
+                        <div class="shift-circle">
+
+                            <div>
+
+                                <span class="small">
+                                    FROM
+                                </span>
+
+                                <span class="large">
+                                    &ldquo;WHAT I KNOW&rdquo;
+                                </span>
+
+                                <span class="small">
+                                    TO
+                                </span>
+
+                                <span class="large">
+                                    &ldquo;WHAT YOU NEED&rdquo;
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
 
-            <div class="intro-side technical">
+                    <div class="intro-side technical">
 
-                <h2>
-                    Technical Communication
-                </h2>
+                        <h2>
+                            Technical Communication
+                        </h2>
 
-                <p>
-                    Designing information so<br>
-                    someone can use it.
-                </p>
+                        <p>
+                            Designing information so<br>
+                            someone can use it.
+                        </p>
 
-            </div>
+                    </div>
 
-        </section>
+                </section>
 
 
-        <!-- COMPARISON -->
+                <!-- COMPARISON -->
 
-        <section class="comparison" aria-label="Comparison of academic writing and technical communication">
+                <section class="comparison" aria-label="Comparison of academic writing and technical communication">
 
-            <!-- PURPOSE -->
+                    <!-- PURPOSE -->
 
-            <div class="comparison-row">
+                    <div class="comparison-row">
 
-                <div class="academic-cell">
-                    Demonstrates knowledge, develops an argument, or contributes
-                    to scholarly discussion.
-                </div>
+                        <div class="academic-cell">
+                            Demonstrates knowledge, develops an argument, or contributes
+                            to scholarly discussion.
+                        </div>
 
-                <div class="category-cell">
+                        <div class="category-cell">
 
-                    <i class="fa-solid fa-bullseye" aria-hidden="true">
+                            <i class="fa-solid fa-bullseye" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Purpose
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Helps readers understand information, make decisions, or take action.
+                        </div>
+
+                    </div>
+
+
+                    <!-- AUDIENCE -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            Usually instructors, students, or scholars.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-solid fa-user-group" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Audience
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Clients, coworkers, managers, specialists, users, or the public.
+                        </div>
+
+                    </div>
+
+
+                    <!-- WRITER'S ROLE -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            Demonstrates understanding and builds a well-supported
+                            interpretation or argument.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-solid fa-user-pen" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Writer&rsquo;s Role
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Provides information readers need to accomplish a specific goal.
+                        </div>
+
+                    </div>
+
+
+                    <!-- ORGANIZATION -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            Often follows conventional essay or disciplinary structures.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-solid fa-sitemap" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Organization
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Designed around readers&rsquo; needs and how they will use the document.
+                        </div>
+
+                    </div>
+
+
+                    <!-- READING PATTERN -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            Often intended for sustained, beginning-to-end reading.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-solid fa-eye" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Reading Pattern
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Often designed for scanning, skimming, and selective reading.
+                        </div>
+
+                    </div>
+
+
+                    <!-- EVIDENCE -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            Emphasizes scholarly research, analysis, and citation.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Evidence
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Uses the evidence most useful and credible for the situation,
+                            including research, data, standards, testing, and expert knowledge.
+                        </div>
+
+                    </div>
+
+
+                    <!-- STYLE -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            Often develops ideas through extended explanation and analysis.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-solid fa-pencil" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Style
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Prioritizes clarity, concision, precision, and usability.
+                        </div>
+
+                    </div>
+
+
+                    <!-- DESIGN & VISUALS -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            Formatting often follows established academic conventions.
+                            Visuals usually supplement the written discussion.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-regular fa-file-image" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Design &amp; Visuals
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            Headings, lists, tables, graphics, white space, and typography
+                            help communicate information. Visuals can carry essential information.
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUCCESS -->
+
+                    <div class="comparison-row">
+
+                        <div class="academic-cell">
+                            The reader understands and accepts the writer&rsquo;s
+                            analysis or argument.
+                        </div>
+
+                        <div class="category-cell">
+
+                            <i class="fa-solid fa-trophy" aria-hidden="true">
+                            </i>
+
+                            <span>
+                                Success Means
+                            </span>
+
+                        </div>
+
+                        <div class="technical-cell">
+                            The reader can find, understand, and use the information effectively.
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- TAKEAWAY -->
+
+                <section class="takeaway">
+
+                    <i class="fa-regular fa-lightbulb" aria-hidden="true">
                     </i>
 
-                    <span>
-                        Purpose
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Helps readers understand information, make decisions, or take action.
-                </div>
-
-            </div>
-
-
-            <!-- AUDIENCE -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    Usually instructors, students, or scholars.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-solid fa-user-group" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Audience
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Clients, coworkers, managers, specialists, users, or the public.
-                </div>
-
-            </div>
-
-
-            <!-- WRITER'S ROLE -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    Demonstrates understanding and builds a well-supported
-                    interpretation or argument.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-solid fa-user-pen" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Writer&rsquo;s Role
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Provides information readers need to accomplish a specific goal.
-                </div>
-
-            </div>
-
-
-            <!-- ORGANIZATION -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    Often follows conventional essay or disciplinary structures.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-solid fa-sitemap" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Organization
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Designed around readers&rsquo; needs and how they will use the document.
-                </div>
-
-            </div>
-
-
-            <!-- READING PATTERN -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    Often intended for sustained, beginning-to-end reading.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-solid fa-eye" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Reading Pattern
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Often designed for scanning, skimming, and selective reading.
-                </div>
-
-            </div>
-
-
-            <!-- EVIDENCE -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    Emphasizes scholarly research, analysis, and citation.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Evidence
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Uses the evidence most useful and credible for the situation,
-                    including research, data, standards, testing, and expert knowledge.
-                </div>
-
-            </div>
-
-
-            <!-- STYLE -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    Often develops ideas through extended explanation and analysis.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-solid fa-pencil" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Style
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Prioritizes clarity, concision, precision, and usability.
-                </div>
-
-            </div>
-
-
-            <!-- DESIGN & VISUALS -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    Formatting often follows established academic conventions.
-                    Visuals usually supplement the written discussion.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-regular fa-file-image" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Design &amp; Visuals
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    Headings, lists, tables, graphics, white space, and typography
-                    help communicate information. Visuals can carry essential information.
-                </div>
-
-            </div>
-
-
-            <!-- SUCCESS -->
-
-            <div class="comparison-row">
-
-                <div class="academic-cell">
-                    The reader understands and accepts the writer&rsquo;s
-                    analysis or argument.
-                </div>
-
-                <div class="category-cell">
-
-                    <i class="fa-solid fa-trophy" aria-hidden="true">
-                    </i>
-
-                    <span>
-                        Success Means
-                    </span>
-
-                </div>
-
-                <div class="technical-cell">
-                    The reader can find, understand, and use the information effectively.
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- TAKEAWAY -->
-
-        <section class="takeaway">
-
-            <i class="fa-regular fa-lightbulb" aria-hidden="true">
-            </i>
-
-            <div>
-
-                <h2>
-                    The Big Takeaway
-                </h2>
-
-                <p>
-                    <span class="academic-word">
-                        Academic writing
-                    </span>
-
-                    shows what you know.
-
-                    &nbsp;|&nbsp;
-
-                    <span class="technical-word">
-                        Technical communication
-                    </span>
-
-                    focuses on what your reader needs.
-                </p>
+                    <div>
+
+                        <h2><strong>The Big Takeaway</strong></h2>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>
+                                        <span class="academic-word">
+                                            Academic writing</span><br>
+                                        shows what you know.
+                                    </p>
+                                </div>
+                                <div class="col-sm-6" style="border-left: 1px solid #861f41">
+                                    <p>
+                                        <span class="technical-word">
+                                            Technical communication</span><br>
+
+                                        focuses on what your reader needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
             </div>
 
             <i class="fa-solid fa-people-group" aria-hidden="true">
             </i>
 
-        </section>
+            </section>
 
     </main>
 
