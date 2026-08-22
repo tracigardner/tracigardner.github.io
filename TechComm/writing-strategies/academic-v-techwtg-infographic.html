@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Comparison of Academic Writing and Technical Communication">
+    <meta name="keywords" content="academic, essay, technical writing">
+    <meta name="author" content="Traci Gardner">
+
+    <title>Academic Writing vs. Technical Communication</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --navy: #17365d;
+            --maroon: #861f41;
+            --teal: #006f6b;
+            --academic-bg: #fbf0f2;
+            --technical-bg: #eef7f7;
+            --center-bg: #fffdf9;
+            --border: #d4c4c8;
+            --text: #222222;
+            --white: #ffffff;
+            --orange: #c64600;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            background: #ffffff;
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.35;
+        }
+
+        .infographic {
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+
+        /* ------------------------------
+       TITLE
+    ------------------------------ */
+
+        .title-area {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .title-area h1 {
+            margin: 0;
+
+            color: var(--maroon);
+
+            font-size: clamp(2.3rem, 5vw, 4rem);
+            line-height: 1.05;
+            text-transform: uppercase;
+        }
+
+        .title-area p {
+            margin: 10px 0 0;
+
+            font-size: 1.35rem;
+            font-style: italic;
+        }
+
+        /* ------------------------------
+       INTRODUCTION / CENTRAL SHIFT
+    ------------------------------ */
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 230px 1fr;
+            align-items: center;
+
+            margin-bottom: 18px;
+        }
+
+        .intro-side {
+            padding: 10px 24px;
+            text-align: center;
+        }
+
+        .intro-side h2 {
+            margin: 0 0 14px;
+            padding: 12px 18px;
+
+            border-radius: 14px;
+
+            color: #ffffff;
+
+            font-size: 1.45rem;
+            text-transform: uppercase;
+        }
+
+        .intro-side.academic h2 {
+            background: var(--orange);
+        }
+
+        .intro-side.technical h2 {
+            background: var(--teal);
+        }
+
+        .intro-side p {
+            margin: 0;
+
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .intro-side.academic p {
+            color: var(--orange);
+        }
+
+        .intro-side.technical p {
+            color: var(--teal);
+        }
+
+        .intro-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 205px;
+        }
+
+        .shift-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 200px;
+            height: 200px;
+
+            padding: 20px;
+
+            border: 3px solid var(--maroon);
+            border-radius: 50%;
+
+            color: var(--maroon);
+            background: #fffdf5;
+
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .shift-circle .small {
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .shift-circle .large {
+            display: block;
+            margin: 5px 0;
+
+            font-size: 1.35rem;
+        }
+
+        /* ------------------------------
+       COMPARISON TABLE
+    ------------------------------ */
+
+        .comparison {
+            overflow: hidden;
+
+            border-radius: 20px;
+
+            box-shadow: 0 0 0 1px var(--border);
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 285px 1fr;
+
+            min-height: 88px;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .academic-cell,
+        .technical-cell {
+            display: flex;
+            align-items: center;
+
+            padding: 16px 24px;
+
+            font-size: 1.08rem;
+        }
+
+        .academic-cell {
+            background: var(--academic-bg);
+        }
+
+        .technical-cell {
+            background: var(--technical-bg);
+        }
+
+        .category-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding: 12px 15px;
+
+            background: var(--center-bg);
+
+            border-left: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+
+            color: var(--maroon);
+
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .category-cell i {
+            margin-bottom: 7px;
+
+            color: var(--maroon);
+
+            font-size: 2rem;
+        }
+
+        .category-cell span {
+            font-size: 1rem;
+        }
+
+        /* ------------------------------
+       TAKEAWAY
+    ------------------------------ */
+
+        .takeaway {
+            display: grid;
+            grid-template-columns: 90px 1fr 90px;
+            align-items: center;
+            gap: 15px;
+
+            margin-top: 22px;
+            padding: 18px 28px;
+
+            border: 2px solid var(--maroon);
+            border-radius: 20px;
+
+            background: #ffffff;
+
+            text-align: center;
+        }
+
+        .takeaway i {
+            color: var(--maroon);
+            font-size: 2.5rem;
+        }
+
+        .takeaway h2 {
+            margin: 0 0 8px;
+
+            color: var(--maroon);
+
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        .takeaway p {
+            margin: 0;
+
+            font-size: 1.15rem;
+        }
+
+        .takeaway .academic-word {
+            color: var(--orange);
+            font-weight: bold;
+        }
+
+        .takeaway .technical-word {
+            color: var(--teal);
+            font-weight: bold;
+        }
+
+        /* ------------------------------
+       RESPONSIVE
+    ------------------------------ */
+
+        @media (max-width: 800px) {
+
+            .intro-grid {
+                display: block;
+            }
+
+            .intro-center {
+                min-height: auto;
+                margin: 20px 0;
+            }
+
+            .comparison-row {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .category-cell {
+                order: 1;
+
+                border-left: none;
+                border-right: none;
+                border-top: 1px solid var(--border);
+                border-bottom: 1px solid var(--border);
+            }
+
+            .academic-cell {
+                order: 2;
+            }
+
+            .technical-cell {
+                order: 3;
+            }
+
+            .academic-cell::before,
+            .technical-cell::before {
+                display: block;
+
+                margin-right: 8px;
+
+                font-weight: bold;
+            }
+
+            .academic-cell::before {
+                content: "Academic Writing: ";
+                color: var(--orange);
+            }
+
+            .technical-cell::before {
+                content: "Technical Communication: ";
+                color: var(--teal);
+            }
+
+            .takeaway {
+                grid-template-columns: 1fr;
+            }
+
+            .takeaway i {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+
+        <!-- TITLE -->
+
+        <header class="title-area">
+
+            <h1>
+                Academic Writing vs.<br>
+                Technical Communication
+            </h1>
+
+            <p>
+                Different goals. Different audiences. Different approaches.
+            </p>
+
+        </header>
+
+
+        <!-- INTRO -->
+
+        <section class="intro-grid">
+
+            <div class="intro-side academic">
+
+                <h2>
+                    Academic Writing
+                </h2>
+
+                <p>
+                    Writing to demonstrate<br>
+                    what you know.
+                </p>
+
+            </div>
+
+
+            <div class="intro-center">
+
+                <div class="shift-circle">
+
+                    <div>
+
+                        <span class="small">
+                            FROM
+                        </span>
+
+                        <span class="large">
+                            &ldquo;WHAT I KNOW&rdquo;
+                        </span>
+
+                        <span class="small">
+                            TO
+                        </span>
+
+                        <span class="large">
+                            &ldquo;WHAT YOU NEED&rdquo;
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="intro-side technical">
+
+                <h2>
+                    Technical Communication
+                </h2>
+
+                <p>
+                    Designing information so<br>
+                    someone can use it.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPARISON -->
+
+        <section class="comparison" aria-label="Comparison of academic writing and technical communication">
+
+            <!-- PURPOSE -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Demonstrates knowledge, develops an argument, or contributes
+                    to scholarly discussion.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-bullseye" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Purpose
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Helps readers understand information, make decisions, or take action.
+                </div>
+
+            </div>
+
+
+            <!-- AUDIENCE -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Usually instructors, students, or scholars.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-user-group" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Audience
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Clients, coworkers, managers, specialists, users, or the public.
+                </div>
+
+            </div>
+
+
+            <!-- WRITER'S ROLE -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Demonstrates understanding and builds a well-supported
+                    interpretation or argument.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-user-pen" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Writer&rsquo;s Role
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Provides information readers need to accomplish a specific goal.
+                </div>
+
+            </div>
+
+
+            <!-- ORGANIZATION -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Often follows conventional essay or disciplinary structures.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-sitemap" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Organization
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Designed around readers&rsquo; needs and how they will use the document.
+                </div>
+
+            </div>
+
+
+            <!-- READING PATTERN -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Often intended for sustained, beginning-to-end reading.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-eye" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Reading Pattern
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Often designed for scanning, skimming, and selective reading.
+                </div>
+
+            </div>
+
+
+            <!-- EVIDENCE -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Emphasizes scholarly research, analysis, and citation.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Evidence
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Uses the evidence most useful and credible for the situation,
+                    including research, data, standards, testing, and expert knowledge.
+                </div>
+
+            </div>
+
+
+            <!-- STYLE -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Often develops ideas through extended explanation and analysis.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-pencil" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Style
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Prioritizes clarity, concision, precision, and usability.
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN & VISUALS -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    Formatting often follows established academic conventions.
+                    Visuals usually supplement the written discussion.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-regular fa-file-image" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Design &amp; Visuals
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    Headings, lists, tables, graphics, white space, and typography
+                    help communicate information. Visuals can carry essential information.
+                </div>
+
+            </div>
+
+
+            <!-- SUCCESS -->
+
+            <div class="comparison-row">
+
+                <div class="academic-cell">
+                    The reader understands and accepts the writer&rsquo;s
+                    analysis or argument.
+                </div>
+
+                <div class="category-cell">
+
+                    <i class="fa-solid fa-trophy" aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Success Means
+                    </span>
+
+                </div>
+
+                <div class="technical-cell">
+                    The reader can find, understand, and use the information effectively.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TAKEAWAY -->
+
+        <section class="takeaway">
+
+            <i class="fa-regular fa-lightbulb" aria-hidden="true">
+            </i>
+
+            <div>
+
+                <h2>
+                    The Big Takeaway
+                </h2>
+
+                <p>
+                    <span class="academic-word">
+                        Academic writing
+                    </span>
+
+                    shows what you know.
+
+                    &nbsp;|&nbsp;
+
+                    <span class="technical-word">
+                        Technical communication
+                    </span>
+
+                    focuses on what your reader needs.
+                </p>
+
+            </div>
+
+            <i class="fa-solid fa-people-group" aria-hidden="true">
+            </i>
+
+        </section>
+
+    </main>
+
+    <p style="font-size: 14pt;margin-top: 12px;color: #ffffff;background-color: #385d65;font-weight: bold;text-align: right;"><time datetime="2026-08-22">Last Updated August 22, 2026&nbsp;&nbsp;&nbsp;</time></p>
+</body>
+
+</html>
