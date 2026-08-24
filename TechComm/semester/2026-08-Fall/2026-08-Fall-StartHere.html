@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Start Here, Fall 2026</title>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- My Custom CSS -->
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
+    <script>
+        (function () {
+            var cx = '004254621551572523759:n3ows2swaxg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+
+    <style>
+        .maroonbox ul li {
+            line-height: 2.4rem;
+            margin-bottom: 9px;
+        }
+
+        h3 {
+            border-top: none;
+            padding-top: 0;
+            text-transform: capitalize;
+        }
+
+        ol li::marker {
+            font-weight: bold;
+            color: #861f41;
+        }
+
+        ol>li {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #861f41;
+        }
+
+        .null li {
+            border-bottom: 0;
+        }
+
+        .null li::marker {
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .left-indent {
+            margin-left: 24px;
+            list-style-type: disc;
+        }
+
+        .bkgd-graph-white {
+            background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper.png");
+            background-color: #508590;
+            border-radius: 6px;
+            padding: 12px
+        }
+
+        .infosection-start {
+            background-color: #ffffff;
+            padding: 18px;
+            color: #333333;
+            border: 3px solid #508590;
+            border-radius: 6px;
+            margin-top: 24px;
+        }
+
+        .start-box {
+            border: 3px solid #000000;
+            border-radius: 6px;
+        }
+
+        .start-header {
+            border-bottom: 3px solid #000000;
+        }
+
+        .start-header h3 {
+            margin-top: 12px;
+
+        }
+
+        .start-header-teal {
+            background-color: #96b6bc;
+        }
+
+        .start-header-maroon {
+            background-color: #b6798d;
+        }
+
+        .start-header-hokiestone {
+            background-color: #acaeb0;
+        }
+
+        .start-header-purple {
+            background-color: #a27da4;
+        }
+
+        .start-header-pink {
+            background-color: #e2669b;
+        }
+
+        .start-header-yellow {
+            background-color: #faf291;
+        }
+
+        .start-header-turq {
+            background-color: #80e6dc;
+        }
+
+        .start-header-landgrantgrey {
+            background-color: #e7e4e0;
+        }
+
+        .start-header-impactorange {
+            background-color: #df9566;
+        }
+
+        .start-header-fullteal {
+            background-color: #508590;
+        }
+
+        .start-header-skippersmoke {
+            background-color: #e5e1e6;
+        }
+
+        .font-white {
+            color: #ffffff;
+        }
+
+        .font-black {
+            color: #000000;
+        }
+
+        /* what to do first section */
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px 6px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            font-size: 2rem;
+            margin-right: 12px;
+            color: #000000;
+            line-height: 1.4;
+        }
+
+        .check-text {
+            line-height: 1.6;
+        }
+
+        .checklist li:hover {
+            background-color: #f7f7f7;
+        }
+
+        /* where can i find everything section */
+        .map-horizontal {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 18px;
+            position: relative;
+            margin: 24px 12px;
+        }
+
+        .map-horizontal::before {
+            content: "";
+            position: absolute;
+            top: 22px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: #508590;
+        }
+
+        .map-stop {
+            text-align: center;
+            max-width: 160px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .map-dot {
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 9px auto;
+            background-color: #ffffff;
+            border: 3px solid #508590;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4rem;
+        }
+
+        .map-stop p {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+
+        /* grade table */
+
+        .gradeTable {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 6px 6px 6px 6px;
+            table-layout: fixed;
+        }
+
+        .gradeTable td,
+        .gradeTable th {
+            border: 2px solid #000000 !important;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        .gradeTable tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        .gradeTable th {
+            padding: 12px;
+            text-align: left;
+            background-color: #f2f2f2;
+            vertical-align: top;
+        }
+
+        .ai-rules {
+            margin-top: 12px;
+        }
+
+        .ai-rule {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-left: 6px solid;
+            background-color: #f9f9f9;
+        }
+
+        .ai-icon {
+            font-size: 2.4rem;
+            margin-right: 12px;
+            line-height: 1;
+        }
+
+        .ai-text {
+            line-height: 1.5;
+        }
+
+        /* semantic color cues */
+        .ai-allowed {
+            border-color: #508590;
+        }
+
+        .ai-responsibility {
+            border-color: #df9566;
+        }
+
+        .ai-not-allowed {
+            border-color: #e2669b;
+        }
+
+        .help-hub {
+            margin-top: 6px;
+        }
+
+        .help-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .help-item:last-child {
+            border-bottom: none;
+        }
+
+        .help-icon {
+            font-size: 1.6rem;
+            margin-right: 12px;
+            line-height: 1;
+        }
+
+        .help-text {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- script -->
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Start Here, Fall 2026</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" class="container-fluid" style="background-color: #fefefe;padding: 0px 6px 15px 6px;">
+
+        <div class="bkgd-graph-white">
+            <div id="pagewidth" style="margin: 0px 36px;">
+                <p>&nbsp;</p>
+
+                <!-- title block -->
+                <div class="row" id="entiretitle">
+                    <div class="col-sm-12 start-box" style="padding: 0;">
+                        <div class="container-fluid">
+                            <div class="row" id="title-tealbkgd">
+                                <div class="col-sm-12 start-header start-header-fullteal p-2">
+                                    <div class="container-fluid" id="content-title">
+                                        <div class="row">
+                                            <div class="col-sm-3 text-center">
+                                                <img src="https://tracigardner.github.io/TechComm/-images/newsletters/noun-start-button-5256663-861F41-ffffffbkgd.png" alt="" style="width: 100px; height: 100px;">
+                                            </div>
+
+                                            <div class="col-sm-9">
+                                                <h2 class="mt-3" style="font-size: 30px;color: #ffffff;">Start Here: Technical Writing (ENGL 3764)
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+                                    <p>Welcome to Technical Writing! This course will help you write clear, effective, and ethical documents for real workplace situations. Everything you need is organized in weekly modules in Canvas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bkgd-graph-white">
+            <div id="pagewidth" style="margin: 0px 24px;">
+
+                <div class="container-fluid">
+                    <!-- Row 1: What is the course about-->
+                    <div class="row">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-impactorange">
+                                        <h3 class="font-black">What&rsquo;s This Course About?</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+
+                                        <div style="column-count: 2;">
+                                            <p style="break-after: column;">
+                                                <span style="font-size: 24px;">🧰</span> <strong>Practical workplace writing.</strong>
+                                                You will focus on document design and reader-friendly strategies as you create multiple professional documents (proposals, reports, instructions, and visual materials).
+                                            </p>
+                                            <ul class="left-indent skipline">
+                                                <li><a href="https://drive.google.com/file/d/1lAVg_t2HTKWUSM0y1hQqCsYL6U_eup5c/view?usp=sharing" target="_blank">Open the Syllabus (PDF)</a> (course overview, schedule, grading basics, use of AI).</li>
+                                                <li><a href="https://docs.google.com/document/d/1UOr4r9N-H_CuvUm9ltKEeZVJXTXQmLJhUN-qql5zG_8/edit?usp=sharing" target="_blank">Open the Course Policies (PDF)</a> (detailed policies and support resources).</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: How the course works each week -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-teal">
+                                        <h3 class="font-black">How Does the course work each week?</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+                                        <p><span style="font-size: 24px;">🎒</span> <strong>Weekly modules = your weekly &ldquo;backpack.&rdquo;</strong>
+                                            Each module includes a short introduction page, links to readings, and links to all assignments for the week.</p>
+                                        <p>Each week, you&rsquo;ll follow this work flow: Open the module for the week → Read/Review → Complete activities → Submit your work.</p>
+                                        <p><img src="https://tracigardner.github.io/TechComm/-images/start-here/work-flow.png" class="img-fluid mt-0 pt-0" alt="Weekly Flow"></p>
+                                        <p></p>
+                                        <p><a href="https://canvas.vt.edu/courses/235156/modules" style="color: #508590;">
+                                                <i class="fas fa-arrow-circle-right fa-xl" aria-hidden="true"></i></a>
+                                            <a href="https://canvas.vt.edu/courses/235156/modules">Go to Modules</a> (course readings and activities, arranged by the week).</a>
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: What to do first -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-purple">
+                                        <h3 class="font-black">What should i do first?</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+                                        <p>
+                                            <span style="font-size: 24px;">✅</span> <strong>Use this checklist to get started.</strong>
+                                        </p>
+
+                                        <ul class="checklist">
+                                            <li>
+                                                <span class="check-icon">☐</span>
+                                                <span class="check-text">Read this Start Here page.</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="check-icon">☐</span>
+                                                <span class="check-text">Review the <a href="https://drive.google.com/file/d/1lAVg_t2HTKWUSM0y1hQqCsYL6U_eup5c/view?usp=sharing" target="_blank">Syllabus</a> and <a href="https://docs.google.com/document/d/1UOr4r9N-H_CuvUm9ltKEeZVJXTXQmLJhUN-qql5zG_8/edit?usp=sharing" target="_blank">Course Policies</a>.</span>
+                                            </li>
+
+                                            <li>
+                                                <span class="check-icon">☐</span>
+                                                <span class="check-text">
+                                                    Check <a href="https://canvas.vt.edu/courses/235156/announcements">Announcements</a> in Canvas.
+                                                </span>
+                                            </li>
+
+                                            <li>
+                                                <span class="check-icon">☐</span>
+                                                <span class="check-text">
+                                                    Begin Module 1, starting with the
+                                                    <a href="" target="_blank">
+                                                        Week 1 Newsletter</a>.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 4:  Where Can I find Everything? -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-pink">
+                                        <h3 class="font-black">Where Can I find Everything?</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+                                        <p>Here&rsquo;s a quick map of Canvas locations you&rsquo;ll use all semester:</p>
+
+                                        <h4 class="visually-hidden">Canvas Navigation Overview</h4>
+
+                                        <div class="map-horizontal" role="navigation" aria-label="Canvas quick map">
+
+                                            <div class="map-stop">
+                                                <div class="map-dot" aria-hidden="true">📦</div>
+                                                <p>
+                                                    <strong>
+                                                        <a href="https://canvas.vt.edu/courses/235156/modules" target="_blank">
+                                                            Modules
+                                                        </a>
+                                                    </strong><br>
+                                                    Where you start every week.
+                                                </p>
+                                            </div>
+
+                                            <div class="map-stop">
+                                                <div class="map-dot" aria-hidden="true">📝</div>
+                                                <p>
+                                                    <strong>
+                                                        <a href="https://canvas.vt.edu/courses/235156/assignments" target="_blank">
+                                                            Assignments
+                                                        </a>
+                                                    </strong><br>
+                                                    Directions, rubrics, and submissions.
+                                                </p>
+                                            </div>
+
+                                            <div class="map-stop">
+                                                <div class="map-dot" aria-hidden="true">📣</div>
+                                                <p>
+                                                    <strong>
+                                                        <a href="https://canvas.vt.edu/courses/235156/announcements" target="_blank">
+                                                            Announcements
+                                                        </a>
+                                                    </strong><br>
+                                                    Required updates and weekly guidance.
+                                                </p>
+                                            </div>
+
+                                            <div class="map-stop">
+                                                <div class="map-dot" aria-hidden="true">📊</div>
+                                                <p>
+                                                    <strong>
+                                                        <a href="https://canvas.vt.edu/courses/235156/grades" target="_blank">
+                                                            Grades
+                                                        </a>
+                                                    </strong><br>
+                                                    Your progress and feedback.
+                                                </p>
+                                            </div>
+
+                                            <div class="map-stop">
+                                                <div class="map-dot" aria-hidden="true">✉️</div>
+                                                <p>
+                                                    <strong>
+                                                        <a href="https://canvas.vt.edu/conversations" target="_blank">
+                                                            Inbox
+                                                        </a>
+                                                    </strong><br>
+                                                    Private messages and questions.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: How does the schedule work -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-turq">
+                                        <h3 class="font-black">How does the schedule work?</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+
+                                        <div class="container-fluid">
+                                            <div class="row g-3">
+
+                                                <!-- Target Due Dates -->
+                                                <div class="col-md-4">
+                                                    <div class="start-box h-100">
+                                                        <div class="start-header start-header-landgrantgrey">
+                                                            <h4 class="font-black mb-0 mt-0 p-2"><span style="float: left;font-size: 24px;">⏰</span> Target Due Dates</h4>
+                                                        </div>
+                                                        <div class="p-3" style="background-color:#ffffff;">
+                                                            <p class="mb-0">
+                                                                Aim for the target due date each week so you don&rsquo;t fall behind.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Grace Periods -->
+                                                <div class="col-md-4">
+                                                    <div class="start-box h-100">
+                                                        <div class="start-header start-header-landgrantgrey">
+                                                            <h4 class="font-black mb-0 mt-0 p-2"><span style="float: left;font-size: 24px;">🗓️</span> Grace Periods</h4>
+                                                        </div>
+                                                        <div class="p-3" style="background-color:#ffffff;">
+                                                            <p class="mb-0">
+                                                                Most assignments include an automatic extension (no request or excuse needed).
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Revision Windows -->
+                                                <div class="col-md-4">
+                                                    <div class="start-box h-100">
+                                                        <div class="start-header start-header-landgrantgrey">
+                                                            <h4 class="font-black mb-0 mt-0 p-2"><span style="float: left;font-size: 24px;">🔁</span> Revision Windows</h4>
+                                                        </div>
+                                                        <div class="p-3" style="background-color:#ffffff;">
+                                                            <p class="mb-0">
+                                                                If a major project doesn&rsquo;t meet the standard at first, you typically have a revision window after feedback.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <p class="mt-3"><i class="fas fa-book-open fa-xl" style="color: #ca4f00;"></i>&nbsp;<a href="https://canvas.vt.edu/courses/235156/pages/syllabus-for-technical-writing-spring-2026" target="_blank">Read the Late Policy &amp; Grace Period details in the Syllabus.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 6: Grading (at a glance) -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-yellow">
+                                        <h3 class="font-black">How does grading work?</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+
+                                        <div class="col-sm-12" style="background-color:#ffffff;padding:12px;">
+
+                                            <table class="table table-bordered align-middle gradeTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" style="background-color: #faf291 !important;width: 24%;">&nbsp;</th>
+                                                        <th scope="col" style="vertical-align: top;background-color: #faf291 !important;border-left: 2px solid #000000;width: 38%;">Homework (15%)</th>
+                                                        <th scope="col" style="vertical-align: top;background-color: #faf291 !important;border-left: 2px solid #000000;">Major Projects (85%)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" style="vertical-align: top;">Grade</th>
+                                                        <td style="vertical-align: top;border-left: 2px solid #000000;">Up to 100 points OR Complete / Incomplete.</td>
+                                                        <td style="vertical-align: top;border-left: 2px solid #000000;">Up to 100 points. Weight varies by project.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" style="vertical-align: top;background-color: #ffffff !important;">Expectations</th>
+                                                        <td style="vertical-align: top;border-left: 2px solid #000000;">Strong effort + meets requirements + submitted before the grace period ends.</td>
+                                                        <td style="vertical-align: top;border-left: 2px solid #000000;">Detailed in rubric + workplace-ready + submitted before the grace period ends.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" style="vertical-align: top;">Revision</th>
+                                                        <td style="vertical-align: top;border-left: 2px solid #000000;">Unlimited until the end of the grace period.</td>
+                                                        <td style="vertical-align: top;border-left: 2px solid #000000;">May be available after feedback, up to the Revision Deadline.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                        <p class="mt-2">
+                                            <i class="fas fa-file-alt fa-xl" aria-hidden="true" style="color: #861f41;"></i>
+                                            <a href="https://canvas.vt.edu/courses/235156/pages/syllabus-for-technical-writing-spring-2026" target="_blank">
+
+                                                See grading details and project weights in the Syllabus.
+                                            </a>
+                                        </p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 7: Using AI in this course (quick version) -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-maroon">
+                                        <h3 class="font-black">Can I Use AI in this course? (quick version)</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+                                        <div class="col-sm-12" style="background-color:#ffffff;padding:12px;">
+
+                                            <p>
+                                                🤖 <strong>AI is part of modern technical writing.</strong>
+                                                You may use AI for tasks like brainstorming, organization, research support (with verification), and draft review when assignments allow it.
+                                            </p>
+
+                                            <div class="ai-rules">
+
+                                                <div class="ai-rule ai-allowed">
+                                                    <div class="ai-icon" aria-hidden="true">✔</div>
+                                                    <div class="ai-text">
+                                                        <strong>Recommended:</strong> Microsoft Copilot (VT-approved)
+                                                    </div>
+                                                </div>
+
+                                                <div class="ai-rule ai-responsibility">
+                                                    <div class="ai-icon" aria-hidden="true">⚠</div>
+                                                    <div class="ai-text">
+                                                        <strong>Always:</strong> You are responsible for what you submit.
+                                                    </div>
+                                                </div>
+
+                                                <div class="ai-rule ai-not-allowed">
+                                                    <div class="ai-icon" aria-hidden="true">✖</div>
+                                                    <div class="ai-text">
+                                                        <strong>Not allowed (in most cases):</strong> Having AI write or revise your drafts for you.
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <p class="mt-3" style="margin-left: -12px;"><i class="fas fa-shield-alt fa-xl" style="color: #75787b;"></i> <a href="https://canvas.vt.edu/courses/235156/pages/syllabus-for-technical-writing-spring-2026" target="_blank">Read the full AI policy in the Syllabus.</a>
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 8: Help and support -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 start-header start-header-landgrantgrey">
+                                        <h3 class="font-black">Where can I find Help and support?</h3>
+                                    </div>
+                                    <div class="col-sm-12" style="background-color: #ffffff;padding-top: 9px;">
+                                        <div class="col-sm-12" style="background-color:#ffffff;padding:12px;">
+
+                                            <div class="help-hub">
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">💬</div>
+                                                    <div class="help-text">
+                                                        <strong>General course questions</strong><br>
+                                                        Use the
+                                                        <a href="https://canvas.vt.edu/courses/235156/discussion_topics/2310546" target="_blank">
+                                                            General Q&amp;A Discussion Board
+                                                        </a>
+                                                        for questions others may have too.
+                                                    </div>
+                                                </div>
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">✉️</div>
+                                                    <div class="help-text">
+                                                        <strong>Private or sensitive questions</strong><br>
+                                                        Contact me through the
+                                                        <a href="https://canvas.vt.edu/conversations" target="_blank">
+                                                            Canvas Inbox
+                                                        </a>
+                                                        for grades, accommodations, or individual concerns.
+                                                    </div>
+                                                </div>
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">✍️</div>
+                                                    <div class="help-text">
+                                                        <strong>Writing support</strong><br>
+                                                        Get help with drafts and revision strategies from the
+                                                        <a href="https://lib.vt.edu/study-learn/writing-center.html" target="_blank">
+                                                            Writing Center
+                                                        </a>.
+                                                    </div>
+                                                </div>
+
+                                                <div class="help-item">
+                                                    <div class="help-icon" aria-hidden="true">🛠️</div>
+                                                    <div class="help-text">
+                                                        <strong>Technical issues</strong><br>
+                                                        Contact
+                                                        <a href="https://4help.vt.edu/" target="_blank">
+                                                            VT 4Help</a>
+                                                        for Canvas or technology questions.
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright note -->
+                    <div class="row mt-4">
+                        <div class="col-sm-12 start-box" style="padding: 0;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-12 font-white" style="background-color: #508590;">
+                                        <p class="footer"><small>© 2026 Traci Gardner. Licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License, unless noted otherwise.</small></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>&nbsp;</p>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
