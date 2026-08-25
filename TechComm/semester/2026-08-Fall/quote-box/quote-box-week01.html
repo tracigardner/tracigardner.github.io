@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Writing Quote</title>
+</head>
+
+<body>
+
+    <div id="technical-writing-quote"></div>
+
+    <script>
+        const quotes = [
+            "Technical writing turns information into action.",
+            "Clear writing helps people get things done.",
+            "Good technical writing makes complexity usable.",
+            "Information becomes useful when readers can act on it.",
+            "Clarity is not decoration. It is the work.",
+            "Technical writing is information designed for use.",
+            "Don&rsquo;t just explain. Help the reader succeed.",
+            "A useful document does more than inform&mdash;it works."
+        ];
+
+        const randomQuote =
+            quotes[Math.floor(Math.random() * quotes.length)];
+
+        document.getElementById("technical-writing-quote").innerHTML =
+            randomQuote;
+    </script>
+
+</body>
+
+</html>
