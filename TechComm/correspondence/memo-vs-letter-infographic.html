@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memos vs. Letters</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --navy: #17365d;
+            --maroon: #861f41;
+            --maroon-light: #fbf5f7;
+            --teal: #0f6674;
+            --teal-light: #f2f8f9;
+            --orange: #c64600;
+            --gray: #d7d2cb;
+            --text: #1f1f1f;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background-color: #ffffff;
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.45;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 8px;
+        }
+
+        .title-icon {
+            flex: 0 0 110px;
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        .title-icon.memo {
+            color: var(--maroon);
+        }
+
+        .title-icon.letter {
+            color: var(--teal);
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--navy);
+            font-size: 3.5rem;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .memo-word {
+            color: var(--maroon);
+        }
+
+        .letter-word {
+            color: var(--teal);
+        }
+
+        .vs {
+            color: #555555;
+            font-size: 2.25rem;
+        }
+
+        .tagline {
+            max-width: 760px;
+            margin: 18px auto 14px auto;
+            padding: 10px 24px;
+            background-color: var(--navy);
+            color: #ffffff;
+            font-size: 1.35rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .intro {
+            margin: 0 auto 28px auto;
+            font-size: 1.08rem;
+            text-align: center;
+        }
+
+        /* Comparison layout */
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 150px 1fr;
+            border: 1px solid var(--gray);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .column-heading {
+            padding: 16px;
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .column-heading.memo {
+            background-color: var(--maroon);
+        }
+
+        .column-heading.letter {
+            background-color: var(--teal);
+        }
+
+        .column-heading i {
+            margin-right: 10px;
+        }
+
+        .center-heading {
+            background-color: #ffffff;
+        }
+
+        .cell {
+            min-height: 160px;
+            padding: 22px;
+            border-top: 1px solid var(--gray);
+        }
+
+        .memo-cell {
+            background-color: var(--maroon-light);
+            text-align: center;
+        }
+
+        .letter-cell {
+            background-color: var(--teal-light);
+            text-align: center;
+        }
+
+        .category-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            border-top: 1px solid var(--gray);
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .category-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            margin-bottom: 8px;
+            border-radius: 50%;
+            background-color: var(--navy);
+            color: #ffffff;
+            font-size: 1.8rem;
+        }
+
+        .category-label {
+            color: var(--navy);
+            font-weight: bold;
+        }
+
+        .cell h2 {
+            margin: 0 0 8px 0;
+            font-size: 1.2rem;
+        }
+
+        .memo-cell h2 {
+            color: var(--maroon);
+        }
+
+        .letter-cell h2 {
+            color: var(--teal);
+        }
+
+        .cell p {
+            margin: 0;
+        }
+
+        .parts-list {
+            display: inline-block;
+            margin: 6px auto 0 auto;
+            padding-left: 22px;
+            text-align: left;
+        }
+
+        /* Bottom callout */
+
+        .choice-box {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-top: 24px;
+            padding: 18px 22px;
+            border: 2px solid var(--teal);
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+
+        .choice-icon {
+            display: flex;
+            flex: 0 0 64px;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            color: #ffffff;
+            font-size: 2rem;
+        }
+
+        .choice-box h2 {
+            margin: 0 0 4px 0;
+            color: var(--navy);
+            font-size: 1.3rem;
+        }
+
+        .choice-box p {
+            margin: 0;
+        }
+
+        /* Footer boxes */
+
+        .footer-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 4px solid var(--maroon);
+        }
+
+        .footer-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .footer-item i {
+            margin-top: 3px;
+            font-size: 2.2rem;
+        }
+
+        .footer-item:nth-child(1) i {
+            color: var(--maroon);
+        }
+
+        .footer-item:nth-child(2) i {
+            color: var(--navy);
+        }
+
+        .footer-item:nth-child(3) i {
+            color: var(--teal);
+        }
+
+        .footer-item h3 {
+            margin: 0 0 4px 0;
+            font-size: 1rem;
+        }
+
+        .footer-item p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive layout */
+
+        @media screen and (max-width: 780px) {
+
+            body {
+                padding: 12px;
+            }
+
+            .title-row {
+                gap: 10px;
+            }
+
+            .bkgd-page {
+                background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
+                background-size: 600px;
+                width: 100%;
+                height: 100%;
+                background-color: #508590;
+            }
+
+            .title-icon {
+                display: none;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            .comparison-grid {
+                display: block;
+                border: 0;
+            }
+
+            .center-heading {
+                display: none;
+            }
+
+            .column-heading {
+                border-radius: 8px 8px 0 0;
+            }
+
+            .category-cell {
+                min-height: auto;
+                padding: 12px;
+                border-top: 3px solid var(--navy);
+            }
+
+            .category-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 1.3rem;
+            }
+
+            .cell {
+                min-height: auto;
+            }
+
+            .memo-cell {
+                border-left: 1px solid var(--gray);
+                border-right: 1px solid var(--gray);
+            }
+
+            .letter-cell {
+                border-right: 1px solid var(--gray);
+                border-left: 1px solid var(--gray);
+            }
+
+            .choice-box {
+                display: block;
+                text-align: center;
+            }
+
+            .choice-icon {
+                margin: 0 auto 12px auto;
+            }
+
+            .footer-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+        <div class="bkgd-page">
+            <p>&nbsp;</p>
+            <div id="pagewidth" style="margin: 36px;padding: 24px;background-color: #ffffff;">
+
+                <!-- Header -->
+                <div class="title-row">
+
+                    <div class="title-icon memo" aria-hidden="true">
+                        <i class="fa-solid fa-note-sticky"></i>
+                    </div>
+
+                    <h1>
+                        <span class="memo-word">Memos</span>
+                        <span class="vs">vs.</span>
+                        <span class="letter-word">Letters</span>
+                    </h1>
+
+                    <div class="title-icon letter" aria-hidden="true">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+
+                </div>
+
+                <div class="tagline">
+                    Choosing the Right Tool for Workplace Communication
+                </div>
+
+                <p class="intro">
+                    Both memos and letters are forms of workplace correspondence.
+                    They differ in purpose, audience, tone, and format.
+                </p>
+
+                <!-- Comparison chart -->
+                <div class="comparison-grid">
+
+                    <!-- Column headings -->
+                    <div class="column-heading memo">
+                        <i class="fa-solid fa-thumbtack" aria-hidden="true"></i>
+                        Memos
+                    </div>
+
+                    <div class="center-heading"></div>
+
+                    <div class="column-heading letter">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        Letters
+                    </div>
+
+                    <!-- Purpose -->
+                    <div class="cell memo-cell">
+                        <h2>Workplace Communication</h2>
+                        <p>
+                            Used to share information, make requests, report findings,
+                            document decisions, or communicate recommendations.
+                        </p>
+                    </div>
+
+                    <div class="category-cell">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                        </div>
+                        <span class="category-label">Purpose</span>
+                    </div>
+
+                    <div class="cell letter-cell">
+                        <h2>External Communication</h2>
+                        <p>
+                            Commonly used to communicate with people or organizations
+                            outside the company.
+                        </p>
+                    </div>
+
+                    <!-- Audience -->
+                    <div class="cell memo-cell">
+                        <h2>Internal and Client Communication</h2>
+                        <p>
+                            Frequently used with internal audiences such as employees,
+                            managers, departments, and teams. Memos may also be exchanged
+                            between a company and clients or other external contacts.
+                        </p>
+                    </div>
+
+                    <div class="category-cell">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-users" aria-hidden="true"></i>
+                        </div>
+                        <span class="category-label">Audience</span>
+                    </div>
+
+                    <div class="cell letter-cell">
+                        <h2>External Audiences</h2>
+                        <p>
+                            Written for clients, customers, vendors, partners,
+                            government agencies, organizations, or members of the public.
+                        </p>
+                    </div>
+
+                    <!-- Tone -->
+                    <div class="cell memo-cell">
+                        <h2>Direct and Concise</h2>
+                        <p>
+                            Usually straightforward and focused on the information,
+                            request, or action the reader needs.
+                        </p>
+                    </div>
+
+                    <div class="category-cell">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+                        </div>
+                        <span class="category-label">Tone</span>
+                    </div>
+
+                    <div class="cell letter-cell">
+                        <h2>Professional and Courteous</h2>
+                        <p>
+                            Often uses a more formal and relationship-focused tone,
+                            especially when representing the organization to outside readers.
+                        </p>
+                    </div>
+
+                    <!-- Format -->
+                    <div class="cell memo-cell">
+                        <h2>Memo Format</h2>
+                        <p>
+                            Uses identifying headers rather than an inside address,
+                            salutation, complimentary closing, and signature block.
+                        </p>
+                    </div>
+
+                    <div class="category-cell">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                        </div>
+                        <span class="category-label">Format</span>
+                    </div>
+
+                    <div class="cell letter-cell">
+                        <h2>Business Letter Format</h2>
+                        <p>
+                            Typically includes an inside address, salutation, body,
+                            complimentary closing, and signature.
+                        </p>
+                    </div>
+
+                    <!-- Key Parts -->
+                    <div class="cell memo-cell">
+                        <h2>Key Parts</h2>
+
+                        <ul class="parts-list">
+                            <li>To</li>
+                            <li>From</li>
+                            <li>Date</li>
+                            <li>Subject</li>
+                            <li>Body</li>
+                        </ul>
+                    </div>
+
+                    <div class="category-cell">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i>
+                        </div>
+                        <span class="category-label">Key Parts</span>
+                    </div>
+
+                    <div class="cell letter-cell">
+                        <h2>Key Parts</h2>
+
+                        <ul class="parts-list">
+                            <li>Heading or letterhead</li>
+                            <li>Inside address</li>
+                            <li>Salutation</li>
+                            <li>Body</li>
+                            <li>Closing</li>
+                            <li>Signature</li>
+                        </ul>
+                    </div>
+
+                    <!-- Length -->
+                    <div class="cell memo-cell">
+                        <h2>Usually Short</h2>
+                        <p>
+                            Often designed for quick reading and focused on the
+                            information the reader needs.
+                        </p>
+                    </div>
+
+                    <div class="category-cell">
+                        <div class="category-icon">
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                        </div>
+                        <span class="category-label">Length</span>
+                    </div>
+
+                    <div class="cell letter-cell">
+                        <h2>Can Be Short or Longer</h2>
+                        <p>
+                            Length depends on the purpose, reader, and complexity of
+                            the message.
+                        </p>
+                    </div>
+
+                    <!-- Use When -->
+                    <div class="cell memo-cell">
+                        <h2>Use a Memo When...</h2>
+                        <p>
+                            You need to inform, request, explain, recommend, or report
+                            to someone inside the organization or to a client when a
+                            memo is the appropriate established format.
+                        </p>
+                    </div>
+
+                    <div class="category-cell">
+                        <div class="category-icon">
+                            <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
+                        </div>
+                        <span class="category-label">Use When</span>
+                    </div>
+
+                    <div class="cell letter-cell">
+                        <h2>Use a Letter When...</h2>
+                        <p>
+                            You need formal external correspondence such as an inquiry,
+                            response, notification, request, or relationship-building message.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Key takeaway -->
+                <section class="choice-box" aria-labelledby="choice-heading">
+
+                    <div class="choice-icon">
+                        <i class="fa-solid fa-check" aria-hidden="true"></i>
+                    </div>
+
+                    <div>
+                        <h2 id="choice-heading">
+                            Choose the Format That Fits Your Audience and Purpose
+                        </h2>
+
+                        <p>
+                            Clear structure + appropriate tone + reader awareness =
+                            effective workplace communication.
+                        </p>
+                    </div>
+
+                </section>
+
+                <!-- Footer -->
+                <div class="footer-row">
+
+                    <div class="footer-item">
+                        <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
+
+                        <div>
+                            <h3>Good Communication</h3>
+                            <p>
+                                Builds understanding.<br>
+                                Supports action.<br>
+                                Strengthens relationships.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+
+                        <div>
+                            <h3>Write Clearly</h3>
+                            <p>
+                                Keep the reader, purpose, and workplace context
+                                at the center of your choices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <i class="fa-regular fa-star" aria-hidden="true"></i>
+
+                        <div>
+                            <h3>Good Choice</h3>
+                            <p>
+                                Right message.<br>
+                                Right format.<br>
+                                Right impact.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <p style="font-size: 14pt;margin-top: 0;color: #ffffff;background-color: #385d65;font-weight: bold;text-align: right;"><time datetime="2026-08-27">Last Updated August 27, 2026&nbsp;&nbsp;&nbsp;</time></p>
+        </div>
+        <p class="small">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+
+
+    </main>
+
+</body>
+
+</html>
