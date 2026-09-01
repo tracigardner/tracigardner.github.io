@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Technical Writing Quote</title>
+
+</head>
+
+<body>
+
+    <div id="technical-writing-quote" style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #ffffff;font-size: 18px; font-weight: bold;background-color: #861f41; padding: 24px;min-height: 99px;height: 100%;display: flex;align-items: center;justify-content: center;text-align: center;"></div>
+
+    <script>
+
+        const quotes = [
+            "Give readers the facts. Let them make the decision.",
+            "Objective writing informs without pushing.",
+            "Good technical writing respects the reader&rsquo;s judgment.",
+            "Write to inform, not to impress.",
+            "The right message needs the right format.",
+            "Professional writing begins with audience and purpose.",
+            "Clear facts build credibility.",
+            "Neutral language gives information room to speak.",
+            "Workplace writing helps readers understand, decide, and act.",
+            "A useful report explains without becoming an argument.",
+            "Good correspondence puts the reader first.",
+            "Your job is to make the information useful."
+        ];
+
+        const randomQuote =
+            quotes[Math.floor(Math.random() * quotes.length)];
+
+        document.getElementById("technical-writing-quote").innerHTML =
+            randomQuote;
+
+    </script>
+
+</body>
+
+</html>
