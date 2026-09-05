@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Visual hierarchy quick reference for workplace documents">
+
+    <meta name="author" content="Traci Gardner">
+
+    <title>What Gets Read First? Visual Hierarchy at a Glance</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-light: #f2e8ec;
+            --orange: #c64600;
+            --orange-light: #fcf1e8;
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --gray: #e5e1e6;
+            --dark-gray: #555555;
+            --text: #1f1f1f;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background-color: var(--white);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            width: 100%;
+            padding: 36px;
+            background-color: var(--teal);
+            background-image:
+                url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
+            background-size: 600px;
+        }
+
+        .page {
+            padding: 30px;
+            background-color: var(--white);
+        }
+
+        /* ------------------------------
+           TITLE
+        ------------------------------ */
+
+        .title-area {
+            margin-bottom: 26px;
+            text-align: center;
+        }
+
+        .eyebrow {
+            margin: 0 0 6px 0;
+            color: var(--orange);
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .title-area h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2.5rem, 5vw, 4.3rem);
+            line-height: 1;
+        }
+
+        .title-area h1 i {
+            margin-right: 10px;
+            color: var(--teal);
+        }
+
+        .subtitle {
+            max-width: 780px;
+            margin: 14px auto 0 auto;
+            font-size: 1.2rem;
+        }
+
+        .subtitle strong {
+            color: var(--maroon);
+        }
+
+        /* ------------------------------
+           MAIN VISUAL
+        ------------------------------ */
+
+        .hierarchy-stage {
+            position: relative;
+            display: grid;
+            grid-template-columns: 230px minmax(0, 1fr) 230px;
+            gap: 24px;
+            align-items: stretch;
+            margin-top: 22px;
+        }
+
+        /* ------------------------------
+           CALLOUT COLUMNS
+        ------------------------------ */
+
+        .callout-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 22px;
+        }
+
+        .callout {
+            position: relative;
+            padding: 17px 18px;
+            border-radius: 14px;
+            background-color: var(--teal-light);
+        }
+
+        .callout.maroon {
+            background-color: var(--maroon-light);
+        }
+
+        .callout.orange {
+            background-color: var(--orange-light);
+        }
+
+        .callout-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            color: var(--white);
+            font-size: 1.15rem;
+            font-weight: bold;
+        }
+
+        .callout.maroon .callout-number {
+            background-color: var(--maroon);
+        }
+
+        .callout.orange .callout-number {
+            background-color: var(--orange);
+        }
+
+        .callout h2 {
+            margin: 0 0 5px 0;
+            color: var(--teal-dark);
+            font-size: 1.05rem;
+            text-transform: uppercase;
+        }
+
+        .callout.maroon h2 {
+            color: var(--maroon);
+        }
+
+        .callout.orange h2 {
+            color: var(--orange);
+        }
+
+        .callout p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .visual-demo {
+            display: block;
+            margin-top: 10px;
+            padding-top: 9px;
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        /* Size demo */
+
+        .size-demo span:nth-child(1) {
+            font-size: 0.75rem;
+        }
+
+        .size-demo span:nth-child(2) {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .size-demo span:nth-child(3) {
+            color: var(--maroon);
+            font-size: 1.45rem;
+            font-weight: bold;
+        }
+
+        /* Weight demo */
+
+        .weight-demo {
+            font-size: 1rem;
+        }
+
+        .weight-demo strong {
+            color: var(--maroon);
+            font-size: 1.12rem;
+        }
+
+        /* Space demo */
+
+        .space-demo {
+            text-align: center;
+        }
+
+        .space-demo .crowded {
+            display: block;
+            margin-bottom: 10px;
+            padding: 3px;
+            border: 1px solid var(--gray);
+            font-size: 0.8rem;
+            line-height: 1;
+        }
+
+        .space-demo .isolated {
+            display: block;
+            padding: 11px 5px;
+            border: 1px solid var(--teal);
+            color: var(--teal-dark);
+            font-weight: bold;
+        }
+
+        /* ------------------------------
+           MOCK DOCUMENT
+        ------------------------------ */
+
+        .mock-document {
+            position: relative;
+            min-height: 720px;
+            padding: 34px;
+            border: 2px solid var(--dark-gray);
+            background-color: var(--white);
+            box-shadow: 8px 8px 0 var(--gray);
+        }
+
+        .mock-label {
+            position: absolute;
+            top: -17px;
+            left: 50%;
+            padding: 6px 18px;
+            border-radius: 999px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.85rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transform: translateX(-50%);
+        }
+
+        /* Step markers */
+
+        .step {
+            position: relative;
+        }
+
+        .step-badge {
+            position: absolute;
+            left: -54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background-color: var(--orange);
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: bold;
+            box-shadow: 0 0 0 4px var(--white);
+        }
+
+        /* 1 */
+
+        .document-title {
+            margin: 0 0 10px 0;
+            color: var(--maroon);
+            font-size: 2.55rem;
+            line-height: 1;
+        }
+
+        .document-deck {
+            margin: 0 0 30px 0;
+            color: var(--dark-gray);
+            font-size: 1.08rem;
+        }
+
+        /* 2 */
+
+        .section-heading {
+            margin: 0 0 10px 0;
+            padding-bottom: 7px;
+            border-bottom: 4px solid var(--teal);
+            color: var(--teal-dark);
+            font-size: 1.55rem;
+        }
+
+        .mock-document p {
+            margin-top: 0;
+        }
+
+        /* 3 */
+
+        .deadline-box {
+            margin: 30px 0;
+            padding: 18px 22px;
+            border-left: 9px solid var(--orange);
+            background-color: var(--orange-light);
+        }
+
+        .deadline-box .step-badge {
+            top: 13px;
+        }
+
+        .deadline-label {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--orange);
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .deadline {
+            display: block;
+            color: var(--text);
+            font-size: 1.65rem;
+            font-weight: bold;
+        }
+
+        /* 4 */
+
+        .steps-section {
+            margin-top: 32px;
+        }
+
+        .steps-section .step-badge {
+            top: -3px;
+        }
+
+        .steps-heading {
+            margin: 0 0 16px 0;
+            color: var(--maroon);
+            font-size: 1.35rem;
+        }
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .process-item {
+            padding: 15px 12px;
+            border-radius: 10px;
+            background-color: var(--teal-light);
+            text-align: center;
+        }
+
+        .process-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 9px auto;
+            border-radius: 50%;
+            background-color: var(--teal);
+            color: var(--white);
+            font-size: 1.35rem;
+        }
+
+        .process-item strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--teal-dark);
+        }
+
+        .process-item span {
+            font-size: 0.88rem;
+        }
+
+        /* 5 */
+
+        .details-section {
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray);
+        }
+
+        .details-section .step-badge {
+            top: 12px;
+        }
+
+        .details-heading {
+            margin: 0 0 10px 0;
+            color: var(--dark-gray);
+            font-size: 1.05rem;
+        }
+
+        .details-section p {
+            margin-bottom: 0;
+            color: #444444;
+            font-size: 0.92rem;
+        }
+
+        /* ------------------------------
+           EYE PATH
+        ------------------------------ */
+
+        .eye-path {
+            position: absolute;
+            top: 92px;
+            right: 22px;
+            width: 62px;
+            color: var(--orange);
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        .eye-path i {
+            display: block;
+            margin: 8px 0;
+        }
+
+        .eye-path .eye {
+            font-size: 1.8rem;
+        }
+
+        .eye-path .arrow {
+            font-size: 1.1rem;
+        }
+
+        /* ------------------------------
+           TAKEAWAY
+        ------------------------------ */
+
+        .takeaway {
+            display: grid;
+            grid-template-columns: 72px 1fr;
+            gap: 20px;
+            align-items: center;
+            margin-top: 30px;
+            padding: 20px 24px;
+            border: 3px solid var(--maroon);
+            border-radius: 16px;
+            background-color: var(--white);
+        }
+
+        .takeaway-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 1.8rem;
+        }
+
+        .takeaway h2 {
+            margin: 0 0 4px 0;
+            color: var(--maroon);
+            font-size: 1.4rem;
+        }
+
+        .takeaway p {
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        /* ------------------------------
+           FIVE PRINCIPLES STRIP
+        ------------------------------ */
+
+        .principles-strip {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin-top: 24px;
+        }
+
+        .principle {
+            padding: 12px 8px;
+            border-radius: 8px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .principle i {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 1.25rem;
+        }
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        .updated {
+            margin: 0;
+            padding: 8px 10px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+
+        /* ------------------------------
+           RESPONSIVE
+        ------------------------------ */
+
+        @media screen and (max-width: 900px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .bkgd-page {
+                padding: 18px;
+            }
+
+            .page {
+                padding: 22px;
+            }
+
+            .hierarchy-stage {
+                grid-template-columns: 1fr;
+            }
+
+            .mock-document {
+                order: 1;
+                min-height: auto;
+                margin: 12px 34px 0 34px;
+            }
+
+            .callout-column {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .callout-column:first-child {
+                order: 2;
+            }
+
+            .callout-column:last-child {
+                order: 3;
+            }
+
+            .step-badge {
+                left: -50px;
+            }
+
+            .eye-path {
+                display: none;
+            }
+
+            .principles-strip {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .title-area h1 {
+                font-size: 2.4rem;
+            }
+
+            .callout-column {
+                grid-template-columns: 1fr;
+            }
+
+            .mock-document {
+                margin-right: 0;
+                margin-left: 0;
+                padding: 24px;
+            }
+
+            .step-badge {
+                position: static;
+                width: 32px;
+                height: 32px;
+                margin-bottom: 8px;
+            }
+
+            .process {
+                grid-template-columns: 1fr;
+            }
+
+            .takeaway {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .takeaway-icon {
+                margin: 0 auto;
+            }
+
+            .principles-strip {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+
+        <div class="bkgd-page">
+
+            <div class="page">
+
+                <!-- TITLE -->
+
+                <header class="title-area">
+
+                    <p class="eyebrow">
+                        Document Design Quick Reference
+                    </p>
+
+                    <h1>
+                        <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                        What Gets Read First?
+                    </h1>
+
+                    <p class="subtitle">
+                        <strong>Visual hierarchy</strong> tells readers what matters most,
+                        what comes next, and where to look for details.
+                        Good design creates a clear reading path before readers begin reading closely.
+                    </p>
+
+                </header>
+
+
+                <!-- MAIN VISUAL -->
+
+                <section class="hierarchy-stage" aria-label="Example showing how visual hierarchy guides readers through a workplace document">
+
+
+                    <!-- LEFT CALLOUTS -->
+
+                    <div class="callout-column">
+
+                        <section class="callout maroon">
+
+                            <div class="callout-number">1</div>
+
+                            <h2>Size</h2>
+
+                            <p>
+                                Larger elements usually attract attention before smaller ones.
+                                Reserve the largest type for the most important information.
+                            </p>
+
+                            <div class="visual-demo size-demo" aria-hidden="true">
+                                <span>detail</span>
+                                &nbsp;&rarr;&nbsp;
+                                <span>heading</span>
+                                &nbsp;&rarr;&nbsp;
+                                <span>TITLE</span>
+                            </div>
+
+                        </section>
+
+
+                        <section class="callout">
+
+                            <div class="callout-number">2</div>
+
+                            <h2>Weight</h2>
+
+                            <p>
+                                Bold type creates emphasis. Use it selectively so important
+                                words stand out instead of making everything compete.
+                            </p>
+
+                            <div class="visual-demo weight-demo" aria-hidden="true">
+                                regular &nbsp;&rarr;&nbsp;
+                                <strong>important</strong>
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+                    <!-- MOCK DOCUMENT -->
+
+                    <article class="mock-document">
+
+                        <div class="mock-label">
+                            Follow the Reader&rsquo;s Eye
+                        </div>
+
+
+                        <!-- STEP 1 -->
+
+                        <section class="step">
+
+                            <div class="step-badge">1</div>
+
+                            <h2 class="document-title">
+                                Project Review
+                            </h2>
+
+                            <p class="document-deck">
+                                What employees need to know before submitting revised client documents
+                            </p>
+
+                        </section>
+
+
+                        <!-- STEP 2 -->
+
+                        <section class="step">
+
+                            <div class="step-badge">2</div>
+
+                            <h3 class="section-heading">
+                                What You Need to Know
+                            </h3>
+
+                            <p>
+                                Caldwell &amp; Associates is reviewing client-facing documents
+                                for clarity, accessibility, and consistent design.
+                            </p>
+
+                        </section>
+
+
+                        <!-- STEP 3 -->
+
+                        <section class="deadline-box step">
+
+                            <div class="step-badge">3</div>
+
+                            <span class="deadline-label">
+                                Key Deadline
+                            </span>
+
+                            <span class="deadline">
+                                Submit Revised Documents by October 15
+                            </span>
+
+                        </section>
+
+
+                        <!-- STEP 4 -->
+
+                        <section class="steps-section step">
+
+                            <div class="step-badge">4</div>
+
+                            <h3 class="steps-heading">
+                                Three Steps to Complete the Review
+                            </h3>
+
+                            <div class="process">
+
+                                <div class="process-item">
+
+                                    <div class="process-icon">
+                                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                    </div>
+
+                                    <strong>Review</strong>
+
+                                    <span>
+                                        Check the document for clarity and usability.
+                                    </span>
+
+                                </div>
+
+
+                                <div class="process-item">
+
+                                    <div class="process-icon">
+                                        <i class="fa-solid fa-pen" aria-hidden="true"></i>
+                                    </div>
+
+                                    <strong>Revise</strong>
+
+                                    <span>
+                                        Improve wording, organization, and design.
+                                    </span>
+
+                                </div>
+
+
+                                <div class="process-item">
+
+                                    <div class="process-icon">
+                                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                                    </div>
+
+                                    <strong>Submit</strong>
+
+                                    <span>
+                                        Send the revised version for final review.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- STEP 5 -->
+
+                        <section class="details-section step">
+
+                            <div class="step-badge">5</div>
+
+                            <h3 class="details-heading">
+                                Additional Details
+                            </h3>
+
+                            <p>
+                                Supporting information belongs lower in the hierarchy.
+                                Readers who need more detail can continue reading without
+                                having to search through it for the main message.
+                            </p>
+
+                        </section>
+
+
+                        <!-- EYE PATH -->
+
+                        <div class="eye-path" aria-hidden="true">
+
+                            <i class="fa-regular fa-eye eye"></i>
+
+                            <i class="fa-solid fa-arrow-down arrow"></i>
+
+                            <i class="fa-solid fa-arrow-down arrow"></i>
+
+                            <i class="fa-solid fa-arrow-down arrow"></i>
+
+                            <i class="fa-solid fa-arrow-down arrow"></i>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- RIGHT CALLOUTS -->
+
+                    <div class="callout-column">
+
+                        <section class="callout orange">
+
+                            <div class="callout-number">3</div>
+
+                            <h2>Placement</h2>
+
+                            <p>
+                                Readers often notice information near the top of a page
+                                and at the beginning of sections first. Put important
+                                information where readers can find it quickly.
+                            </p>
+
+                        </section>
+
+
+                        <section class="callout maroon">
+
+                            <div class="callout-number">4</div>
+
+                            <h2>Contrast</h2>
+
+                            <p>
+                                Differences in size, color, shape, or style help important
+                                information stand apart from surrounding content.
+                            </p>
+
+                            <div class="visual-demo" aria-hidden="true">
+
+                                <span style="color: #777777;">
+                                    ordinary
+                                </span>
+
+                                &nbsp;&rarr;&nbsp;
+
+                                <span style="padding: 4px 7px;background-color: #861f41;color: #ffffff;font-weight: bold;">
+                                    NOTICE ME
+                                </span>
+
+                            </div>
+
+                        </section>
+
+
+                        <section class="callout">
+
+                            <div class="callout-number">5</div>
+
+                            <h2>White Space</h2>
+
+                            <p>
+                                Space separates groups and gives important content room
+                                to stand out. Crowded pages make everything look equally important.
+                            </p>
+
+                            <div class="visual-demo space-demo" aria-hidden="true">
+
+                                <span class="crowded">
+                                    headingtextdetailheadingtextdetail
+                                </span>
+
+                                <span class="isolated">
+                                    Key Message
+                                </span>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </section>
+
+
+                <!-- TAKEAWAY -->
+
+                <section class="takeaway">
+
+                    <div class="takeaway-icon">
+                        <i class="fa-solid fa-route" aria-hidden="true"></i>
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Design the Reading Order
+                        </h2>
+
+                        <p>
+                            Decide what readers should notice <strong>first, second, and third</strong>.
+                            Then use visual hierarchy to guide them there.
+                            If everything is emphasized, <strong>nothing is emphasized</strong>.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- PRINCIPLES STRIP -->
+
+                <div class="principles-strip" aria-label="Five tools for creating visual hierarchy">
+
+                    <div class="principle">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+                        SIZE
+                    </div>
+
+                    <div class="principle">
+                        <i class="fa-solid fa-bold" aria-hidden="true"></i>
+                        WEIGHT
+                    </div>
+
+                    <div class="principle">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        PLACEMENT
+                    </div>
+
+                    <div class="principle">
+                        <i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+                        CONTRAST
+                    </div>
+
+                    <div class="principle">
+                        <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                        WHITE SPACE
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="updated">
+                <time datetime="2026-09-05">
+                    Last Updated September 5, 2026&nbsp;&nbsp;&nbsp;
+                </time>
+            </p>
+
+        </div>
+
+        <p class="credit">
+            &copy; 2026 Traci Gardner. Available under a Creative Commons
+            Attribution-NonCommercial Share-Alike 4.0 International License.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
