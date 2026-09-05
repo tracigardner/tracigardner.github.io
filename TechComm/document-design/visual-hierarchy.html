@@ -109,7 +109,7 @@
         .hierarchy-stage {
             position: relative;
             display: grid;
-            grid-template-columns: 230px minmax(0, 1fr) 230px;
+            grid-template-columns: 245px minmax(0, 1fr) 245px;
             gap: 24px;
             align-items: stretch;
             margin-top: 22px;
@@ -192,30 +192,64 @@
 
         /* Size demo */
 
-        .size-demo span:nth-child(1) {
+        .size-demo {
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-start;
+            gap: 7px;
+            white-space: nowrap;
+        }
+
+        .size-demo .detail {
             font-size: 0.75rem;
         }
 
-        .size-demo span:nth-child(2) {
+        .size-demo .heading {
             font-size: 1rem;
             font-weight: bold;
         }
 
-        .size-demo span:nth-child(3) {
+        .size-demo .title {
             color: var(--maroon);
             font-size: 1.45rem;
             font-weight: bold;
         }
 
+        .size-demo .arrow {
+            flex: 0 0 auto;
+        }
+
         /* Weight demo */
 
         .weight-demo {
+            white-space: nowrap;
             font-size: 1rem;
         }
 
         .weight-demo strong {
             color: var(--maroon);
             font-size: 1.12rem;
+        }
+
+        /* Contrast demo */
+
+        .contrast-demo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .contrast-demo .ordinary {
+            color: #777777;
+        }
+
+        .contrast-demo .emphasis {
+            display: inline-block;
+            padding: 4px 7px;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-weight: bold;
         }
 
         /* Space demo */
@@ -266,6 +300,7 @@
             font-weight: bold;
             letter-spacing: 0.05em;
             text-transform: uppercase;
+            white-space: nowrap;
             transform: translateX(-50%);
         }
 
@@ -291,7 +326,7 @@
             box-shadow: 0 0 0 4px var(--white);
         }
 
-        /* 1 */
+        /* Step 1 */
 
         .document-title {
             margin: 0 0 10px 0;
@@ -306,7 +341,7 @@
             font-size: 1.08rem;
         }
 
-        /* 2 */
+        /* Step 2 */
 
         .section-heading {
             margin: 0 0 10px 0;
@@ -320,7 +355,7 @@
             margin-top: 0;
         }
 
-        /* 3 */
+        /* Step 3 */
 
         .deadline-box {
             margin: 30px 0;
@@ -350,7 +385,7 @@
             font-weight: bold;
         }
 
-        /* 4 */
+        /* Step 4 */
 
         .steps-section {
             margin-top: 32px;
@@ -402,7 +437,7 @@
             font-size: 0.88rem;
         }
 
-        /* 5 */
+        /* Step 5 */
 
         .details-section {
             margin-top: 32px;
@@ -424,6 +459,14 @@
             margin-bottom: 0;
             color: #444444;
             font-size: 0.92rem;
+        }
+
+        .deadline-label,
+        .deadline,
+        .steps-heading,
+        .details-heading,
+        .principle {
+            text-wrap: balance;
         }
 
         /* ------------------------------
@@ -608,6 +651,13 @@
                 padding: 24px;
             }
 
+            .mock-label {
+                position: static;
+                display: inline-block;
+                margin-bottom: 18px;
+                transform: none;
+            }
+
             .step-badge {
                 position: static;
                 width: 32px;
@@ -617,6 +667,16 @@
 
             .process {
                 grid-template-columns: 1fr;
+            }
+
+            .size-demo,
+            .contrast-demo {
+                flex-wrap: wrap;
+                white-space: normal;
+            }
+
+            .weight-demo {
+                white-space: normal;
             }
 
             .takeaway {
@@ -686,11 +746,17 @@
                             </p>
 
                             <div class="visual-demo size-demo" aria-hidden="true">
-                                <span>detail</span>
-                                &nbsp;&rarr;&nbsp;
-                                <span>heading</span>
-                                &nbsp;&rarr;&nbsp;
-                                <span>TITLE</span>
+
+                                <span class="detail">detail</span>
+
+                                <span class="arrow">&rarr;</span>
+
+                                <span class="heading">heading</span>
+
+                                <span class="arrow">&rarr;</span>
+
+                                <span class="title">TITLE</span>
+
                             </div>
 
                         </section>
@@ -907,15 +973,17 @@
                                 information stand apart from surrounding content.
                             </p>
 
-                            <div class="visual-demo" aria-hidden="true">
+                            <div class="visual-demo contrast-demo" aria-hidden="true">
 
-                                <span style="color: #777777;">
+                                <span class="ordinary">
                                     ordinary
                                 </span>
 
-                                &nbsp;&rarr;&nbsp;
+                                <span>
+                                    &rarr;
+                                </span>
 
-                                <span style="padding: 4px 7px;background-color: #861f41;color: #ffffff;font-weight: bold;">
+                                <span class="emphasis">
                                     NOTICE ME
                                 </span>
 
