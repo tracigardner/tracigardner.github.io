@@ -36,7 +36,7 @@
 
         body {
             margin: 0;
-            padding: 24px;
+            padding: 18px;
             background-color: var(--white);
             color: var(--text);
             font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +50,7 @@
 
         .bkgd-page {
             width: 100%;
-            padding: 36px;
+            padding: 28px;
             background-color: var(--teal);
             background-image:
                 url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
@@ -58,7 +58,7 @@
         }
 
         .page {
-            padding: 30px;
+            padding: 28px;
             background-color: var(--white);
         }
 
@@ -67,14 +67,14 @@
         ------------------------------ */
 
         .title-area {
-            margin-bottom: 28px;
+            margin-bottom: 26px;
             text-align: left;
         }
 
         .title-area h1 {
             margin: 0;
             color: var(--maroon);
-            font-size: clamp(2.5rem, 5vw, 4.2rem);
+            font-size: clamp(2.4rem, 5vw, 4rem);
             line-height: 1;
         }
 
@@ -84,195 +84,20 @@
         }
 
         .subtitle {
-            max-width: 780px;
-            margin: 14px auto 0 auto;
-            font-size: 1.15rem;
-        }
-
-        .subtitle strong {
-            color: var(--text);
+            max-width: 860px;
+            margin: 14px 0 0 0;
+            font-size: 1.1rem;
         }
 
         /* ------------------------------
-           MAIN LAYOUT
+           TWO-COLUMN MAIN LAYOUT
         ------------------------------ */
 
         .hierarchy-layout {
             display: grid;
-            grid-template-columns: 245px minmax(0, 1fr) 245px;
+            grid-template-columns: minmax(0, 3fr) minmax(265px, 2fr);
             gap: 24px;
-            align-items: stretch;
-        }
-
-        .callout-column {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        /* ------------------------------
-           CALLOUTS
-        ------------------------------ */
-
-        .callout {
-            padding: 18px;
-            border-radius: 14px;
-            background-color: var(--teal-light);
-        }
-
-        .callout.maroon {
-            background-color: var(--maroon-light);
-        }
-
-        .callout.orange {
-            background-color: var(--orange-light);
-        }
-
-        .callout-heading {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-            margin-bottom: 7px;
-        }
-
-        .callout-heading i {
-            color: var(--teal-dark);
-            font-size: 1.35rem;
-        }
-
-        .callout.maroon .callout-heading i,
-        .callout.maroon h2 {
-            color: var(--maroon);
-        }
-
-        .callout.orange .callout-heading i,
-        .callout.orange h2 {
-            color: var(--orange);
-        }
-
-        .callout h2 {
-            margin: 0;
-            color: var(--teal-dark);
-            font-size: 1.05rem;
-            text-transform: uppercase;
-        }
-
-        .callout p {
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        .demo {
-            margin-top: 11px;
-            padding-top: 10px;
-            border-top: 1px solid rgba(0, 0, 0, 0.15);
-        }
-
-        /* Size */
-
-        .size-demo {
-            display: flex;
-            align-items: baseline;
-            gap: 7px;
-            white-space: nowrap;
-        }
-
-        .size-demo .detail {
-            font-size: 0.75rem;
-        }
-
-        .size-demo .heading {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-
-        .size-demo .title {
-            color: var(--maroon);
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-
-        /* Weight */
-
-        .weight-demo {
-            white-space: nowrap;
-        }
-
-        .weight-demo strong {
-            color: var(--maroon);
-            font-size: 1.1rem;
-        }
-
-        /* Contrast */
-
-        .contrast-demo {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            white-space: nowrap;
-        }
-
-        .contrast-demo .ordinary {
-            color: #777777;
-        }
-
-        .contrast-demo .emphasis {
-            padding: 4px 7px;
-            background-color: var(--maroon);
-            color: var(--white);
-            font-weight: bold;
-        }
-
-        /* Space */
-
-        .space-demo .crowded {
-            display: block;
-            margin-bottom: 10px;
-            padding: 3px;
-            border: 1px solid var(--gray);
-            font-size: 0.78rem;
-            line-height: 1;
-            text-align: center;
-        }
-
-        .space-demo .open {
-            display: block;
-            padding: 11px 5px;
-            border: 1px solid var(--teal);
-            color: var(--teal-dark);
-            font-weight: bold;
-            text-align: center;
-        }
-
-        /* Placement */
-
-        .placement-demo {
-            display: grid;
-            grid-template-rows: auto 1fr;
-            gap: 5px;
-            height: 78px;
-            padding: 7px;
-            border: 1px solid var(--gray);
-            background-color: var(--white);
-        }
-
-        .placement-demo .top-message {
-            padding: 5px;
-            background-color: var(--orange);
-            color: var(--white);
-            font-size: 0.78rem;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .placement-demo .detail-lines {
-            background:
-                linear-gradient(to bottom,
-                    #dddddd 0,
-                    #dddddd 4px,
-                    transparent 4px,
-                    transparent 12px);
+            align-items: start;
         }
 
         /* ------------------------------
@@ -296,23 +121,23 @@
             border-radius: 999px;
             background-color: var(--teal-dark);
             color: var(--white);
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: bold;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.03em;
             white-space: nowrap;
         }
 
         .document-title {
             margin: 0 0 8px 0;
             color: var(--maroon);
-            font-size: 2.65rem;
+            font-size: 2.6rem;
             line-height: 1;
         }
 
         .document-deck {
             margin: 0 0 28px 0;
             color: var(--dark-gray);
-            font-size: 1.05rem;
+            font-size: 1.02rem;
         }
 
         .section-heading {
@@ -320,7 +145,7 @@
             padding-bottom: 7px;
             border-bottom: 4px solid var(--teal);
             color: var(--teal-dark);
-            font-size: 1.5rem;
+            font-size: 1.45rem;
         }
 
         .mock-document p {
@@ -328,8 +153,8 @@
         }
 
         .deadline-box {
-            margin: 28px 0;
-            padding: 18px 22px;
+            margin: 26px 0;
+            padding: 18px 20px;
             border-left: 9px solid var(--orange);
             background-color: var(--orange-light);
         }
@@ -338,7 +163,7 @@
             display: block;
             margin-bottom: 4px;
             color: var(--orange);
-            font-size: 0.9rem;
+            font-size: 0.86rem;
             font-weight: bold;
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -347,24 +172,25 @@
         .deadline {
             display: block;
             color: var(--text);
-            font-size: 1.6rem;
+            font-size: 1.45rem;
             font-weight: bold;
+            line-height: 1.2;
         }
 
         .steps-heading {
-            margin: 0 0 16px 0;
+            margin: 0 0 15px 0;
             color: var(--maroon);
-            font-size: 1.3rem;
+            font-size: 1.25rem;
         }
 
         .process {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
         }
 
         .process-item {
-            padding: 15px 11px;
+            padding: 14px 10px;
             border-radius: 10px;
             background-color: var(--teal-light);
             text-align: center;
@@ -374,13 +200,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 9px auto;
+            width: 46px;
+            height: 46px;
+            margin: 0 auto 8px auto;
             border-radius: 50%;
             background-color: var(--teal);
             color: var(--white);
-            font-size: 1.25rem;
+            font-size: 1.2rem;
         }
 
         .process-item strong {
@@ -390,11 +216,12 @@
         }
 
         .process-item span {
-            font-size: 0.86rem;
+            font-size: 0.82rem;
+            line-height: 1.3;
         }
 
         .details-section {
-            margin-top: 30px;
+            margin-top: 28px;
             padding-top: 18px;
             border-top: 1px solid var(--gray);
         }
@@ -408,31 +235,188 @@
         .details-section p {
             margin-bottom: 0;
             color: #444444;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
         }
 
         /* ------------------------------
-           CONNECTOR CUES
+           PRINCIPLES RAIL
         ------------------------------ */
 
-        .callout-arrow {
-            margin-top: 12px;
-            color: var(--dark-gray);
-            font-size: 0.85rem;
+        .principles-rail {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .rail-heading {
+            margin: 0 0 2px 0;
+            padding: 0 0 8px 0;
+            border-bottom: 4px solid var(--teal);
+            color: var(--teal-dark);
+            font-size: 1.25rem;
+        }
+
+        .callout {
+            padding: 15px 16px;
+            border-radius: 12px;
+            background-color: var(--teal-light);
+        }
+
+        .callout.maroon {
+            background-color: var(--maroon-light);
+        }
+
+        .callout.orange {
+            background-color: var(--orange-light);
+        }
+
+        .callout-heading {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            margin-bottom: 6px;
+        }
+
+        .callout-heading i {
+            color: var(--teal-dark);
+            font-size: 1.2rem;
+        }
+
+        .callout h2 {
+            margin: 0;
+            color: var(--teal-dark);
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .callout.maroon .callout-heading i,
+        .callout.maroon h2 {
+            color: var(--maroon);
+        }
+
+        .callout.orange .callout-heading i,
+        .callout.orange h2 {
+            color: var(--orange);
+        }
+
+        .callout p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .demo {
+            margin-top: 9px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        /* Size demo */
+
+        .size-demo {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .size-demo .detail {
+            font-size: 0.72rem;
+        }
+
+        .size-demo .heading {
+            font-size: 0.95rem;
             font-weight: bold;
         }
 
-        .left-arrow {
-            text-align: right;
+        .size-demo .title {
+            color: var(--maroon);
+            font-size: 1.25rem;
+            font-weight: bold;
         }
 
-        .right-arrow {
-            text-align: left;
+        /* Weight demo */
+
+        .weight-demo {
+            white-space: nowrap;
+            font-size: 0.9rem;
         }
 
-        .callout-arrow i {
-            margin: 0 5px;
-            color: var(--orange);
+        .weight-demo strong {
+            color: var(--maroon);
+            font-size: 1.05rem;
+        }
+
+        /* Placement demo */
+
+        .placement-demo {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            gap: 5px;
+            height: 64px;
+            padding: 6px;
+            border: 1px solid var(--gray);
+            background-color: var(--white);
+        }
+
+        .placement-demo .top-message {
+            padding: 4px;
+            background-color: var(--orange);
+            color: var(--white);
+            font-size: 0.72rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .placement-demo .detail-lines {
+            background:
+                linear-gradient(to bottom,
+                    #dddddd 0,
+                    #dddddd 3px,
+                    transparent 3px,
+                    transparent 10px);
+        }
+
+        /* Contrast demo */
+
+        .contrast-demo {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            white-space: nowrap;
+            font-size: 0.9rem;
+        }
+
+        .contrast-demo .ordinary {
+            color: #777777;
+        }
+
+        .contrast-demo .emphasis {
+            padding: 4px 7px;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-weight: bold;
+        }
+
+        /* White space demo */
+
+        .space-demo .crowded {
+            display: block;
+            margin-bottom: 8px;
+            padding: 3px;
+            border: 1px solid var(--gray);
+            font-size: 0.7rem;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .space-demo .open {
+            display: block;
+            padding: 9px 5px;
+            border: 1px solid var(--teal);
+            color: var(--teal-dark);
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align: center;
         }
 
         /* ------------------------------
@@ -441,13 +425,13 @@
 
         .takeaway {
             display: grid;
-            grid-template-columns: 72px 1fr;
-            gap: 20px;
+            grid-template-columns: 66px 1fr;
+            gap: 18px;
             align-items: center;
-            margin-top: 30px;
-            padding: 20px 24px;
+            margin-top: 26px;
+            padding: 18px 22px;
             border: 3px solid var(--maroon);
-            border-radius: 16px;
+            border-radius: 14px;
             background-color: var(--white);
         }
 
@@ -455,23 +439,23 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 66px;
-            height: 66px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             background-color: var(--maroon);
             color: var(--white);
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
 
         .takeaway h2 {
             margin: 0 0 4px 0;
             color: var(--maroon);
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }
 
         .takeaway p {
             margin: 0;
-            font-size: 1.05rem;
+            font-size: 1rem;
         }
 
         /* ------------------------------
@@ -483,21 +467,21 @@
             padding: 8px 10px;
             background-color: var(--teal-dark);
             color: var(--white);
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: bold;
             text-align: right;
         }
 
         .credit {
             margin-top: 10px;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
         }
 
         /* ------------------------------
            RESPONSIVE
         ------------------------------ */
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 760px) {
 
             body {
                 padding: 10px;
@@ -508,7 +492,7 @@
             }
 
             .page {
-                padding: 22px;
+                padding: 20px;
             }
 
             .hierarchy-layout {
@@ -516,36 +500,18 @@
             }
 
             .mock-document {
-                order: 1;
-                margin-top: 22px;
+                margin-top: 18px;
             }
 
-            .callout-column {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .callout-column:first-child {
-                order: 2;
-            }
-
-            .callout-column:last-child {
-                order: 3;
-            }
-
-            .callout-arrow {
-                display: none;
+            .principles-rail {
+                margin-top: 10px;
             }
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 520px) {
 
             .title-area h1 {
-                font-size: 2.35rem;
-            }
-
-            .callout-column {
-                grid-template-columns: 1fr;
+                font-size: 2.2rem;
             }
 
             .mock-document {
@@ -555,7 +521,6 @@
             .mock-label {
                 margin-top: -41px;
                 white-space: normal;
-                text-align: center;
             }
 
             .process {
@@ -595,6 +560,7 @@
                 <!-- TITLE -->
 
                 <header class="title-area">
+
                     <h1>
                         <i class="fa-regular fa-eye" aria-hidden="true"></i>
                         What Gets Read First?
@@ -608,87 +574,12 @@
                 </header>
 
 
-                <!-- MAIN LAYOUT -->
+                <!-- MAIN TWO-COLUMN LAYOUT -->
 
-                <section class="hierarchy-layout" aria-label="Visual hierarchy example with five design principles">
-
-
-                    <!-- LEFT CALLOUTS -->
-
-                    <div class="callout-column">
-
-                        <!-- SIZE -->
-
-                        <section class="callout maroon">
-
-                            <div class="callout-heading">
-
-                                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
-
-                                <h2>Size</h2>
-
-                            </div>
-
-                            <p>
-                                Larger elements attract attention first.
-                                Save the largest type for information that matters most.
-                            </p>
-
-                            <div class="demo size-demo" aria-hidden="true">
-
-                                <span class="detail">detail</span>
-
-                                <span>&rarr;</span>
-
-                                <span class="heading">heading</span>
-
-                                <span>&rarr;</span>
-
-                                <span class="title">TITLE</span>
-
-                            </div>
-
-                            <div class="callout-arrow left-arrow">
-                                Title uses the largest type
-                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                            </div>
-
-                        </section>
+                <section class="hierarchy-layout" aria-label="Example of strong visual hierarchy with five design principles">
 
 
-                        <!-- WEIGHT -->
-
-                        <section class="callout">
-
-                            <div class="callout-heading">
-
-                                <i class="fa-solid fa-bold" aria-hidden="true"></i>
-
-                                <h2>Weight</h2>
-
-                            </div>
-
-                            <p>
-                                Bold text creates emphasis.
-                                Use it selectively so key words stand out.
-                            </p>
-
-                            <div class="demo weight-demo" aria-hidden="true">
-                                regular &nbsp;&rarr;&nbsp;
-                                <strong>important</strong>
-                            </div>
-
-                            <div class="callout-arrow left-arrow">
-                                Bold highlights key information
-                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                            </div>
-
-                        </section>
-
-                    </div>
-
-
-                    <!-- MOCK DOCUMENT -->
+                    <!-- LEFT: EXAMPLE -->
 
                     <article class="mock-document">
 
@@ -798,9 +689,73 @@
                     </article>
 
 
-                    <!-- RIGHT CALLOUTS -->
+                    <!-- RIGHT: PRINCIPLES -->
 
-                    <div class="callout-column">
+                    <aside class="principles-rail" aria-label="Five ways to create visual hierarchy">
+
+                        <h2 class="rail-heading">
+                            Five Ways to Create Hierarchy
+                        </h2>
+
+
+                        <!-- SIZE -->
+
+                        <section class="callout maroon">
+
+                            <div class="callout-heading">
+
+                                <i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i>
+
+                                <h2>Size</h2>
+
+                            </div>
+
+                            <p>
+                                Larger elements attract attention first.
+                                Save the largest type for what matters most.
+                            </p>
+
+                            <div class="demo size-demo" aria-hidden="true">
+
+                                <span class="detail">detail</span>
+
+                                <span>&rarr;</span>
+
+                                <span class="heading">heading</span>
+
+                                <span>&rarr;</span>
+
+                                <span class="title">TITLE</span>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- WEIGHT -->
+
+                        <section class="callout">
+
+                            <div class="callout-heading">
+
+                                <i class="fa-solid fa-bold" aria-hidden="true"></i>
+
+                                <h2>Weight</h2>
+
+                            </div>
+
+                            <p>
+                                Bold text creates emphasis.
+                                Use it selectively so key words stand out.
+                            </p>
+
+                            <div class="demo weight-demo" aria-hidden="true">
+                                regular &nbsp;&rarr;&nbsp;
+                                <strong>important</strong>
+                            </div>
+
+                        </section>
+
 
                         <!-- PLACEMENT -->
 
@@ -815,8 +770,8 @@
                             </div>
 
                             <p>
-                                Important information is easier to notice near the top
-                                of the page or at the start of a section.
+                                Put important information near the top of the page
+                                or at the start of a section.
                             </p>
 
                             <div class="demo placement-demo" aria-hidden="true">
@@ -827,11 +782,6 @@
 
                                 <div class="detail-lines"></div>
 
-                            </div>
-
-                            <div class="callout-arrow right-arrow">
-                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-                                Important content appears early
                             </div>
 
                         </section>
@@ -868,11 +818,6 @@
 
                             </div>
 
-                            <div class="callout-arrow right-arrow">
-                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-                                The deadline stands apart
-                            </div>
-
                         </section>
 
 
@@ -905,14 +850,9 @@
 
                             </div>
 
-                            <div class="callout-arrow right-arrow">
-                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-                                Space separates sections
-                            </div>
-
                         </section>
 
-                    </div>
+                    </aside>
 
                 </section>
 
@@ -944,9 +884,11 @@
             </div>
 
             <p class="updated">
-                <time datetime="2026-09-05">
-                    Last Updated September 5, 2026&nbsp;&nbsp;&nbsp;
+
+                <time datetime="2026-09-06">
+                    Last Updated September 6, 2026&nbsp;&nbsp;&nbsp;
                 </time>
+
             </p>
 
         </div>
