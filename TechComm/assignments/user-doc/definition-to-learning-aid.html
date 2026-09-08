@@ -1323,5 +1323,27 @@
     </main>
 
 </body>
+<script>
+    (function () {
+        const parentOrigin = "https://www.tengrrl.com";
+
+        function sendHeight() {
+            const height = document.documentElement.scrollHeight;
+
+            window.parent.postMessage(
+                {
+                    type: "tsc-visual-resize",
+                    height: height
+                },
+                parentOrigin
+            );
+        }
+
+        window.addEventListener("load", sendHeight);
+
+        const resizeObserver = new ResizeObserver(sendHeight);
+        resizeObserver.observe(document.documentElement);
+    })();
+</script>
 
 </html>
