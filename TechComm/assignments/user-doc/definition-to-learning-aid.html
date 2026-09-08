@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Quick reference showing how to turn a definition into a useful learning aid">
+
+    <meta name="author" content="Traci Gardner">
+
+    <title>From Definition to Learning Aid</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-light: #f2e8ec;
+            --orange: #c64600;
+            --orange-light: #fcf1e8;
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --gray: #e5e1e6;
+            --dark-gray: #555555;
+            --text: #1f1f1f;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background-color: var(--white);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            width: 100%;
+            padding: 28px;
+            background-color: var(--teal);
+            background-image:
+                url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
+            background-size: 600px;
+        }
+
+        .page {
+            padding: 30px;
+            background-color: var(--white);
+        }
+
+        /* ------------------------------
+           TITLE
+        ------------------------------ */
+
+        .title-area {
+            margin-bottom: 28px;
+            text-align: left;
+        }
+
+        .title-area h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1;
+        }
+
+        .title-area h1 i {
+            margin-right: 10px;
+            color: var(--maroon);
+        }
+
+        .subtitle {
+            max-width: 850px;
+            margin: 14px 0 0 0;
+            font-size: 1.15rem;
+        }
+
+        .subtitle strong {
+            color: var(--maroon);
+        }
+
+        /* ------------------------------
+           FOUR-STAGE PROGRESSION
+        ------------------------------ */
+
+        .progression {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 28px;
+            align-items: stretch;
+        }
+
+        .stage {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            padding: 18px;
+            border: 1px solid var(--gray);
+            border-radius: 14px;
+            background-color: var(--white);
+            box-shadow: 0 3px 0 var(--gray);
+        }
+
+        /* ------------------------------
+           STAGE HEADERS
+        ------------------------------ */
+
+        .stage-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .stage-icon {
+            display: flex;
+            flex: 0 0 46px;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            color: var(--white);
+            font-size: 1.2rem;
+        }
+
+        .stage-title-wrap {
+            min-width: 0;
+        }
+
+        .stage-number {
+            display: block;
+            margin-bottom: 1px;
+            color: var(--orange);
+            font-size: 0.76rem;
+            font-weight: bold;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+
+        .stage h2 {
+            margin: 0;
+            color: var(--teal-dark);
+            font-size: 1.16rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .stage-intro {
+            margin: 0 0 14px 0;
+            font-size: 0.95rem;
+        }
+
+        .stage-content {
+            flex: 1;
+            padding: 14px;
+            border-radius: 10px;
+            background-color: var(--teal-light);
+        }
+
+        .stage-note {
+            margin: 12px 0 0 0;
+            color: var(--dark-gray);
+            font-size: 0.88rem;
+            font-weight: bold;
+        }
+
+        .stage-note i {
+            margin-right: 5px;
+            color: var(--orange);
+        }
+
+        /* ------------------------------
+           CONNECTORS
+        ------------------------------ */
+
+        .connector {
+            position: absolute;
+            top: 50%;
+            right: -29px;
+            z-index: 10;
+            width: 30px;
+            height: 4px;
+            background-color: var(--orange);
+            transform: translateY(-50%);
+        }
+
+        .connector::after {
+            position: absolute;
+            top: 50%;
+            right: -1px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 11px solid var(--orange);
+            content: "";
+            transform: translateY(-50%);
+        }
+
+        .stage:last-child .connector {
+            display: none;
+        }
+
+        /* ------------------------------
+           STAGE 1: NAME IT
+        ------------------------------ */
+
+        .term {
+            margin: 0 0 8px 0;
+            color: var(--maroon);
+            font-size: 1.45rem;
+            font-weight: bold;
+        }
+
+        .definition {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* ------------------------------
+           STAGE 2: EXPLAIN IT
+        ------------------------------ */
+
+        .question {
+            margin: 0 0 8px 0;
+            color: var(--teal-dark);
+            font-size: 1.05rem;
+            font-weight: bold;
+        }
+
+        .explanation {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* ------------------------------
+           STAGE 3: SHOW IT
+        ------------------------------ */
+
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .example-label {
+            display: inline-block;
+            margin-bottom: 5px;
+            color: var(--maroon);
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .before-box,
+        .after-box {
+            padding: 10px;
+            border-radius: 8px;
+            background-color: var(--white);
+        }
+
+        .before-box {
+            border-left: 5px solid var(--dark-gray);
+        }
+
+        .after-box {
+            border-left: 5px solid var(--orange);
+        }
+
+        .before-box p,
+        .after-box p {
+            margin: 0;
+            font-size: 0.86rem;
+        }
+
+        .after-box h3 {
+            margin: 0 0 6px 0;
+            color: var(--maroon);
+            font-size: 1rem;
+        }
+
+        .after-box ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .after-box li {
+            margin-bottom: 3px;
+            font-size: 0.84rem;
+        }
+
+        /* ------------------------------
+           STAGE 4: HELP THEM USE IT
+        ------------------------------ */
+
+        .use-list {
+            display: grid;
+            gap: 9px;
+        }
+
+        .use-item {
+            display: grid;
+            grid-template-columns: 32px 1fr;
+            gap: 8px;
+            align-items: start;
+        }
+
+        .use-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            color: var(--white);
+            font-size: 0.85rem;
+        }
+
+        .use-item p {
+            margin: 0;
+            font-size: 0.88rem;
+        }
+
+        /* ------------------------------
+           TAKEAWAY
+        ------------------------------ */
+
+        .takeaway {
+            margin-top: 28px;
+            padding: 20px 22px;
+            border: 3px solid var(--maroon);
+            border-radius: 14px;
+            background-color: var(--white);
+        }
+
+        .takeaway-heading {
+            display: grid;
+            grid-template-columns: 62px 1fr;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .takeaway-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 1.65rem;
+        }
+
+        .takeaway h2 {
+            margin: 0 0 4px 0;
+            color: var(--maroon);
+            font-size: 1.35rem;
+        }
+
+        .takeaway-heading p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* ------------------------------
+           GRAPHIC FORMULA
+        ------------------------------ */
+
+        .formula {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+            gap: 8px;
+            align-items: center;
+            margin-top: 18px;
+        }
+
+        .formula-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 92px;
+            padding: 11px 8px;
+            border-radius: 12px;
+            background-color: var(--teal-light);
+            text-align: center;
+        }
+
+        .formula-step i {
+            margin-bottom: 7px;
+            color: var(--teal-dark);
+            font-size: 1.35rem;
+        }
+
+        .formula-step strong {
+            color: var(--teal-dark);
+            font-size: 0.95rem;
+            line-height: 1.2;
+        }
+
+        .formula-arrow {
+            color: var(--orange);
+            font-size: 1.4rem;
+        }
+
+        /* ------------------------------
+           COMPLETED LEARNING AID
+        ------------------------------ */
+
+        .completed-aid {
+            margin-top: 30px;
+            padding: 24px;
+            border: 3px solid var(--teal-dark);
+            border-radius: 16px;
+            background-color: var(--white);
+        }
+
+        .completed-aid-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+
+        .completed-aid-icon {
+            display: flex;
+            flex: 0 0 54px;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 1.4rem;
+        }
+
+        .completed-aid-header h2 {
+            margin: 0 0 3px 0;
+            color: var(--teal-dark);
+            font-size: 1.5rem;
+        }
+
+        .completed-aid-header p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Finished sheet */
+
+        .finished-sheet {
+            padding: 24px;
+            border: 1px solid var(--gray);
+            background-color: #fafafa;
+            box-shadow: 6px 6px 0 var(--gray);
+        }
+
+        .finished-title {
+            margin: 0 0 6px 0;
+            color: var(--maroon);
+            font-size: 2.1rem;
+            line-height: 1;
+        }
+
+        .finished-subtitle {
+            margin: 0 0 20px 0;
+            color: var(--dark-gray);
+            font-size: 1rem;
+        }
+
+        /* Definition */
+
+        .finished-definition {
+            margin-bottom: 20px;
+            padding: 14px 16px;
+            border-left: 7px solid var(--teal);
+            background-color: var(--teal-light);
+        }
+
+        .finished-definition h3 {
+            margin: 0 0 5px 0;
+            color: var(--teal-dark);
+            font-size: 1.05rem;
+        }
+
+        .finished-definition p {
+            margin: 0;
+        }
+
+        /* Before and after */
+
+        .finished-example {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .finished-example-box {
+            padding: 14px;
+            border-radius: 10px;
+            background-color: var(--white);
+        }
+
+        .finished-example-box.before {
+            border-top: 6px solid var(--dark-gray);
+        }
+
+        .finished-example-box.after {
+            border-top: 6px solid var(--orange);
+        }
+
+        .finished-example-box h3 {
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+        }
+
+        .finished-example-box.before h3 {
+            color: var(--dark-gray);
+        }
+
+        .finished-example-box.after h3 {
+            color: var(--orange);
+        }
+
+        .finished-example-box p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .finished-example-box strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--maroon);
+        }
+
+        .finished-example-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .finished-example-box li {
+            margin-bottom: 4px;
+            font-size: 0.9rem;
+        }
+
+        /* Application */
+
+        .finished-use {
+            padding: 16px;
+            border-radius: 10px;
+            background-color: var(--maroon-light);
+        }
+
+        .finished-use h3 {
+            margin: 0 0 12px 0;
+            color: var(--maroon);
+            font-size: 1.1rem;
+        }
+
+        .finished-use-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px 18px;
+        }
+
+        .finished-use-item {
+            display: grid;
+            grid-template-columns: 28px 1fr;
+            gap: 7px;
+            align-items: start;
+        }
+
+        .finished-use-item i {
+            margin-top: 2px;
+            color: var(--maroon);
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .finished-use-item p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .completed-caption {
+            margin: 18px 0 0 0;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            font-style: italic;
+            text-align: left;
+        }
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        .updated {
+            margin: 0;
+            padding: 8px 10px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.88rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.78rem;
+        }
+
+        /* ------------------------------
+           RESPONSIVE
+        ------------------------------ */
+
+        @media screen and (max-width: 900px) {
+
+            .progression {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 18px;
+            }
+
+            .connector {
+                display: none;
+            }
+
+            .formula {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .formula-arrow {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .bkgd-page {
+                padding: 18px;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            .title-area h1 {
+                font-size: 2.25rem;
+            }
+
+            .progression {
+                grid-template-columns: 1fr;
+            }
+
+            .takeaway-heading {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .takeaway-icon {
+                margin: 0 auto;
+            }
+
+            .formula {
+                grid-template-columns: 1fr;
+            }
+
+            .completed-aid-header {
+                align-items: flex-start;
+            }
+
+            .finished-example {
+                grid-template-columns: 1fr;
+            }
+
+            .finished-use-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+
+        <div class="bkgd-page">
+
+            <div class="page">
+
+                <!-- TITLE -->
+
+                <header class="title-area">
+
+                    <h1>
+                        <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                        From Definition to Learning Aid
+                    </h1>
+
+                    <p class="subtitle">
+                        A definition tells readers what something means.
+                        A <strong>learning aid</strong> helps them understand it,
+                        recognize it, and use it.
+                    </p>
+
+                </header>
+
+
+                <!-- FOUR-STAGE PROGRESSION -->
+
+                <section class="progression" aria-label="Four steps for turning a definition into a useful learning aid">
+
+
+                    <!-- STEP 1: NAME IT -->
+
+                    <article class="stage">
+
+                        <div class="stage-header">
+
+                            <div class="stage-icon">
+                                <i class="fa-solid fa-tag" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="stage-title-wrap">
+
+                                <span class="stage-number">
+                                    Step 1
+                                </span>
+
+                                <h2>
+                                    Name It
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="stage-intro">
+                            Start with a clear definition.
+                        </p>
+
+                        <div class="stage-content">
+
+                            <p class="term">
+                                Chunking
+                            </p>
+
+                            <p class="definition">
+                                Breaking information into smaller,
+                                manageable units.
+                            </p>
+
+                        </div>
+
+                        <p class="stage-note">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                            This tells readers what the term means.
+                        </p>
+
+                        <span class="connector" aria-hidden="true"></span>
+
+                    </article>
+
+
+                    <!-- STEP 2: EXPLAIN IT -->
+
+                    <article class="stage">
+
+                        <div class="stage-header">
+
+                            <div class="stage-icon">
+                                <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="stage-title-wrap">
+
+                                <span class="stage-number">
+                                    Step 2
+                                </span>
+
+                                <h2>
+                                    Explain It
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="stage-intro">
+                            Add enough context to make the idea understandable.
+                        </p>
+
+                        <div class="stage-content">
+
+                            <p class="question">
+                                What is chunking?
+                            </p>
+
+                            <p class="explanation">
+                                Chunking divides dense information into smaller groups
+                                that are easier to scan, understand, and remember.
+                            </p>
+
+                        </div>
+
+                        <p class="stage-note">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                            Now readers understand why the concept matters.
+                        </p>
+
+                        <span class="connector" aria-hidden="true"></span>
+
+                    </article>
+
+
+                    <!-- STEP 3: SHOW IT -->
+
+                    <article class="stage">
+
+                        <div class="stage-header">
+
+                            <div class="stage-icon">
+                                <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="stage-title-wrap">
+
+                                <span class="stage-number">
+                                    Step 3
+                                </span>
+
+                                <h2>
+                                    Show It
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="stage-intro">
+                            Use a visual example so readers can recognize the concept.
+                        </p>
+
+                        <div class="stage-content">
+
+                            <div class="before-after">
+
+                                <div class="before-box">
+
+                                    <span class="example-label">
+                                        Before
+                                    </span>
+
+                                    <p>
+                                        Before submitting a document, review the organization,
+                                        headings, language, visuals, citations, accessibility,
+                                        formatting, and other requirements and make any
+                                        necessary revisions before preparing the final file.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="after-box">
+
+                                    <span class="example-label">
+                                        After
+                                    </span>
+
+                                    <h3>
+                                        Before You Submit
+                                    </h3>
+
+                                    <ul>
+                                        <li>Check organization and headings.</li>
+                                        <li>Review language and visuals.</li>
+                                        <li>Check citations and accessibility.</li>
+                                        <li>Confirm formatting.</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <p class="stage-note">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                            Now readers can see the concept in action.
+                        </p>
+
+                        <span class="connector" aria-hidden="true"></span>
+
+                    </article>
+
+
+                    <!-- STEP 4: HELP THEM USE IT -->
+
+                    <article class="stage">
+
+                        <div class="stage-header">
+
+                            <div class="stage-icon">
+                                <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="stage-title-wrap">
+
+                                <span class="stage-number">
+                                    Step 4
+                                </span>
+
+                                <h2>
+                                    Help Them Use It
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="stage-intro">
+                            Show readers when or how to apply the concept.
+                        </p>
+
+                        <div class="stage-content">
+
+                            <div class="use-list">
+
+                                <div class="use-item">
+
+                                    <div class="use-icon">
+                                        <i class="fa-solid fa-align-left" aria-hidden="true"></i>
+                                    </div>
+
+                                    <p>
+                                        A paragraph looks like a wall of text.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="use-item">
+
+                                    <div class="use-icon">
+                                        <i class="fa-regular fa-eye" aria-hidden="true"></i>
+                                    </div>
+
+                                    <p>
+                                        Readers need to scan for information quickly.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="use-item">
+
+                                    <div class="use-icon">
+                                        <i class="fa-solid fa-list" aria-hidden="true"></i>
+                                    </div>
+
+                                    <p>
+                                        Several related items could become a list.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="use-item">
+
+                                    <div class="use-icon">
+                                        <i class="fa-solid fa-heading" aria-hidden="true"></i>
+                                    </div>
+
+                                    <p>
+                                        A heading could identify a group of information.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="use-item">
+
+                                    <div class="use-icon">
+                                        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                                    </div>
+
+                                    <p>
+                                        Important information is difficult to find.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <p class="stage-note">
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                            Now the information supports action.
+                        </p>
+
+                    </article>
+
+                </section>
+
+
+                <!-- TAKEAWAY -->
+
+                <section class="takeaway">
+
+                    <div class="takeaway-heading">
+
+                        <div class="takeaway-icon">
+                            <i class="fa-solid fa-toolbox" aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Build a Learning Aid, Not a Dictionary
+                            </h2>
+
+                            <p>
+                                A strong learning aid does more than define terms.
+                                It helps readers understand what a concept means,
+                                recognize it in practice, and apply it to their own work.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GRAPHIC FORMULA -->
+
+                    <div class="formula" aria-label="Questions to answer when developing a learning aid">
+
+                        <div class="formula-step">
+
+                            <i class="fa-solid fa-tag" aria-hidden="true"></i>
+
+                            <strong>
+                                What is it?
+                            </strong>
+
+                        </div>
+
+                        <div class="formula-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+
+                        <div class="formula-step">
+
+                            <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
+
+                            <strong>
+                                Why does it matter?
+                            </strong>
+
+                        </div>
+
+                        <div class="formula-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+
+                        <div class="formula-step">
+
+                            <i class="fa-regular fa-eye" aria-hidden="true"></i>
+
+                            <strong>
+                                What does it look like?
+                            </strong>
+
+                        </div>
+
+                        <div class="formula-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+
+                        <div class="formula-step">
+
+                            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+
+                            <strong>
+                                How can I use it?
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- COMPLETED LEARNING AID -->
+
+                <section class="completed-aid">
+
+                    <div class="completed-aid-header">
+
+                        <div class="completed-aid-icon">
+                            <i class="fa-solid fa-file-circle-check" aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Put It All Together
+                            </h2>
+
+                            <p>
+                                The four steps combine to create a learning aid that
+                                defines, explains, shows, and helps readers apply the concept.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FINISHED EXAMPLE -->
+
+                    <article class="finished-sheet" aria-label="Example of a completed learning aid about chunking">
+
+                        <h2 class="finished-title">
+                            Chunking: Make Information Easier to Use
+                        </h2>
+
+                        <p class="finished-subtitle">
+                            Break dense information into smaller groups so readers can
+                            scan, understand, and act on it more easily.
+                        </p>
+
+
+                        <!-- DEFINITION + EXPLANATION -->
+
+                        <section class="finished-definition">
+
+                            <h3>
+                                What Is Chunking?
+                            </h3>
+
+                            <p>
+                                <strong>Chunking</strong> means breaking information into
+                                smaller, manageable units. It helps readers find information
+                                quickly and reduces the effort required to understand dense content.
+                            </p>
+
+                        </section>
+
+
+                        <!-- SHOW IT -->
+
+                        <section class="finished-example">
+
+                            <div class="finished-example-box before">
+
+                                <h3>
+                                    Before: One Dense Block
+                                </h3>
+
+                                <p>
+                                    Before submitting a document, review the organization,
+                                    headings, language, visuals, citations, accessibility,
+                                    formatting, and other requirements and make any necessary
+                                    revisions before preparing the final file.
+                                </p>
+
+                            </div>
+
+
+                            <div class="finished-example-box after">
+
+                                <h3>
+                                    After: Chunked Information
+                                </h3>
+
+                                <strong>
+                                    Before You Submit
+                                </strong>
+
+                                <ul>
+                                    <li>Check organization and headings.</li>
+                                    <li>Review language and visuals.</li>
+                                    <li>Check citations and accessibility.</li>
+                                    <li>Confirm formatting.</li>
+                                </ul>
+
+                            </div>
+
+                        </section>
+
+
+                        <!-- APPLICATION -->
+
+                        <section class="finished-use">
+
+                            <h3>
+                                Try Chunking When...
+                            </h3>
+
+                            <div class="finished-use-grid">
+
+                                <div class="finished-use-item">
+
+                                    <i class="fa-solid fa-align-left" aria-hidden="true"></i>
+
+                                    <p>
+                                        A paragraph looks like a wall of text.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="finished-use-item">
+
+                                    <i class="fa-regular fa-eye" aria-hidden="true"></i>
+
+                                    <p>
+                                        Readers need to scan for information quickly.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="finished-use-item">
+
+                                    <i class="fa-solid fa-list" aria-hidden="true"></i>
+
+                                    <p>
+                                        Several related items could become a list.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="finished-use-item">
+
+                                    <i class="fa-solid fa-heading" aria-hidden="true"></i>
+
+                                    <p>
+                                        A heading could identify a group of information.
+                                    </p>
+
+                                </div>
+
+
+                                <div class="finished-use-item">
+
+                                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+
+                                    <p>
+                                        Important information is difficult to find.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                    </article>
+
+
+                    <p class="completed-caption">
+                        Notice how the finished version does more than define the term:
+                        it explains the idea, demonstrates it, and shows readers when to use it.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <!-- LAST UPDATED -->
+
+            <p class="updated">
+
+                <time datetime="2026-09-08">
+                    Last Updated September 8, 2026&nbsp;&nbsp;&nbsp;
+                </time>
+
+            </p>
+
+        </div>
+
+
+        <!-- CREDIT -->
+
+        <p class="credit">
+            &copy; 2026 Traci Gardner. Available under a Creative Commons
+            Attribution-NonCommercial Share-Alike 4.0 International License.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
