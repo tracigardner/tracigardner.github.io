@@ -97,6 +97,7 @@ dt {
   width: 100%;
   margin: 6px 6px 6px 6px;
   table-layout: fixed;
+  caption-side: bottom;
 }
 .alternateTable td,
 .alternateTable th {
