@@ -95,23 +95,14 @@
         }
 
         /* ------------------------------
-           MAIN FLOW
+           FOUR-STEP GRID
         ------------------------------ */
 
         .flow {
             display: grid;
-            grid-template-columns:
-                minmax(0, 1.15fr) auto minmax(0, 1fr) auto minmax(0, 1.15fr) auto minmax(0, 1.15fr);
-            gap: 12px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
             align-items: stretch;
-        }
-
-        .flow-arrow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--orange);
-            font-size: 1.5rem;
         }
 
         /* ------------------------------
@@ -122,7 +113,7 @@
             display: flex;
             flex-direction: column;
             min-width: 0;
-            padding: 16px;
+            padding: 20px;
             border: 1px solid var(--gray);
             border-radius: 14px;
             background-color: var(--white);
@@ -138,22 +129,22 @@
 
         .step-icon {
             display: flex;
-            flex: 0 0 44px;
+            flex: 0 0 46px;
             align-items: center;
             justify-content: center;
-            width: 44px;
-            height: 44px;
+            width: 46px;
+            height: 46px;
             border-radius: 50%;
             background-color: var(--teal);
             color: var(--white);
-            font-size: 1.1rem;
+            font-size: 1.15rem;
         }
 
         .step-number {
             display: block;
             margin-bottom: 1px;
             color: var(--orange);
-            font-size: 0.74rem;
+            font-size: 0.76rem;
             font-weight: bold;
             letter-spacing: 0.07em;
             text-transform: uppercase;
@@ -162,24 +153,24 @@
         .step-card h2 {
             margin: 0;
             color: var(--teal-dark);
-            font-size: 1.08rem;
+            font-size: 1.15rem;
             line-height: 1.1;
             text-transform: uppercase;
         }
 
         .step-intro {
-            margin: 0 0 12px 0;
-            font-size: 0.9rem;
+            margin: 0 0 14px 0;
+            font-size: 0.95rem;
         }
 
         /* ------------------------------
-           MINI PAGE MOCKUPS
+           STEP 1: OVERLOADED PAGE
         ------------------------------ */
 
         .mini-page {
             flex: 1;
-            min-height: 360px;
-            padding: 14px;
+            min-height: 350px;
+            padding: 16px;
             border: 2px solid var(--dark-gray);
             background-color: var(--white);
             box-shadow: 4px 4px 0 var(--gray);
@@ -188,14 +179,14 @@
         .mini-title {
             margin-bottom: 8px;
             color: var(--maroon);
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: bold;
         }
 
         .mini-heading {
-            margin: 9px 0 5px 0;
+            margin: 10px 0 5px 0;
             color: var(--teal-dark);
-            font-size: 0.72rem;
+            font-size: 0.76rem;
             font-weight: bold;
         }
 
@@ -214,56 +205,55 @@
             width: 85%;
         }
 
-        /* Overloaded page */
-
         .overloaded {
-            padding: 10px;
+            padding: 13px;
         }
 
         .overloaded .mini-title {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
 
         .overloaded .mini-heading {
-            margin: 5px 0 3px 0;
-            font-size: 0.62rem;
+            margin: 7px 0 3px 0;
+            font-size: 0.68rem;
         }
 
         .overloaded .text-line {
             height: 4px;
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
 
         .warning {
-            margin-top: 12px;
-            padding: 9px 10px;
+            margin-top: 14px;
+            padding: 11px 12px;
             border-left: 5px solid var(--orange);
             background-color: var(--orange-light);
             color: var(--text);
-            font-size: 0.82rem;
+            font-size: 0.88rem;
             font-weight: bold;
         }
 
         /* ------------------------------
-           PRIORITY CARDS
+           STEP 2: PRIORITIES
         ------------------------------ */
 
         .priority-stack {
             display: grid;
-            gap: 10px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
             flex: 1;
         }
 
         .priority-box {
-            padding: 11px;
+            padding: 14px;
             border-radius: 10px;
             background-color: var(--teal-light);
         }
 
         .priority-box h3 {
-            margin: 0 0 6px 0;
+            margin: 0 0 8px 0;
             color: var(--teal-dark);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         .priority-box i {
@@ -276,8 +266,8 @@
         }
 
         .priority-box li {
-            margin-bottom: 3px;
-            font-size: 0.8rem;
+            margin-bottom: 5px;
+            font-size: 0.84rem;
         }
 
         .priority-box.helpful {
@@ -293,15 +283,15 @@
         }
 
         /* ------------------------------
-           BLUEPRINT PAGE
+           STEP 3: BLUEPRINT
         ------------------------------ */
 
         .blueprint-page {
             display: grid;
-            gap: 8px;
+            gap: 9px;
             flex: 1;
-            min-height: 360px;
-            padding: 12px;
+            min-height: 350px;
+            padding: 14px;
             border: 2px solid var(--teal-dark);
             background-color: var(--white);
             box-shadow: 4px 4px 0 var(--gray);
@@ -313,47 +303,48 @@
             justify-content: center;
             width: 100%;
             min-width: 0;
-            padding: 9px;
+            padding: 10px;
             border: 2px dashed var(--teal);
             background-color: var(--teal-light);
             color: var(--teal-dark);
-            font-size: 0.7rem;
+            font-size: 0.78rem;
             font-weight: bold;
             line-height: 1.25;
             text-align: left;
         }
 
         .zone-title {
-            min-height: 56px;
+            min-height: 55px;
         }
 
         .zone-main {
-            min-height: 58px;
+            min-height: 52px;
         }
 
         .zone-use {
-            min-height: 54px;
+            min-height: 52px;
         }
 
         .zone-source {
             min-height: 34px;
-            padding: 6px;
+            padding: 7px;
             border-style: solid;
             background-color: var(--light-gray);
-            font-size: 0.62rem;
+            font-size: 0.68rem;
         }
 
         .blueprint-notes {
             display: grid;
-            gap: 7px;
-            margin-top: 12px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 14px;
         }
 
         .blueprint-note {
             display: flex;
             gap: 7px;
             align-items: flex-start;
-            font-size: 0.8rem;
+            font-size: 0.82rem;
         }
 
         .blueprint-note i {
@@ -362,13 +353,13 @@
         }
 
         /* ------------------------------
-           FINISHED PAGE
+           STEP 4: FINISHED PAGE
         ------------------------------ */
 
         .finished-page {
             flex: 1;
-            min-height: 360px;
-            padding: 14px;
+            min-height: 350px;
+            padding: 18px;
             border: 2px solid var(--dark-gray);
             background-color: var(--white);
             box-shadow: 4px 4px 0 var(--gray);
@@ -377,82 +368,84 @@
         .finished-page h3 {
             margin: 0;
             color: var(--maroon);
-            font-size: 1rem;
+            font-size: 1.35rem;
             line-height: 1.05;
         }
 
         .finished-deck {
-            margin: 4px 0 12px 0;
+            margin: 5px 0 14px 0;
             color: var(--dark-gray);
-            font-size: 0.68rem;
+            font-size: 0.82rem;
         }
 
         .concept-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
         }
 
         .concept-box {
-            min-height: 92px;
-            padding: 8px;
-            border-radius: 7px;
+            min-width: 0;
+            padding: 10px;
+            border-radius: 8px;
             background-color: var(--teal-light);
         }
 
         .concept-box strong {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
             color: var(--teal-dark);
-            font-size: 0.7rem;
+            font-size: 0.78rem;
         }
 
         .concept-visual {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 35px;
-            margin-bottom: 5px;
+            min-height: 42px;
+            margin-bottom: 6px;
+            padding: 5px;
             border-radius: 5px;
             background-color: var(--white);
             color: var(--maroon);
-            font-size: 1rem;
+            font-size: 1.15rem;
             font-weight: bold;
         }
 
         .concept-box p {
             margin: 0;
-            font-size: 0.58rem;
+            font-size: 0.7rem;
+            line-height: 1.3;
         }
 
         .quick-check {
-            margin-top: 10px;
-            padding: 8px;
+            margin-top: 12px;
+            padding: 10px;
             border-left: 5px solid var(--orange);
             background-color: var(--orange-light);
         }
 
         .quick-check strong {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
             color: var(--orange);
-            font-size: 0.7rem;
+            font-size: 0.78rem;
         }
 
         .quick-check ul {
             margin: 0;
-            padding-left: 16px;
+            padding-left: 17px;
         }
 
         .quick-check li {
-            margin-bottom: 2px;
-            font-size: 0.6rem;
+            margin-bottom: 3px;
+            font-size: 0.7rem;
         }
 
         .mini-sources {
-            margin-top: 9px;
+            margin-top: 10px;
             color: var(--dark-gray);
-            font-size: 0.55rem;
+            font-size: 0.65rem;
         }
 
         /* ------------------------------
@@ -588,7 +581,7 @@
         }
 
         /* ------------------------------
-           FINAL WARNING / CLOSING
+           SHRINKING WARNING
         ------------------------------ */
 
         .shrink-last {
@@ -650,15 +643,14 @@
            RESPONSIVE
         ------------------------------ */
 
-        @media screen and (max-width: 950px) {
+        @media screen and (max-width: 850px) {
 
-            .flow {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 18px;
+            .priority-stack {
+                grid-template-columns: 1fr;
             }
 
-            .flow-arrow {
-                display: none;
+            .blueprint-notes {
+                grid-template-columns: 1fr;
             }
 
             .changed-grid {
@@ -674,7 +666,7 @@
             }
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 650px) {
 
             body {
                 padding: 10px;
@@ -693,6 +685,14 @@
             }
 
             .flow {
+                grid-template-columns: 1fr;
+            }
+
+            .priority-stack {
+                grid-template-columns: 1fr;
+            }
+
+            .blueprint-notes {
                 grid-template-columns: 1fr;
             }
 
@@ -742,9 +742,9 @@
                 </header>
 
 
-                <!-- VISUAL FLOW -->
+                <!-- FOUR-STEP GRID -->
 
-                <section class="flow" aria-label="Four-stage process for fitting information on one page">
+                <section class="flow" aria-label="Four steps for fitting information on one page">
 
 
                     <!-- STEP 1 -->
@@ -827,11 +827,6 @@
                     </article>
 
 
-                    <div class="flow-arrow" aria-hidden="true">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-
-
                     <!-- STEP 2 -->
 
                     <article class="step-card">
@@ -879,6 +874,7 @@
 
                             </section>
 
+
                             <section class="priority-box helpful">
 
                                 <h3>
@@ -893,6 +889,7 @@
                                 </ul>
 
                             </section>
+
 
                             <section class="priority-box cut">
 
@@ -913,11 +910,6 @@
                         </div>
 
                     </article>
-
-
-                    <div class="flow-arrow" aria-hidden="true">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
 
 
                     <!-- STEP 3 -->
@@ -955,23 +947,19 @@
                             </div>
 
                             <div class="zone zone-main">
-                                CONCEPT 1<br>
-                                Explain + Show
+                                CONCEPT 1 &mdash; EXPLAIN + SHOW
                             </div>
 
                             <div class="zone zone-main">
-                                CONCEPT 2<br>
-                                Explain + Show
+                                CONCEPT 2 &mdash; EXPLAIN + SHOW
                             </div>
 
                             <div class="zone zone-main">
-                                CONCEPT 3<br>
-                                Explain + Show
+                                CONCEPT 3 &mdash; EXPLAIN + SHOW
                             </div>
 
                             <div class="zone zone-main">
-                                CONCEPT 4<br>
-                                Explain + Show
+                                CONCEPT 4 &mdash; EXPLAIN + SHOW
                             </div>
 
                             <div class="zone zone-use">
@@ -1004,11 +992,6 @@
                         </div>
 
                     </article>
-
-
-                    <div class="flow-arrow" aria-hidden="true">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
 
 
                     <!-- STEP 4 -->
@@ -1065,6 +1048,7 @@
 
                                 </div>
 
+
                                 <div class="concept-box">
 
                                     <strong>SIZE</strong>
@@ -1079,6 +1063,7 @@
 
                                 </div>
 
+
                                 <div class="concept-box">
 
                                     <strong>SPACING</strong>
@@ -1092,6 +1077,7 @@
                                     </p>
 
                                 </div>
+
 
                                 <div class="concept-box">
 
@@ -1179,7 +1165,7 @@
                 </section>
 
 
-                <!-- RESCUE ORDER -->
+                <!-- WHEN YOUR PAGE IS TOO FULL -->
 
                 <section class="rescue">
 
