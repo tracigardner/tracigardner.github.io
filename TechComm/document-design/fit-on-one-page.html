@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Quick reference for fitting a learning aid onto one page without sacrificing readability">
+
+    <meta name="author" content="Traci Gardner">
+
+    <title>Fit It on One Page: Plan Before You Shrink</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-light: #f2e8ec;
+            --orange: #c64600;
+            --orange-light: #fcf1e8;
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --gray: #e5e1e6;
+            --dark-gray: #555555;
+            --text: #1f1f1f;
+            --white: #ffffff;
+            --light-gray: #f7f7f7;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background-color: var(--white);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            width: 100%;
+            padding: 28px;
+            background-color: var(--teal);
+            background-image:
+                url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
+            background-size: 600px;
+        }
+
+        .page {
+            padding: 30px;
+            background-color: var(--white);
+        }
+
+        /* ------------------------------
+           TITLE
+        ------------------------------ */
+
+        .title-area {
+            margin-bottom: 28px;
+            text-align: left;
+        }
+
+        .title-area h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1;
+        }
+
+        .title-area h1 i {
+            margin-right: 10px;
+            color: var(--maroon);
+        }
+
+        .subtitle {
+            max-width: 880px;
+            margin: 14px 0 0 0;
+            font-size: 1.15rem;
+        }
+
+        .subtitle strong {
+            color: var(--maroon);
+        }
+
+        /* ------------------------------
+           MAIN FLOW
+        ------------------------------ */
+
+        .flow {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 1.15fr) auto minmax(0, 1fr) auto minmax(0, 1.15fr) auto minmax(0, 1.15fr);
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        .flow-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--orange);
+            font-size: 1.5rem;
+        }
+
+        /* ------------------------------
+           STEP CARDS
+        ------------------------------ */
+
+        .step-card {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            padding: 16px;
+            border: 1px solid var(--gray);
+            border-radius: 14px;
+            background-color: var(--white);
+            box-shadow: 0 3px 0 var(--gray);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .step-icon {
+            display: flex;
+            flex: 0 0 44px;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--teal);
+            color: var(--white);
+            font-size: 1.1rem;
+        }
+
+        .step-number {
+            display: block;
+            margin-bottom: 1px;
+            color: var(--orange);
+            font-size: 0.74rem;
+            font-weight: bold;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+        }
+
+        .step-card h2 {
+            margin: 0;
+            color: var(--teal-dark);
+            font-size: 1.08rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .step-intro {
+            margin: 0 0 12px 0;
+            font-size: 0.9rem;
+        }
+
+        /* ------------------------------
+           MINI PAGE MOCKUPS
+        ------------------------------ */
+
+        .mini-page {
+            flex: 1;
+            min-height: 360px;
+            padding: 14px;
+            border: 2px solid var(--dark-gray);
+            background-color: var(--white);
+            box-shadow: 4px 4px 0 var(--gray);
+        }
+
+        .mini-title {
+            margin-bottom: 8px;
+            color: var(--maroon);
+            font-size: 0.95rem;
+            font-weight: bold;
+        }
+
+        .mini-heading {
+            margin: 9px 0 5px 0;
+            color: var(--teal-dark);
+            font-size: 0.72rem;
+            font-weight: bold;
+        }
+
+        .text-line {
+            height: 5px;
+            margin-bottom: 4px;
+            border-radius: 2px;
+            background-color: #cfcfcf;
+        }
+
+        .text-line.short {
+            width: 70%;
+        }
+
+        .text-line.medium {
+            width: 85%;
+        }
+
+        /* Overloaded page */
+
+        .overloaded {
+            padding: 10px;
+        }
+
+        .overloaded .mini-title {
+            font-size: 0.8rem;
+        }
+
+        .overloaded .mini-heading {
+            margin: 5px 0 3px 0;
+            font-size: 0.62rem;
+        }
+
+        .overloaded .text-line {
+            height: 4px;
+            margin-bottom: 2px;
+        }
+
+        .warning {
+            margin-top: 12px;
+            padding: 9px 10px;
+            border-left: 5px solid var(--orange);
+            background-color: var(--orange-light);
+            color: var(--text);
+            font-size: 0.82rem;
+            font-weight: bold;
+        }
+
+        /* ------------------------------
+           PRIORITY CARDS
+        ------------------------------ */
+
+        .priority-stack {
+            display: grid;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .priority-box {
+            padding: 11px;
+            border-radius: 10px;
+            background-color: var(--teal-light);
+        }
+
+        .priority-box h3 {
+            margin: 0 0 6px 0;
+            color: var(--teal-dark);
+            font-size: 0.9rem;
+        }
+
+        .priority-box i {
+            margin-right: 5px;
+        }
+
+        .priority-box ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .priority-box li {
+            margin-bottom: 3px;
+            font-size: 0.8rem;
+        }
+
+        .priority-box.helpful {
+            background-color: var(--light-gray);
+        }
+
+        .priority-box.cut {
+            background-color: var(--orange-light);
+        }
+
+        .priority-box.cut h3 {
+            color: var(--orange);
+        }
+
+        /* ------------------------------
+           BLUEPRINT PAGE
+        ------------------------------ */
+
+        .blueprint-page {
+            display: grid;
+            grid-template-rows: auto 1fr auto auto;
+            gap: 8px;
+            flex: 1;
+            min-height: 360px;
+            padding: 12px;
+            border: 2px solid var(--teal-dark);
+            background-color: var(--white);
+            box-shadow: 4px 4px 0 var(--gray);
+        }
+
+        .zone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 2px dashed var(--teal);
+            background-color: var(--teal-light);
+            color: var(--teal-dark);
+            font-size: 0.72rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .zone-title {
+            min-height: 60px;
+        }
+
+        .zone-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .zone-main {
+            min-height: 90px;
+        }
+
+        .zone-use {
+            min-height: 65px;
+        }
+
+        .zone-source {
+            min-height: 34px;
+            padding: 6px;
+            border-style: solid;
+            background-color: var(--light-gray);
+            font-size: 0.65rem;
+        }
+
+        .blueprint-notes {
+            display: grid;
+            gap: 7px;
+            margin-top: 12px;
+        }
+
+        .blueprint-note {
+            display: flex;
+            gap: 7px;
+            align-items: flex-start;
+            font-size: 0.8rem;
+        }
+
+        .blueprint-note i {
+            margin-top: 2px;
+            color: var(--orange);
+        }
+
+        /* ------------------------------
+           FINISHED PAGE
+        ------------------------------ */
+
+        .finished-page {
+            flex: 1;
+            min-height: 360px;
+            padding: 14px;
+            border: 2px solid var(--dark-gray);
+            background-color: var(--white);
+            box-shadow: 4px 4px 0 var(--gray);
+        }
+
+        .finished-page h3 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: 1rem;
+            line-height: 1.05;
+        }
+
+        .finished-deck {
+            margin: 4px 0 12px 0;
+            color: var(--dark-gray);
+            font-size: 0.68rem;
+        }
+
+        .concept-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .concept-box {
+            min-height: 92px;
+            padding: 8px;
+            border-radius: 7px;
+            background-color: var(--teal-light);
+        }
+
+        .concept-box strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--teal-dark);
+            font-size: 0.7rem;
+        }
+
+        .concept-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: var(--white);
+            color: var(--maroon);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .concept-box p {
+            margin: 0;
+            font-size: 0.58rem;
+        }
+
+        .quick-check {
+            margin-top: 10px;
+            padding: 8px;
+            border-left: 5px solid var(--orange);
+            background-color: var(--orange-light);
+        }
+
+        .quick-check strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--orange);
+            font-size: 0.7rem;
+        }
+
+        .quick-check ul {
+            margin: 0;
+            padding-left: 16px;
+        }
+
+        .quick-check li {
+            margin-bottom: 2px;
+            font-size: 0.6rem;
+        }
+
+        .mini-sources {
+            margin-top: 9px;
+            color: var(--dark-gray);
+            font-size: 0.55rem;
+        }
+
+        /* ------------------------------
+           NOTICE WHAT CHANGED
+        ------------------------------ */
+
+        .changed {
+            margin-top: 26px;
+            padding: 20px 22px;
+            border-radius: 14px;
+            background-color: var(--teal-light);
+        }
+
+        .changed h2 {
+            margin: 0 0 14px 0;
+            color: var(--teal-dark);
+            font-size: 1.3rem;
+        }
+
+        .changed-grid {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .changed-item {
+            padding: 10px 8px;
+            border-radius: 9px;
+            background-color: var(--white);
+            text-align: left;
+        }
+
+        .changed-item i {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--maroon);
+            font-size: 1.25rem;
+        }
+
+        .changed-item strong {
+            font-size: 0.82rem;
+            line-height: 1.2;
+        }
+
+        /* ------------------------------
+           RESCUE ORDER
+        ------------------------------ */
+
+        .rescue {
+            margin-top: 26px;
+            padding: 20px 22px;
+            border: 3px solid var(--maroon);
+            border-radius: 14px;
+            background-color: var(--white);
+        }
+
+        .rescue-heading {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .rescue-icon {
+            display: flex;
+            flex: 0 0 54px;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 1.4rem;
+        }
+
+        .rescue h2 {
+            margin: 0 0 3px 0;
+            color: var(--maroon);
+            font-size: 1.35rem;
+        }
+
+        .rescue-heading p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .rescue-flow {
+            display: grid;
+            grid-template-columns:
+                minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+            gap: 8px;
+            align-items: center;
+        }
+
+        .rescue-step {
+            padding: 12px 8px;
+            border-radius: 10px;
+            background-color: var(--teal-light);
+            text-align: center;
+        }
+
+        .rescue-step .number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 7px auto;
+            border-radius: 50%;
+            background-color: var(--teal);
+            color: var(--white);
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .rescue-step strong {
+            display: block;
+            margin-bottom: 3px;
+            color: var(--teal-dark);
+            font-size: 0.86rem;
+        }
+
+        .rescue-step span {
+            display: block;
+            font-size: 0.72rem;
+            line-height: 1.2;
+        }
+
+        .rescue-arrow {
+            color: var(--orange);
+            font-size: 1rem;
+        }
+
+        /* ------------------------------
+           FINAL WARNING / CLOSING
+        ------------------------------ */
+
+        .shrink-last {
+            display: grid;
+            grid-template-columns: 58px 1fr;
+            gap: 15px;
+            align-items: center;
+            margin-top: 18px;
+            padding: 14px 16px;
+            border-radius: 10px;
+            background-color: var(--orange-light);
+        }
+
+        .shrink-last i {
+            color: var(--orange);
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        .shrink-last h3 {
+            margin: 0 0 3px 0;
+            color: var(--orange);
+            font-size: 1.05rem;
+        }
+
+        .shrink-last p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .final-line {
+            margin: 22px 0 0 0;
+            color: var(--maroon);
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        .updated {
+            margin: 0;
+            padding: 8px 10px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.88rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.78rem;
+        }
+
+        /* ------------------------------
+           RESPONSIVE
+        ------------------------------ */
+
+        @media screen and (max-width: 950px) {
+
+            .flow {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 18px;
+            }
+
+            .flow-arrow {
+                display: none;
+            }
+
+            .changed-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .rescue-flow {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .rescue-arrow {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .bkgd-page {
+                padding: 18px;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            .title-area h1 {
+                font-size: 2.2rem;
+            }
+
+            .flow {
+                grid-template-columns: 1fr;
+            }
+
+            .changed-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .rescue-flow {
+                grid-template-columns: 1fr;
+            }
+
+            .rescue-heading {
+                align-items: flex-start;
+            }
+
+            .shrink-last {
+                grid-template-columns: 1fr;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+
+        <div class="bkgd-page">
+
+            <div class="page">
+
+                <!-- TITLE -->
+
+                <header class="title-area">
+
+                    <h1>
+                        <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+                        Fit It on One Page
+                    </h1>
+
+                    <p class="subtitle">
+                        <strong>Plan before you shrink.</strong>
+                        If your learning aid does not fit on one page,
+                        fix the content and structure before making everything smaller.
+                    </p>
+
+                </header>
+
+
+                <!-- VISUAL FLOW -->
+
+                <section class="flow" aria-label="Four-stage process for fitting information on one page">
+
+
+                    <!-- STEP 1 -->
+
+                    <article class="step-card">
+
+                        <div class="step-header">
+
+                            <div class="step-icon">
+                                <i class="fa-solid fa-file-circle-exclamation" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+
+                                <span class="step-number">
+                                    Step 1
+                                </span>
+
+                                <h2>
+                                    Too Much
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="step-intro">
+                            A crowded page usually means the document is trying to do too much.
+                        </p>
+
+                        <div class="mini-page overloaded" aria-hidden="true">
+
+                            <div class="mini-title">
+                                ACCESSIBLE DOCUMENT DESIGN
+                            </div>
+
+                            <div class="mini-heading">What Is It?</div>
+
+                            <div class="text-line"></div>
+                            <div class="text-line"></div>
+                            <div class="text-line medium"></div>
+
+                            <div class="mini-heading">Typography</div>
+
+                            <div class="text-line"></div>
+                            <div class="text-line"></div>
+
+                            <div class="mini-heading">Color</div>
+
+                            <div class="text-line"></div>
+                            <div class="text-line medium"></div>
+
+                            <div class="mini-heading">Headings</div>
+
+                            <div class="text-line"></div>
+                            <div class="text-line"></div>
+
+                            <div class="mini-heading">White Space</div>
+
+                            <div class="text-line"></div>
+                            <div class="text-line short"></div>
+
+                            <div class="mini-heading">Examples</div>
+
+                            <div class="text-line"></div>
+                            <div class="text-line"></div>
+                            <div class="text-line medium"></div>
+
+                            <div class="mini-heading">More Tips</div>
+
+                            <div class="text-line"></div>
+                            <div class="text-line"></div>
+
+                        </div>
+
+                        <div class="warning">
+                            The problem is not the page size. The page is trying to do too much.
+                        </div>
+
+                    </article>
+
+
+                    <div class="flow-arrow" aria-hidden="true">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+
+                    <!-- STEP 2 -->
+
+                    <article class="step-card">
+
+                        <div class="step-header">
+
+                            <div class="step-icon">
+                                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+
+                                <span class="step-number">
+                                    Step 2
+                                </span>
+
+                                <h2>
+                                    Prioritize
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="step-intro">
+                            Decide which information actually earns space on the page.
+                        </p>
+
+                        <div class="priority-stack">
+
+                            <section class="priority-box">
+
+                                <h3>
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                    Must Have
+                                </h3>
+
+                                <ul>
+                                    <li>Clear purpose</li>
+                                    <li>Core concepts</li>
+                                    <li>Useful explanation</li>
+                                    <li>Meaningful visual</li>
+                                    <li>Help applying the ideas</li>
+                                </ul>
+
+                            </section>
+
+                            <section class="priority-box helpful">
+
+                                <h3>
+                                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                                    Helpful
+                                </h3>
+
+                                <ul>
+                                    <li>Extra example</li>
+                                    <li>Additional detail</li>
+                                    <li>Background information</li>
+                                </ul>
+
+                            </section>
+
+                            <section class="priority-box cut">
+
+                                <h3>
+                                    <i class="fa-solid fa-scissors" aria-hidden="true"></i>
+                                    Cut or Combine
+                                </h3>
+
+                                <ul>
+                                    <li>Repeated explanations</li>
+                                    <li>Long introductions</li>
+                                    <li>Extra concepts</li>
+                                    <li>Decorative content</li>
+                                </ul>
+
+                            </section>
+
+                        </div>
+
+                    </article>
+
+
+                    <div class="flow-arrow" aria-hidden="true">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+
+                    <!-- STEP 3 -->
+
+                    <article class="step-card">
+
+                        <div class="step-header">
+
+                            <div class="step-icon">
+                                <i class="fa-solid fa-object-group" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+
+                                <span class="step-number">
+                                    Step 3
+                                </span>
+
+                                <h2>
+                                    Group &amp; Plan
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="step-intro">
+                            Give related ideas a home before you fill the page with text.
+                        </p>
+
+                        <div class="blueprint-page" aria-hidden="true">
+
+                            <div class="zone zone-title">
+                                TITLE + PURPOSE
+                            </div>
+
+                            <div class="zone-grid">
+
+                                <div class="zone zone-main">
+                                    CONCEPT 1<br>
+                                    Explain + Show
+                                </div>
+
+                                <div class="zone zone-main">
+                                    CONCEPT 2<br>
+                                    Explain + Show
+                                </div>
+
+                                <div class="zone zone-main">
+                                    CONCEPT 3<br>
+                                    Explain + Show
+                                </div>
+
+                                <div class="zone zone-main">
+                                    CONCEPT 4<br>
+                                    Explain + Show
+                                </div>
+
+                            </div>
+
+                            <div class="zone zone-use">
+                                HOW TO USE THESE IDEAS
+                            </div>
+
+                            <div class="zone zone-source">
+                                SOURCES / SUPPORTING DETAILS
+                            </div>
+
+                        </div>
+
+                        <div class="blueprint-notes">
+
+                            <div class="blueprint-note">
+                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                <span>Group related content.</span>
+                            </div>
+
+                            <div class="blueprint-note">
+                                <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                                <span>Give important content more room.</span>
+                            </div>
+
+                            <div class="blueprint-note">
+                                <i class="fa-regular fa-square" aria-hidden="true"></i>
+                                <span>Reserve white space on purpose.</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <div class="flow-arrow" aria-hidden="true">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+
+                    <!-- STEP 4 -->
+
+                    <article class="step-card">
+
+                        <div class="step-header">
+
+                            <div class="step-icon">
+                                <i class="fa-solid fa-file-circle-check" aria-hidden="true"></i>
+                            </div>
+
+                            <div>
+
+                                <span class="step-number">
+                                    Step 4
+                                </span>
+
+                                <h2>
+                                    Build
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+                        <p class="step-intro">
+                            Fill the planned spaces with concise text and useful visuals.
+                        </p>
+
+                        <div class="finished-page">
+
+                            <h3>
+                                Accessible Typography
+                            </h3>
+
+                            <p class="finished-deck">
+                                Make text easier for more readers to use.
+                            </p>
+
+                            <div class="concept-grid">
+
+                                <div class="concept-box">
+
+                                    <strong>FONT</strong>
+
+                                    <div class="concept-visual">
+                                        Aa
+                                    </div>
+
+                                    <p>
+                                        Choose a clear, readable typeface.
+                                    </p>
+
+                                </div>
+
+                                <div class="concept-box">
+
+                                    <strong>SIZE</strong>
+
+                                    <div class="concept-visual">
+                                        A&nbsp;&nbsp;A
+                                    </div>
+
+                                    <p>
+                                        Use text large enough to read comfortably.
+                                    </p>
+
+                                </div>
+
+                                <div class="concept-box">
+
+                                    <strong>SPACING</strong>
+
+                                    <div class="concept-visual">
+                                        &harr;
+                                    </div>
+
+                                    <p>
+                                        Leave room between lines and sections.
+                                    </p>
+
+                                </div>
+
+                                <div class="concept-box">
+
+                                    <strong>CONTRAST</strong>
+
+                                    <div class="concept-visual">
+                                        ◐
+                                    </div>
+
+                                    <p>
+                                        Keep text distinct from its background.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="quick-check">
+
+                                <strong>
+                                    QUICK CHECK
+                                </strong>
+
+                                <ul>
+                                    <li>Can I read it easily?</li>
+                                    <li>Is contrast strong?</li>
+                                    <li>Is spacing generous?</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="mini-sources">
+                                Sources
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- NOTICE WHAT CHANGED -->
+
+                <section class="changed">
+
+                    <h2>
+                        Notice What Changed
+                    </h2>
+
+                    <div class="changed-grid">
+
+                        <div class="changed-item">
+                            <i class="fa-solid fa-minus" aria-hidden="true"></i>
+                            <strong>Fewer Concepts</strong>
+                        </div>
+
+                        <div class="changed-item">
+                            <i class="fa-solid fa-scissors" aria-hidden="true"></i>
+                            <strong>Shorter Explanations</strong>
+                        </div>
+
+                        <div class="changed-item">
+                            <i class="fa-solid fa-object-group" aria-hidden="true"></i>
+                            <strong>Related Ideas Grouped</strong>
+                        </div>
+
+                        <div class="changed-item">
+                            <i class="fa-regular fa-image" aria-hidden="true"></i>
+                            <strong>Visuals Carry Information</strong>
+                        </div>
+
+                        <div class="changed-item">
+                            <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                            <strong>White Space Remains</strong>
+                        </div>
+
+                        <div class="changed-item">
+                            <i class="fa-solid fa-text-height" aria-hidden="true"></i>
+                            <strong>Text Stays Readable</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RESCUE ORDER -->
+
+                <section class="rescue">
+
+                    <div class="rescue-heading">
+
+                        <div class="rescue-icon">
+                            <i class="fa-solid fa-life-ring" aria-hidden="true"></i>
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                When Your Page Is Too Full
+                            </h2>
+
+                            <p>
+                                Try these strategies in order before you start shrinking.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="rescue-flow">
+
+                        <div class="rescue-step">
+
+                            <div class="number">1</div>
+
+                            <strong>Cut</strong>
+
+                            <span>
+                                repetition and unnecessary background
+                            </span>
+
+                        </div>
+
+                        <div class="rescue-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+
+                        <div class="rescue-step">
+
+                            <div class="number">2</div>
+
+                            <strong>Shorten</strong>
+
+                            <span>
+                                long explanations
+                            </span>
+
+                        </div>
+
+                        <div class="rescue-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+
+                        <div class="rescue-step">
+
+                            <div class="number">3</div>
+
+                            <strong>Combine</strong>
+
+                            <span>
+                                related information
+                            </span>
+
+                        </div>
+
+                        <div class="rescue-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+
+                        <div class="rescue-step">
+
+                            <div class="number">4</div>
+
+                            <strong>Show</strong>
+
+                            <span>
+                                information with a useful visual or list
+                            </span>
+
+                        </div>
+
+                        <div class="rescue-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+
+                        <div class="rescue-step">
+
+                            <div class="number">5</div>
+
+                            <strong>Narrow</strong>
+
+                            <span>
+                                the number of concepts
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="shrink-last">
+
+                        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+
+                        <div>
+
+                            <h3>
+                                Shrinking Comes Last
+                            </h3>
+
+                            <p>
+                                Don&rsquo;t solve a content problem by creating a readability problem.
+                                Keep the required font, margins, spacing, and other specifications intact.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- FINAL LINE -->
+
+                <p class="final-line">
+                    Don&rsquo;t make everything smaller. Make the content smarter.
+                </p>
+
+            </div>
+
+
+            <!-- LAST UPDATED -->
+
+            <p class="updated">
+
+                <time datetime="2026-09-08">
+                    Last Updated September 8, 2026&nbsp;&nbsp;&nbsp;
+                </time>
+
+            </p>
+
+        </div>
+
+
+        <!-- CREDIT -->
+
+        <p class="credit">
+            &copy; 2026 Traci Gardner. Available under a Creative Commons
+            Attribution-NonCommercial Share-Alike 4.0 International License.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
