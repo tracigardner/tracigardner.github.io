@@ -500,5 +500,27 @@
     <p style="font-size: 14pt;margin-top: 12px;color: #ffffff;background-color: #385d65;font-weight: bold;text-align: right;"><time datetime="2026-08-21">Last Updated August 21, 2026&nbsp;&nbsp;&nbsp;</time></p>
 
 </body>
+<script>
+    (function () {
+        const parentOrigin = "https://www.tengrrl.com";
+
+        function sendHeight() {
+            const height = document.documentElement.scrollHeight;
+
+            window.parent.postMessage(
+                {
+                    type: "tsc-visual-resize",
+                    height: height
+                },
+                parentOrigin
+            );
+        }
+
+        window.addEventListener("load", sendHeight);
+
+        const resizeObserver = new ResizeObserver(sendHeight);
+        resizeObserver.observe(document.documentElement);
+    })();
+</script>
 
 </html>
