@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +16,7 @@
     <!-- Newsletter CSS -->
     <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
     <link href="../../../-css/ptw.css" rel="stylesheet" type="text/css">
+
     <style>
         body,
         .footer {
@@ -39,44 +41,191 @@
         h3 {
             font-weight: bold;
         }
+
+        /* Heading icons */
+
+        .heading-with-icon {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .heading-with-icon h3 {
+            margin: 0;
+        }
+
+        .heading-icon {
+            display: flex;
+            flex: 0 0 46px;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: #861f41;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .heading-icon.teal {
+            background-color: #508590;
+        }
+
+        .heading-icon.orange {
+            background-color: #c64600;
+        }
+
+        /* Key idea callout */
+
+        .key-idea {
+            margin: 18px 0;
+            padding: 12px 15px;
+            border-left: 6px solid #c64600;
+            background-color: #fcf1e8;
+            font-weight: bold;
+        }
+
+        /* Checklist / question boxes */
+
+        .article-check {
+            margin: 18px 0;
+            padding: 15px 18px;
+            border-radius: 8px;
+            background-color: #edf3f4;
+        }
+
+        .article-check h4 {
+            margin: 0 0 10px 0;
+            color: #385d65;
+            font-size: 1rem;
+        }
+
+        .article-check h4 i {
+            margin-right: 6px;
+        }
+
+        .article-check ul {
+            margin-bottom: 0;
+            padding-left: 22px;
+        }
+
+        .article-check li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Small visual sequence */
+
+        .mini-process {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 18px 0;
+            padding: 12px;
+            background-color: #f7f7f7;
+        }
+
+        .mini-process-step {
+            padding: 8px 12px;
+            border: 1px solid #508590;
+            border-radius: 6px;
+            background-color: #ffffff;
+            color: #385d65;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mini-process-arrow {
+            color: #c64600;
+            font-size: 18px;
+        }
+
+        /* Responsive adjustment */
+
+        @media screen and (max-width: 600px) {
+
+            .mini-process {
+                flex-direction: column;
+            }
+
+            .mini-process-arrow {
+                transform: rotate(90deg);
+            }
+        }
     </style>
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
     <title>Week 5 Newsletter</title>
 </head>
 
 <body>
+
     <header>
+
         <div id="mastheadsection" class="container-fluid tw-header">
+
             <div class="row justify-content-center">
+
                 <div class="col-md-12 masthead">
                     <h1 class="text-center">Week 5 Newsletter</h1>
                 </div>
+
             </div>
+
             <div class="row masthead">
+
                 <div class="col-sm-6">
                     <h2 class="text-left">Traci&rsquo;s English 3764 Course</h2>
                 </div>
+
                 <div class="col-sm-6">
                     <h2 class="text-right">September 21, 2026</h2>
                 </div>
+
             </div>
+
         </div>
+
     </header>
 
+
     <div id="welcome" class="container-fluid ptop-row">
+
         <div id="newsletter-welcome" class="row">
+
             <div id="newsletter-welcome-text" class="col-sm-12">
+
                 <p>Each week, I post a newsletter that includes details on the week&rsquo;s work and tips to help you do well on your projects.</p>
+
                 <p>This week covers how to highlight information in your documents and how to create and use visuals. You&rsquo;ll continue working on the second major project in the course.</p>
+
             </div>
+
         </div>
+
     </div>
+
+
     <div id="top-row" class="row">
+
         <div id="top-twocols" class="col-sm-12">
+
             <div id="art-one-left" class="row border-top-line">
+
                 <div class="col-sm-6">
-                    <h3><span style="font-size: 54px;float: left;margin-top: -24px;">📙</span> This Week&rsquo;s Readings</h3>
+
+                    <div class="heading-with-icon">
+
+                        <div class="heading-icon teal">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>This Week&rsquo;s Readings</h3>
+
+                    </div>
+
                     <p>Readings this week are course documents in Canvas and chapters in <em>Technical Communication</em>.</p>
 
                     <ul>
@@ -85,13 +234,29 @@
                         <li><a href="https://canvas.vt.edu/courses/235156/pages/from-definition-to-learning-aid" target="_blank">From Definition to Learning Aid</a></li>
                         <li><a href="https://canvas.vt.edu/courses/235156/pages/fit-it-on-one-page-plan-before-you-shrink" target="_blank">Fit It on One Page: Plan Before You Shrink</a></li>
                     </ul>
+
                 </div>
 
+
                 <div class="col-sm-6 border-left-line">
-                    <h3><span style="font-size: 54px;float: left;margin-top: -24px;">📝</span>Assignments This Week</h3>
-                    <p>Assignments for the week are in the Week 5 Module in Canvas.
-                    <p style="background-color: #e87722;color: #ffffff;padding-left: 3px;font-size: 1.5rem;font-weight: bold;">Due Fri, September 25<br>
-                        Grace Period ends Wed, September 30</p>
+
+                    <div class="heading-with-icon">
+
+                        <div class="heading-icon orange">
+                            <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>Assignments This Week</h3>
+
+                    </div>
+
+                    <p>Assignments for the week are in the Week 5 Module in Canvas.</p>
+
+                    <p style="background-color: #e87722;color: #ffffff;padding-left: 3px;font-size: 1.5rem;font-weight: bold;">
+                        Due Fri, September 25<br>
+                        Grace Period ends Wed, September 30
+                    </p>
+
                     <ul>
                         <li><a href="https://canvas.vt.edu/courses/235156/quizzes/697035" target="_blank">Chapter 9 Quiz</a></li>
                         <li><a href="https://canvas.vt.edu/courses/235156/quizzes/697030" target="_blank">Chapter 12 Quiz</a></li>
@@ -99,91 +264,228 @@
                         <li><a href="https://canvas.vt.edu/courses/235156/assignments/2855688/edit?quiz_lti=true" target="_blank">User Document Draft Checkpoint</a></li>
                         <li><a href="https://canvas.vt.edu/courses/235156/quizzes/697058" target="_blank">Week 5 Check-In Survey</a></li>
                     </ul>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 
     <div class="row border-top-line" id="middle-row">
+
         <div id="row-2-left" class="col-sm-12">
-            <h3><span style="font-size: 54px;float: left;">📄</span>Don&rsquo;t Shrink It&mdash;Edit It</h3>
+
+            <div class="heading-with-icon">
+
+                <div class="heading-icon">
+                    <i class="fa-solid fa-compress" aria-hidden="true"></i>
+                </div>
+
+                <h3>Don&rsquo;t Shrink It&mdash;Edit It</h3>
+
+            </div>
+
             <p>Your learning aid has to fit on one page. If it doesn&rsquo;t, your first instinct may be to make everything smaller.</p>
-            <p><span style="font-size: 54px;margin-top: -24px;float: right;transform: rotate(-75deg);">🔎</span> But tiny text and cramped spacing solve a page problem by creating a <span class="highlight">readability problem</span>.</p>
-            <p><span style="font-size: 54px;float: left;transform: rotate(225deg);">✂️</span> Before shrinking anything, cut repetition, shorten long explanations, combine related ideas, and remove information your reader doesn&rsquo;t really need.</p>
+
+            <p>But tiny text and cramped spacing solve a page problem by creating a <span class="highlight">readability problem</span>.</p>
+
+            <div class="key-idea">
+                Before shrinking anything, cut repetition, shorten long explanations, combine related ideas, and remove information your reader doesn&rsquo;t really need.
+            </div>
+
             <p>You can also let lists, tables, diagrams, or other useful visuals carry information more efficiently than another paragraph.</p>
+
             <p>If the page is still overloaded, you may simply be trying to cover too many concepts.</p>
+
             <p style="margin-bottom: 0;">When the page is too full, <strong>make the content smarter before you make the type smaller</strong>.</p>
+
         </div>
+
     </div>
+
 
     <div id="row-three" class="row border-top-line">
+
         <div id="r3-bottom-art-left" class="col-sm-6">
-            <h3><span style="font-size: 54px;float: left;margin-top: -24px;">🚧</span>A Rough Draft Should Actually Be Rough</h3>
+
+            <div class="heading-with-icon">
+
+                <div class="heading-icon teal">
+                    <i class="fa-solid fa-pencil" aria-hidden="true"></i>
+                </div>
+
+                <h3>A Rough Draft Should Actually Be Rough</h3>
+
+            </div>
 
             <p>Your rough draft should have enough content and design for you to see whether your ideas actually work together on the page.</p>
-            <p>Look for problems like these while they&rsquo;re still easy to change:</p>
-            <ul class="null">
-                <li>crowded sections</li>
-                <li>confusing organization</li>
-                <li>weak visuals</li>
-                <li>missing information</li>
-                <li>areas that take too much space</li>
-            </ul>
-            </p>
+
+            <div class="mini-process" aria-label="Draft, test, revise">
+
+                <div class="mini-process-step">
+                    Draft
+                </div>
+
+                <div class="mini-process-arrow">
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </div>
+
+                <div class="mini-process-step">
+                    Test
+                </div>
+
+                <div class="mini-process-arrow">
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </div>
+
+                <div class="mini-process-step">
+                    Revise
+                </div>
+
+            </div>
+
+            <div class="article-check">
+
+                <h4>
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    Look for problems like these:
+                </h4>
+
+                <ul>
+                    <li>crowded sections</li>
+                    <li>confusing organization</li>
+                    <li>weak visuals</li>
+                    <li>missing information</li>
+                    <li>areas that take too much space</li>
+                </ul>
+
+            </div>
+
             <p>Don&rsquo;t spend all your time polishing tiny details in a section you may later cut or redesign.</p>
+
             <p style="margin-bottom: 0;">The goal of a rough draft isn&rsquo;t perfection. It&rsquo;s to give yourself <strong>enough of a document to make meaningful revision decisions</strong>.</p>
+
         </div>
+
 
         <div id="r3-bottom-art-right" class="col-sm-6 border-left-line">
-            <h3><span style="font-size: 54px;float: left;margin-top: -24px;">🏫</span>Help Your Reader Learn Without You</h3>
+
+            <div class="heading-with-icon">
+
+                <div class="heading-icon orange">
+                    <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+                </div>
+
+                <h3>Help Your Reader Learn Without You</h3>
+
+            </div>
+
             <p>Try giving your learning aid to someone unfamiliar with the topic. Don&rsquo;t explain it first. Let the document do the work, and watch what happens.</p>
-            <p>Consider these questions:</p>
-            <ul class="null">
-                <li>Does your reader understand the concepts?</li>
-                <li>Can they tell why the ideas matter?</li>
-                <li>Can they recognize examples?</li>
-                <li>Can they figure out how to apply what they learned?</li>
-            </ul>
-            </p>
+
+            <div class="article-check">
+
+                <h4>
+                    <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+                    Test Your Learning Aid
+                </h4>
+
+                <ul>
+                    <li>Does your reader understand the concepts?</li>
+                    <li>Can they tell why the ideas matter?</li>
+                    <li>Can they recognize examples?</li>
+                    <li>Can they figure out how to apply what they learned?</li>
+                </ul>
+
+            </div>
+
             <p>If they get confused, that confusion gives you useful information about what to revise.</p>
-            <p style="margin-bottom: 0;">A successful user document shouldn&rsquo;t need its author standing beside it. <strong>The page itself should teach the reader what they need to know.</strong></p>
+
+            <div class="key-idea">
+                A successful user document shouldn&rsquo;t need its author standing beside it.
+            </div>
+
+            <p style="margin-bottom: 0;"><strong>The page itself should teach the reader what they need to know.</strong></p>
+
         </div>
-    </div>
+
     </div>
 
-    <div id=" row-four" class="row border-top-line">
+
+    <div id="row-four" class="row border-top-line">
+
         <div class="col-sm-12">
-            <h3><img src="../../../-images/newsletters/noun-question-670402-C64600.png" alt="Question Mark in a Speech Bubble" style="width: 54px;height: 54px;float: left;margin-right: 12px;"> Have Questions?</h3>
+
+            <div class="heading-with-icon">
+
+                <div class="heading-icon orange">
+                    <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+                </div>
+
+                <h3>Have Questions?</h3>
+
+            </div>
+
             <ul class="skipline" style="margin-left: 48px;">
-                <li>If you have <strong>general questions</strong> about policies, assignments, or other course issues, search
+
+                <li>
+                    If you have <strong>general questions</strong> about policies, assignments, or other course issues, search
                     <a href="https://notebook.google.com/notebook/4abe4582-e334-4e62-bf06-ca0e098bcb22?authuser=2" target="_blank">HokieBot&rsquo;s Technical Writing Notebook</a>.
                 </li>
-                <li>If you have a <strong>private question</strong>, send me a message with the Canvas Inbox.</li>
-                <li>Ask a question or make a suggestion <strong>anonymously</strong> with the <a href="https://forms.gle/jkHocRgPEh6qQ1HaA" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.</li>
+
+                <li>
+                    If you have a <strong>private question</strong>, send me a message with the Canvas Inbox.
+                </li>
+
+                <li>
+                    Ask a question or make a suggestion <strong>anonymously</strong> with the
+                    <a href="https://forms.gle/jkHocRgPEh6qQ1HaA" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.
+                </li>
 
             </ul>
+
         </div>
+
     </div>
 
 
     <div id="footer" class="container-fluid">
+
         <div id="footer-row" class="row footer-bkgd">
+
             <div class="col-sm-12" style="text-align: center;">
-                <p class="footer">© 2026 Traci Gardner. This newsletter is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.</p>
+
+                <p class="footer">
+                    &copy; 2026 Traci Gardner. This newsletter is licensed under a
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.
+                </p>
+
                 <p class="footer-divider-line"></p>
+
                 <address class="footer" style="text-align: center;">
                     Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
                 </address>
+
             </div>
+
         </div>
+
     </div>
+
     <p style="margin-top: 9px;"></p>
-    </div>
+
+
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhY6fRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
+```
