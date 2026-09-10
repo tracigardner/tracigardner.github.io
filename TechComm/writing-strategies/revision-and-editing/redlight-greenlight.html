@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Final revision dashboard for checking a learning aid before submission">
+
+    <meta name="author" content="Traci Gardner">
+
+    <title>Final Revision Dashboard: Red Light, Green Light</title>
+
+    <style>
+        :root {
+            --red: #a6192e;
+            --red-light: #fae9ec;
+            --yellow: #f7ea48;
+            --yellow-light: #fffde8;
+            --green: #287a3d;
+            --green-light: #eaf5e9;
+            --gray: #d7d7d7;
+            --dark-gray: #555555;
+            --text: #1f1f1f;
+            --white: #ffffff;
+
+            /* Footer color */
+            --teal-dark: #385d65;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background-color: var(--white);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            width: 96%;
+            height: 96%;
+            padding: 28px;
+            background-color: var(--gray);
+            background-image:
+                url("https://tracigardner.github.io/TechComm/-images/backgrounds/RS200052_20240916_Hokie_Stone_LH_0008_web-450wx300h.jpg");
+        }
+
+        .page {
+            padding: 30px;
+            background-color: var(--white);
+        }
+
+        /* ------------------------------
+           HERO
+        ------------------------------ */
+
+        .hero {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 26px;
+        }
+
+        .traffic-light {
+            width: 82px;
+            margin: 0 auto;
+            padding: 12px;
+            border-radius: 18px;
+            background-color: #26383c;
+            box-shadow: 5px 5px 0 var(--gray);
+        }
+
+        .signal {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 10px auto;
+            border-radius: 50%;
+            background-color: var(--yellow);
+        }
+
+        .signal:last-child {
+            margin-bottom: 0;
+        }
+
+        .signal.red {
+            background-color: var(--red);
+        }
+
+        .signal.green {
+            background-color: var(--green);
+        }
+
+        .hero-copy h1 {
+            margin: 0;
+            color: var(--red);
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            line-height: 1;
+        }
+
+        .hero-copy h2 {
+            margin: 7px 0 10px 0;
+            color: var(--green);
+            font-size: clamp(1.4rem, 3vw, 2.1rem);
+            line-height: 1.1;
+        }
+
+        .hero-copy p {
+            max-width: 800px;
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        .red-word {
+            color: var(--red);
+            font-weight: bold;
+        }
+
+        .green-word {
+            color: var(--green);
+            font-weight: bold;
+        }
+
+
+        /* ------------------------------
+           DASHBOARD
+        ------------------------------ */
+
+        .dashboard-heading {
+            margin: 0 0 14px 0;
+            color: var(--text);
+            font-size: 1.4rem;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .dashboard-card {
+            overflow: hidden;
+            border: 2px solid var(--dark-gray);
+            border-radius: 13px;
+            background-color: var(--white);
+        }
+
+        .card-question {
+            padding: 16px 18px;
+            border-bottom: 2px solid var(--gray);
+            background-color: var(--white);
+        }
+
+        .card-question h3 {
+            margin: 0 0 4px 0;
+            color: var(--text);
+            font-size: 1.15rem;
+            text-transform: uppercase;
+        }
+
+        .card-question p {
+            margin: 0;
+            font-size: 0.92rem;
+            font-weight: bold;
+        }
+
+        /* ------------------------------
+           RED / GREEN CHECKS
+        ------------------------------ */
+
+        .signal-checks {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .red-check,
+        .green-check {
+            padding: 14px 16px;
+        }
+
+        .red-check {
+            border-right: 1px solid var(--gray);
+            border-top: 6px solid var(--red);
+            background-color: var(--red-light);
+        }
+
+        .green-check {
+            border-top: 6px solid var(--green);
+            background-color: var(--green-light);
+        }
+
+        .signal-label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 0.82rem;
+            font-weight: bold;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .red-check .signal-label {
+            color: var(--red);
+        }
+
+        .green-check .signal-label {
+            color: var(--green);
+        }
+
+        .red-check p,
+        .green-check p {
+            margin: 0;
+            font-size: 0.84rem;
+        }
+
+        /* ------------------------------
+           BASICS
+        ------------------------------ */
+
+        .basics {
+            margin-top: 24px;
+            padding: 20px 22px;
+        }
+
+        .basics-header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 14px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .stop-sign {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 58px;
+            height: 58px;
+            background-color: var(--red);
+            color: var(--white);
+            font-size: 0.72rem;
+            font-weight: bold;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            clip-path: polygon(30% 0,
+                    70% 0,
+                    100% 30%,
+                    100% 70%,
+                    70% 100%,
+                    30% 100%,
+                    0 70%,
+                    0 30%);
+        }
+
+        .basics h2 {
+            margin: 0 0 3px 0;
+            color: var(--red);
+            font-size: 1.3rem;
+        }
+
+        .basics-header p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .basics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 9px 16px;
+        }
+
+        .basic-item {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            gap: 7px;
+            align-items: start;
+            font-size: 0.84rem;
+        }
+
+        .checkbox {
+            width: 17px;
+            height: 17px;
+            margin-top: 1px;
+            border: 2px solid var(--dark-gray);
+            border-radius: 2px;
+            background-color: var(--white);
+        }
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        .updated {
+            margin: 0;
+            padding: 8px 10px;
+            background-color: var(--dark-gray);
+            color: var(--white);
+            font-size: 0.88rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.78rem;
+        }
+
+        /* ------------------------------
+           RESPONSIVE
+        ------------------------------ */
+
+        @media screen and (max-width: 800px) {
+
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .basics-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .bkgd-page {
+                width: 100%;
+                height: auto;
+                padding: 18px;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            .hero {
+                grid-template-columns: 85px 1fr;
+                gap: 16px;
+                padding: 18px;
+            }
+
+            .traffic-light {
+                width: 68px;
+                padding: 10px;
+            }
+
+            .signal {
+                width: 42px;
+                height: 42px;
+                margin-bottom: 8px;
+            }
+
+            .directions {
+                grid-template-columns: 1fr;
+            }
+
+            .signal-checks {
+                grid-template-columns: 1fr;
+            }
+
+            .red-check {
+                border-right: none;
+                border-bottom: 1px solid var(--gray);
+            }
+
+            .basics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+
+        <div class="bkgd-page">
+
+            <div class="page">
+
+                <!-- HERO -->
+
+                <header class="hero">
+
+                    <div class="traffic-light" aria-hidden="true">
+
+                        <div class="signal red"></div>
+
+                        <div class="signal"></div>
+
+                        <div class="signal green"></div>
+
+                    </div>
+
+                    <div class="hero-copy">
+
+                        <h1>
+                            The Final Revision Dashboard
+                        </h1>
+
+                        <h2>
+                            Red Light, Green Light: Is Your Learning Aid Ready?
+                        </h2>
+
+                        <p>
+                            Give your document six quick tests before you submit.
+                            A <span class="red-word">red light</span> means stop and revise.
+                            A <span class="green-word">green light</span> means the document
+                            is meeting the goal.
+                        </p>
+
+                    </div>
+
+                </header>
+
+
+
+                <!-- DASHBOARD -->
+
+                <section>
+                    <div class="dashboard">
+
+
+                        <!-- USEFUL -->
+
+                        <article class="dashboard-card">
+
+                            <div class="card-question">
+
+                                <h3>
+                                    Useful?
+                                </h3>
+
+                                <p>
+                                    Can readers understand the concepts and use them?
+                                </p>
+
+                            </div>
+
+                            <div class="signal-checks">
+
+                                <div class="red-check">
+
+                                    <span class="signal-label">
+                                        Red Light &mdash; Revise
+                                    </span>
+
+                                    <p>
+                                        Information is incomplete, unclear, or mostly definitions
+                                        without practical application.
+                                    </p>
+
+                                </div>
+
+                                <div class="green-check">
+
+                                    <span class="signal-label">
+                                        Green Light &mdash; Go
+                                    </span>
+
+                                    <p>
+                                        Information is accurate, relevant, appropriately detailed,
+                                        and helps readers apply the concepts.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- VISUAL -->
+
+                        <article class="dashboard-card">
+
+                            <div class="card-question">
+
+                                <h3>
+                                    Visual?
+                                </h3>
+
+                                <p>
+                                    Do the visuals help communicate the ideas?
+                                </p>
+
+                            </div>
+
+                            <div class="signal-checks">
+
+                                <div class="red-check">
+
+                                    <span class="signal-label">
+                                        Red Light &mdash; Revise
+                                    </span>
+
+                                    <p>
+                                        Visuals are decorative, unclear, poorly labeled,
+                                        or disconnected from the explanation.
+                                    </p>
+
+                                </div>
+
+                                <div class="green-check">
+
+                                    <span class="signal-label">
+                                        Green Light &mdash; Go
+                                    </span>
+
+                                    <p>
+                                        Visuals and text work together to help readers
+                                        understand and apply the concepts.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- SCANNABLE -->
+
+                        <article class="dashboard-card">
+
+                            <div class="card-question">
+
+                                <h3>
+                                    Scannable?
+                                </h3>
+
+                                <p>
+                                    Can readers find what they need quickly?
+                                </p>
+
+                            </div>
+
+                            <div class="signal-checks">
+
+                                <div class="red-check">
+
+                                    <span class="signal-label">
+                                        Red Light &mdash; Revise
+                                    </span>
+
+                                    <p>
+                                        The page feels dense, important information gets lost,
+                                        or related information is difficult to locate.
+                                    </p>
+
+                                </div>
+
+                                <div class="green-check">
+
+                                    <span class="signal-label">
+                                        Green Light &mdash; Go
+                                    </span>
+
+                                    <p>
+                                        Clear hierarchy, grouping, alignment, typography,
+                                        and white space make the page easy to scan.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- READER-CENTERED -->
+
+                        <article class="dashboard-card">
+
+                            <div class="card-question">
+
+                                <h3>
+                                    Reader-Centered?
+                                </h3>
+
+                                <p>
+                                    Does this work for a non-expert employee?
+                                </p>
+
+                            </div>
+
+                            <div class="signal-checks">
+
+                                <div class="red-check">
+
+                                    <span class="signal-label">
+                                        Red Light &mdash; Revise
+                                    </span>
+
+                                    <p>
+                                        The document assumes too much knowledge
+                                        or gives readers too little guidance.
+                                    </p>
+
+                                </div>
+
+                                <div class="green-check">
+
+                                    <span class="signal-label">
+                                        Green Light &mdash; Go
+                                    </span>
+
+                                    <p>
+                                        Explanations, examples, and presentation anticipate
+                                        what readers need to understand or do.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- CLEAR -->
+
+                        <article class="dashboard-card">
+
+                            <div class="card-question">
+
+                                <h3>
+                                    Clear?
+                                </h3>
+
+                                <p>
+                                    Is the language easy to understand?
+                                </p>
+
+                            </div>
+
+                            <div class="signal-checks">
+
+                                <div class="red-check">
+
+                                    <span class="signal-label">
+                                        Red Light &mdash; Revise
+                                    </span>
+
+                                    <p>
+                                        Wordiness, jargon, vague language, dense text,
+                                        or complicated sentences interfere with understanding.
+                                    </p>
+
+                                </div>
+
+                                <div class="green-check">
+
+                                    <span class="signal-label">
+                                        Green Light &mdash; Go
+                                    </span>
+
+                                    <p>
+                                        Writing is concise, concrete, reader-friendly,
+                                        and effectively chunked.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- ACCESSIBLE -->
+
+                        <article class="dashboard-card">
+
+                            <div class="card-question">
+
+                                <h3>
+                                    Accessible?
+                                </h3>
+
+                                <p>
+                                    Can different readers comfortably read and use it?
+                                </p>
+
+                            </div>
+
+                            <div class="signal-checks">
+
+                                <div class="red-check">
+
+                                    <span class="signal-label">
+                                        Red Light &mdash; Revise
+                                    </span>
+
+                                    <p>
+                                        Font size, typography, contrast, alignment, or visual
+                                        presentation may make the page difficult to use.
+                                    </p>
+
+                                </div>
+
+                                <div class="green-check">
+
+                                    <span class="signal-label">
+                                        Green Light &mdash; Go
+                                    </span>
+
+                                    <p>
+                                        Typography, contrast, alignment, and visual presentation
+                                        support readability and access.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- BASICS -->
+
+                <section class="basics">
+
+                    <div class="basics-header">
+
+                        <div class="stop-sign" aria-hidden="true">
+                            Stop
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                Before You Go: Check the Basics
+                            </h2>
+
+                            <p>
+                                Quality checks come after the assignment&rsquo;s minimum requirements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="basics-grid">
+
+                        <div class="basic-item">
+                            <span class="checkbox" aria-hidden="true"></span>
+                            <span>One page, front only.</span>
+                        </div>
+
+                        <div class="basic-item">
+                            <span class="checkbox" aria-hidden="true"></span>
+                            <span>A coherent group of related concepts.</span>
+                        </div>
+
+                        <div class="basic-item">
+                            <span class="checkbox" aria-hidden="true"></span>
+                            <span>A meaningful visual component.</span>
+                        </div>
+
+                        <div class="basic-item">
+                            <span class="checkbox" aria-hidden="true"></span>
+                            <span>Appropriate for the assigned audience and task.</span>
+                        </div>
+
+                        <div class="basic-item">
+                            <span class="checkbox" aria-hidden="true"></span>
+                            <span>Borrowed information and visuals documented.</span>
+                        </div>
+
+                        <div class="basic-item">
+                            <span class="checkbox" aria-hidden="true"></span>
+                            <span>Saved as a PDF for submission.</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+            </div>
+
+            <!-- LAST UPDATED -->
+
+            <p class="updated">
+
+                <time datetime="2026-09-10">
+                    Last Updated September 10, 2026&nbsp;&nbsp;&nbsp;
+                </time>
+
+            </p>
+
+        </div>
+
+        <!-- CREDIT -->
+
+        <p class="credit">
+            &copy; 2026 Traci Gardner. Available under a Creative Commons
+            Attribution-NonCommercial Share-Alike 4.0 International License.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
