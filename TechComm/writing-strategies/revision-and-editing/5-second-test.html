@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Quick reference for testing whether a one-page learning aid is easy to scan and use">
+
+    <meta name="author" content="Traci Gardner">
+
+    <title>The 5-Second Test: What Can a Reader Find?</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-light: #f2e8ec;
+            --orange: #c64600;
+            --orange-light: #fcf1e8;
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --gray: #e5e1e6;
+            --text: #1f1f1f;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background-color: var(--white);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            width: 100%;
+            padding: 28px;
+            background-color: var(--teal);
+            background-image:
+                url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
+            background-size: 600px;
+        }
+
+        .page {
+            padding: 30px;
+            background-color: var(--white);
+        }
+
+        /* ------------------------------
+           HERO
+        ------------------------------ */
+
+        .hero {
+            display: grid;
+            grid-template-columns: 170px 1fr;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .timer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            border: 7px solid var(--teal);
+            border-radius: 50%;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .timer .five {
+            color: var(--maroon);
+            font-size: 4.7rem;
+            font-weight: bold;
+            line-height: 0.85;
+        }
+
+        .timer .seconds {
+            margin-top: 7px;
+            color: var(--maroon);
+            font-size: 0.9rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .hero-copy h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1;
+        }
+
+        .hero-copy h2 {
+            margin: 4px 0 10px 0;
+            color: var(--teal);
+            font-size: clamp(1.5rem, 3vw, 2.3rem);
+            line-height: 1.05;
+        }
+
+        .hero-copy p {
+            margin: 0;
+            max-width: 760px;
+            font-size: 1.05rem;
+        }
+
+        /* ------------------------------
+           PROCESS
+        ------------------------------ */
+
+        .process {
+            margin-bottom: 24px;
+            padding: 18px;
+            border-radius: 14px;
+            background-color: var(--teal-light);
+        }
+
+        .process h2 {
+            margin: 0 0 14px 0;
+            color: var(--teal-dark);
+            font-size: 1.3rem;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .process-step {
+            padding: 14px;
+            border-radius: 10px;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .process-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            margin: 0 auto 8px auto;
+            border-radius: 50%;
+            background-color: var(--teal-light);
+            color: var(--teal-dark);
+            font-size: 1.45rem;
+        }
+
+        .process-number {
+            display: block;
+            margin-bottom: 3px;
+            color: var(--maroon);
+            font-size: 0.78rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .process-step strong {
+            display: block;
+            color: var(--teal-dark);
+            font-size: 0.95rem;
+        }
+
+        .process-step p {
+            margin: 5px 0 0 0;
+            font-size: 0.82rem;
+        }
+
+        /* ------------------------------
+           MAIN GRID
+        ------------------------------ */
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+            gap: 20px;
+            align-items: start;
+        }
+
+        /* ------------------------------
+           QUESTIONS
+        ------------------------------ */
+
+        .questions-heading,
+        .checklist-heading {
+            margin: 0 0 12px 0;
+            color: var(--maroon);
+            font-size: 1.25rem;
+        }
+
+        .question-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .question-card {
+            display: grid;
+            grid-template-columns: 44px 56px 1fr;
+            gap: 10px;
+            align-items: center;
+            padding: 12px 14px;
+            border-radius: 10px;
+            background-color: var(--maroon-light);
+        }
+
+        .question-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-weight: bold;
+        }
+
+        .question-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: var(--white);
+            color: var(--teal-dark);
+            font-size: 1.4rem;
+        }
+
+        .question-copy h3 {
+            margin: 0 0 3px 0;
+            color: var(--maroon);
+            font-size: 1rem;
+        }
+
+        .question-copy p {
+            margin: 0;
+            font-size: 0.86rem;
+        }
+
+        /* ------------------------------
+           CHECKLIST
+        ------------------------------ */
+
+        .check-panel {
+            padding: 18px;
+            border: 2px solid var(--teal);
+            border-radius: 12px;
+            background-color: var(--white);
+        }
+
+        .check-panel p {
+            margin: 0 0 14px 0;
+            font-size: 0.9rem;
+        }
+
+        .check-item {
+            display: grid;
+            grid-template-columns: 22px 1fr;
+            gap: 8px;
+            align-items: start;
+            margin-bottom: 10px;
+            font-size: 0.86rem;
+        }
+
+        .box {
+            width: 18px;
+            height: 18px;
+            margin-top: 1px;
+            border: 2px solid var(--teal);
+            border-radius: 2px;
+        }
+
+        .check-item strong {
+            color: var(--text);
+        }
+
+        /* ------------------------------
+           GOAL
+        ------------------------------ */
+
+        .goal {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 22px;
+            padding: 18px 20px;
+            border-radius: 12px;
+            background-color: var(--orange-light);
+        }
+
+        .goal-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: var(--orange);
+            color: var(--white);
+            font-size: 1.7rem;
+        }
+
+        .goal h2 {
+            margin: 0 0 4px 0;
+            color: var(--orange);
+            font-size: 1.2rem;
+        }
+
+        .goal p {
+            margin: 0;
+            font-size: 0.92rem;
+        }
+
+        .closing-line {
+            margin: 16px 0 0 0;
+            color: var(--maroon);
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        .updated {
+            margin: 0;
+            padding: 8px 10px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.88rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.78rem;
+        }
+
+        /* ------------------------------
+           RESPONSIVE
+        ------------------------------ */
+
+        @media screen and (max-width: 850px) {
+
+            .process-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body {
+                padding: 10px;
+            }
+
+            .bkgd-page {
+                padding: 18px;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .timer {
+                width: 120px;
+                height: 120px;
+            }
+
+            .timer .five {
+                font-size: 3.7rem;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .question-card {
+                grid-template-columns: 38px 48px 1fr;
+            }
+
+            .question-icon {
+                width: 46px;
+                height: 46px;
+            }
+
+            .goal {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .goal-icon {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+
+        <div class="bkgd-page">
+
+            <div class="page">
+
+                <!-- HERO -->
+
+                <header class="hero">
+
+                    <div class="timer" aria-hidden="true">
+                        <img src="https://tracigardner.github.io/TechComm/-images/5-second-stopwatch.png" alt="Stopwatch">
+                    </div>
+
+                    <div class="hero-copy">
+
+                        <h1>
+                            The 5-Second Test
+                        </h1>
+
+                        <h2>
+                            What Can a Reader Find?
+                        </h2>
+
+                        <p>
+                            Look at your document for five seconds.
+                            Don&rsquo;t read closely&mdash;just scan.
+                            Then look away and ask what you noticed.
+                        </p>
+
+                    </div>
+
+                </header>
+
+
+                <!-- PROCESS -->
+
+                <section class="process">
+
+                    <h2>
+                        How to Do the 5-Second Test
+                    </h2>
+
+                    <div class="process-grid">
+
+                        <div class="process-step">
+
+                            <div class="process-icon">
+                                <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                            </div>
+
+                            <span class="process-number">
+                                Step 1
+                            </span>
+
+                            <strong>
+                                Look
+                            </strong>
+
+                            <p>
+                                Scan the page for five seconds.
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-step">
+
+                            <div class="process-icon">
+                                <i class="fa-regular fa-eye-slash" aria-hidden="true"></i>
+                            </div>
+
+                            <span class="process-number">
+                                Step 2
+                            </span>
+
+                            <strong>
+                                Look Away
+                            </strong>
+
+                            <p>
+                                Stop looking at the document.
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-step">
+
+                            <div class="process-icon">
+                                <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
+                            </div>
+
+                            <span class="process-number">
+                                Step 3
+                            </span>
+
+                            <strong>
+                                Assess
+                            </strong>
+
+                            <p>
+                                What was clear? What was hard to find?
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-step">
+
+                            <div class="process-icon">
+                                <i class="fa-solid fa-rotate" aria-hidden="true"></i>
+                            </div>
+
+                            <span class="process-number">
+                                Step 4
+                            </span>
+
+                            <strong>
+                                Revise
+                            </strong>
+
+                            <p>
+                                Fix anything readers may miss.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- MAIN -->
+
+                <div class="main-grid">
+
+
+                    <!-- QUESTIONS -->
+
+                    <section>
+
+                        <h2 class="questions-heading">
+                            Ask Yourself These Questions
+                        </h2>
+
+                        <div class="question-list">
+
+
+                            <article class="question-card">
+
+                                <div class="question-number">
+                                    1
+                                </div>
+
+                                <div class="question-icon">
+                                    <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="question-copy">
+
+                                    <h3>
+                                        What Is This About?
+                                    </h3>
+
+                                    <p>
+                                        Can I quickly identify the main topic and purpose?
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="question-card">
+
+                                <div class="question-number">
+                                    2
+                                </div>
+
+                                <div class="question-icon">
+                                    <i class="fa-solid fa-arrow-up-wide-short" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="question-copy">
+
+                                    <h3>
+                                        What Matters Most?
+                                    </h3>
+
+                                    <p>
+                                        Is the key information easy to spot?
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="question-card">
+
+                                <div class="question-number">
+                                    3
+                                </div>
+
+                                <div class="question-icon">
+                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="question-copy">
+
+                                    <h3>
+                                        Where Would I Start?
+                                    </h3>
+
+                                    <p>
+                                        Do headings and visual cues guide me to the right place?
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="question-card">
+
+                                <div class="question-number">
+                                    4
+                                </div>
+
+                                <div class="question-icon">
+                                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="question-copy">
+
+                                    <h3>
+                                        How Is the Information Organized?
+                                    </h3>
+
+                                    <p>
+                                        Can I see which ideas belong together?
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                            <article class="question-card">
+
+                                <div class="question-number">
+                                    5
+                                </div>
+
+                                <div class="question-icon">
+                                    <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
+                                </div>
+
+                                <div class="question-copy">
+
+                                    <h3>
+                                        What Can I Do With This Information?
+                                    </h3>
+
+                                    <p>
+                                        Is it clear how the ideas can be used or applied?
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- CHECKLIST -->
+
+                    <aside class="check-panel">
+
+                        <h2 class="checklist-heading">
+                            Quick Checklist
+                        </h2>
+
+                        <p>
+                            Use these checks to see if your document is easy to scan.
+                        </p>
+
+
+                        <div class="check-item">
+
+                            <span class="box" aria-hidden="true"></span>
+
+                            <span>
+                                <strong>Title:</strong>
+                                Is the topic clear and specific?
+                            </span>
+
+                        </div>
+
+
+                        <div class="check-item">
+
+                            <span class="box" aria-hidden="true"></span>
+
+                            <span>
+                                <strong>Headings:</strong>
+                                Do they show the structure and help readers find information quickly?
+                            </span>
+
+                        </div>
+
+
+                        <div class="check-item">
+
+                            <span class="box" aria-hidden="true"></span>
+
+                            <span>
+                                <strong>Hierarchy:</strong>
+                                Does the most important information stand out?
+                            </span>
+
+                        </div>
+
+
+                        <div class="check-item">
+
+                            <span class="box" aria-hidden="true"></span>
+
+                            <span>
+                                <strong>Grouping:</strong>
+                                Are related ideas placed together?
+                            </span>
+
+                        </div>
+
+
+                        <div class="check-item">
+
+                            <span class="box" aria-hidden="true"></span>
+
+                            <span>
+                                <strong>Emphasis:</strong>
+                                Are key points easy to find?
+                            </span>
+
+                        </div>
+
+
+                        <div class="check-item">
+
+                            <span class="box" aria-hidden="true"></span>
+
+                            <span>
+                                <strong>Visuals:</strong>
+                                Do visuals help explain or apply the information?
+                            </span>
+
+                        </div>
+
+
+                        <div class="check-item">
+
+                            <span class="box" aria-hidden="true"></span>
+
+                            <span>
+                                <strong>White Space:</strong>
+                                Is there enough space to make the page easy to scan?
+                            </span>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+
+                <!-- GOAL -->
+
+                <section class="goal">
+
+                    <div class="goal-icon">
+                        <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            The Goal
+                        </h2>
+
+                        <p>
+                            A reader should be able to understand what your document is about,
+                            find the most important information, and see how to use it&mdash;all in five seconds.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <p class="closing-line">
+                    Design for the reader, not the page.
+                </p>
+
+            </div>
+
+
+            <p class="updated">
+
+                <time datetime="2026-09-10">
+                    Last Updated September 10, 2026&nbsp;&nbsp;&nbsp;
+                </time>
+
+            </p>
+
+        </div>
+
+
+        <p class="credit">
+            &copy; 2026 Traci Gardner. Available under a Creative Commons
+            Attribution-NonCommercial Share-Alike 4.0 International License.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
