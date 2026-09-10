@@ -140,28 +140,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 54px;
-            height: 54px;
+            width: 66px;
+            height: 66px;
             margin: 0 auto 8px auto;
             border-radius: 50%;
             background-color: var(--teal-light);
             color: var(--teal-dark);
-            font-size: 1.45rem;
+            font-size: 2rem;
         }
 
         .process-number {
             display: block;
             margin-bottom: 3px;
             color: var(--maroon);
-            font-size: 1.25rem;
+            font-size: 1rem;
             font-weight: bold;
-            text-transform: uppercase;
+
         }
 
         .process-step strong {
             display: block;
             color: var(--teal-dark);
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
 
         .process-step p {
@@ -181,101 +181,88 @@
         }
 
         /* ------------------------------
-           QUESTIONS
+           QUESTION + FIX SECTION
         ------------------------------ */
 
-        .questions-heading,
-        .checklist-heading {
-            margin: 0 0 12px 0;
+        .test-results {
+            margin-top: 4px;
+        }
+
+        .test-results>h2 {
+            margin: 0 0 6px 0;
             color: var(--maroon);
-            font-size: 1.25rem;
+            font-size: 1.35rem;
+        }
+
+        .test-results-intro {
+            margin: 0 0 16px 0;
+            font-size: 0.95rem;
         }
 
         .question-list {
             display: grid;
-            gap: 10px;
+            gap: 14px;
         }
 
         .question-card {
+            overflow: hidden;
+            border: 2px solid var(--teal);
+            border-radius: 12px;
+            background-color: var(--white);
+        }
+
+        .question-top {
             display: grid;
-            grid-template-columns: 44px 56px 1fr;
-            gap: 10px;
+            grid-template-columns: 44px 1fr;
+            gap: 12px;
             align-items: center;
-            padding: 12px 14px;
-            border-radius: 10px;
-            background-color: var(--maroon-light);
+            padding: 14px 16px;
         }
 
         .question-number {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 36px;
-            height: 36px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             background-color: var(--maroon);
             color: var(--white);
             font-weight: bold;
         }
 
-        .question-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 52px;
-            height: 52px;
-            border-radius: 50%;
-            background-color: var(--white);
-            color: var(--teal-dark);
-            font-size: 1.4rem;
-        }
-
         .question-copy h3 {
             margin: 0 0 3px 0;
             color: var(--maroon);
-            font-size: 1rem;
+            font-size: 1.02rem;
         }
 
         .question-copy p {
             margin: 0;
-            font-size: 0.86rem;
-        }
-
-        /* ------------------------------
-           CHECKLIST
-        ------------------------------ */
-
-        .check-panel {
-            padding: 18px;
-            border: 2px solid var(--teal);
-            border-radius: 12px;
-            background-color: var(--white);
-        }
-
-        .check-panel p {
-            margin: 0 0 14px 0;
             font-size: 0.9rem;
         }
 
-        .check-item {
-            display: grid;
-            grid-template-columns: 22px 1fr;
-            gap: 8px;
-            align-items: start;
-            margin-bottom: 10px;
-            font-size: 0.86rem;
+        .question-fix {
+            padding: 10px 16px 12px 72px;
+            border-top: 1px solid #cbdadd;
+            background-color: var(--teal-light);
+            font-size: 0.88rem;
         }
 
-        .box {
-            width: 18px;
-            height: 18px;
-            margin-top: 1px;
-            border: 2px solid var(--teal);
-            border-radius: 2px;
+        .question-fix p {
+            margin: 0;
         }
 
-        .check-item strong {
-            color: var(--text);
+        .question-fix strong {
+            color: var(--teal-dark);
+        }
+
+        .fix-copy {
+            font-size: 0.88rem;
+        }
+
+        .fix-copy strong {
+            color: var(--teal-dark);
         }
 
         /* ------------------------------
@@ -374,6 +361,15 @@
 
             .hero {
                 grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .stopwatch-wrap {
+                justify-content: flex-start;
+            }
+
+            .stopwatch-image {
+                max-width: 145px;
             }
 
             .process-grid {
@@ -397,7 +393,6 @@
             .goal-icon {
                 margin: 0 auto;
             }
-        }
     </style>
 </head>
 
@@ -431,9 +426,7 @@
 
                 <section class="process">
 
-                    <h2>
-                        How to Do the 5-Second Test
-                    </h2>
+                    <h2>Try This 5-Second Test</h2>
 
                     <div class="process-grid">
 
@@ -444,12 +437,8 @@
                             </div>
 
                             <span class="process-number">
-                                Step 1
+                                Step 1: Look
                             </span>
-
-                            <strong>
-                                Look
-                            </strong>
 
                             <p>
                                 Scan the page for five seconds.
@@ -465,13 +454,8 @@
                             </div>
 
                             <span class="process-number">
-                                Step 2
+                                Step 2: Look Away
                             </span>
-
-                            <strong>
-                                Look Away
-                            </strong>
-
                             <p>
                                 Stop looking at the document.
                             </p>
@@ -486,12 +470,8 @@
                             </div>
 
                             <span class="process-number">
-                                Step 3
+                                Step 3: Assess
                             </span>
-
-                            <strong>
-                                Assess
-                            </strong>
 
                             <p>
                                 What was clear? What was hard to find?
@@ -507,12 +487,8 @@
                             </div>
 
                             <span class="process-number">
-                                Step 4
+                                Step 4: Revise
                             </span>
-
-                            <strong>
-                                Revise
-                            </strong>
 
                             <p>
                                 Fix anything readers may miss.
@@ -530,136 +506,196 @@
                 <div class="main-grid">
 
 
-                    <!-- QUESTIONS -->
+                    <!-- QUESTION + FIX SERIES -->
 
-                    <section>
+                    <section class="test-results">
 
-                        <h2 class="questions-heading">
-                            Ask Yourself These Questions
+                        <h2>
+                            What Did You Find?
                         </h2>
+
+                        <p class="test-results-intro">
+                            If you answer <strong>no</strong> to any question, use the revision advice directly below it.
+                        </p>
 
                         <div class="question-list">
 
 
+                            <!-- 1 -->
+
                             <article class="question-card">
 
-                                <div class="question-number">
-                                    1
+                                <div class="question-top">
+
+                                    <div class="question-number">
+                                        1
+                                    </div>
+
+                                    <div class="question-copy">
+
+                                        <h3>
+                                            What Is This About?
+                                        </h3>
+
+                                        <p>
+                                            Can you quickly identify the main topic and purpose?
+                                        </p>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="question-icon">
-                                    <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
-                                </div>
+                                <div class="question-fix">
 
-                                <div class="question-copy">
-
-                                    <h3>
-                                        What Is This About?
-                                    </h3>
-
-                                    <p>
-                                        Can I quickly identify the main topic and purpose?
-                                    </p>
+                                    <div class="fix-copy">
+                                        <strong>If not, strengthen the title and opening message.</strong>
+                                        Make the topic specific and tell readers what the learning aid will help them understand or do.
+                                    </div>
 
                                 </div>
 
                             </article>
 
 
+                            <!-- 2 -->
+
                             <article class="question-card">
 
-                                <div class="question-number">
-                                    2
+                                <div class="question-top">
+
+                                    <div class="question-number">
+                                        2
+                                    </div>
+
+                                    <div class="question-copy">
+
+                                        <h3>
+                                            What Matters Most?
+                                        </h3>
+
+                                        <p>
+                                            Can you tell which information is most important?
+                                        </p>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="question-icon">
-                                    <i class="fa-solid fa-arrow-up-wide-short" aria-hidden="true"></i>
-                                </div>
+                                <div class="question-fix">
 
-                                <div class="question-copy">
-
-                                    <h3>
-                                        What Matters Most?
-                                    </h3>
-
-                                    <p>
-                                        Is the key information easy to spot?
-                                    </p>
+                                    <div class="fix-copy">
+                                        <strong> If not, strengthen the visual hierarchy.</strong>
+                                        Use size, weight, contrast, placement, and white space to make key information stand out.
+                                    </div>
 
                                 </div>
 
                             </article>
 
 
+                            <!-- 3 -->
+
                             <article class="question-card">
 
-                                <div class="question-number">
-                                    3
+                                <div class="question-top">
+
+                                    <div class="question-number">
+                                        3
+                                    </div>
+
+                                    <div class="question-copy">
+
+                                        <h3>
+                                            Where Would You Start?
+                                        </h3>
+
+                                        <p>
+                                            Do headings and visual cues give you an obvious entry point?
+                                        </p>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="question-icon">
-                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
-                                </div>
+                                <div class="question-fix">
 
-                                <div class="question-copy">
-
-                                    <h3>
-                                        Where Would I Start?
-                                    </h3>
-
-                                    <p>
-                                        Do headings and visual cues guide me to the right place?
-                                    </p>
+                                    <div class="fix-copy">
+                                        <strong> If not, improve headings and navigation.</strong>
+                                        Use descriptive headings and clear visual cues to guide readers through the page.
+                                    </div>
 
                                 </div>
 
                             </article>
 
 
+                            <!-- 4 -->
+
                             <article class="question-card">
 
-                                <div class="question-number">
-                                    4
+                                <div class="question-top">
+
+                                    <div class="question-number">
+                                        4
+                                    </div>
+
+
+                                    <div class="question-copy">
+
+                                        <h3>
+                                            What Belongs Together?
+                                        </h3>
+
+                                        <p>
+                                            Can you see which ideas are related without reading every word?
+                                        </p>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="question-icon">
-                                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
-                                </div>
+                                <div class="question-fix">
 
-                                <div class="question-copy">
-
-                                    <h3>
-                                        How Is the Information Organized?
-                                    </h3>
-
-                                    <p>
-                                        Can I see which ideas belong together?
-                                    </p>
+                                    <div class="fix-copy">
+                                        <strong> If not, improve grouping.</strong>
+                                        Use proximity, alignment, repetition, and white space to keep related information together and separate different ideas.
+                                    </div>
 
                                 </div>
 
                             </article>
 
 
+                            <!-- 5 -->
+
                             <article class="question-card">
 
-                                <div class="question-number">
-                                    5
+                                <div class="question-top">
+
+                                    <div class="question-number">
+                                        5
+                                    </div>
+
+                                    <div class="question-copy">
+
+                                        <h3>
+                                            What Can You Do With It?
+                                        </h3>
+
+                                        <p>
+                                            Can you tell how to use or apply the information?
+                                        </p>
+
+                                    </div>
+
                                 </div>
 
-                                <div class="question-icon">
-                                    <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
-                                </div>
+                                <div class="question-fix">
 
-                                <div class="question-copy">
-
-                                    <h3>
-                                        What Can I Do With This Information?
-                                    </h3>
-
-                                    <p>
-                                        Is it clear how the ideas can be used or applied?
-                                    </p>
+                                    <div class="fix-copy">
+                                        <strong> If not, strengthen the connection between explanation and application.</strong>
+                                        Use meaningful visuals, examples, labels, or brief guidance to show what the concepts look like and how to use them.
+                                    </div>
 
                                 </div>
 
@@ -670,137 +706,12 @@
                     </section>
 
 
-                    <!-- CHECKLIST -->
-
-                    <aside class="check-panel">
-
-                        <h2 class="checklist-heading">
-                            Quick Checklist
-                        </h2>
-
-                        <p>
-                            Use these checks to see if your document is easy to scan.
-                        </p>
-
-
-                        <div class="check-item">
-
-                            <span class="box" aria-hidden="true"></span>
-
-                            <span>
-                                <strong>Title:</strong>
-                                Is the topic clear and specific?
-                            </span>
-
-                        </div>
-
-
-                        <div class="check-item">
-
-                            <span class="box" aria-hidden="true"></span>
-
-                            <span>
-                                <strong>Headings:</strong>
-                                Do they show the structure and help readers find information quickly?
-                            </span>
-
-                        </div>
-
-
-                        <div class="check-item">
-
-                            <span class="box" aria-hidden="true"></span>
-
-                            <span>
-                                <strong>Hierarchy:</strong>
-                                Does the most important information stand out?
-                            </span>
-
-                        </div>
-
-
-                        <div class="check-item">
-
-                            <span class="box" aria-hidden="true"></span>
-
-                            <span>
-                                <strong>Grouping:</strong>
-                                Are related ideas placed together?
-                            </span>
-
-                        </div>
-
-
-                        <div class="check-item">
-
-                            <span class="box" aria-hidden="true"></span>
-
-                            <span>
-                                <strong>Emphasis:</strong>
-                                Are key points easy to find?
-                            </span>
-
-                        </div>
-
-
-                        <div class="check-item">
-
-                            <span class="box" aria-hidden="true"></span>
-
-                            <span>
-                                <strong>Visuals:</strong>
-                                Do visuals help explain or apply the information?
-                            </span>
-
-                        </div>
-
-
-                        <div class="check-item">
-
-                            <span class="box" aria-hidden="true"></span>
-
-                            <span>
-                                <strong>White Space:</strong>
-                                Is there enough space to make the page easy to scan?
-                            </span>
-
-                        </div>
-
-                    </aside>
-
                 </div>
 
 
-                <!-- GOAL -->
 
-                <section class="goal">
-
-                    <div class="goal-icon">
-                        <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
-                    </div>
-
-                    <div>
-
-                        <h2>
-                            The Goal
-                        </h2>
-
-                        <p>
-                            A reader should be able to understand what your document is about,
-                            find the most important information, and see how to use it&mdash;all in five seconds.
-                        </p>
-
-                    </div>
-
-                </section>
-
-
-                <p class="closing-line">
-                    Design for the reader, not the page.
-                </p>
 
             </div>
-
 
             <p class="updated">
 
@@ -810,16 +721,36 @@
 
             </p>
 
-        </div>
-
-
-        <p class="credit">
-            &copy; 2026 Traci Gardner. Available under a Creative Commons
-            Attribution-NonCommercial Share-Alike 4.0 International License.
-        </p>
 
     </main>
 
+    <p class="credit">
+        &copy; 2026 Traci Gardner. Available under a Creative Commons
+        Attribution-NonCommercial Share-Alike 4.0 International License.
+    </p>
 </body>
+
+<script>
+    (function () {
+        const parentOrigin = "https://www.tengrrl.com";
+
+        function sendHeight() {
+            const height = document.documentElement.scrollHeight;
+
+            window.parent.postMessage(
+                {
+                    type: "tsc-visual-resize",
+                    height: height
+                },
+                parentOrigin
+            );
+        }
+
+        window.addEventListener("load", sendHeight);
+
+        const resizeObserver = new ResizeObserver(sendHeight);
+        resizeObserver.observe(document.documentElement);
+    })();
+</script>
 
 </html>
