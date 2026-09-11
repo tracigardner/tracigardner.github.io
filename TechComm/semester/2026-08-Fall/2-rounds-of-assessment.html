@@ -18,15 +18,11 @@
     <style>
         :root {
             --maroon: #861f41;
-            --maroon-light: #f2e8ec;
             --orange: #c64600;
-            --orange-light: #fcf1e8;
             --teal: #508590;
             --teal-dark: #385d65;
             --teal-light: #edf3f4;
             --gray: #e5e1e6;
-            --light-gray: #f7f7f7;
-            --dark-gray: #555555;
             --text: #1f1f1f;
             --white: #ffffff;
         }
@@ -41,25 +37,33 @@
             background-color: var(--white);
             color: var(--text);
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
             line-height: 1.4;
+        }
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: var(--maroon);
+            text-decoration: underline;
         }
 
         .infographic {
             max-width: 1100px;
-            margin: 0 auto;
         }
 
         .bkgd-page {
             width: 100%;
-            padding: 28px;
-            background-color: var(--teal);
-            background-image:
-                url("https://tracigardner.github.io/TechComm/-images/backgrounds/polka-dot.png");
-            background-size: 600px;
+            margin: 0 auto;
+            border: 6px solid var(--teal-dark);
+            border-radius: 16px;
+            background-color: var(--white);
         }
 
         .page {
             padding: 30px;
+            border-radius: 16px;
             background-color: var(--white);
         }
 
@@ -89,7 +93,7 @@
         }
 
         /* ------------------------------
-           FLOW WRAPPER
+           WORKFLOW
         ------------------------------ */
 
         .workflow {
@@ -104,6 +108,7 @@
 
         .stage {
             padding: 22px;
+            border: 2px solid var(--teal-dark);
             border-radius: 16px;
             background-color: var(--teal-light);
         }
@@ -131,24 +136,37 @@
         .stage-number {
             display: block;
             margin-bottom: 2px;
-            color: var(--orange);
-            font-size: 0.78rem;
+            color: var(--maroon);
+            font-size: 0.8rem;
             font-weight: bold;
             letter-spacing: 0.08em;
             text-transform: uppercase;
         }
 
         .stage h2 {
-            margin: 0 0 4px 0;
+            margin: 0 0 5px 0;
             color: var(--teal-dark);
             font-size: 1.45rem;
             line-height: 1.15;
         }
 
         .stage-header p {
-            margin: 0;
             max-width: 850px;
+            margin: 0;
             font-size: 0.95rem;
+        }
+
+        /* ------------------------------
+           SUBSECTION HEADINGS
+        ------------------------------ */
+
+        .stage h3 {
+            margin: 20px 0 0 0;
+            padding: 7px 10px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 1.05rem;
+            line-height: 1.25;
         }
 
         /* ------------------------------
@@ -158,10 +176,6 @@
         .stage-grid {
             display: grid;
             gap: 12px;
-        }
-
-        .stage-grid.six {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
         }
 
         .stage-grid.three {
@@ -175,6 +189,7 @@
         .stage-item {
             min-width: 0;
             padding: 15px 12px;
+            border: 1px solid var(--teal-dark);
             border-radius: 11px;
             background-color: var(--white);
             text-align: center;
@@ -184,59 +199,88 @@
             display: block;
             margin-bottom: 8px;
             color: var(--maroon);
-            font-size: 1.35rem;
+            font-size: 1.3rem;
         }
 
         .stage-item strong {
             display: block;
             margin-bottom: 3px;
             color: var(--teal-dark);
-            font-size: 0.88rem;
+            font-size: 0.9rem;
         }
 
         .stage-item span {
             display: block;
-            font-size: 0.77rem;
-            line-height: 1.3;
+            font-size: 0.82rem;
+            line-height: 1.35;
         }
 
         /* ------------------------------
-           STAGE COLOR VARIATIONS
+           FEEDBACK BEFORE SUBMISSION
         ------------------------------ */
 
-        .assessment-stage {
-            background-color: var(--maroon-light);
+        .feedback-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 12px;
         }
 
-        .assessment-stage .stage-icon {
-            background-color: var(--maroon);
+        .feedback-card {
+            display: grid;
+            grid-template-columns: 38px 1fr;
+            gap: 11px;
+            align-items: start;
+            min-width: 0;
+            padding: 14px 15px;
+            border: 1px solid var(--teal-dark);
+            border-radius: 10px;
+            background-color: var(--white);
         }
 
-        .revision-stage {
-            background-color: var(--orange-light);
+        .feedback-card>i {
+            margin-top: 2px;
+            color: var(--maroon);
+            font-size: 1.2rem;
+            text-align: center;
         }
 
-        .revision-stage .stage-icon {
-            background-color: var(--orange);
+        .feedback-card strong {
+            display: block;
+            margin-bottom: 3px;
+            color: var(--teal-dark);
+            font-size: 0.9rem;
         }
 
-        .resubmit-stage {
-            background-color: var(--teal-light);
+        .feedback-card p {
+            margin: 0;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .feedback-card.ask-me {
+            grid-column: 1 / -1;
+            border-left: 6px solid var(--orange);
+        }
+
+        .feedback-card.ask-me>i {
+            color: var(--orange);
         }
 
         /* ------------------------------
-           OUTCOME STRIP
+           OUTCOMES
         ------------------------------ */
 
         .outcome-strip {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
-            margin-top: 14px;
+            margin-top: 12px;
         }
 
         .outcome {
             padding: 14px 16px;
+            border: 1px solid var(--teal-dark);
             border-radius: 10px;
             background-color: var(--white);
         }
@@ -244,12 +288,14 @@
         .outcome strong {
             display: block;
             margin-bottom: 4px;
-            font-size: 0.88rem;
+            color: var(--teal-dark);
+            font-size: 0.9rem;
         }
 
         .outcome span {
             display: block;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
+            line-height: 1.35;
         }
 
         .outcome.done {
@@ -260,69 +306,8 @@
             border-left: 6px solid var(--orange);
         }
 
-        .outcome.done strong {
-            color: var(--teal-dark);
-        }
-
         .outcome.revise strong {
             color: var(--orange);
-        }
-
-        /* ------------------------------
-           FAIRNESS NOTE
-        ------------------------------ */
-
-        .fairness {
-            display: grid;
-            grid-template-columns: 62px 1fr;
-            gap: 16px;
-            align-items: center;
-            margin-top: 26px;
-            padding: 18px 20px;
-            border-left: 7px solid var(--orange);
-            background-color: var(--orange-light);
-        }
-
-        .fairness-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background-color: var(--orange);
-            color: var(--white);
-            font-size: 1.35rem;
-        }
-
-        .fairness h2 {
-            margin: 0 0 4px 0;
-            color: var(--orange);
-            font-size: 1.15rem;
-        }
-
-        .fairness p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-
-        /* ------------------------------
-           TAKEAWAY
-        ------------------------------ */
-
-        .takeaway {
-            margin-top: 22px;
-            padding: 18px 22px;
-            border: 3px solid var(--maroon);
-            border-radius: 14px;
-            text-align: center;
-        }
-
-        .takeaway p {
-            margin: 0;
-            color: var(--maroon);
-            font-size: 1.2rem;
-            font-weight: bold;
         }
 
         /* ------------------------------
@@ -330,7 +315,7 @@
         ------------------------------ */
 
         .updated {
-            margin: 0;
+            margin: 24px 0 0 0;
             padding: 8px 10px;
             background-color: var(--teal-dark);
             color: var(--white);
@@ -341,7 +326,7 @@
 
         .credit {
             margin-top: 10px;
-            font-size: 0.78rem;
+            font-size: 0.8rem;
         }
 
         /* ------------------------------
@@ -354,10 +339,6 @@
                 padding: 10px;
             }
 
-            .bkgd-page {
-                padding: 18px;
-            }
-
             .page {
                 padding: 20px;
             }
@@ -366,9 +347,16 @@
                 font-size: 2.3rem;
             }
 
-            .stage-grid.six,
             .stage-grid.three {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .feedback-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feedback-card.ask-me {
+                grid-column: auto;
             }
         }
 
@@ -378,14 +366,9 @@
                 grid-template-columns: 1fr;
             }
 
-            .stage-grid.six,
             .stage-grid.three,
             .stage-grid.two,
             .outcome-strip {
-                grid-template-columns: 1fr;
-            }
-
-            .fairness {
                 grid-template-columns: 1fr;
             }
         }
@@ -399,7 +382,6 @@
         <div class="bkgd-page">
 
             <div class="page">
-
 
                 <!-- TITLE -->
 
@@ -418,7 +400,6 @@
 
 
                 <div class="workflow">
-
 
                     <!-- STAGE 1 -->
 
@@ -441,74 +422,166 @@
                                 </h2>
 
                                 <p>
-                                    Use the course resources to evaluate and improve your project
-                                    before instructor assessment begins.
+                                    Start by using the assignment, rubric, and examples to evaluate your work.
+                                    Then use the feedback options below if you need more help.
                                 </p>
 
                             </div>
 
                         </div>
 
-                        <div class="stage-grid six">
+
+                        <div class="stage-grid three">
 
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-list-check" aria-hidden="true"></i>
-                                <strong>Assignment</strong>
+
+                                <strong>
+                                    Assignment
+                                </strong>
+
                             </div>
 
+
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-table-cells" aria-hidden="true"></i>
-                                <strong>Rubric</strong>
+
+                                <strong>
+                                    Rubric
+                                </strong>
+
                             </div>
 
+
                             <div class="stage-item">
+
                                 <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
-                                <strong>Examples</strong>
-                            </div>
 
-                            <div class="stage-item">
-                                <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
-                                <strong>Self-Checks</strong>
-                            </div>
+                                <strong>
+                                    Examples
+                                </strong>
 
-                            <div class="stage-item">
-                                <i class="fa-solid fa-robot" aria-hidden="true"></i>
-                                <strong>AI Draft Review</strong>
-                            </div>
-
-                            <div class="stage-item">
-                                <i class="fa-solid fa-comments" aria-hidden="true"></i>
-                                <strong>Specific Questions</strong>
                             </div>
 
                         </div>
 
 
-                        <!-- FAIRNESS -->
+                        <!-- FEEDBACK BEFORE SUBMISSION -->
 
-                        <section class="fairness">
+                        <h3>
+                            Feedback Before You Submit
+                        </h3>
 
-                            <div class="fairness-icon" aria-hidden="true">
-                                <i class="fa-solid fa-scale-balanced"></i>
+
+                        <div class="feedback-grid">
+
+                            <div class="feedback-card">
+
+                                <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Writing Center
+                                    </strong>
+
+                                    <p>
+                                        Get feedback at any stage, from ideas and outlines to a complete draft.
+                                        Make an appointment through
+                                        <a href="https://vt.mywconline.com/" target="_blank">WCOnline</a>.
+                                    </p>
+
+                                </div>
+
                             </div>
 
-                            <div>
 
-                                <h2>
-                                    Why Complete Drafts Aren&rsquo;t Pre-Graded
-                                </h2>
+                            <div class="feedback-card">
 
-                                <p>
-                                    Reviewing a complete draft before submission would add another round
-                                    of assessment. Because I cannot provide that extra assessment equally
-                                    to everyone, complete-project assessment begins after submission.
-                                </p>
+                                <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Assignment Self-Check
+                                    </strong>
+
+                                    <p>
+                                        Compare your draft with the project requirements
+                                        and identify areas to revise.
+                                    </p>
+
+                                </div>
 
                             </div>
 
-                        </section>
+
+                            <div class="feedback-card">
+
+                                <i class="fa-solid fa-robot" aria-hidden="true"></i>
+
+                                <div>
+
+                                    <strong>
+                                        AI Draft Review
+                                    </strong>
+
+                                    <p>
+                                        Use the Self-Check prompt to have a chatbot compare
+                                        your draft with the assignment expectations.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="feedback-card">
+
+                                <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+
+                                <div>
+
+                                    <strong>
+                                        HokieBot
+                                    </strong>
+
+                                    <p>
+                                        Ask questions about the assignment and its requirements in the
+                                        <a href="https://notebook.google.com/notebook/4abe4582-e334-4e62-bf06-ca0e098bcb22?authuser=2" target="_blank">course&rsquo;s Gemini Notebook</a>.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="feedback-card ask-me">
+
+                                <i class="fa-solid fa-comments" aria-hidden="true"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Ask Me
+                                    </strong>
+
+                                    <p>
+                                        Ask specific questions about the assignment or choices
+                                        you&rsquo;re making. Complete-project review begins after
+                                        you submit so everyone has the same access to feedback.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </section>
+
 
                     <!-- STAGE 2 -->
 
@@ -539,54 +612,93 @@
 
                         </div>
 
+
                         <div class="stage-grid three">
 
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-                                <strong>Submit</strong>
-                                <span>Turn in the complete project.</span>
+
+                                <strong>
+                                    Submit
+                                </strong>
+
+                                <span>
+                                    Turn in the complete project.
+                                </span>
+
                             </div>
 
+
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                                <strong>Assessment</strong>
-                                <span>I review the project using the rubric.</span>
+
+                                <strong>
+                                    Assessment
+                                </strong>
+
+                                <span>
+                                    I review the project using the rubric.
+                                </span>
+
                             </div>
 
+
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-comment-dots" aria-hidden="true"></i>
-                                <strong>Feedback</strong>
-                                <span>You receive a grade and comments.</span>
+
+                                <strong>
+                                    Feedback
+                                </strong>
+
+                                <span>
+                                    You receive a grade and comments.
+                                </span>
+
                             </div>
 
                         </div>
 
+
+                        <h3>
+                            Check Your Feedback and Decide What to Do Next
+                        </h3>
+
+
                         <div class="outcome-strip">
 
                             <div class="outcome done">
+
                                 <strong>
                                     <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                                     Earn 90 or Higher
                                 </strong>
+
                                 <span>
                                     You&rsquo;ve met the standard. You&rsquo;re finished.
                                 </span>
+
                             </div>
 
+
                             <div class="outcome revise">
+
                                 <strong>
                                     <i class="fa-solid fa-rotate" aria-hidden="true"></i>
                                     Earn Below 90
                                 </strong>
+
                                 <span>
                                     Move to the revision stage.
                                 </span>
+
                             </div>
 
                         </div>
 
                     </section>
-
 
 
                     <!-- STAGE 3 -->
@@ -618,30 +730,56 @@
 
                         </div>
 
+
                         <div class="stage-grid three">
 
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-comments" aria-hidden="true"></i>
-                                <strong>Review</strong>
-                                <span>Read the rubric and feedback carefully.</span>
+
+                                <strong>
+                                    Review
+                                </strong>
+
+                                <span>
+                                    Read the rubric and feedback carefully.
+                                </span>
+
                             </div>
 
+
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-crosshairs" aria-hidden="true"></i>
-                                <strong>Focus</strong>
-                                <span>Identify the areas that need improvement.</span>
+
+                                <strong>
+                                    Focus
+                                </strong>
+
+                                <span>
+                                    Identify the areas that need improvement.
+                                </span>
+
                             </div>
 
+
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
-                                <strong>Revise</strong>
-                                <span>Make meaningful changes to the project.</span>
+
+                                <strong>
+                                    Revise
+                                </strong>
+
+                                <span>
+                                    Make meaningful changes to the project.
+                                </span>
+
                             </div>
 
                         </div>
 
                     </section>
-
 
 
                     <!-- STAGE 4 -->
@@ -673,23 +811,37 @@
 
                         </div>
 
+
                         <div class="stage-grid two">
 
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i>
-                                <strong>Resubmit</strong>
+
+                                <strong>
+                                    Resubmit
+                                </strong>
+
                                 <span>
                                     Turn in the improved version.
                                 </span>
+
                             </div>
 
+
                             <div class="stage-item">
+
                                 <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
-                                <strong>Continue if Needed</strong>
+
+                                <strong>
+                                    Continue if Needed
+                                </strong>
+
                                 <span>
                                     You may continue revising until you earn 90
                                     or the Revision Deadline arrives.
                                 </span>
+
                             </div>
 
                         </div>
@@ -697,10 +849,6 @@
                     </section>
 
                 </div>
-
-
-
-
 
             </div>
 
