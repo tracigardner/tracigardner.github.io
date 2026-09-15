@@ -74,13 +74,16 @@
 <body style="padding: 0 6px 0 6px;">
 
     <div id="topinfo"></div>
+    <!-- script -->
 
     <script>
         if (window.location !== window.parent.location) {
-            document.getElementById("demo").innerHTML = "<div id='content'></div>";
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
         } else {
-            document.getElementById("topinfo").innerHTML =
-                "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Proposal: Recommendation Report Project</h1>";
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Proposal: Recommendation Report </h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
         }
     </script>
 
@@ -106,7 +109,7 @@
 
                 <p> Write a <strong>proposal memo</strong> requesting approval to investigate a client document and prepare a recommendation report for the organization that created it. </p>
 
-                <p> You work as a consultant at <strong><span class="maroon">Maroon</span> + <span class="orange">Orange</span> Digital</strong>. Ten clients have submitted documents for evaluation of document design and usability, plain language, and accessibility. Each consultant has been asked to choose a document and propose a plan for evaluating it and developing recommendations for the client.</p>
+                <p> You work as a consultant at <strong><span class="maroon">Maroon</span> + <span class="orange">Orange</span> Digital</strong>. Ten clients have submitted documents for evaluation of their design and usability, plain language, and accessibility. Each consultant has been asked to choose a document and propose a plan for evaluating it and developing recommendations for the client.</p>
 
                 <p style="font-size: 14pt;"><img alt="" src="https://tracigardner.github.io/TechComm/-images/arrow icon.png" style="float: left;width: 36px;height: 36px;margin: 0 15px 15px 0" />Review Markel &amp; Selber Ch 8 and 16 for help with this project. Check your work with the <a class="fixme" href="#" target="_blank">Proposal Report Self-Check</a> as you work.</p>
 
@@ -128,7 +131,7 @@
 
                     <p>After working on this assignment, you should be able to:</p>
                     <ul class="skipline">
-                        <li>Write a workplace proposal that requests authorization to investigate and address a communication problem.</li>
+                        <li>Write a workplace proposal that requests authorization to investigate a communication problem for a client organization.</li>
 
                         <li>Define the problem, purpose, <span title="What the project will and will not cover." style="border-bottom: 1px dotted; cursor: help;">scope</span>, audience, and what the proposed project is expected to accomplish.</li>
 
@@ -136,11 +139,11 @@
 
                         <li>Develop a practical research plan for investigating the communication problem.</li>
 
-                        <li>Develop persuasive content that shows why the project is worthwhile, can realistically be completed, and should be completed by you.</li>
+                        <li>Develop persuasive content that shows why the project is worthwhile and realistic and why you are qualified to complete it.</li>
 
-                        <li>Include the required proposal sections: introduction, proposed program, qualifications and experience, task schedule, and bibliographic information.</li>
+                        <li>Include the required proposal sections: introduction, proposed program, qualifications and experience, task schedule, and source documentation.</li>
 
-                        <li>Create an effective <span title="A visual project schedule showing tasks, their timing, and how long each task will take." style="border-bottom: 1px dotted; cursor: help;">Gantt Chart</span> that help readers understand the project&rsquo;s schedule.</li>
+                        <li>Create an effective <span title="A visual project schedule showing tasks, their timing, and how long each task will take." style="border-bottom: 1px dotted; cursor: help;">Gantt chart</span> that helps readers understand the project&rsquo;s schedule.</li>
 
                         <li>Organize, design, write, and revise the proposal for clarity, concision, accessibility, professional tone, and workplace proposal conventions.</li>
 
@@ -149,7 +152,6 @@
                 </details>
 
             </div>
-
 
             <!-- Audience -->
             <div id="audience" class="info-section">
@@ -168,7 +170,7 @@
                     <li>who needs the eventual recommendations.</li>
                     <li>whether your plan and timetable are realistic.</li>
                 </ul>
-                <p>Keep in mind that you have THREE audiences who will be part of this proposal:</p>
+                <p>Keep in mind that three different audiences are important to this project:</p>
                 <ol class="skipline" style="margin-left: 24px;">
                     <li>Your supervisor is the audience for the proposal.</li>
                     <li>The client organization is the audience for the recommendation report you are proposing.</li>
@@ -188,7 +190,7 @@
 
                     <li><strong>Genre:</strong> Workplace-ready proposal memo</li>
 
-                    <li><strong>Length:</strong> 4&ndash;5 pages, including the Gantt Chart and bibliographic page. Longer documents okay.</li>
+                    <li><strong>Length:</strong> 4&ndash;5 pages, including the Gantt chart. Longer documents okay.</li>
 
                     <li><strong>Layout:</strong> 1" margins all around. Number pages 2 to the end. No page number on the first page.</li>
 
@@ -214,8 +216,8 @@
                             <li>Introduction (no heading)</li>
                             <li>Proposed Program</li>
                             <li>Qualifications and Experience</li>
-                            <li>Task Schedule or Proposed Timeline (set up as a Gantt Chart)</li>
-                            <li>Bibliographic information (use the title set by your field&rsquo;s documentation style)</li>
+                            <li>Task Schedule or Proposed Timeline (set up as a Gantt chart)</li>
+                            <li>References/Works Cited/Bibliography (use the title required by your field&rsquo;s documentation style)</li>
                         </ul>
                     </li>
 
@@ -227,8 +229,8 @@
                 <!-- Visual Requirements -->
                 <h4 style="margin-top: 18px;clear: both;">Visuals Requirements<img src="https://tracigardner.github.io/TechComm/-images/assignments/noun-chart-8078111-333333.png" alt="" style="float: right; margin: 12px;"></h4>
                 <ul id="visuals" class="skipline teallabel">
-                    <li><strong>Number:</strong> At least 1 <em>relevant</em> visual aid, in addition to the Gantt Chart.</li>
-                    <li><strong>Examples:</strong> Photographs, tables, charts, and the like. No clip art.</li>
+                    <li><strong>Number:</strong> At least one relevant visual aid, in addition to the Gantt chart.</li>
+                    <li><strong>Examples:</strong> Photographs, tables, charts, diagrams, and other relevant visuals. No clip art.</li>
                     <li><strong>Location:</strong> On the same page and alongside or after the reference to it in the text.</li>
                     <li><strong>Caption:</strong> A two-part caption&mdash;a number and descriptive title&mdash;for each visual (for example, Figure 1: Current Navigation Structure, or Table 1: Accessibility Issues to Investigate).</li>
                     <li><strong>Integration:</strong> Refer to each visual by number in the text before it appears (for example, &ldquo;As Figure 1 shows…&rdquo;).</li>
@@ -236,21 +238,24 @@
                 </ul>
 
                 <!-- Documentation Requirements -->
-                <h4 style="margin-top: 18px;">Documentation Requirements<img src="https://tracigardner.github.io/TechComm/-images/assignments/noun-quotes-6507517-333333.png" alt="" style="float: right; margin: 12px;"></h4>
+                <h4 style="margin-top: 18px;">Research &amp; Documentation Requirements<img src="https://tracigardner.github.io/TechComm/-images/assignments/noun-quotes-6507517-333333.png" alt="" style="float: right; margin: 12px;"></h4>
                 <ul class="skipline teallabel">
-                    <li><strong>Number:</strong> At least 3 outside sources, including materials from the web and other acceptable sources.</li>
+                    <li><strong>Number:</strong> At least three outside sources.</li>
+
+                    <li><strong>Purpose &amp; Use:</strong> Use preliminary research to show why the document warrants investigation and identify resources for your evaluation.</li>
+
+                    <li><strong>Sources:</strong> Use credible standards, guidelines, research, and professional recommendations relevant to your project.</li>
 
                     <li><strong>Style:</strong> Use your discipline&rsquo;s documentation style (e.g., engineers use IEEE, biologists use CSE).</li>
 
-                    <li><strong>In-Text Citations:</strong> Cite ALL information taken from an outside source, according to your discipline&rsquo;s style.</li>
+                    <li><strong>In-Text Citations:</strong> Cite information taken from outside sources, according to your discipline&rsquo;s documentation style.</li>
 
-                    <li><strong>Full Citations:</strong> List ALL sources in your Works Cited, References, or Bibliography (include on a separate page at the end of the report), according to your discipline&rsquo;s style.</li>
+                    <li><strong>Full Citations:</strong> List all cited sources in your Works Cited, References, or Bibliography at the end of the proposal, according to your discipline&rsquo;s documentation style.</li>
 
                     <li><strong>Help:</strong> See <a href="https://canvas.vt.edu/courses/235156/pages/documentation-and-citations-for-your-projects" target="_blank">Documentation and Citations for Your Projects</a> as well as Ch 6: Researching Your Subject and App B: Documenting Your Sources.</li>
                 </ul>
 
             </div>
-
 
             <!-- Success Tips -->
             <div id="success" class="info-section">
@@ -268,7 +273,7 @@
                     <li><strong>Be specific.</strong> Refer directly to your selected document and client in your proposal. Make sure your choice is clear.</li>
 
 
-                    <li><strong>Discuss your research plan</strong>. Outline the strategies you will use to analyze the document and make recommendations. You&rsquo;re explaining your plan to write the Recommendation Report.</li>
+                    <li><strong>Discuss your research plan.</strong> Outline the strategies you will use to analyze the document and make recommendations. You&rsquo;re explaining your plan to research and develop the Recommendation Report.</li>
 
 
                     <li><strong>Follow the textbook explanations and examples.</strong> Ch 16: Writing Proposals explains the major parts of a proposal and provides models you can adapt to this project.</li>
