@@ -83,6 +83,11 @@
   margin-left: 24px;
 }
 
+.scenario-details dt,
+.scenario-details dd {
+  margin-bottom: 1rem;
+}
+
 .scenario-footer-date {
   margin-top: 12px;
   background-color: var(--teal-dark);
