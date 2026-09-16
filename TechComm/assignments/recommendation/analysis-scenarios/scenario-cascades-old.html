@@ -29,6 +29,17 @@
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
 
+    <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css">
+
+    <!-- Include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
 
     <script>
         (function () {
@@ -46,6 +57,30 @@
 </head>
 
 <body>
+
+    <div id="topinfo"></div>
+
+    <script>
+        if (window.location !== window.parent.location) {
+
+            document.getElementById("demo").innerHTML =
+                "<div id='content'></div>";
+
+        } else {
+
+            document.getElementById("topinfo").innerHTML =
+                "<header>" +
+                "<div id='top-rectangle' class='scenario-top-rectangle'>&nbsp;</div>" +
+                "<div id='jumbotron'></div>" +
+                "</header>" +
+                "<div id='topnav'></div>" +
+                "<main class='scenario-main'>" +
+                "<div class='scenario-search'>" +
+                "<gcse:search></gcse:search>" +
+                "</div>" +
+                "<h1>Cascades Wildlife &amp; Habitat Assessment</h1>";
+        }
+    </script>
 
     <!-- Page intro -->
     <p>
@@ -205,7 +240,26 @@
         </time>
     </p>
 
-    <p class="site-credit">&copy; 2019&mdash;2026 Traci Gardner. Icons from Font Awesome and The Noun Project Pro. The content on this site is licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License unless noted otherwise.</p>
+    <div id="bottominfo"></div>
+
+    <script>
+        if (window.location !== window.parent.location) {
+
+            document.getElementById("bottominfo").innerHTML =
+                "<p class='site-credit'>" +
+                "&copy; 2019&mdash;2026 Traci Gardner. " +
+                "Icons from Font Awesome and The Noun Project Pro. " +
+                "The content on this site is licensed under a Creative Commons " +
+                "Attribution-NonCommercial Share-Alike 4.0 International License, " +
+                "unless noted otherwise." +
+                "</p>";
+
+        } else {
+
+            document.getElementById("bottominfo").innerHTML =
+                "</main><footer><div id='footer'></div></footer>";
+        }
+    </script>
 
 </body>
 

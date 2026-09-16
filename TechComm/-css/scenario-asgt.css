@@ -11,6 +11,12 @@
   --white: #ffffff;
 }
 
+p,
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-size: 16px !important;
+}
+
 .skipline li,
 .skipline ul li,
 .skipline ol li,
@@ -29,6 +35,29 @@
 
 .orange {
   color: var(--orange);
+}
+
+h3 {
+  font-size: 21px !important;
+  font-weight: 600;
+  background-color: #861f41;
+  padding: 9px;
+  color: #ffffff;
+  margin-bottom: 21px;
+  display: inline-block;
+  margin-top: 0;
+  box-shadow: 10px 10px #d7d2cb;
+}
+
+h3.scenario {
+  background-color: #edf3f4;
+  color: #861f41;
+  border-bottom: 1px solid #cccccc;
+  padding: 0 0 5px 0 !important;
+  box-shadow: none;
+  border-top: 0;
+  display: flex;
+  margin-top: 0;
 }
 
 .scenario-top-rectangle {
@@ -85,10 +114,6 @@
   border-bottom: 3px solid var(--maroon);
 }
 
-p.scenario-section {
-  margin-bottom: 25px;
-  font-size: 16px !important;
-}
 .scenario-section {
   margin-bottom: 25px;
 }
