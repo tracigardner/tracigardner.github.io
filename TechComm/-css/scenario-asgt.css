@@ -1,0 +1,97 @@
+:root {
+  --maroon: #861f41;
+  --maroon-light: #f2e8ec;
+  --orange: #c64600;
+  --orange-light: #fcf1e8;
+  --teal: #508590;
+  --teal-dark: #385d65;
+  --teal-light: #edf3f4;
+  --gray: #e5e1e6;
+  --text: #1f1f1f;
+  --white: #ffffff;
+}
+
+.fixme {
+  background-color: #f7ea48;
+}
+
+.maroon {
+  color: var(--maroon);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.scenario-top-rectangle {
+  background-color: var(--maroon);
+}
+
+.scenario-main {
+  vertical-align: top;
+  background-color: var(--white);
+  padding: 0 6px 15px;
+}
+
+.scenario-search {
+  width: 400px;
+  float: right;
+}
+
+.scenario-box {
+  margin: 24px;
+  background-color: var(--teal-light);
+  padding-right: 20px !important;
+}
+
+.scenario-logo {
+  float: left;
+  margin: 15px 15px 0 0;
+  width: 75px;
+}
+
+.scenario-letterhead {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.scenario-letterhead-plus {
+  font-size: 18px;
+  color: var(--text);
+}
+
+.scenario-letterhead-digital {
+  color: var(--text);
+}
+
+.scenario-address {
+  margin-bottom: 0;
+}
+
+.scenario-address-last {
+  padding-bottom: 21px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--maroon);
+}
+
+.scenario-section {
+  margin-bottom: 25px;
+}
+
+.scenario-list {
+  margin-left: 24px;
+}
+
+.scenario-footer-date {
+  margin-top: 12px;
+  background-color: var(--teal-dark);
+  color: var(--white);
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: right;
+}
+
+.site-credit {
+  margin-bottom: 18px;
+}
