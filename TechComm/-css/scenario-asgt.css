@@ -159,9 +159,10 @@ h3.scenario {
   margin-top: 12px;
   background-color: var(--teal-dark);
   color: var(--white);
-  font-size: 14pt;
+  font-size: 14px;
   font-weight: bold;
   text-align: right;
+  padding: 3px 0px;
 }
 
 .site-credit {
