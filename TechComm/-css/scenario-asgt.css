@@ -11,11 +11,6 @@
   --white: #ffffff;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px !important;
-}
-
 .skipline li,
 .skipline ul li,
 .skipline ol li,
@@ -40,7 +35,8 @@ body {
   background-color: var(--maroon);
 }
 
-.scenario-main {
+.scenario-main,
+.scenario-main p {
   vertical-align: top;
   background-color: var(--white);
   padding: 0 6px 15px;
@@ -89,6 +85,10 @@ body {
   border-bottom: 3px solid var(--maroon);
 }
 
+p.scenario-section {
+  margin-bottom: 25px;
+  font-size: 16px !important;
+}
 .scenario-section {
   margin-bottom: 25px;
 }
