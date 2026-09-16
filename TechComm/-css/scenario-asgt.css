@@ -28,6 +28,10 @@ body {
   font-size: 16px !important;
 }
 
+.full-page {
+  margin: 24px;
+}
+
 h1 {
   color: #861f41;
 }
