@@ -18,7 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0z1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0z1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
@@ -29,22 +29,6 @@
     <link href="https://tracigardner.github.io/TechComm/-css/scenario-asgt.css" rel="stylesheet" type="text/css">
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
-
-    <link href="https://tracigardner.github.io/TechComm/-css/ptw-f25.css" rel="stylesheet" type="text/css">
-
-    <link href="https://tracigardner.github.io/TechComm/-css/infographic-style.css" rel="stylesheet" type="text/css">
-
-
-
-    <!-- Include scripts -->
-    <script>
-        $(document).ready(function () {
-            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
-            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
-            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
-            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
-        });
-    </script>
 
     <script>
         (function () {
@@ -63,43 +47,21 @@
 
 <body>
 
-    <div id="topinfo"></div>
-
-    <script>
-        if (window.location !== window.parent.location) {
-
-            document.getElementById("demo").innerHTML =
-                "<div id='content'></div>";
-
-        } else {
-
-            document.getElementById("topinfo").innerHTML =
-                "<header>" +
-                "<div id='top-rectangle' class='scenario-top-rectangle'>&nbsp;</div>" +
-                "<div id='jumbotron'></div>" +
-                "</header>" +
-                "<div id='topnav'></div>" +
-                "<main class='scenario-main'>" +
-                "<div class='scenario-search'>" +
-                "<gcse:search></gcse:search>" +
-                "</div>" +
-                "<h1>Cedar Ridge Estates Feasibility Study</h1>";
-        }
-    </script>
-
     <!-- Page intro -->
-    <p>
-        This scenario provides background information for the
-        <a href="https://canvas.vt.edu/courses/235156/assignments/2860111" target="_blank">Proposal Assignment</a>
-        and the
-        <a href="https://canvas.vt.edu/courses/235156/assignments/2860810" target="_blank">Recommendation Report Assignment</a>.
-        Read the project overview below as a consultant at Maroon + Orange Digital.
-    </p>
+    <section id="page-intro" class="full-page">
+        <p>
+            This scenario provides background information for the
+            <a href="https://canvas.vt.edu/courses/235156/assignments/2860111" target="_blank">Proposal Assignment</a>
+            and the
+            <a href="https://canvas.vt.edu/courses/235156/assignments/2860810" target="_blank">Recommendation Report Assignment</a>.
+            Read the project overview below as a consultant at Maroon + Orange Digital.
+        </p>
 
-    <p>
-        <strong>Course Simulation:</strong>
-        This project combines real-world locations and context with a fictional workplace situation created for this course. Project-specific details and documents are not official records.
-    </p>
+        <p>
+            <strong>Course Simulation:</strong>
+            This project combines real-world locations and context with a fictional workplace situation created for this course. Project-specific details and documents are not official records.
+        </p>
+    </section>
 
     <div class="maroonbox scenario-box">
 
@@ -263,26 +225,7 @@
         </time>
     </p>
 
-    <div id="bottominfo"></div>
-
-    <script>
-        if (window.location !== window.parent.location) {
-
-            document.getElementById("bottominfo").innerHTML =
-                "<p class='site-credit'>" +
-                "&copy; 2019&mdash;2026 Traci Gardner. " +
-                "Icons from Font Awesome and The Noun Project Pro. " +
-                "The content on this site is licensed under a Creative Commons " +
-                "Attribution-NonCommercial Share-Alike 4.0 International License, " +
-                "unless noted otherwise." +
-                "</p>";
-
-        } else {
-
-            document.getElementById("bottominfo").innerHTML =
-                "</main><footer><div id='footer'></div></footer>";
-        }
-    </script>
+    <p class="site-credit">&copy; 2019&mdash;2026 Traci Gardner. Icons from Font Awesome and The Noun Project Pro. The content on this site is licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License unless noted otherwise.</p>
 
 </body>
 
