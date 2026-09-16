@@ -11,6 +11,19 @@
   --white: #ffffff;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px !important;
+}
+
+.skipline li,
+.skipline ul li,
+.skipline ol li,
+.skipline dl,
+.skipline dd {
+  margin-bottom: 12px;
+}
+
 .fixme {
   background-color: #f7ea48;
 }
