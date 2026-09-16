@@ -11,20 +11,6 @@
   --white: #ffffff;
 }
 
-p,
-li {
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-  font-size: 16px !important;
-}
-
-.skipline li,
-.skipline ul li,
-.skipline ol li,
-.skipline dl,
-.skipline dd {
-  margin-bottom: 12px;
-}
-
 .fixme {
   background-color: #f7ea48;
 }
@@ -35,6 +21,44 @@ li {
 
 .orange {
   color: var(--orange);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px !important;
+}
+
+h1 {
+  color: #861f41;
+}
+h2 {
+  color: #c64600;
+  font-size: 21px;
+  font-weight: bold;
+}
+h3 {
+  color: #861f41;
+  font-size: 18px;
+}
+h4 {
+  color: #c64600;
+}
+
+.skipline li,
+.skipline ul li,
+.skipline ol li,
+.skipline dl,
+.skipline dd {
+  margin-bottom: 12px;
+}
+
+.null li,
+.null ul li,
+.null ol li,
+.null dl,
+.null dd {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 h3 {
@@ -138,4 +162,36 @@ h3.scenario {
 
 .site-credit {
   margin-bottom: 18px;
+}
+
+/* brought over from ptw.css */
+
+figcaption,
+.site-credit {
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  padding: 8px;
+}
+a,
+li a {
+  text-decoration: underline;
+  color: #c64600;
+}
+a:hover,
+li a:hover {
+  text-decoration: underline;
+  color: #861f41;
+}
+.orangebox {
+  border: 6px solid #c64600;
+  border-style: double;
+  box-sizing: border-box;
+  padding: 0 5px 5px 20px;
+}
+.maroonbox {
+  border: 6px solid #861f41;
+  border-style: double;
+  box-sizing: border-box;
+  padding: 10px 5px 5px 20px;
 }
