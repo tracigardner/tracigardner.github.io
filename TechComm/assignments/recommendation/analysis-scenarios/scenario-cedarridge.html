@@ -17,11 +17,9 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0z1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <!-- Latest compiled JavaScript -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
 
     <!-- Custom CSS -->
     <link href="https://tracigardner.github.io/TechComm/-css/ptw.css" rel="stylesheet" type="text/css">
@@ -30,6 +28,16 @@
 
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
 
+    <!-- include scripts -->
+    <script>
+        $(document).ready(function () {
+            $('#jumbotron').load("https://tracigardner.github.io/TechComm/-includes/zombocom.html");
+            $('#topnav').load("https://tracigardner.github.io/TechComm/-includes/topnav.html");
+            $('#footer').load("https://tracigardner.github.io/TechComm/-includes/footer.html");
+            $('#helpbar').load("https://tracigardner.github.io/TechComm/-includes/help-bar.html");
+        });
+    </script>
+
     <script>
         (function () {
             var cx = '004254621551572523759:n3ows2swaxg';
@@ -37,196 +45,218 @@
             gcse.type = 'text/javascript';
             gcse.async = true;
             gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
         })();
     </script>
-
 </head>
 
 <body>
 
-    <!-- Page intro -->
-    <section id="page-intro" class="full-page">
-        <p>
-            This scenario provides background information for the
-            <a href="https://canvas.vt.edu/courses/235156/assignments/2860111" target="_blank">Proposal Assignment</a>
-            and the
-            <a href="https://canvas.vt.edu/courses/235156/assignments/2860810" target="_blank">Recommendation Report Assignment</a>.
-            Read the project overview below as a consultant at Maroon + Orange Digital.
-        </p>
+    <div id="topinfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("demo").innerHTML = "<div id='content'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("topinfo").innerHTML = "<header><div id='top-rectangle' style='background-color: #861f41;'>&nbsp;</div><div id='jumbotron'></div></header><div id='topnav'></div><main style='vertical-align: top;background-color: #fefefe;padding: 0px 6px 15px 6px;'><div style='width: 400px;float: right;'><gcse:search></gcse:search></div><h1>Cedar Ridge Estates</h1>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
+    <div id="postBody" style="background-color: #fefefe;padding: 15px 6px 15px 6px;">
 
-        <p>
-            <strong>Course Simulation:</strong>
-            This project combines real-world locations and context with a fictional workplace situation created for this course. Project-specific details and documents are not official records.
-        </p>
-    </section>
+        <!-- Page intro -->
+        <section id="page-intro" class="full-page">
+            <p>
+                This scenario provides background information for the
+                <a href="https://canvas.vt.edu/courses/235156/assignments/2860111" target="_blank">Proposal Assignment</a>
+                and the
+                <a href="https://canvas.vt.edu/courses/235156/assignments/2860810" target="_blank">Recommendation Report Assignment</a>.
+                Read the project overview below as a consultant at Maroon + Orange Digital.
+            </p>
 
-    <div class="maroonbox scenario-box">
-
-        <!-- Letterhead -->
-        <img src="https://tracigardner.github.io/TechComm/-images/maroon-and-orange/maroon-orange-recolored.png" alt="Maroon + Orange Digital Logo" class="logo scenario-logo">
-
-        <h2 class="scenario-letterhead">
-            <span class="maroon">Maroon</span>
-            <span class="scenario-letterhead-plus">+</span>
-            <span class="orange">Orange</span>
-            <span class="scenario-letterhead-digital">Digital</span>
-        </h2>
-
-        <p class="tightpara scenario-address">
-            1872 Drillfield Drive
-        </p>
-
-        <p class="tightpara scenario-address-last">
-            Blacksburg, VA 24060
-        </p>
-
-        <!-- Project ID Info -->
-        <section class="scenario-section">
-
-            <h2>Cedar Ridge Estates Document Review (Fall 2026)</h2>
-
-            <dl class="row scenario-details">
-                <dt class="col-sm-4">Project Lead:</dt>
-                <dd class="col-sm-8">Avery Morgan</dd>
-
-                <dt class="col-sm-4">Charge Code:</dt>
-                <dd class="col-sm-8">26-0816</dd>
-
-                <dt class="col-sm-4">Client Request:</dt>
-                <dd class="col-sm-8">
-                    Evaluate the preliminary feasibility study for document design, plain language, usability, and accessibility. The client is especially concerned that important assumptions, limitations, and unresolved questions about the proposed development are easy to miss.
-                </dd>
-            </dl>
-
+            <p>
+                <strong>Course Simulation:</strong>
+                This project combines real-world locations and context with a fictional workplace situation created for this course. Project-specific details and documents are not official records.
+            </p>
         </section>
 
+        <div class="maroonbox scenario-box">
 
-        <div class="row g-4">
-            <!-- Client  -->
-            <section id="client-overview" class="col-md-6 scenario-section">
+            <!-- Letterhead -->
+            <img src="https://tracigardner.github.io/TechComm/-images/maroon-and-orange/maroon-orange-recolored.png" alt="Maroon + Orange Digital Logo" class="logo scenario-logo">
 
-                <h3 class="scenario">Client Overview</h3>
+            <h2 class="scenario-letterhead">
+                <span class="maroon">Maroon</span>
+                <span class="scenario-letterhead-plus">+</span>
+                <span class="orange">Orange</span>
+                <span class="scenario-letterhead-digital">Digital</span>
+            </h2>
 
-                <dl class="row scenario-details">
-                    <dt class="col-sm-4">Client:</dt>
-                    <dd class="col-sm-8">Blue Ridge Residential Partners, LLC</dd>
+            <p class="tightpara scenario-address">
+                1872 Drillfield Drive
+            </p>
 
-                    <dt class="col-sm-4">Location:</dt>
-                    <dd class="col-sm-8">Christiansburg, Virginia</dd>
+            <p class="tightpara scenario-address-last">
+                Blacksburg, VA 24060
+            </p>
 
-                    <dt class="col-sm-4">Key Contact:</dt>
-                    <dd class="col-sm-8">Dana Mercer, Director of Acquisitions</dd>
-                </dl>
+            <!-- Project ID Info -->
+            <section class="scenario-section">
 
-                <p>
-                    Blue Ridge Residential Partners acquires land, completes entitlement and site-development work, and sells finished lots to homebuilders. Its projects typically include 40 to 120 homes in growing communities within about an hour of the New River Valley. The firm has become more cautious about new land purchases as construction costs, borrowing costs, and buyer affordability change.
-                </p>
-
-            </section>
-
-            <!-- Document Overview -->
-            <section id="document-overview" class="col-md-6 scenario-section">
-
-                <h3 class="scenario">Document Overview</h3>
+                <h2>Cedar Ridge Estates Document Review (Fall 2026)</h2>
 
                 <dl class="row scenario-details">
-                    <dt class="col-sm-4">Document:</dt>
-                    <dd class="col-sm-8">
-                        <a href="https://canvas.vt.edu/courses/235156/pages/scenario-cedar-ridge-estates-feasibility-study" target="_blank">Cedar Ridge Estates | Preliminary Development Feasibility Study</a>
-                    </dd>
+                    <dt class="col-sm-4">Project Lead:</dt>
+                    <dd class="col-sm-8">Avery Morgan</dd>
 
-                    <dt class="col-sm-4">Prepared by:</dt>
-                    <dd class="col-sm-8">New River Development Advisors</dd>
+                    <dt class="col-sm-4">Charge Code:</dt>
+                    <dd class="col-sm-8">26-0816</dd>
 
-                    <dt class="col-sm-4">Purpose:</dt>
+                    <dt class="col-sm-4">Client Request:</dt>
                     <dd class="col-sm-8">
-                        Assess a proposed 72-lot subdivision on a 46.8-acre tract and support a decision about whether to invest in further evaluation of the property.
-                    </dd>
-
-                    <dt class="col-sm-4">Primary Users:</dt>
-                    <dd class="col-sm-8">
-                        Company leaders responsible for acquisitions, finance, and development.
-                    </dd>
-
-                    <dt class="col-sm-4">Use Context:</dt>
-                    <dd class="col-sm-8">
-                        Readers may review the study during acquisitions meetings and return to specific sections while assigning follow-up work.
+                        Evaluate the preliminary feasibility study for document design, plain language, usability, and accessibility. The client is especially concerned that important assumptions, limitations, and unresolved questions about the proposed development are easy to miss.
                     </dd>
                 </dl>
 
             </section>
 
-        </div>
 
-        <!-- Review Purpose -->
-        <div class="row g-4">
+            <div class="row g-4">
+                <!-- Client  -->
+                <section id="client-overview" class="col-md-6 scenario-section">
 
-            <section id="purpose-of-review" class="col-md-6 scenario-section">
+                    <h3 class="scenario">Client Overview</h3>
 
-                <h3 class="scenario">Why the Document Is Being Reviewed</h3>
+                    <dl class="row scenario-details">
+                        <dt class="col-sm-4">Client:</dt>
+                        <dd class="col-sm-8">Blue Ridge Residential Partners, LLC</dd>
+
+                        <dt class="col-sm-4">Location:</dt>
+                        <dd class="col-sm-8">Christiansburg, Virginia</dd>
+
+                        <dt class="col-sm-4">Key Contact:</dt>
+                        <dd class="col-sm-8">Dana Mercer, Director of Acquisitions</dd>
+                    </dl>
+
+                    <p>
+                        Blue Ridge Residential Partners acquires land, completes entitlement and site-development work, and sells finished lots to homebuilders. Its projects typically include 40 to 120 homes in growing communities within about an hour of the New River Valley. The firm has become more cautious about new land purchases as construction costs, borrowing costs, and buyer affordability change.
+                    </p>
+
+                </section>
+
+                <!-- Document Overview -->
+                <section id="document-overview" class="col-md-6 scenario-section">
+
+                    <h3 class="scenario">Document Overview</h3>
+
+                    <dl class="row scenario-details">
+                        <dt class="col-sm-4">Document:</dt>
+                        <dd class="col-sm-8">
+                            <a href="https://canvas.vt.edu/courses/235156/pages/scenario-cedar-ridge-estates-feasibility-study" target="_blank">Cedar Ridge Estates | Preliminary Development Feasibility Study</a>
+                        </dd>
+
+                        <dt class="col-sm-4">Prepared by:</dt>
+                        <dd class="col-sm-8">New River Development Advisors</dd>
+
+                        <dt class="col-sm-4">Purpose:</dt>
+                        <dd class="col-sm-8">
+                            Assess a proposed 72-lot subdivision on a 46.8-acre tract and support a decision about whether to invest in further evaluation of the property.
+                        </dd>
+
+                        <dt class="col-sm-4">Primary Users:</dt>
+                        <dd class="col-sm-8">
+                            Company leaders responsible for acquisitions, finance, and development.
+                        </dd>
+
+                        <dt class="col-sm-4">Use Context:</dt>
+                        <dd class="col-sm-8">
+                            Readers may review the study during acquisitions meetings and return to specific sections while assigning follow-up work.
+                        </dd>
+                    </dl>
+
+                </section>
+
+            </div>
+
+            <!-- Review Purpose -->
+            <div class="row g-4">
+
+                <section id="purpose-of-review" class="col-md-6 scenario-section">
+
+                    <h3 class="scenario">Why the Document Is Being Reviewed</h3>
+
+                    <p>
+                        New River Development Advisors prepared the study for Blue Ridge Residential Partners after a short period of research. It combines market assumptions, regulatory observations, infrastructure assumptions, a development budget, and a basic financial model. Blue Ridge Residential Partners&rsquo; acquisitions committee has complained that the draft is difficult to scan and that important assumptions, limitations, and unresolved questions are easy to overlook.
+                    </p>
+
+                    <p>
+                        The review should consider opportunities to improve:
+                    </p>
+
+                    <ul class="scenario-list">
+                        <li>Document design and organization</li>
+                        <li>Usability for busy decision-makers</li>
+                        <li>Plain language and clarity</li>
+                        <li>Accessibility</li>
+                    </ul>
+
+                </section>
+
+                <!-- Your Role -->
+                <section id="your-role" class="col-md-6 scenario-section">
+
+                    <h3 class="scenario">Your Role &amp; Objective</h3>
+
+                    <p>
+                        As a consultant at Maroon + Orange Digital, evaluate how effectively the study helps readers understand the proposal, distinguish evidence from assumptions, locate important information, recognize uncertainty, and make informed decisions about next steps.
+                    </p>
+
+                    <p>
+                        Your <strong>proposal</strong> will explain why this document is an appropriate focus for your project, outline how you plan to investigate it, and request approval to proceed. Your later <strong>recommendation report</strong> will analyze the document in greater detail and recommend specific improvements supported by research and evidence.
+                    </p>
+
+                </section>
+
+            </div>
+
+            <!-- Additional Context -->
+            <section id="additional-context" class="scenario-section">
+
+                <h3 class="scenario">Additional Context</h3>
 
                 <p>
-                    New River Development Advisors prepared the study for Blue Ridge Residential Partners after a short period of research. It combines market assumptions, regulatory observations, infrastructure assumptions, a development budget, and a basic financial model. Blue Ridge Residential Partners&rsquo; acquisitions committee has complained that the draft is difficult to scan and that important assumptions, limitations, and unresolved questions are easy to overlook.
+                    This is an early-stage screening document. Some information has been checked; other points still require confirmation from surveyors, engineers, planners, utility staff, environmental consultants, lenders, brokers, and attorneys. A mistaken assumption about zoning, utilities, site conditions, lot yield, or cost could change the investment decision.
                 </p>
 
                 <p>
-                    The review should consider opportunities to improve:
+                    Evaluate the <strong>communication</strong>, not the proposed subdivision itself. Do not decide whether Cedar Ridge Estates should be built or redesign the development plan. Focus on changes that would make the study more useful to real decision-makers without simply making it longer.
                 </p>
-
-                <ul class="scenario-list">
-                    <li>Document design and organization</li>
-                    <li>Usability for busy decision-makers</li>
-                    <li>Plain language and clarity</li>
-                    <li>Accessibility</li>
-                </ul>
 
             </section>
 
-            <!-- Your Role -->
-            <section id="your-role" class="col-md-6 scenario-section">
-
-                <h3 class="scenario">Your Role &amp; Objective</h3>
-
-                <p>
-                    As a consultant at Maroon + Orange Digital, evaluate how effectively the study helps readers understand the proposal, distinguish evidence from assumptions, locate important information, recognize uncertainty, and make informed decisions about next steps.
-                </p>
-
-                <p>
-                    Your <strong>proposal</strong> will explain why this document is an appropriate focus for your project, outline how you plan to investigate it, and request approval to proceed. Your later <strong>recommendation report</strong> will analyze the document in greater detail and recommend specific improvements supported by research and evidence.
-                </p>
-
-            </section>
-
         </div>
 
-        <!-- Additional Context -->
-        <section id="additional-context" class="scenario-section">
+        <p class="scenario-footer-date">
+            <time datetime="2026-09-17">
+                Last Updated September 17, 2026&nbsp;&nbsp;&nbsp;
+            </time>
+        </p>
 
-            <h3 class="scenario">Additional Context</h3>
-
-            <p>
-                This is an early-stage screening document. Some information has been checked; other points still require confirmation from surveyors, engineers, planners, utility staff, environmental consultants, lenders, brokers, and attorneys. A mistaken assumption about zoning, utilities, site conditions, lot yield, or cost could change the investment decision.
-            </p>
-
-            <p>
-                Evaluate the <strong>communication</strong>, not the proposed subdivision itself. Do not decide whether Cedar Ridge Estates should be built or redesign the development plan. Focus on changes that would make the study more useful to real decision-makers without simply making it longer.
-            </p>
-
-        </section>
-
+        <p class="site-credit">&copy; 2019&mdash;2026 Traci Gardner. Icons from Font Awesome and The Noun Project Pro. The content on this site is licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License unless noted otherwise.</p>
     </div>
-
-    <p class="scenario-footer-date">
-        <time datetime="2026-09-16">
-            Last Updated September 16, 2026&nbsp;&nbsp;&nbsp;
-        </time>
-    </p>
-
-    <p class="site-credit">&copy; 2019&mdash;2026 Traci Gardner. Icons from Font Awesome and The Noun Project Pro. The content on this site is licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License unless noted otherwise.</p>
-
+    <div id="bottominfo"></div>
+    <script>
+        if (window.location !== window.parent.location) {
+            document.getElementById("bottominfo").innerHTML = "<div id='helpbar'></div>"
+            // The page is in an iframe
+        } else {
+            // The page is not in an iframe
+            document.getElementById("bottominfo").innerHTML = "</main><footer><div id='footer'></div></footer>"
+            // document.getElementById("demo").innerHTML = "Page hostname is: " + window.location.href;
+        }
+    </script>
 </body>
 
 </html>
