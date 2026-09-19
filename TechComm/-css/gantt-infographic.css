@@ -143,6 +143,10 @@ body {
    COMPARISON
 ------------------------------ */
 
+/* ------------------------------
+   COMPARISON
+------------------------------ */
+
 .comparison-heading {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
@@ -153,25 +157,25 @@ body {
 
   font-size: 1.4rem;
 }
-/*  margin: 0 0 14px 0;
-  border-left: 7px solid var(--teal);
-  color: var(--teal-dark);
-  background-color: var(--teal-light);
-  border-radius: 0 10px 10px 0;
-  font-size: 1.45rem;
-  padding: 6px 22px; */
 
 .comparison-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-rows: auto auto auto;
+  gap: 0 20px;
 
   margin-bottom: 28px;
 }
 
+/*
+   Each card shares the three rows of the comparison grid:
+   header / Gantt chart / diagnosis
+*/
+
 .example-card {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
 
   overflow: hidden;
 
@@ -183,8 +187,6 @@ body {
 
 .example-header {
   padding: 15px 18px;
-
-  color: var(--white);
 }
 
 .example-header.weak {
@@ -211,37 +213,30 @@ body {
   font-size: 0.9rem;
 }
 
-.example-body {
-  display: flex;
-  flex-direction: column;
+/*
+   Removes the body wrapper from the visual grid so its two
+   children can occupy the shared chart and diagnosis rows.
+*/
 
+.example-body {
+  display: contents;
+}
+
+.gantt-wrap {
+  overflow-x: auto;
   padding: 18px;
 }
 
 .diagnosis {
-  margin-top: auto;
+  margin: 0 18px 18px 18px;
   padding: 14px 16px;
 
   border-radius: 10px;
 }
 
-.gantt-wrap {
-  overflow-x: auto;
-  min-height: 275px;
-}
-
-/* Add some separation between the table and diagnosis */
-.gantt-wrap + .diagnosis {
-  margin-top: 16px;
-}
-
 /* ------------------------------
    GANTT TABLES
 ------------------------------ */
-
-.gantt-wrap {
-  overflow-x: auto;
-}
 
 .gantt {
   width: 100%;
