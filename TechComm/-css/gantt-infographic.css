@@ -40,16 +40,12 @@ body {
   background-size: 600px;
 }
 
-.bkgd-page {
-  width: 100%;
-  padding: 28px;
-  background-color: var(--teal);
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
-}
-
 .page {
   padding: 30px;
   background-color: var(--white);
+  border: 3px solid var(--teal-dark);
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
 }
 
 /* ------------------------------
@@ -129,19 +125,11 @@ body {
   font-size: 1.4rem;
 }
 
-/*   margin: 0 0 6px 0;
-  color: var(--teal-dark);
-  font-size: 1.3rem; */
-
 .gantt-intro p {
   font-size: 1rem;
   padding-left: 15px;
   margin-bottom: 15px;
 }
-
-/* ------------------------------
-   COMPARISON
------------------------------- */
 
 /* ------------------------------
    COMPARISON
