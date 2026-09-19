@@ -114,19 +114,29 @@ body {
 ------------------------------ */
 
 .gantt-intro {
-  margin: 0 0 26px 0;
-  padding: 0 0 9px 30px;
+  margin: 0 0 12px 0;
+  padding: 0 0 9px 0px;
 }
 
 .gantt-intro h2 {
-  margin: 0 0 6px 0;
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
+
+  border-bottom: 4px solid var(--teal);
+
   color: var(--teal-dark);
-  font-size: 1.3rem;
+
+  font-size: 1.4rem;
 }
 
+/*   margin: 0 0 6px 0;
+  color: var(--teal-dark);
+  font-size: 1.3rem; */
+
 .gantt-intro p {
-  margin: 0;
   font-size: 1rem;
+  padding-left: 15px;
+  margin-bottom: 15px;
 }
 
 /* ------------------------------
@@ -175,17 +185,17 @@ body {
 }
 
 .example-header.weak {
-  background-color: var(--dark-gray);
+  background-color: var(--gray);
 }
 
 .example-header.strong {
-  background-color: var(--teal-dark);
+  background-color: var(--teal-light);
 }
 
 .example-header h2 {
   margin: 0 0 3px 0;
 
-  color: var(--white);
+  color: var(--text);
 
   font-size: 1.3rem;
 }
@@ -193,7 +203,7 @@ body {
 .example-header p {
   margin: 0;
 
-  color: var(--white);
+  color: var(--text);
 
   font-size: 0.9rem;
 }
