@@ -81,7 +81,7 @@ body {
 
   border-radius: 12px;
 
-  background-color: var(--teal-light);
+  background-color: var(--white);
   color: var(--teal-dark);
 
   font-size: 3rem;
@@ -116,24 +116,16 @@ body {
 .gantt-intro {
   margin: 0 0 26px 0;
   padding: 18px 22px;
-
-  border-left: 7px solid var(--teal);
-  border-radius: 0 10px 10px 0;
-
-  background-color: var(--teal-light);
 }
 
 .gantt-intro h2 {
   margin: 0 0 6px 0;
-
   color: var(--teal-dark);
-
   font-size: 1.3rem;
 }
 
 .gantt-intro p {
   margin: 0;
-
   font-size: 1rem;
 }
 
@@ -143,10 +135,12 @@ body {
 
 .comparison-heading {
   margin: 0 0 14px 0;
-
+  border-left: 7px solid var(--teal);
   color: var(--teal-dark);
-
+  background-color: var(--teal-light);
+  border-radius: 0 10px 10px 0;
   font-size: 1.45rem;
+  padding: 6px 22px;
 }
 
 .comparison-grid {
