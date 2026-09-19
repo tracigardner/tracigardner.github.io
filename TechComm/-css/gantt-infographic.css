@@ -170,6 +170,9 @@ body {
 }
 
 .example-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+
   overflow: hidden;
 
   border: 2px solid var(--gray-medium);
@@ -209,7 +212,27 @@ body {
 }
 
 .example-body {
+  display: flex;
+  flex-direction: column;
+
   padding: 18px;
+}
+
+.diagnosis {
+  margin-top: auto;
+  padding: 14px 16px;
+
+  border-radius: 10px;
+}
+
+.gantt-wrap {
+  overflow-x: auto;
+  min-height: 275px;
+}
+
+/* Add some separation between the table and diagnosis */
+.gantt-wrap + .diagnosis {
+  margin-top: 16px;
 }
 
 /* ------------------------------
