@@ -114,7 +114,7 @@ body {
 
 .theme-orange .bkgd-page {
   background-color: var(--orange);
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-fcf1e8.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-fcf1e8-orange.png");
 }
 
 .theme-orange .page {
@@ -129,7 +129,7 @@ body {
 
 .theme-maroon .bkgd-page {
   background-color: var(--maroon);
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-f2e8ec.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-f2e8ec-maroon.png");
 }
 
 .theme-maroon .page {
