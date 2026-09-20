@@ -174,32 +174,66 @@ body {
 
 /* ------------------------------
    START HERE
+   Matches the Gantt infographic intro:
+   one column, no background, no left border.
 ------------------------------ */
 
 .start-here {
+  display: block;
   margin: 0 0 12px 0;
   padding: 0 0 9px 0;
+
+  background: none;
+  border: 0;
+  border-radius: 0;
 }
 
 .start-here h2 {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
 
-  border-bottom: 4px solid var(--accent);
+  border: 0;
+  border-bottom: 4px solid var(--teal);
 
   color: var(--accent-dark);
 
   font-size: 1.4rem;
 }
 
+.theme-teal .start-here h2 {
+  border-bottom-color: var(--teal);
+}
+
+.theme-orange .start-here h2 {
+  border-bottom-color: var(--orange);
+}
+
+.theme-maroon .start-here h2 {
+  border-bottom-color: var(--maroon);
+}
+
 .start-here p {
-  font-size: 1rem;
+  margin: 0 0 15px 0;
   padding-left: 15px;
-  margin-bottom: 15px;
+
+  background: none;
+
+  font-size: 1rem;
 }
 
 .start-here ul {
-  margin-left: 24px;
+  margin: 0 0 15px 24px;
+  padding-left: 20px;
+
+  background: none;
+}
+
+.start-here li {
+  margin-bottom: 4px;
+}
+
+.start-here li:last-child {
+  margin-bottom: 0;
 }
 
 /* ------------------------------
