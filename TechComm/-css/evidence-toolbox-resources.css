@@ -89,7 +89,8 @@ body {
   padding: 28px;
 
   background-color: var(--teal);
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
+  background-image:
+    url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
   background-size: 600px;
 }
 
@@ -176,47 +177,29 @@ body {
 ------------------------------ */
 
 .start-here {
-  display: grid;
-  grid-template-columns: minmax(235px, 0.85fr) minmax(0, 2fr);
-  gap: 24px;
-  align-items: start;
-
-  margin-bottom: 24px;
-  padding: 17px 20px;
-
-  border-left: 7px solid var(--accent);
-  border-radius: 0 10px 10px 0;
-
-  background-color: var(--accent-light);
+  margin: 0 0 12px 0;
+  padding: 0 0 9px 0;
 }
 
 .start-here h2 {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
 
-  border-bottom: 4px solid var(--teal);
-
-  color: var(--teal-dark);
-
-  font-size: 1.4rem;
-  /* margin: 0;
+  border-bottom: 4px solid var(--accent);
 
   color: var(--accent-dark);
 
-  font-size: 1.2rem; */
+  font-size: 1.4rem;
+}
+
+.start-here p {
+  font-size: 1rem;
+  padding-left: 15px;
+  margin-bottom: 15px;
 }
 
 .start-here ul {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.start-here li {
-  margin-bottom: 4px;
-}
-
-.start-here li:last-child {
-  margin-bottom: 0;
+  margin-left: 24px;
 }
 
 /* ------------------------------
@@ -523,6 +506,7 @@ body {
 ------------------------------ */
 
 @media screen and (max-width: 900px) {
+
   .resource-grid {
     grid-template-columns: 1fr;
   }
@@ -548,10 +532,6 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  .start-here {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
 
   .resource-card {
     display: flex;
@@ -563,6 +543,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
   body {
     padding: 10px;
   }
