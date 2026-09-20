@@ -232,8 +232,13 @@ body {
   border-collapse: collapse;
 
   font-size: 0.82rem;
+}
+
+.gantt caption {
   caption-side: bottom;
-  text-align: start;
+  text-align: left;
+  font-style: italic;
+  padding-top: 6px;
 }
 
 .gantt th,
