@@ -92,22 +92,52 @@ body {
 }
 
 /* ------------------------------
-   THEMED PAGE BACKGROUNDS
+   THEMED PAGE COLORS
 ------------------------------ */
+
+/* ACCESSIBILITY */
 
 .theme-teal .bkgd-page {
   background-color: var(--teal);
   background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
 }
 
+.theme-teal .page {
+  border-color: var(--teal-dark);
+}
+
+.theme-teal .updated {
+  background-color: var(--teal-dark);
+}
+
+/* PLAIN LANGUAGE */
+
 .theme-orange .bkgd-page {
   background-color: var(--orange);
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-fcf1e8-orange.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-fcf1e8.png");
 }
+
+.theme-orange .page {
+  border-color: var(--orange);
+}
+
+.theme-orange .updated {
+  background-color: var(--orange);
+}
+
+/* USABILITY */
 
 .theme-maroon .bkgd-page {
   background-color: var(--maroon);
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-f2e8ec-maroon.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-f2e8ec.png");
+}
+
+.theme-maroon .page {
+  border-color: var(--maroon);
+}
+
+.theme-maroon .updated {
+  background-color: var(--maroon);
 }
 
 .page {
@@ -115,7 +145,7 @@ body {
 
   background-color: var(--white);
 
-  border: 3px solid var(--teal-dark);
+  border: 3px solid;
   border-bottom: none;
   border-radius: 14px 14px 0 0;
 }
@@ -537,7 +567,6 @@ body {
   margin: 0;
   padding: 8px 10px;
 
-  background-color: var(--teal-dark);
   color: var(--white);
 
   font-size: 0.88rem;
