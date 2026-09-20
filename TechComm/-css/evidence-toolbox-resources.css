@@ -89,8 +89,7 @@ body {
   padding: 28px;
 
   background-color: var(--teal);
-  background-image:
-    url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
   background-size: 600px;
 }
 
@@ -192,11 +191,19 @@ body {
 }
 
 .start-here h2 {
-  margin: 0;
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
+
+  border-bottom: 4px solid var(--teal);
+
+  color: var(--teal-dark);
+
+  font-size: 1.4rem;
+  /* margin: 0;
 
   color: var(--accent-dark);
 
-  font-size: 1.2rem;
+  font-size: 1.2rem; */
 }
 
 .start-here ul {
@@ -516,7 +523,6 @@ body {
 ------------------------------ */
 
 @media screen and (max-width: 900px) {
-
   .resource-grid {
     grid-template-columns: 1fr;
   }
@@ -542,7 +548,6 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-
   .start-here {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -558,7 +563,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-
   body {
     padding: 10px;
   }
