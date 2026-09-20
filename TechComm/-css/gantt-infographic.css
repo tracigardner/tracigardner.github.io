@@ -232,6 +232,8 @@ body {
   border-collapse: collapse;
 
   font-size: 0.82rem;
+  caption-side: bottom;
+  text-align: start;
 }
 
 .gantt th,
