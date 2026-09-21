@@ -331,109 +331,50 @@ body {
 
 .brand-mark {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
-  min-height: 62px;
+  min-height: 76px;
   padding-bottom: 12px;
 
   border-bottom: 2px solid var(--accent-light);
 
-  color: var(--accent-dark);
-
-  font-weight: bold;
-  line-height: 1;
+  line-height: 1.05;
 }
 
-.brand-mark.w3c {
-  font-size: 2.8rem;
-  letter-spacing: -0.08em;
-}
+.brand-primary {
+  display: inline-flex;
+  align-items: center;
 
-.brand-mark.wai {
-  gap: 8px;
-
-  font-size: 1.2rem;
-}
-
-.brand-mark.wai span {
-  font-size: 1.8rem;
-  letter-spacing: -0.07em;
-}
-
-.brand-mark.wai strong {
-  padding-left: 8px;
-
-  border-left: 2px solid var(--accent-medium);
-
-  font-size: 2rem;
-}
-
-.brand-mark.section508 {
-  font-size: 1.85rem;
-  letter-spacing: -0.03em;
-}
-
-.brand-mark.section508 span {
-  font-weight: normal;
-}
-
-.brand-mark.digitalgov {
-  font-size: 2rem;
-  letter-spacing: -0.04em;
-}
-
-.brand-mark.digitalgov span {
-  font-weight: normal;
-}
-
-.brand-mark.cdc {
   width: max-content;
-  min-height: 54px;
+  max-width: 100%;
+  min-height: 46px;
   padding: 8px 12px;
 
-  border: 0;
+  border-radius: 4px;
 
   background-color: var(--accent);
   color: var(--white);
 
-  font-size: 2rem;
-  letter-spacing: 0.05em;
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  line-height: 1;
+
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
-.brand-mark.archives {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
+.brand-secondary {
+  margin-top: 6px;
+
+  color: var(--dark-gray);
+
+  font-size: 0.74rem;
   font-weight: normal;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-}
-
-.brand-mark.nng {
-  font-size: 2.8rem;
-  letter-spacing: -0.08em;
-}
-
-.brand-mark.nng span {
-  font-weight: normal;
-}
-
-.brand-mark.uswds {
-  font-size: 2rem;
-  letter-spacing: 0.04em;
-}
-
-.brand-mark.govuk {
-  width: max-content;
-  min-height: 54px;
-  padding: 9px 13px;
-
-  border: 0;
-
-  background-color: var(--accent);
-  color: var(--white);
-
-  font-size: 1.9rem;
-  letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 
 /* ------------------------------
