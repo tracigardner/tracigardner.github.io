@@ -1,0 +1,669 @@
+:root {
+  --teal: #508590;
+  --teal-dark: #385d65;
+  --teal-deep: #294b52;
+  --teal-medium: #78a3ab;
+  --teal-light: #edf3f4;
+  --teal-pale: #f5f8f8;
+
+  --orange: #c64600;
+  --orange-dark: #9f3900;
+  --orange-medium: #d98b5e;
+  --orange-light: #fcf1e8;
+  --orange-pale: #fff8f3;
+
+  --maroon: #861f41;
+  --maroon-dark: #681632;
+  --maroon-medium: #b66a82;
+  --maroon-light: #f2e8ec;
+  --maroon-pale: #faf5f7;
+
+  --gray: #e5e1e6;
+  --gray-medium: #b9b9b9;
+  --dark-gray: #555555;
+
+  --text: #1f1f1f;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 18px;
+
+  background-color: var(--white);
+  color: var(--text);
+
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.resource-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mini-infographic {
+  --accent: var(--teal-dark);
+  --accent-dark: var(--teal-deep);
+  --accent-medium: var(--teal-medium);
+  --accent-light: var(--teal-light);
+  --accent-pale: var(--teal-pale);
+
+  margin: 0;
+}
+
+.theme-teal {
+  --accent: var(--teal-dark);
+  --accent-dark: var(--teal-deep);
+  --accent-medium: var(--teal-medium);
+  --accent-light: var(--teal-light);
+  --accent-pale: var(--teal-pale);
+}
+
+.theme-orange {
+  --accent: var(--orange);
+  --accent-dark: var(--orange-dark);
+  --accent-medium: var(--orange-medium);
+  --accent-light: var(--orange-light);
+  --accent-pale: var(--orange-pale);
+}
+
+.theme-maroon {
+  --accent: var(--maroon);
+  --accent-dark: var(--maroon-dark);
+  --accent-medium: var(--maroon-medium);
+  --accent-light: var(--maroon-light);
+  --accent-pale: var(--maroon-pale);
+}
+
+.infographic-gap {
+  height: 64px;
+}
+
+.bkgd-page {
+  width: 100%;
+  padding: 28px;
+
+  background-size: 600px;
+}
+
+/* ------------------------------
+   THEMED PAGE COLORS
+------------------------------ */
+
+/* ACCESSIBILITY */
+
+.theme-teal .bkgd-page {
+  background-color: var(--teal);
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
+}
+
+.theme-teal .page {
+  border-color: var(--teal-dark);
+}
+
+.theme-teal .updated {
+  background-color: var(--teal-dark);
+}
+
+/* PLAIN LANGUAGE */
+
+.theme-orange .bkgd-page {
+  background-color: var(--orange);
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-fcf1e8-orange.png");
+}
+
+.theme-orange .page {
+  border-color: var(--orange);
+}
+
+.theme-orange .updated {
+  background-color: var(--orange);
+}
+
+/* USABILITY */
+
+.theme-maroon .bkgd-page {
+  background-color: var(--maroon);
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-f2e8ec-maroon.png");
+}
+
+.theme-maroon .page {
+  border-color: var(--maroon);
+}
+
+.theme-maroon .updated {
+  background-color: var(--maroon);
+}
+
+.page {
+  padding: 30px;
+
+  background-color: var(--white);
+
+  border: 3px solid;
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
+}
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+  display: grid;
+  grid-template-columns: 94px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 0 22px 0;
+  padding: 22px 26px;
+
+  border-radius: 14px;
+
+  background-color: var(--accent);
+}
+
+.hero-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 94px;
+  height: 94px;
+
+  border-radius: 12px;
+
+  background-color: var(--white);
+  color: var(--accent);
+
+  font-size: 3rem;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0 0 2px 0;
+
+  color: var(--white);
+
+  font-size: 0.92rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-copy h1 {
+  margin: 0;
+
+  color: var(--white);
+
+  font-size: clamp(2.6rem, 5vw, 4.3rem);
+  line-height: 1;
+}
+
+.hero-deck {
+  max-width: 760px;
+  margin: 9px 0 0 0;
+
+  color: var(--white);
+
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   START HERE
+   Matches the Gantt infographic intro:
+   one column, no background, no left border.
+------------------------------ */
+
+.start-here {
+  display: block;
+  margin: 0 0 12px 0;
+  padding: 0 0 9px 0;
+
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.start-here h2 {
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
+
+  border: 0;
+  border-bottom: 4px solid var(--teal);
+
+  color: var(--accent-dark);
+
+  font-size: 1.4rem;
+}
+
+.theme-teal .start-here h2 {
+  border-bottom-color: var(--teal);
+}
+
+.theme-orange .start-here h2 {
+  border-bottom-color: var(--orange);
+}
+
+.theme-maroon .start-here h2 {
+  border-bottom-color: var(--maroon);
+}
+
+.start-here p {
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+
+  background: none;
+
+  font-size: 1rem;
+}
+
+.start-here ul {
+  margin: 0 0 15px 24px;
+  padding-left: 20px;
+
+  background: none;
+}
+
+.start-here li {
+  margin-bottom: 4px;
+}
+
+.start-here li:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------
+   RESOURCE GRID
+------------------------------ */
+
+.resource-section {
+  margin-top: 4px;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  padding: 18px;
+
+  border: 2px solid var(--gray-medium);
+  border-radius: 14px;
+
+  background-color: var(--white);
+}
+
+.resource-card h2 {
+  margin: 8px 0 7px 0;
+
+  color: var(--accent-dark);
+
+  font-size: 1.1rem;
+  line-height: 1.22;
+}
+
+.resource-summary {
+  margin: 0 0 14px 0;
+
+  font-size: 0.88rem;
+}
+
+/* ------------------------------
+   WORDMARKS
+------------------------------ */
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+
+  min-height: 62px;
+  padding-bottom: 12px;
+
+  border-bottom: 2px solid var(--accent-light);
+
+  color: var(--accent-dark);
+
+  font-weight: bold;
+  line-height: 1;
+}
+
+.brand-mark.w3c {
+  font-size: 2.8rem;
+  letter-spacing: -0.08em;
+}
+
+.brand-mark.wai {
+  gap: 8px;
+
+  font-size: 1.2rem;
+}
+
+.brand-mark.wai span {
+  font-size: 1.8rem;
+  letter-spacing: -0.07em;
+}
+
+.brand-mark.wai strong {
+  padding-left: 8px;
+
+  border-left: 2px solid var(--accent-medium);
+
+  font-size: 2rem;
+}
+
+.brand-mark.section508 {
+  font-size: 1.85rem;
+  letter-spacing: -0.03em;
+}
+
+.brand-mark.section508 span {
+  font-weight: normal;
+}
+
+.brand-mark.digitalgov {
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark.digitalgov span {
+  font-weight: normal;
+}
+
+.brand-mark.cdc {
+  width: max-content;
+  min-height: 54px;
+  padding: 8px 12px;
+
+  border: 0;
+
+  background-color: var(--accent);
+  color: var(--white);
+
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.brand-mark.archives {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.brand-mark.nng {
+  font-size: 2.8rem;
+  letter-spacing: -0.08em;
+}
+
+.brand-mark.nng span {
+  font-weight: normal;
+}
+
+.brand-mark.uswds {
+  font-size: 2rem;
+  letter-spacing: 0.04em;
+}
+
+.brand-mark.govuk {
+  width: max-content;
+  min-height: 54px;
+  padding: 9px 13px;
+
+  border: 0;
+
+  background-color: var(--accent);
+  color: var(--white);
+
+  font-size: 1.9rem;
+  letter-spacing: -0.03em;
+}
+
+/* ------------------------------
+   USE IT FOR
+------------------------------ */
+
+.use-box {
+  margin-top: auto;
+  margin-bottom: 14px;
+  padding: 13px 14px;
+
+  border-radius: 10px;
+
+  background-color: var(--accent-light);
+}
+
+.use-box h3 {
+  margin: 0 0 7px 0;
+
+  color: var(--accent-dark);
+
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.use-box ul {
+  margin: 0;
+  padding-left: 19px;
+
+  font-size: 0.84rem;
+}
+
+.use-box li {
+  margin-bottom: 4px;
+}
+
+.use-box li:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------
+   RESOURCE BUTTON
+------------------------------ */
+
+.resource-button {
+  display: block;
+
+  margin-top: auto;
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  background-color: var(--accent);
+  color: var(--white);
+
+  font-size: 0.86rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.resource-button:hover,
+.resource-button:focus {
+  background-color: var(--accent-dark);
+
+  outline: 3px solid var(--accent-medium);
+  outline-offset: 2px;
+}
+
+.resource-button i {
+  margin-left: 5px;
+
+  font-size: 0.75rem;
+}
+
+/* ------------------------------
+   TAKEAWAY
+------------------------------ */
+
+.takeaway {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+
+  margin-top: 24px;
+  padding: 17px 19px;
+
+  border: 3px solid var(--accent);
+  border-radius: 13px;
+
+  background-color: var(--white);
+}
+
+.takeaway-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background-color: var(--accent);
+  color: var(--white);
+
+  font-size: 1.55rem;
+}
+
+.takeaway h2 {
+  margin: 0 0 4px 0;
+
+  color: var(--accent-dark);
+
+  font-size: 1.18rem;
+}
+
+.takeaway p {
+  margin: 0;
+
+  font-size: 0.92rem;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+.updated {
+  margin: 0;
+  padding: 8px 10px;
+
+  color: var(--white);
+
+  font-size: 0.88rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.credit {
+  margin-top: 12px;
+
+  font-size: 0.78rem;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media screen and (max-width: 900px) {
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-card {
+    display: grid;
+    grid-template-columns: minmax(170px, 0.8fr) minmax(0, 1.5fr);
+    column-gap: 20px;
+  }
+
+  .brand-mark {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    align-self: start;
+  }
+
+  .resource-card h2,
+  .resource-summary,
+  .use-box,
+  .resource-button {
+    grid-column: 2;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .resource-card {
+    display: flex;
+  }
+
+  .brand-mark {
+    align-self: stretch;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .bkgd-page {
+    padding: 18px;
+  }
+
+  .page {
+    padding: 20px;
+  }
+
+  .hero {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 16px;
+
+    padding: 18px;
+  }
+
+  .hero-icon {
+    width: 72px;
+    height: 72px;
+
+    font-size: 2.2rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-deck {
+    font-size: 0.9rem;
+  }
+
+  .takeaway {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .takeaway-icon {
+    margin: 0 auto;
+  }
+
+  .infographic-gap {
+    height: 42px;
+  }
+}
