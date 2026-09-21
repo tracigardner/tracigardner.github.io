@@ -608,3 +608,238 @@ body {
     height: 42px;
   }
 }
+
+/* ------------------------------
+   INDEX PAGE
+------------------------------ */
+
+.toolbox-index {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.index-bkgd-page {
+  width: 100%;
+  padding: 28px;
+
+  background-color: var(--teal);
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
+  background-size: 600px;
+}
+
+.index-page {
+  padding: 30px;
+
+  background-color: var(--white);
+
+  border: 3px solid var(--teal-dark);
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
+}
+
+.index-intro {
+  margin: 0 0 24px 0;
+}
+
+.index-intro h1 {
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
+
+  border-bottom: 4px solid var(--teal);
+
+  color: var(--teal-dark);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.index-intro p {
+  max-width: 850px;
+  margin: 0;
+  padding-left: 15px;
+
+  font-size: 1rem;
+}
+
+.index-card-list {
+  display: grid;
+  gap: 20px;
+}
+
+.toolbox-index-card {
+  --accent: var(--teal-dark);
+  --accent-dark: var(--teal-deep);
+  --accent-medium: var(--teal-medium);
+  --accent-light: var(--teal-light);
+  --accent-pale: var(--teal-pale);
+
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr) 52px;
+  gap: 20px;
+  align-items: center;
+
+  padding: 20px 22px;
+
+  border: 3px solid var(--accent);
+  border-radius: 14px;
+
+  background-color: var(--accent);
+  color: var(--white);
+
+  text-decoration: none;
+}
+
+.toolbox-index-card.theme-orange {
+  --accent: var(--orange);
+  --accent-dark: var(--orange-dark);
+  --accent-medium: var(--orange-medium);
+  --accent-light: var(--orange-light);
+  --accent-pale: var(--orange-pale);
+}
+
+.toolbox-index-card.theme-maroon {
+  --accent: var(--maroon);
+  --accent-dark: var(--maroon-dark);
+  --accent-medium: var(--maroon-medium);
+  --accent-light: var(--maroon-light);
+  --accent-pale: var(--maroon-pale);
+}
+
+.index-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 82px;
+  height: 82px;
+
+  border-radius: 12px;
+
+  background-color: var(--white);
+  color: var(--accent);
+
+  font-size: 2.6rem;
+}
+
+.index-card-copy {
+  min-width: 0;
+}
+
+.index-card-eyebrow {
+  display: block;
+  margin-bottom: 2px;
+
+  color: var(--white);
+
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.index-card-copy h2 {
+  margin: 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.05;
+}
+
+.index-card-copy p {
+  max-width: 720px;
+  margin: 7px 0 0 0;
+
+  color: var(--white);
+
+  font-size: 0.95rem;
+}
+
+.index-card-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  background-color: var(--white);
+  color: var(--accent);
+
+  font-size: 1.2rem;
+}
+
+.toolbox-index-card:hover,
+.toolbox-index-card:focus-visible {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+
+  outline: 4px solid var(--accent-medium);
+  outline-offset: 4px;
+}
+
+.toolbox-index-card:hover .index-card-arrow,
+.toolbox-index-card:focus-visible .index-card-arrow {
+  transform: translateX(3px);
+}
+
+.index-card-arrow {
+  transition: transform 0.15s ease;
+}
+
+.index-updated {
+  margin: 0;
+  padding: 8px 10px;
+
+  background-color: var(--teal-dark);
+  color: var(--white);
+
+  font-size: 0.88rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+  .toolbox-index-card {
+    grid-template-columns: 68px minmax(0, 1fr) 42px;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .index-card-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 2rem;
+  }
+
+  .index-card-arrow {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .index-bkgd-page {
+    padding: 18px;
+  }
+
+  .index-page {
+    padding: 20px;
+  }
+
+  .toolbox-index-card {
+    grid-template-columns: 58px minmax(0, 1fr);
+  }
+
+  .index-card-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 1.7rem;
+  }
+
+  .index-card-arrow {
+    display: none;
+  }
+}

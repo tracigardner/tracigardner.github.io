@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Index for Evidence Toolbox resource guides on accessibility, plain language, and usability in Word documents">
+    <meta name="author" content="Traci Gardner">
+
+    <title>Evidence Toolbox: Document Analysis Resources</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://tracigardner.github.io/TechComm/-css/evidence-toolbox-doc-resources.css" rel="stylesheet" type="text/css">
+    <link href="../../-css/evidence-toolbox-doc-resources.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <main class="toolbox-index">
+
+        <div class="index-bkgd-page">
+
+            <div class="index-page">
+
+                <header class="index-intro">
+                    <h1>Evidence Toolbox for Document Analysis</h1>
+
+                    <p>
+                        Choose a resource guide based on the communication issue you want to investigate in a Word document. Each guide points to practical, credible resources you can use to support your analysis and recommendations.
+                    </p>
+                </header>
+
+                <nav class="index-card-list" aria-label="Evidence Toolbox resource guides">
+
+                    <a class="toolbox-index-card theme-teal" href="evidence-toolbox-doc-accessibility.html">
+
+                        <div class="index-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-universal-access"></i>
+                        </div>
+
+                        <div class="index-card-copy">
+                            <span class="index-card-eyebrow">Evidence Toolbox</span>
+                            <h2>Accessibility</h2>
+                            <p>
+                                Find Word-specific resources for checking headings, images, tables, color, navigation, and other accessibility features.
+                            </p>
+                        </div>
+
+                        <div class="index-card-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                    <a class="toolbox-index-card theme-orange" href="evidence-toolbox-doc-plain-language.html">
+
+                        <div class="index-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+
+                        <div class="index-card-copy">
+                            <span class="index-card-eyebrow">Evidence Toolbox</span>
+                            <h2>Plain Language</h2>
+                            <p>
+                                Find practical guides and checklists for evaluating audience focus, organization, wording, headings, readability, and clear communication.
+                            </p>
+                        </div>
+
+                        <div class="index-card-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                    <a class="toolbox-index-card theme-maroon" href="evidence-toolbox-doc-usability.html">
+
+                        <div class="index-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-person-walking-arrow-right"></i>
+                        </div>
+
+                        <div class="index-card-copy">
+                            <span class="index-card-eyebrow">Evidence Toolbox</span>
+                            <h2>Usability</h2>
+                            <p>
+                                Find beginner-friendly methods for testing whether readers can locate information, understand it, and complete realistic tasks with a document.
+                            </p>
+                        </div>
+
+                        <div class="index-card-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                    </a>
+
+                </nav>
+
+            </div>
+
+            <p class="index-updated">
+                <time datetime="2026-09-21">
+                    Last Updated September 21, 2026&nbsp;&nbsp;&nbsp;
+                </time>
+            </p>
+
+        </div>
+
+        <p class="credit">
+            &copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.
+        </p>
+
+    </main>
+
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+
+            function sendHeight() {
+                const height = document.documentElement.scrollHeight;
+
+                window.parent.postMessage(
+                    {
+                        type: "tsc-visual-resize",
+                        height: height
+                    },
+                    parentOrigin
+                );
+            }
+
+            window.addEventListener("load", sendHeight);
+
+            const resizeObserver = new ResizeObserver(sendHeight);
+            resizeObserver.observe(document.documentElement);
+        })();
+    </script>
+
+</body>
+
+</html>
