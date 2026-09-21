@@ -18,9 +18,9 @@
   --maroon-light: #f2e8ec;
   --maroon-pale: #faf5f7;
 
-  --gray: #e5e1e6;
-  --gray-medium: #b9b9b9;
-  --dark-gray: #555555;
+  --gray: #e5e1e6; /* skipper smoke */
+  --gray-medium: #d7d2cb; /* land grant grey */
+  --dark-gray: #75787b; /* hokie stone */
 
   --text: #1f1f1f;
   --white: #ffffff;
@@ -54,6 +54,14 @@ body {
   --accent-pale: var(--teal-pale);
 
   margin: 0;
+}
+
+.theme-index {
+  --accent: var(--dark-gray);
+  --accent-dark: #5f6265;
+  --accent-medium: var(--gray-medium);
+  --accent-light: var(--gray);
+  --accent-pale: #f7f6f7;
 }
 
 .theme-teal {
@@ -622,8 +630,14 @@ body {
   width: 100%;
   padding: 28px;
 
-  background-color: var(--teal);
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
+  background-size: 600px;
+}
+
+.theme-index .index-bkgd-page {
+  background-color: var(--dark-gray);
+
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-e5e1e6-gray.png");
+
   background-size: 600px;
 }
 
@@ -632,9 +646,13 @@ body {
 
   background-color: var(--white);
 
-  border: 3px solid var(--teal-dark);
+  border: 3px solid;
   border-bottom: none;
   border-radius: 14px 14px 0 0;
+}
+
+.theme-index .index-page {
+  border-color: var(--dark-gray);
 }
 
 .index-intro {
@@ -645,9 +663,9 @@ body {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
 
-  border-bottom: 4px solid var(--teal);
+  border-bottom: 4px solid var(--accent);
 
-  color: var(--teal-dark);
+  color: var(--accent-dark);
 
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.05;
@@ -793,7 +811,7 @@ body {
   margin: 0;
   padding: 8px 10px;
 
-  background-color: var(--teal-dark);
+  background-color: var(--accent);
   color: var(--white);
 
   font-size: 0.88rem;
