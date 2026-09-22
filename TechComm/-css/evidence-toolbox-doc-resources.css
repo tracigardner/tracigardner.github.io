@@ -429,7 +429,10 @@ body {
 ------------------------------ */
 
 .resource-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 
   margin-top: auto;
   padding: 10px 12px;
@@ -443,6 +446,12 @@ body {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
+}
+
+.resource-button i {
+  flex: 0 0 auto;
+
+  font-size: 0.75rem;
 }
 
 .resource-button:hover,
