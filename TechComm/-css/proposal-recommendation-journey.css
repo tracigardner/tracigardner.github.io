@@ -1,0 +1,654 @@
+:root {
+  --maroon: #861f41;
+  --maroon-dark: #681632;
+  --maroon-medium: #b66a82;
+  --maroon-light: #f2e8ec;
+  --maroon-pale: #faf5f7;
+
+  --teal: #508590;
+  --teal-dark: #385d65;
+  --teal-deep: #294b52;
+  --teal-medium: #78a3ab;
+  --teal-light: #edf3f4;
+  --teal-pale: #f5f8f8;
+
+  --orange: #c64600;
+  --orange-light: #fcf1e8;
+
+  --gray: #e5e1e6;
+  --gray-medium: #d7d2cb;
+  --dark-gray: #75787b;
+
+  --text: #1f1f1f;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 18px;
+
+  background-color: var(--white);
+  color: var(--text);
+
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.infographic {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bkgd-page {
+  width: 100%;
+  padding: 28px;
+
+  background-color: var(--teal);
+
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/orange-topo-map.png");
+
+  background-size: 600px;
+}
+
+.page {
+  padding: 30px;
+
+  background-color: var(--white);
+
+  border: 3px solid var(--teal-dark);
+  border-bottom: none;
+  border-radius: 14px 14px 0 0;
+}
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
+.hero {
+  display: grid;
+  grid-template-columns: 94px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+
+  width: 100%;
+  margin: 0 0 24px 0;
+  padding: 22px 26px;
+
+  border-radius: 14px;
+
+  background-color: var(--teal-dark);
+}
+
+.hero-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 94px;
+  height: 94px;
+
+  border-radius: 12px;
+
+  background-color: var(--white);
+  color: var(--teal-dark);
+
+  font-size: 2.8rem;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-copy h1 {
+  margin: 0;
+
+  color: var(--white);
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1;
+}
+
+.hero-copy h2 {
+  margin: 7px 0 0 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.25rem, 3vw, 1.9rem);
+  line-height: 1.1;
+}
+
+/* ------------------------------
+   INTRODUCTION
+------------------------------ */
+
+.intro {
+  margin: 0 0 18px 0;
+  padding: 0 0 9px 0;
+}
+
+.intro h2 {
+  margin: 0 0 14px 0;
+  padding-bottom: 8px;
+
+  border-bottom: 4px solid var(--teal);
+
+  color: var(--teal-dark);
+
+  font-size: 1.4rem;
+}
+
+.intro p {
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   JOURNEY
+------------------------------ */
+
+.journey {
+  position: relative;
+
+  margin-top: 12px;
+}
+
+.journey-track {
+  position: absolute;
+
+  top: 40px;
+  bottom: 40px;
+  left: 42px;
+
+  width: 6px;
+
+  border-radius: 6px;
+
+  background: linear-gradient(
+    to bottom,
+    var(--gray-medium) 0%,
+    var(--teal-medium) 24%,
+    var(--teal-dark) 50%,
+    var(--maroon-medium) 76%,
+    var(--maroon) 100%
+  );
+}
+
+.journey-stage {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 18px;
+
+  margin-bottom: 22px;
+}
+
+.journey-stage:last-child {
+  margin-bottom: 0;
+}
+
+.stage-marker {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 84px;
+  height: 84px;
+
+  border: 5px solid var(--white);
+  border-radius: 50%;
+
+  background-color: var(--gray);
+  color: var(--dark-gray);
+
+  box-shadow: 0 0 0 2px var(--gray-medium);
+}
+
+.stage-marker i {
+  margin-top: 2px;
+
+  font-size: 1.5rem;
+}
+
+.stage-number {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.stage-propose .stage-marker {
+  background-color: var(--teal-dark);
+  color: var(--white);
+
+  box-shadow: 0 0 0 2px var(--teal-dark);
+}
+
+.stage-investigate .stage-marker {
+  background-color: var(--teal);
+  color: var(--white);
+
+  box-shadow: 0 0 0 2px var(--teal);
+}
+
+.stage-find .stage-marker {
+  background-color: var(--maroon-light);
+  color: var(--maroon);
+
+  box-shadow: 0 0 0 2px var(--maroon-medium);
+}
+
+.stage-recommend .stage-marker {
+  background-color: var(--maroon);
+  color: var(--white);
+
+  box-shadow: 0 0 0 2px var(--maroon);
+}
+
+.stage-card {
+  padding: 18px 20px;
+
+  border: 2px solid var(--gray-medium);
+  border-radius: 14px;
+
+  background-color: var(--white);
+}
+
+.featured-stage {
+  border-width: 3px;
+}
+
+.stage-propose .featured-stage {
+  border-color: var(--teal-dark);
+  background-color: var(--teal-pale);
+}
+
+.stage-recommend .featured-stage {
+  border-color: var(--maroon);
+  background-color: var(--maroon-pale);
+}
+
+.stage-kicker {
+  margin: 0 0 4px 0;
+
+  color: var(--dark-gray);
+
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.stage-propose .stage-kicker {
+  color: var(--teal-dark);
+}
+
+.stage-investigate .stage-kicker {
+  color: var(--teal-dark);
+}
+
+.stage-find .stage-kicker,
+.stage-recommend .stage-kicker {
+  color: var(--maroon);
+}
+
+.stage-card h2 {
+  margin: 0 0 8px 0;
+
+  color: var(--text);
+
+  font-size: 1.25rem;
+}
+
+.stage-card > p:not(.stage-kicker) {
+  margin: 0;
+}
+
+/* ------------------------------
+   EXAMPLES
+------------------------------ */
+
+.example-box {
+  margin-top: 14px;
+  padding: 13px 15px;
+
+  border-left: 5px solid var(--gray-medium);
+  border-radius: 0 9px 9px 0;
+
+  background-color: var(--gray);
+}
+
+.stage-propose .example-box {
+  border-left-color: var(--teal-dark);
+  background-color: var(--teal-light);
+}
+
+.stage-find .example-box,
+.stage-recommend .example-box {
+  border-left-color: var(--maroon);
+  background-color: var(--maroon-light);
+}
+
+.example-label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: var(--dark-gray);
+
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.stage-propose .example-label {
+  color: var(--teal-dark);
+}
+
+.stage-find .example-label,
+.stage-recommend .example-label {
+  color: var(--maroon);
+}
+
+.example-box p {
+  margin: 0;
+
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   STAGE DETAILS
+------------------------------ */
+
+.stage-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+
+  margin-top: 14px;
+}
+
+.stage-details > div {
+  padding: 11px 12px;
+
+  border-radius: 9px;
+
+  background-color: var(--white);
+}
+
+.stage-details strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: var(--teal-dark);
+
+  font-size: 0.82rem;
+}
+
+.stage-recommend .stage-details strong {
+  color: var(--maroon);
+}
+
+.stage-details span {
+  display: block;
+
+  font-size: 0.8rem;
+}
+
+/* ------------------------------
+   EVIDENCE STRIP
+------------------------------ */
+
+.evidence-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+
+  margin-top: 15px;
+}
+
+.evidence-strip span {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 86px;
+  padding: 10px;
+
+  border-radius: 10px;
+
+  background-color: var(--teal-light);
+  color: var(--teal-dark);
+
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.evidence-strip i {
+  font-size: 1.3rem;
+}
+
+/* ------------------------------
+   SHORTCUT WARNING
+------------------------------ */
+
+.shortcut-warning {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+
+  margin-top: 28px;
+  padding: 17px 19px;
+
+  border-left: 7px solid var(--orange);
+  border-radius: 0 12px 12px 0;
+
+  background-color: var(--orange-light);
+}
+
+.warning-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  background-color: var(--orange);
+  color: var(--white);
+
+  font-size: 1.45rem;
+}
+
+.shortcut-warning h2 {
+  margin: 0 0 4px 0;
+
+  color: var(--orange);
+
+  font-size: 1.15rem;
+}
+
+.shortcut-warning p {
+  margin: 0;
+}
+
+/* ------------------------------
+   TAKEAWAY
+------------------------------ */
+
+.takeaway {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+
+  margin-top: 22px;
+  padding: 17px 19px;
+
+  border: 3px solid var(--teal-dark);
+  border-radius: 13px;
+
+  background-color: var(--white);
+}
+
+.takeaway-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background-color: var(--teal-dark);
+  color: var(--white);
+
+  font-size: 1.55rem;
+}
+
+.takeaway h2 {
+  margin: 0 0 4px 0;
+
+  color: var(--teal-dark);
+
+  font-size: 1.18rem;
+}
+
+.takeaway p {
+  margin: 0;
+
+  font-size: 0.92rem;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+.updated {
+  margin: 0;
+  padding: 8px 10px;
+
+  background-color: var(--teal-dark);
+  color: var(--white);
+
+  font-size: 0.88rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.credit {
+  margin-top: 10px;
+
+  font-size: 0.78rem;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+
+@media screen and (max-width: 800px) {
+  .stage-details {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .bkgd-page {
+    padding: 18px;
+  }
+
+  .page {
+    padding: 20px;
+  }
+
+  .hero {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 16px;
+
+    padding: 18px;
+  }
+
+  .hero-icon {
+    width: 72px;
+    height: 72px;
+
+    font-size: 2.1rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2rem;
+  }
+
+  .hero-copy h2 {
+    font-size: 1.15rem;
+  }
+
+  .journey-track {
+    left: 30px;
+  }
+
+  .journey-stage {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .stage-marker {
+    width: 60px;
+    height: 60px;
+
+    border-width: 4px;
+  }
+
+  .stage-marker i {
+    font-size: 1.15rem;
+  }
+
+  .stage-number {
+    font-size: 0.7rem;
+  }
+
+  .stage-card {
+    padding: 15px;
+  }
+
+  .evidence-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .shortcut-warning,
+  .takeaway {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .warning-icon,
+  .takeaway-icon {
+    margin: 0 auto;
+  }
+}
