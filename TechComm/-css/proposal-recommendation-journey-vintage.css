@@ -94,7 +94,7 @@ body {
   border-radius: 12px;
 
   background-color: var(--sepia-deep);
-  color: var(--sepia-dark);
+  color: var(--white);
 
   font-size: 2.8rem;
 }
@@ -169,14 +169,7 @@ body {
 
   border-radius: 6px;
 
-  background: linear-gradient(
-    to bottom,
-    var(--sepia-light) 0%,
-    var(--sepia-medium) 25%,
-    var(--sepia) 50%,
-    var(--sepia-dark) 75%,
-    var(--sepia-deep) 100%
-  );
+  background: var(--tan-light);
 }
 
 .journey-stage {
@@ -225,32 +218,15 @@ body {
   font-weight: bold;
 }
 
-.stage-propose .stage-marker {
+.stage-journey .stage-notice,
+.stage-propose .stage-marker,
+.stage-investigate .stage-marker,
+.stage-find .stage-marker,
+.stage-recommend .stage-marker {
   background-color: var(--ochre);
   color: var(--white);
 
   box-shadow: 0 0 0 2px var(--ochre);
-}
-
-.stage-investigate .stage-marker {
-  background-color: var(--sepia);
-  color: var(--white);
-
-  box-shadow: 0 0 0 2px var(--sepia);
-}
-
-.stage-find .stage-marker {
-  background-color: var(--sepia-deep);
-  color: var(--sepia-dark);
-
-  box-shadow: 0 0 0 2px var(--sepia-medium);
-}
-
-.stage-recommend .stage-marker {
-  background-color: var(--sepia-deep);
-  color: var(--white);
-
-  box-shadow: 0 0 0 2px var(--sepia-deep);
 }
 
 .stage-card {
