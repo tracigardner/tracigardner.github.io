@@ -54,7 +54,7 @@ body {
 .page {
   padding: 30px;
 
-  background-color: var(--white);
+  background-color: var(--parchment-pale);
 
   border: 3px solid var(--sepia-dark);
   border-bottom: none;
@@ -131,7 +131,7 @@ body {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
 
-  border-bottom: 4px solid var(--sepia-medium);
+  border-bottom: 4px solid var(--sepia-deep);
 
   color: var(--sepia-deep);
 
@@ -166,7 +166,7 @@ body {
 
   border-radius: 6px;
 
-  background-color: var(--sepia-light);
+  background-color: var(--sepia-dark);
 }
 
 .journey-stage {
@@ -198,8 +198,8 @@ body {
   border: 5px solid var(--white);
   border-radius: 50%;
 
-  background-color: var(--parchment-light);
-  color: var(--sepia-deep);
+  background-color: var(--sepia-deep);
+  color: var(--white);
 
   box-shadow: 0 0 0 2px var(--sepia-dark);
 }
@@ -218,10 +218,10 @@ body {
 .stage-card {
   padding: 18px 20px;
 
-  border: 2px solid var(--sepia-dark);
+  border: 3px solid var(--sepia-dark);
   border-radius: 14px;
 
-  background-color: var(--parchment-pale);
+  background-color: var(--white);
 }
 
 .featured-stage {
@@ -262,7 +262,7 @@ body {
   border-left: 5px solid var(--sepia-dark);
   border-radius: 0 9px 9px 0;
 
-  background-color: var(--white);
+  background-color: var(--parchment-pale);
 }
 
 .example-label {
@@ -299,7 +299,7 @@ body {
 .stage-details > div {
   padding: 11px 12px;
 
-  border: 1px solid var(--sepia-light);
+  border: 1px solid var(--sepia-dark);
   border-radius: 9px;
 
   background-color: var(--white);
