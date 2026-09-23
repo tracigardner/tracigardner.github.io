@@ -50,9 +50,9 @@ body {
   width: 100%;
   padding: 28px;
 
-  background-color: var(--orange);
+  background-color: var(--gray);
 
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/orange-topo-map.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/topo-map-sepia.png");
 
   background-size: 600px;
 }
