@@ -49,7 +49,7 @@ body {
 
   background-color: var(--parchment);
 
-  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/sepia-topo-map.png");
+  background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/topo-map-sepia.png");
 
   background-size: 600px;
 }
@@ -134,7 +134,7 @@ body {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
 
-  border-bottom: 4px solid var(--sepia-medium);
+  border-bottom: 4px solid var(--sepia-deep);
 
   color: var(--sepia-deep);
 
@@ -169,15 +169,14 @@ body {
 
   border-radius: 6px;
 
-  background:
-    linear-gradient(
-      to bottom,
-      var(--sepia-light) 0%,
-      var(--sepia-medium) 25%,
-      var(--sepia) 50%,
-      var(--sepia-dark) 75%,
-      var(--sepia-deep) 100%
-    );
+  background: linear-gradient(
+    to bottom,
+    var(--sepia-light) 0%,
+    var(--sepia-medium) 25%,
+    var(--sepia) 50%,
+    var(--sepia-dark) 75%,
+    var(--sepia-deep) 100%
+  );
 }
 
 .journey-stage {
