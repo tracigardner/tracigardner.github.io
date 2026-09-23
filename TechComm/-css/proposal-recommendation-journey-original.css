@@ -77,8 +77,9 @@ body {
   padding: 22px 26px;
 
   border-radius: 14px;
+  border: 5px solid var(--sepia-dark);
 
-  background-color: var(--sepia-deep);
+  background-color: var(--white);
 }
 
 .hero-icon {
@@ -91,13 +92,13 @@ body {
 
   border-radius: 12px;
 
-  background-color: var(--white);
-  color: var(--sepia-deep);
+  background-color: var(--sepia-dark);
+  color: var(--white);
 
   font-size: 2.8rem;
 
-  border: 5px solid var(--sepia-deep);
-  box-shadow: 0 0 0 2px var(--white);
+  border: 5px solid var(--white);
+  box-shadow: 0 0 0 2px var(--sepia-dark);
 }
 
 .hero-copy {
@@ -107,7 +108,7 @@ body {
 .hero-copy h1 {
   margin: 0;
 
-  color: var(--white);
+  color: var(--sepia-dark);
 
   font-size: clamp(2.3rem, 5vw, 4rem);
   line-height: 1;
@@ -116,7 +117,7 @@ body {
 .hero-copy h2 {
   margin: 7px 0 0 0;
 
-  color: var(--white);
+  color: var(--sepia-dark);
 
   font-size: clamp(1.25rem, 3vw, 1.9rem);
   line-height: 1.1;
@@ -135,9 +136,9 @@ body {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
 
-  border-bottom: 4px solid var(--sepia-deep);
+  border-bottom: 4px solid var(--sepia-dark);
 
-  color: var(--sepia-deep);
+  color: var(--sepia-dark);
 
   font-size: 1.4rem;
 }
@@ -202,7 +203,7 @@ body {
   border: 5px solid var(--white);
   border-radius: 50%;
 
-  background-color: var(--sepia-deep);
+  background-color: var(--sepia-dark);
   color: var(--white);
 
   box-shadow: 0 0 0 2px var(--sepia-dark);
@@ -349,8 +350,9 @@ body {
   padding: 10px;
 
   border-radius: 10px;
+  border: 1px solid var(--sepia-dark);
 
-  background-color: var(--sepia-pale);
+  background-color: var(--parchment-evenpaler);
   color: var(--sepia-dark);
 
   font-size: 0.8rem;
@@ -400,7 +402,7 @@ body {
 .shortcut-warning h2 {
   margin: 0 0 4px 0;
 
-  color: var(--sepia-deep);
+  color: var(--sepia-dark);
 
   font-size: 1.15rem;
 }
@@ -447,7 +449,7 @@ body {
 .takeaway h2 {
   margin: 0 0 4px 0;
 
-  color: var(--sepia-deep);
+  color: var(--sepia-dark);
 
   font-size: 1.18rem;
 }
@@ -466,7 +468,7 @@ body {
   margin: 0;
   padding: 8px 10px;
 
-  background-color: var(--sepia-deep);
+  background-color: var(--sepia-dark);
   color: var(--white);
 
   font-size: 0.88rem;
