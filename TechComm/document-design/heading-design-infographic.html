@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quick reference for writing clear, skimmable headings and styling heading levels to show document hierarchy">
+    <meta name="author" content="Traci Gardner">
+
+    <title>Effective Headings: Help Readers Find, Skim, and Understand</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+            --orange: #c64600;
+            --orange-light: #faede6;
+            --smoke-dark: #737173;
+            --smoke: #e5e1e6;
+            --smoke-light: #faf9fa;
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --blue: #003c71;
+            --blue-light: #e5ebf1;
+            --gray: #d7d2cb;
+            --gray-light: #f7f6f5;
+            --text: #1f1f1f;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background-color: var(--white);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            width: 100%;
+            padding: 28px;
+            background-color: var(--teal);
+            background-image:
+                url("https://tracigardner.github.io/TechComm/-images/backgrounds/graph-paper.png");
+        }
+
+        .page {
+            padding: 30px;
+            background-color: var(--white);
+            border-radius: 12px;
+            border: 3px solid var(--teal);
+        }
+
+        /* ------------------------------
+           HERO
+        ------------------------------ */
+
+        .hero {
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .hero-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 2.7rem;
+            box-shadow: 7px 7px 0 var(--smoke);
+        }
+
+        .hero-copy h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2.6rem, 5vw, 4.2rem);
+            line-height: 1;
+        }
+
+        .hero-copy h2 {
+            margin: 6px 0 10px 0;
+            color: var(--teal-dark);
+            font-size: clamp(1.35rem, 3vw, 2.1rem);
+            line-height: 1.08;
+        }
+
+        .hero-copy p {
+            max-width: 800px;
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        /* ------------------------------
+           INTRO
+        ------------------------------ */
+
+        .intro {
+            margin-bottom: 24px;
+            padding: 18px 20px;
+            border-left: 7px solid var(--smoke-dark);
+            background-color: var(--smoke-light);
+        }
+
+        .intro h2 {
+            margin: 0 0 5px 0;
+            color: var(--maroon);
+            font-size: 1.35rem;
+        }
+
+        .intro p {
+            margin: 0;
+        }
+
+        /* ------------------------------
+           PRINCIPLES
+        ------------------------------ */
+
+        .principles {
+            display: grid;
+            gap: 22px;
+        }
+
+        .principle {
+            overflow: hidden;
+            border: 2px solid var(--gray);
+            border-radius: 14px;
+            background-color: var(--white);
+        }
+
+        .principle-header {
+            display: grid;
+            grid-template-columns: 58px 1fr;
+            gap: 14px;
+            align-items: center;
+            padding: 15px 18px;
+            background-color: var(--maroon-light);
+        }
+
+        .principle-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .principle-header h2 {
+            margin: 0 0 3px 0;
+            color: var(--maroon);
+            font-size: 1.55rem;
+        }
+
+        .principle-header p {
+            margin: 0;
+            font-size: 0.97rem;
+        }
+
+        .principle-body {
+            padding: 22px;
+        }
+
+        /* ------------------------------
+           COMPARISONS
+        ------------------------------ */
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 54px 1fr;
+            gap: 16px;
+            align-items: stretch;
+        }
+
+        .example-card {
+            padding: 18px;
+            border-radius: 11px;
+        }
+
+        .example-card.weak {
+            border-top: 6px solid var(--orange);
+            background-color: var(--orange-light);
+        }
+
+        .example-card.strong {
+            border-top: 6px solid var(--teal-dark);
+            background-color: var(--teal-light);
+        }
+
+        .example-label {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: var(--maroon);
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .heading-example {
+            margin-bottom: 15px;
+        }
+
+        .heading-example:last-child {
+            margin-bottom: 0;
+        }
+
+        .heading-example strong {
+            display: block;
+            margin-bottom: 2px;
+            font-size: 1.05rem;
+        }
+
+        .heading-example span {
+            display: block;
+            font-size: 0.92rem;
+        }
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--maroon);
+            font-size: 2.6rem;
+        }
+
+        /* ------------------------------
+           SKIMMING DEMO
+        ------------------------------ */
+
+        .sample-doc {
+            padding: 16px;
+            border: 1px solid var(--gray);
+            background-color: var(--white);
+        }
+
+        .sample-doc h3 {
+            margin: 0 0 12px 0;
+            color: var(--maroon);
+            font-size: 1.25rem;
+        }
+
+        .sample-doc h4 {
+            margin: 14px 0 2px 0;
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+        .sample-doc p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .dense-copy {
+            margin: 0;
+            font-size: 0.94rem;
+        }
+
+        /* ------------------------------
+           HIERARCHY
+        ------------------------------ */
+
+        .hierarchy-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 1fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+        .document-demo {
+            padding: 22px;
+            border: 1px solid var(--gray);
+            background-color: var(--white);
+            box-shadow: 4px 4px 0 var(--gray-light);
+        }
+
+        .demo-level-1 {
+            margin: 0 0 8px 0;
+            color: var(--maroon);
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .demo-level-2 {
+            margin: 17px 0 7px 22px;
+            color: var(--teal-dark);
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .demo-level-3 {
+            margin: 14px 0 5px 44px;
+            color: var(--text);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .fake-text {
+            height: 7px;
+            margin: 6px 0 6px 44px;
+            border-radius: 20px;
+            background-color: var(--gray);
+        }
+
+        .fake-text.short {
+            width: 62%;
+        }
+
+        .fake-text.medium {
+            width: 76%;
+        }
+
+        .fake-text.long {
+            width: 90%;
+        }
+
+        .level-notes {
+            display: grid;
+            gap: 12px;
+        }
+
+        .level-card {
+            padding: 15px 16px;
+            border-radius: 9px;
+            background-color: var(--gray-light);
+        }
+
+        .level-card:nth-child(1) {
+            border-left: 6px solid var(--maroon);
+            background-color: var(--maroon-light);
+        }
+
+        .level-card:nth-child(2) {
+            border-left: 6px solid var(--teal-dark);
+            background-color: var(--teal-light);
+        }
+
+        .level-card:nth-child(3) {
+            border-left: 6px solid var(--smoke-dark);
+            background-color: var(--smoke-light);
+        }
+
+        .level-card h3 {
+            margin: 0 0 6px 0;
+            font-size: 1rem;
+        }
+
+        .level-card ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* ------------------------------
+           FINAL TEST
+        ------------------------------ */
+
+        .final-test {
+            display: grid;
+            grid-template-columns: 66px 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 24px;
+            padding: 18px 20px;
+            border-radius: 12px;
+            background-color: var(--smoke-light);
+        }
+
+        .final-test-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 1.7rem;
+        }
+
+        .final-test h2 {
+            margin: 0 0 3px 0;
+            color: var(--maroon);
+            font-size: 1.2rem;
+        }
+
+        .final-test p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        .updated {
+            margin: 0;
+            padding: 8px 10px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.88rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.78rem;
+        }
+
+        /* ------------------------------
+           RESPONSIVE
+        ------------------------------ */
+
+        @media screen and (max-width: 800px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+                min-height: 44px;
+            }
+
+            .hierarchy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .bkgd-page {
+                padding: 18px;
+            }
+
+            .page {
+                padding: 20px;
+            }
+
+            .hero {
+                grid-template-columns: 76px 1fr;
+                gap: 16px;
+            }
+
+            .hero-icon {
+                width: 68px;
+                height: 68px;
+                font-size: 2rem;
+                box-shadow: 5px 5px 0 var(--smoke);
+            }
+
+            .principle-header {
+                grid-template-columns: 46px 1fr;
+            }
+
+            .principle-number {
+                width: 42px;
+                height: 42px;
+                font-size: 1.25rem;
+            }
+
+            .final-test {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .final-test-icon {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="infographic">
+
+        <div class="bkgd-page">
+
+            <div class="page">
+
+                <!-- HERO -->
+
+                <header class="hero">
+
+                    <div class="hero-icon" aria-hidden="true">
+                        <i class="fa-solid fa-heading"></i>
+                    </div>
+
+                    <div class="hero-copy">
+                        <h1>Effective Headings</h1>
+                        <h2>Help Readers Find, Skim, and Understand</h2>
+                        <p>
+                            Headings do more than decorate a page. They tell readers what information is available,
+                            show how ideas fit together, and create a roadmap through the document.
+                        </p>
+                    </div>
+
+                </header>
+
+
+                <!-- INTRODUCTION -->
+
+                <section class="intro">
+                    <h2>Think of Headings as Navigation</h2>
+                    <p>
+                        A reader should be able to scan the headings and quickly understand the document&rsquo;s
+                        structure, major topics, and path through the information.
+                    </p>
+                </section>
+
+
+                <!-- PRINCIPLES -->
+
+                <section class="principles">
+
+                    <!-- 1 -->
+
+                    <article class="principle">
+
+                        <div class="principle-header">
+                            <div class="principle-number">1</div>
+                            <div>
+                                <h2>Write Clear, Content-Rich Headings</h2>
+                                <p>Tell readers what they will find, not just what kind of section they are looking at.</p>
+                            </div>
+                        </div>
+
+                        <div class="principle-body">
+
+                            <div class="comparison">
+
+                                <div class="example-card weak">
+                                    <span class="example-label">Too Vague</span>
+
+                                    <div class="heading-example">
+                                        <strong>Background</strong>
+                                        <span>Doesn&rsquo;t tell readers what background information is covered.</span>
+                                    </div>
+
+                                    <div class="heading-example">
+                                        <strong>Results</strong>
+                                        <span>Readers have to enter the section to discover which results matter.</span>
+                                    </div>
+
+                                    <div class="heading-example">
+                                        <strong>Discussion</strong>
+                                        <span>Gives readers almost no clue about the section&rsquo;s content.</span>
+                                    </div>
+                                </div>
+
+                                <div class="arrow" aria-hidden="true">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+
+                                <div class="example-card strong">
+                                    <span class="example-label">Clear + Content-Rich</span>
+
+                                    <div class="heading-example">
+                                        <strong>Current Water Usage in Montgomery County</strong>
+                                        <span>Names the specific background topic.</span>
+                                    </div>
+
+                                    <div class="heading-example">
+                                        <strong>Survey Results: Resident Water Concerns</strong>
+                                        <span>Identifies exactly which results are discussed.</span>
+                                    </div>
+
+                                    <div class="heading-example">
+                                        <strong>Implications for Future Water Management</strong>
+                                        <span>Signals the focus of the discussion.</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 2 -->
+
+                    <article class="principle">
+
+                        <div class="principle-header">
+                            <div class="principle-number">2</div>
+                            <div>
+                                <h2>Use Headings to Help Readers Skim</h2>
+                                <p>Break large ideas into meaningful sections so readers can see the document&rsquo;s main points at a glance.</p>
+                            </div>
+                        </div>
+
+                        <div class="principle-body">
+
+                            <div class="comparison">
+
+                                <div class="example-card weak">
+                                    <span class="example-label">Hard to Skim</span>
+
+                                    <div class="sample-doc">
+                                        <h3>Energy Use in Data Centers</h3>
+                                        <p class="dense-copy">
+                                            Data centers require significant amounts of electricity to operate. This section provides information about how data centers use energy, the factors that influence their consumption, and the potential impacts on the local power grid. It also discusses strategies for improving efficiency and reducing overall energy demand.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="arrow" aria-hidden="true">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+
+                                <div class="example-card strong">
+                                    <span class="example-label">Easy to Skim</span>
+
+                                    <div class="sample-doc">
+                                        <h3>Energy Use in Data Centers</h3>
+
+                                        <h4>How Data Centers Use Energy</h4>
+                                        <p>Overview of electricity needs and key systems.</p>
+
+                                        <h4>Factors That Influence Energy Consumption</h4>
+                                        <p>Size, operations, and cooling requirements.</p>
+
+                                        <h4>Potential Impacts on the Local Power Grid</h4>
+                                        <p>What increased demand could mean for the region.</p>
+
+                                        <h4>Strategies for Improving Efficiency</h4>
+                                        <p>Ways to reduce energy use and support sustainability.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 3 -->
+
+                    <article class="principle">
+
+                        <div class="principle-header">
+                            <div class="principle-number">3</div>
+                            <div>
+                                <h2>Style Headings to Show Document Hierarchy</h2>
+                                <p>Use consistent formatting so readers can see which sections are major, which are subordinate, and how ideas relate.</p>
+                            </div>
+                        </div>
+
+                        <div class="principle-body">
+
+                            <div class="hierarchy-grid">
+
+                                <div class="document-demo" aria-label="Example document showing three levels of heading hierarchy">
+
+                                    <div class="demo-level-1">1. Project Overview</div>
+
+                                    <div class="demo-level-2">1.1 Purpose</div>
+                                    <div class="fake-text long"></div>
+                                    <div class="fake-text medium"></div>
+                                    <div class="fake-text short"></div>
+
+                                    <div class="demo-level-2">1.2 Scope</div>
+                                    <div class="fake-text long"></div>
+                                    <div class="fake-text medium"></div>
+                                    <div class="fake-text short"></div>
+
+                                    <div class="demo-level-1" style="margin-top: 26px;">2. Key Findings</div>
+
+                                    <div class="demo-level-2">2.1 Current Conditions</div>
+                                    <div class="fake-text long"></div>
+                                    <div class="fake-text medium"></div>
+
+                                    <div class="demo-level-3">Local Trends</div>
+                                    <div class="fake-text long"></div>
+                                    <div class="fake-text short"></div>
+
+                                </div>
+
+                                <div class="level-notes">
+
+                                    <div class="level-card">
+                                        <h3>Main Headings: Level 1</h3>
+                                        <ul>
+                                            <li>Largest and most prominent.</li>
+                                            <li>Identify major document sections.</li>
+                                            <li>Use the same style throughout.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="level-card">
+                                        <h3>Subheadings: Level 2</h3>
+                                        <ul>
+                                            <li>Smaller than Level 1 headings.</li>
+                                            <li>Divide a major section into related parts.</li>
+                                            <li>Remain clearly distinct from body text.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="level-card">
+                                        <h3>Lower-Level Headings: Level 3</h3>
+                                        <ul>
+                                            <li>Less prominent than Level 2.</li>
+                                            <li>Signal another level of detail when needed.</li>
+                                            <li>Follow a consistent visual pattern.</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- FINAL TEST -->
+
+                <section class="final-test">
+
+                    <div class="final-test-icon" aria-hidden="true">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+
+                    <div>
+                        <h2>Test Your Headings</h2>
+                        <p>
+                            Read only the headings. Can you understand the document&rsquo;s structure and main ideas without reading the body text?
+                        </p>
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- LAST UPDATED -->
+
+            <p class="updated">
+                <time datetime="2026-09-23">
+                    Last Updated September 23, 2026&nbsp;&nbsp;&nbsp;
+                </time>
+            </p>
+
+        </div>
+
+
+        <!-- CREDIT -->
+
+        <p class="credit">
+            &copy; 2026 Traci Gardner. Available under a Creative Commons
+            Attribution-NonCommercial Share-Alike 4.0 International License.
+        </p>
+
+    </main>
+
+
+    <script>
+        (function () {
+
+            const parentOrigin = "https://www.tengrrl.com";
+
+            function sendHeight() {
+
+                const height = document.documentElement.scrollHeight;
+
+                window.parent.postMessage(
+                    {
+                        type: "tsc-visual-resize",
+                        height: height
+                    },
+                    parentOrigin
+                );
+
+            }
+
+            window.addEventListener("load", sendHeight);
+
+            const resizeObserver = new ResizeObserver(sendHeight);
+            resizeObserver.observe(document.documentElement);
+
+        })();
+    </script>
+
+</body>
+
+</html>
