@@ -15,6 +15,7 @@
   --parchment: #ead8b8;
   --parchment-light: #f3e7d2;
   --parchment-pale: #faf4e8;
+  --parchment-evenpaler: #fdfaf5;
 
   --text: #3f2d1f;
   --white: #ffffff;
@@ -94,6 +95,9 @@ body {
   color: var(--sepia-deep);
 
   font-size: 2.8rem;
+
+  border: 5px solid var(--sepia-deep);
+  box-shadow: 0 0 0 2px var(--white);
 }
 
 .hero-copy {
@@ -259,10 +263,11 @@ body {
   margin-top: 14px;
   padding: 13px 15px;
 
+  border: 1px solid var(--sepia-dark);
   border-left: 5px solid var(--sepia-dark);
   border-radius: 0 9px 9px 0;
 
-  background-color: var(--parchment-pale);
+  background-color: var(--parchment-evenpaler);
 }
 
 .example-label {
