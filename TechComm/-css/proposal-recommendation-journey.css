@@ -13,7 +13,10 @@
   --teal-pale: #f5f8f8;
 
   --orange: #c64600;
+  --orange-dark: #9f3900;
+  --orange-medium: #d98b5e;
   --orange-light: #fcf1e8;
+  --orange-pale: #fff8f3;
 
   --gray: #e5e1e6;
   --gray-medium: #d7d2cb;
@@ -47,7 +50,7 @@ body {
   width: 100%;
   padding: 28px;
 
-  background-color: var(--teal);
+  background-color: var(--orange);
 
   background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/orange-topo-map.png");
 
@@ -59,7 +62,7 @@ body {
 
   background-color: var(--white);
 
-  border: 3px solid var(--teal-dark);
+  border: 3px solid var(--orange);
   border-bottom: none;
   border-radius: 14px 14px 0 0;
 }
@@ -80,7 +83,7 @@ body {
 
   border-radius: 14px;
 
-  background-color: var(--teal-dark);
+  background-color: var(--orange);
 }
 
 .hero-icon {
@@ -94,7 +97,7 @@ body {
   border-radius: 12px;
 
   background-color: var(--white);
-  color: var(--teal-dark);
+  color: var(--orange);
 
   font-size: 2.8rem;
 }
@@ -134,9 +137,9 @@ body {
   margin: 0 0 14px 0;
   padding-bottom: 8px;
 
-  border-bottom: 4px solid var(--teal);
+  border-bottom: 4px solid var(--orange);
 
-  color: var(--teal-dark);
+  color: var(--orange-dark);
 
   font-size: 1.4rem;
 }
@@ -171,10 +174,10 @@ body {
 
   background: linear-gradient(
     to bottom,
-    var(--gray-medium) 0%,
-    var(--teal-medium) 24%,
-    var(--teal-dark) 50%,
-    var(--maroon-medium) 76%,
+    var(--orange) 0%,
+    var(--orange-medium) 25%,
+    var(--gray-medium) 50%,
+    var(--maroon-medium) 75%,
     var(--maroon) 100%
   );
 }
@@ -221,22 +224,22 @@ body {
 }
 
 .stage-number {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .stage-propose .stage-marker {
-  background-color: var(--teal-dark);
+  background-color: var(--orange);
   color: var(--white);
 
-  box-shadow: 0 0 0 2px var(--teal-dark);
+  box-shadow: 0 0 0 2px var(--orange);
 }
 
 .stage-investigate .stage-marker {
-  background-color: var(--teal);
+  background-color: var(--dark-gray);
   color: var(--white);
 
-  box-shadow: 0 0 0 2px var(--teal);
+  box-shadow: 0 0 0 2px var(--dark-gray);
 }
 
 .stage-find .stage-marker {
@@ -267,8 +270,8 @@ body {
 }
 
 .stage-propose .featured-stage {
-  border-color: var(--teal-dark);
-  background-color: var(--teal-pale);
+  border-color: var(--orange);
+  background-color: var(--orange-pale);
 }
 
 .stage-recommend .featured-stage {
@@ -288,11 +291,11 @@ body {
 }
 
 .stage-propose .stage-kicker {
-  color: var(--teal-dark);
+  color: var(--orange-dark);
 }
 
 .stage-investigate .stage-kicker {
-  color: var(--teal-dark);
+  color: var(--dark-gray);
 }
 
 .stage-find .stage-kicker,
@@ -327,8 +330,8 @@ body {
 }
 
 .stage-propose .example-box {
-  border-left-color: var(--teal-dark);
-  background-color: var(--teal-light);
+  border-left-color: var(--orange);
+  background-color: var(--orange-light);
 }
 
 .stage-find .example-box,
@@ -351,7 +354,7 @@ body {
 }
 
 .stage-propose .example-label {
-  color: var(--teal-dark);
+  color: var(--orange-dark);
 }
 
 .stage-find .example-label,
@@ -390,9 +393,13 @@ body {
 
   margin-bottom: 4px;
 
-  color: var(--teal-dark);
+  color: var(--dark-gray);
 
   font-size: 0.82rem;
+}
+
+.stage-propose .stage-details strong {
+  color: var(--orange-dark);
 }
 
 .stage-recommend .stage-details strong {
@@ -429,8 +436,8 @@ body {
 
   border-radius: 10px;
 
-  background-color: var(--teal-light);
-  color: var(--teal-dark);
+  background-color: var(--gray);
+  color: var(--dark-gray);
 
   font-size: 0.8rem;
   font-weight: bold;
@@ -501,7 +508,7 @@ body {
   margin-top: 22px;
   padding: 17px 19px;
 
-  border: 3px solid var(--teal-dark);
+  border: 3px solid var(--maroon);
   border-radius: 13px;
 
   background-color: var(--white);
@@ -517,7 +524,7 @@ body {
 
   border-radius: 50%;
 
-  background-color: var(--teal-dark);
+  background-color: var(--orange);
   color: var(--white);
 
   font-size: 1.55rem;
@@ -526,7 +533,7 @@ body {
 .takeaway h2 {
   margin: 0 0 4px 0;
 
-  color: var(--teal-dark);
+  color: var(--maroon);
 
   font-size: 1.18rem;
 }
@@ -545,7 +552,7 @@ body {
   margin: 0;
   padding: 8px 10px;
 
-  background-color: var(--teal-dark);
+  background-color: var(--maroon);
   color: var(--white);
 
   font-size: 0.88rem;
