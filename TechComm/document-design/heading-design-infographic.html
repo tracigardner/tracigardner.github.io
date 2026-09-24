@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Quick reference for writing clear, skimmable headings and styling heading levels to show document hierarchy">
+    <meta name="description" content="Quick reference showing how headings create a navigable roadmap through a document">
     <meta name="author" content="Traci Gardner">
 
-    <title>Effective Headings: Help Readers Find, Skim, and Understand</title>
+    <title>Headings: A Roadmap for Your Reader</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -17,18 +17,24 @@
             --maroon: #861f41;
             --maroon-dark: #5e162e;
             --maroon-light: #f3e8ec;
+
             --orange: #c64600;
             --orange-light: #faede6;
+
             --smoke-dark: #737173;
             --smoke: #e5e1e6;
             --smoke-light: #faf9fa;
+
             --teal: #508590;
             --teal-dark: #385d65;
             --teal-light: #edf3f4;
+
             --blue: #003c71;
             --blue-light: #e5ebf1;
+
             --gray: #d7d2cb;
             --gray-light: #f7f6f5;
+
             --text: #1f1f1f;
             --white: #ffffff;
         }
@@ -53,17 +59,17 @@
 
         .bkgd-page {
             width: 100%;
-            padding: 28px;
+            padding: 36px;
             background-color: var(--teal);
-            background-image:
-                url("https://tracigardner.github.io/TechComm/-images/backgrounds/roadmap.png");
+            background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/roadmap.png");
+            background-size: 360px;
         }
 
         .page {
             padding: 30px;
             background-color: var(--white);
-            border-radius: 12px;
-            border: 3px solid var(--teal);
+            border: 1px solid var(--teal);
+            border-radius: 14px;
         }
 
         /* ------------------------------
@@ -74,7 +80,7 @@
             display: grid;
             grid-template-columns: 110px 1fr;
             gap: 24px;
-            align-items: center;
+            align-items: start;
             margin-bottom: 24px;
         }
 
@@ -85,17 +91,39 @@
             width: 92px;
             height: 92px;
             border-radius: 50%;
-            background-color: var(--maroon);
+            background-color: var(--teal-dark);
             color: var(--white);
             font-size: 2.7rem;
-            box-shadow: 7px 7px 0 var(--smoke);
+            box-shadow: 3px 7px 0 var(--smoke);
+        }
+
+        .map-phone-icon {
+            position: relative;
+        }
+
+        .map-phone-icon .phone {
+            position: relative;
+            z-index: 1;
+            font-size: 4.2rem;
+            line-height: 1;
+        }
+
+        .map-phone-icon .map {
+            position: absolute;
+            z-index: 2;
+            top: 43%;
+            left: 50%;
+            color: var(--white);
+            font-size: 1.5rem;
+            transform: translate(-50%, -50%);
         }
 
         .hero-copy h1 {
             margin: 0;
-            color: var(--maroon);
+            color: var(--teal-dark);
             font-size: clamp(2.6rem, 5vw, 4.2rem);
             line-height: 1;
+            text-shadow: 3px 3px 0 var(--smoke);
         }
 
         .hero-copy h2 {
@@ -130,6 +158,63 @@
 
         .intro p {
             margin: 0;
+        }
+
+
+        /* ------------------------------
+           ROUTE PREVIEW
+        ------------------------------ */
+
+        .route-preview {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin: 0 0 24px 0;
+        }
+
+        .route-preview::before {
+            content: "";
+            position: absolute;
+            top: 28px;
+            left: 16%;
+            right: 16%;
+            border-top: 3px dashed var(--smoke-dark);
+            z-index: 0;
+        }
+
+        .route-stop {
+            position: relative;
+            z-index: 1;
+            padding: 0 12px 14px 12px;
+            text-align: center;
+        }
+
+        .route-stop-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 58px;
+            height: 58px;
+            margin: 0 auto 8px auto;
+            border: 5px solid var(--white);
+            border-radius: 50%;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 1.35rem;
+            box-shadow: 0 0 0 2px var(--smoke-dark);
+        }
+
+        .route-stop strong {
+            display: block;
+            color: var(--maroon);
+            font-size: 1rem;
+        }
+
+        .route-stop span {
+            display: block;
+            margin-top: 2px;
+            font-size: 0.87rem;
         }
 
         /* ------------------------------
@@ -476,6 +561,20 @@
                 box-shadow: 5px 5px 0 var(--smoke);
             }
 
+            .route-preview {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .route-preview::before {
+                top: 30px;
+                bottom: 30px;
+                left: 50%;
+                right: auto;
+                border-top: 0;
+                border-left: 3px dashed var(--smoke-dark);
+            }
+
             .principle-header {
                 grid-template-columns: 46px 1fr;
             }
@@ -510,16 +609,18 @@
 
                 <header class="hero">
 
-                    <div class="hero-icon" aria-hidden="true">
-                        <i class="fa-solid fa-heading"></i>
+                    <div class="hero-icon map-phone-icon" aria-hidden="true">
+                        <i class="fa-solid fa-mobile-screen-button phone"></i>
+                        <i class="fa-solid fa-location-arrow map"></i>
                     </div>
 
                     <div class="hero-copy">
-                        <h1>Effective Headings</h1>
-                        <h2>Help Readers Find, Skim, and Understand</h2>
+                        <h1>Headings</h1>
+                        <h2>A Roadmap for Your Reader</h2>
                         <p>
-                            Headings do more than decorate a page. They tell readers what information is available,
-                            show how ideas fit together, and create a roadmap through the document.
+                            Readers rarely travel through a document one sentence at a time. They scan for signs that
+                            tell them where they are, what lies ahead, and how the information fits together.
+                            Strong headings provide that map.
                         </p>
                     </div>
 
@@ -529,11 +630,45 @@
                 <!-- INTRODUCTION -->
 
                 <section class="intro">
-                    <h2>Think of Headings as Navigation</h2>
+                    <h2>Give Readers a Route Through the Document</h2>
                     <p>
-                        A reader should be able to scan the headings and quickly understand the document&rsquo;s
-                        structure, major topics, and path through the information.
+                        Think of each heading as a signpost. A useful sign names the destination, helps readers choose
+                        a route, and shows how one part of the document connects to the next. A reader who scans only
+                        the headings should still be able to tell where the document is going.
                     </p>
+                </section>
+
+
+
+
+                <!-- ROUTE PREVIEW -->
+
+                <section class="route-preview" aria-label="Three stops on the heading roadmap">
+
+                    <div class="route-stop">
+                        <div class="route-stop-icon" aria-hidden="true">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <strong>Stop 1: Destination</strong>
+                        <span>Name what readers will find.</span>
+                    </div>
+
+                    <div class="route-stop">
+                        <div class="route-stop-icon" aria-hidden="true">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <strong>Stop 2: Route</strong>
+                        <span>Help readers scan and navigate.</span>
+                    </div>
+
+                    <div class="route-stop">
+                        <div class="route-stop-icon" aria-hidden="true">
+                            <i class="fa-solid fa-map"></i>
+                        </div>
+                        <strong>Stop 3: Hierarchy</strong>
+                        <span>Show how sections fit together.</span>
+                    </div>
+
                 </section>
 
 
@@ -548,8 +683,8 @@
                         <div class="principle-header">
                             <div class="principle-number">1</div>
                             <div>
-                                <h2>Write Clear, Content-Rich Headings</h2>
-                                <p>Tell readers what they will find, not just what kind of section they are looking at.</p>
+                                <h2>Name the Destination</h2>
+                                <p>Write content-rich headings that tell readers where each section leads.</p>
                             </div>
                         </div>
 
@@ -558,21 +693,21 @@
                             <div class="comparison">
 
                                 <div class="example-card weak">
-                                    <span class="example-label">Too Vague</span>
+                                    <span class="example-label"><i class="fa-solid fa-signs-post" aria-hidden="true"></i> Vague Signposts</span>
 
                                     <div class="heading-example">
                                         <strong>Background</strong>
-                                        <span>Doesn&rsquo;t tell readers what background information is covered.</span>
+                                        <span>A sign marked only &ldquo;Background&rdquo; does not tell readers where they are headed.</span>
                                     </div>
 
                                     <div class="heading-example">
                                         <strong>Results</strong>
-                                        <span>Readers have to enter the section to discover which results matter.</span>
+                                        <span>Readers have to enter the section before they can tell which results are there.</span>
                                     </div>
 
                                     <div class="heading-example">
                                         <strong>Discussion</strong>
-                                        <span>Gives readers almost no clue about the section&rsquo;s content.</span>
+                                        <span>The label names a section type, but not its destination.</span>
                                     </div>
                                 </div>
 
@@ -581,21 +716,21 @@
                                 </div>
 
                                 <div class="example-card strong">
-                                    <span class="example-label">Clear + Content-Rich</span>
+                                    <span class="example-label"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Useful Destinations</span>
 
                                     <div class="heading-example">
                                         <strong>Current Water Usage in Montgomery County</strong>
-                                        <span>Names the specific background topic.</span>
+                                        <span>Readers know exactly what information this section contains.</span>
                                     </div>
 
                                     <div class="heading-example">
                                         <strong>Survey Results: Resident Water Concerns</strong>
-                                        <span>Identifies exactly which results are discussed.</span>
+                                        <span>The heading names both the evidence and its focus.</span>
                                     </div>
 
                                     <div class="heading-example">
                                         <strong>Implications for Future Water Management</strong>
-                                        <span>Signals the focus of the discussion.</span>
+                                        <span>The heading previews the direction the discussion will take.</span>
                                     </div>
                                 </div>
 
@@ -613,8 +748,8 @@
                         <div class="principle-header">
                             <div class="principle-number">2</div>
                             <div>
-                                <h2>Use Headings to Help Readers Skim</h2>
-                                <p>Break large ideas into meaningful sections so readers can see the document&rsquo;s main points at a glance.</p>
+                                <h2>Mark the Route</h2>
+                                <p>Place useful signposts along the way so readers can scan, orient themselves, and jump to what they need.</p>
                             </div>
                         </div>
 
@@ -623,7 +758,7 @@
                             <div class="comparison">
 
                                 <div class="example-card weak">
-                                    <span class="example-label">Hard to Skim</span>
+                                    <span class="example-label"><i class="fa-solid fa-road-barrier" aria-hidden="true"></i> Few Route Markers</span>
 
                                     <div class="sample-doc">
                                         <h3>Energy Use in Data Centers</h3>
@@ -638,7 +773,7 @@
                                 </div>
 
                                 <div class="example-card strong">
-                                    <span class="example-label">Easy to Skim</span>
+                                    <span class="example-label"><i class="fa-solid fa-route" aria-hidden="true"></i> Clear Route Markers</span>
 
                                     <div class="sample-doc">
                                         <h3>Energy Use in Data Centers</h3>
@@ -671,8 +806,8 @@
                         <div class="principle-header">
                             <div class="principle-number">3</div>
                             <div>
-                                <h2>Style Headings to Show Document Hierarchy</h2>
-                                <p>Use consistent formatting so readers can see which sections are major, which are subordinate, and how ideas relate.</p>
+                                <h2>Show the Route Hierarchy</h2>
+                                <p>Use heading levels consistently so readers can distinguish major destinations from smaller stops along the route.</p>
                             </div>
                         </div>
 
@@ -709,29 +844,29 @@
                                 <div class="level-notes">
 
                                     <div class="level-card">
-                                        <h3>Main Headings: Level 1</h3>
+                                        <h3><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i> Major Destinations: Level 1</h3>
                                         <ul>
-                                            <li>Largest and most prominent.</li>
-                                            <li>Identify major document sections.</li>
-                                            <li>Use the same style throughout.</li>
+                                            <li>Most visually prominent heading level.</li>
+                                            <li>Mark the document&rsquo;s major sections.</li>
+                                            <li>Use one consistent style for every major destination.</li>
                                         </ul>
                                     </div>
 
                                     <div class="level-card">
-                                        <h3>Subheadings: Level 2</h3>
+                                        <h3><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Stops Along the Route: Level 2</h3>
                                         <ul>
-                                            <li>Smaller than Level 1 headings.</li>
-                                            <li>Divide a major section into related parts.</li>
-                                            <li>Remain clearly distinct from body text.</li>
+                                            <li>Visually subordinate to Level 1.</li>
+                                            <li>Mark important stops within a major section.</li>
+                                            <li>Stay distinct from both Level 1 and body text.</li>
                                         </ul>
                                     </div>
 
                                     <div class="level-card">
-                                        <h3>Lower-Level Headings: Level 3</h3>
+                                        <h3><i class="fa-solid fa-turn-up" aria-hidden="true"></i> Local Turns: Level 3</h3>
                                         <ul>
                                             <li>Less prominent than Level 2.</li>
-                                            <li>Signal another level of detail when needed.</li>
-                                            <li>Follow a consistent visual pattern.</li>
+                                            <li>Show smaller turns within a subsection.</li>
+                                            <li>Use only when the route truly needs another level.</li>
                                         </ul>
                                     </div>
 
@@ -751,13 +886,15 @@
                 <section class="final-test">
 
                     <div class="final-test-icon" aria-hidden="true">
-                        <i class="fa-solid fa-list-check"></i>
+                        <i class="fa-solid fa-map"></i>
                     </div>
 
                     <div>
-                        <h2>Test Your Headings</h2>
+                        <h2>Try the Roadmap Test</h2>
                         <p>
-                            Read only the headings. Can you understand the document&rsquo;s structure and main ideas without reading the body text?
+                            Read only the headings, from top to bottom. Can you tell where the document starts, what its
+                            major destinations are, how the sections connect, and where to go for a specific piece of information?
+                            If not, revise the map.
                         </p>
                     </div>
 
