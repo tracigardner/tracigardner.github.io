@@ -76,14 +76,20 @@
         /* ------------------------------
            HERO
         ------------------------------ */
+        .hero-bkgd {
+            margin: -30px -30px 24px -30px;
+            padding: 26px 30px 24px;
+            border-radius: 12px 12px 0 0;
+            background-color: var(--smoke-light);
+            border-bottom: 1px solid var(--smoke);
+        }
+
 
         .hero {
             display: grid;
             grid-template-columns: 160px 1fr;
             gap: 26px;
             align-items: start;
-            margin-bottom: 24px;
-
         }
 
         /* Highway-style exit sign: headings act as navigation cues. */
@@ -145,24 +151,38 @@
         }
 
         .hero-intro {
-            align-items: start;
-            margin-bottom: 36px;
+            margin-bottom: 14px;
         }
 
         .hero-intro p {
+            margin: 0;
             font-size: 1.05rem;
+        }
+
+        .route-overview {
+            margin-bottom: 24px;
+            padding: 16px 18px 8px;
+            border: 1px solid var(--smoke);
+            border-top: 5px solid var(--teal-dark);
+            border-radius: 10px;
+            background-color: var(--smoke-light);
+        }
+
+        .route-overview-heading {
+            margin: 0 0 14px;
+            color: var(--teal-dark);
+            font-size: 1.15rem;
         }
 
         /* ------------------------------
            ROUTE PREVIEW
         ------------------------------ */
-
         .route-preview {
             position: relative;
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 14px;
-            margin: 0 0 24px 0;
+            margin: 0;
         }
 
         .route-preview::before {
@@ -556,6 +576,11 @@
                 padding: 20px;
             }
 
+            .hero-bkgd {
+                margin: -20px -20px 20px -20px;
+                padding: 22px 20px 20px;
+            }
+
             .hero {
                 grid-template-columns: 112px 1fr;
                 gap: 16px;
@@ -655,44 +680,63 @@
                 </div>
 
                 <div class="hero-intro">
+
                     <p>
-                        Readers rarely travel through a document one sentence at a time. They scan for signs that
-                        tell them where they are, what lies ahead, and how the information fits together. A reader
-                        who scans only the headings should still be able to tell where the document is going.
+                        Readers rarely travel through a document one sentence at a time.
+                        They scan for signs that tell them where they are, what lies ahead,
+                        and how the information fits together. A reader who scans only the
+                        headings should still be able to tell where the document is going.
+                        <strong>Good headings do that in three ways:</strong>
                     </p>
+
                 </div>
 
                 <!-- ROUTE PREVIEW -->
 
-                <section class="route-preview" aria-label="Three exits on the heading roadmap">
+                <section class="route-overview">
 
-                    <div class="route-stop">
-                        <div class="route-stop-icon" aria-hidden="true">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <strong>Exit 1: Name the Destination</strong>
-                        <span>Tell readers what they&rsquo;ll find.</span>
-                    </div>
+                    <h2 class="route-overview-heading">
+                        Follow the Three Exits
+                    </h2>
 
-                    <div class="route-stop">
-                        <div class="route-stop-icon" aria-hidden="true">
-                            <i class="fa-solid fa-route"></i>
-                        </div>
-                        <strong>Exit 2: Mark the Route</strong>
-                        <span>Help readers scan and navigate.</span>
-                    </div>
+                    <div class="route-preview" aria-label="Three exits on the heading roadmap">
 
-                    <div class="route-stop">
-                        <div class="route-stop-icon" aria-hidden="true">
-                            <i class="fa-solid fa-map"></i>
+                        <div class="route-stop">
+
+                            <div class="route-stop-icon" aria-hidden="true">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <strong>Exit 1: Name the Destination</strong>
+                            <span>Tell readers what they&rsquo;ll find.</span>
+
                         </div>
-                        <strong>Exit 3: Show the Hierarchy</strong>
-                        <span>Show how sections fit together.</span>
+
+                        <div class="route-stop">
+
+                            <div class="route-stop-icon" aria-hidden="true">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+
+                            <strong>Exit 2: Mark the Route</strong>
+                            <span>Help readers scan and navigate.</span>
+
+                        </div>
+
+                        <div class="route-stop">
+
+                            <div class="route-stop-icon" aria-hidden="true">
+                                <i class="fa-solid fa-map"></i>
+                            </div>
+
+                            <strong>Exit 3: Show the Hierarchy</strong>
+                            <span>Show how sections fit together.</span>
+
+                        </div>
+
                     </div>
 
                 </section>
-
-
                 <!-- PRINCIPLES -->
 
                 <section class="principles">
