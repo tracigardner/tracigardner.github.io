@@ -57,7 +57,6 @@
             margin: 0 auto;
         }
 
-
         .bkgd-page {
             width: 100%;
             padding: 36px;
@@ -69,8 +68,142 @@
         .page {
             padding: 30px;
             background-color: var(--white);
-            border: 2px solid var(--teal);
+            border: 1px solid var(--teal);
             border-radius: 14px;
+        }
+
+        .interstate-sign {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 95px;
+            overflow: hidden;
+            border: 4px solid var(--white);
+            border-radius: 18px 18px 28px 28px;
+            background-color: #003c71;
+            box-shadow: 0 0 0 3px #003c71;
+            color: var(--white);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .interstate-top {
+            width: 100%;
+            padding: 6px 4px 5px;
+            background-color: #861f41;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+        }
+
+        .interstate-number {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.7rem;
+            line-height: 1;
+        }
+
+        .exit-sign {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 190px;
+            min-height: 115px;
+            padding: 20px 22px 12px;
+            border: 4px solid var(--white);
+            border-radius: 5px;
+            background-color: #287a3d;
+            box-shadow:
+                0 0 0 2px #287a3d,
+                4px 6px 0 var(--smoke);
+            color: var(--white);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .exit-label {
+            position: absolute;
+            top: 7px;
+            right: 9px;
+            font-size: 0.68rem;
+            letter-spacing: 0.04em;
+        }
+
+        .exit-destination {
+            margin-top: 10px;
+            font-size: 1.4rem;
+            line-height: 1.05;
+        }
+
+        .exit-arrow {
+            margin-top: 4px;
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+
+
+
+        /* last */
+        .lane-sign {
+            position: relative;
+            width: 330px;
+            padding: 24px 14px 12px;
+            border: 4px solid var(--white);
+            border-radius: 5px;
+            background-color: #287a3d;
+            box-shadow:
+                0 0 0 2px #287a3d,
+                4px 6px 0 var(--smoke);
+            color: var(--white);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .lane-exit {
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            font-size: 0.65rem;
+            font-weight: bold;
+            letter-spacing: 0.08em;
+        }
+
+        .lane-destinations {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .lane-destinations div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 70px;
+            padding: 8px;
+            border-right: 2px solid rgba(255, 255, 255, 0.55);
+            text-align: center;
+        }
+
+        .lane-destinations div:last-child {
+            border-right: 0;
+        }
+
+        .lane-destinations span {
+            font-size: 0.95rem;
+            font-weight: bold;
+            line-height: 1.1;
+        }
+
+        .lane-destinations strong {
+            margin-top: 6px;
+            font-size: 1.8rem;
+            line-height: 1;
         }
 
         /* ------------------------------
@@ -79,78 +212,88 @@
 
         .hero {
             display: grid;
-            grid-template-columns: 160px 1fr;
-            gap: 26px;
+            grid-template-columns: 110px 1fr;
+            gap: 24px;
             align-items: start;
             margin-bottom: 24px;
         }
 
-        /* Highway-style exit sign: headings act as navigation cues. */
-        .hero-exit-sign {
-            position: relative;
+        .hero-icon {
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 145px;
-            min-height: 108px;
-            margin-top: 2px;
-            padding: 20px 12px 10px;
-            border: 4px solid var(--white);
-            border-radius: 5px;
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
             background-color: var(--teal-dark);
-            box-shadow:
-                0 0 0 2px var(--teal-dark),
-                6px 7px 0 var(--smoke);
             color: var(--white);
-            text-align: center;
+            font-size: 2.7rem;
+            box-shadow: 3px 7px 0 var(--smoke);
         }
 
-        .exit-label {
-            position: absolute;
-            top: 7px;
-            right: 9px;
-            font-size: 0.62rem;
-            font-weight: bold;
-            letter-spacing: 0.08em;
+        .map-phone-icon {
+            position: relative;
         }
 
-        .exit-destination {
-            margin-top: 8px;
-            font-size: 1.18rem;
-            font-weight: bold;
-            line-height: 1.05;
-            text-transform: uppercase;
-        }
-
-        .exit-arrow {
-            margin-top: 2px;
-            font-size: 2rem;
+        .map-phone-icon .phone {
+            position: relative;
+            z-index: 1;
+            font-size: 4.2rem;
             line-height: 1;
+        }
+
+        .map-phone-icon .map {
+            position: absolute;
+            z-index: 2;
+            top: 43%;
+            left: 50%;
+            color: var(--white);
+            font-size: 1.5rem;
+            transform: translate(-50%, -50%);
         }
 
         .hero-copy h1 {
-            margin: 18px 0px 0px 0px;
+            margin: 0;
             color: var(--teal-dark);
             font-size: clamp(2.6rem, 5vw, 4.2rem);
             line-height: 1;
+            text-shadow: 3px 3px 0 var(--smoke);
         }
 
         .hero-copy h2 {
             margin: 6px 0 10px 0;
-            color: var(--text);
+            color: var(--teal-dark);
             font-size: clamp(1.35rem, 3vw, 2.1rem);
             line-height: 1.08;
         }
 
-        .hero-intro {
-            align-items: start;
-            margin-bottom: 36px;
-        }
-
-        .hero-intro p {
+        .hero-copy p {
+            max-width: 800px;
+            margin: 0;
             font-size: 1.05rem;
         }
+
+        /* ------------------------------
+           INTRO
+        ------------------------------ */
+
+        .intro {
+            margin-bottom: 24px;
+            padding: 18px 20px;
+            border-left: 7px solid var(--smoke-dark);
+            background-color: var(--smoke-light);
+        }
+
+        .intro h2 {
+            margin: 0 0 5px 0;
+            color: var(--maroon);
+            font-size: 1.35rem;
+        }
+
+        .intro p {
+            margin: 0;
+        }
+
 
         /* ------------------------------
            ROUTE PREVIEW
@@ -228,42 +371,27 @@
             display: grid;
             grid-template-columns: 58px 1fr;
             gap: 14px;
-            align-items: start;
+            align-items: center;
             padding: 15px 18px;
-            background-color: var(--smoke-light);
+            background-color: var(--maroon-light);
         }
 
-        .principle-exit {
+        .principle-number {
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 54px;
-            min-height: 52px;
-            padding: 5px 4px 4px;
-            border: 3px solid var(--white);
-            border-radius: 4px;
-            background-color: var(--teal-dark);
-            box-shadow: 0 0 0 2px var(--teal-dark);
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: var(--maroon);
             color: var(--white);
-            line-height: 1;
-            text-align: center;
-        }
-
-        .principle-exit span {
-            font-size: 0.52rem;
+            font-size: 1.6rem;
             font-weight: bold;
-            letter-spacing: 0.08em;
-        }
-
-        .principle-exit strong {
-            margin-top: 3px;
-            font-size: 1.45rem;
         }
 
         .principle-header h2 {
             margin: 0 0 3px 0;
-            color: var(--teal-dark);
+            color: var(--maroon);
             font-size: 1.55rem;
         }
 
@@ -556,32 +684,15 @@
             }
 
             .hero {
-                grid-template-columns: 112px 1fr;
+                grid-template-columns: 76px 1fr;
                 gap: 16px;
             }
 
-            .hero-exit-sign {
-                width: 104px;
-                min-height: 82px;
-                padding: 17px 8px 8px;
-                border-width: 3px;
-                box-shadow:
-                    0 0 0 2px var(--teal-dark),
-                    4px 5px 0 var(--smoke);
-            }
-
-            .exit-label {
-                top: 5px;
-                right: 6px;
-                font-size: 0.5rem;
-            }
-
-            .exit-destination {
-                font-size: 0.88rem;
-            }
-
-            .exit-arrow {
-                font-size: 1.55rem;
+            .hero-icon {
+                width: 68px;
+                height: 68px;
+                font-size: 2rem;
+                box-shadow: 5px 5px 0 var(--smoke);
             }
 
             .route-preview {
@@ -602,19 +713,10 @@
                 grid-template-columns: 46px 1fr;
             }
 
-            .principle-exit {
+            .principle-number {
                 width: 42px;
-                min-height: 42px;
-                padding: 4px 3px 3px;
-            }
-
-            .principle-exit span {
-                font-size: 0.45rem;
-            }
-
-            .principle-exit strong {
-                margin-top: 2px;
-                font-size: 1.15rem;
+                height: 42px;
+                font-size: 1.25rem;
             }
 
             .final-test {
@@ -639,46 +741,106 @@
 
                 <!-- HERO -->
 
+                <div class="interstate-sign" aria-hidden="true" style="margin-bottom: 24px;">
+                    <div class="interstate-top">INTERSTATE</div>
+                    <div class="interstate-number">81</div>
+                </div>
+
+                <div class="exit-sign" aria-hidden="true">
+
+                    <div class="exit-label">
+                        EXIT 2
+                    </div>
+
+                    <div class="exit-destination">
+                        Key Findings
+                    </div>
+
+                    <div class="exit-arrow" style="margin-bottom: 24px;">
+                        &#8595;
+                    </div>
+
+                </div>
+
+
+                <div class="lane-sign" aria-hidden="true">
+
+                    <div class="lane-exit">
+                        EXIT
+                    </div>
+
+                    <div class="lane-destinations">
+
+                        <div>
+                            <span>Overview</span>
+                            <strong>&darr;</strong>
+                        </div>
+
+                        <div>
+                            <span>Findings</span>
+                            <strong>&darr;</strong>
+                        </div>
+
+                        <div>
+                            <span>Next Steps</span>
+                            <strong>&searr;</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
                 <header class="hero">
 
-                    <div class="hero-exit-sign" aria-hidden="true">
-                        <span class="exit-label">NEXT EXIT</span>
-                        <span class="exit-destination">Key Info</span>
-                        <span class="exit-arrow">&darr;</span>
+                    <div class="hero-icon map-phone-icon" aria-hidden="true">
+                        <i class="fa-solid fa-mobile-screen-button phone"></i>
+                        <i class="fa-solid fa-location-arrow map"></i>
                     </div>
 
                     <div class="hero-copy">
                         <h1>Headings</h1>
                         <h2>A Roadmap for Your Reader</h2>
-
+                        <p>
+                            Readers rarely travel through a document one sentence at a time. They scan for signs that
+                            tell them where they are, what lies ahead, and how the information fits together.
+                            Strong headings provide that map.
+                        </p>
                     </div>
+
                 </header>
 
-                <div class="hero-intro">
+
+                <!-- INTRODUCTION -->
+
+                <section class="intro">
+                    <h2>Give Readers a Route Through the Document</h2>
                     <p>
-                        Readers rarely travel through a document one sentence at a time. They scan for signs that
-                        tell them where they are, what lies ahead, and how the information fits together. A reader
-                        who scans only the headings should still be able to tell where the document is going.
+                        Think of each heading as a signpost. A useful sign names the destination, helps readers choose
+                        a route, and shows how one part of the document connects to the next. A reader who scans only
+                        the headings should still be able to tell where the document is going.
                     </p>
-                </div>
+                </section>
+
+
+
 
                 <!-- ROUTE PREVIEW -->
 
-                <section class="route-preview" aria-label="Three exits on the heading roadmap">
+                <section class="route-preview" aria-label="Three stops on the heading roadmap">
 
                     <div class="route-stop">
                         <div class="route-stop-icon" aria-hidden="true">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                        <strong>Exit 1: Name the Destination</strong>
-                        <span>Tell readers what they&rsquo;ll find.</span>
+                        <strong>Stop 1: Destination</strong>
+                        <span>Name what readers will find.</span>
                     </div>
 
                     <div class="route-stop">
                         <div class="route-stop-icon" aria-hidden="true">
                             <i class="fa-solid fa-route"></i>
                         </div>
-                        <strong>Exit 2: Mark the Route</strong>
+                        <strong>Stop 2: Route</strong>
                         <span>Help readers scan and navigate.</span>
                     </div>
 
@@ -686,7 +848,7 @@
                         <div class="route-stop-icon" aria-hidden="true">
                             <i class="fa-solid fa-map"></i>
                         </div>
-                        <strong>Exit 3: Show the Hierarchy</strong>
+                        <strong>Stop 3: Hierarchy</strong>
                         <span>Show how sections fit together.</span>
                     </div>
 
@@ -702,10 +864,7 @@
                     <article class="principle">
 
                         <div class="principle-header">
-                            <div class="principle-exit" aria-hidden="true">
-                                <span>EXIT</span>
-                                <strong>1</strong>
-                            </div>
+                            <div class="principle-number">1</div>
                             <div>
                                 <h2>Name the Destination</h2>
                                 <p>Write content-rich headings that tell readers where each section leads.</p>
@@ -770,10 +929,7 @@
                     <article class="principle">
 
                         <div class="principle-header">
-                            <div class="principle-exit" aria-hidden="true">
-                                <span>EXIT</span>
-                                <strong>2</strong>
-                            </div>
+                            <div class="principle-number">2</div>
                             <div>
                                 <h2>Mark the Route</h2>
                                 <p>Place useful signposts along the way so readers can scan, orient themselves, and jump to what they need.</p>
@@ -831,12 +987,9 @@
                     <article class="principle">
 
                         <div class="principle-header">
-                            <div class="principle-exit" aria-hidden="true">
-                                <span>EXIT</span>
-                                <strong>3</strong>
-                            </div>
+                            <div class="principle-number">3</div>
                             <div>
-                                <h2>Show the Hierarchy</h2>
+                                <h2>Show the Route Hierarchy</h2>
                                 <p>Use heading levels consistently so readers can distinguish major destinations from smaller stops along the route.</p>
                             </div>
                         </div>
