@@ -171,10 +171,17 @@
             border: 2px solid var(--gray);
         }
 
+        .route-header {
+            display: inline;
+            align-items: start;
+            padding: 15px 18px;
+            background-color: var(--smoke-light);
+        }
+
         .route-overview-heading {
-            margin: 0 0 14px;
+            margin: 0 0 3px 0;
             color: var(--teal-dark);
-            font-size: 1.15rem;
+            font-size: 1.55rem;
         }
 
         /* ------------------------------
@@ -685,11 +692,7 @@
                 <div class="hero-intro">
 
                     <p>
-                        Readers rarely travel through a document one sentence at a time.
-                        They scan for signs that tell them where they are, what lies ahead,
-                        and how the information fits together. A reader who scans only the
-                        headings should still be able to tell where the document is going.
-                        <strong>Good headings do that in three ways:</strong>
+                        Readers rarely travel through a document one sentence at a time. They scan for signs that tell them where they are, what lies ahead, and how the information fits together. A reader who scans only the headings should still be able to tell where the document is going. Good headings do that in three ways.
                     </p>
 
                 </div>
@@ -698,9 +701,11 @@
 
                 <section class="route-overview">
 
-                    <h2 class="route-overview-heading">
-                        Follow the Three Exits
-                    </h2>
+                    <div class="route-header">
+
+                        <h2 class="route-overview-heading">Follow This Itinerary</h2>
+
+                    </div>
 
                     <div class="route-preview" aria-label="Three exits on the heading roadmap">
 
