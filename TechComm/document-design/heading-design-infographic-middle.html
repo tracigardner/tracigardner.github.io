@@ -165,48 +165,21 @@
 
         .route-overview {
             margin-bottom: 24px;
-            overflow: hidden;
+            padding: 16px 18px 8px;
+            border-radius: 10px;
+            background-color: var(--smoke-light);
             border: 2px solid var(--gray);
-            border-radius: 12px;
-            background-color: var(--white);
         }
 
         .route-header {
-            display: grid;
-            grid-template-columns: 58px 1fr;
-            gap: 14px;
-            align-items: center;
+            display: inline;
+            align-items: start;
             padding: 15px 18px;
             background-color: var(--smoke-light);
-            border-bottom: 1px solid var(--gray);
-        }
-
-        .route-app-icon {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 54px;
-            height: 54px;
-            border: 3px solid var(--white);
-            border-radius: 12px;
-            background-color: var(--teal-dark);
-            box-shadow: 0 0 0 2px var(--teal-dark);
-            color: var(--white);
-            font-size: 1.5rem;
-        }
-
-        .route-app-icon .pin {
-            position: absolute;
-            right: 7px;
-            bottom: 6px;
-            color: var(--maroon);
-            font-size: 1rem;
-            text-shadow: 0 0 0 var(--white);
         }
 
         .route-overview-heading {
-            margin: 0;
+            margin: 0 0 3px 0;
             color: var(--teal-dark);
             font-size: 1.55rem;
         }
@@ -220,8 +193,6 @@
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 14px;
             margin: 0;
-            padding: 20px 18px 10px;
-            background-color: var(--white);
         }
 
         .route-preview::before {
@@ -649,26 +620,6 @@
                 font-size: 1.55rem;
             }
 
-
-            .route-header {
-                grid-template-columns: 48px 1fr;
-                gap: 12px;
-                padding: 13px 14px;
-            }
-
-            .route-app-icon {
-                width: 44px;
-                height: 44px;
-                border-radius: 10px;
-                font-size: 1.2rem;
-            }
-
-            .route-app-icon .pin {
-                right: 5px;
-                bottom: 5px;
-                font-size: 0.72rem;
-            }
-
             .route-preview {
                 grid-template-columns: 1fr;
                 gap: 8px;
@@ -751,11 +702,6 @@
                 <section class="route-overview">
 
                     <div class="route-header">
-
-                        <div class="route-app-icon" aria-hidden="true">
-                            <i class="fa-solid fa-map"></i>
-                            <i class="fa-solid fa-location-dot pin"></i>
-                        </div>
 
                         <h2 class="route-overview-heading">Follow This Itinerary</h2>
 
