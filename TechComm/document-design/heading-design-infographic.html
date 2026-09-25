@@ -534,7 +534,7 @@
             display: grid;
             grid-template-columns: 66px 1fr;
             gap: 16px;
-            align-items: center;
+            align-items: start;
             margin-top: 24px;
             padding: 18px 20px;
             border-radius: 12px;
@@ -548,18 +548,19 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: var(--maroon);
+            background-color: var(--teal-dark);
             color: var(--white);
-            font-size: 1.7rem;
+            font-size: 2rem;
         }
 
         .final-test h2 {
             margin: 0 0 3px 0;
-            color: var(--maroon);
+            color: var(--teal-dark);
             font-size: 1.2rem;
         }
 
-        .final-test p {
+        .final-test p,
+        .final-test ul li {
             margin: 0;
             font-size: 0.95rem;
         }
@@ -1022,16 +1023,22 @@
                 <section class="final-test">
 
                     <div class="final-test-icon" aria-hidden="true">
-                        <i class="fa-solid fa-map"></i>
+                        <i class="fa-solid fa-flag-checkered"></i>
                     </div>
 
                     <div>
                         <h2>Try the Roadmap Test</h2>
                         <p>
-                            Read only the headings, from top to bottom. Can you tell where the document starts, what its
-                            major destinations are, how the sections connect, and where to go for a specific piece of information?
-                            If not, revise the map.
-                        </p>
+                            Read only the headings, from top to bottom, and then answer these questions:</p>
+                        <ul>
+                            <li>Can you tell where the document starts?</li>
+                            <li>Can you tell what its major destinations are?</li>
+                            <li>Can you tell how the sections connect?</li>
+                            <li>Can you tell where to go for a specific piece of information?
+                            </li>
+                        </ul>
+                        <p>If not, revise the headings to improve your document&rsquo;s roadmap.</p>
+
                     </div>
 
                 </section>
@@ -1090,3 +1097,8 @@
 </body>
 
 </html>
+<p>
+    Read only the headings, from top to bottom. Can you tell where the document starts, what its
+    major destinations are, how the sections connect, and where to go for a specific piece of information?
+    If not, revise the map.
+</p>
