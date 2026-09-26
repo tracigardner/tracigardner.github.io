@@ -38,6 +38,7 @@
 
             --text: #1f1f1f;
             --white: #ffffff;
+            --black: #000000;
 
             --red: #a6192e;
             --red-light: #fae9ec;
@@ -474,14 +475,14 @@
 
         .demo-level-1 {
             margin: 0 0 8px 0;
-            color: #000000;
+            color: var(--black);
             font-size: 1.8rem;
             font-weight: bold;
         }
 
         .demo-level-2 {
             margin: 17px 0 7px 22px;
-            color: var(--maroon-dark);
+            color: var(--text);
             font-size: 1.25rem;
             font-weight: bold;
         }
@@ -523,18 +524,21 @@
         }
 
         .level-card:nth-child(1) {
-            border-left: 6px solid var(--vt-hokieStone-9s);
-            background-color: var(--green-light);
+            border: 1px solid var(--black);
+            border-left: 6px solid var(--black);
+            background-color: var(--smoke);
         }
 
         .level-card:nth-child(2) {
-            border-left: 6px solid var(--vt-hokieStone-1s);
-            background-color: var(--red-light);
+            border: 1px solid var(--text);
+            border-left: 6px solid var(--text);
+            background-color: var(--smoke-light);
         }
 
         .level-card:nth-child(3) {
-            border-left: 6px solid var(--vt-hokieStone-1t);
-            background-color: var(--smoke-light);
+            border: 1px solid var(--smoke-dark);
+            border-left: 6px solid var(--smoke-dark);
+            background-color: var(--white);
         }
 
         .level-card h3 {
