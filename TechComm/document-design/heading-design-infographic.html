@@ -136,7 +136,6 @@
             font-size: 1.18rem;
             font-weight: bold;
             line-height: 1.05;
-            text-transform: uppercase;
         }
 
         .exit-arrow {
@@ -359,7 +358,6 @@
 
         .example-card {
             padding: 18px;
-            border-radius: 11px;
         }
 
         .example-card.weak {
@@ -367,14 +365,16 @@
             background-color: var(--red-light);
         }
 
-        .weak .example-label {
+        .example-label {
             display: inline-block;
             margin-bottom: 12px;
-            color: var(--red);
             font-size: 1rem;
             font-weight: bold;
-            text-transform: uppercase;
             letter-spacing: 0.02em;
+        }
+
+        .weak .example-label {
+            color: var(--red);
         }
 
         .example-card.strong {
@@ -383,13 +383,7 @@
         }
 
         .strong .example-label {
-            display: inline-block;
-            margin-bottom: 12px;
             color: var(--green);
-            font-size: 1rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
         }
 
         .heading-example {
@@ -516,7 +510,6 @@
 
         .level-card {
             padding: 15px 16px;
-            border-radius: 9px;
             background-color: var(--gray-light);
         }
 
