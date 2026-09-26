@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../-css/ptw.css" rel="stylesheet" type="text/css">
+    <style>
+        #my-list #sublist {
+            margin-left: 24px;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="font-size: 24px;font-weight: bold;">Alphabetical List of All Infographics, Fall 2026</h1>
+    <ul id="my-list" class="skipline">
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/academic-writing-vs-technical-communication">Academic Writing vs. Technical Communication</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/tengrrls-dos-and-donts-for-workplace-writing">Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts for Workplace Writing</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/subjective-writing-vs-objective-writing">Subjective Writing vs. Objective Writing</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/memos-vs-letters-infographic">Memos vs. Letters Infographic</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/what-gets-read-first">What Gets Read First?</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/from-definition-to-learning-aid">From Definition to Learning Aid</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/fit-it-on-one-page-plan-before-you-shrink">Fit It on One Page: Plan Before You Shrink</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/the-5-second-test">The 5-Second Test</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/red-light-green-light-is-your-user-document-ready">Red Light, Green Light: Is Your User Document Ready?</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/gantt-charts-show-the-work-not-just-the-dates">Gantt Charts: Show the Work, Not Just the Dates </a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/from-proposal-to-recommendation-report">From Proposal to Recommendation Report</a></li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/evidence-toolbox-for-document-analysis">Evidence Toolbox for Document Analysis</a>
+            <ul id="sublist" class="null">
+                <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/evidence-toolbox-word-document-resources-for-accessibility">Evidence Toolbox: Word Document Resources for Accessibility</a></li>
+                <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/evidence-toolbox-word-document-resources-for-plain-language">Evidence Toolbox: Word Document Resources for Plain Language</a></li>
+                <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/evidence-toolbox-word-document-resources-for-usability">Evidence Toolbox: Word Document Resources for Usability</a></li>
+            </ul>
+        </li>
+        <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/headings-a-roadmap-for-your-reader">Headings: A Roadmap for Your Reader</a></li>
+    </ul>
+
+    <script>
+        const list = document.querySelector("#my-list");
+        const items = [...list.querySelectorAll(":scope > li")];
+
+
+        items
+            .sort((a, b) => a.textContent.localeCompare(b.textContent))
+            .forEach(item => list.appendChild(item));
+    </script>
+</body>
+
+</html>
