@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infographic explaining how to use a reverse outline to revise a proposal">
+    <meta name="author" content="Traci Gardner">
+    <title>The Reverse Outline: Does Your Proposal Make Its Case?</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+
+            --orange: #c64600;
+            --orange-light: #faede6;
+
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+
+            --gold: #f7ea48;
+            --gold-light: #fffde8;
+
+            --green: #287a3d;
+            --green-light: #eaf5e9;
+
+            --red: #a6192e;
+            --red-light: #fae9ec;
+
+            --gray: #d7d2cb;
+            --gray-dark: #666666;
+            --gray-light: #f7f6f5;
+            --text: #1f1f1f;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background-color: var(--white);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.45;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            width: 100%;
+            padding: 30px;
+            background-color: var(--teal);
+            background-image:
+                linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+
+        .page {
+            overflow: hidden;
+            background-color: var(--white);
+            border-radius: 16px 16px 0 0;
+        }
+
+        /* HERO */
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(165px, 220px) 1fr;
+            gap: 28px;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--gray-light), var(--white));
+            border-bottom: 1px solid var(--gray);
+        }
+
+        .hero-visual {
+            position: relative;
+            min-height: 190px;
+        }
+
+        .paper {
+            position: absolute;
+            left: 18px;
+            top: 8px;
+            width: 145px;
+            height: 178px;
+            padding: 18px 15px;
+            border: 2px solid var(--gray-dark);
+            background-color: var(--white);
+            box-shadow: 8px 8px 0 var(--gray);
+            transform: rotate(-2deg);
+        }
+
+        .paper-line {
+            height: 7px;
+            margin-bottom: 9px;
+            border-radius: 10px;
+            background-color: var(--gray);
+        }
+
+        .paper-line.short { width: 70%; }
+        .paper-line.medium { width: 84%; }
+
+        .sticky {
+            position: absolute;
+            width: 105px;
+            min-height: 58px;
+            padding: 10px;
+            background-color: var(--gold);
+            box-shadow: 4px 5px 0 rgba(0,0,0,0.15);
+            font-size: 0.78rem;
+            font-weight: bold;
+            line-height: 1.15;
+        }
+
+        .sticky.one {
+            right: 2px;
+            top: 22px;
+            transform: rotate(4deg);
+        }
+
+        .sticky.two {
+            right: 10px;
+            top: 96px;
+            background-color: var(--teal-light);
+            border: 2px solid var(--teal);
+            transform: rotate(-3deg);
+        }
+
+        .hero-copy h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2.6rem, 5vw, 4.2rem);
+            line-height: 0.95;
+        }
+
+        .hero-copy h2 {
+            margin: 8px 0 12px 0;
+            color: var(--teal-dark);
+            font-size: clamp(1.35rem, 3vw, 2.15rem);
+            line-height: 1.08;
+        }
+
+        .hero-copy p {
+            max-width: 800px;
+            margin: 0;
+            font-size: 1.03rem;
+        }
+
+        .hero-copy strong {
+            color: var(--maroon);
+        }
+
+        /* CONTENT WRAP */
+        .content {
+            padding: 28px 30px 30px;
+        }
+
+        /* INTRO */
+        .intro-card {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 24px;
+            padding: 18px 20px;
+            border-left: 8px solid var(--orange);
+            background-color: var(--orange-light);
+        }
+
+        .intro-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: var(--orange);
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .intro-card h2 {
+            margin: 0 0 4px 0;
+            color: var(--orange);
+            font-size: 1.35rem;
+        }
+
+        .intro-card p {
+            margin: 0;
+            font-size: 0.98rem;
+        }
+
+        /* STEP 1 */
+        .step-section {
+            margin-bottom: 26px;
+            border: 2px solid var(--gray);
+            border-radius: 14px;
+            overflow: hidden;
+            background-color: var(--white);
+        }
+
+        .step-header {
+            display: grid;
+            grid-template-columns: 54px 1fr;
+            gap: 14px;
+            align-items: center;
+            padding: 15px 18px;
+            background-color: var(--gray-light);
+            border-bottom: 1px solid var(--gray);
+        }
+
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .step-header h2 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: 1.5rem;
+        }
+
+        .step-header p {
+            margin: 3px 0 0 0;
+            font-size: 0.95rem;
+        }
+
+        .step-body {
+            padding: 22px;
+        }
+
+        .example-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .example-table th,
+        .example-table td {
+            padding: 12px 14px;
+            border: 1px solid var(--gray);
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .example-table th {
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.95rem;
+        }
+
+        .example-table td:last-child {
+            width: 31%;
+            background-color: var(--gold-light);
+            font-weight: bold;
+        }
+
+        .job-callout {
+            display: grid;
+            grid-template-columns: 1fr 52px 1fr;
+            gap: 14px;
+            align-items: center;
+            margin-top: 18px;
+        }
+
+        .job-box {
+            padding: 14px 16px;
+            border-radius: 10px;
+        }
+
+        .job-box.weak {
+            border-top: 6px solid var(--red);
+            background-color: var(--red-light);
+        }
+
+        .job-box.strong {
+            border-top: 6px solid var(--green);
+            background-color: var(--green-light);
+        }
+
+        .job-box .label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+
+        .job-box.weak .label { color: var(--red); }
+        .job-box.strong .label { color: var(--green); }
+
+        .job-arrow {
+            color: var(--teal-dark);
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        /* STEP 2 */
+        .label-strip {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .label-note {
+            position: relative;
+            min-height: 96px;
+            padding: 16px 14px;
+            background-color: var(--gold);
+            box-shadow: 4px 5px 0 rgba(0,0,0,0.12);
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .label-note:nth-child(even) {
+            background-color: var(--teal-light);
+            border: 2px solid var(--teal);
+        }
+
+        .label-note::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-top: 15px solid rgba(0,0,0,0.12);
+            border-left: 15px solid transparent;
+        }
+
+        .strip-question {
+            margin: 18px 0 0 0;
+            padding: 14px 16px;
+            background-color: var(--maroon-light);
+            color: var(--maroon-dark);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* FIVE TESTS */
+        .tests-heading {
+            margin: 0 0 14px 0;
+            color: var(--teal-dark);
+            font-size: 1.65rem;
+        }
+
+        .tests-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .test-card {
+            overflow: hidden;
+            border: 2px solid var(--gray);
+            border-radius: 12px;
+            background-color: var(--white);
+        }
+
+        .test-card.wide {
+            grid-column: 1 / -1;
+        }
+
+        .test-top {
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            gap: 12px;
+            align-items: center;
+            padding: 14px 16px;
+            background-color: var(--teal-light);
+            border-bottom: 1px solid var(--gray);
+        }
+
+        .test-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 1.1rem;
+        }
+
+        .test-top h3 {
+            margin: 0;
+            color: var(--teal-dark);
+            font-size: 1.14rem;
+            text-transform: uppercase;
+        }
+
+        .test-top p {
+            margin: 2px 0 0 0;
+            font-size: 0.9rem;
+        }
+
+        .test-body {
+            padding: 15px 16px 16px;
+        }
+
+        .watch {
+            margin: 0 0 10px 0;
+            padding: 10px 12px;
+            border-left: 5px solid var(--red);
+            background-color: var(--red-light);
+            font-size: 0.9rem;
+        }
+
+        .watch strong {
+            color: var(--red);
+        }
+
+        .revise {
+            margin: 0;
+            font-size: 0.91rem;
+        }
+
+        .mini-sequence {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .seq-box {
+            padding: 7px 10px;
+            border-radius: 6px;
+            background-color: var(--gold-light);
+            border: 1px solid #d6ca37;
+            font-size: 0.82rem;
+            font-weight: bold;
+        }
+
+        .seq-arrow {
+            color: var(--gray-dark);
+            font-weight: bold;
+        }
+
+        .missing-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px 14px;
+            margin-top: 10px;
+        }
+
+        .missing-item {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            gap: 7px;
+            align-items: start;
+            font-size: 0.9rem;
+        }
+
+        .checkbox {
+            width: 17px;
+            height: 17px;
+            margin-top: 1px;
+            border: 2px solid var(--teal-dark);
+            background-color: var(--white);
+        }
+
+        /* STICKY NOTE ACTIVITY */
+        .activity {
+            margin-top: 26px;
+            padding: 22px;
+            border: 3px dashed var(--orange);
+            border-radius: 14px;
+            background-color: var(--orange-light);
+        }
+
+        .activity-header {
+            display: grid;
+            grid-template-columns: 58px 1fr;
+            gap: 14px;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .activity-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background-color: var(--orange);
+            color: var(--white);
+            font-size: 1.45rem;
+        }
+
+        .activity h2 {
+            margin: 0;
+            color: var(--orange);
+            font-size: 1.45rem;
+        }
+
+        .activity p {
+            margin: 3px 0 0 0;
+        }
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: 1fr 66px 1fr;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .activity-panel {
+            padding: 16px;
+            background-color: var(--white);
+            border: 1px solid var(--gray);
+        }
+
+        .activity-panel h3 {
+            margin: 0 0 12px 0;
+            color: var(--maroon);
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .note-stack {
+            display: grid;
+            gap: 8px;
+        }
+
+        .mini-note {
+            padding: 8px 10px;
+            background-color: var(--gold);
+            box-shadow: 2px 3px 0 rgba(0,0,0,0.12);
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .activity-arrow {
+            color: var(--orange);
+            font-size: 2.4rem;
+            text-align: center;
+        }
+
+        .takeaway {
+            display: grid;
+            grid-template-columns: 66px 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-top: 24px;
+            padding: 18px 20px;
+            border: 3px solid var(--maroon);
+            background-color: var(--white);
+        }
+
+        .takeaway-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        .takeaway h2 {
+            margin: 0 0 4px 0;
+            color: var(--maroon);
+            font-size: 1.35rem;
+        }
+
+        .takeaway p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .updated {
+            margin: 0;
+            padding: 8px 10px;
+            background-color: var(--teal-dark);
+            color: var(--white);
+            font-size: 0.88rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.78rem;
+        }
+
+        @media screen and (max-width: 820px) {
+            .label-strip {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .tests-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .test-card.wide {
+                grid-column: auto;
+            }
+
+            .activity-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .activity-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            body {
+                padding: 10px;
+            }
+
+            .bkgd-page {
+                padding: 16px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 22px 20px;
+            }
+
+            .hero-visual {
+                min-height: 170px;
+            }
+
+            .paper {
+                left: 8px;
+            }
+
+            .sticky.one,
+            .sticky.two {
+                right: 18px;
+            }
+
+            .content {
+                padding: 22px 20px;
+            }
+
+            .intro-card,
+            .takeaway,
+            .activity-header,
+            .step-header {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-icon,
+            .takeaway-icon,
+            .activity-icon,
+            .step-number {
+                margin-bottom: 4px;
+            }
+
+            .job-callout {
+                grid-template-columns: 1fr;
+            }
+
+            .job-arrow {
+                transform: rotate(90deg);
+            }
+
+            .label-strip,
+            .missing-list {
+                grid-template-columns: 1fr;
+            }
+
+            .example-table,
+            .example-table thead,
+            .example-table tbody,
+            .example-table th,
+            .example-table td,
+            .example-table tr {
+                display: block;
+            }
+
+            .example-table thead {
+                display: none;
+            }
+
+            .example-table tr {
+                margin-bottom: 12px;
+                border: 1px solid var(--gray);
+            }
+
+            .example-table td {
+                border: 0;
+                border-bottom: 1px solid var(--gray);
+            }
+
+            .example-table td:last-child {
+                width: auto;
+                border-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="page">
+
+                <header class="hero">
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="paper">
+                            <div class="paper-line medium"></div>
+                            <div class="paper-line"></div>
+                            <div class="paper-line short"></div>
+                            <div class="paper-line"></div>
+                            <div class="paper-line medium"></div>
+                            <div class="paper-line"></div>
+                            <div class="paper-line short"></div>
+                            <div class="paper-line medium"></div>
+                        </div>
+                        <div class="sticky one">Explains why the document needs review</div>
+                        <div class="sticky two">Describes evaluation method</div>
+                    </div>
+
+                    <div class="hero-copy">
+                        <h1>The Reverse Outline</h1>
+                        <h2>Does Your Proposal Make Its Case?</h2>
+                        <p><strong>You already wrote the proposal. Now uncover the outline hiding inside it.</strong> A reverse outline reduces each paragraph to its main job so you can see gaps, repetition, misplaced information, and weak organization.</p>
+                    </div>
+                </header>
+
+                <div class="content">
+
+                    <section class="intro-card">
+                        <div class="intro-icon" aria-hidden="true">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div>
+                            <h2>Revise the Structure Before the Sentences</h2>
+                            <p>Before you polish wording, make sure the proposal gives the Project Lead a clear reason to approve your investigation.</p>
+                        </div>
+                    </section>
+
+                    <section class="step-section">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h2>Label Every Paragraph</h2>
+                                <p>Write a 3&ndash;7 word note that names what the paragraph <strong>does</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-body">
+                            <p>Read one paragraph at a time. In the margin, write a short label for its rhetorical job.</p>
+
+                            <table class="example-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Proposal Paragraph</th>
+                                        <th scope="col">Margin Label</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>The GreenCurrent onboarding guide introduces new engineers to company expectations and routine workplace practices.</td>
+                                        <td>Identifies client document</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Because employees use the guide as an ongoing reference, navigation and usability directly affect how easily readers can find needed information.</td>
+                                        <td>Explains why usability matters</td>
+                                    </tr>
+                                    <tr>
+                                        <td>I will evaluate the guide using established usability and accessibility guidelines.</td>
+                                        <td>Explains evaluation method</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="job-callout">
+                                <div class="job-box weak">
+                                    <span class="label">Too Vague</span>
+                                    Accessibility
+                                </div>
+
+                                <div class="job-arrow" aria-hidden="true">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+
+                                <div class="job-box strong">
+                                    <span class="label">Names the Job</span>
+                                    Explains accessibility criteria
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="step-section">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h2>Read the Labels&mdash;Not the Proposal</h2>
+                                <p>Once every paragraph has a label, ignore the prose and inspect the sequence.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-body">
+                            <div class="label-strip" aria-label="Example sequence of reverse outline labels">
+                                <div class="label-note">Identifies document</div>
+                                <div class="label-note">Describes communication problem</div>
+                                <div class="label-note">Explains why the problem matters</div>
+                                <div class="label-note">Introduces evaluation plan</div>
+                                <div class="label-note">Describes usability analysis</div>
+                                <div class="label-note">Describes accessibility analysis</div>
+                                <div class="label-note">Establishes qualifications</div>
+                                <div class="label-note">Shows project schedule</div>
+                            </div>
+
+                            <p class="strip-question">What story does your proposal tell when you read only the paragraph jobs?</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="tests-heading">Give the Reverse Outline Five Tests</h2>
+
+                        <div class="tests-grid">
+
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-1"></i></div>
+                                    <div>
+                                        <h3>One Job?</h3>
+                                        <p>Does each paragraph have one clear purpose?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <p class="watch"><strong>Watch for:</strong> one paragraph that explains the problem, discusses research, and describes the schedule.</p>
+                                    <p class="revise"><strong>Revise:</strong> Split paragraphs that are trying to do unrelated jobs.</p>
+                                </div>
+                            </article>
+
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-link"></i></div>
+                                    <div>
+                                        <h3>Together?</h3>
+                                        <p>Do paragraphs doing related work stay together?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <p class="watch"><strong>Watch for:</strong></p>
+                                    <div class="mini-sequence">
+                                        <span class="seq-box">Problem</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Method</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Problem again</span>
+                                    </div>
+                                    <p class="revise"><strong>Revise:</strong> Group related work so readers do not have to reconstruct the logic.</p>
+                                </div>
+                            </article>
+
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-repeat"></i></div>
+                                    <div>
+                                        <h3>Repeated?</h3>
+                                        <p>Are you making the same point more than once?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <p class="watch"><strong>Watch for:</strong> several labels that say some version of &ldquo;why the document needs investigation.&rdquo;</p>
+                                    <p class="revise"><strong>Revise:</strong> Combine repeated ideas or keep the point only where it does the most useful work.</p>
+                                </div>
+                            </article>
+
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-circle-question"></i></div>
+                                    <div>
+                                        <h3>Missing?</h3>
+                                        <p>Does the Project Lead get what is needed to approve the project?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <div class="missing-list">
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>What document am I investigating?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>Why does it warrant investigation?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>How will I investigate it?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>Who needs the eventual recommendations?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>Is my plan and timetable realistic?</span></div>
+                                    </div>
+                                    <p class="revise" style="margin-top: 12px;"><strong>If you cannot point to a paragraph that does the job, you have found a gap.</strong></p>
+                                </div>
+                            </article>
+
+                            <article class="test-card wide">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                    <div>
+                                        <h3>Builds the Case?</h3>
+                                        <p>Does the sequence give the reader a sensible path toward approval?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <div class="mini-sequence">
+                                        <span class="seq-box">Here&rsquo;s the document</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s the problem</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s why it matters</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s how I&rsquo;ll investigate</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s the evidence I&rsquo;ll use</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s why the plan is realistic</span>
+                                    </div>
+                                    <p class="revise"><strong>The goal is not one required paragraph order.</strong> The goal is a sequence that makes sense to the Project Lead.</p>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+
+                    <section class="activity">
+                        <div class="activity-header">
+                            <div class="activity-icon" aria-hidden="true"><i class="fa-regular fa-note-sticky"></i></div>
+                            <div>
+                                <h2>Try the Sticky-Note Test</h2>
+                                <p>Move the outline before you rewrite the proposal.</p>
+                            </div>
+                        </div>
+
+                        <div class="activity-grid">
+                            <div class="activity-panel">
+                                <h3>Draft Structure</h3>
+                                <div class="note-stack">
+                                    <div class="mini-note">Problem</div>
+                                    <div class="mini-note">Method</div>
+                                    <div class="mini-note">Problem again</div>
+                                    <div class="mini-note">Qualifications</div>
+                                    <div class="mini-note">Missing?</div>
+                                    <div class="mini-note">Schedule</div>
+                                </div>
+                            </div>
+
+                            <div class="activity-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+
+                            <div class="activity-panel">
+                                <h3>Revised Plan</h3>
+                                <div class="note-stack">
+                                    <div class="mini-note">Document + problem</div>
+                                    <div class="mini-note">Why the problem matters</div>
+                                    <div class="mini-note">Evaluation method</div>
+                                    <div class="mini-note">Evidence + criteria</div>
+                                    <div class="mini-note">Qualifications</div>
+                                    <div class="mini-note">Schedule</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="margin: 16px 0 0 0;"><strong>1.</strong> Write each paragraph&rsquo;s job on a note. &nbsp; <strong>2.</strong> Put the notes in order. &nbsp; <strong>3.</strong> Move, combine, remove, or add notes. &nbsp; <strong>4.</strong> Revise the actual proposal to match.</p>
+                    </section>
+
+                    <section class="takeaway">
+                        <div class="takeaway-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+                        <div>
+                            <h2>Fix the Structure Before You Fix the Sentences</h2>
+                            <p>Reverse outlining helps you revise the proposal at the paragraph level before you move into sentence-level editing and proofreading.</p>
+                        </div>
+                    </section>
+
+                </div>
+
+                <p class="updated">
+                    <time datetime="2026-09-26">Last Updated September 26, 2026&nbsp;&nbsp;&nbsp;</time>
+                </p>
+            </div>
+        </div>
+
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+
+            function sendHeight() {
+                const height = document.documentElement.scrollHeight;
+                window.parent.postMessage(
+                    {
+                        type: "tsc-visual-resize",
+                        height: height
+                    },
+                    parentOrigin
+                );
+            }
+
+            window.addEventListener("load", sendHeight);
+            const resizeObserver = new ResizeObserver(sendHeight);
+            resizeObserver.observe(document.documentElement);
+        })();
+    </script>
+</body>
+</html>
