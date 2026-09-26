@@ -37,6 +37,15 @@
 
             --text: #1f1f1f;
             --white: #ffffff;
+
+            --red: #a6192e;
+            --red-light: #fae9ec;
+
+            --yellow: #f7ea48;
+            --yellow-light: #fffde8;
+
+            --green: #287a3d;
+            --green-light: #eaf5e9;
         }
 
         * {
@@ -105,9 +114,9 @@
             padding: 20px 12px 10px;
             border: 4px solid var(--white);
             border-radius: 5px;
-            background-color: var(--teal-dark);
+            background-color: var(--green);
             box-shadow:
-                0 0 0 2px var(--teal-dark),
+                0 0 0 2px var(--green),
                 6px 7px 0 var(--smoke);
             color: var(--white);
             text-align: center;
@@ -138,7 +147,7 @@
 
         .hero-copy h1 {
             margin: 18px 0px 0px 0px;
-            color: var(--teal-dark);
+            color: var(--green);
             font-size: clamp(2.6rem, 5vw, 4.2rem);
             line-height: 1;
         }
@@ -190,8 +199,8 @@
             height: 54px;
             border: 3px solid var(--white);
             border-radius: 14px;
-            background-color: var(--teal-dark);
-            box-shadow: 0 0 0 2px var(--teal-dark);
+            background-color: var(--green);
+            box-shadow: 0 0 0 2px var(--green);
             color: var(--white);
             font-size: 1.75rem;
         }
@@ -207,7 +216,7 @@
 
         .route-overview-heading {
             margin: 0;
-            color: var(--teal-dark);
+            color: var(--green);
             font-size: 1.55rem;
         }
 
@@ -251,7 +260,7 @@
             margin: 0 auto 8px auto;
             border: 5px solid var(--white);
             border-radius: 50%;
-            background-color: var(--teal-dark);
+            background-color: var(--green);
             color: var(--white);
             font-size: 1.35rem;
             box-shadow: 0 0 0 2px var(--smoke-dark);
@@ -259,7 +268,7 @@
 
         .route-stop strong {
             display: block;
-            color: var(--teal-dark);
+            color: var(--green);
             font-size: 1rem;
         }
 
@@ -304,8 +313,8 @@
             padding: 5px 4px 4px;
             border: 3px solid var(--white);
             border-radius: 4px;
-            background-color: var(--teal-dark);
-            box-shadow: 0 0 0 2px var(--teal-dark);
+            background-color: var(--green);
+            box-shadow: 0 0 0 2px var(--green);
             color: var(--white);
             line-height: 1;
             text-align: center;
@@ -324,7 +333,7 @@
 
         .principle-header h2 {
             margin: 0 0 3px 0;
-            color: var(--teal-dark);
+            color: var(--green);
             font-size: 1.55rem;
         }
 
@@ -354,19 +363,29 @@
         }
 
         .example-card.weak {
-            border-top: 6px solid var(--orange);
-            background-color: var(--orange-light);
+            border-top: 6px solid var(--red);
+            background-color: var(--red-light);
+        }
+
+        .weak .example-label {
+            display: inline-block;
+            margin-bottom: 12px;
+            color: var(--red);
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
 
         .example-card.strong {
-            border-top: 6px solid var(--teal-dark);
-            background-color: var(--teal-light);
+            border-top: 6px solid var(--green);
+            background-color: var(--green-light);
         }
 
-        .example-label {
+        .strong .example-label {
             display: inline-block;
             margin-bottom: 12px;
-            color: var(--maroon);
+            color: var(--green);
             font-size: 1rem;
             font-weight: bold;
             text-transform: uppercase;
@@ -396,7 +415,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--maroon);
+            color: var(--green);
             font-size: 2.6rem;
         }
 
@@ -459,7 +478,7 @@
 
         .demo-level-2 {
             margin: 17px 0 7px 22px;
-            color: var(--teal-dark);
+            color: var(--green);
             font-size: 1.25rem;
             font-weight: bold;
         }
@@ -507,7 +526,7 @@
         }
 
         .level-card:nth-child(2) {
-            border-left: 6px solid var(--teal-dark);
+            border-left: 6px solid var(--green);
             background-color: var(--teal-light);
         }
 
@@ -549,14 +568,14 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background-color: var(--teal-dark);
+            background-color: var(--green);
             color: var(--white);
             font-size: 2rem;
         }
 
         .final-test h2 {
             margin: 0 0 3px 0;
-            color: var(--teal-dark);
+            color: var(--green);
             font-size: 1.2rem;
         }
 
@@ -573,7 +592,7 @@
         .updated {
             margin: 0;
             padding: 8px 10px;
-            background-color: var(--teal-dark);
+            background-color: var(--green);
             color: var(--white);
             font-size: 0.88rem;
             font-weight: bold;
@@ -633,7 +652,7 @@
                 padding: 17px 8px 8px;
                 border-width: 3px;
                 box-shadow:
-                    0 0 0 2px var(--teal-dark),
+                    0 0 0 2px var(--green),
                     4px 5px 0 var(--smoke);
             }
 
