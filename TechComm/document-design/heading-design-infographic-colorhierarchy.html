@@ -22,7 +22,6 @@
             --orange-light: #faede6;
 
             --smoke-dark: #737173;
-            --smoke-darker: #171617;
             --smoke: #e5e1e6;
             --smoke-light: #f7f6f7;
 
@@ -38,7 +37,6 @@
 
             --text: #1f1f1f;
             --white: #ffffff;
-            --black: #000000;
 
             --red: #a6192e;
             --red-light: #fae9ec;
@@ -48,6 +46,66 @@
 
             --green: #287a3d;
             --green-light: #eaf5e9;
+
+
+
+
+            --vt-hokieStone-9s: #0c0c0c;
+            --vt-hokieStone-8s: #171819;
+            --vt-hokieStone-7s: #232425;
+            --vt-hokieStone-6s: #2f3031;
+            --vt-hokieStone-5s: #3b3c3e;
+            --vt-hokieStone-4s: #46484a;
+            --vt-hokieStone-3s: #525456;
+            --vt-hokieStone-2s: #5e6062;
+            --vt-hokieStone-1s: #696c6f;
+            --vt-hokieStone: #75787b;
+            --vt-hokieStone-1t: #838688;
+            --vt-hokieStone-2t: #919395;
+            --vt-hokieStone-3t: #9fa1a3;
+            --vt-hokieStone-4t: #acaeb0;
+            --vt-hokieStone-5t: #babbbd;
+            --vt-hokieStone-6t: #c8c9ca;
+            --vt-hokieStone-7t: #d5d6d7;
+            --vt-hokieStone-8t: #e3e4e5;
+            --vt-hokieStone-9t: #f1f1f2;
+
+            --vt-grey-9s: #151514;
+            --vt-grey-8s: #2b2a29;
+            --vt-grey-7s: #403f3d;
+            --vt-grey-6s: #565451;
+            --vt-grey-5s: #6c6966;
+            --vt-grey-4s: #817e7a;
+            --vt-grey-3s: #97938e;
+            --vt-grey-2s: #aca8a2;
+            --vt-grey-1s: #c2bdb7;
+            --vt-grey: #d7d2cb;
+            --vt-grey-1t: #dbd7d0;
+            --vt-grey-2t: #dfdbd5;
+            --vt-grey-3t: #e3e0db;
+            --vt-grey-4t: #e7e4e0;
+            --vt-grey-5t: #ebe8e5;
+            --vt-grey-6t: #efedea;
+            --vt-grey-7t: #f3f1ef;
+            --vt-grey-8t: #f7f6f5;
+            --vt-grey-9t: #fbfafa;
+
+
+            --vt-smoke-9s: #171617;
+            --vt-smoke-8s: #2e2d2e;
+            --vt-smoke-7s: #454345;
+            --vt-smoke-6s: #5c5a5c;
+            --vt-smoke-5s: #737173;
+            --vt-smoke-4s: #89878a;
+            --vt-smoke-3s: #a09ea1;
+            --vt-smoke-2s: #b7b4b8;
+            --vt-smoke-1s: #cecbcf;
+            --vt-smoke: #e5e1e6;
+            --vt-smoke-7t: #f2f0f2;
+            --vt-smoke-9t: #faf9fa;
+
+
+
 
         }
 
@@ -475,21 +533,21 @@
 
         .demo-level-1 {
             margin: 0 0 8px 0;
-            color: var(--black);
+            color: var(--green);
             font-size: 1.8rem;
             font-weight: bold;
         }
 
         .demo-level-2 {
             margin: 17px 0 7px 22px;
-            color: var(--text);
+            color: var(--red);
             font-size: 1.25rem;
             font-weight: bold;
         }
 
         .demo-level-3 {
             margin: 14px 0 5px 44px;
-            color: var(--smoke-dark);
+            color: var(--text);
             font-size: 1rem;
             font-weight: bold;
         }
@@ -524,21 +582,18 @@
         }
 
         .level-card:nth-child(1) {
-            border: 1px solid var(--black);
-            border-left: 6px solid var(--black);
-            background-color: var(--smoke);
+            border-left: 6px solid var(--green);
+            background-color: var(--green-light);
         }
 
         .level-card:nth-child(2) {
-            border: 1px solid var(--text);
-            border-left: 6px solid var(--text);
-            background-color: var(--smoke-light);
+            border-left: 6px solid var(--red);
+            background-color: var(--red-light);
         }
 
         .level-card:nth-child(3) {
-            border: 1px solid var(--smoke-dark);
             border-left: 6px solid var(--smoke-dark);
-            background-color: var(--white);
+            background-color: var(--smoke-light);
         }
 
         .level-card h3 {
@@ -608,7 +663,7 @@
 
         .final-test-body ul {
             margin: 8px 0;
-            padding-left: 36px;
+            padding-left: 24px;
         }
 
         /* ------------------------------
@@ -781,7 +836,7 @@
                 <div class="hero-bkgd">
                     <header class="hero">
                         <div class="hero-exit-sign" aria-hidden="true">
-                            <span class="exit-label" aria-label="Interstate exit sign labeled Next Exit">NEXT EXIT</span>
+                            <span class="exit-label">NEXT EXIT</span>
                             <span class="exit-destination">Key Info</span>
                             <span class="exit-arrow">&darr;</span>
                         </div>
