@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +35,12 @@
             --gray: #d7d2cb;
             --gray-dark: #666666;
             --gray-light: #f7f6f5;
+
+            --smoke-dark: #737173;
+            --smoke-darker: #171617;
+            --smoke: #e5e1e6;
+            --smoke-light: #f7f6f7;
+
             --text: #1f1f1f;
             --white: #ffffff;
         }
@@ -60,16 +67,15 @@
             width: 100%;
             padding: 30px;
             background-color: var(--teal);
-            background-image:
-                linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px);
-            background-size: 28px 28px;
+            background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/stripes-edf3f4.png");
+            background-size: 600px;
         }
 
         .page {
             overflow: hidden;
-            background-color: var(--white);
-            border-radius: 16px 16px 0 0;
+            border: 2px solid var(--teal-dark);
+            border-radius: 14px;
+            background-color: var(--smoke-light);
         }
 
         /* HERO */
@@ -79,8 +85,8 @@
             gap: 28px;
             align-items: center;
             padding: 30px;
-            background: linear-gradient(135deg, var(--gray-light), var(--white));
-            border-bottom: 1px solid var(--gray);
+            background: var(--white);
+            border: 1px solid var(--teal-dark);
         }
 
         .hero-visual {
@@ -108,8 +114,13 @@
             background-color: var(--gray);
         }
 
-        .paper-line.short { width: 70%; }
-        .paper-line.medium { width: 84%; }
+        .paper-line.short {
+            width: 70%;
+        }
+
+        .paper-line.medium {
+            width: 84%;
+        }
 
         .sticky {
             position: absolute;
@@ -117,7 +128,7 @@
             min-height: 58px;
             padding: 10px;
             background-color: var(--gold);
-            box-shadow: 4px 5px 0 rgba(0,0,0,0.15);
+            box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.15);
             font-size: 0.78rem;
             font-weight: bold;
             line-height: 1.15;
@@ -303,8 +314,13 @@
             font-weight: bold;
         }
 
-        .job-box.weak .label { color: var(--red); }
-        .job-box.strong .label { color: var(--green); }
+        .job-box.weak .label {
+            color: var(--red);
+        }
+
+        .job-box.strong .label {
+            color: var(--green);
+        }
 
         .job-arrow {
             color: var(--teal-dark);
@@ -376,9 +392,17 @@
             background-color: var(--red-light);
         }
 
-        .audit-card.match h3 { color: var(--green); }
-        .audit-card.muddy h3 { color: #7a6200; }
-        .audit-card.mismatch h3 { color: var(--red); }
+        .audit-card.match h3 {
+            color: var(--green);
+        }
+
+        .audit-card.muddy h3 {
+            color: #7a6200;
+        }
+
+        .audit-card.mismatch h3 {
+            color: var(--red);
+        }
 
         .caution-box {
             margin-top: 16px;
@@ -422,7 +446,7 @@
             min-height: 96px;
             padding: 16px 14px;
             background-color: var(--gold);
-            box-shadow: 4px 5px 0 rgba(0,0,0,0.12);
+            box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.12);
             font-weight: bold;
             text-align: center;
             display: flex;
@@ -442,7 +466,7 @@
             bottom: 0;
             width: 0;
             height: 0;
-            border-top: 15px solid rgba(0,0,0,0.12);
+            border-top: 15px solid rgba(0, 0, 0, 0.12);
             border-left: 15px solid transparent;
         }
 
@@ -646,7 +670,7 @@
         .mini-note {
             padding: 8px 10px;
             background-color: var(--gold);
-            box-shadow: 2px 3px 0 rgba(0,0,0,0.12);
+            box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.12);
             font-size: 0.85rem;
             font-weight: bold;
         }
@@ -958,7 +982,10 @@
                             <article class="test-card">
                                 <div class="test-top">
                                     <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-1"></i></div>
-                                    <div><h3>One Job?</h3><p>Does each paragraph have one clear purpose?</p></div>
+                                    <div>
+                                        <h3>One Job?</h3>
+                                        <p>Does each paragraph have one clear purpose?</p>
+                                    </div>
                                 </div>
                                 <div class="test-body">
                                     <p class="watch"><strong>Watch for:</strong> an AI label that needs several jobs, such as &ldquo;explains problem + discusses research + describes schedule.&rdquo;</p>
@@ -969,7 +996,10 @@
                             <article class="test-card">
                                 <div class="test-top">
                                     <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-link"></i></div>
-                                    <div><h3>Together?</h3><p>Do paragraphs doing related work stay together?</p></div>
+                                    <div>
+                                        <h3>Together?</h3>
+                                        <p>Do paragraphs doing related work stay together?</p>
+                                    </div>
                                 </div>
                                 <div class="test-body">
                                     <p class="watch"><strong>Watch for:</strong></p>
@@ -985,7 +1015,10 @@
                             <article class="test-card">
                                 <div class="test-top">
                                     <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-repeat"></i></div>
-                                    <div><h3>Repeated?</h3><p>Are several paragraphs doing the same job?</p></div>
+                                    <div>
+                                        <h3>Repeated?</h3>
+                                        <p>Are several paragraphs doing the same job?</p>
+                                    </div>
                                 </div>
                                 <div class="test-body">
                                     <p class="watch"><strong>Watch for:</strong> several labels that say some version of &ldquo;explains why investigation is needed.&rdquo;</p>
@@ -996,7 +1029,10 @@
                             <article class="test-card">
                                 <div class="test-top">
                                     <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-circle-question"></i></div>
-                                    <div><h3>Missing?</h3><p>Does the Project Lead get what is needed to approve the project?</p></div>
+                                    <div>
+                                        <h3>Missing?</h3>
+                                        <p>Does the Project Lead get what is needed to approve the project?</p>
+                                    </div>
                                 </div>
                                 <div class="test-body">
                                     <div class="missing-list">
@@ -1013,7 +1049,10 @@
                             <article class="test-card wide">
                                 <div class="test-top">
                                     <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-arrow-trend-up"></i></div>
-                                    <div><h3>Builds the Case?</h3><p>Does the sequence help the Project Lead understand and evaluate your proposal?</p></div>
+                                    <div>
+                                        <h3>Builds the Case?</h3>
+                                        <p>Does the sequence help the Project Lead understand and evaluate your proposal?</p>
+                                    </div>
                                 </div>
                                 <div class="test-body">
                                     <div class="mini-sequence">
@@ -1083,4 +1122,5 @@
         })();
     </script>
 </body>
+
 </html>
