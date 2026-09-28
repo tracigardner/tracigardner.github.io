@@ -875,21 +875,233 @@
                 </header>
 
                 <div class="content">
-<section class="step-section"><div class="step-header"><div class="step-number">1</div><div><h2>Ask AI to Map Your Draft</h2><p>Have AI identify the main job of every paragraph.</p></div></div><div class="step-body"><div class="prompt-box" style="margin-top:0;"><h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Use This Prompt</h3><p><strong>Create a reverse outline of my proposal.</strong> For each paragraph, give a <strong>3&ndash;7 word phrase</strong> describing what the paragraph does. Number the labels to match the paragraphs. Do not revise my writing or suggest changes.</p></div><div class="job-callout"><div class="job-box weak"><span class="label">Too Vague</span>Accessibility</div><div class="job-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div><div class="job-box strong"><span class="label">Names the Job</span>Explains accessibility criteria</div></div></div></section>
-<section class="step-section"><div class="step-header"><div class="step-number">2</div><div><h2>Check the AI&rsquo;s Map</h2><p>Compare each label with what you intended the paragraph to do.</p></div></div><div class="step-body"><div class="audit-grid" style="margin-top:0;"><article class="audit-card match"><h3><i class="fa-solid fa-check"></i> MATCH</h3><p>That&rsquo;s what I intended.</p></article><article class="audit-card muddy"><h3><i class="fa-solid fa-triangle-exclamation"></i> MUDDY</h3><p>Partly right or doing too much.</p></article><article class="audit-card mismatch"><h3><i class="fa-solid fa-xmark"></i> MISMATCH</h3><p>That&rsquo;s not the job I intended.</p></article></div><div class="caution-box">For <strong>Muddy</strong> or <strong>Mismatch</strong>, investigate the paragraph&mdash;not just the AI label.</div></div></section>
-<section class="step-section"><div class="step-header"><div class="step-number">3</div><div><h2>Test the Reverse Outline</h2><p>Once you&rsquo;ve checked the labels, read them from top to bottom.</p></div></div><div class="step-body"><div class="tests-grid">
-<article class="test-card"><div class="test-top"><div class="test-icon"><i class="fa-solid fa-1"></i></div><div><h3>One Job?</h3><p>Does each paragraph have one clear purpose?</p></div></div></article>
-<article class="test-card"><div class="test-top"><div class="test-icon"><i class="fa-solid fa-link"></i></div><div><h3>Together?</h3><p>Do related jobs stay together?</p></div></div><div class="test-body"><div class="mini-sequence" style="margin:0;"><span class="seq-box">Problem</span><span class="seq-arrow">&rarr;</span><span class="seq-box">Method</span><span class="seq-arrow">&rarr;</span><span class="seq-box">Problem again</span></div></div></article>
-<article class="test-card"><div class="test-top"><div class="test-icon"><i class="fa-solid fa-repeat"></i></div><div><h3>Repeated?</h3><p>Do several paragraphs do the same job?</p></div></div></article>
-<article class="test-card"><div class="test-top"><div class="test-icon"><i class="fa-solid fa-circle-question"></i></div><div><h3>Missing?</h3><p>Is a job the Project Lead needs absent?</p></div></div><div class="test-body"><div class="missing-list"><div class="missing-item"><span class="checkbox"></span><span>What document will I investigate?</span></div><div class="missing-item"><span class="checkbox"></span><span>Why does it warrant investigation?</span></div><div class="missing-item"><span class="checkbox"></span><span>How will I research and analyze it?</span></div><div class="missing-item"><span class="checkbox"></span><span>Who needs the recommendations?</span></div><div class="missing-item"><span class="checkbox"></span><span>Is the plan and timetable realistic?</span></div></div></div></article>
-<article class="test-card wide"><div class="test-top"><div class="test-icon"><i class="fa-solid fa-arrow-trend-up"></i></div><div><h3>Builds the Case?</h3><p>Does the sequence support your request for approval?</p></div></div></article>
-</div></div></section>
-<section class="activity"><div class="activity-header"><div class="activity-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><div><h2>Step 4: Revise the Proposal</h2><p>Use the map to change the draft&mdash;not simply to fix the AI&rsquo;s labels.</p></div></div><div class="revision-actions"><div class="revision-action"><strong>MOVE</strong></div><div class="revision-action"><strong>COMBINE</strong></div><div class="revision-action"><strong>SPLIT</strong></div><div class="revision-action"><strong>ADD</strong></div><div class="revision-action"><strong>DELETE</strong></div><div class="revision-action"><strong>REFOCUS</strong></div></div><p style="margin:14px 0 0 0;"><strong>Try it again after revising:</strong> Does the new map better match your intentions?</p></section>
-<section class="takeaway"><div class="takeaway-icon"><i class="fa-solid fa-layer-group"></i></div><div><h2>AI Maps the Structure It Sees. You Decide What Needs to Change.</h2><p><strong>Ask &rarr; Check &rarr; Test &rarr; Revise.</strong></p></div></section>
-</div>
+
+                    <section class="intro-card">
+                        <div class="intro-icon" aria-hidden="true">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div>
+                            <h2>Use AI as a Reader, Not an Editor</h2>
+                            <p>A reverse outline shows the job each paragraph actually performs. AI can create the first-pass map. <strong>You decide whether the map accurately represents the proposal you meant to write.</strong></p>
+                        </div>
+                    </section>
+
+                    <section class="step-section">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h2>Ask AI to Map Your Draft</h2>
+                                <p>Have AI label the main job of every paragraph without revising your writing.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-body">
+                            <div class="prompt-box">
+                                <h3><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> Use This Prompt</h3>
+                                <p><strong>Create a reverse outline of my proposal.</strong> For each paragraph, write a <strong>3&ndash;7 word phrase</strong> that describes the paragraph&rsquo;s main job.</p>
+                                <ul>
+                                    <li>Number the labels so I can match them to my paragraphs.</li>
+                                    <li>Describe what each paragraph <strong>does</strong>, not simply what it is about.</li>
+                                    <li>Do not revise my writing or suggest improvements.</li>
+                                    <li>Do not combine paragraphs.</li>
+                                    <li>Base the labels only on what the draft actually says.</li>
+                                </ul>
+                            </div>
+
+                            <div class="job-callout">
+                                <div class="job-box weak">
+                                    <span class="label">Too Vague</span>
+                                    Accessibility
+                                </div>
+                                <div class="job-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+                                <div class="job-box strong">
+                                    <span class="label">Names the Job</span>
+                                    Explains accessibility criteria
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="step-section">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h2>Check the AI&rsquo;s Map</h2>
+                                <p>Put each AI label beside its paragraph and compare the label with what the paragraph actually does.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-body">
+                            <div class="audit-grid">
+                                <article class="audit-card match">
+                                    <h3><i class="fa-solid fa-check" aria-hidden="true"></i> MATCH</h3>
+                                    <p>The label accurately describes the paragraph&rsquo;s main job. The paragraph seems to be doing what you intended.</p>
+                                </article>
+                                <article class="audit-card muddy">
+                                    <h3><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> MUDDY</h3>
+                                    <p>The label is partly right, but something does not fit. The paragraph may mix ideas, do too much, or hide its purpose.</p>
+                                </article>
+                                <article class="audit-card mismatch">
+                                    <h3><i class="fa-solid fa-xmark" aria-hidden="true"></i> MISMATCH</h3>
+                                    <p>The label does not describe the job you intended. Investigate why a reader might understand the paragraph differently.</p>
+                                </article>
+                            </div>
+
+                            <div class="caution-box">A surprising AI label is a reason to investigate the paragraph&mdash;not proof that the AI is correct. Do not simply rewrite the label until the outline looks better.</div>
+                        </div>
+                    </section>
+
+                    <section class="step-section">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h2>Read the Outline&mdash;Not the Proposal</h2>
+                                <p>After you verify or correct the labels, ignore the prose and inspect the sequence.</p>
+                            </div>
+                        </div>
+
+                        <div class="step-body">
+                            <div class="label-strip" aria-label="Example sequence of reverse outline labels">
+                                <div class="label-note">Identifies document</div>
+                                <div class="label-note">Describes communication problem</div>
+                                <div class="label-note">Explains why the problem matters</div>
+                                <div class="label-note">Introduces evaluation plan</div>
+                                <div class="label-note">Describes usability analysis</div>
+                                <div class="label-note">Describes accessibility analysis</div>
+                                <div class="label-note">Establishes qualifications</div>
+                                <div class="label-note">Shows project schedule</div>
+                            </div>
+                            <p class="strip-question">What story does your proposal tell when you read only the paragraph jobs?</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="tests-heading">Give the Reverse Outline Five Tests</h2>
+
+                        <div class="tests-grid">
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-1"></i></div>
+                                    <div>
+                                        <h3>One Job?</h3>
+                                        <p>Does each paragraph have one clear purpose?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <p class="watch"><strong>Watch for:</strong> an AI label that needs several jobs, such as &ldquo;explains problem + discusses research + describes schedule.&rdquo;</p>
+                                    <p class="revise"><strong>Revise:</strong> Split or refocus paragraphs that are trying to do unrelated work.</p>
+                                </div>
+                            </article>
+
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-link"></i></div>
+                                    <div>
+                                        <h3>Together?</h3>
+                                        <p>Do paragraphs doing related work stay together?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <p class="watch"><strong>Watch for:</strong></p>
+                                    <div class="mini-sequence">
+                                        <span class="seq-box">Problem</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Method</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Problem again</span>
+                                    </div>
+                                    <p class="revise"><strong>Revise:</strong> Move paragraphs when another sequence would make their relationship clearer.</p>
+                                </div>
+                            </article>
+
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-repeat"></i></div>
+                                    <div>
+                                        <h3>Repeated?</h3>
+                                        <p>Are several paragraphs doing the same job?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <p class="watch"><strong>Watch for:</strong> several labels that say some version of &ldquo;explains why investigation is needed.&rdquo;</p>
+                                    <p class="revise"><strong>Revise:</strong> Combine repeated ideas, distinguish their purposes, or keep the point only where it does the most useful work.</p>
+                                </div>
+                            </article>
+
+                            <article class="test-card">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-circle-question"></i></div>
+                                    <div>
+                                        <h3>Missing?</h3>
+                                        <p>Does the Project Lead get what is needed to approve the project?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <div class="missing-list">
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>What document am I investigating?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>Why does it warrant investigation?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>How will I research and analyze it?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>Who needs the eventual recommendations?</span></div>
+                                        <div class="missing-item"><span class="checkbox" aria-hidden="true"></span><span>Is my plan and timetable realistic?</span></div>
+                                    </div>
+                                    <p class="revise" style="margin-top: 12px;"><strong>If you cannot point to where the proposal does one of these jobs, you may have found a gap.</strong></p>
+                                </div>
+                            </article>
+
+                            <article class="test-card wide">
+                                <div class="test-top">
+                                    <div class="test-icon" aria-hidden="true"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                    <div>
+                                        <h3>Builds the Case?</h3>
+                                        <p>Does the sequence help the Project Lead understand and evaluate your proposal?</p>
+                                    </div>
+                                </div>
+                                <div class="test-body">
+                                    <div class="mini-sequence">
+                                        <span class="seq-box">Here&rsquo;s the document</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s the problem</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s why it matters</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s how I&rsquo;ll investigate</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s the evidence I&rsquo;ll use</span><span class="seq-arrow">&rarr;</span>
+                                        <span class="seq-box">Here&rsquo;s why the plan is realistic</span>
+                                    </div>
+                                    <p class="revise"><strong>The goal is not one required paragraph order.</strong> The goal is a sequence that makes sense to the Project Lead and supports your request for approval.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="activity">
+                        <div class="activity-header">
+                            <div class="activity-icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <div>
+                                <h2>Step 4: Revise the Proposal&mdash;Not Just the Outline</h2>
+                                <p>The AI-generated map is a diagnostic tool. Your draft is what needs revision.</p>
+                            </div>
+                        </div>
+
+                        <div class="revision-actions">
+                            <div class="revision-action"><strong>MOVE</strong> paragraphs that are out of place.</div>
+                            <div class="revision-action"><strong>COMBINE</strong> paragraphs that repeat the same job.</div>
+                            <div class="revision-action"><strong>SPLIT</strong> paragraphs trying to do too much.</div>
+                            <div class="revision-action"><strong>ADD</strong> information the Project Lead needs but cannot find.</div>
+                            <div class="revision-action"><strong>DELETE</strong> material that does not contribute to the proposal.</div>
+                            <div class="revision-action"><strong>REFOCUS</strong> paragraphs whose purpose is unclear.</div>
+                        </div>
+
+                        <p style="margin: 16px 0 0 0;"><strong>Then test again:</strong> Ask AI for a new reverse outline and see whether the structure is clearer. You are checking the revision&mdash;not trying to make the AI&rsquo;s answer look right.</p>
+                    </section>
+
+                    <section class="takeaway">
+                        <div class="takeaway-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+                        <div>
+                            <h2>AI Maps the Structure It Sees. You Decide What Needs to Change.</h2>
+                            <p><strong>Check the map &rarr; diagnose the draft &rarr; revise the structure &rarr; then edit the sentences.</strong></p>
+                        </div>
+                    </section>
+
+                </div>
 
                 <p class="updated">
-                    <time datetime="2026-09-28">Last Updated September 28, 2026&nbsp;&nbsp;&nbsp;</time>
+                    <time datetime="2026-09-26">Last Updated September 26, 2026&nbsp;&nbsp;&nbsp;</time>
                 </p>
             </div>
         </div>
