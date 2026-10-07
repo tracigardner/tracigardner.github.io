@@ -43,6 +43,15 @@ body {
   border: 3px solid #c64600;
   border-radius: 8px;
 }
+/* pulling from ptw.css */
+
+.skipline li,
+.skipline ul li,
+.skipline ol li,
+.skipline dl,
+.skipline dd {
+  margin-bottom: 12px;
+}
 
 /* Header */
 
