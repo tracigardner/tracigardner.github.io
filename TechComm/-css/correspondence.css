@@ -358,3 +358,22 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+/* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+.updated {
+  margin: 0;
+  padding: 8px 10px;
+  background-color: var(--teal);
+  color: var(--white);
+  font-size: 0.88rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.credit {
+  margin-top: 10px;
+  font-size: 0.78rem;
+}
