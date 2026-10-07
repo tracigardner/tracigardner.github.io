@@ -34,6 +34,14 @@ body {
   background-color: var(--teal);
 }
 
+.pagewidth {
+  margin: 36px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 3px solid #c64600;
+  border-radius: 8px;
+}
+
 /* Header */
 
 .title-row {
