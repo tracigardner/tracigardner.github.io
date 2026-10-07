@@ -368,7 +368,7 @@ h1 {
   margin: 0;
   padding: 8px 10px;
   background-color: var(--teal-dark);
-  color: var(--white);
+  color: var(--white) !important;
   font-size: 0.88rem;
   font-weight: bold;
   text-align: right;
