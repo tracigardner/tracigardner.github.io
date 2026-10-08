@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A visual five-step tutorial for writing specific, informative, concise recommendation report titles.">
+    <meta name="author" content="Traci Gardner">
+    <title>Build a Better Report Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+
+            --orange: #c64600;
+            --orange-light: #faede6;
+
+            --smoke: #e5e1e6;
+            --smoke-light: #f7f6f7;
+            --gray: #d7d2cb;
+
+            --text: #1f1f1f;
+            --white: #ffffff;
+
+            --red: #a6192e;
+            --red-light: #fae9ec;
+
+            --green: #287a3d;
+            --green-light: #eaf5e9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background: var(--white);
+            color: var(--text);
+            font: 17px/1.5 Arial, Helvetica, sans-serif;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .bkgd-page {
+            padding: 36px;
+            background-image: url("https://tracigardner.github.io/TechComm/-images/backgrounds/Teal-Blueprint.png");
+            background-size: 600px;
+            width: 100%;
+            height: 100%;
+            background-color: var(--teal);
+        }
+
+        .page {
+            background: var(--white);
+            border: 2px solid var(--teal);
+            border-radius: 14px 14px 0 0;
+            padding: 30px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 108px 1fr;
+            align-items: center;
+            gap: 24px;
+            margin: -30px -30px 26px;
+            padding: 28px 32px;
+            background: var(--smoke-light);
+            border-radius: 12px 12px 0 0;
+            border-bottom: 2px solid var(--smoke);
+        }
+
+        .hero-icon {
+            width: 100px;
+            height: 100px;
+            display: grid;
+            place-items: center;
+            border-radius: 18px;
+            background: var(--maroon);
+            color: white;
+            font-size: 3rem;
+            box-shadow: 7px 7px 0 var(--gray);
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2.2rem, 4.8vw, 3.8rem);
+            line-height: 1.07;
+        }
+
+        .subtitle {
+            margin: 7px 0 0;
+            font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+            font-weight: 700;
+            color: var(--teal-dark);
+        }
+
+        .lead {
+            font-size: 1.12rem;
+            margin: 0 0 23px;
+        }
+
+        h2,
+        h3,
+        p {
+            overflow-wrap: break-word;
+        }
+
+        .section-heading {
+            color: var(--maroon);
+            font-size: 1.6rem;
+            margin: 0 0 13px;
+            line-height: 1.2;
+        }
+
+        .section-heading i {
+            color: var(--teal);
+            margin-right: 9px;
+        }
+
+        .hook {
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .hook-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .example {
+            border-radius: 9px;
+            padding: 17px;
+            min-width: 0;
+        }
+
+        .example.weak {
+            background: var(--red-light);
+            border-top: 6px solid var(--red);
+        }
+
+        .example.strong {
+            background: var(--green-light);
+            border-top: 6px solid var(--green);
+        }
+
+        .example .eyebrow {
+            display: block;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: .83rem;
+            letter-spacing: .04em;
+            margin-bottom: 8px;
+        }
+
+        .weak .eyebrow {
+            color: var(--red);
+        }
+
+        .strong .eyebrow {
+            color: var(--green);
+        }
+
+        .example p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 0 0 7px;
+        }
+
+        .example small {
+            display: block;
+            font-size: .91rem;
+        }
+
+        .intro-ribbon {
+            background: var(--teal-dark);
+            color: white;
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 0 0 18px;
+        }
+
+        .intro-ribbon h2 {
+            margin: 0 0 3px;
+            font-size: 1.55rem;
+        }
+
+        .intro-ribbon p {
+            margin: 0;
+        }
+
+        .steps {
+            display: grid;
+            gap: 0;
+        }
+
+        .step {
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .step-header {
+            display: grid;
+            grid-template-columns: 60px 1fr 42px;
+            gap: 14px;
+            align-items: center;
+            padding: 15px 19px;
+            background: var(--smoke-light);
+        }
+
+        .step-number {
+            background: var(--teal);
+            color: white;
+            width: 54px;
+            height: 54px;
+            border-radius: 11px;
+            display: grid;
+            place-items: center;
+            font-size: 1.65rem;
+            font-weight: 800;
+        }
+
+        .step-header h3 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: 1.5rem;
+            line-height: 1.15;
+        }
+
+        .step-header p {
+            margin: 3px 0 0;
+            font-size: .96rem;
+        }
+
+        .step-icon {
+            font-size: 1.7rem;
+            color: var(--teal-dark);
+            text-align: center;
+        }
+
+        .step-body {
+            padding: 19px 22px 22px;
+        }
+
+        .step-body>p {
+            margin: 0 0 13px;
+        }
+
+        .connector {
+            display: grid;
+            place-items: center;
+            height: 43px;
+            color: var(--teal);
+            font-size: 1.65rem;
+        }
+
+        .tile-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .tile {
+            display: inline-block;
+            border: 2px solid var(--teal);
+            background: var(--teal-light);
+            color: #234750;
+            border-radius: 7px;
+            padding: 8px 13px;
+            font-weight: 700;
+        }
+
+        .tile.action {
+            background: var(--maroon-light);
+            color: var(--maroon-dark);
+            border-color: var(--maroon);
+        }
+
+        .tile.location {
+            background: var(--orange-light);
+            color: #923900;
+            border-color: var(--orange);
+        }
+
+        .tile-label {
+            margin: 0 0 9px;
+            font-size: .82rem;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            font-weight: 700;
+            color: var(--teal-dark);
+        }
+
+        .specificity {
+            display: grid;
+            grid-template-columns: 1fr 45px 1fr;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .specificity .label-box {
+            border-radius: 8px;
+            padding: 15px;
+            background: var(--smoke-light);
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .specificity .label-box.final {
+            background: var(--orange-light);
+            border: 2px solid var(--orange);
+        }
+
+        .specificity .arrow {
+            color: var(--teal);
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        .assembly {
+            border: 2px dashed var(--teal);
+            border-radius: 10px;
+            padding: 17px;
+            background: var(--teal-light);
+        }
+
+        .assembly .result {
+            font-size: 1.35rem;
+            line-height: 1.35;
+            font-weight: 800;
+            color: var(--maroon-dark);
+            margin: 5px 0 0;
+        }
+
+        .editing {
+            display: grid;
+            gap: 11px;
+        }
+
+        .edit-line {
+            padding: 13px 16px;
+            border-radius: 8px;
+            background: var(--smoke-light);
+        }
+
+        .edit-line strong {
+            display: block;
+            font-size: .8rem;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            color: var(--teal-dark);
+            margin-bottom: 5px;
+        }
+
+        .edit-line p {
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        .cut {
+            color: var(--red);
+            text-decoration: line-through;
+            text-decoration-thickness: 2px;
+        }
+
+        .edit-line.final {
+            background: var(--green-light);
+            border-left: 6px solid var(--green);
+        }
+
+        .edit-line.final p {
+            font-weight: 700;
+        }
+
+        .micro-note {
+            margin: 11px 0 0 !important;
+            color: #424242;
+            font-size: .93rem;
+        }
+
+        .makeover {
+            margin-top: 27px;
+            padding: 23px;
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+        }
+
+        .makeover h2 {
+            margin: 0 0 6px;
+            color: var(--maroon);
+            font-size: 1.6rem;
+        }
+
+        .makeover>p {
+            margin: 0 0 17px;
+        }
+
+        .makeover-grid {
+            display: grid;
+            grid-template-columns: 1fr 52px 1fr;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .makeover-grid .arrow {
+            text-align: center;
+            color: var(--teal);
+            font-size: 2rem;
+        }
+
+        .makeover .reason {
+            margin: 14px 0 0;
+            font-size: .96rem;
+        }
+
+        .final-test {
+            margin-top: 25px;
+            border: 2px solid var(--teal);
+            border-radius: 13px;
+            overflow: hidden;
+        }
+
+        .final-test h2 {
+            margin: 0;
+            padding: 16px 19px;
+            background: var(--teal-dark);
+            color: white;
+            font-size: 1.55rem;
+        }
+
+        .final-test h2 i {
+            margin-right: 10px;
+        }
+
+        .final-test .body {
+            padding: 18px 22px;
+        }
+
+        .check-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 13px 20px;
+            margin-top: 13px;
+        }
+
+        .check {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .check i {
+            color: var(--green);
+            margin-top: 4px;
+        }
+
+        .closing {
+            margin: 15px 0 0;
+            font-weight: 700;
+            color: var(--maroon);
+        }
+
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--teal-dark);
+            color: white;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold;
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 9px;
+                font-size: 16px;
+            }
+
+            .bkgd-page {
+                padding: 14px;
+            }
+
+            .page {
+                padding: 17px;
+            }
+
+            .hero {
+                margin: -17px -17px 20px;
+                padding: 20px;
+                grid-template-columns: 65px 1fr;
+                gap: 14px;
+            }
+
+            .hero-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+                box-shadow: 4px 4px 0 var(--gray);
+            }
+
+            .hook-grid,
+            .check-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .step-header {
+                grid-template-columns: 45px 1fr 26px;
+                gap: 10px;
+                padding: 12px;
+            }
+
+            .step-number {
+                width: 43px;
+                height: 43px;
+                font-size: 1.3rem;
+            }
+
+            .step-header h3 {
+                font-size: 1.23rem;
+            }
+
+            .step-icon {
+                font-size: 1.2rem;
+            }
+
+            .step-body {
+                padding: 15px;
+            }
+
+            .specificity,
+            .makeover-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .specificity .arrow {
+                transform: rotate(90deg);
+            }
+
+            .makeover-grid .arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .step {
+                scroll-margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="page">
+                <header class="hero">
+                    <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-file-pen"></i></div>
+                    <div>
+                        <h1>Build a Better Report Title</h1>
+                        <p class="subtitle">From Keywords to a Clear, Specific Title</p>
+                    </div>
+                </header>
+
+                <p class="lead">A strong technical report title tells readers <strong>what the report is about</strong> and <strong>what to expect</strong>. It uses specific, informative words without extra clutter.</p>
+
+                <section class="hook" aria-labelledby="first-look">
+                    <h2 id="first-look" class="section-heading"><i class="fa-solid fa-eye" aria-hidden="true"></i>Which Title Helps the Reader?</h2>
+                    <div class="hook-grid">
+                        <div class="example weak">
+                            <span class="eyebrow"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Too Vague</span>
+                            <p>My Recommendation Report</p>
+                            <small>Names the assignment, but not the subject.</small>
+                        </div>
+                        <div class="example strong">
+                            <span class="eyebrow"><i class="fa-solid fa-check" aria-hidden="true"></i> Specific and Informative</span>
+                            <p>Recommendations for Revising the Young Alumni Committees Website</p>
+                            <small>Identifies the work and the document being studied.</small>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="intro-ribbon">
+                    <h2>Build Your Title in Five Steps</h2>
+                    <p>Follow one example from a handful of research words to a finished recommendation report title.</p>
+                </div>
+
+                <div class="steps">
+                    <section class="step" aria-labelledby="step-1">
+                        <div class="step-header">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h3 id="step-1">Find Your Keywords</h3>
+                                <p>Start with words that describe your research subject.</p>
+                            </div>
+                            <i class="fa-solid fa-magnifying-glass step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>What document or topic are you studying? Write down the words readers would use to recognize it.</p>
+                            <div class="tile-row" aria-label="Starting keywords: website, Young Alumni Committees, revising">
+                                <span class="tile">Website</span>
+                                <span class="tile">Young Alumni Committees</span>
+                                <span class="tile">Revising</span>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <section class="step" aria-labelledby="step-2">
+                        <div class="step-header">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h3 id="step-2">Identify Your Report Type</h3>
+                                <p>Add words that describe the work your report does.</p>
+                            </div>
+                            <i class="fa-solid fa-file-lines step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Because this is a recommendation report, <strong>recommendations</strong> helps explain the report&rsquo;s purpose.</p>
+                            <p class="tile-label">Add a purpose word</p>
+                            <div class="tile-row">
+                                <span class="tile action"><i class="fa-solid fa-plus" aria-hidden="true"></i> Recommendations</span>
+                                <span class="tile">Revising</span>
+                                <span class="tile">Website</span>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <section class="step" aria-labelledby="step-3">
+                        <div class="step-header">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h3 id="step-3">Make It Specific</h3>
+                                <p>Name the exact place, group, document, or situation.</p>
+                            </div>
+                            <i class="fa-solid fa-bullseye step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>General labels leave readers guessing. Replace them with the precise subject of your investigation.</p>
+                            <div class="specificity">
+                                <div class="label-box">A website</div>
+                                <div class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+                                <div class="label-box final">The Young Alumni Committees Website</div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <section class="step" aria-labelledby="step-4">
+                        <div class="step-header">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h3 id="step-4">Assemble Your Title</h3>
+                                <p>Choose the strongest words and put them in a readable order.</p>
+                            </div>
+                            <i class="fa-solid fa-layer-group step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Combine the report&rsquo;s purpose, the action, and the specific subject. Adjust word forms and add small connecting words as needed.</p>
+                            <div class="tile-row" style="margin-bottom: 13px;">
+                                <span class="tile action">Recommendations</span>
+                                <span class="tile">for Revising</span>
+                                <span class="tile location">the Young Alumni Committees Website</span>
+                            </div>
+                            <div class="assembly">
+                                <p class="tile-label">Working title</p>
+                                <p class="result">Recommendations for Revising the Young Alumni Committees Website</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <section class="step" aria-labelledby="step-5">
+                        <div class="step-header">
+                            <div class="step-number">5</div>
+                            <div>
+                                <h3 id="step-5">Trim the Excess</h3>
+                                <p>Remove words that repeat or add little meaning.</p>
+                            </div>
+                            <i class="fa-solid fa-scissors step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Try adding unnecessary phrases to the working title. Notice how much clearer the original is when those extras disappear.</p>
+                            <div class="editing">
+                                <div class="edit-line">
+                                    <strong>Wordy version</strong>
+                                    <p>Recommendations <span class="cut">and Findings</span> for Revising the Young Alumni Committees Website<span class="cut">: A Guide to Updating the Language and Design</span></p>
+                                </div>
+                                <div class="edit-line final">
+                                    <strong>Finished title</strong>
+                                    <p>Recommendations for Revising the Young Alumni Committees Website</p>
+                                </div>
+                            </div>
+                            <p class="micro-note"><strong>Why it works:</strong> &ldquo;Recommendations&rdquo; already implies findings, and &ldquo;revising&rdquo; covers the proposed updates without listing them twice.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="makeover" aria-labelledby="makeover-heading">
+                    <h2 id="makeover-heading"><i class="fa-solid fa-wand-magic-sparkles" style="color: var(--teal);" aria-hidden="true"></i> Watch Another Title Makeover</h2>
+                    <p>Sometimes a long opening phrase can become one direct word.</p>
+                    <div class="makeover-grid">
+                        <div class="example weak">
+                            <span class="eyebrow">Before</span>
+                            <p><span class="cut">How to Properly Redesign</span> the Frith First-Year Makerspace Website</p>
+                        </div>
+                        <div class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="example strong">
+                            <span class="eyebrow">After</span>
+                            <p><span style="color: var(--green);">Redesigning</span> the Frith First-Year Makerspace Website</p>
+                        </div>
+                    </div>
+                    <p class="reason"><strong>What changed?</strong> &ldquo;Redesigning&rdquo; replaces &ldquo;How to Properly Redesign.&rdquo; The word &ldquo;properly&rdquo; adds no useful information.</p>
+                </section>
+
+                <section class="final-test" aria-labelledby="final-heading">
+                    <h2 id="final-heading"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> The Final Title Test</h2>
+                    <div class="body">
+                        <p>Before submitting your report, read the title by itself. Ask:</p>
+                        <div class="check-grid">
+                            <div class="check"><i class="fa-solid fa-check-circle" aria-hidden="true"></i><span>Does it identify the <strong>subject</strong>?</span></div>
+                            <div class="check"><i class="fa-solid fa-check-circle" aria-hidden="true"></i><span>Is it <strong>specific</strong> to this report?</span></div>
+                            <div class="check"><i class="fa-solid fa-check-circle" aria-hidden="true"></i><span>Does it tell readers <strong>what to expect</strong>?</span></div>
+                            <div class="check"><i class="fa-solid fa-check-circle" aria-hidden="true"></i><span>Can you <strong>cut any words</strong> without losing meaning?</span></div>
+                        </div>
+                        <p class="closing">Aim for specific + informative + clear + concise.</p>
+                    </div>
+                </section>
+            </div>
+            <p class="updated"><time datetime="2026-10-08">Draft &mdash; October 8, 2026</time></p>
+        </div>
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+            function sendHeight() {
+                if (window.parent === window) return;
+                window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin);
+            }
+            window.addEventListener("load", sendHeight);
+            if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(sendHeight).observe(document.documentElement);
+            }
+        })();
+    </script>
+</body>
+
+</html>
