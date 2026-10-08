@@ -53,6 +53,15 @@ body {
   margin-bottom: 12px;
 }
 
+.null li,
+.null ul li,
+.null ol li,
+.null dl,
+.null dd {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 /* Header */
 
 .title-row {
