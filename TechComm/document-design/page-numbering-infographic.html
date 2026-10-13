@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A roadmap to page numbering in formal recommendation reports">
+    <meta name="author" content="Traci Gardner">
+    <title>Page Numbers: Follow the Report Roadmap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        :root {
+            --green: #287a3d;
+            --green-dark: #205f30;
+            --green-light: #eaf5e9;
+            --smoke: #e5e1e6;
+            --smoke-light: #f7f6f7;
+            --smoke-dark: #737173;
+            --gray: #d7d2cb;
+            --text: #1f1f1f;
+            --white: #fff;
+            --maroon: #861f41;
+            --orange: #c64600
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background: white;
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.45
+        }
+
+        .infographic {
+            max-width: 1050px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            padding: 36px;
+            background-color: var(--smoke-dark);
+            background-image: url('https://tracigardner.github.io/TechComm/-images/backgrounds/roadmap.png');
+            background-size: 360px
+        }
+
+        .page {
+            background: white;
+            border: 2px solid var(--green);
+            border-radius: 14px 14px 0 0;
+            padding: 30px
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 130px 1fr;
+            gap: 22px;
+            align-items: center;
+            margin: -30px -30px 22px;
+            padding: 25px 30px;
+            background: var(--smoke-light);
+            border-radius: 12px 12px 0 0;
+            border-bottom: 1px solid var(--smoke)
+        }
+
+        .hero-sign {
+            background: var(--green);
+            border: 4px solid white;
+            outline: 2px solid var(--green);
+            box-shadow: 6px 7px 0 var(--smoke);
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            padding: 12px 6px;
+            font-weight: bold
+        }
+
+        .hero-sign small {
+            display: block;
+            font-size: .67rem;
+            letter-spacing: .09em
+        }
+
+        .hero-sign i {
+            font-size: 2.1rem;
+            margin: 5px
+        }
+
+        .hero h1 {
+            color: var(--green);
+            font-size: clamp(2.2rem, 5vw, 3.7rem);
+            line-height: 1.05;
+            margin: 0
+        }
+
+        .hero h2 {
+            font-size: clamp(1.15rem, 2.5vw, 1.65rem);
+            font-weight: normal;
+            margin: 6px 0 0
+        }
+
+        .intro {
+            font-size: 1.04rem;
+            margin: 0 0 20px
+        }
+
+        .journey {
+            position: relative;
+            display: grid;
+            gap: 17px
+        }
+
+        .journey:before {
+            content: "";
+            position: absolute;
+            top: 35px;
+            bottom: 35px;
+            left: 31px;
+            border-left: 5px dashed var(--smoke-dark)
+        }
+
+        .stage {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 16px;
+            position: relative
+        }
+
+        .marker {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 5px solid white;
+            outline: 2px solid var(--green);
+            background: var(--green);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.55rem;
+            z-index: 1
+        }
+
+        .stage-card {
+            border: 2px solid var(--gray);
+            border-radius: 12px;
+            overflow: hidden;
+            background: white
+        }
+
+        .stage-header {
+            padding: 12px 18px;
+            background: var(--smoke-light);
+            border-bottom: 1px solid var(--gray)
+        }
+
+        .stage-header .eyebrow {
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--green-dark)
+        }
+
+        .stage-header h3 {
+            margin: 2px 0 0;
+            color: var(--green);
+            font-size: 1.42rem
+        }
+
+        .stage-body {
+            padding: 17px 19px
+        }
+
+        .rule {
+            margin: 0 0 13px
+        }
+
+        .sequence {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+            align-items: center;
+            margin: 12px 0 16px
+        }
+
+        .sheet {
+            position: relative;
+            width: 72px;
+            height: 93px;
+            border: 1px solid var(--gray);
+            box-shadow: 3px 3px 0 var(--smoke);
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 8px 7px
+        }
+
+        .sheet:before {
+            content: "";
+            height: 4px;
+            width: 75%;
+            background: var(--smoke);
+            box-shadow: 0 10px 0 var(--smoke), 0 20px 0 var(--smoke);
+            margin-top: 8px
+        }
+
+        .sheet .num {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--green-dark);
+            line-height: 1.1
+        }
+
+        .sheet.blank .num {
+            visibility: hidden
+        }
+
+        .sheet-label {
+            font-size: .79rem;
+            max-width: 80px;
+            text-align: center;
+            color: #454545
+        }
+
+        .sheet-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 7px
+        }
+
+        .arrow {
+            color: var(--green);
+            font-size: 1.35rem
+        }
+
+        .section-list {
+            border-left: 4px solid var(--green);
+            padding: 9px 13px;
+            background: var(--green-light);
+            font-size: .93rem
+        }
+
+        .section-list strong {
+            display: block;
+            margin-bottom: 3px
+        }
+
+        .section-list p {
+            margin: 0
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px
+        }
+
+        .note {
+            margin-top: 16px;
+            border: 2px solid var(--gray);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 52px 1fr;
+            align-items: center;
+            gap: 12px;
+            padding: 13px 16px
+        }
+
+        .note i {
+            color: var(--green);
+            font-size: 1.8rem;
+            text-align: center
+        }
+
+        .note h3 {
+            color: var(--green);
+            margin: 0 0 3px;
+            font-size: 1.16rem
+        }
+
+        .note p {
+            margin: 0;
+            font-size: .94rem
+        }
+
+        .updated {
+            margin: 0;
+            background: var(--green);
+            color: white;
+            text-align: right;
+            padding: 8px 12px;
+            font-size: .85rem;
+            font-weight: bold
+        }
+
+        .credit {
+            font-size: .78rem;
+            margin: 10px 0 0
+        }
+
+        @media(max-width:650px) {
+            body {
+                padding: 8px
+            }
+
+            .bkgd-page {
+                padding: 15px
+            }
+
+            .page {
+                padding: 17px
+            }
+
+            .hero {
+                margin: -17px -17px 18px;
+                padding: 18px;
+                grid-template-columns: 84px 1fr;
+                gap: 14px
+            }
+
+            .hero-sign {
+                padding: 8px 2px;
+                font-size: .7rem
+            }
+
+            .hero-sign i {
+                font-size: 1.6rem
+            }
+
+            .journey:before {
+                left: 23px
+            }
+
+            .stage {
+                grid-template-columns: 48px 1fr;
+                gap: 10px
+            }
+
+            .marker {
+                width: 48px;
+                height: 48px;
+                font-size: 1.2rem
+            }
+
+            .stage-body {
+                padding: 14px
+            }
+
+            .stage-header {
+                padding: 12px
+            }
+
+            .stage-header h3 {
+                font-size: 1.2rem
+            }
+
+            .split {
+                grid-template-columns: 1fr
+            }
+
+            .sheet {
+                width: 58px;
+                height: 79px
+            }
+
+            .sequence {
+                gap: 7px
+            }
+
+            .arrow {
+                font-size: 1rem
+            }
+
+            .sheet-label {
+                font-size: .7rem
+            }
+
+            .note {
+                grid-template-columns: 34px 1fr;
+                padding: 12px
+            }
+        }
+
+        .optional {
+            display: inline-block;
+            vertical-align: middle;
+            border: 1px solid var(--smoke-dark);
+            border-radius: 4px;
+            padding: 1px 5px;
+            margin: 2px 1px;
+            color: #454545;
+            background: white;
+            font-size: .72rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: .025em;
+            white-space: nowrap
+        }
+
+        .optional-note {
+            background: var(--smoke-light);
+            border-left: 4px solid var(--green);
+            padding: 10px 14px;
+            margin: 0 0 18px;
+            font-size: .94rem
+        }
+
+        .section-list p {
+            line-height: 1.9
+        }
+
+        .continuity {
+            margin: 12px 0 0;
+            font-size: .93rem;
+            color: var(--green-dark)
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="page">
+                <header class="hero">
+                    <div class="hero-sign" aria-hidden="true"><small>REPORT ROUTE</small><i class="fa-solid fa-route"></i>
+                        <div>1 → i → 1</div>
+                    </div>
+                    <div>
+                        <h1>Page Numbers</h1>
+                        <h2>Follow the Report Roadmap</h2>
+                    </div>
+                </header>
+                <p class="intro">A formal report has <strong>three numbering zones</strong>. Follow the changes in numbering, and include optional sections only when needed.</p>
+                <p class="optional-note"><strong>Optional sections:</strong> Include only when they help your readers. Omit unnecessary sections and keep page numbering continuous.</p>
+                <section class="journey" aria-label="Three page numbering zones">
+                    <article class="stage">
+                        <div class="marker" aria-hidden="true"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div class="stage-card">
+                            <div class="stage-header">
+                                <div class="eyebrow">Route 1 · Separate document</div>
+                                <h3>Letter of Transmittal</h3>
+                            </div>
+                            <div class="stage-body">
+                                <p class="rule"><strong>Use Arabic numerals.</strong> Leave the first page unnumbered. If the letter continues, number subsequent pages 2, 3, and so on. The letter is separate from the report.</p>
+                                <div class="sequence" aria-label="First letter page has no visible page number; second page displays 2">
+                                    <div class="sheet-wrap">
+                                        <div class="sheet blank"><span class="num">1</span></div><span class="sheet-label">First page<br>(no number)</span>
+                                    </div><i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+                                    <div class="sheet-wrap">
+                                        <div class="sheet"><span class="num">2</span></div><span class="sheet-label">If needed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="stage">
+                        <div class="marker" aria-hidden="true"><i class="fa-solid fa-signs-post"></i></div>
+                        <div class="stage-card">
+                            <div class="stage-header">
+                                <div class="eyebrow">Route 2 · New numbering sequence</div>
+                                <h3>Front Matter</h3>
+                            </div>
+                            <div class="stage-body">
+                                <p class="rule"><strong>Use lowercase Roman numerals.</strong> Count the title page as <strong>i</strong>, but do not print its number. Show <strong>ii</strong> on the next page.</p>
+                                <div class="sequence" aria-label="Title page is counted as i but has no printed number; subsequent pages show ii and iii">
+                                    <div class="sheet-wrap">
+                                        <div class="sheet blank"><span class="num">i</span></div><span class="sheet-label">Title page<br>(no number)</span>
+                                    </div><i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+                                    <div class="sheet-wrap">
+                                        <div class="sheet"><span class="num">ii</span></div><span class="sheet-label">Next page</span>
+                                    </div><i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+                                    <div class="sheet-wrap">
+                                        <div class="sheet"><span class="num">iii</span></div><span class="sheet-label">Following page</span>
+                                    </div>
+                                </div>
+                                <div class="section-list"><strong>Front Matter Sections</strong>
+                                    <ul>
+                                        <li>Title Page</li>
+                                        <li>Table of Contents</li>
+                                        <li>List of Illustrations <span class="optional">Optional</span></li>
+                                        <li>Abstract</li>
+                                        <li> Executive Summary</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </article>
+                    <article class="stage">
+                        <div class="marker" aria-hidden="true"><i class="fa-solid fa-road"></i></div>
+                        <div class="stage-card">
+                            <div class="stage-header">
+                                <div class="eyebrow">Route 3 · Restart at 1</div>
+                                <h3>Report Body + Back Matter</h3>
+                            </div>
+                            <div class="stage-body">
+                                <p class="rule"><strong>Use Arabic numerals.</strong> Start the Introduction at <strong>1</strong>, show that number, and continue consecutively through the final appendix.</p>
+                                <div class="sequence" aria-label="Introduction begins at page 1, followed by pages 2 and 3">
+                                    <div class="sheet-wrap">
+                                        <div class="sheet"><span class="num">1</span></div><span class="sheet-label">Introduction</span>
+                                    </div><i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+                                    <div class="sheet-wrap">
+                                        <div class="sheet"><span class="num">2</span></div><span class="sheet-label">Next page</span>
+                                    </div><i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+                                    <div class="sheet-wrap">
+                                        <div class="sheet"><span class="num">3</span></div><span class="sheet-label">Following page</span>
+                                    </div>
+                                </div>
+                                <div class="split">
+                                    <div class="section-list"><strong>Report Body Sections</strong>
+                                        <ul>
+                                            <li>Introduction</li>
+                                            <li>Methods</li>
+                                            <li>Results</li>
+                                            <li>Conclusions</li>
+                                            <li>Recommendations</li>
+                                        </ul>
+                                    </div>
+                                    <div class="section-list back"><strong>Back Matter Sections</strong>
+                                        <ul>
+                                            <li>Glossary <span class="optional">Optional</span></li>
+                                            <li>List of Symbols <span class="optional">Optional</span></li>
+                                            <li>References</li>
+                                            <li>Appendices <span class="optional">Optional</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="continuity"><strong>Keep numbering.</strong> Continue Arabic page numbers through the back matter without restarting at 1.</p>
+                            </div>
+                    </article>
+                </section>
+                <aside class="note"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <div>
+                        <h3>Keep Your Place</h3>
+                        <p>Count the title page without displaying its number. Keep Arabic numbering continuous from the Introduction through the back matter, without restarting for individual sections.</p>
+                    </div>
+                </aside>
+            </div>
+            <p class="updated">Last Updated October 13, 2026</p>
+        </div>
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <script>(function () { const parentOrigin = 'https://www.tengrrl.com'; function sendHeight() { window.parent.postMessage({ type: 'tsc-visual-resize', height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener('load', sendHeight); if (typeof ResizeObserver !== 'undefined') { new ResizeObserver(sendHeight).observe(document.documentElement) } })();</script>
+</body>
+
+</html>
