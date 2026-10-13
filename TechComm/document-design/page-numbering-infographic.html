@@ -546,7 +546,29 @@
         </div>
         <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
     </main>
-    <script>(function () { const parentOrigin = 'https://www.tengrrl.com'; function sendHeight() { window.parent.postMessage({ type: 'tsc-visual-resize', height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener('load', sendHeight); if (typeof ResizeObserver !== 'undefined') { new ResizeObserver(sendHeight).observe(document.documentElement) } })();</script>
+
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+
+            function sendHeight() {
+                const height = document.documentElement.scrollHeight;
+
+                window.parent.postMessage(
+                    {
+                        type: "tsc-visual-resize",
+                        height: height
+                    },
+                    parentOrigin
+                );
+            }
+
+            window.addEventListener("load", sendHeight);
+
+            const resizeObserver = new ResizeObserver(sendHeight);
+            resizeObserver.observe(document.documentElement);
+        })();
+    </script>
 </body>
 
 </html>

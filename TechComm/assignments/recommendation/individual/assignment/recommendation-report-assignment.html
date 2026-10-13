@@ -182,7 +182,7 @@
 
                     <li><strong>Length:</strong> 9&ndash;15 pages, including all required content. Longer documents okay.</li>
 
-                    <li><strong>Layout:</strong> 1" margins all around. Include page numbers according to <span class="fixme">Page Numbers for a Report</span>.</li>
+                    <li><strong>Layout:</strong> 1" margins all around. Include page numbers according to <a href="https://tracigardner.github.io/TechComm/document-design/page-numbering-infographic.html" target="_blank">Page Numbers Infographic</a>.</li>
 
                     <li><strong>Document Design:</strong>
                         <ul class="null">
@@ -319,7 +319,28 @@
     </p>
     <p style="padding-bottom: 18px;">&nbsp;</p>
 
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
 
+            function sendHeight() {
+                const height = document.documentElement.scrollHeight;
+
+                window.parent.postMessage(
+                    {
+                        type: "tsc-visual-resize",
+                        height: height
+                    },
+                    parentOrigin
+                );
+            }
+
+            window.addEventListener("load", sendHeight);
+
+            const resizeObserver = new ResizeObserver(sendHeight);
+            resizeObserver.observe(document.documentElement);
+        })();
+    </script>
 </body>
 
 </html>
