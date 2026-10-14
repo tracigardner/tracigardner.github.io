@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="A concise visual example of prioritizing document improvements with a weighted decision matrix." name="description"/>
+<meta content="Traci Gardner" name="author"/>
+<title>What Should We Fix First? | Decision Matrix Quick Guide</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+<style>
+        :root {
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+            --orange: #c64600;
+            --orange-light: #faede6;
+            --smoke: #e5e1e6;
+            --smoke-light: #f7f6f7;
+            --gray: #d7d2cb;
+            --text: #1f1f1f;
+            --white: #ffffff
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            color: var(--text);
+            background: var(--white);
+            font: 17px/1.48 Arial, Helvetica, sans-serif
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            padding: 42px;
+            background-color: var(--teal-light);
+            background-image: url('https://tracigardner.github.io/TechComm/-images/backgrounds/decision-matrix-bkgd.png');
+            background-size: 600px;
+            width: 100%;
+        }
+
+        .page {
+            background: var(--white);
+            border-top: 6px solid var(--maroon);
+            border-left: 6px solid var(--maroon);
+            border-right: 6px solid var(--maroon);
+            border-bottom: 0;
+            border-radius: 14px 14px 0 0;
+            padding: 30px;
+            box-shadow: 0 8px 28px #385d6524
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 104px 1fr;
+            align-items: center;
+            gap: 24px;
+            margin: -30px -30px 24px;
+            padding: 28px 32px;
+            background: var(--smoke-light);
+            border-radius: 8px 8px 0 0;
+            border-bottom: 2px solid var(--smoke)
+        }
+
+        .hero-icon {
+            height: 100px;
+            width: 100px;
+            border-radius: 18px;
+            background: var(--maroon);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 3rem;
+            box-shadow: 7px 7px 0 var(--gray)
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: .12em;
+            font-size: .76rem;
+            font-weight: 800;
+            color: var(--teal-dark);
+            margin: 0 0 6px
+        }
+
+        h1 {
+            color: var(--maroon);
+            font-size: clamp(2rem, 4.6vw, 3.6rem);
+            line-height: 1.08;
+            margin: 0 0 8px
+        }
+
+        h2 {
+            font-size: 1.38rem;
+            color: var(--teal-dark);
+            margin: 0 0 10px;
+            line-height: 1.25
+        }
+
+        h3 {
+            font-size: 1.08rem;
+            margin: 0 0 6px;
+            color: var(--maroon)
+        }
+
+        p {
+            margin: 0 0 10px
+        }
+
+        p:last-child {
+            margin-bottom: 0
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--teal-dark);
+            margin: 0
+        }
+
+        .intro {
+            font-size: 1.07rem;
+            max-width: 78ch;
+            margin: 0 0 22px
+        }
+
+        .scenario {
+            background: var(--teal-light);
+            border-left: 6px solid var(--teal);
+            padding: 18px 22px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 24px
+        }
+
+        .scenario p {
+            margin: 0
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-bottom: 24px
+        }
+
+        .step {
+            border: 2px solid var(--smoke);
+            border-radius: 11px;
+            padding: 16px;
+            display: flex;
+            gap: 13px;
+            align-items: flex-start;
+            background: white
+        }
+
+        .step-num {
+            flex: none;
+            width: 39px;
+            height: 39px;
+            display: grid;
+            place-items: center;
+            background: var(--maroon);
+            color: white;
+            font-weight: 800;
+            font-size: 1.2rem;
+            border-radius: 9px
+        }
+
+        .step p {
+            font-size: .96rem
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 3px solid var(--teal);
+            padding-bottom: 9px;
+            margin: 26px 0 15px
+        }
+
+        .section-heading h2 {
+            margin: 0
+        }
+
+        .section-heading i {
+            color: var(--maroon);
+            font-size: 1.35rem
+        }
+
+        .improvements {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 14px
+        }
+
+        .improvement {
+            background: var(--smoke-light);
+            border: 1px solid var(--smoke);
+            border-radius: 9px;
+            padding: 11px 13px;
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            font-size: .95rem
+        }
+
+        .letter {
+            display: inline-grid;
+            place-items: center;
+            flex: none;
+            width: 29px;
+            height: 29px;
+            border-radius: 7px;
+            background: var(--teal-dark);
+            color: white;
+            font-weight: 800
+        }
+
+        .mini-note {
+            font-size: .9rem;
+            color: #444
+        }
+
+        .scale {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 12px 0 15px
+        }
+
+        .scale span {
+            background: var(--teal-light);
+            border: 1px solid #bdd1d5;
+            border-radius: 7px;
+            padding: 6px 10px;
+            font-size: .89rem
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            border: 2px solid var(--teal-dark);
+            border-radius: 10px
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 650px;
+            font-size: .93rem
+        }
+
+        th,
+        td {
+            padding: 11px 9px;
+            border-bottom: 1px solid var(--gray);
+            text-align: center;
+            vertical-align: middle
+        }
+
+        thead th {
+            background: var(--teal-dark);
+            color: white;
+            font-weight: 700
+        }
+
+        thead th:first-child {
+            text-align: left
+        }
+
+        tbody th {
+            text-align: left;
+            font-weight: 600;
+            background: var(--smoke-light);
+            width: 33%
+        }
+
+        tbody tr:last-child td,
+        tbody tr:last-child th {
+            border-bottom: 0
+        }
+
+        .weight {
+            font-weight: 800;
+            color: var(--maroon)
+        }
+
+        .total th,
+        .total td {
+            background: var(--maroon-light);
+            font-weight: 800;
+            border-top: 3px solid var(--maroon);
+            font-size: 1.06rem
+        }
+
+        .total td.best {
+            background: var(--maroon);
+            color: white
+        }
+
+        .small {
+            font-size: .85rem
+        }
+
+        .worked {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 15px 0
+        }
+
+        .calculation,
+        .interpretation {
+            border-radius: 9px;
+            padding: 16px 18px
+        }
+
+        .calculation {
+            background: var(--orange-light);
+            border-left: 5px solid var(--orange)
+        }
+
+        .interpretation {
+            background: var(--teal-light);
+            border-left: 5px solid var(--teal)
+        }
+
+        .formula {
+            font-weight: 800;
+            color: var(--maroon-dark);
+            font-size: 1.05rem
+        }
+
+        .ranking {
+            display: flex;
+            gap: 7px;
+            flex-wrap: wrap;
+            margin-top: 9px
+        }
+
+        .ranking span {
+            background: white;
+            border: 1px solid #c5d5d8;
+            border-radius: 6px;
+            padding: 5px 8px;
+            font-size: .86rem;
+            font-weight: 700
+        }
+
+        .takeaway {
+            background: var(--maroon);
+            color: white;
+            border-radius: 10px;
+            padding: 20px 23px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            margin-top: 22px
+        }
+
+        .takeaway i {
+            font-size: 1.8rem;
+            color: #fff
+        }
+
+        .takeaway h2 {
+            color: white;
+            font-size: 1.25rem;
+            margin: 0 0 5px
+        }
+
+        .takeaway p {
+            margin: 0
+        }
+
+        .footnote {
+            font-size: .84rem;
+            color: #454545;
+            margin: 16px 0 0
+        }
+
+        .footer {
+            background: var(--teal-dark);
+            color: white;
+            padding: 13px 20px;
+            text-align: center;
+            font-size: .83rem;
+            border-radius: 0 0 8px 8px;
+            letter-spacing: .02em
+        }
+
+        strong {
+            font-weight: 750
+        }
+
+        a {
+            color: var(--maroon);
+            text-underline-offset: 3px
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--orange);
+            outline-offset: 3px
+        }
+
+        @media(max-width:740px) {
+            body {
+                padding: 0
+            }
+
+            .bkgd-page {
+                padding: 14px
+            }
+
+            .page {
+                padding: 17px;
+                border-width: 4px
+            }
+
+            .hero {
+                grid-template-columns: 64px 1fr;
+                gap: 13px;
+                margin: -17px -17px 20px;
+                padding: 20px 17px
+            }
+
+            .hero-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.9rem;
+                box-shadow: 4px 4px 0 var(--gray)
+            }
+
+            .steps,
+            .improvements,
+            .worked {
+                grid-template-columns: 1fr
+            }
+
+            .step {
+                padding: 12px
+            }
+
+            h1 {
+                font-size: 2rem
+            }
+
+            .subtitle {
+                font-size: 1rem
+            }
+
+            .scenario {
+                padding: 15px
+            }
+        }
+
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: white;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold;
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                font-size: 12px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact
+            }
+
+            .infographic {
+                max-width: none
+            }
+
+            .bkgd-page {
+                padding: 12px;
+                background-size: cover
+            }
+
+            .page {
+                padding: 16px;
+                box-shadow: none
+            }
+
+            .hero {
+                margin: -16px -16px 15px;
+                padding: 14px 16px
+            }
+
+            .hero-icon {
+                width: 65px;
+                height: 65px;
+                font-size: 2rem
+            }
+
+            .hero {
+                grid-template-columns: 70px 1fr
+            }
+
+            h1 {
+                font-size: 2rem
+            }
+
+            .steps {
+                gap: 8px
+            }
+
+            .step {
+                padding: 9px
+            }
+
+            .section-heading {
+                margin: 13px 0 8px
+            }
+
+            .scenario {
+                margin-bottom: 12px;
+                padding: 10px
+            }
+
+            .takeaway {
+                margin-top: 12px;
+                padding: 12px
+            }
+
+            .footer {
+                padding: 8px
+            }
+
+            table {
+                font-size: 11px
+            }
+
+            th,
+            td {
+                padding: 6px 7px
+            }
+
+            .worked {
+                margin: 8px 0
+            }
+
+            .calculation,
+            .interpretation {
+                padding: 10px
+            }
+
+            @page {
+                size: letter;
+                margin: .3in
+            }
+        }
+    
+/* Compact example: retain the uploaded infographic's color, frame, typography, and background rules. */
+.compact-improvements { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.compact-improvements .improvement { align-items: flex-start; }
+.compact-calculation { margin: 13px 0 0; padding: 12px 17px; }
+.compact-calculation p { margin: 0; }
+.priority-flow { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.priority-flow > div { display:flex; align-items:center; gap:10px; padding:12px; border:1px solid var(--smoke); border-radius:9px; background:var(--smoke-light); }
+.priority-flow small { margin-left:auto; color:var(--teal-dark); font-weight:700; }
+@media (max-width:740px) { .compact-improvements,.priority-flow { grid-template-columns:1fr; } .priority-flow > div { padding:9px 12px; } }
+@media print { .compact-improvements,.priority-flow { grid-template-columns:repeat(3,minmax(0,1fr)); } .compact-calculation { padding:8px 12px; } }
+</style>
+</head>
+<body>
+<main class="infographic">
+<div class="bkgd-page">
+<article aria-labelledby="main-title" class="page"><header class="hero">
+<div aria-hidden="true" class="hero-icon"><i class="fa-solid fa-table-cells-large"></i></div>
+<div>
+<p class="eyebrow">Decision Matrix • Quick Guide</p>
+<h1 id="main-title">What Should We Fix First?</h1>
+<p class="subtitle">Compare improvements. Set priorities.</p>
+</div>
+</header>
+<section aria-labelledby="scenario-title" class="scenario">
+<h2 id="scenario-title"><i aria-hidden="true" class="fa-solid fa-ticket"></i> The situation</h2>
+<p>Riverton Community Theater’s ticket confirmation email is difficult to use. The theater has several possible improvements—but which should come first?</p>
+</section>
+<section aria-labelledby="options-title">
+<div class="section-heading"><i aria-hidden="true" class="fa-solid fa-list-check"></i><h2 id="options-title">Possible improvements</h2></div>
+<div class="improvements compact-improvements">
+<div class="improvement"><span class="letter">A</span><span><strong>Highlight key details</strong><br/>Put the date, time, and location first.</span></div>
+<div class="improvement"><span class="letter">B</span><span><strong>Simplify instructions</strong><br/>Make arrival directions easier to follow.</span></div>
+<div class="improvement"><span class="letter">C</span><span><strong>Clarify links</strong><br/>Replace vague links with descriptive text.</span></div>
+</div>
+</section>
+<section aria-labelledby="matrix-title">
+<div class="section-heading"><i aria-hidden="true" class="fa-solid fa-table-cells"></i><h2 id="matrix-title">Compare using a decision matrix</h2></div>
+<p class="mini-note">Choose criteria, give each an importance <strong>weight</strong>, and <strong>rate</strong> each improvement. Use 1 (low), 2 (medium), or 3 (high).</p>
+<div class="table-wrap"><table>
+<caption class="small" style="caption-side:bottom;text-align:left;padding:10px 8px">Example ratings are fictional. Your ratings should reflect evidence from your investigation.</caption>
+<thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">A<br/><span class="small">Details</span></th><th scope="col">B<br/><span class="small">Instructions</span></th><th scope="col">C<br/><span class="small">Links</span></th></tr></thead>
+<tbody>
+<tr><th scope="row">Benefit to readers</th><td class="weight">3</td><td>3</td><td>2</td><td>3</td></tr>
+<tr><th scope="row">Urgency</th><td class="weight">3</td><td>3</td><td>2</td><td>3</td></tr>
+<tr><th scope="row">Ease of implementation</th><td class="weight">2</td><td>3</td><td>3</td><td>2</td></tr>
+<tr class="total"><th scope="row">Weighted total</th><td>—</td><td class="best">24</td><td>18</td><td>22</td></tr>
+</tbody></table></div>
+<div class="calculation compact-calculation"><h3><i aria-hidden="true" class="fa-solid fa-calculator"></i> How scores work</h3><p><strong>Weight × rating</strong> for each row; then add the results. For A: <span class="formula">(3 × 3) + (3 × 3) + (2 × 3) = 24</span></p></div>
+</section>
+<section aria-labelledby="priority-title">
+<div class="section-heading"><i aria-hidden="true" class="fa-solid fa-arrow-down-wide-short"></i><h2 id="priority-title">Use the scores to set priorities</h2></div>
+<div aria-label="Illustrative priority order" class="priority-flow"><div><span class="letter">A</span><strong>First</strong><small>24 points</small></div><div><span class="letter">C</span><strong>Next</strong><small>22 points</small></div><div><span class="letter">B</span><strong>Then</strong><small>18 points</small></div></div>
+</section>
+<div class="takeaway"><i aria-hidden="true" class="fa-solid fa-lightbulb"></i><div><h2>Prioritize—don't eliminate.</h2><p>Lower-ranked improvements may still be worthwhile. Required accessibility fixes should be addressed regardless of score.</p></div></div>
+<p class="footnote"><strong>In your report:</strong> Use a small matrix to support your priorities. Briefly explain your criteria and the evidence behind your ratings.</p>
+</article>
+<!-- updated -->
+<p class="updated"><time datetime="2026-10-14">Last Updated October 14, 2026</time></p>
+</div>
+<!-- credit -->
+<p class="credit">© 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+
+</main>
+<script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+            function sendHeight() {
+                if (window.parent === window) return;
+                window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin);
+            }
+            window.addEventListener("load", sendHeight);
+            if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(sendHeight).observe(document.documentElement);
+            }
+        })();
+    </script>
+</body>
+</html>

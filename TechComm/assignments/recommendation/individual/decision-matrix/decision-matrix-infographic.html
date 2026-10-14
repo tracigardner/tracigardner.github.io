@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A four-step visual guide to prioritizing document improvements with a weighted decision matrix.">
+    <meta name="description" content="A concise illustrated example of using evidence, criteria, and weights to prioritize document improvements.">
     <meta name="author" content="Traci Gardner">
     <title>Which Improvements Come First? | Decision Matrix Quick Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -56,7 +56,10 @@
 
         .page {
             background: var(--white);
-            border: 6px solid var(--maroon);
+            border-top: 6px solid var(--maroon);
+            border-left: 6px solid var(--maroon);
+            border-right: 6px solid var(--maroon);
+            border-bottom: 0;
             border-radius: 14px 14px 0 0;
             padding: 30px;
             box-shadow: 0 8px 28px #385d6524
@@ -466,6 +469,21 @@
             }
         }
 
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: white;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold;
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem;
+        }
+
         @media print {
             body {
                 padding: 0;
@@ -556,6 +574,51 @@
                 margin: .3in
             }
         }
+
+        /* Open editorial layout: preserve the instructor's original framing and palette. */
+        .lead {font-size:1.08rem;max-width:78ch;margin:0 0 22px}
+        .editorial-heading {font-size:1.36rem;color:var(--teal-dark);margin:23px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--teal)}
+        .evidence-grid {display:grid;grid-template-columns:1fr 1fr;gap:0 25px;margin:6px 0 16px}
+        .column-label {font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--teal-dark);margin:0 0 8px}
+        .evidence-row {display:grid;grid-template-columns:1fr 1fr;gap:25px;border-top:1px solid var(--smoke);padding:12px 0;align-items:start}
+        .finding {display:flex;gap:12px;align-items:start}
+        .finding i {color:var(--teal);font-size:1.25rem;width:26px;flex:none;padding-top:2px}
+        .finding p,.solution p {margin:0}
+        .solution {display:flex;gap:11px;align-items:start}
+        .criterion-list {margin:10px 0 12px;padding:0;list-style:none}
+        .criterion-list li {display:grid;grid-template-columns:minmax(0,1.2fr) 64px minmax(0,2fr);gap:12px;padding:10px 4px;border-bottom:1px solid var(--smoke);align-items:baseline}
+        .criterion-list li:first-child {border-top:1px solid var(--smoke)}
+        .criterion-list .criterion-name {font-weight:700}
+        .criterion-list .criterion-weight {font-weight:800;color:var(--maroon);white-space:nowrap}
+        .criterion-list .criterion-why {font-size:.92rem}
+        .principle {color:var(--maroon-dark);font-weight:800;margin:12px 0 5px}
+        .matrix-intro {font-size:.94rem;margin:0 0 11px}
+        .table-wrap {margin:10px 0 9px}
+        table {min-width:0}
+        tbody th {width:auto}
+        .matrix-caption {font-size:.84rem;text-align:left;padding:9px 10px;color:#333;caption-side:bottom}
+        .score-explain {display:flex;align-items:center;gap:17px;margin:16px 0;padding:13px 0;border-top:1px solid var(--smoke);border-bottom:1px solid var(--smoke)}
+        .score-number {background:var(--orange-light);border-left:5px solid var(--orange);padding:12px 15px;color:var(--maroon-dark);font-weight:800;white-space:nowrap;font-size:1.08rem}
+        .score-explain p {margin:0;font-size:.94rem}
+        .priority-line {display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:10px 0 12px}
+        .priority-line .priority {font-weight:800;color:var(--teal-dark);font-size:1.05rem}
+        .priority-line .arrow {color:var(--orange);font-weight:800}
+        .conclusion {margin:8px 0 18px}
+        .takeaway {margin-top:14px}
+        .takeaway p {font-size:.96rem}
+        @media(max-width:740px) {
+            .evidence-row {gap:14px}
+            .criterion-list li {grid-template-columns:1fr 55px;gap:5px 10px}
+            .criterion-list .criterion-why {grid-column:1/-1}
+            .score-explain {align-items:flex-start;flex-direction:column;gap:9px}
+            table {min-width:490px}
+        }
+        @media print {
+            .editorial-heading {margin:12px 0 6px}
+            .evidence-row {padding:7px 0}
+            .criterion-list li {padding:5px 4px}
+            .score-explain {margin:9px 0;padding:8px 0}
+        }
     </style>
 </head>
 
@@ -571,138 +634,92 @@
                         <p class="subtitle">Use a weighted decision matrix to prioritize recommendations.</p>
                     </div>
                 </header>
-                <p class="intro">A decision matrix helps you compare <strong>several worthwhile improvements</strong> using the same criteria. The goal is to decide <strong>what to address first</strong>—not to discard every lower-ranked idea.</p>
-                <section class="scenario" aria-labelledby="scenario-title">
-                    <h2 id="scenario-title"><i class="fa-solid fa-ticket" aria-hidden="true"></i> Example: A theater ticket email</h2>
-                    <p>Riverton Community Theater wants to improve its ticket confirmation email. Customers struggle to find essential details, understand arrival instructions, and use some links. Which changes should the theater prioritize?</p>
-                </section>
-                <section aria-labelledby="steps-title">
-                    <h2 id="steps-title">Four steps to a decision</h2>
-                    <div class="steps">
-                        <div class="step"><span class="step-num">1</span>
-                            <div>
-                                <h3>List improvements</h3>
-                                <p>Identify specific changes supported by your document investigation.</p>
-                            </div>
-                        </div>
-                        <div class="step"><span class="step-num">2</span>
-                            <div>
-                                <h3>Choose criteria and weights</h3>
-                                <p>Decide what matters most. Give more important criteria higher weights.</p>
-                            </div>
-                        </div>
-                        <div class="step"><span class="step-num">3</span>
-                            <div>
-                                <h3>Rate and calculate</h3>
-                                <p>Rate each improvement against every criterion. Multiply each rating by its weight, then add.</p>
-                            </div>
-                        </div>
-                        <div class="step"><span class="step-num">4</span>
-                            <div>
-                                <h3>Set priorities</h3>
-                                <p>Use the totals <em>and your evidence</em> to explain which changes should come first.</p>
-                            </div>
-                        </div>
+                <p class="lead">A decision matrix compares <strong>worthwhile improvements</strong> using the same criteria to help decide <strong>what to address first</strong>.</p>
+
+                <section aria-labelledby="scenario-title">
+                    <h2 class="editorial-heading" id="scenario-title"><i class="fa-solid fa-ticket" aria-hidden="true"></i> A theater ticket email</h2>
+                    <p>Riverton Community Theater wants to improve its ticket confirmation email. Its fictional review identifies these problems and possible solutions:</p>
+                    <div class="evidence-grid" aria-hidden="true"><p class="column-label">What the theater found</p><p class="column-label">What it could improve</p></div>
+                    <div class="evidence-row">
+                        <div class="finding"><i class="fa-regular fa-clock" aria-hidden="true"></i><p>Customers often miss the performance date and time.</p></div>
+                        <div class="solution"><span class="letter">A</span><p>Move key event details to the top.</p></div>
+                    </div>
+                    <div class="evidence-row">
+                        <div class="finding"><i class="fa-solid fa-link" aria-hidden="true"></i><p>An accessibility review found links labeled “Click here.”</p></div>
+                        <div class="solution"><span class="letter">B</span><p>Replace vague links with descriptive text.</p></div>
+                    </div>
+                    <div class="evidence-row">
+                        <div class="finding"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i><p>Customers report difficulty reading the email on phones.</p></div>
+                        <div class="solution"><span class="letter">C</span><p>Improve the layout for mobile reading.</p></div>
                     </div>
                 </section>
-                <section aria-labelledby="options-title">
-                    <div class="section-heading"><i class="fa-solid fa-list-check" aria-hidden="true"></i>
-                        <h2 id="options-title">1. Four possible improvements</h2>
-                    </div>
-                    <div class="improvements">
-                        <div class="improvement"><span class="letter">A</span><span>Put the performance date, time, and location at the top.</span></div>
-                        <div class="improvement"><span class="letter">B</span><span>Replace vague links with descriptive link text.</span></div>
-                        <div class="improvement"><span class="letter">C</span><span>Rewrite parking and arrival instructions in plain language.</span></div>
-                        <div class="improvement"><span class="letter">D</span><span>Improve the layout for reading on a phone.</span></div>
-                    </div>
+
+                <section aria-labelledby="criteria-title">
+                    <h2 class="editorial-heading" id="criteria-title">What matters most?</h2>
+                    <p>The theater chooses criteria based on customer needs and staff resources. It gives more important criteria greater <strong>weight</strong>.</p>
+                    <ul class="criterion-list">
+                        <li><span class="criterion-name">Benefit to customers</span><span class="criterion-weight">3</span><span class="criterion-why">Helping customers use their tickets is the main goal.</span></li>
+                        <li><span class="criterion-name">Urgency</span><span class="criterion-weight">3</span><span class="criterion-why">Problems with essential information need prompt attention.</span></li>
+                        <li><span class="criterion-name">Ease of implementation</span><span class="criterion-weight">2</span><span class="criterion-why">Staff time matters, but customer needs matter more.</span></li>
+                    </ul>
+                    <p class="principle">Priorities determine the weights. Evidence informs the ratings.</p>
                 </section>
+
                 <section aria-labelledby="matrix-title">
-                    <div class="section-heading"><i class="fa-solid fa-table-cells" aria-hidden="true"></i>
-                        <h2 id="matrix-title">2–3. Weigh, rate, and calculate</h2>
-                    </div>
-                    <p>Use a simple <strong>1–3 scale</strong> for both weights and ratings. A higher number always means <strong>more important</strong> or <strong>more favorable</strong>.</p>
-                    <div class="scale" aria-label="Scoring scales"><span><strong>Weight:</strong> 1 = lower importance · 3 = highest importance</span><span><strong>Rating:</strong> 1 = less favorable · 3 = most favorable</span></div>
+                    <h2 class="editorial-heading" id="matrix-title">Compare the improvements</h2>
+                    <p class="matrix-intro"><strong>Weight:</strong> 1 = less important; 3 = most important. <strong>Rating:</strong> 1 = less favorable; 3 = most favorable. Higher scores indicate higher priority.</p>
                     <div class="table-wrap">
                         <table>
-                            <caption class="small" style="caption-side:bottom;text-align:left;padding:10px 8px">Illustrative ratings only. In your report, explain important ratings using evidence from your investigation.</caption>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Prioritization criterion</th>
-                                    <th scope="col">Weight</th>
-                                    <th scope="col">A<br><span class="small">Key details</span></th>
-                                    <th scope="col">B<br><span class="small">Link text</span></th>
-                                    <th scope="col">C<br><span class="small">Instructions</span></th>
-                                    <th scope="col">D<br><span class="small">Mobile layout</span></th>
-                                </tr>
-                            </thead>
+                            <caption class="matrix-caption">Illustrative ratings, not measured results. The theater would support its ratings with review findings and implementation estimates.</caption>
+                            <thead><tr><th scope="col">Criterion</th><th scope="col">Weight</th><th scope="col">A<br><span class="small">Event details</span></th><th scope="col">B<br><span class="small">Link text</span></th><th scope="col">C<br><span class="small">Mobile layout</span></th></tr></thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">Benefit to readers</th>
-                                    <td class="weight">3</td>
-                                    <td>3</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Urgency of the problem</th>
-                                    <td class="weight">3</td>
-                                    <td>3</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>2</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Ease of implementation</th>
-                                    <td class="weight">2</td>
-                                    <td>3</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Number of readers helped</th>
-                                    <td class="weight">2</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr class="total">
-                                    <th scope="row">Weighted total</th>
-                                    <td>—</td>
-                                    <td class="best">30</td>
-                                    <td>28</td>
-                                    <td>22</td>
-                                    <td>23</td>
-                                </tr>
+                                <tr><th scope="row">Benefit to customers</th><td class="weight">3</td><td>3</td><td>3</td><td>2</td></tr>
+                                <tr><th scope="row">Urgency</th><td class="weight">3</td><td>3</td><td>3</td><td>2</td></tr>
+                                <tr><th scope="row">Ease of implementation</th><td class="weight">2</td><td>3</td><td>2</td><td>1</td></tr>
+                                <tr class="total"><th scope="row">Weighted total</th><td>—</td><td class="best">24</td><td>22</td><td>14</td></tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="worked">
-                        <div class="calculation">
-                            <h3><i class="fa-solid fa-calculator" aria-hidden="true"></i> How a total works</h3>
-                            <p>For improvement A, multiply each rating by its criterion's weight:</p>
-                            <p class="formula">(3 × 3) + (3 × 3) + (3 × 2) + (3 × 2) = 30</p>
-                        </div>
-                        <div class="interpretation">
-                            <h3><i class="fa-solid fa-arrow-down-wide-short" aria-hidden="true"></i> 4. Interpret the priorities</h3>
-                            <p>In this illustration, the theater would start with <strong>A</strong>, followed by <strong>B</strong>, <strong>D</strong>, and <strong>C</strong>.</p>
-                            <div class="ranking" aria-label="Illustrative priority order"><span>1st: A</span><span>2nd: B</span><span>3rd: D</span><span>4th: C</span></div>
-                        </div>
+                    <div class="score-explain">
+                        <div class="score-number">3 × 3 = 9</div>
+                        <p><strong>One rating explained:</strong> Moving event details to the top earns a <strong>3 for customer benefit</strong> because customers often miss that essential information. Its weight of <strong>3</strong> makes the weighted score <strong>9</strong> for this criterion. Add all weighted scores to get each total.</p>
                     </div>
                 </section>
-                <div class="takeaway"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
-                    <div>
-                        <h2>Prioritize—don't eliminate.</h2>
-                        <p>Lower scores do not mean an improvement is unnecessary. Explain tradeoffs, support your ratings with evidence, and address required accessibility corrections regardless of their rank.</p>
+
+                <section aria-labelledby="priorities-title">
+                    <h2 class="editorial-heading" id="priorities-title">What comes first?</h2>
+                    <div class="priority-line" aria-label="Priority order: A, then B, then C">
+                        <span class="priority">A · Event details (24)</span><span class="arrow" aria-hidden="true">→</span>
+                        <span class="priority">B · Link text (22)</span><span class="arrow" aria-hidden="true">→</span>
+                        <span class="priority">C · Mobile layout (14)</span>
                     </div>
-                </div>
-                <p class="footnote"><strong>For your recommendation report:</strong> Keep the matrix small (about four improvements and three or four criteria). Include it in your report and briefly explain how it informed your priorities. This theater example and its scores are fictional.</p>
+                    <p class="conclusion">The theater would start with clearer event details, then improve link text and mobile layout. The scores guide its priorities; they do not replace professional judgment.</p>
+                </section>
+
+                <div class="takeaway"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i><div><h2>Prioritize—don't eliminate.</h2><p>Lower-ranked improvements may still be necessary. Required accessibility corrections must be addressed regardless of their score.</p></div></div>
+                <p class="footnote"><strong>In your report:</strong> Use a small matrix and briefly explain the criteria, weights, important ratings, and resulting priorities. All theater findings and scores above are fictional.</p>
             </article>
-            <footer class="footer">Decision Matrix Quick Guide · Technical Communication</footer>
+
+            <!-- updated -->
+            <p class="updated"><time datetime="2026-10-14">Last Updated October 14, 2026</time></p>
         </div>
+
+        <!-- credit -->
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
     </main>
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+            function sendHeight() {
+                if (window.parent === window) return;
+                window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin);
+            }
+            window.addEventListener("load", sendHeight);
+            if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(sendHeight).observe(document.documentElement);
+            }
+        })();
+    </script>
 </body>
 
 </html>
