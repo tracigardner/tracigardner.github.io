@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An infographic explaining front matter, body, and back matter in a recommendation report.">
+    <title>Anatomy of a Recommendation Report</title>
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+            --orange: #c64600;
+            --orange-light: #faede6;
+            --smoke: #e5e1e6;
+            --smoke-light: #f7f6f7;
+            --gray: #d7d2cb;
+            --text: #1f1f1f;
+            --white: #ffffff
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: #fff;
+            color: var(--text);
+            font: 17px/1.5 Arial, Helvetica, sans-serif
+        }
+
+        .infographic {
+            max-width: 1150px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            background: var(--smoke) url("https://tracigardner.github.io/TechComm/-images/backgrounds/Geometric-Corner-Pattern.png") repeat;
+            padding: 39px;
+            background-size: 600px;
+            width: 100%;
+            height: 100%;
+            background-color: var(--teal);
+        }
+
+        .pagewidth {
+            background: #fff;
+            border: 5px solid var(--maroon);
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            background: var(--smoke-light);
+            margin: -28px -28px 24px;
+            padding: 28px;
+            border-bottom: 2px solid var(--smoke);
+            border-radius: 9px 9px 0 0
+        }
+
+        .title-icon {
+            flex: none;
+            width: 85px;
+            height: 85px;
+            display: grid;
+            place-items: center;
+            background: var(--maroon);
+            color: #fff;
+            border-radius: 14px;
+            font-size: 2.5rem;
+            box-shadow: 6px 6px 0 var(--gray)
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2rem, 4.3vw, 3.2rem);
+            line-height: 1.1
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--teal);
+            margin-top: 7px
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin: 0 0 24px
+        }
+
+        .parts {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 15px
+        }
+
+        .part {
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-width: 0
+        }
+
+        .part.front {
+            --accent: var(--orange);
+            --pale: var(--orange-light)
+        }
+
+        .part.body {
+            --accent: var(--teal-dark);
+            --pale: var(--teal-light)
+        }
+
+        .part.back {
+            --accent: var(--maroon);
+            --pale: var(--maroon-light)
+        }
+
+        .part-header {
+            background: var(--accent);
+            color: white;
+            padding: 20px 16px;
+            min-height: 173px
+        }
+
+        .part-header h2 {
+            font-size: 1.7rem;
+            margin: 0 0 7px;
+            line-height: 1.15
+        }
+
+        .part-header p {
+            margin: 0;
+            font-size: 1rem
+        }
+
+        .part-content {
+            padding: 17px 17px 22px;
+            background: var(--pale);
+            flex: 1
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-weight: 800;
+            font-size: .79rem;
+            color: #333;
+            margin: 0 0 10px
+        }
+
+        .element-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 9px
+        }
+
+        .element-list li {
+            display: flex;
+            align-items: baseline;
+            gap: 9px;
+            line-height: 1.28
+        }
+
+        .element-list li::before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            flex: none;
+            border-radius: 50%;
+            background: var(--accent)
+        }
+
+        .element-list .optional {
+            font-size: .81rem;
+            color: #494949;
+            font-weight: 700;
+            white-space: nowrap
+        }
+
+        .documents {
+            margin-top: 22px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            min-height: 125px;
+            gap: 0;
+            padding: 8px 0 0
+        }
+
+        .sheet {
+            width: 28%;
+            height: 95px;
+            margin-left: -9px;
+            background: white;
+            border: 1px solid #777;
+            box-shadow: 3px 4px 3px #0002;
+            padding: 8px 5px;
+            position: relative;
+            transform: translateY(var(--shift, 0px))
+        }
+
+        .sheet:first-child {
+            margin-left: 0
+        }
+
+        .sheet:nth-child(2) {
+            --shift: 8px
+        }
+
+        .sheet:nth-child(3) {
+            --shift: 16px
+        }
+
+        .sheet:nth-child(4) {
+            --shift: 24px
+        }
+
+        .sheet b {
+            display: block;
+            font-size: .56rem;
+            line-height: 1.1;
+            overflow-wrap: anywhere
+        }
+
+        .sheet::after {
+            content: "";
+            display: block;
+            margin-top: 10px;
+            height: 42px;
+            background: repeating-linear-gradient(to bottom, #c5c5c5 0 2px, transparent 2px 9px)
+        }
+
+        .note {
+            font-size: .85rem;
+            margin: 32px 0 0;
+            color: #414141
+        }
+
+        .warning {
+            margin: 26px 0 0;
+            padding: 19px 20px;
+            background: var(--maroon-light);
+            border: 2px solid var(--maroon);
+            border-radius: 12px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start
+        }
+
+        .warning-icon {
+            font-size: 2rem;
+            color: var(--maroon);
+            line-height: 1
+        }
+
+        .warning h2 {
+            color: var(--maroon-dark);
+            margin: 0 0 6px;
+            font-size: 1.4rem
+        }
+
+        .warning p {
+            margin: 0
+        }
+
+        .examples {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 13px
+        }
+
+        .example {
+            background: white;
+            border-radius: 8px;
+            padding: 12px 14px;
+            border-left: 5px solid
+        }
+
+        .example.bad {
+            border-color: var(--maroon)
+        }
+
+        .example.good {
+            border-color: var(--teal-dark)
+        }
+
+        .example strong {
+            display: block;
+            margin-bottom: 5px
+        }
+
+        .example ul {
+            margin: 0;
+            padding-left: 22px
+        }
+
+        .connection {
+            margin-top: 24px;
+            background: var(--teal-light);
+            border: 2px solid var(--teal);
+            border-radius: 12px;
+            padding: 20px
+        }
+
+        .connection h2 {
+            margin: 0 0 14px;
+            color: var(--teal);
+            font-size: 1.55rem
+        }
+
+        .flow {
+            display: grid;
+            grid-template-columns: 1fr 34px 1fr 34px 1fr;
+            align-items: center;
+            gap: 9px
+        }
+
+        .flow-box {
+            background: #fff;
+            border: 2px solid var(--teal);
+            border-radius: 10px;
+            padding: 14px;
+            min-height: 134px
+        }
+
+        .flow-box h3 {
+            margin: 0 0 6px;
+            font-size: 1.13rem;
+            color: var(--maroon)
+        }
+
+        .flow-box p {
+            margin: 0;
+            font-size: .94rem
+        }
+
+        .arrow {
+            text-align: center;
+            color: var(--teal);
+            font-size: 1.5rem
+        }
+
+        .credit {
+            font-size: .8rem;
+            text-align: center;
+            margin: 12px 0 0
+        }
+
+        .updated {
+            text-align: right;
+            font-size: .8rem;
+            color: #555;
+            margin: 15px 0 0
+        }
+
+        @media(max-width:850px) {
+            .parts {
+                grid-template-columns: 1fr
+            }
+
+            .part-header {
+                min-height: 0
+            }
+
+            .documents {
+                max-width: 380px;
+                margin: 12px auto 0
+            }
+
+            .flow {
+                grid-template-columns: 1fr;
+                gap: 8px
+            }
+
+            .arrow {
+                transform: rotate(90deg)
+            }
+
+            .flow-box {
+                min-height: 0
+            }
+        }
+
+        @media(max-width:560px) {
+            .bkgd-page {
+                padding: 12px
+            }
+
+            .pagewidth {
+                padding: 16px
+            }
+
+            .title-row {
+                margin: -16px -16px 18px;
+                padding: 20px 16px;
+                gap: 13px
+            }
+
+            .title-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 1.7rem
+            }
+
+            .examples {
+                grid-template-columns: 1fr
+            }
+
+            .warning {
+                padding: 13px
+            }
+
+            .tagline {
+                font-size: 1.08rem
+            }
+        }
+
+        @media print {
+            .bkgd-page {
+                padding: 0;
+                background: none
+            }
+
+            .pagewidth {
+                box-shadow: none
+            }
+
+            .part,
+            .warning,
+            .connection {
+                break-inside: avoid
+            }
+
+            body {
+                font-size: 12pt
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="pagewidth">
+                <header class="title-row">
+                    <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></div>
+                    <div>
+                        <h1>Anatomy of a Recommendation Report</h1>
+                        <div class="tagline">Three parts. Three different jobs. One complete report.</div>
+                    </div>
+                </header>
+                <p class="intro">A recommendation report explains your investigation and recommends practical improvements. Its sections fall into three groups, each serving a different reader need.</p>
+                <div class="parts">
+                    <section class="part front" aria-labelledby="front-heading">
+                        <div class="part-header">
+                            <h2 id="front-heading">Front Matter</h2>
+                            <p><strong>Orient the reader.</strong> Introduce the report, summarize its key points, and help readers find information.</p>
+                        </div>
+                        <div class="part-content">
+                            <p class="eyebrow">Elements in report order</p>
+                            <ol class="element-list">
+                                <li>Letter of Transmittal</li>
+                                <li>Title Page</li>
+                                <li>Table of Contents</li>
+                                <li>Abstract</li>
+                                <li>Executive Summary</li>
+                                <li>List of Illustrations <span class="optional">(optional)</span></li>
+                            </ol>
+                            <div class="documents" aria-hidden="true">
+                                <div class="sheet"><b>Letter of Transmittal</b></div>
+                                <div class="sheet"><b>Title Page</b></div>
+                                <div class="sheet"><b>Table of Contents</b></div>
+                                <div class="sheet"><b>Executive Summary</b></div>
+                            </div>
+                            <p class="note">The front matter helps readers decide what to read and where to look.</p>
+                        </div>
+                    </section>
+                    <section class="part body" aria-labelledby="body-heading">
+                        <div class="part-header">
+                            <h2 id="body-heading">Body</h2>
+                            <p><strong>Make the case.</strong> Explain what you investigated, what you found, what it means, and what should happen next.</p>
+                        </div>
+                        <div class="part-content">
+                            <p class="eyebrow">Elements in report order</p>
+                            <ol class="element-list">
+                                <li>Introduction</li>
+                                <li>Methods</li>
+                                <li>Results</li>
+                                <li>Conclusions</li>
+                                <li>Recommendations</li>
+                            </ol>
+                            <div class="documents" aria-hidden="true">
+                                <div class="sheet"><b>Introduction</b></div>
+                                <div class="sheet"><b>Methods</b></div>
+                                <div class="sheet"><b>Results</b></div>
+                                <div class="sheet"><b>Recommendations</b></div>
+                            </div>
+                            <p class="note">The body connects your evidence and evaluation to feasible recommendations.</p>
+                        </div>
+                    </section>
+                    <section class="part back" aria-labelledby="back-heading">
+                        <div class="part-header">
+                            <h2 id="back-heading">Back Matter</h2>
+                            <p><strong>Support the report.</strong> Document sources and supply additional information for readers who need more detail.</p>
+                        </div>
+                        <div class="part-content">
+                            <p class="eyebrow">Elements in report order</p>
+                            <ol class="element-list">
+                                <li>Glossary <span class="optional">(optional)</span></li>
+                                <li>List of Symbols <span class="optional">(optional)</span></li>
+                                <li>References</li>
+                                <li>Appendices <span class="optional">(optional)</span></li>
+                            </ol>
+                            <div class="documents" aria-hidden="true">
+                                <div class="sheet"><b>Glossary</b></div>
+                                <div class="sheet"><b>List of Symbols</b></div>
+                                <div class="sheet"><b>References</b></div>
+                                <div class="sheet"><b>Appendix A</b></div>
+                            </div>
+                            <p class="note">Include optional elements only when they help your readers.</p>
+                        </div>
+                    </section>
+                </div>
+                <section class="warning" aria-labelledby="warning-heading">
+                    <div class="warning-icon" aria-hidden="true"><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div>
+                        <h2 id="warning-heading">Do not put “Front Matter,” “Body,” or “Back Matter” in your report.</h2>
+                        <p>These are <strong>names for groups of sections</strong>, not headings to insert into the finished document. Use the actual section titles instead.</p>
+                        <div class="examples">
+                            <div class="example bad"><strong>✕ Not in your report</strong>
+                                <ul>
+                                    <li>Front Matter</li>
+                                    <li>Body</li>
+                                    <li>Back Matter</li>
+                                </ul>
+                            </div>
+                            <div class="example good"><strong>✓ In your report</strong>
+                                <ul>
+                                    <li>Executive Summary</li>
+                                    <li>Introduction</li>
+                                    <li>Methods</li>
+                                    <li>Results</li>
+                                    <li>References</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="connection" aria-labelledby="connection-heading">
+                    <h2 id="connection-heading">How the parts work together</h2>
+                    <div class="flow">
+                        <div class="flow-box">
+                            <h3>Front Matter</h3>
+                            <p>What is this report about? What are its key points? Where can I find information?</p>
+                        </div>
+                        <div class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="flow-box">
+                            <h3>Body</h3>
+                            <p>What did you do? What did you find? What does it mean? What do you recommend?</p>
+                        </div>
+                        <div class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="flow-box">
+                            <h3>Back Matter</h3>
+                            <p>Where did the evidence come from? Where can I find supporting details?</p>
+                        </div>
+                    </div>
+                </section>
+                <p class="updated"><time datetime="2026-10-15">Last Updated October 15, 2026</time></p>
+            </div>
+        </div>
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+</body>
+
+</html>
