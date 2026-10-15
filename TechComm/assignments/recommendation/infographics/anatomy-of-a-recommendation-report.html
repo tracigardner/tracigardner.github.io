@@ -59,7 +59,7 @@
         .pagewidth {
             background: #fff;
             border: 5px solid var(--maroon);
-            border-radius: 14px;
+            border-radius: 14px 14px 0 0;
             padding: 28px;
         }
 
@@ -92,13 +92,6 @@
             color: var(--maroon);
             font-size: clamp(2rem, 4.3vw, 3.2rem);
             line-height: 1.1
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--teal);
-            margin-top: 7px
         }
 
         .intro {
@@ -238,6 +231,10 @@
             --shift: 24px
         }
 
+        .sheet:nth-child(5) {
+            --shift: 32px
+        }
+
         .sheet b {
             display: block;
             font-size: .56rem;
@@ -255,7 +252,7 @@
 
         .note {
             font-size: .85rem;
-            margin: 32px 0 0;
+            margin: 42px 0 0;
             color: #414141
         }
 
@@ -287,12 +284,12 @@
 
         .warning-icon {
             font-size: 2rem;
-            color: var(--text);
+            color: #242424;
             line-height: 1
         }
 
         .warning h2 {
-            color: var(--text);
+            color: #242424;
             margin: 0 0 6px;
             font-size: 1.4rem
         }
@@ -411,17 +408,20 @@
             font-size: 1.5rem
         }
 
-        .credit {
-            font-size: .8rem;
-            text-align: center;
-            margin: 12px 0 0
-        }
 
         .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: white;
             text-align: right;
-            font-size: .8rem;
-            color: #555;
-            margin: 15px 0 0
+            font-size: .85rem;
+            font-weight: bold;
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem;
         }
 
         @media(max-width:850px) {
@@ -513,15 +513,21 @@
     <main class="infographic">
         <div class="bkgd-page">
             <div class="pagewidth">
+                <!-- title -->
                 <header class="title-row">
                     <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></div>
                     <div>
                         <h1>Anatomy of a Recommendation Report</h1>
-                        <div class="tagline">Three parts. Three different jobs. One complete report.</div>
                     </div>
                 </header>
+
+                <!-- Intro expl -->
                 <p class="intro">A recommendation report explains your investigation and recommends practical improvements. Its sections fall into three groups, each serving a different reader need.</p>
+
+                <!-- Report Parts -->
                 <div class="parts">
+
+                    <!-- front matter -->
                     <section class="part front" aria-labelledby="front-heading">
                         <div class="part-header">
                             <h2 id="front-heading">Front Matter</h2>
@@ -532,20 +538,23 @@
                             <ol class="element-list">
                                 <li>Letter of Transmittal</li>
                                 <li>Title Page</li>
-                                <li>Table of Contents</li>
                                 <li>Abstract</li>
+                                <li>Table of Contents</li>
                                 <li>Executive Summary</li>
                                 <li>List of Illustrations <span class="optional">(optional)</span></li>
                             </ol>
                             <div class="documents" aria-hidden="true">
                                 <div class="sheet"><b>Letter of Transmittal</b></div>
                                 <div class="sheet"><b>Title Page</b></div>
+                                <div class="sheet"><b>Abstract</b></div>
                                 <div class="sheet"><b>Table of Contents</b></div>
                                 <div class="sheet"><b>Executive Summary</b></div>
                             </div>
                             <p class="note">The front matter helps readers decide what to read and where to look.</p>
                         </div>
                     </section>
+
+                    <!-- body -->
                     <section class="part body" aria-labelledby="body-heading">
                         <div class="part-header">
                             <h2 id="body-heading">Body</h2>
@@ -564,11 +573,14 @@
                                 <div class="sheet"><b>Introduction</b></div>
                                 <div class="sheet"><b>Methods</b></div>
                                 <div class="sheet"><b>Results</b></div>
+                                <div class="sheet"><b>Conclusions</b></div>
                                 <div class="sheet"><b>Recommendations</b></div>
                             </div>
                             <p class="note">The body connects your evidence and evaluation to feasible recommendations.</p>
                         </div>
                     </section>
+
+                    <!-- back matter -->
                     <section class="part back" aria-labelledby="back-heading">
                         <div class="part-header">
                             <h2 id="back-heading">Back Matter</h2>
@@ -592,6 +604,8 @@
                         </div>
                     </section>
                 </div>
+
+                <!-- warning -->
                 <section class="warning" aria-labelledby="warning-heading">
                     <div class="warning-icon" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation"></i></div>
                     <div>
@@ -617,31 +631,63 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- connection -->
                 <section class="connection" aria-labelledby="connection-heading">
-                    <h2 id="connection-heading">How the parts work together</h2>
+                    <h2 id="connection-heading">How the Parts Work Together</h2>
                     <div class="flow">
                         <div class="flow-box">
                             <h3>Front Matter</h3>
-                            <p>What is this report about? What are its key points? Where can I find information?</p>
+                            <ul>
+                                <li>What is this report about?</li>
+                                <li>What are its key points?</li>
+                                <li>Where can I find information?</li>
+                            </ul>
                         </div>
                         <div class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="flow-box">
                             <h3>Body</h3>
-                            <p>What did you do? What did you find? What does it mean? What do you recommend?</p>
+                            <ul>
+                                <li>What did you do?</li>
+                                <li>What did you find?</li>
+                                <li>What does it mean?</li>
+                                <li>What do you recommend?</li>
+                            </ul>
                         </div>
                         <div class="arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
                         <div class="flow-box">
                             <h3>Back Matter</h3>
-                            <p>Where did the evidence come from? Where can I find supporting details?</p>
+                            <ul>
+                                <li>Where did the evidence come from?</li>
+                                <li>Where can I find supporting details?</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
-                <p class="updated"><time datetime="2026-10-15">Last Updated October 15, 2026</time></p>
             </div>
+
+            <!-- updated -->
+            <p class="updated"><time datetime="2026-10-15">Last Updated October 15, 2026</time></p>
         </div>
+
+
+        <!-- credit -->
         <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
     </main>
-    <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+            function sendHeight() {
+                if (window.parent === window) return;
+                window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin);
+            }
+            window.addEventListener("load", sendHeight);
+            if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(sendHeight).observe(document.documentElement);
+            }
+        })();
+    </script>
 </body>
 
 </html>
