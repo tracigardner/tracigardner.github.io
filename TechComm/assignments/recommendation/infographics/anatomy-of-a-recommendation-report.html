@@ -21,7 +21,14 @@
             --smoke-light: #f7f6f7;
             --gray: #d7d2cb;
             --text: #1f1f1f;
-            --white: #ffffff
+            --white: #ffffff;
+            --purple: #642667;
+            --yellow: #f7ea48;
+            --yellow-dark: #635e1d;
+            --yellow-light: #fefdec;
+            --blue: #003c71;
+            --blue-dark: #002a4f;
+            --blue-light: #e5ebf1;
         }
 
         * {
@@ -254,23 +261,38 @@
 
         .warning {
             margin: 26px 0 0;
-            padding: 19px 20px;
-            background: var(--maroon-light);
-            border: 2px solid var(--maroon);
+            padding: 32px 20px 19px;
+            background: var(--yellow-light);
+            border: 2px solid var(--text);
             border-radius: 12px;
             display: flex;
             gap: 16px;
-            align-items: flex-start
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden
+        }
+
+        /* Caution tape across the entire warning panel. */
+        .warning::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 13px;
+            background: repeating-linear-gradient(120deg,
+                    #242424 0px, #242424 12px,
+                    #f7ea48 12px, #f7ea48 24px);
         }
 
         .warning-icon {
             font-size: 2rem;
-            color: var(--maroon);
+            color: var(--text);
             line-height: 1
         }
 
         .warning h2 {
-            color: var(--maroon-dark);
+            color: var(--text);
             margin: 0 0 6px;
             font-size: 1.4rem
         }
@@ -290,15 +312,23 @@
             background: white;
             border-radius: 8px;
             padding: 12px 14px;
-            border-left: 5px solid
+            border-left: 12px solid
         }
 
         .example.bad {
-            border-color: var(--maroon)
+            border-left: 0;
+            padding-left: 27px;
+            background-image: repeating-linear-gradient(150deg,
+                    #242424 0px, #242424 12px,
+                    #f7ea48 12px, #f7ea48 24px);
+            background-size: 13px 100%;
+            background-position: left top;
+            background-repeat: no-repeat;
         }
 
+        /* Green flag: a clear visual signal for the correct example. */
         .example.good {
-            border-color: var(--teal-dark)
+            border-color: #24834b;
         }
 
         .example strong {
@@ -313,15 +343,15 @@
 
         .connection {
             margin-top: 24px;
-            background: var(--teal-light);
-            border: 2px solid var(--teal);
+            background: var(--blue-light);
+            border: 2px solid var(--blue);
             border-radius: 12px;
             padding: 20px
         }
 
         .connection h2 {
             margin: 0 0 14px;
-            color: var(--teal);
+            color: var(--blue-dark);
             font-size: 1.55rem
         }
 
@@ -334,16 +364,40 @@
 
         .flow-box {
             background: #fff;
-            border: 2px solid var(--teal);
+            border: 2px solid var(--blue);
             border-radius: 10px;
             padding: 14px;
             min-height: 134px
         }
 
+        .flow-box:nth-child(1) {
+            border-color: var(--orange);
+        }
+
+        .flow-box:nth-child(3) {
+            border-color: var(--teal-dark);
+        }
+
+        .flow-box:nth-child(5) {
+            border-color: var(--maroon);
+        }
+
+        .flow-box:nth-child(1) h3 {
+            color: var(--orange);
+        }
+
+        .flow-box:nth-child(3) h3 {
+            color: var(--teal-dark);
+        }
+
+        .flow-box:nth-child(5) h3 {
+            color: var(--maroon);
+        }
+
         .flow-box h3 {
             margin: 0 0 6px;
             font-size: 1.13rem;
-            color: var(--maroon)
+            color: inherit
         }
 
         .flow-box p {
@@ -353,7 +407,7 @@
 
         .arrow {
             text-align: center;
-            color: var(--teal);
+            color: var(--blue);
             font-size: 1.5rem
         }
 
@@ -539,7 +593,7 @@
                     </section>
                 </div>
                 <section class="warning" aria-labelledby="warning-heading">
-                    <div class="warning-icon" aria-hidden="true"><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div class="warning-icon" aria-hidden="true"><i class="fa-solid fa-triangle-exclamation"></i></div>
                     <div>
                         <h2 id="warning-heading">Do not put “Front Matter,” “Body,” or “Back Matter” in your report.</h2>
                         <p>These are <strong>names for groups of sections</strong>, not headings to insert into the finished document. Use the actual section titles instead.</p>
