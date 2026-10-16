@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="An infographic demonstrating how to introduce, label, explain, and connect figures and tables to written evidence.">
-    <meta name="author" content="Traci Gardner">
-    <title>Integrating Visual Evidence</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="An infographic demonstrating how to introduce, label, explain, and connect figures and tables to written evidence." name="description"/>
+<meta content="Traci Gardner" name="author"/>
+<title>Integrating Visual Evidence</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+<style>
         :root {
             --maroon: #861f41;
             --maroon-dark: #5e162e;
@@ -659,217 +659,231 @@
             }
         }
     </style>
-</head>
-
+<style>
+/* Example switcher: full content remains visible when JavaScript is unavailable. */
+.example-switcher{margin:24px 0 14px}.example-switcher h2{color:var(--maroon);font-size:1.45rem;margin:0 0 4px}.example-switcher p{margin:0 0 12px}
+.visual-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.visual-tabs button{border:2px solid var(--teal-dark);background:#fff;color:var(--teal-dark);border-radius:9px;padding:12px 7px;font:700 .95rem Arial,sans-serif;cursor:pointer}
+.visual-tabs button[aria-selected="true"]{background:var(--teal-dark);color:#fff}
+.visual-tabs button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.visual-panel[hidden]{display:none!important}.visual-panel{margin-top:0}
+.web-shot{max-width:430px;margin:auto;border:2px solid #9ca4aa;background:white;border-radius:7px;overflow:hidden;font:13px Arial,sans-serif}
+.browser-top{display:flex;gap:20px;background:#e8e9ed;padding:7px 11px;color:#48515a}.browser-top span:first-child{color:#a75b55}
+.web-inner{padding:13px}.web-banner{background:var(--teal-dark);color:white;font-weight:bold;padding:12px}.web-small{font-size:12px;color:#555}.web-field{display:flex;flex-direction:column;gap:3px;margin:10px 0;font-weight:bold}.web-field span{color:#9b9b9b;font-weight:normal}.web-button{display:inline-block;background:#d8dce0;color:#41484b;padding:7px 24px;margin-top:8px;border-radius:3px}
+.chart-wrap{max-width:460px;margin:auto;padding:10px 0}.chart-title{text-align:center;font-weight:bold;margin:0 0 19px!important}.chart-line{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:8px;margin:15px 0;font-size:.83rem}.chart-track{height:36px;background:#f0eff0}.chart-bar{height:100%;display:flex;align-items:center;padding-left:8px;white-space:nowrap;color:white;font-weight:bold}.chart-old{background:var(--maroon)}.chart-new{background:var(--teal-dark)}.chart-axis{text-align:center;font-size:.78rem!important;color:#555}
+@media(max-width:580px){.visual-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.chart-line{grid-template-columns:85px minmax(0,1fr)}}
+@media print{.visual-panel[hidden]{display:block!important}.visual-tabs{display:none}.visual-panel{margin:18px 0;break-before:page}.example-switcher{display:none}}
+</style></head>
 <body>
-    <main class="infographic">
-        <div class="bkgd-page">
-            <div class="page">
-
-                <!-- hero -->
-                <header class="hero">
-                    <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-chart-column"></i></div>
-                    <div>
-                        <h1>Integrating Visual Evidence</h1>
-                        <p class="subtitle">Make figures and tables part of your explanation—not just something readers look at.</p>
-                    </div>
-                </header>
-
-                <!-- intro explanation -->
-                <p class="intro">A figure or table can present important evidence, but it cannot make your point on its own. Help readers understand with this four-part technique:</p>
-
-                <!-- process -->
-                <div class="process" aria-label="Four ways to integrate visual evidence">
-                    <div class="process-step"><b>1. Introduce</b><span>Prepare the reader</span></div>
-                    <div class="process-step"><b>2. Label</b><span>Identify the visual</span></div>
-                    <div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
-                    <div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
-                </div>
-
-                <!-- guidelines applying to both figures and tables -->
-                <aside class="small-note" aria-labelledby="visual-guidelines-heading">
-                    <h2 id="visual-guidelines-heading" style="margin: 0 0 6px; font-size: 1.15rem; color: var(--maroon);">Guidelines for Figures and Tables</h2>
-                    <ul class="skipline" style="margin-top: 0;">
-                        <li>Number figures and tables separately (Figure 1, Figure 2; Table 1, Table 2).</li>
-                        <li>Place figure captions below figures and table titles above tables, unless your required style guide specifies otherwise.</li>
-                        <li>Credit sources when needed.</li>
-                        <li>Provide accessible descriptions of visual information.</li>
-                    </ul>
-                </aside>
-
-                <!-- example -->
-                <section class="example" aria-labelledby="figure-heading">
-                    <div class="example-header">
-                        <h2 id="figure-heading">One Figure, Four Connected Moves</h2>
-                        <p>Follow a figure through a short example from a workplace document review.</p>
-                    </div>
-                    <div class="example-body">
-                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
-                        <div class="annotated" aria-label="Example document aligned row by row with explanations">
-                            <p class="column-label">Sample Document</p>
-                            <p class="column-label">How It Works</p>
-                            <div class="document-title">
-                                <h3>Review of the Employee Onboarding Guide</h3>
-                            </div>
-                            <div class="example-row">
-                                <div class="example-cell first">
-                                    <p class="highlight">The guide uses similar formatting for headings at different levels. Figure 1 shows an example from the guide.</p>
-                                </div>
-                                <div class="explanation-cell first">
-                                    <div class="key-item">
-                                        <h3><span class="num">1.</span> Introduce</h3>
-                                        <p>Mention the figure before it appears. Tell readers what they are about to see and why it is relevant.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="example-row">
-                                <div class="example-cell">
-                                    <figure class="figure">
-                                        <div class="figure-image">
-                                            <div class="sample-page" role="img" aria-label="Illustrative page with major and subordinate headings in nearly identical sizes and weights, making their hierarchy difficult to distinguish">
-                                                <h4>4. Working on Client Projects</h4>
-                                                <p class="near-heading">4.1 Project Documentation</p>
-                                                <p class="tiny-text">Follow document control procedures for all project records.</p>
-                                                <p class="near-heading">4.1.1 File Naming</p>
-                                                <p class="tiny-text">Use approved conventions for naming project files.</p>
-                                                <p class="near-heading">4.1.2 Technical Review</p>
-                                                <p class="tiny-text">Submit technical documents for review before distribution.</p>
-                                            </div>
-                                        </div>
-                                        <figcaption class="figure-caption-highlight"><strong>Figure 1.</strong> Similar heading styles make the document hierarchy difficult to distinguish.</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="explanation-cell">
-                                    <div class="key-item label-key">
-                                        <h3><span class="num">2.</span> Label</h3>
-                                        <p>Give the figure a number and informative caption. Place figure captions below figures; identify sources when needed.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="example-row">
-                                <div class="example-cell">
-                                    <p class="highlight maroon">The heading levels use nearly identical type sizes and weights, making it difficult to distinguish major topics from supporting information.</p>
-                                </div>
-                                <div class="explanation-cell">
-                                    <div class="key-item explain-key">
-                                        <h3><span class="num">3.</span> Explain</h3>
-                                        <p>Point out the pattern, comparison, or detail that matters. Go beyond repeating the caption.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="example-row">
-                                <div class="example-cell">
-                                    <p class="highlight dark-teal">As Figure 1 illustrates, the guide would benefit from more distinct heading styles so readers can locate procedures more easily.</p>
-                                </div>
-                                <div class="explanation-cell">
-                                    <div class="key-item connect-key">
-                                        <h3><span class="num">4.</span> Connect</h3>
-                                        <p>Use the evidence to support a conclusion, recommendation, or other point. Refer to the figure by number.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="bridge"><strong>Notice the connection:</strong> The introduction prepares readers for the figure; the caption identifies it; the explanation interprets what it shows; and the final sentence uses that evidence to make a point.</p>
-                    </div>
-                </section>
-
-                <!-- table example -->
-                <section class="table-example" aria-labelledby="table-heading">
-                    <div class="table-header">
-                        <h2 id="table-heading">The Same Approach Works for Tables</h2>
-                        <p>Tables organize information for comparison; the surrounding writing explains its significance.</p>
-                    </div>
-                    <div class="table-content">
-                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
-                        <div class="annotated table-annotated" aria-label="Table example aligned row by row with explanations">
-                            <p class="column-label">Sample Document</p>
-                            <p class="column-label">How It Works</p>
-                            <div class="example-row">
-                                <div class="example-cell first">
-                                    <p class="highlight">The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p>
-                                </div>
-                                <div class="explanation-cell first">
-                                    <div class="key-item">
-                                        <h3><span class="num">1.</span> Introduce</h3>
-                                        <p>Mention the table before it appears. Tell readers what information it organizes and why that information is relevant.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="example-row">
-                                <div class="example-cell">
-                                    <div class="table-label-highlight">
-                                        <p class="table-title">Table 1. Document Design Review Findings</p>
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Criterion</th>
-                                                    <th scope="col">Finding</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Heading hierarchy</td>
-                                                    <td>Levels difficult to distinguish</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>List formatting</td>
-                                                    <td>Inconsistent across sections</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Emphasis</td>
-                                                    <td>Bold used for multiple purposes</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <p class="table-note">Illustrative findings created for this example.</p>
-                                    </div>
-                                </div>
-                                <div class="explanation-cell">
-                                    <div class="key-item label-key">
-                                        <h3><span class="num">2.</span> Label</h3>
-                                        <p>Give the table its own number and informative title, usually above the table. Identify sources when needed.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="example-row">
-                                <div class="example-cell">
-                                    <p class="highlight maroon">Table 1 identifies inconsistencies across all three design criteria.</p>
-                                </div>
-                                <div class="explanation-cell">
-                                    <div class="key-item explain-key">
-                                        <h3><span class="num">3.</span> Explain</h3>
-                                        <p>Interpret the pattern or comparison that matters rather than simply repeating the table entries.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="example-row">
-                                <div class="example-cell">
-                                    <p class="highlight dark-teal">These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p>
-                                </div>
-                                <div class="explanation-cell">
-                                    <div class="key-item connect-key">
-                                        <h3><span class="num">4.</span> Connect</h3>
-                                        <p>Use the findings to support a conclusion or recommendation that advances your message.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-            </div>
-
-            <!-- updated -->
-            <p class="updated"><time datetime="2026-10-16">Last Updated October 16, 2026</time></p>
-        </div>
-
-        <!-- credit -->
-        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
-    </main>
-
-    <!-- framing script -->
-
-    <script>
+<main class="infographic">
+<div class="bkgd-page">
+<div class="page">
+<!-- hero -->
+<header class="hero">
+<div aria-hidden="true" class="hero-icon"><i class="fa-solid fa-chart-column"></i></div>
+<div>
+<h1>Integrating Visual Evidence</h1>
+<p class="subtitle">Make figures and tables part of your explanation—not just something readers look at.</p>
+</div>
+</header>
+<!-- intro explanation -->
+<p class="intro">A figure or table can present important evidence, but it cannot make your point on its own. Help readers understand with this four-part technique:</p>
+<!-- process -->
+<div aria-label="Four ways to integrate visual evidence" class="process">
+<div class="process-step"><b>1. Introduce</b><span>Prepare the reader</span></div>
+<div class="process-step"><b>2. Label</b><span>Identify the visual</span></div>
+<div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
+<div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
+</div>
+<!-- guidelines applying to both figures and tables -->
+<aside aria-labelledby="visual-guidelines-heading" class="small-note">
+<h2 id="visual-guidelines-heading" style="margin: 0 0 6px; font-size: 1.15rem; color: var(--maroon);">Guidelines for Figures and Tables</h2>
+<ul class="skipline" style="margin-top: 0;">
+<li>Number figures and tables separately (Figure 1, Figure 2; Table 1, Table 2).</li>
+<li>Place figure captions below figures and table titles above tables, unless your required style guide specifies otherwise.</li>
+<li>Credit sources when needed.</li>
+<li>Provide accessible descriptions of visual information.</li>
+</ul>
+</aside>
+<!-- example -->
+<div class="example-switcher"><h2>Explore Four Examples</h2><p>Choose a visual to see how the same four moves work in context.</p><div aria-label="Choose a visual evidence example" class="visual-tabs" role="tablist"><button aria-controls="panel-figure" aria-selected="true" id="tab-figure" role="tab" tabindex="0" type="button">Document figure</button><button aria-controls="panel-table" aria-selected="false" id="tab-table" role="tab" tabindex="-1" type="button">Table</button><button aria-controls="panel-screenshot" aria-selected="false" id="tab-screenshot" role="tab" tabindex="-1" type="button">Screenshot</button><button aria-controls="panel-chart" aria-selected="false" id="tab-chart" role="tab" tabindex="-1" type="button">Chart</button></div></div><section aria-labelledby="tab-figure" class="example visual-panel" id="panel-figure" role="tabpanel" tabindex="0">
+<div class="example-header">
+<h2 id="figure-heading">One Figure, Four Connected Moves</h2>
+<p>Follow a figure through a short example from a workplace document review.</p>
+</div>
+<div class="example-body">
+<p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
+<div aria-label="Example document aligned row by row with explanations" class="annotated">
+<p class="column-label">Sample Document</p>
+<p class="column-label">How It Works</p>
+<div class="document-title">
+<h3>Review of the Employee Onboarding Guide</h3>
+</div>
+<div class="example-row">
+<div class="example-cell first">
+<p class="highlight">The guide uses similar formatting for headings at different levels. Figure 1 shows an example from the guide.</p>
+</div>
+<div class="explanation-cell first">
+<div class="key-item">
+<h3><span class="num">1.</span> Introduce</h3>
+<p>Mention the figure before it appears. Tell readers what they are about to see and why it is relevant.</p>
+</div>
+</div>
+</div>
+<div class="example-row">
+<div class="example-cell">
+<figure class="figure">
+<div class="figure-image">
+<div aria-label="Illustrative page with major and subordinate headings in nearly identical sizes and weights, making their hierarchy difficult to distinguish" class="sample-page" role="img">
+<h4>4. Working on Client Projects</h4>
+<p class="near-heading">4.1 Project Documentation</p>
+<p class="tiny-text">Follow document control procedures for all project records.</p>
+<p class="near-heading">4.1.1 File Naming</p>
+<p class="tiny-text">Use approved conventions for naming project files.</p>
+<p class="near-heading">4.1.2 Technical Review</p>
+<p class="tiny-text">Submit technical documents for review before distribution.</p>
+</div>
+</div>
+<figcaption class="figure-caption-highlight"><strong>Figure 1.</strong> Similar heading styles make the document hierarchy difficult to distinguish.</figcaption>
+</figure>
+</div>
+<div class="explanation-cell">
+<div class="key-item label-key">
+<h3><span class="num">2.</span> Label</h3>
+<p>Give the figure a number and informative caption. Place figure captions below figures; identify sources when needed.</p>
+</div>
+</div>
+</div>
+<div class="example-row">
+<div class="example-cell">
+<p class="highlight maroon">The heading levels use nearly identical type sizes and weights, making it difficult to distinguish major topics from supporting information.</p>
+</div>
+<div class="explanation-cell">
+<div class="key-item explain-key">
+<h3><span class="num">3.</span> Explain</h3>
+<p>Point out the pattern, comparison, or detail that matters. Go beyond repeating the caption.</p>
+</div>
+</div>
+</div>
+<div class="example-row">
+<div class="example-cell">
+<p class="highlight dark-teal">As Figure 1 illustrates, the guide would benefit from more distinct heading styles so readers can locate procedures more easily.</p>
+</div>
+<div class="explanation-cell">
+<div class="key-item connect-key">
+<h3><span class="num">4.</span> Connect</h3>
+<p>Use the evidence to support a conclusion, recommendation, or other point. Refer to the figure by number.</p>
+</div>
+</div>
+</div>
+</div>
+<p class="bridge"><strong>Notice the connection:</strong> The introduction prepares readers for the figure; the caption identifies it; the explanation interprets what it shows; and the final sentence uses that evidence to make a point.</p>
+</div>
+</section>
+<!-- table example -->
+<section aria-labelledby="tab-table" class="table-example visual-panel" id="panel-table" role="tabpanel" tabindex="0">
+<div class="table-header">
+<h2 id="table-heading">The Same Approach Works for Tables</h2>
+<p>Tables organize information for comparison; the surrounding writing explains its significance.</p>
+</div>
+<div class="table-content">
+<p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
+<div aria-label="Table example aligned row by row with explanations" class="annotated table-annotated">
+<p class="column-label">Sample Document</p>
+<p class="column-label">How It Works</p>
+<div class="example-row">
+<div class="example-cell first">
+<p class="highlight">The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p>
+</div>
+<div class="explanation-cell first">
+<div class="key-item">
+<h3><span class="num">1.</span> Introduce</h3>
+<p>Mention the table before it appears. Tell readers what information it organizes and why that information is relevant.</p>
+</div>
+</div>
+</div>
+<div class="example-row">
+<div class="example-cell">
+<div class="table-label-highlight">
+<p class="table-title">Table 1. Document Design Review Findings</p>
+<table>
+<thead>
+<tr>
+<th scope="col">Criterion</th>
+<th scope="col">Finding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heading hierarchy</td>
+<td>Levels difficult to distinguish</td>
+</tr>
+<tr>
+<td>List formatting</td>
+<td>Inconsistent across sections</td>
+</tr>
+<tr>
+<td>Emphasis</td>
+<td>Bold used for multiple purposes</td>
+</tr>
+</tbody>
+</table>
+<p class="table-note">Illustrative findings created for this example.</p>
+</div>
+</div>
+<div class="explanation-cell">
+<div class="key-item label-key">
+<h3><span class="num">2.</span> Label</h3>
+<p>Give the table its own number and informative title, usually above the table. Identify sources when needed.</p>
+</div>
+</div>
+</div>
+<div class="example-row">
+<div class="example-cell">
+<p class="highlight maroon">Table 1 identifies inconsistencies across all three design criteria.</p>
+</div>
+<div class="explanation-cell">
+<div class="key-item explain-key">
+<h3><span class="num">3.</span> Explain</h3>
+<p>Interpret the pattern or comparison that matters rather than simply repeating the table entries.</p>
+</div>
+</div>
+</div>
+<div class="example-row">
+<div class="example-cell">
+<p class="highlight dark-teal">These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p>
+</div>
+<div class="explanation-cell">
+<div class="key-item connect-key">
+<h3><span class="num">4.</span> Connect</h3>
+<p>Use the findings to support a conclusion or recommendation that advances your message.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section aria-labelledby="tab-screenshot" class="table-example visual-panel" id="panel-screenshot" role="tabpanel" tabindex="0">
+<div class="table-header">
+<h2 id="table-heading">A Screenshot, Four Connected Moves</h2>
+<p>Use a screenshot to show a specific interface problem.</p>
+</div>
+<div class="table-content"><p class="annotation-note"><strong>Read the sample as a finished document. </strong>Colored borders and explanations are teaching aids, not part of the document.</p><div aria-label="screenshot example aligned with explanations" class="annotated table-annotated"><p class="column-label">Sample Document</p><p class="column-label">How It Works</p><div class="example-row"><div class="example-cell first"><p class="highlight">The registration page does not clearly distinguish required fields from optional ones. Figure 2 shows the form before revision.</p></div><div class="explanation-cell first"><div class="key-item"><h3><span class="num">1. </span>Introduce</h3><p>Identify the interface problem and point readers to the screenshot.</p></div></div></div><div class="example-row"><div class="example-cell"><figure class="figure"><div class="figure-image"><div aria-label="Illustrative screenshot of an event registration form with unlabeled required fields and a visually understated submit button" class="web-shot" role="img"><div class="browser-top"><span aria-hidden="true">● ● ●</span><span>events.example / register</span></div><div class="web-inner"><div class="web-banner">Community Workshop Registration</div><p class="web-small">Please complete the form below.</p><div class="web-field">Full name <span>________________________</span></div><div class="web-field">Email <span>________________________</span></div><div class="web-field">Organization <span>________________________</span></div><div class="web-button">Submit</div></div></div></div><figcaption class="figure-caption-highlight"><strong>Figure 2.</strong> Registration form without clear indicators of required fields.</figcaption></figure></div><div class="explanation-cell"><div class="key-item label-key"><h3><span class="num">2. </span>Label</h3><p>Number the screenshot as a figure and caption the feature being examined.</p></div></div></div><div class="example-row"><div class="example-cell"><p class="highlight maroon">The form provides no visible indication of which fields are required, so users cannot tell what information they must enter.</p></div><div class="explanation-cell"><div class="key-item explain-key"><h3><span class="num">3. </span>Explain</h3><p>Describe the specific usability issue visible in the screenshot.</p></div></div></div><div class="example-row"><div class="example-cell"><p class="highlight dark-teal">As Figure 2 shows, adding explicit “Required” labels would make the form easier to complete and reduce avoidable errors.</p></div><div class="explanation-cell"><div class="key-item connect-key"><h3><span class="num">4. </span>Connect</h3><p>Use the screenshot to justify a practical design improvement.</p></div></div></div></div></div>
+</section><section aria-labelledby="tab-chart" class="table-example visual-panel" id="panel-chart" role="tabpanel" tabindex="0">
+<div class="table-header">
+<h2 id="table-heading">A Chart, Four Connected Moves</h2>
+<p>Use a chart to explain a quantitative comparison.</p>
+</div>
+<div class="table-content"><p class="annotation-note"><strong>Read the sample as a finished document. </strong>Colored borders and explanations are teaching aids, not part of the document.</p><div aria-label="chart example aligned with explanations" class="annotated table-annotated"><p class="column-label">Sample Document</p><p class="column-label">How It Works</p><div class="example-row"><div class="example-cell first"><p class="highlight">Participants took longer to locate instructions in the original guide than in the revised guide. Figure 3 compares the average times.</p></div><div class="explanation-cell first"><div class="key-item"><h3><span class="num">1. </span>Introduce</h3><p>Introduce the comparison and direct readers to the chart.</p></div></div></div><div class="example-row"><div class="example-cell"><figure class="figure"><div class="figure-image"><div aria-label="Illustrative bar chart showing average time to locate instructions: original guide 72 seconds; revised guide 38 seconds" class="chart-wrap" role="img"><p class="chart-title">Average time to locate instructions</p><div class="chart-line"><span>Original guide</span><div class="chart-track"><div class="chart-bar chart-old" style="width:90%">72 s</div></div></div><div class="chart-line"><span>Revised guide</span><div class="chart-track"><div class="chart-bar chart-new" style="width:47.5%">38 s</div></div></div><p class="chart-axis">Time in seconds (lower is better)</p></div></div><figcaption class="figure-caption-highlight"><strong>Figure 3.</strong> Average time to locate instructions in the original and revised guides.</figcaption><p class="table-note">Illustrative data created for this example; not actual test results.</p></figure></div><div class="explanation-cell"><div class="key-item label-key"><h3><span class="num">2. </span>Label</h3><p>Label the chart and make the quantities and units clear.</p></div></div></div><div class="example-row"><div class="example-cell"><p class="highlight maroon">The average time fell from 72 seconds to 38 seconds, a reduction of 34 seconds in this illustrative comparison.</p></div><div class="explanation-cell"><div class="key-item explain-key"><h3><span class="num">3. </span>Explain</h3><p>Interpret the difference rather than simply restating the bars.</p></div></div></div><div class="example-row"><div class="example-cell"><p class="highlight dark-teal">Figure 3 suggests that clearer navigation could help readers find instructions more efficiently; actual testing would be needed to confirm the improvement.</p></div><div class="explanation-cell"><div class="key-item connect-key"><h3><span class="num">4. </span>Connect</h3><p>Connect the comparison to a qualified conclusion; avoid claiming more than the evidence supports.</p></div></div></div></div></div>
+</section>
+</div>
+<!-- updated -->
+<p class="updated"><time datetime="2026-10-16">Last Updated October 16, 2026</time></p>
+</div>
+<!-- credit -->
+<p class="credit">© 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+</main>
+<!-- framing script -->
+<script>
         (function () {
             const parentOrigin = "https://www.tengrrl.com";
             function sendHeight() {
@@ -882,7 +896,27 @@
             }
         })();
     </script>
-
-</body>
-
+<script>
+(function(){
+ const tabs=Array.from(document.querySelectorAll('.visual-tabs [role="tab"]'));
+ const panels=tabs.map(tab=>document.getElementById(tab.getAttribute('aria-controls')));
+ function activate(index,focus){
+  tabs.forEach((tab,i)=>{const active=i===index;tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;panels[i].hidden=!active;});
+  if(focus)tabs[index].focus();
+ }
+ tabs.forEach((tab,index)=>{
+  tab.addEventListener('click',()=>activate(index,false));
+  tab.addEventListener('keydown',event=>{
+   let next=index;
+   if(event.key==='ArrowRight')next=(index+1)%tabs.length;
+   else if(event.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;
+   else if(event.key==='Home')next=0;
+   else if(event.key==='End')next=tabs.length-1;
+   else return;
+   event.preventDefault();activate(next,true);
+  });
+ });
+ activate(0,false);
+})();
+</script></body>
 </html>
