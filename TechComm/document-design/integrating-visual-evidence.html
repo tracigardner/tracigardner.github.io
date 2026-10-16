@@ -13,15 +13,19 @@
             --maroon: #861f41;
             --maroon-dark: #5e162e;
             --maroon-light: #f3e8ec;
+
             --orange: #c64600;
             --orange-light: #faede6;
+
             --teal: #508590;
             --teal-dark: #385d65;
             --teal-light: #edf3f4;
+
             --smoke: #e5e1e6;
             --smoke-light: #f7f6f7;
             --smoke-dark: #737173;
             --gray: #d7d2cb;
+
             --text: #1f1f1f;
             --white: #fff
         }
@@ -169,18 +173,64 @@
             background: var(--smoke-light)
         }
 
+        /* Each example and its explanation share a row, like an annotated letter. */
         .annotated {
             display: grid;
             grid-template-columns: minmax(0, 1.55fr) minmax(235px, 1fr);
-            gap: 18px;
-            align-items: start
+            gap: 0 18px;
+            align-items: stretch;
         }
+        .annotated > .column-label { margin-bottom: 10px; }
+        .example-row { display: contents; }
+        .example-cell, .explanation-cell {
+            padding: 14px 16px;
+            border-top: 1px solid var(--gray);
+            min-width: 0;
+        }
+        .example-cell { background: white; }
+        .explanation-cell { background: var(--smoke-light); display: flex; align-items: flex-start; }
+        .example-cell.first, .explanation-cell.first { border-top: 0; }
+        .document-title { grid-column: 1 / -1; background: white; padding: 18px 18px 6px; border: 1px solid var(--gray); border-bottom: 0; }
+        .document-title h3 { margin: 0; font-size: 1.24rem; }
+        .example-cell .figure { margin: 0; }
+        .explanation-cell .key-item { width: 100%; }
+        .example-cell .highlight { margin: 0; }
+        .example-cell .figure-caption-highlight { margin-bottom: 0; }
 
         .document {
             background: white;
             border: 1px solid var(--gray);
             box-shadow: 4px 5px 0 var(--smoke);
             padding: 23px
+        }
+
+        .column-label {
+            margin: 0 0 9px;
+            font-size: .85rem;
+            font-weight: bold;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+            color: var(--teal-dark)
+        }
+
+        .annotation-note {
+            margin: 0 0 15px;
+            padding: 11px 14px;
+            background: var(--teal-light);
+            border-left: 5px solid var(--teal-dark);
+            font-size: .93rem
+        }
+
+        .figure-caption-highlight {
+            border-left: 5px solid var(--orange);
+            background: var(--orange-light);
+            padding: 9px 12px
+        }
+
+        .table-instruction {
+            margin: 0 0 12px;
+            font-size: .88rem;
+            color: var(--teal-dark)
         }
 
         .document h3 {
@@ -199,14 +249,14 @@
             background: var(--teal-light)
         }
 
-        .highlight.orange {
-            border-color: var(--orange);
-            background: var(--orange-light)
-        }
-
         .highlight.maroon {
             border-color: var(--maroon);
             background: var(--maroon-light)
+        }
+
+        .highlight.dark-teal {
+            border-color: var(--teal-dark);
+            background: var(--teal-light)
         }
 
         .figure {
@@ -288,6 +338,10 @@
             font-weight: bold;
             color: var(--maroon)
         }
+
+        .label-key { border-left-color: var(--orange); }
+        .explain-key { border-left-color: var(--maroon); }
+        .connect-key { border-left-color: var(--teal-dark); }
 
         .bridge {
             margin: 18px 0 0;
@@ -405,6 +459,13 @@
         }
 
         @media(max-width:800px) {
+            .annotated { grid-template-columns: 1fr; gap: 0; }
+            .annotated > .column-label:nth-child(2) { display: none; }
+            .document-title { grid-column: 1; }
+            .example-row { display: grid; grid-template-columns: 1fr; }
+            .example-cell { border-top: 1px solid var(--gray); }
+            .explanation-cell { border-top: 0; padding-top: 0; padding-bottom: 18px; }
+
 
             .annotated,
             .table-grid {
@@ -490,6 +551,8 @@
     <main class="infographic">
         <div class="bkgd-page">
             <div class="page">
+
+                <!-- hero -->
                 <header class="hero">
                     <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-chart-column"></i></div>
                     <div>
@@ -497,62 +560,73 @@
                         <p class="subtitle">Make figures and tables part of your explanation—not just something readers look at.</p>
                     </div>
                 </header>
+
+                <!-- intro explanation -->
                 <p class="intro">A figure or table can present important evidence, but it cannot make your point on its own. Help readers understand <strong>what they are seeing, why it matters, and how it supports your message.</strong></p>
+
+                <!-- process -->
                 <div class="process" aria-label="Four ways to integrate visual evidence">
                     <div class="process-step"><b>1. Introduce</b><span>Prepare the reader</span></div>
                     <div class="process-step"><b>2. Label</b><span>Identify the visual</span></div>
                     <div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
                     <div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
                 </div>
+
+                <!-- example -->
                 <section class="example" aria-labelledby="figure-heading">
                     <div class="example-header">
                         <h2 id="figure-heading">One Figure, Four Connected Moves</h2>
                         <p>Follow a figure through a short example from a workplace document review.</p>
                     </div>
                     <div class="example-body">
-                        <div class="annotated">
-                            <article class="document" aria-label="Annotated example document">
-                                <h3>Review of the Employee Onboarding Guide</h3>
-                                <p class="highlight"><strong>1 · Introduce:</strong> The guide uses similar formatting for headings at different levels. Figure 1 shows an example from the guide.</p>
-                                <figure class="figure">
-                                    <div class="figure-image">
-                                        <div class="sample-page" role="img" aria-label="Illustrative page with major and subordinate headings in nearly identical sizes and weights, making their hierarchy difficult to distinguish">
-                                            <h4>4. Working on Client Projects</h4>
-                                            <p class="near-heading">4.1 Project Documentation</p>
-                                            <p class="tiny-text">Follow document control procedures for all project records.</p>
-                                            <p class="near-heading">4.1.1 File Naming</p>
-                                            <p class="tiny-text">Use approved conventions for naming project files.</p>
-                                            <p class="near-heading">4.1.2 Technical Review</p>
-                                            <p class="tiny-text">Submit technical documents for review before distribution.</p>
+                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
+                        <div class="annotated" aria-label="Example document aligned row by row with explanations">
+                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="document-title"><h3>Review of the Employee Onboarding Guide</h3></div>
+                            <div class="example-row">
+                                <div class="example-cell first">
+                                    <p class="highlight">The guide uses similar formatting for headings at different levels. Figure 1 shows an example from the guide.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item"><h3><span class="num">1.</span> Introduce</h3><p>Mention the figure before it appears. Tell readers what they are about to see and why it is relevant.</p></div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <figure class="figure">
+                                        <div class="figure-image">
+                                            <div class="sample-page" role="img" aria-label="Illustrative page with major and subordinate headings in nearly identical sizes and weights, making their hierarchy difficult to distinguish">
+                                                <h4>4. Working on Client Projects</h4>
+                                                <p class="near-heading">4.1 Project Documentation</p>
+                                                <p class="tiny-text">Follow document control procedures for all project records.</p>
+                                                <p class="near-heading">4.1.1 File Naming</p>
+                                                <p class="tiny-text">Use approved conventions for naming project files.</p>
+                                                <p class="near-heading">4.1.2 Technical Review</p>
+                                                <p class="tiny-text">Submit technical documents for review before distribution.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <figcaption><strong>Figure 1.</strong> Similar heading styles make the document hierarchy difficult to distinguish.</figcaption>
-                                </figure>
-                                <p class="highlight orange"><strong>3 · Explain:</strong> The heading levels use nearly identical type sizes and weights, making it difficult to distinguish major topics from supporting information.</p>
-                                <p class="highlight maroon"><strong>4 · Connect:</strong> As Figure 1 illustrates, the guide would benefit from more distinct heading styles so readers can locate procedures more easily.</p>
-                            </article>
-                            <aside class="key" aria-label="Explanations of the four moves">
-                                <div class="key-item">
-                                    <h3><span class="num">1.</span> Introduce</h3>
-                                    <p>Mention the figure before it appears. Tell readers what they are about to see and why it is relevant.</p>
+                                        <figcaption class="figure-caption-highlight"><strong>Figure 1.</strong> Similar heading styles make the document hierarchy difficult to distinguish.</figcaption>
+                                    </figure>
                                 </div>
-                                <div class="key-item">
-                                    <h3><span class="num">2.</span> Label</h3>
-                                    <p>Give the figure a number and informative caption. Place figure captions below figures; identify sources when needed.</p>
+                                <div class="explanation-cell">
+                                    <div class="key-item label-key"><h3><span class="num">2.</span> Label</h3><p>Give the figure a number and informative caption. Place figure captions below figures; identify sources when needed.</p></div>
                                 </div>
-                                <div class="key-item">
-                                    <h3><span class="num">3.</span> Explain</h3>
-                                    <p>Point out the pattern, comparison, or detail that matters. Go beyond repeating the caption.</p>
-                                </div>
-                                <div class="key-item">
-                                    <h3><span class="num">4.</span> Connect</h3>
-                                    <p>Use the evidence to support a conclusion, recommendation, or other point. Refer to the figure by number.</p>
-                                </div>
-                            </aside>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell"><p class="highlight maroon">The heading levels use nearly identical type sizes and weights, making it difficult to distinguish major topics from supporting information.</p></div>
+                                <div class="explanation-cell"><div class="key-item explain-key"><h3><span class="num">3.</span> Explain</h3><p>Point out the pattern, comparison, or detail that matters. Go beyond repeating the caption.</p></div></div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell"><p class="highlight dark-teal">As Figure 1 illustrates, the guide would benefit from more distinct heading styles so readers can locate procedures more easily.</p></div>
+                                <div class="explanation-cell"><div class="key-item connect-key"><h3><span class="num">4.</span> Connect</h3><p>Use the evidence to support a conclusion, recommendation, or other point. Refer to the figure by number.</p></div></div>
+                            </div>
                         </div>
                         <p class="bridge"><strong>Notice the connection:</strong> The introduction prepares readers for the figure; the caption identifies it; the explanation interprets what it shows; and the final sentence uses that evidence to make a point.</p>
                     </div>
                 </section>
+
+                <!-- table example -->
                 <section class="table-example" aria-labelledby="table-heading">
                     <div class="table-header">
                         <h2 id="table-heading">The Same Approach Works for Tables</h2>
@@ -560,9 +634,12 @@
                     </div>
                     <div class="table-content">
                         <div class="table-grid">
+                            <div>
+                            <p class="table-instruction"><strong>How it works:</strong> The first paragraph introduces the table; the second interprets the findings and connects them to a recommendation.</p>
                             <div class="sample-text">
-                                <p><strong>Introduce:</strong> The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p>
-                                <p><strong>Explain and connect:</strong> Table 1 identifies inconsistencies across all three design criteria. These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p>
+                                <p>The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p>
+                                <p>Table 1 identifies inconsistencies across all three design criteria. These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p>
+                            </div>
                             </div>
                             <div>
                                 <p class="table-title">Table 1. Document Design Review Findings</p>
@@ -595,11 +672,31 @@
                     </div>
                 </section>
             </div>
+
+            <!-- updated -->
             <p class="updated"><time datetime="2026-10-16">Last Updated October 16, 2026</time></p>
         </div>
+
+        <!-- credit -->
         <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
     </main>
-    <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+
+    <!-- framing script -->
+
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+            function sendHeight() {
+                if (window.parent === window) return;
+                window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin);
+            }
+            window.addEventListener("load", sendHeight);
+            if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(sendHeight).observe(document.documentElement);
+            }
+        })();
+    </script>
+
 </body>
 
 </html>
