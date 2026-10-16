@@ -62,6 +62,27 @@
             border-radius: 14px 14px 0 0
         }
 
+        .skipline li,
+        .skipline ul li,
+        .skipline ol li,
+        .skipline dl,
+        .skipline dd {
+            margin-bottom: 12px;
+        }
+
+        .spacer details {
+            margin-bottom: 18px !important;
+        }
+
+        .null li,
+        .null ul li,
+        .null ol li,
+        .null dl,
+        .null dd {
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+
         .hero {
             display: flex;
             align-items: center;
@@ -180,22 +201,65 @@
             gap: 0 18px;
             align-items: stretch;
         }
-        .annotated > .column-label { margin-bottom: 10px; }
-        .example-row { display: contents; }
-        .example-cell, .explanation-cell {
+
+        .annotated>.column-label {
+            margin-bottom: 10px;
+        }
+
+        .example-row {
+            display: contents;
+        }
+
+        .example-cell,
+        .explanation-cell {
             padding: 14px 16px;
             border-top: 1px solid var(--gray);
             min-width: 0;
         }
-        .example-cell { background: white; }
-        .explanation-cell { background: var(--smoke-light); display: flex; align-items: flex-start; }
-        .example-cell.first, .explanation-cell.first { border-top: 0; }
-        .document-title { grid-column: 1 / -1; background: white; padding: 18px 18px 6px; border: 1px solid var(--gray); border-bottom: 0; }
-        .document-title h3 { margin: 0; font-size: 1.24rem; }
-        .example-cell .figure { margin: 0; }
-        .explanation-cell .key-item { width: 100%; }
-        .example-cell .highlight { margin: 0; }
-        .example-cell .figure-caption-highlight { margin-bottom: 0; }
+
+        .example-cell {
+            background: white;
+        }
+
+        .explanation-cell {
+            background: var(--smoke-light);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .example-cell.first,
+        .explanation-cell.first {
+            border-top: 0;
+        }
+
+        .document-title {
+            grid-column: 1 / -1;
+            background: white;
+            padding: 18px 18px 6px;
+            border: 1px solid var(--gray);
+            border-bottom: 0;
+        }
+
+        .document-title h3 {
+            margin: 0;
+            font-size: 1.24rem;
+        }
+
+        .example-cell .figure {
+            margin: 0;
+        }
+
+        .explanation-cell .key-item {
+            width: 100%;
+        }
+
+        .example-cell .highlight {
+            margin: 0;
+        }
+
+        .example-cell .figure-caption-highlight {
+            margin-bottom: 0;
+        }
 
         .document {
             background: white;
@@ -339,9 +403,17 @@
             color: var(--maroon)
         }
 
-        .label-key { border-left-color: var(--orange); }
-        .explain-key { border-left-color: var(--maroon); }
-        .connect-key { border-left-color: var(--teal-dark); }
+        .label-key {
+            border-left-color: var(--orange);
+        }
+
+        .explain-key {
+            border-left-color: var(--maroon);
+        }
+
+        .connect-key {
+            border-left-color: var(--teal-dark);
+        }
 
         .bridge {
             margin: 18px 0 0;
@@ -379,10 +451,23 @@
         }
 
         /* Match the figure's row-by-row annotations, with room for table content. */
-        .table-annotated { grid-template-columns: minmax(0, 1.55fr) minmax(235px, 1fr); }
-        .table-annotated .table-label-highlight { border-left: 5px solid var(--orange); padding-left: 12px; }
-        .table-annotated .table-title { margin-top: 0; }
-        .table-annotated .example-cell > p { margin-top: 0; margin-bottom: 0; }
+        .table-annotated {
+            grid-template-columns: minmax(0, 1.55fr) minmax(235px, 1fr);
+        }
+
+        .table-annotated .table-label-highlight {
+            border-left: 5px solid var(--orange);
+            padding-left: 12px;
+        }
+
+        .table-annotated .table-title {
+            margin-top: 0;
+        }
+
+        .table-annotated .example-cell>p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
         .table-grid {
             display: grid;
@@ -442,7 +527,7 @@
         }
 
         .small-note {
-            margin: 19px 0 0;
+            margin: 0 0 23px;
             padding: 15px 18px;
             background: var(--orange-light);
             border-left: 5px solid var(--orange);
@@ -465,12 +550,35 @@
         }
 
         @media(max-width:800px) {
-            .annotated, .table-annotated { grid-template-columns: 1fr; gap: 0; }
-            .annotated > .column-label:nth-child(2) { display: none; }
-            .document-title { grid-column: 1; }
-            .example-row { display: grid; grid-template-columns: 1fr; }
-            .example-cell { border-top: 1px solid var(--gray); }
-            .explanation-cell { border-top: 0; padding-top: 0; padding-bottom: 18px; }
+
+            .annotated,
+            .table-annotated {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .annotated>.column-label:nth-child(2) {
+                display: none;
+            }
+
+            .document-title {
+                grid-column: 1;
+            }
+
+            .example-row {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .example-cell {
+                border-top: 1px solid var(--gray);
+            }
+
+            .explanation-cell {
+                border-top: 0;
+                padding-top: 0;
+                padding-bottom: 18px;
+            }
 
 
             .annotated,
@@ -568,7 +676,7 @@
                 </header>
 
                 <!-- intro explanation -->
-                <p class="intro">A figure or table can present important evidence, but it cannot make your point on its own. Help readers understand <strong>what they are seeing, why it matters, and how it supports your message.</strong></p>
+                <p class="intro">A figure or table can present important evidence, but it cannot make your point on its own. Help readers understand with this four-part technique:</p>
 
                 <!-- process -->
                 <div class="process" aria-label="Four ways to integrate visual evidence">
@@ -577,6 +685,17 @@
                     <div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
                     <div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
                 </div>
+
+                <!-- guidelines applying to both figures and tables -->
+                <aside class="small-note" aria-labelledby="visual-guidelines-heading">
+                    <h2 id="visual-guidelines-heading" style="margin: 0 0 6px; font-size: 1.15rem; color: var(--maroon);">Guidelines for Figures and Tables</h2>
+                    <ul class="skipline" style="margin-top: 0;">
+                        <li>Number figures and tables separately (Figure 1, Figure 2; Table 1, Table 2).</li>
+                        <li>Place figure captions below figures and table titles above tables, unless your required style guide specifies otherwise.</li>
+                        <li>Credit sources when needed.</li>
+                        <li>Provide accessible descriptions of visual information.</li>
+                    </ul>
+                </aside>
 
                 <!-- example -->
                 <section class="example" aria-labelledby="figure-heading">
@@ -589,13 +708,18 @@
                         <div class="annotated" aria-label="Example document aligned row by row with explanations">
                             <p class="column-label">Sample Document</p>
                             <p class="column-label">How It Works</p>
-                            <div class="document-title"><h3>Review of the Employee Onboarding Guide</h3></div>
+                            <div class="document-title">
+                                <h3>Review of the Employee Onboarding Guide</h3>
+                            </div>
                             <div class="example-row">
                                 <div class="example-cell first">
                                     <p class="highlight">The guide uses similar formatting for headings at different levels. Figure 1 shows an example from the guide.</p>
                                 </div>
                                 <div class="explanation-cell first">
-                                    <div class="key-item"><h3><span class="num">1.</span> Introduce</h3><p>Mention the figure before it appears. Tell readers what they are about to see and why it is relevant.</p></div>
+                                    <div class="key-item">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Mention the figure before it appears. Tell readers what they are about to see and why it is relevant.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="example-row">
@@ -616,16 +740,33 @@
                                     </figure>
                                 </div>
                                 <div class="explanation-cell">
-                                    <div class="key-item label-key"><h3><span class="num">2.</span> Label</h3><p>Give the figure a number and informative caption. Place figure captions below figures; identify sources when needed.</p></div>
+                                    <div class="key-item label-key">
+                                        <h3><span class="num">2.</span> Label</h3>
+                                        <p>Give the figure a number and informative caption. Place figure captions below figures; identify sources when needed.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="example-row">
-                                <div class="example-cell"><p class="highlight maroon">The heading levels use nearly identical type sizes and weights, making it difficult to distinguish major topics from supporting information.</p></div>
-                                <div class="explanation-cell"><div class="key-item explain-key"><h3><span class="num">3.</span> Explain</h3><p>Point out the pattern, comparison, or detail that matters. Go beyond repeating the caption.</p></div></div>
+                                <div class="example-cell">
+                                    <p class="highlight maroon">The heading levels use nearly identical type sizes and weights, making it difficult to distinguish major topics from supporting information.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Point out the pattern, comparison, or detail that matters. Go beyond repeating the caption.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="example-row">
-                                <div class="example-cell"><p class="highlight dark-teal">As Figure 1 illustrates, the guide would benefit from more distinct heading styles so readers can locate procedures more easily.</p></div>
-                                <div class="explanation-cell"><div class="key-item connect-key"><h3><span class="num">4.</span> Connect</h3><p>Use the evidence to support a conclusion, recommendation, or other point. Refer to the figure by number.</p></div></div>
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">As Figure 1 illustrates, the guide would benefit from more distinct heading styles so readers can locate procedures more easily.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Use the evidence to support a conclusion, recommendation, or other point. Refer to the figure by number.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <p class="bridge"><strong>Notice the connection:</strong> The introduction prepares readers for the figure; the caption identifies it; the explanation interprets what it shows; and the final sentence uses that evidence to make a point.</p>
@@ -644,36 +785,76 @@
                             <p class="column-label">Sample Document</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
-                                <div class="example-cell first"><p class="highlight">The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p></div>
-                                <div class="explanation-cell first"><div class="key-item"><h3><span class="num">1.</span> Introduce</h3><p>Mention the table before it appears. Tell readers what information it organizes and why that information is relevant.</p></div></div>
+                                <div class="example-cell first">
+                                    <p class="highlight">The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Mention the table before it appears. Tell readers what information it organizes and why that information is relevant.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="example-row">
                                 <div class="example-cell">
                                     <div class="table-label-highlight">
                                         <p class="table-title">Table 1. Document Design Review Findings</p>
                                         <table>
-                                            <thead><tr><th scope="col">Criterion</th><th scope="col">Finding</th></tr></thead>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Criterion</th>
+                                                    <th scope="col">Finding</th>
+                                                </tr>
+                                            </thead>
                                             <tbody>
-                                                <tr><td>Heading hierarchy</td><td>Levels difficult to distinguish</td></tr>
-                                                <tr><td>List formatting</td><td>Inconsistent across sections</td></tr>
-                                                <tr><td>Emphasis</td><td>Bold used for multiple purposes</td></tr>
+                                                <tr>
+                                                    <td>Heading hierarchy</td>
+                                                    <td>Levels difficult to distinguish</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>List formatting</td>
+                                                    <td>Inconsistent across sections</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Emphasis</td>
+                                                    <td>Bold used for multiple purposes</td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                         <p class="table-note">Illustrative findings created for this example.</p>
                                     </div>
                                 </div>
-                                <div class="explanation-cell"><div class="key-item label-key"><h3><span class="num">2.</span> Label</h3><p>Give the table its own number and informative title, usually above the table. Identify sources when needed.</p></div></div>
+                                <div class="explanation-cell">
+                                    <div class="key-item label-key">
+                                        <h3><span class="num">2.</span> Label</h3>
+                                        <p>Give the table its own number and informative title, usually above the table. Identify sources when needed.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="example-row">
-                                <div class="example-cell"><p class="highlight maroon">Table 1 identifies inconsistencies across all three design criteria.</p></div>
-                                <div class="explanation-cell"><div class="key-item explain-key"><h3><span class="num">3.</span> Explain</h3><p>Interpret the pattern or comparison that matters rather than simply repeating the table entries.</p></div></div>
+                                <div class="example-cell">
+                                    <p class="highlight maroon">Table 1 identifies inconsistencies across all three design criteria.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Interpret the pattern or comparison that matters rather than simply repeating the table entries.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="example-row">
-                                <div class="example-cell"><p class="highlight dark-teal">These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p></div>
-                                <div class="explanation-cell"><div class="key-item connect-key"><h3><span class="num">4.</span> Connect</h3><p>Use the findings to support a conclusion or recommendation that advances your message.</p></div></div>
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Use the findings to support a conclusion or recommendation that advances your message.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <p class="small-note"><strong>Figures and tables follow the same principles.</strong> Number them in separate sequences (Figure 1, Figure 2; Table 1, Table 2). A common convention places figure captions below figures and table titles above tables. Follow the style required for your document. Include appropriate source credit and accessible descriptions.</p>
+
                     </div>
                 </section>
             </div>
