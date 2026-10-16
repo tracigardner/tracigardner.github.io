@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Five questions that connect the main sections of a recommendation report.">
+    <title>Five Sections, Five Questions</title>
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+
+            --orange: #c64600;
+            --orange-light: #faede6;
+
+            --smoke: #e5e1e6;
+            --smoke-light: #f7f6f7;
+            --gray: #d7d2cb;
+
+            --text: #1f1f1f;
+            --white: #ffffff;
+
+            --purple: #642667;
+
+            --yellow: #f7ea48;
+            --yellow-dark: #635e1d;
+            --yellow-light: #fefdec;
+
+            --blue: #003c71;
+            --blue-dark: #002a4f;
+            --blue-light: #e5ebf1;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: #fff;
+            color: var(--text);
+            font: 17px/1.5 Arial, Helvetica, sans-serif
+        }
+
+        .infographic {
+            max-width: 1150px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            background: var(--smoke) url("https://tracigardner.github.io/TechComm/-images/backgrounds/Geometric-Corner-Pattern.png") repeat;
+            padding: 39px;
+            background-size: 600px;
+            width: 100%;
+            height: 100%;
+            background-color: var(--teal);
+        }
+
+        .pagewidth {
+            background: #fff;
+            border: 5px solid var(--maroon);
+            border-radius: 14px 14px 0 0;
+            padding: 28px
+        }
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            background: var(--smoke-light);
+            margin: -28px -28px 24px;
+            padding: 28px;
+            border-bottom: 2px solid var(--smoke);
+            border-radius: 9px 9px 0 0
+        }
+
+        .title-icon {
+            flex: none;
+            width: 85px;
+            height: 85px;
+            display: grid;
+            place-items: center;
+            background: var(--maroon);
+            color: white;
+            border-radius: 14px;
+            font-size: 2.5rem;
+            box-shadow: 6px 6px 0 var(--gray)
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2rem, 4.3vw, 3.2rem);
+            line-height: 1.1
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin: 0 0 24px
+        }
+
+        .steps {
+            max-width: 850px;
+            margin: 0 auto
+        }
+
+        .step {
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            overflow: hidden;
+            background: #fff
+        }
+
+        .step-header {
+            display: grid;
+            grid-template-columns: 58px 1fr 44px;
+            gap: 15px;
+            align-items: center;
+            background: var(--teal-light);
+            padding: 16px 20px;
+            border-bottom: 2px solid var(--teal)
+        }
+
+        .step-number {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background: var(--teal-dark);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-size: 1.6rem;
+            font-weight: 800
+        }
+
+        .section-label {
+            margin: 0;
+            color: var(--teal-dark);
+            text-transform: uppercase;
+            letter-spacing: .055em;
+            font-size: .82rem;
+            font-weight: 800
+        }
+
+        .step h2 {
+            margin: 2px 0 0;
+            color: var(--maroon);
+            font-size: clamp(1.25rem, 2.8vw, 1.7rem);
+            line-height: 1.2
+        }
+
+        .step-icon {
+            font-size: 1.65rem;
+            color: var(--teal-dark);
+            text-align: center
+        }
+
+        .step-body {
+            padding: 17px 22px 20px
+        }
+
+        .step-body>p {
+            margin: 0 0 14px
+        }
+
+        .example {
+            background: var(--smoke-light);
+            border-left: 5px solid var(--orange);
+            padding: 11px 15px;
+            border-radius: 0 8px 8px 0
+        }
+
+        .example-label {
+            display: block;
+            color: #923900;
+            font-size: .78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            margin-bottom: 4px
+        }
+
+        .example p {
+            margin: 0
+        }
+
+        .connector {
+            height: 40px;
+            display: grid;
+            place-items: center;
+            color: var(--teal-dark);
+            font-size: 1.5rem
+        }
+
+        .connection {
+            margin-top: 25px;
+            background: var(--blue-light);
+            border: 2px solid var(--blue);
+            border-radius: 12px;
+            padding: 20px
+        }
+
+        .connection h2 {
+            margin: 0 0 8px;
+            color: var(--blue-dark);
+            font-size: 1.5rem
+        }
+
+        .connection>p {
+            margin: 0 0 16px
+        }
+
+        .logic {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 8px
+        }
+
+        .logic-item {
+            background: #fff;
+            border: 2px solid var(--blue);
+            border-radius: 9px;
+            text-align: center;
+            padding: 12px 6px;
+            font-weight: 700;
+            font-size: .94rem;
+            position: relative
+        }
+
+        .logic-item:not(:last-child)::after {
+            content: '→';
+            position: absolute;
+            right: -13px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            color: var(--blue);
+            background: var(--blue-light);
+            font-size: 1.2rem
+        }
+
+        .note {
+            margin: 18px 0 0;
+            font-size: .92rem;
+            color: #414141
+        }
+
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: #fff;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem
+        }
+
+        @media(max-width:650px) {
+            .bkgd-page {
+                padding: 12px
+            }
+
+            .pagewidth {
+                padding: 16px
+            }
+
+            .title-row {
+                margin: -16px -16px 18px;
+                padding: 20px 16px;
+                gap: 13px
+            }
+
+            .title-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 1.7rem
+            }
+
+            .step-header {
+                grid-template-columns: 44px 1fr;
+                gap: 10px;
+                padding: 13px
+            }
+
+            .step-number {
+                width: 42px;
+                height: 42px;
+                font-size: 1.25rem
+            }
+
+            .step-icon {
+                display: none
+            }
+
+            .step-body {
+                padding: 14px
+            }
+
+            .logic {
+                grid-template-columns: 1fr;
+                gap: 14px
+            }
+
+            .logic-item:not(:last-child)::after {
+                content: '↓';
+                right: auto;
+                left: 50%;
+                top: auto;
+                bottom: -20px;
+                transform: translateX(-50%)
+            }
+        }
+
+        @media print {
+            .bkgd-page {
+                padding: 0;
+                background: none
+            }
+
+            .step,
+            .connection {
+                break-inside: avoid
+            }
+
+            body {
+                font-size: 12pt
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="pagewidth">
+
+                <!-- title -->
+                <header class="title-row">
+                    <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-circle-question"></i></div>
+                    <h1>Five Sections, Five Questions</h1>
+                </header>
+
+                <!-- intro explanation -->
+                <p class="intro">The five sections in the body of a recommendation report answer different questions. Together, they move readers from understanding the problem to deciding what action to take.</p>
+
+                <!-- five report sections -->
+                <div class="steps">
+
+                    <!-- introduction -->
+                    <section class="step" aria-labelledby="step-1">
+                        <div class="step-header"><span class="step-number">1</span>
+                            <div>
+                                <p class="section-label">Introduction</p>
+                                <h2 id="step-1">What is this report about?</h2>
+                            </div><i class="fa-solid fa-compass step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Establish the problem, purpose, background, and scope of the investigation.</p>
+                            <div class="example"><span class="example-label">Running example · Problem</span>
+                                <p>Employees struggle to find important procedures.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <!-- methods -->
+                    <section class="step" aria-labelledby="step-2">
+                        <div class="step-header"><span class="step-number">2</span>
+                            <div>
+                                <p class="section-label">Methods</p>
+                                <h2 id="step-2">What did you do?</h2>
+                            </div><i class="fa-solid fa-magnifying-glass step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Explain how you investigated the problem, gathered evidence, and established evaluation criteria.</p>
+                            <div class="example"><span class="example-label">Running example · Process</span>
+                                <p>Evaluate navigation, headings, and organization against usability guidelines.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <!-- results -->
+                    <section class="step" aria-labelledby="step-3">
+                        <div class="step-header"><span class="step-number">3</span>
+                            <div>
+                                <p class="section-label">Results</p>
+                                <h2 id="step-3">What did you find?</h2>
+                            </div><i class="fa-solid fa-chart-column step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Present the evidence from your investigation without interpreting its significance.</p>
+                            <div class="example"><span class="example-label">Running example · Evidence</span>
+                                <p>Important procedures are buried in long sections with vague headings.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <!-- conclusions -->
+                    <section class="step" aria-labelledby="step-4">
+                        <div class="step-header"><span class="step-number">4</span>
+                            <div>
+                                <p class="section-label">Conclusions</p>
+                                <h2 id="step-4">What do the findings mean?</h2>
+                            </div><i class="fa-solid fa-lightbulb step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Interpret the evidence and explain its implications for the client and document users.</p>
+                            <div class="example"><span class="example-label">Running example · Meaning</span>
+                                <p>The organization makes information difficult to locate quickly.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+                    <!-- recommendations -->
+                    <section class="step" aria-labelledby="step-5">
+                        <div class="step-header"><span class="step-number">5</span>
+                            <div>
+                                <p class="section-label">Recommendations</p>
+                                <h2 id="step-5">What should we do?</h2>
+                            </div><i class="fa-solid fa-list-check step-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="step-body">
+                            <p>Propose specific, feasible improvements supported by the findings and conclusions.</p>
+                            <div class="example"><span class="example-label">Running example · Action</span>
+                                <p>Reorganize procedures by task and add descriptive headings.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- connection -->
+                <section class="connection" aria-labelledby="connection-heading">
+                    <h2 id="connection-heading">How the Sections Work Together</h2>
+                    <p>Each section builds on the previous one to create a logical argument for action.</p>
+                    <div class="logic" aria-label="Problem leads to process, evidence, meaning, and action">
+                        <div class="logic-item">Problem</div>
+                        <div class="logic-item">Process</div>
+                        <div class="logic-item">Evidence</div>
+                        <div class="logic-item">Meaning</div>
+                        <div class="logic-item">Action</div>
+                    </div>
+                    <p class="note"><strong>Remember:</strong> Results report what you found. Conclusions explain what those findings mean. Recommendations explain what the client should do next.</p>
+                </section>
+            </div>
+
+            <!-- updated -->
+            <p class="updated"><time datetime="2026-10-16">Last Updated October 16, 2026</time></p>
+        </div>
+
+        <!-- credit -->
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+
+    <!-- iframe resize -->
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+            function sendHeight() {
+                if (window.parent === window) return;
+                window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin);
+            }
+            window.addEventListener("load", sendHeight);
+            if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(sendHeight).observe(document.documentElement);
+            }
+        })();
+    </script>
+</body>
+
+</html>
