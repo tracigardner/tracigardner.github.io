@@ -74,7 +74,7 @@
             display: flex;
             align-items: center;
             gap: 22px;
-            background: var(--smoke-light);
+            background: var(--orange-light);
             margin: -28px -28px 24px;
             padding: 28px;
             border-bottom: 2px solid var(--smoke);
@@ -236,7 +236,20 @@
             border: 2px solid var(--gray);
             border-radius: 12px;
             padding: 17px;
-            background: var(--smoke-light)
+            background: var(--smoke-light);
+            display: flex;
+            flex-direction: column
+        }
+
+        /* Anchor each example to the bottom of its rule card. */
+        .rule>.compare,
+        .rule>.mini-outline {
+            margin-top: auto
+        }
+
+        /* Give the standalone parent-ideas example the same visual cap. */
+        .rule>.mini-outline {
+            border-top: 5px solid var(--teal-dark)
         }
 
         .rule h3 {
@@ -275,7 +288,14 @@
             background: #fff;
             border-radius: 8px;
             padding: 10px;
-            border-top: 5px solid var(--orange)
+            border-top: 5px solid var(--orange);
+            display: flex;
+            flex-direction: column
+        }
+
+        /* Keep paired example boxes aligned even when their text wraps. */
+        .compare .mini-outline {
+            flex: 1
         }
 
         .compare>div:last-child {
