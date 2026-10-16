@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An infographic demonstrating how to introduce, label, explain, and connect figures and tables to written evidence.">
+    <meta name="author" content="Traci Gardner">
+    <title>Integrating Visual Evidence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        :root {
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+            --orange: #c64600;
+            --orange-light: #faede6;
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-light: #edf3f4;
+            --smoke: #e5e1e6;
+            --smoke-light: #f7f6f7;
+            --smoke-dark: #737173;
+            --gray: #d7d2cb;
+            --text: #1f1f1f;
+            --white: #fff
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background: #fff;
+            color: var(--text);
+            font: 17px/1.48 Arial, Helvetica, sans-serif
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            padding: 36px;
+            background-color: var(--teal-dark);
+            background-image: url('https://tracigardner.github.io/TechComm/-images/backgrounds/visuals-pattern.png');
+            background-size: 400px;
+            background-repeat: repeat
+        }
+
+        .page {
+            padding: 30px;
+            background: #fff;
+            border: 3px solid var(--maroon);
+            border-radius: 14px 14px 0 0
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+            margin: -30px -30px 23px;
+            padding: 28px 30px;
+            background: var(--smoke-light);
+            border-bottom: 2px solid var(--smoke);
+            border-radius: 10px 10px 0 0
+        }
+
+        .hero-icon {
+            width: 92px;
+            height: 92px;
+            flex: none;
+            display: grid;
+            place-items: center;
+            background: var(--maroon);
+            color: white;
+            border-radius: 16px;
+            box-shadow: 6px 6px 0 var(--gray);
+            font-size: 2.5rem
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4.7vw, 3.4rem);
+            line-height: 1.05;
+            color: var(--maroon);
+            margin: 0
+        }
+
+        .hero .subtitle {
+            margin: 8px 0 0;
+            font-size: 1.15rem
+        }
+
+        .intro {
+            font-size: 1.09rem;
+            margin: 0 0 23px
+        }
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 25px
+        }
+
+        .process-step {
+            padding: 15px 10px;
+            background: var(--smoke-light);
+            border-top: 6px solid var(--teal-dark);
+            border-radius: 9px;
+            text-align: center
+        }
+
+        .process-step:nth-child(2) {
+            border-color: var(--orange)
+        }
+
+        .process-step:nth-child(3) {
+            border-color: var(--maroon)
+        }
+
+        .process-step:nth-child(4) {
+            border-color: var(--teal)
+        }
+
+        .process-step b {
+            display: block;
+            font-size: 1.15rem
+        }
+
+        .process-step span {
+            display: block;
+            font-size: .84rem
+        }
+
+        .section-heading {
+            margin: 27px 0 13px;
+            color: var(--maroon);
+            font-size: 1.65rem
+        }
+
+        .example {
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            overflow: hidden
+        }
+
+        .example-header {
+            background: var(--teal-dark);
+            color: white;
+            padding: 13px 20px
+        }
+
+        .example-header h2 {
+            font-size: 1.4rem;
+            margin: 0
+        }
+
+        .example-header p {
+            margin: 3px 0 0;
+            font-size: .95rem
+        }
+
+        .example-body {
+            padding: 20px;
+            background: var(--smoke-light)
+        }
+
+        .annotated {
+            display: grid;
+            grid-template-columns: minmax(0, 1.55fr) minmax(235px, 1fr);
+            gap: 18px;
+            align-items: start
+        }
+
+        .document {
+            background: white;
+            border: 1px solid var(--gray);
+            box-shadow: 4px 5px 0 var(--smoke);
+            padding: 23px
+        }
+
+        .document h3 {
+            font-size: 1.24rem;
+            margin: 0 0 15px
+        }
+
+        .document p {
+            font-size: .95rem;
+            margin: 10px 0
+        }
+
+        .highlight {
+            border-left: 5px solid var(--teal);
+            padding: 10px 12px;
+            background: var(--teal-light)
+        }
+
+        .highlight.orange {
+            border-color: var(--orange);
+            background: var(--orange-light)
+        }
+
+        .highlight.maroon {
+            border-color: var(--maroon);
+            background: var(--maroon-light)
+        }
+
+        .figure {
+            margin: 17px 0
+        }
+
+        .figure-image {
+            padding: 17px;
+            border: 1px solid var(--gray);
+            background: #fff
+        }
+
+        .sample-page {
+            max-width: 370px;
+            margin: auto;
+            padding: 15px;
+            border: 1px solid #b9b9b9;
+            background: #fafafa
+        }
+
+        .sample-page h4 {
+            font-size: 1.05rem;
+            margin: 0 0 10px
+        }
+
+        .sample-page .near-heading {
+            font-size: .94rem;
+            font-weight: bold;
+            margin: 12px 0 4px
+        }
+
+        .sample-page .tiny-text {
+            font-size: .77rem;
+            margin: 0;
+            color: #555
+        }
+
+        .figure figcaption {
+            font-size: .87rem;
+            margin-top: 9px
+        }
+
+        .key {
+            display: grid;
+            gap: 10px
+        }
+
+        .key-item {
+            background: #fff;
+            border: 1px solid var(--gray);
+            border-left: 6px solid var(--teal);
+            padding: 12px;
+            border-radius: 5px
+        }
+
+        .key-item:nth-child(2) {
+            border-left-color: var(--orange)
+        }
+
+        .key-item:nth-child(3) {
+            border-left-color: var(--maroon)
+        }
+
+        .key-item:nth-child(4) {
+            border-left-color: var(--teal-dark)
+        }
+
+        .key-item h3 {
+            margin: 0 0 4px;
+            font-size: 1.07rem
+        }
+
+        .key-item p {
+            margin: 0;
+            font-size: .91rem
+        }
+
+        .key-item .num {
+            font-weight: bold;
+            color: var(--maroon)
+        }
+
+        .bridge {
+            margin: 18px 0 0;
+            padding: 14px 17px;
+            background: var(--teal-light);
+            border-left: 6px solid var(--teal-dark);
+            font-size: .95rem
+        }
+
+        .table-example {
+            margin-top: 24px;
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            overflow: hidden
+        }
+
+        .table-header {
+            padding: 14px 20px;
+            background: var(--maroon);
+            color: white
+        }
+
+        .table-header h2 {
+            margin: 0;
+            font-size: 1.4rem
+        }
+
+        .table-header p {
+            margin: 4px 0 0;
+            font-size: .95rem
+        }
+
+        .table-content {
+            padding: 20px
+        }
+
+        .table-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 22px;
+            align-items: start
+        }
+
+        .sample-text {
+            background: var(--smoke-light);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: .95rem
+        }
+
+        .sample-text p {
+            margin: 0 0 13px
+        }
+
+        .sample-text p:last-child {
+            margin: 0
+        }
+
+        .table-title {
+            font-size: .9rem;
+            font-weight: bold;
+            margin: 0 0 7px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .88rem
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid var(--gray);
+            text-align: left;
+            vertical-align: top
+        }
+
+        th {
+            background: var(--teal-dark);
+            color: #fff
+        }
+
+        tr:nth-child(even) td {
+            background: var(--teal-light)
+        }
+
+        .table-note {
+            font-size: .8rem;
+            color: #444;
+            margin: 8px 0 0
+        }
+
+        .small-note {
+            margin: 19px 0 0;
+            padding: 15px 18px;
+            background: var(--orange-light);
+            border-left: 5px solid var(--orange);
+            font-size: .93rem
+        }
+
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: #fff;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem
+        }
+
+        @media(max-width:800px) {
+
+            .annotated,
+            .table-grid {
+                grid-template-columns: 1fr
+            }
+
+            .key {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:580px) {
+            body {
+                padding: 8px
+            }
+
+            .bkgd-page {
+                padding: 13px
+            }
+
+            .page {
+                padding: 16px
+            }
+
+            .hero {
+                margin: -16px -16px 19px;
+                padding: 19px 16px;
+                gap: 13px
+            }
+
+            .hero-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.7rem
+            }
+
+            .hero h1 {
+                font-size: 2rem
+            }
+
+            .hero .subtitle {
+                font-size: .95rem
+            }
+
+            .process {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .example-body,
+            .table-content {
+                padding: 12px
+            }
+
+            .document {
+                padding: 14px
+            }
+
+            .key {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0
+            }
+
+            .bkgd-page {
+                padding: 0;
+                background: none
+            }
+
+            .example,
+            .table-example,
+            .key-item {
+                break-inside: avoid
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="page">
+                <header class="hero">
+                    <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-chart-column"></i></div>
+                    <div>
+                        <h1>Integrating Visual Evidence</h1>
+                        <p class="subtitle">Make figures and tables part of your explanation—not just something readers look at.</p>
+                    </div>
+                </header>
+                <p class="intro">A figure or table can present important evidence, but it cannot make your point on its own. Help readers understand <strong>what they are seeing, why it matters, and how it supports your message.</strong></p>
+                <div class="process" aria-label="Four ways to integrate visual evidence">
+                    <div class="process-step"><b>1. Introduce</b><span>Prepare the reader</span></div>
+                    <div class="process-step"><b>2. Label</b><span>Identify the visual</span></div>
+                    <div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
+                    <div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
+                </div>
+                <section class="example" aria-labelledby="figure-heading">
+                    <div class="example-header">
+                        <h2 id="figure-heading">One Figure, Four Connected Moves</h2>
+                        <p>Follow a figure through a short example from a workplace document review.</p>
+                    </div>
+                    <div class="example-body">
+                        <div class="annotated">
+                            <article class="document" aria-label="Annotated example document">
+                                <h3>Review of the Employee Onboarding Guide</h3>
+                                <p class="highlight"><strong>1 · Introduce:</strong> The guide uses similar formatting for headings at different levels. Figure 1 shows an example from the guide.</p>
+                                <figure class="figure">
+                                    <div class="figure-image">
+                                        <div class="sample-page" role="img" aria-label="Illustrative page with major and subordinate headings in nearly identical sizes and weights, making their hierarchy difficult to distinguish">
+                                            <h4>4. Working on Client Projects</h4>
+                                            <p class="near-heading">4.1 Project Documentation</p>
+                                            <p class="tiny-text">Follow document control procedures for all project records.</p>
+                                            <p class="near-heading">4.1.1 File Naming</p>
+                                            <p class="tiny-text">Use approved conventions for naming project files.</p>
+                                            <p class="near-heading">4.1.2 Technical Review</p>
+                                            <p class="tiny-text">Submit technical documents for review before distribution.</p>
+                                        </div>
+                                    </div>
+                                    <figcaption><strong>Figure 1.</strong> Similar heading styles make the document hierarchy difficult to distinguish.</figcaption>
+                                </figure>
+                                <p class="highlight orange"><strong>3 · Explain:</strong> The heading levels use nearly identical type sizes and weights, making it difficult to distinguish major topics from supporting information.</p>
+                                <p class="highlight maroon"><strong>4 · Connect:</strong> As Figure 1 illustrates, the guide would benefit from more distinct heading styles so readers can locate procedures more easily.</p>
+                            </article>
+                            <aside class="key" aria-label="Explanations of the four moves">
+                                <div class="key-item">
+                                    <h3><span class="num">1.</span> Introduce</h3>
+                                    <p>Mention the figure before it appears. Tell readers what they are about to see and why it is relevant.</p>
+                                </div>
+                                <div class="key-item">
+                                    <h3><span class="num">2.</span> Label</h3>
+                                    <p>Give the figure a number and informative caption. Place figure captions below figures; identify sources when needed.</p>
+                                </div>
+                                <div class="key-item">
+                                    <h3><span class="num">3.</span> Explain</h3>
+                                    <p>Point out the pattern, comparison, or detail that matters. Go beyond repeating the caption.</p>
+                                </div>
+                                <div class="key-item">
+                                    <h3><span class="num">4.</span> Connect</h3>
+                                    <p>Use the evidence to support a conclusion, recommendation, or other point. Refer to the figure by number.</p>
+                                </div>
+                            </aside>
+                        </div>
+                        <p class="bridge"><strong>Notice the connection:</strong> The introduction prepares readers for the figure; the caption identifies it; the explanation interprets what it shows; and the final sentence uses that evidence to make a point.</p>
+                    </div>
+                </section>
+                <section class="table-example" aria-labelledby="table-heading">
+                    <div class="table-header">
+                        <h2 id="table-heading">The Same Approach Works for Tables</h2>
+                        <p>Tables organize information for comparison; the surrounding writing explains its significance.</p>
+                    </div>
+                    <div class="table-content">
+                        <div class="table-grid">
+                            <div class="sample-text">
+                                <p><strong>Introduce:</strong> The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p>
+                                <p><strong>Explain and connect:</strong> Table 1 identifies inconsistencies across all three design criteria. These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p>
+                            </div>
+                            <div>
+                                <p class="table-title">Table 1. Document Design Review Findings</p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Criterion</th>
+                                            <th scope="col">Finding</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Heading hierarchy</td>
+                                            <td>Levels difficult to distinguish</td>
+                                        </tr>
+                                        <tr>
+                                            <td>List formatting</td>
+                                            <td>Inconsistent across sections</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Emphasis</td>
+                                            <td>Bold used for multiple purposes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="table-note">Illustrative findings created for this example.</p>
+                            </div>
+                        </div>
+                        <p class="small-note"><strong>Figures and tables follow the same principles.</strong> Number them in separate sequences (Figure 1, Figure 2; Table 1, Table 2). A common convention places figure captions below figures and table titles above tables. Follow the style required for your document. Include appropriate source credit and accessible descriptions.</p>
+                    </div>
+                </section>
+            </div>
+            <p class="updated"><time datetime="2026-10-16">Last Updated October 16, 2026</time></p>
+        </div>
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+</body>
+
+</html>
