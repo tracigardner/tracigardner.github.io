@@ -378,6 +378,12 @@
             padding: 20px
         }
 
+        /* Match the figure's row-by-row annotations, with room for table content. */
+        .table-annotated { grid-template-columns: minmax(0, 1.55fr) minmax(235px, 1fr); }
+        .table-annotated .table-label-highlight { border-left: 5px solid var(--orange); padding-left: 12px; }
+        .table-annotated .table-title { margin-top: 0; }
+        .table-annotated .example-cell > p { margin-top: 0; margin-bottom: 0; }
+
         .table-grid {
             display: grid;
             grid-template-columns: 1fr 1.15fr;
@@ -459,7 +465,7 @@
         }
 
         @media(max-width:800px) {
-            .annotated { grid-template-columns: 1fr; gap: 0; }
+            .annotated, .table-annotated { grid-template-columns: 1fr; gap: 0; }
             .annotated > .column-label:nth-child(2) { display: none; }
             .document-title { grid-column: 1; }
             .example-row { display: grid; grid-template-columns: 1fr; }
@@ -633,39 +639,38 @@
                         <p>Tables organize information for comparison; the surrounding writing explains its significance.</p>
                     </div>
                     <div class="table-content">
-                        <div class="table-grid">
-                            <div>
-                            <p class="table-instruction"><strong>How it works:</strong> The first paragraph introduces the table; the second interprets the findings and connects them to a recommendation.</p>
-                            <div class="sample-text">
-                                <p>The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p>
-                                <p>Table 1 identifies inconsistencies across all three design criteria. These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p>
+                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
+                        <div class="annotated table-annotated" aria-label="Table example aligned row by row with explanations">
+                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="example-row">
+                                <div class="example-cell first"><p class="highlight">The review also examined how consistently the guide uses headings, lists, and emphasis. Table 1 summarizes the findings.</p></div>
+                                <div class="explanation-cell first"><div class="key-item"><h3><span class="num">1.</span> Introduce</h3><p>Mention the table before it appears. Tell readers what information it organizes and why that information is relevant.</p></div></div>
                             </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <div class="table-label-highlight">
+                                        <p class="table-title">Table 1. Document Design Review Findings</p>
+                                        <table>
+                                            <thead><tr><th scope="col">Criterion</th><th scope="col">Finding</th></tr></thead>
+                                            <tbody>
+                                                <tr><td>Heading hierarchy</td><td>Levels difficult to distinguish</td></tr>
+                                                <tr><td>List formatting</td><td>Inconsistent across sections</td></tr>
+                                                <tr><td>Emphasis</td><td>Bold used for multiple purposes</td></tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="table-note">Illustrative findings created for this example.</p>
+                                    </div>
+                                </div>
+                                <div class="explanation-cell"><div class="key-item label-key"><h3><span class="num">2.</span> Label</h3><p>Give the table its own number and informative title, usually above the table. Identify sources when needed.</p></div></div>
                             </div>
-                            <div>
-                                <p class="table-title">Table 1. Document Design Review Findings</p>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Criterion</th>
-                                            <th scope="col">Finding</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Heading hierarchy</td>
-                                            <td>Levels difficult to distinguish</td>
-                                        </tr>
-                                        <tr>
-                                            <td>List formatting</td>
-                                            <td>Inconsistent across sections</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Emphasis</td>
-                                            <td>Bold used for multiple purposes</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p class="table-note">Illustrative findings created for this example.</p>
+                            <div class="example-row">
+                                <div class="example-cell"><p class="highlight maroon">Table 1 identifies inconsistencies across all three design criteria.</p></div>
+                                <div class="explanation-cell"><div class="key-item explain-key"><h3><span class="num">3.</span> Explain</h3><p>Interpret the pattern or comparison that matters rather than simply repeating the table entries.</p></div></div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell"><p class="highlight dark-teal">These findings support adopting a consistent formatting system to help readers recognize different kinds of information.</p></div>
+                                <div class="explanation-cell"><div class="key-item connect-key"><h3><span class="num">4.</span> Connect</h3><p>Use the findings to support a conclusion or recommendation that advances your message.</p></div></div>
                             </div>
                         </div>
                         <p class="small-note"><strong>Figures and tables follow the same principles.</strong> Number them in separate sequences (Figure 1, Figure 2; Table 1, Table 2). A common convention places figure captions below figures and table titles above tables. Follow the style required for your document. Include appropriate source credit and accessible descriptions.</p>
