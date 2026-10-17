@@ -1,0 +1,104 @@
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+div.front-post a.title {
+  color: #333;
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: 1px dotted #cccccc;
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+}
+
+.image-credit {
+  font-size: 36px;
+}
+
+li.margbot {
+  margin-bottom: 15px;
+}
+
+ul.listDS,
+ol.listDS,
+li.listDS {
+  margin-bottom: 12px !important;
+}
+
+.skipline {
+  margin-bottom: 12px;
+}
+
+.skipline ul li,
+.skipline ol li {
+  margin-bottom: 12px !important;
+}
+
+.ten-b-maroon {
+  color: #861f41;
+  font-weight: bold;
+}
+
+li.cat-item-549,
+li.cat-item-402,
+li.cat-item-421,
+li.cat-item-422,
+li.cat-item-405,
+li.cat-item-406,
+li.cat-item-424,
+li.cat-item-410,
+li.cat-item-411,
+li.cat-item-412,
+li.cat-item-413,
+li.cat-item-414,
+li.cat-item-416,
+li.cat-item-417,
+li.cat-item-418,
+li.cat-item-420,
+li.cat-item-4 {
+  display: none;
+}
+
+.biblio {
+  list-style: none;
+  padding-left: 22px;
+  text-indent: -22px;
+}
+
+/* alternate table */
+
+.alternateTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+  table-layout: fixed;
+}
+.alternateTable td,
+.alternateTable th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+}
+
+.alternateTable tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+.alternateTable th {
+  padding: 12px;
+  text-align: left;
+  background-color: #dedede;
+  vertical-align: top;
+}
+
+/* setting height for frames on other sites */
+iframe.tsc-visual {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border: 0;
+  overflow: hidden;
+}
