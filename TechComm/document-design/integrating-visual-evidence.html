@@ -1156,6 +1156,19 @@
                 gap: 6px;
             }
         }
+
+        /* Keep tab-panel headings available to screen readers without visual repetition. */
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
     </style>
 </head>
 
@@ -1193,7 +1206,7 @@
                 <!-- figure example -->
                 <section aria-labelledby="tab-figure" class="example visual-panel" id="panel-figure" role="tabpanel" tabindex="0">
                     <div class="example-header">
-
+                        <h2 class="visually-hidden" id="heading-figure">Figure in a Sample Document</h2>
                         <p>A figure presents information visually, using illustrations, diagrams, or other images. It helps readers understand concepts, relationships, or details that may be difficult to explain with words alone.</p>
                     </div>
                     <div class="example-body">
@@ -1266,12 +1279,12 @@
                 <!-- table example -->
                 <section aria-labelledby="tab-table" class="table-example visual-panel" id="panel-table" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2 id="table-heading">Table in a Workplace Document</h2>
+                        <h2 class="visually-hidden" id="heading-table">Table in a Sample Document</h2>
                         <p>A table organizes information into rows and columns so readers can locate details and compare values or categories. It makes patterns and differences easier to recognize.</p>
                     </div>
                     <div class="table-content">
                         <div aria-label="Table example aligned row by row with explanations" class="annotated table-annotated">
-                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">Table in a Sample Document</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
                                 <div class="example-cell first">
@@ -1349,12 +1362,12 @@
                 <!-- screenshot example -->
                 <section aria-labelledby="tab-screenshot" class="table-example visual-panel" id="panel-screenshot" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2 id="table-heading">Screenshot in a Workplace Document</h2>
+                        <h2 class="visually-hidden" id="heading-screenshot">Screenshot in a Sample Document</h2>
                         <p>A screenshot captures what appears on a computer or device screen at a particular moment. It helps readers examine interface features, identify usability problems, or follow procedures.</p>
                     </div>
                     <div class="table-content">
                         <div aria-label="screenshot example aligned with explanations" class="annotated table-annotated">
-                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">Screenshot in a Sample Document</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
                                 <div class="example-cell first">
@@ -1422,12 +1435,12 @@
                 <!-- chart example -->
                 <section aria-labelledby="tab-chart" class="table-example visual-panel" id="panel-chart" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2 id="table-heading">Chart in a Workplace Document</h2>
+                        <h2 class="visually-hidden" id="heading-chart">Chart in a Sample Document</h2>
                         <p>A chart displays data to reveal comparisons, patterns, relationships, or trends. Bar charts, pie charts, and line graphs help readers interpret numerical information quickly.</p>
                     </div>
                     <div class="table-content">
                         <div aria-label="chart example aligned with explanations" class="annotated table-annotated">
-                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">Chart in a Sample Document</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
                                 <div class="example-cell first">
@@ -1460,13 +1473,12 @@
                                             </div>
                                         </div>
                                         <figcaption class="figure-caption-highlight"><strong>Figure 3.</strong> Average time to locate instructions in the original and revised guides.</figcaption>
-                                        <p class="table-note">Illustrative data created for this example; not actual test results.</p>
                                     </figure>
                                 </div>
                                 <div class="explanation-cell">
                                     <div class="key-item label-key">
                                         <h3><span class="num">2. </span>Label</h3>
-                                        <p>Label the chart and make the quantities and units clear.</p>
+                                        <p>Label the chart as a figure and make the quantities and units clear.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1499,12 +1511,12 @@
                 <!-- photograph example -->
                 <section aria-labelledby="tab-photograph" class="table-example visual-panel" id="panel-photograph" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2>Photograph in a Workplace Document</h2>
+                        <h2 class="visually-hidden" id="heading-photograph">Photograph in a Sample Document</h2>
                         <p>A photograph captures the appearance of a person, object, place, or activity. It provides visual evidence of observable details, conditions, or processes that readers can examine.</p>
                     </div>
                     <div class="table-content">
                         <div aria-label="Photograph example aligned row by row with explanations" class="annotated table-annotated">
-                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">Photograph in a Sample Document</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
                                 <div class="example-cell first">
