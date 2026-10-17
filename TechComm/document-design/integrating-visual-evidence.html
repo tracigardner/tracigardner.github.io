@@ -278,11 +278,10 @@
 
         .column-label {
             margin: 0 0 9px;
-            font-size: .85rem;
+            font-size: .99rem;
             font-weight: bold;
             letter-spacing: .04em;
-            text-transform: uppercase;
-            color: var(--teal-dark)
+            color: var(--text)
         }
 
         .annotation-note {
@@ -1172,8 +1171,10 @@
                         <p class="subtitle">Make figures and tables part of your explanation—not just something readers look at.</p>
                     </div>
                 </header>
+
                 <!-- intro explanation -->
                 <p class="intro">A figure or table can present important evidence, but it cannot make your point on its own. Help readers understand with this four-part technique:</p>
+
                 <!-- process -->
                 <div aria-label="Four ways to integrate visual evidence" class="process">
                     <div class="process-step"><b>1. Introduce</b><span>Prepare the reader</span></div>
@@ -1181,37 +1182,25 @@
                     <div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
                     <div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
                 </div>
-                <!-- guidelines applying to both figures and tables -->
-                <aside aria-labelledby="visual-guidelines-heading" class="small-note">
-                    <h2 id="visual-guidelines-heading" style="margin: 0 0 6px; font-size: 1.15rem; color: var(--maroon);">Guidelines for Figures and Tables</h2>
-                    <ul class="skipline" style="margin-top: 0;">
-                        <li>Number figures and tables separately (Figure 1, Figure 2; Table 1, Table 2).</li>
-                        <li>Place figure captions below figures and table titles above tables, unless your required style guide specifies otherwise.</li>
-                        <li>Credit sources when needed.</li>
-                        <li>Provide accessible descriptions of visual information.</li>
-                    </ul>
-                </aside>
+
                 <!-- example with tabs -->
                 <div class="example-switcher">
                     <h2>Explore Five Examples</h2>
-                    <p>Choose a visual to see how the same four moves work in context.</p>
+                    <p>Choose a visual to see how the four steps work in context. Read each sample as a finished document.</strong> The colored borders identify the steps explained alongside them; <em>they are not part of the document itself.</em><br><br></p>
                     <div aria-label="Choose a visual evidence example" class="visual-tabs" role="tablist"><button aria-controls="panel-figure" aria-selected="true" id="tab-figure" role="tab" tabindex="0" type="button"><i class="fa-regular fa-file-image" aria-hidden="true"></i><span>Figure</span></button><button aria-controls="panel-table" aria-selected="false" id="tab-table" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-table-cells" aria-hidden="true"></i><span>Table</span></button><button aria-controls="panel-screenshot" aria-selected="false" id="tab-screenshot" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i><span>Screenshot</span></button><button aria-controls="panel-chart" aria-selected="false" id="tab-chart" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><span>Chart</span></button><button aria-controls="panel-photograph" aria-selected="false" id="tab-photograph" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-camera" aria-hidden="true"></i><span>Photograph</span></button></div>
                 </div>
 
                 <!-- figure example -->
                 <section aria-labelledby="tab-figure" class="example visual-panel" id="panel-figure" role="tabpanel" tabindex="0">
                     <div class="example-header">
-                        <h2 id="figure-heading">One Figure, Four Connected Moves</h2>
-                        <p>Follow a figure through a short example from a workplace document review.</p>
+
+                        <p>A figure presents information visually, using illustrations, diagrams, or other images. It helps readers understand concepts, relationships, or details that may be difficult to explain with words alone.</p>
                     </div>
                     <div class="example-body">
-                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
                         <div aria-label="Example document aligned row by row with explanations" class="annotated">
-                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">Figure in a Sample Document</p>
                             <p class="column-label">How It Works</p>
-                            <div class="document-title">
-                                <h3>Review of the Employee Onboarding Guide</h3>
-                            </div>
+
                             <div class="example-row">
                                 <div class="example-cell first">
                                     <p class="highlight">The guide uses similar formatting for headings at different levels. Figure 1 shows an example from the guide.</p>
@@ -1270,17 +1259,17 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="bridge"><strong>Notice the connection:</strong> The introduction prepares readers for the figure; the caption identifies it; the explanation interprets what it shows; and the final sentence uses that evidence to make a point.</p>
+
                     </div>
                 </section>
+
                 <!-- table example -->
                 <section aria-labelledby="tab-table" class="table-example visual-panel" id="panel-table" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2 id="table-heading">The Same Approach Works for Tables</h2>
-                        <p>Tables organize information for comparison; the surrounding writing explains its significance.</p>
+                        <h2 id="table-heading">Table in a Workplace Document</h2>
+                        <p>A table organizes information into rows and columns so readers can locate details and compare values or categories. It makes patterns and differences easier to recognize.</p>
                     </div>
                     <div class="table-content">
-                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> The colored borders identify the four moves explained alongside it; they are not part of the document itself.</p>
                         <div aria-label="Table example aligned row by row with explanations" class="annotated table-annotated">
                             <p class="column-label">Sample Document</p>
                             <p class="column-label">How It Works</p>
@@ -1360,11 +1349,10 @@
                 <!-- screenshot example -->
                 <section aria-labelledby="tab-screenshot" class="table-example visual-panel" id="panel-screenshot" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2 id="table-heading">A Screenshot, Four Connected Moves</h2>
-                        <p>Use a screenshot to show a specific interface problem.</p>
+                        <h2 id="table-heading">Screenshot in a Workplace Document</h2>
+                        <p>A screenshot captures what appears on a computer or device screen at a particular moment. It helps readers examine interface features, identify usability problems, or follow procedures.</p>
                     </div>
                     <div class="table-content">
-                        <p class="annotation-note"><strong>Read the sample as a finished document. </strong>Colored borders and explanations are teaching aids, not part of the document.</p>
                         <div aria-label="screenshot example aligned with explanations" class="annotated table-annotated">
                             <p class="column-label">Sample Document</p>
                             <p class="column-label">How It Works</p>
@@ -1434,11 +1422,10 @@
                 <!-- chart example -->
                 <section aria-labelledby="tab-chart" class="table-example visual-panel" id="panel-chart" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2 id="table-heading">A Chart, Four Connected Moves</h2>
-                        <p>Use a chart to explain a quantitative comparison.</p>
+                        <h2 id="table-heading">Chart in a Workplace Document</h2>
+                        <p>A chart displays data to reveal comparisons, patterns, relationships, or trends. Bar charts, pie charts, and line graphs help readers interpret numerical information quickly.</p>
                     </div>
                     <div class="table-content">
-                        <p class="annotation-note"><strong>Read the sample as a finished document. </strong>Colored borders and explanations are teaching aids, not part of the document.</p>
                         <div aria-label="chart example aligned with explanations" class="annotated table-annotated">
                             <p class="column-label">Sample Document</p>
                             <p class="column-label">How It Works</p>
@@ -1512,11 +1499,10 @@
                 <!-- photograph example -->
                 <section aria-labelledby="tab-photograph" class="table-example visual-panel" id="panel-photograph" role="tabpanel" tabindex="0">
                     <div class="table-header">
-                        <h2>A Photograph, Four Connected Moves</h2>
-                        <p>Use a photograph to document a setting and support an observation about it.</p>
+                        <h2>Photograph in a Workplace Document</h2>
+                        <p>A photograph captures the appearance of a person, object, place, or activity. It provides visual evidence of observable details, conditions, or processes that readers can examine.</p>
                     </div>
                     <div class="table-content">
-                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> Colored borders and explanations are teaching aids, not part of the document.</p>
                         <div aria-label="Photograph example aligned row by row with explanations" class="annotated table-annotated">
                             <p class="column-label">Sample Document</p>
                             <p class="column-label">How It Works</p>
