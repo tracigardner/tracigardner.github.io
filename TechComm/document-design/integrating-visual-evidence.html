@@ -327,8 +327,8 @@
         }
 
         .highlight.dark-teal {
-            border-color: var(--teal-dark);
-            background: var(--teal-light)
+            border-color: var(--turq);
+            background: var(--turq-light)
         }
 
         .figure {
@@ -393,7 +393,7 @@
         }
 
         .key-item:nth-child(4) {
-            border-left-color: var(--teal-dark)
+            border-left-color: var(--turq)
         }
 
         .key-item h3 {
@@ -420,14 +420,14 @@
         }
 
         .connect-key {
-            border-left-color: var(--teal-dark);
+            border-left-color: var(--turq);
         }
 
         .bridge {
             margin: 18px 0 0;
             padding: 14px 17px;
-            background: var(--teal-light);
-            border-left: 6px solid var(--teal-dark);
+            background: var(--turq-light);
+            border-left: 6px solid var(--turq);
             font-size: .95rem
         }
 
@@ -686,7 +686,7 @@
         /* Folder-style tabs: each tab has its own pale brand-color tint. */
         .visual-tabs {
             display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-columns: repeat(5, minmax(0, 1fr));
             gap: 8px;
             align-items: end;
             position: relative;
@@ -805,7 +805,8 @@
             --panel-tint: var(--orange-light);
         }
 
-        #panel-chart {
+        #panel-chart,
+        #panel-photograph {
             --panel-color: #555258;
             --panel-tint: var(--smoke-light);
         }
@@ -1045,7 +1046,8 @@
         .visual-tabs button:nth-child(1),
         .visual-tabs button:nth-child(2),
         .visual-tabs button:nth-child(3),
-        .visual-tabs button:nth-child(4) {
+        .visual-tabs button:nth-child(4),
+        .visual-tabs button:nth-child(5) {
             --folder-color: #737173;
             --folder-tint: #e5e1e6;
             background: var(--folder-tint);
@@ -1079,7 +1081,8 @@
         #panel-figure,
         #panel-table,
         #panel-screenshot,
-        #panel-chart {
+        #panel-chart,
+        #panel-photograph {
             --panel-color: #555258;
             --panel-tint: #fff;
             border-color: #555258;
@@ -1098,7 +1101,8 @@
         #panel-figure,
         #panel-table,
         #panel-screenshot,
-        #panel-chart {
+        #panel-chart,
+        #panel-photograph {
             border-top-right-radius: 0;
         }
 
@@ -1125,7 +1129,30 @@
             background: var(--smoke-light);
         }
 
+        .sample-photograph {
+            display: block;
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid var(--gray);
+        }
+
+        /* Keep the five folder labels readable at intermediate widths. */
+        @media (min-width:581px) and (max-width:760px) {
+            .visual-tabs button {
+                font-size: .82rem;
+                gap: 5px;
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+        }
+
         @media(max-width:580px) {
+            .visual-tabs {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
             .visual-tabs button {
                 gap: 6px;
             }
@@ -1166,9 +1193,9 @@
                 </aside>
                 <!-- example with tabs -->
                 <div class="example-switcher">
-                    <h2>Explore Four Examples</h2>
+                    <h2>Explore Five Examples</h2>
                     <p>Choose a visual to see how the same four moves work in context.</p>
-                    <div aria-label="Choose a visual evidence example" class="visual-tabs" role="tablist"><button aria-controls="panel-figure" aria-selected="true" id="tab-figure" role="tab" tabindex="0" type="button"><i class="fa-regular fa-file-image" aria-hidden="true"></i><span>Figure</span></button><button aria-controls="panel-table" aria-selected="false" id="tab-table" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-table-cells" aria-hidden="true"></i><span>Table</span></button><button aria-controls="panel-screenshot" aria-selected="false" id="tab-screenshot" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i><span>Screenshot</span></button><button aria-controls="panel-chart" aria-selected="false" id="tab-chart" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><span>Chart</span></button></div>
+                    <div aria-label="Choose a visual evidence example" class="visual-tabs" role="tablist"><button aria-controls="panel-figure" aria-selected="true" id="tab-figure" role="tab" tabindex="0" type="button"><i class="fa-regular fa-file-image" aria-hidden="true"></i><span>Figure</span></button><button aria-controls="panel-table" aria-selected="false" id="tab-table" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-table-cells" aria-hidden="true"></i><span>Table</span></button><button aria-controls="panel-screenshot" aria-selected="false" id="tab-screenshot" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i><span>Screenshot</span></button><button aria-controls="panel-chart" aria-selected="false" id="tab-chart" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><span>Chart</span></button><button aria-controls="panel-photograph" aria-selected="false" id="tab-photograph" role="tab" tabindex="-1" type="button"><i class="fa-solid fa-camera" aria-hidden="true"></i><span>Photograph</span></button></div>
                 </div>
 
                 <!-- figure example -->
@@ -1482,11 +1509,75 @@
                     </div>
                 </section>
 
+                <!-- photograph example -->
+                <section aria-labelledby="tab-photograph" class="table-example visual-panel" id="panel-photograph" role="tabpanel" tabindex="0">
+                    <div class="table-header">
+                        <h2>A Photograph, Four Connected Moves</h2>
+                        <p>Use a photograph to document a setting and support an observation about it.</p>
+                    </div>
+                    <div class="table-content">
+                        <p class="annotation-note"><strong>Read the sample as a finished document.</strong> Colored borders and explanations are teaching aids, not part of the document.</p>
+                        <div aria-label="Photograph example aligned row by row with explanations" class="annotated table-annotated">
+                            <p class="column-label">Sample Document</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="example-row">
+                                <div class="example-cell first">
+                                    <p class="highlight">The proposed shared workspace uses an open-plan arrangement. Figure 4 provides a view of the kind of setting being considered.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Identify the setting or feature the photograph shows and explain why readers need to see it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <figure class="figure">
+                                        <div class="figure-image">
+                                            <img class="sample-photograph" src="https://tracigardner.github.io/TechComm/-images/SunlitModernCoworkingOffice.png" alt="Wide view of a contemporary open-plan office workspace" loading="lazy" />
+                                        </div>
+                                        <figcaption class="figure-caption-highlight"><strong>Figure 4.</strong> Example of an open-plan office workspace.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item label-key">
+                                        <h3><span class="num">2.</span> Label</h3>
+                                        <p>Number the photograph as a figure, write a descriptive caption, and identify its source when needed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight maroon">The photograph illustrates how an open-plan layout places multiple work areas within a shared room, rather than in separate offices.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Describe the visible detail that matters. Distinguish what the photograph shows from what you can only infer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">Figure 4 offers a useful reference for discussing workspace layout, but the team should assess noise, privacy, and accessibility at the actual site before recommending this arrangement.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Use the photograph to advance a point while acknowledging what an image alone cannot establish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
 
 
             <!-- updated -->
-            <p class="updated"><time datetime="2026-10-16">Last Updated October 16, 2026</time></p>
+            <p class="updated"><time datetime="2026-10-17">Last Updated October 17, 2026</time></p>
         </div>
         <!-- credit -->
         <p class="credit">© 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
