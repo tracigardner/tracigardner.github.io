@@ -22,6 +22,10 @@
             --teal-dark: #385d65;
             --teal-light: #edf3f4;
 
+            --turq: #2cd5c4;
+            --turq-dark: #002a4f;
+            --turq-light: #e9fbf9;
+
             --smoke: #e5e1e6;
             --smoke-light: #f7f6f7;
             --smoke-dark: #737173;
@@ -134,22 +138,25 @@
 
         .process-step {
             padding: 15px 10px;
-            background: var(--smoke-light);
-            border-top: 6px solid var(--teal-dark);
+            background: var(--teal-light);
+            border-left: 6px solid var(--teal-dark);
             border-radius: 9px;
             text-align: center
         }
 
         .process-step:nth-child(2) {
-            border-color: var(--orange)
+            border-color: var(--orange);
+            background: var(--orange-light);
         }
 
         .process-step:nth-child(3) {
-            border-color: var(--maroon)
+            border-color: var(--maroon);
+            background: var(--maroon-light);
         }
 
         .process-step:nth-child(4) {
-            border-color: var(--teal)
+            border-color: var(--turq);
+            background: var(--turq-light);
         }
 
         .process-step b {
@@ -783,10 +790,25 @@
             background: var(--panel-tint);
         }
 
-        #panel-figure { --panel-color: var(--teal-dark); --panel-tint: var(--teal-light); }
-        #panel-table { --panel-color: var(--maroon); --panel-tint: var(--maroon-light); }
-        #panel-screenshot { --panel-color: var(--orange); --panel-tint: var(--orange-light); }
-        #panel-chart { --panel-color: #555258; --panel-tint: var(--smoke-light); }
+        #panel-figure {
+            --panel-color: var(--teal-dark);
+            --panel-tint: var(--teal-light);
+        }
+
+        #panel-table {
+            --panel-color: var(--maroon);
+            --panel-tint: var(--maroon-light);
+        }
+
+        #panel-screenshot {
+            --panel-color: var(--orange);
+            --panel-tint: var(--orange-light);
+        }
+
+        #panel-chart {
+            --panel-color: #555258;
+            --panel-tint: var(--smoke-light);
+        }
 
         .visual-panel .example-header,
         .visual-panel .table-header {
@@ -944,48 +966,63 @@
             }
 
             /* Connected folder tabs and matching open-folder surfaces. */
-        .visual-tabs {
-            margin-bottom: 0;
-        }
+            .visual-tabs {
+                margin-bottom: 0;
+            }
 
-        .visual-tabs button[aria-selected="true"] {
-            margin-bottom: -2px;
-            padding-bottom: 14px;
-        }
+            .visual-tabs button[aria-selected="true"] {
+                margin-bottom: -2px;
+                padding-bottom: 14px;
+            }
 
-        .visual-panel {
-            --panel-color: var(--teal-dark);
-            --panel-tint: var(--teal-light);
-            margin-top: 0;
-            border: 2px solid var(--panel-color);
-            border-top: 5px solid var(--panel-color);
-            border-radius: 0 12px 12px 12px;
-            background: var(--panel-tint);
-        }
+            .visual-panel {
+                --panel-color: var(--teal-dark);
+                --panel-tint: var(--teal-light);
+                margin-top: 0;
+                border: 2px solid var(--panel-color);
+                border-top: 5px solid var(--panel-color);
+                border-radius: 0 12px 12px 12px;
+                background: var(--panel-tint);
+            }
 
-        #panel-figure { --panel-color: var(--teal-dark); --panel-tint: var(--teal-light); }
-        #panel-table { --panel-color: var(--maroon); --panel-tint: var(--maroon-light); }
-        #panel-screenshot { --panel-color: var(--orange); --panel-tint: var(--orange-light); }
-        #panel-chart { --panel-color: #555258; --panel-tint: var(--smoke-light); }
+            #panel-figure {
+                --panel-color: var(--teal-dark);
+                --panel-tint: var(--teal-light);
+            }
 
-        .visual-panel .example-header,
-        .visual-panel .table-header {
-            background: var(--panel-color);
-            color: white;
-        }
+            #panel-table {
+                --panel-color: var(--maroon);
+                --panel-tint: var(--maroon-light);
+            }
 
-        .visual-panel .example-body,
-        .visual-panel .table-content,
-        .visual-panel .explanation-cell {
-            background: var(--panel-tint);
-        }
+            #panel-screenshot {
+                --panel-color: var(--orange);
+                --panel-tint: var(--orange-light);
+            }
 
-        /* Retain the four instructional move colors within each example. */
-        .visual-panel .annotation-note {
-            background: white;
-        }
+            #panel-chart {
+                --panel-color: #555258;
+                --panel-tint: var(--smoke-light);
+            }
 
-        .visual-panel[hidden] {
+            .visual-panel .example-header,
+            .visual-panel .table-header {
+                background: var(--panel-color);
+                color: white;
+            }
+
+            .visual-panel .example-body,
+            .visual-panel .table-content,
+            .visual-panel .explanation-cell {
+                background: var(--panel-tint);
+            }
+
+            /* Retain the four instructional move colors within each example. */
+            .visual-panel .annotation-note {
+                background: white;
+            }
+
+            .visual-panel[hidden] {
                 display: block !important
             }
 
@@ -1002,7 +1039,7 @@
                 display: none
             }
         }
-    
+
         /* Neutral folder navigation: color is reserved for the four teaching moves. */
         .visual-tabs button,
         .visual-tabs button:nth-child(1),
@@ -1019,7 +1056,11 @@
             justify-content: center;
             gap: 9px;
         }
-        .visual-tabs button i { font-size: 1.05rem; }
+
+        .visual-tabs button i {
+            font-size: 1.05rem;
+        }
+
         .visual-tabs button[aria-selected="true"] {
             --folder-tint: #f7f6f7;
             background: var(--folder-tint);
@@ -1028,32 +1069,44 @@
             opacity: 1;
             box-shadow: 0 -3px 0 #555258;
         }
+
         .visual-tabs button:focus-visible {
             outline: 3px solid #555258;
             outline-offset: 3px;
         }
+
         .visual-panel,
-        #panel-figure, #panel-table, #panel-screenshot, #panel-chart {
+        #panel-figure,
+        #panel-table,
+        #panel-screenshot,
+        #panel-chart {
             --panel-color: #555258;
             --panel-tint: #fff;
             border-color: #555258;
             border-top: 5px solid #555258;
             background: var(--panel-tint);
         }
+
         .visual-panel .example-header,
         .visual-panel .table-header {
             background: #555258;
             color: white;
         }
+
         /* Square upper-right corner closes the gap beside the folder tabs. */
         .visual-panel,
-        #panel-figure, #panel-table, #panel-screenshot, #panel-chart {
+        #panel-figure,
+        #panel-table,
+        #panel-screenshot,
+        #panel-chart {
             border-top-right-radius: 0;
         }
+
         .visual-panel .example-header,
         .visual-panel .table-header {
             border-top-right-radius: 0;
         }
+
         /* Reverse the active folder tab for a clear selected state. */
         .visual-tabs button[aria-selected="true"] {
             --folder-tint: #555258;
@@ -1061,14 +1114,22 @@
             color: #fff;
             border-color: #555258;
         }
+
         /* White document area; retain a subtle distinction for annotation cells. */
         .visual-panel .example-body,
-        .visual-panel .table-content { background: white; }
-        .visual-panel .explanation-cell { background: var(--smoke-light); }
-        @media(max-width:580px) {
-            .visual-tabs button { gap: 6px; }
+        .visual-panel .table-content {
+            background: white;
         }
 
+        .visual-panel .explanation-cell {
+            background: var(--smoke-light);
+        }
+
+        @media(max-width:580px) {
+            .visual-tabs button {
+                gap: 6px;
+            }
+        }
     </style>
 </head>
 
