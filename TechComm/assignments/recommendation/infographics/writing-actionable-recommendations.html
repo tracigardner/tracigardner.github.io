@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="An infographic showing how to write specific, evidence-based, feasible recommendations for a recommendation report.">
-<title>Writing Actionable Recommendations</title>
-<script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An infographic showing how to write specific, evidence-based, feasible recommendations for a recommendation report.">
+    <title>Writing Actionable Recommendations</title>
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
-<style>
-        :root {
-
-
-
-
-            --white: #ffffff;
-
-
-            --yellow-light: #fefdec;
-
+    <style>
+        body {
+            margin: 0;
+            background: #fff;
+            color: var(--text);
+            font: 17px/1.5 Arial, Helvetica, sans-serif
         }
-body {margin:0;background:#fff;color:var(--text);font:17px/1.5 Arial,Helvetica,sans-serif}
-.infographic {max-width:1150px;margin:auto}
+
+        .infographic {
+            max-width: 1150px;
+            margin: auto
+        }
+
         .bkgd-page {
             background: var(--smoke) url("https://tracigardner.github.io/TechComm/-images/backgrounds/Geometric-Corner-Pattern.png") repeat;
             padding: 39px;
@@ -29,58 +29,504 @@ body {margin:0;background:#fff;color:var(--text);font:17px/1.5 Arial,Helvetica,s
             height: 100%;
             background-color: var(--teal);
         }
-.title-row {display:flex;align-items:center;gap:22px;background:var(--smoke-light);margin:-28px -28px 24px;padding:28px;border-bottom:2px solid var(--smoke);border-radius:9px 9px 0 0}
-.title-icon {flex:none;width:85px;height:85px;display:grid;place-items:center;background:var(--maroon);color:#fff;border-radius:14px;font-size:2.5rem;box-shadow:6px 6px 0 var(--gray)}
-h1 {margin:0;color:var(--maroon);font-size:clamp(2rem,4.3vw,3.2rem);line-height:1.1}
-h2 {font-size:1.6rem;line-height:1.2;color:var(--maroon);margin:0 0 13px}
-h3 {font-size:1.18rem;line-height:1.25;margin:0 0 7px}
-p {margin:0 0 12px}.intro {font-size:1.1rem;margin-bottom:22px}
-.definition {display:flex;gap:17px;align-items:flex-start;background:var(--maroon-light);border-left:7px solid var(--maroon);padding:19px 22px;border-radius:10px;margin-bottom:27px}
-.definition i {color:var(--maroon);font-size:2rem;margin-top:5px}.definition h2 {font-size:1.35rem;margin-bottom:5px}.definition p {margin:0}
-.section-heading {display:flex;gap:11px;align-items:center;margin-bottom:15px}.section-heading i {color:var(--teal-dark)}
-.steps {display:grid;gap:12px;margin-bottom:29px}
-.step {display:grid;grid-template-columns:240px 1fr;border:2px solid var(--gray);border-radius:12px;overflow:hidden;break-inside:avoid}
-.step-label {display:flex;align-items:center;gap:12px;padding:17px;background:var(--tint)}
-.step-number {flex:none;width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:white;font-size:1.4rem;font-weight:800}
-.step-label h3 {color:var(--accent);margin:0}.step-detail {padding:15px 21px}.step-detail ul {margin:0;padding-left:21px}.step-detail li+li {margin-top:5px}
-.step:nth-child(1){--accent:var(--maroon);--tint:var(--maroon-light)}
-.step:nth-child(2){--accent:var(--teal-dark);--tint:var(--teal-light)}
-.step:nth-child(3){--accent:var(--orange);--tint:var(--orange-light)}
-.step:nth-child(4){--accent:var(--blue);--tint:var(--blue-light)}
-.step:nth-child(5){--accent:var(--purple);--tint:var(--smoke-light)}
-.worked {background:var(--blue-light);border:2px solid var(--blue);border-radius:12px;padding:22px;margin-bottom:24px}
-.worked h2 {color:var(--blue-dark)}.worked>p {margin-bottom:17px}
-.example-flow {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.example-stage {position:relative;background:white;border:2px solid var(--gray);border-top:7px solid var(--accent);border-radius:10px;padding:16px;min-width:0}
-.example-stage:nth-child(1){--accent:var(--teal-dark)}.example-stage:nth-child(2){--accent:var(--orange)}.example-stage:nth-child(3){--accent:var(--maroon)}
-.example-stage h3 {color:var(--accent)}.example-stage p {margin:0}
-.example-stage:not(:last-child)::after {content:'\f061';font-family:'Font Awesome 6 Free';font-weight:900;position:absolute;right:-20px;top:46%;z-index:2;color:var(--blue);background:var(--blue-light);padding:3px}
-.revision {margin-top:17px;background:white;border-radius:9px;padding:16px 18px;border-left:6px solid var(--orange)}.revision h3 {color:var(--orange)}.revision p:last-child {margin:0}
-.check {border:2px solid var(--teal-dark);border-radius:12px;padding:20px 22px;background:var(--teal-light)}.check h2 {color:var(--teal-dark)}
-.check-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 22px}.check-item {display:flex;gap:10px;align-items:flex-start}.check-item i {color:var(--teal-dark);margin-top:5px}.check-item p {margin:0}
-.updated {margin:0;padding:9px 13px;background:var(--maroon);color:#fff;text-align:right;font-size:.85rem;font-weight:bold}.credit {margin:10px 0 0;font-size:.78rem}
-@media(max-width:750px){.step{grid-template-columns:1fr}.step-label{padding:12px 15px}.example-flow{grid-template-columns:1fr}.example-stage:not(:last-child)::after{content:'\f063';right:50%;top:auto;bottom:-23px}.example-flow{gap:20px}}
-@media(max-width:560px){.bkgd-page{padding:12px}.pagewidth{padding:16px}.title-row{margin:-16px -16px 18px;padding:20px 16px;gap:13px}.title-icon{width:55px;height:55px;font-size:1.7rem}.definition{padding:14px}.check-grid{grid-template-columns:1fr}}
-@media print{.bkgd-page{padding:0;background:none}.step,.worked,.check{break-inside:avoid}body{font-size:12pt}}
-</style>
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            background: var(--smoke-light);
+            margin: -28px -28px 24px;
+            padding: 28px;
+            border-bottom: 2px solid var(--smoke);
+            border-radius: 9px 9px 0 0
+        }
+
+        .title-icon {
+            flex: none;
+            width: 85px;
+            height: 85px;
+            display: grid;
+            place-items: center;
+            background: var(--maroon);
+            color: #fff;
+            border-radius: 14px;
+            font-size: 2.5rem;
+            box-shadow: 6px 6px 0 var(--gray)
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2rem, 4.3vw, 3.2rem);
+            line-height: 1.1
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            line-height: 1.2;
+            color: var(--maroon);
+            margin: 0 0 13px
+        }
+
+        h3 {
+            font-size: 1.18rem;
+            line-height: 1.25;
+            margin: 0 0 7px
+        }
+
+        p {
+            margin: 0 0 12px
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 22px
+        }
+
+        .definition {
+            display: flex;
+            gap: 17px;
+            align-items: flex-start;
+            background: var(--maroon-light);
+            border-left: 7px solid var(--maroon);
+            padding: 19px 22px;
+            border-radius: 10px;
+            margin-bottom: 27px
+        }
+
+        .definition i {
+            color: var(--maroon);
+            font-size: 2rem;
+            margin-top: 5px
+        }
+
+        .definition h2 {
+            font-size: 1.35rem;
+            margin-bottom: 5px
+        }
+
+        .definition p {
+            margin: 0
+        }
+
+        .section-heading {
+            display: flex;
+            gap: 11px;
+            align-items: center;
+            margin-bottom: 15px
+        }
+
+        .section-heading i {
+            color: var(--teal-dark)
+        }
+
+        .steps {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 29px
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            border: 2px solid var(--gray);
+            border-radius: 12px;
+            overflow: hidden;
+            break-inside: avoid
+        }
+
+        .step-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 17px;
+            background: var(--tint)
+        }
+
+        .step-number {
+            flex: none;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--accent);
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 800
+        }
+
+        .step-label h3 {
+            color: var(--accent);
+            margin: 0
+        }
+
+        .step-detail {
+            padding: 15px 21px
+        }
+
+        .step-detail ul {
+            margin: 0;
+            padding-left: 21px
+        }
+
+        .step-detail li+li {
+            margin-top: 5px
+        }
+
+        .step:nth-child(1) {
+            --accent: var(--maroon);
+            --tint: var(--maroon-light)
+        }
+
+        .step:nth-child(2) {
+            --accent: var(--teal-dark);
+            --tint: var(--teal-light)
+        }
+
+        .step:nth-child(3) {
+            --accent: var(--orange);
+            --tint: var(--orange-light)
+        }
+
+        .step:nth-child(4) {
+            --accent: var(--blue);
+            --tint: var(--blue-light)
+        }
+
+        .step:nth-child(5) {
+            --accent: var(--purple);
+            --tint: var(--smoke-light)
+        }
+
+        .worked {
+            background: var(--blue-light);
+            border: 2px solid var(--blue);
+            border-radius: 12px;
+            padding: 22px;
+            margin-bottom: 24px
+        }
+
+        .worked h2 {
+            color: var(--blue-dark)
+        }
+
+        .worked>p {
+            margin-bottom: 17px
+        }
+
+        .example-flow {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px
+        }
+
+        .example-stage {
+            position: relative;
+            background: white;
+            border: 2px solid var(--gray);
+            border-top: 7px solid var(--accent);
+            border-radius: 10px;
+            padding: 16px;
+            min-width: 0
+        }
+
+        .example-stage:nth-child(1) {
+            --accent: var(--teal-dark)
+        }
+
+        .example-stage:nth-child(2) {
+            --accent: var(--orange)
+        }
+
+        .example-stage:nth-child(3) {
+            --accent: var(--maroon)
+        }
+
+        .example-stage h3 {
+            color: var(--accent)
+        }
+
+        .example-stage p {
+            margin: 0
+        }
+
+        .example-stage:not(:last-child)::after {
+            content: '\f061';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: -20px;
+            top: 46%;
+            z-index: 2;
+            color: var(--blue);
+            background: var(--blue-light);
+            padding: 3px
+        }
+
+        .revision {
+            margin-top: 17px;
+            background: white;
+            border-radius: 9px;
+            padding: 16px 18px;
+            border-left: 6px solid var(--orange)
+        }
+
+        .revision h3 {
+            color: var(--orange)
+        }
+
+        .revision p:last-child {
+            margin: 0
+        }
+
+        .check {
+            border: 2px solid var(--teal-dark);
+            border-radius: 12px;
+            padding: 20px 22px;
+            background: var(--teal-light)
+        }
+
+        .check h2 {
+            color: var(--teal-dark)
+        }
+
+        .check-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px 22px
+        }
+
+        .check-item {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start
+        }
+
+        .check-item i {
+            color: var(--teal-dark);
+            margin-top: 5px
+        }
+
+        .check-item p {
+            margin: 0
+        }
+
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: #fff;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem
+        }
+
+        @media(max-width:750px) {
+            .step {
+                grid-template-columns: 1fr
+            }
+
+            .step-label {
+                padding: 12px 15px
+            }
+
+            .example-flow {
+                grid-template-columns: 1fr
+            }
+
+            .example-stage:not(:last-child)::after {
+                content: '\f063';
+                right: 50%;
+                top: auto;
+                bottom: -23px
+            }
+
+            .example-flow {
+                gap: 20px
+            }
+        }
+
+        @media(max-width:560px) {
+            .bkgd-page {
+                padding: 12px
+            }
+
+            .pagewidth {
+                padding: 16px
+            }
+
+            .title-row {
+                margin: -16px -16px 18px;
+                padding: 20px 16px;
+                gap: 13px
+            }
+
+            .title-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 1.7rem
+            }
+
+            .definition {
+                padding: 14px
+            }
+
+            .check-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media print {
+            .bkgd-page {
+                padding: 0;
+                background: none
+            }
+
+            .step,
+            .worked,
+            .check {
+                break-inside: avoid
+            }
+
+            body {
+                font-size: 12pt
+            }
+        }
+    </style>
 </head>
+
 <body>
-<main class="infographic">
-<div class="bkgd-page"><div class="pagewidth">
-<header class="title-row"><div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-circle-check"></i></div><h1>Writing Actionable Recommendations</h1></header>
-<p class="intro">Turn your findings into clear, specific, and feasible recommendations that explain <strong>what should change and why</strong>.</p>
-<section class="definition" aria-labelledby="definition-heading"><i class="fa-solid fa-bullseye" aria-hidden="true"></i><div><h2 id="definition-heading">What makes a recommendation actionable?</h2><p>It identifies a change the client can make, connects that change to a documented problem, and explains the expected benefit. A strong recommendation also considers the client's resources, priorities, and constraints.</p></div></section>
-<section aria-labelledby="steps-heading"><h2 id="steps-heading" class="section-heading"><i class="fa-solid fa-list-ol" aria-hidden="true"></i>Five Steps for Writing Actionable Recommendations</h2><div class="steps">
-<article class="step"><div class="step-label"><span class="step-number">1</span><h3>Start with your findings</h3></div><div class="step-detail"><ul><li>Identify the most important communication problems your investigation revealed.</li><li>Use specific observations, research, and evaluation criteria as evidence.</li><li>Prioritize problems that affect readers' ability to use the document.</li></ul></div></article>
-<article class="step"><div class="step-label"><span class="step-number">2</span><h3>Consider the client and users</h3></div><div class="step-detail"><ul><li>Identify who will make the change and who will benefit from it.</li><li>Consider the document's purpose, the users' tasks, and the client's priorities.</li><li>Keep the recommendation within the scope of improving communication, rather than changing technical content outside your expertise.</li></ul></div></article>
-<article class="step"><div class="step-label"><span class="step-number">3</span><h3>Specify the change</h3></div><div class="step-detail"><ul><li>Use a concrete action verb: <strong>reorganize, label, shorten, add, replace,</strong> or <strong>revise</strong>.</li><li>Name the affected section, feature, or element and explain how to change it.</li><li>Give enough detail for the client to understand the next step without inventing unsupported requirements.</li></ul></div></article>
-<article class="step"><div class="step-label"><span class="step-number">4</span><h3>Explain why it matters</h3></div><div class="step-detail"><ul><li>Connect the proposed change to the finding and its implications.</li><li>Explain how it could improve usability, accessibility, readability, or another relevant criterion.</li><li>Support the reasoning with research or professional guidelines where appropriate.</li></ul></div></article>
-<article class="step"><div class="step-label"><span class="step-number">5</span><h3>Check feasibility</h3></div><div class="step-detail"><ul><li>Consider time, staff effort, tools, and other practical constraints.</li><li>Suggest priorities or a phased approach when a change would be substantial.</li><li>Acknowledge trade-offs or uncertainties rather than promising results you cannot establish.</li></ul></div></article>
-</div></section>
-<section class="worked" aria-labelledby="worked-heading"><h2 id="worked-heading">From Finding to Actionable Recommendation</h2><p>Trace the reasoning from evidence to a change the client can make.</p><div class="example-flow"><div class="example-stage"><h3>1. Finding · What did you find?</h3><p>Important procedures are buried in long sections with vague headings.</p></div><div class="example-stage"><h3>2. Conclusion · Why does it matter?</h3><p>The document's organization makes procedures difficult for employees to locate quickly.</p></div><div class="example-stage"><h3>3. Recommendation · What should change?</h3><p>Reorganize procedures by employee task and replace vague headings with descriptive, task-focused headings so readers can find the instructions they need.</p></div></div><div class="revision"><h3>Make the action more useful</h3><p><strong>Vague:</strong> “Improve the organization of the guide.”</p><p><strong>Actionable:</strong> “Group procedures by the tasks employees perform, such as reporting an incident or requesting equipment, and give each group a descriptive heading. This organization will help employees locate the appropriate instructions without scanning unrelated material.”</p></div></section>
-<section class="check" aria-labelledby="check-heading"><h2 id="check-heading"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Before You Finalize a Recommendation</h2><div class="check-grid"><div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i><p><strong>Specific:</strong> Does it identify exactly what should change?</p></div><div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i><p><strong>Evidence-based:</strong> Can you trace it to a finding or evaluation criterion?</p></div><div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i><p><strong>Reader-centered:</strong> Does it explain the benefit for document users?</p></div><div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i><p><strong>Feasible:</strong> Can the client realistically act on it?</p></div></div></section>
-</div><p class="updated"><time datetime="2026-10-17">Last Updated October 17, 2026</time></p></div>
-<p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
-</main>
-<script>(function(){const parentOrigin="https://www.tengrrl.com";function sendHeight(){if(window.parent===window)return;window.parent.postMessage({type:"tsc-visual-resize",height:document.documentElement.scrollHeight},parentOrigin)}window.addEventListener("load",sendHeight);if(typeof ResizeObserver!=="undefined")new ResizeObserver(sendHeight).observe(document.documentElement)})();</script>
-</body></html>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="pagewidth">
+                <header class="title-row">
+                    <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-circle-check"></i></div>
+                    <h1>Writing Actionable Recommendations</h1>
+                </header>
+                <p class="intro">Turn your findings into clear, specific, and feasible recommendations that explain <strong>what should change and why</strong>.</p>
+                <section class="definition" aria-labelledby="definition-heading"><i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                    <div>
+                        <h2 id="definition-heading">What makes a recommendation actionable?</h2>
+                        <p>It identifies a change the client can make, connects that change to a documented problem, and explains the expected benefit. A strong recommendation also considers the client's resources, priorities, and constraints.</p>
+                    </div>
+                </section>
+                <section aria-labelledby="steps-heading">
+                    <h2 id="steps-heading" class="section-heading"><i class="fa-solid fa-list-ol" aria-hidden="true"></i>Five Steps for Writing Actionable Recommendations</h2>
+                    <div class="steps">
+                        <article class="step">
+                            <div class="step-label"><span class="step-number">1</span>
+                                <h3>Start with your findings</h3>
+                            </div>
+                            <div class="step-detail">
+                                <ul>
+                                    <li>Identify the most important communication problems your investigation revealed.</li>
+                                    <li>Use specific observations, research, and evaluation criteria as evidence.</li>
+                                    <li>Prioritize problems that affect readers' ability to use the document.</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="step">
+                            <div class="step-label"><span class="step-number">2</span>
+                                <h3>Consider the client and users</h3>
+                            </div>
+                            <div class="step-detail">
+                                <ul>
+                                    <li>Identify who will make the change and who will benefit from it.</li>
+                                    <li>Consider the document's purpose, the users' tasks, and the client's priorities.</li>
+                                    <li>Keep the recommendation within the scope of improving communication, rather than changing technical content outside your expertise.</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="step">
+                            <div class="step-label"><span class="step-number">3</span>
+                                <h3>Specify the change</h3>
+                            </div>
+                            <div class="step-detail">
+                                <ul>
+                                    <li>Use a concrete action verb: <strong>reorganize, label, shorten, add, replace,</strong> or <strong>revise</strong>.</li>
+                                    <li>Name the affected section, feature, or element and explain how to change it.</li>
+                                    <li>Give enough detail for the client to understand the next step without inventing unsupported requirements.</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="step">
+                            <div class="step-label"><span class="step-number">4</span>
+                                <h3>Explain why it matters</h3>
+                            </div>
+                            <div class="step-detail">
+                                <ul>
+                                    <li>Connect the proposed change to the finding and its implications.</li>
+                                    <li>Explain how it could improve usability, accessibility, readability, or another relevant criterion.</li>
+                                    <li>Support the reasoning with research or professional guidelines where appropriate.</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="step">
+                            <div class="step-label"><span class="step-number">5</span>
+                                <h3>Check feasibility</h3>
+                            </div>
+                            <div class="step-detail">
+                                <ul>
+                                    <li>Consider time, staff effort, tools, and other practical constraints.</li>
+                                    <li>Suggest priorities or a phased approach when a change would be substantial.</li>
+                                    <li>Acknowledge trade-offs or uncertainties rather than promising results you cannot establish.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="worked" aria-labelledby="worked-heading">
+                    <h2 id="worked-heading">From Finding to Actionable Recommendation</h2>
+                    <p>Trace the reasoning from evidence to a change the client can make.</p>
+                    <div class="example-flow">
+                        <div class="example-stage">
+                            <h3>1. Finding · What did you find?</h3>
+                            <p>Important procedures are buried in long sections with vague headings.</p>
+                        </div>
+                        <div class="example-stage">
+                            <h3>2. Conclusion · Why does it matter?</h3>
+                            <p>The document's organization makes procedures difficult for employees to locate quickly.</p>
+                        </div>
+                        <div class="example-stage">
+                            <h3>3. Recommendation · What should change?</h3>
+                            <p>Reorganize procedures by employee task and replace vague headings with descriptive, task-focused headings so readers can find the instructions they need.</p>
+                        </div>
+                    </div>
+                    <div class="revision">
+                        <h3>Make the action more useful</h3>
+                        <p><strong>Vague:</strong> “Improve the organization of the guide.”</p>
+                        <p><strong>Actionable:</strong> “Group procedures by the tasks employees perform, such as reporting an incident or requesting equipment, and give each group a descriptive heading. This organization will help employees locate the appropriate instructions without scanning unrelated material.”</p>
+                    </div>
+                </section>
+                <section class="check" aria-labelledby="check-heading">
+                    <h2 id="check-heading"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Before You Finalize a Recommendation</h2>
+                    <div class="check-grid">
+                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
+                            <p><strong>Specific:</strong> Does it identify exactly what should change?</p>
+                        </div>
+                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
+                            <p><strong>Evidence-based:</strong> Can you trace it to a finding or evaluation criterion?</p>
+                        </div>
+                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
+                            <p><strong>Reader-centered:</strong> Does it explain the benefit for document users?</p>
+                        </div>
+                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
+                            <p><strong>Feasible:</strong> Can the client realistically act on it?</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <p class="updated"><time datetime="2026-10-17">Last Updated October 17, 2026</time></p>
+        </div>
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+</body>
+
+</html>

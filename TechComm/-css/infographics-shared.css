@@ -6,8 +6,10 @@
   --blue-light: #e5ebf1;
 
   --gray: #d7d2cb;
+  --gray-light: #f7f6f5;
 
   --green: #287a3d;
+  --green-dark: #205f30;
   --green-light: #eaf5e9;
 
   --maroon: #861f41;
@@ -24,16 +26,24 @@
 
   --smoke: #e5e1e6;
   --smoke-dark: #737173;
+  --smoke-darker: #171617;
   --smoke-light: #f7f6f7;
 
   --teal: #508590;
   --teal-dark: #385d65;
   --teal-light: #edf3f4;
 
+  --turq: #2cd5c4;
+  --turq-dark: #002a4f;
+  --turq-light: #e9fbf9;
+
   --text: #1f1f1f;
+  --white: #ffffff;
+  --black: #000000;
 
   --yellow: #f7ea48;
   --yellow-dark: #635e1d;
+  --yellow-light: #fefdec;
 }
 
 /* Repeated rules with matching declarations across infographic files */
