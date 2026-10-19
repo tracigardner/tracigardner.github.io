@@ -1314,11 +1314,14 @@
                     <div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
                 </div>
                 <p>The four steps may occur within a single sentence or across several sentences.</p>
+
                 <div class="example-switcher">
                     <h2>Explore Five Examples</h2>
                     <p>Choose an integration technique to see the four steps in context. The sample report passages appear on the left; the explanations appear on the right. Colored borders identify steps and <em>are not part of the finished report.</em></p>
                     <div aria-label="Choose a source integration example" class="visual-tabs source-tabs" role="tablist"><button aria-controls="panel-summary" aria-selected="true" id="tab-summary" role="tab" tabindex="0" type="button"><i aria-hidden="true" class="fa-solid fa-align-left"></i><span>Summary</span></button><button aria-controls="panel-paraphrase" aria-selected="false" id="tab-paraphrase" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-pen-to-square"></i><span>Paraphrase</span></button><button aria-controls="panel-quotation" aria-selected="false" id="tab-quotation" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-quote-left"></i><span>Quotation</span></button><button aria-controls="panel-synthesis" aria-selected="false" id="tab-synthesis" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-layer-group"></i><span>Synthesis</span></button><button aria-controls="panel-comparison" aria-selected="false" id="tab-comparison" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-scale-balanced"></i><span>Comparison</span></button></div>
                 </div>
+
+                <!-- summary -->
                 <section aria-labelledby="tab-summary" class="example visual-panel source-panel" id="panel-summary" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Summary in a Sample Document</h2>
@@ -1379,6 +1382,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- paraphrase -->
                 <section aria-labelledby="tab-paraphrase" class="example visual-panel source-panel" id="panel-paraphrase" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Paraphrase in a Sample Document</h2>
@@ -1439,6 +1444,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- quotation -->
                 <section aria-labelledby="tab-quotation" class="example visual-panel source-panel" id="panel-quotation" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Quotation in a Sample Document</h2>
@@ -1499,6 +1506,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- synthesis -->
                 <section aria-labelledby="tab-synthesis" class="example visual-panel source-panel" id="panel-synthesis" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Synthesis in a Sample Document</h2>
@@ -1527,7 +1536,11 @@
                             </div>
                             <div class="example-row">
                                 <div class="example-cell">
-                                    <p class="highlight integrate">The usability review identified inconsistent labels on 8 of 12 pages [1, p. 3]; student interviews described uncertainty about link destinations [3, pp. 2–3]; and the support log recorded repeated requests for application directions [4, p. 5].</p>
+                                    <ul class="highlight integrate">
+                                        <li style="margin-left: 24px;">The usability review identified inconsistent labels on 8 of 12 pages [1, p. 3].</li>
+                                        <li style="margin-left: 24px;">Student interviews described uncertainty about link destinations [3, pp. 2&ndash;3].</li>
+                                        <li style="margin-left: 24px;">The support log recorded repeated requests for application directions [4, p. 5].</li>
+                                    </ul>
                                 </div>
                                 <div class="explanation-cell">
                                     <div class="key-item integrate-key">
@@ -1561,6 +1574,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- comparison -->
                 <section aria-labelledby="tab-comparison" class="example visual-panel source-panel" id="panel-comparison" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Comparison in a Sample Document</h2>
