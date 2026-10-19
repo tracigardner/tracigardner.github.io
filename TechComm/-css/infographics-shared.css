@@ -44,6 +44,15 @@
   --yellow: #f7ea48;
   --yellow-dark: #635e1d;
   --yellow-light: #fefdec;
+
+  /* Background pattern images */
+  --pattern-geometric-corner: url("https://tracigardner.github.io/TechComm/-images/backgrounds/Geometric-Corner-Pattern.png");
+  --pattern-teal-blueprint: url("https://tracigardner.github.io/TechComm/-images/backgrounds/Teal-Blueprint.png");
+  --pattern-roadmap: url("https://tracigardner.github.io/TechComm/-images/backgrounds/roadmap.png");
+  --pattern-visuals: url("https://tracigardner.github.io/TechComm/-images/backgrounds/visuals-pattern.png");
+
+  /* Typography */
+  --font-body: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Repeated rules with matching declarations across infographic files */
@@ -61,4 +70,9 @@
 .process-step:nth-child(3) {
   background: var(--maroon-light);
   border-color: var(--maroon);
+}
+
+/* Default font for all infographics */
+body {
+  font-family: var(--font-body);
 }
