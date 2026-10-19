@@ -2,18 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="An infographic showing how to write specific, evidence-based, feasible recommendations for a recommendation report.">
-    <title>Writing Actionable Recommendations</title>
-    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Visual formulas for writing actionable recommendations grounded in evidence.">
+    <title>The Recommendation Formula: From Evidence to Action</title>
     <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
     <style>
         body {
             margin: 0;
-            background: #fff;
+            background: var(--white);
             color: var(--text);
-            font-size: 17px; line-height: 1.5;}
+            font: 17px/1.5 var(--font-body)
+        }
 
         .infographic {
             max-width: 1150px;
@@ -25,8 +26,8 @@
             padding: 39px;
             background-size: 600px;
             width: 100%;
-            height: 100%;
-            background-color: var(--teal);
+            min-height: 100%;
+            background-color: var(--teal)
         }
 
         .title-row {
@@ -34,7 +35,7 @@
             align-items: center;
             gap: 22px;
             background: var(--smoke-light);
-            margin: -28px -28px 24px;
+            margin: -28px -28px 25px;
             padding: 28px;
             border-bottom: 2px solid var(--smoke);
             border-radius: 9px 9px 0 0
@@ -47,267 +48,256 @@
             display: grid;
             place-items: center;
             background: var(--maroon);
-            color: #fff;
+            color: white;
             border-radius: 14px;
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             box-shadow: 6px 6px 0 var(--gray)
         }
 
         h1 {
             margin: 0;
             color: var(--maroon);
-            font-size: clamp(2rem, 4.3vw, 3.2rem);
-            line-height: 1.1
+            font-size: clamp(2rem, 4.1vw, 3.1rem);
+            line-height: 1.12
         }
 
-        h2 {
-            font-size: 1.6rem;
-            line-height: 1.2;
-            color: var(--maroon);
-            margin: 0 0 13px
-        }
-
-        h3 {
-            font-size: 1.18rem;
-            line-height: 1.25;
-            margin: 0 0 7px
-        }
-
-        p {
-            margin: 0 0 12px
-        }
-
-        .intro {
+        .subtitle {
+            margin: 7px 0 0;
             font-size: 1.1rem;
-            margin-bottom: 22px
+            color: var(--teal-dark);
+            font-weight: 700
         }
 
-        .definition {
-            display: flex;
-            gap: 17px;
-            align-items: flex-start;
-            background: var(--maroon-light);
-            border-left: 7px solid var(--maroon);
-            padding: 19px 22px;
-            border-radius: 10px;
-            margin-bottom: 27px
+        .lead {
+            margin: 0 0 22px;
+            font-size: 1.05rem
         }
 
-        .definition i {
-            color: var(--maroon);
-            font-size: 2rem;
-            margin-top: 5px
-        }
-
-        .definition h2 {
-            font-size: 1.35rem;
-            margin-bottom: 5px
-        }
-
-        .definition p {
-            margin: 0
-        }
-
-        .section-heading {
-            display: flex;
-            gap: 11px;
-            align-items: center;
-            margin-bottom: 15px
-        }
-
-        .section-heading i {
-            color: var(--teal-dark)
-        }
-
-        .steps {
-            display: grid;
-            gap: 12px;
-            margin-bottom: 29px
-        }
-
-        .step {
-            display: grid;
-            grid-template-columns: 240px 1fr;
+        .formula-panel {
             border: 2px solid var(--gray);
-            border-radius: 12px;
+            border-radius: 13px;
+            margin: 0 0 19px;
             overflow: hidden;
+            background: white;
             break-inside: avoid
         }
 
-        .step-label {
+        .panel-head {
             display: flex;
             align-items: center;
-            gap: 12px;
-            padding: 17px;
-            background: var(--tint)
+            gap: 13px;
+            background: var(--smoke-light);
+            padding: 15px 19px;
+            border-bottom: 1px solid var(--gray)
         }
 
-        .step-number {
+        .panel-num {
+            background: var(--teal-dark);
+            color: white;
+            width: 42px;
+            height: 42px;
             flex: none;
-            width: 43px;
-            height: 43px;
-            border-radius: 50%;
+            border-radius: 10px;
             display: grid;
             place-items: center;
-            background: var(--accent);
-            color: white;
             font-size: 1.4rem;
             font-weight: 800
         }
 
-        .step-label h3 {
-            color: var(--accent);
-            margin: 0
-        }
-
-        .step-detail {
-            padding: 15px 21px
-        }
-
-        .step-detail ul {
+        .panel-head h2 {
             margin: 0;
-            padding-left: 21px
+            color: var(--maroon);
+            font-size: 1.42rem;
+            line-height: 1.2
         }
 
-        .step-detail li+li {
-            margin-top: 5px
+        .panel-head p {
+            margin: 2px 0 0;
+            font-size: .91rem
         }
 
-        .step:nth-child(1) {
-            --accent: var(--maroon);
-            --tint: var(--maroon-light)
+        .panel-body {
+            padding: 20px
         }
 
-        .step:nth-child(2) {
-            --accent: var(--teal-dark);
-            --tint: var(--teal-light)
+        .equation {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            gap: 9px;
+            flex-wrap: wrap
         }
 
-        .step:nth-child(3) {
-            --accent: var(--orange);
-            --tint: var(--orange-light)
-        }
-
-        .step:nth-child(4) {
-            --accent: var(--blue);
-            --tint: var(--blue-light)
-        }
-
-        .step:nth-child(5) {
-            --accent: var(--purple);
-            --tint: var(--smoke-light)
-        }
-
-        .worked {
-            background: var(--blue-light);
-            border: 2px solid var(--blue);
-            border-radius: 12px;
-            padding: 22px;
-            margin-bottom: 24px
-        }
-
-        .worked h2 {
-            color: var(--blue-dark)
-        }
-
-        .worked>p {
-            margin-bottom: 17px
-        }
-
-        .example-flow {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 12px
-        }
-
-        .example-stage {
-            position: relative;
-            background: white;
-            border: 2px solid var(--gray);
-            border-top: 7px solid var(--accent);
+        .term {
+            flex: 1 1 170px;
+            min-width: 0;
+            padding: 16px 10px;
             border-radius: 10px;
-            padding: 16px;
-            min-width: 0
+            text-align: center;
+            border: 2px solid var(--accent);
+            background: var(--pale)
         }
 
-        .example-stage:nth-child(1) {
-            --accent: var(--teal-dark)
+        .term strong {
+            display: block;
+            color: var(--accent);
+            font-size: 1.13rem;
+            line-height: 1.25
         }
 
-        .example-stage:nth-child(2) {
-            --accent: var(--orange)
+        .term small {
+            display: block;
+            margin-top: 6px;
+            font-size: .81rem;
+            color: var(--text)
         }
 
-        .example-stage:nth-child(3) {
-            --accent: var(--maroon)
+        .term.maroon {
+            --accent: var(--maroon);
+            --pale: var(--maroon-light)
         }
 
-        .example-stage h3 {
-            color: var(--accent)
+        .term.teal {
+            --accent: var(--teal-dark);
+            --pale: var(--teal-light)
         }
 
-        .example-stage p {
-            margin: 0
+        .term.orange {
+            --accent: var(--orange);
+            --pale: var(--orange-light)
         }
 
-        .example-stage:not(:last-child)::after {
-            content: '\f061';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            right: -20px;
-            top: 46%;
-            z-index: 2;
+        .term.blue {
+            --accent: var(--blue);
+            --pale: var(--blue-light)
+        }
+
+        .term.green {
+            --accent: var(--green-dark);
+            --pale: var(--green-light)
+        }
+
+        .operator {
+            display: grid;
+            place-items: center;
+            flex: 0 0 23px;
             color: var(--blue);
-            background: var(--blue-light);
-            padding: 3px
+            font-weight: 900;
+            font-size: 1.7rem
         }
 
-        .revision {
+        .example {
             margin-top: 17px;
-            background: white;
+            background: var(--smoke-light);
+            padding: 15px 17px;
+            border-left: 6px solid var(--teal-dark);
+            border-radius: 0 9px 9px 0
+        }
+
+        .example-label {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-weight: 800;
+            font-size: .75rem;
+            color: var(--teal-dark);
+            margin-bottom: 5px
+        }
+
+        .example p {
+            margin: 0;
+            font-size: 1.03rem
+        }
+
+        .example mark {
+            background: transparent;
+            font-weight: 700;
+            color: var(--maroon-dark)
+        }
+
+        .logic-example {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 26px minmax(0, 1fr) 26px minmax(0, 1fr);
+            gap: 8px;
+            align-items: stretch;
+            margin-top: 16px
+        }
+
+        .logic-cell {
+            background: var(--white);
+            border: 2px solid var(--gray);
             border-radius: 9px;
-            padding: 16px 18px;
-            border-left: 6px solid var(--orange)
+            padding: 12px;
+            min-width: 0;
+            font-size: .9rem
         }
 
-        .revision h3 {
-            color: var(--orange)
+        .logic-cell:nth-child(1) {
+            border-color: var(--blue)
         }
 
-        .revision p:last-child {
-            margin: 0
+        .logic-cell:nth-child(3) {
+            border-color: var(--orange)
         }
 
-        .check {
-            border: 2px solid var(--teal-dark);
-            border-radius: 12px;
-            padding: 20px 22px;
-            background: var(--teal-light)
+        .logic-cell:nth-child(5) {
+            border-color: var(--green)
         }
 
-        .check h2 {
+        .logic-cell strong {
+            display: block;
+            margin-bottom: 6px
+        }
+
+        .logic-arrow {
+            align-self: center;
+            text-align: center;
+            color: var(--blue);
+            font-size: 1.3rem
+        }
+
+        .extension {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 13px
+        }
+
+        .extension .term {
+            flex: 0 1 195px;
+            padding: 12px
+        }
+
+        .extension-label {
+            font-weight: 700;
             color: var(--teal-dark)
         }
 
-        .check-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 12px 22px
+        .mini-example {
+            margin: 15px 0 0;
+            padding: 13px 16px;
+            background: var(--blue-light);
+            border-radius: 9px;
+            font-size: .95rem
         }
 
-        .check-item {
-            display: flex;
-            gap: 10px;
-            align-items: flex-start
+        .bottom-line {
+            margin-top: 20px;
+            padding: 17px 20px;
+            border: 2px solid var(--blue);
+            border-radius: 12px;
+            background: var(--blue-light)
         }
 
-        .check-item i {
-            color: var(--teal-dark);
-            margin-top: 5px
+        .bottom-line h2 {
+            margin: 0 0 7px;
+            color: var(--blue-dark);
+            font-size: 1.35rem
         }
 
-        .check-item p {
+        .bottom-line p {
             margin: 0
         }
 
@@ -315,7 +305,7 @@
             margin: 0;
             padding: 9px 13px;
             background: var(--maroon);
-            color: #fff;
+            color: white;
             text-align: right;
             font-size: .85rem;
             font-weight: bold
@@ -326,28 +316,21 @@
             font-size: .78rem
         }
 
-        @media(max-width:750px) {
-            .step {
+        @media(max-width:760px) {
+            .logic-example {
                 grid-template-columns: 1fr
             }
 
-            .step-label {
-                padding: 12px 15px
+            .logic-arrow {
+                transform: rotate(90deg)
             }
 
-            .example-flow {
-                grid-template-columns: 1fr
+            .term {
+                flex-basis: 145px
             }
 
-            .example-stage:not(:last-child)::after {
-                content: '\f063';
-                right: 50%;
-                top: auto;
-                bottom: -23px
-            }
-
-            .example-flow {
-                gap: 20px
+            .operator {
+                flex-basis: 18px
             }
         }
 
@@ -362,34 +345,41 @@
 
             .title-row {
                 margin: -16px -16px 18px;
-                padding: 20px 16px;
+                padding: 18px 16px;
                 gap: 13px
             }
 
             .title-icon {
-                width: 55px;
-                height: 55px;
-                font-size: 1.7rem
+                width: 56px;
+                height: 56px;
+                font-size: 1.65rem
             }
 
-            .definition {
+            .equation {
+                flex-direction: column
+            }
+
+            .term {
+                flex: auto
+            }
+
+            .operator {
+                min-height: 24px
+            }
+
+            .panel-body {
                 padding: 14px
-            }
-
-            .check-grid {
-                grid-template-columns: 1fr
             }
         }
 
         @media print {
             .bkgd-page {
-                padding: 0;
-                background: none
+                background: none;
+                padding: 0
             }
 
-            .step,
-            .worked,
-            .check {
+            .formula-panel,
+            .bottom-line {
                 break-inside: avoid
             }
 
@@ -405,127 +395,81 @@
         <div class="bkgd-page">
             <div class="pagewidth">
                 <header class="title-row">
-                    <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-circle-check"></i></div>
-                    <h1>Writing Actionable Recommendations</h1>
-                </header>
-                <p class="intro">Turn your findings into clear, specific, and feasible recommendations that explain <strong>what should change and why</strong>.</p>
-                <section class="definition" aria-labelledby="definition-heading"><i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                    <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-square-root-variable"></i></div>
                     <div>
-                        <h2 id="definition-heading">What makes a recommendation actionable?</h2>
-                        <p>It identifies a change the client can make, connects that change to a documented problem, and explains the expected benefit. A strong recommendation also considers the client's resources, priorities, and constraints.</p>
+                        <h1>The Recommendation Formula</h1>
+                        <p class="subtitle">From Evidence to Action</p>
+                    </div>
+                </header>
+                <p class="lead">A strong recommendation tells your client <strong>what to change</strong>, <strong>why it matters</strong>, and—when helpful—<strong>how to put it into practice</strong>. Use these formulas as flexible building blocks, not rigid sentence templates.</p>
+                <section class="formula-panel" aria-labelledby="build">
+                    <div class="panel-head"><span class="panel-num">1</span>
+                        <div>
+                            <h2 id="build">Build It: Write the Recommendation</h2>
+                            <p>Start with a clear action and a reason.</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="equation" aria-label="Action verb plus what changes plus why it matters">
+                            <div class="term maroon"><strong>Action Verb</strong><small>Reorganize, add, replace, label…</small></div><span class="operator" aria-hidden="true">+</span>
+                            <div class="term teal"><strong>What Changes</strong><small>Name the part of the document.</small></div><span class="operator" aria-hidden="true">+</span>
+                            <div class="term orange"><strong>Why It Matters</strong><small>Identify the reader benefit.</small></div>
+                        </div>
+                        <div class="example"><span class="example-label">Put the pieces together</span>
+                            <p><mark>Reorganize</mark> the onboarding guide <mark>by employee task</mark> so new engineers can <mark>find procedures more quickly</mark>.</p>
+                        </div>
                     </div>
                 </section>
-                <section aria-labelledby="steps-heading">
-                    <h2 id="steps-heading" class="section-heading"><i class="fa-solid fa-list-ol" aria-hidden="true"></i>Five Steps for Writing Actionable Recommendations</h2>
-                    <div class="steps">
-                        <article class="step">
-                            <div class="step-label"><span class="step-number">1</span>
-                                <h3>Start with your findings</h3>
-                            </div>
-                            <div class="step-detail">
-                                <ul>
-                                    <li>Identify the most important communication problems your investigation revealed.</li>
-                                    <li>Use specific observations, research, and evaluation criteria as evidence.</li>
-                                    <li>Prioritize problems that affect readers' ability to use the document.</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article class="step">
-                            <div class="step-label"><span class="step-number">2</span>
-                                <h3>Consider the client and users</h3>
-                            </div>
-                            <div class="step-detail">
-                                <ul>
-                                    <li>Identify who will make the change and who will benefit from it.</li>
-                                    <li>Consider the document's purpose, the users' tasks, and the client's priorities.</li>
-                                    <li>Keep the recommendation within the scope of improving communication, rather than changing technical content outside your expertise.</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article class="step">
-                            <div class="step-label"><span class="step-number">3</span>
-                                <h3>Specify the change</h3>
-                            </div>
-                            <div class="step-detail">
-                                <ul>
-                                    <li>Use a concrete action verb: <strong>reorganize, label, shorten, add, replace,</strong> or <strong>revise</strong>.</li>
-                                    <li>Name the affected section, feature, or element and explain how to change it.</li>
-                                    <li>Give enough detail for the client to understand the next step without inventing unsupported requirements.</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article class="step">
-                            <div class="step-label"><span class="step-number">4</span>
-                                <h3>Explain why it matters</h3>
-                            </div>
-                            <div class="step-detail">
-                                <ul>
-                                    <li>Connect the proposed change to the finding and its implications.</li>
-                                    <li>Explain how it could improve usability, accessibility, readability, or another relevant criterion.</li>
-                                    <li>Support the reasoning with research or professional guidelines where appropriate.</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article class="step">
-                            <div class="step-label"><span class="step-number">5</span>
-                                <h3>Check feasibility</h3>
-                            </div>
-                            <div class="step-detail">
-                                <ul>
-                                    <li>Consider time, staff effort, tools, and other practical constraints.</li>
-                                    <li>Suggest priorities or a phased approach when a change would be substantial.</li>
-                                    <li>Acknowledge trade-offs or uncertainties rather than promising results you cannot establish.</li>
-                                </ul>
-                            </div>
-                        </article>
+                <section class="formula-panel" aria-labelledby="support">
+                    <div class="panel-head"><span class="panel-num">2</span>
+                        <div>
+                            <h2 id="support">Support It: Connect Evidence to Action</h2>
+                            <p>Use the logic of your report to justify the recommendation.</p>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="equation" aria-label="Finding leads to implication leads to recommendation">
+                            <div class="term blue"><strong>Finding</strong><small>What did you discover?</small></div><span class="operator" aria-hidden="true">→</span>
+                            <div class="term orange"><strong>Implication</strong><small>What does it mean for users?</small></div><span class="operator" aria-hidden="true">→</span>
+                            <div class="term green"><strong>Recommendation</strong><small>What should the client do?</small></div>
+                        </div>
+                        <div class="logic-example">
+                            <div class="logic-cell"><strong>Finding</strong>Food-safety instructions appear in long paragraphs.</div><span class="logic-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="logic-cell"><strong>Implication</strong>Shoppers may overlook important handling steps.</div><span class="logic-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                            <div class="logic-cell"><strong>Recommendation</strong>Convert the handling instructions into a numbered checklist so shoppers can follow the steps in order.</div>
+                        </div>
                     </div>
                 </section>
-                <section class="worked" aria-labelledby="worked-heading">
-                    <h2 id="worked-heading">From Finding to Actionable Recommendation</h2>
-                    <p>Trace the reasoning from evidence to a change the client can make.</p>
-                    <div class="example-flow">
-                        <div class="example-stage">
-                            <h3>1. Finding · What did you find?</h3>
-                            <p>Important procedures are buried in long sections with vague headings.</p>
-                        </div>
-                        <div class="example-stage">
-                            <h3>2. Conclusion · Why does it matter?</h3>
-                            <p>The document's organization makes procedures difficult for employees to locate quickly.</p>
-                        </div>
-                        <div class="example-stage">
-                            <h3>3. Recommendation · What should change?</h3>
-                            <p>Reorganize procedures by employee task and replace vague headings with descriptive, task-focused headings so readers can find the instructions they need.</p>
+                <section class="formula-panel" aria-labelledby="strengthen">
+                    <div class="panel-head"><span class="panel-num">3</span>
+                        <div>
+                            <h2 id="strengthen">Strengthen It: Add Implementation Details</h2>
+                            <p>Choose only the details your client needs to act.</p>
                         </div>
                     </div>
-                    <div class="revision">
-                        <h3>Make the action more useful</h3>
-                        <p><strong>Vague:</strong> “Improve the organization of the guide.”</p>
-                        <p><strong>Actionable:</strong> “Group procedures by the tasks employees perform, such as reporting an incident or requesting equipment, and give each group a descriptive heading. This organization will help employees locate the appropriate instructions without scanning unrelated material.”</p>
+                    <div class="panel-body">
+                        <div class="equation" aria-label="Core recommendation plus useful implementation details">
+                            <div class="term maroon"><strong>Core Recommendation</strong><small>Action + change + reason</small></div><span class="operator" aria-hidden="true">+</span>
+                            <div class="term teal"><strong>Useful Details</strong><small>How, where, when, or priority</small></div>
+                        </div>
+                        <div class="extension" aria-label="Optional implementation details"><span class="extension-label">Possible additions:</span>
+                            <div class="term blue"><strong>How?</strong><small>Method</small></div>
+                            <div class="term orange"><strong>Where?</strong><small>Document location</small></div>
+                            <div class="term green"><strong>When?</strong><small>Sequence or priority</small></div>
+                        </div>
+                        <p class="mini-example"><strong>Example:</strong> Add descriptive headings to the feasibility study’s financial assumptions section, grouping information by cost category. Prioritize this change before sharing the report with investors so they can locate key assumptions.</p>
                     </div>
                 </section>
-                <section class="check" aria-labelledby="check-heading">
-                    <h2 id="check-heading"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Before You Finalize a Recommendation</h2>
-                    <div class="check-grid">
-                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
-                            <p><strong>Specific:</strong> Does it identify exactly what should change?</p>
-                        </div>
-                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
-                            <p><strong>Evidence-based:</strong> Can you trace it to a finding or evaluation criterion?</p>
-                        </div>
-                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
-                            <p><strong>Reader-centered:</strong> Does it explain the benefit for document users?</p>
-                        </div>
-                        <div class="check-item"><i class="fa-solid fa-check" aria-hidden="true"></i>
-                            <p><strong>Feasible:</strong> Can the client realistically act on it?</p>
-                        </div>
-                    </div>
+                <section class="bottom-line" aria-labelledby="check">
+                    <h2 id="check"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Check Your Formula</h2>
+                    <p><strong>Can the client identify the action?</strong> Is it grounded in findings? Does the reason explain a reader benefit? Are the implementation details realistic? Not every recommendation needs a number, deadline, or all the optional pieces.</p>
                 </section>
             </div>
-            <p class="updated"><time datetime="2026-10-17">Last Updated October 17, 2026</time></p>
+            <p class="updated"><time datetime="2026-10-19">Last Updated October 19, 2026</time></p>
         </div>
         <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
     </main>
-    <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+    <script>(function () { const parentOrigin = 'https://www.tengrrl.com'; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: 'tsc-visual-resize', height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener('load', sendHeight); if (typeof ResizeObserver !== 'undefined') new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
 </body>
 
 </html>
