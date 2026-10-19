@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An interactive infographic showing how to introduce, integrate, explain, and connect written sources in a recommendation report.">
+    <meta name="author" content="Traci Gardner">
+    <title>Integrating Sources</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 18px;
+            background: #fff;
+            color: var(--text);
+            font-size: 17px;
+            line-height: 1.48;
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            padding: 36px;
+            background-color: var(--teal-dark);
+            background-image: var(--pattern-sources);
+            background-size: 400px;
+            background-repeat: repeat
+        }
+
+        .page {
+            padding: 30px;
+            background: #fff;
+            border: 3px solid var(--maroon);
+            border-radius: 14px 14px 0 0
+        }
+
+        .skipline li,
+        .skipline ul li,
+        .skipline ol li,
+        .skipline dl,
+        .skipline dd {
+            margin-bottom: 12px;
+        }
+
+        .spacer details {
+            margin-bottom: 18px !important;
+        }
+
+        .null li,
+        .null ul li,
+        .null ol li,
+        .null dl,
+        .null dd {
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+            margin: -30px -30px 23px;
+            padding: 28px 30px;
+            background: var(--smoke-light);
+            border-bottom: 2px solid var(--smoke);
+            border-radius: 10px 10px 0 0
+        }
+
+        .hero-icon {
+            width: 92px;
+            height: 92px;
+            flex: none;
+            display: grid;
+            place-items: center;
+            background: var(--maroon);
+            color: white;
+            border-radius: 16px;
+            box-shadow: 6px 6px 0 var(--gray);
+            font-size: 2.5rem
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4.7vw, 3.4rem);
+            line-height: 1.05;
+            color: var(--maroon);
+            margin: 0
+        }
+
+        .hero .subtitle {
+            margin: 8px 0 0;
+            font-size: 1.15rem
+        }
+
+        .intro {
+            font-size: 1.09rem;
+            margin: 0 0 23px
+        }
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 25px
+        }
+
+        .process-step {
+            padding: 15px 10px;
+            background: var(--teal-light);
+            border-left: 6px solid var(--teal-dark);
+            border-radius: 9px;
+            text-align: center
+        }
+
+        .process-step:nth-child(2) {
+            border-color: var(--orange);
+            background: var(--orange-light);
+        }
+
+
+        .process-step:nth-child(4) {
+            border-color: var(--turq);
+            background: var(--turq-light);
+        }
+
+        .process-step b {
+            display: block;
+            font-size: 1.15rem
+        }
+
+        .process-step span {
+            display: block;
+            font-size: .84rem
+        }
+
+        .section-heading {
+            margin: 27px 0 13px;
+            color: var(--maroon);
+            font-size: 1.65rem
+        }
+
+        .example {
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            overflow: hidden
+        }
+
+        .example-header {
+            background: var(--teal-dark);
+            color: white;
+            padding: 13px 20px
+        }
+
+        .example-header h2 {
+            font-size: 1.4rem;
+            margin: 0
+        }
+
+        .example-header p {
+            margin: 3px 0 0;
+            font-size: .95rem
+        }
+
+        .example-body {
+            padding: 20px;
+            background: var(--smoke-light)
+        }
+
+        /* Each example and its explanation share a row, like an annotated letter. */
+        .annotated {
+            display: grid;
+            grid-template-columns: minmax(0, 1.55fr) minmax(235px, 1fr);
+            gap: 0 18px;
+            align-items: stretch;
+        }
+
+        .annotated>.column-label {
+            margin-bottom: 10px;
+        }
+
+        .example-row {
+            display: contents;
+        }
+
+        .example-cell,
+        .explanation-cell {
+            padding: 14px 16px;
+            border-top: 1px solid var(--gray);
+            min-width: 0;
+        }
+
+        .example-cell {
+            background: white;
+        }
+
+        .explanation-cell {
+            background: var(--smoke-light);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .example-cell.first,
+        .explanation-cell.first {
+            border-top: 0;
+        }
+
+        .document-title {
+            grid-column: 1 / -1;
+            background: white;
+            padding: 18px 18px 6px;
+            border: 1px solid var(--gray);
+            border-bottom: 0;
+        }
+
+        .document-title h3 {
+            margin: 0;
+            font-size: 1.24rem;
+        }
+
+        .example-cell .figure {
+            margin: 0;
+        }
+
+        .explanation-cell .key-item {
+            width: 100%;
+        }
+
+        .example-cell .highlight {
+            margin: 0;
+        }
+
+        .example-cell .figure-caption-highlight {
+            margin-bottom: 0;
+        }
+
+        .document {
+            background: white;
+            border: 1px solid var(--gray);
+            box-shadow: 4px 5px 0 var(--smoke);
+            padding: 23px
+        }
+
+        .column-label {
+            margin: 0 0 9px;
+            font-size: .99rem;
+            font-weight: bold;
+            letter-spacing: .04em;
+            color: var(--text)
+        }
+
+        .annotation-note {
+            margin: 0 0 15px;
+            padding: 11px 14px;
+            background: var(--teal-light);
+            border-left: 5px solid var(--teal-dark);
+            font-size: .93rem
+        }
+
+        .figure-caption-highlight {
+            border-left: 5px solid var(--orange);
+            background: var(--orange-light);
+            padding: 9px 12px
+        }
+
+        .table-instruction {
+            margin: 0 0 12px;
+            font-size: .88rem;
+            color: var(--teal-dark)
+        }
+
+        .document h3 {
+            font-size: 1.24rem;
+            margin: 0 0 15px
+        }
+
+        .document p {
+            font-size: .95rem;
+            margin: 10px 0
+        }
+
+        .highlight {
+            border-left: 5px solid var(--teal);
+            padding: 10px 12px;
+            background: var(--teal-light)
+        }
+
+        .highlight.maroon {
+            border-color: var(--maroon);
+            background: var(--maroon-light)
+        }
+
+        .highlight.dark-teal {
+            border-color: var(--turq);
+            background: var(--turq-light)
+        }
+
+        .figure {
+            margin: 17px 0
+        }
+
+        .figure-image {
+            padding: 17px;
+            border: 1px solid var(--gray);
+            background: #fff
+        }
+
+        .sample-page {
+            max-width: 370px;
+            margin: auto;
+            padding: 15px;
+            border: 1px solid #b9b9b9;
+            background: #fafafa
+        }
+
+        .sample-page h4 {
+            font-size: 1.05rem;
+            margin: 0 0 10px
+        }
+
+        .sample-page .near-heading {
+            font-size: .94rem;
+            font-weight: bold;
+            margin: 12px 0 4px
+        }
+
+        .sample-page .tiny-text {
+            font-size: .77rem;
+            margin: 0;
+            color: #555
+        }
+
+        .figure figcaption {
+            font-size: .87rem;
+            margin-top: 9px
+        }
+
+        .key {
+            display: grid;
+            gap: 10px
+        }
+
+        .key-item {
+            background: #fff;
+            border: 1px solid var(--gray);
+            border-left: 6px solid var(--teal);
+            padding: 12px;
+            border-radius: 5px
+        }
+
+        .key-item:nth-child(2) {
+            border-left-color: var(--orange)
+        }
+
+        .key-item:nth-child(3) {
+            border-left-color: var(--maroon)
+        }
+
+        .key-item:nth-child(4) {
+            border-left-color: var(--turq)
+        }
+
+        .key-item h3 {
+            margin: 0 0 4px;
+            font-size: 1.07rem
+        }
+
+        .key-item p {
+            margin: 0;
+            font-size: .91rem
+        }
+
+        .key-item .num {
+            font-weight: bold;
+            color: var(--maroon)
+        }
+
+        .label-key {
+            border-left-color: var(--orange);
+        }
+
+        .explain-key {
+            border-left-color: var(--maroon);
+        }
+
+        .connect-key {
+            border-left-color: var(--turq);
+        }
+
+        .bridge {
+            margin: 18px 0 0;
+            padding: 14px 17px;
+            background: var(--turq-light);
+            border-left: 6px solid var(--turq);
+            font-size: .95rem
+        }
+
+        .table-example {
+            margin-top: 24px;
+            border: 2px solid var(--gray);
+            border-radius: 13px;
+            overflow: hidden
+        }
+
+        .table-header {
+            padding: 14px 20px;
+            background: var(--maroon);
+            color: white
+        }
+
+        .table-header h2 {
+            margin: 0;
+            font-size: 1.4rem
+        }
+
+        .table-header p {
+            margin: 4px 0 0;
+            font-size: .95rem
+        }
+
+        .table-content {
+            padding: 20px
+        }
+
+        /* Match the figure's row-by-row annotations, with room for table content. */
+        .table-annotated {
+            grid-template-columns: minmax(0, 1.55fr) minmax(235px, 1fr);
+        }
+
+        .table-annotated .table-label-highlight {
+            border-left: 5px solid var(--orange);
+            padding-left: 12px;
+        }
+
+        .table-annotated .table-title {
+            margin-top: 0;
+        }
+
+        .table-annotated .example-cell>p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .table-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 22px;
+            align-items: start
+        }
+
+        .sample-text {
+            background: var(--smoke-light);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: .95rem
+        }
+
+        .sample-text p {
+            margin: 0 0 13px
+        }
+
+        .sample-text p:last-child {
+            margin: 0
+        }
+
+        .table-title {
+            font-size: .9rem;
+            font-weight: bold;
+            margin: 0 0 7px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .88rem
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid var(--gray);
+            text-align: left;
+            vertical-align: top
+        }
+
+        th {
+            background: var(--teal-dark);
+            color: #fff
+        }
+
+        tr:nth-child(even) td {
+            background: var(--teal-light)
+        }
+
+        .table-note {
+            font-size: .8rem;
+            color: #444;
+            margin: 8px 0 0
+        }
+
+        .small-note {
+            margin: 0 0 23px;
+            padding: 15px 18px;
+            background: var(--orange-light);
+            border-left: 5px solid var(--orange);
+            font-size: .93rem
+        }
+
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: #fff;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem
+        }
+
+        @media(max-width:800px) {
+
+            .annotated,
+            .table-annotated {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .annotated>.column-label:nth-child(2) {
+                display: none;
+            }
+
+            .document-title {
+                grid-column: 1;
+            }
+
+            .example-row {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .example-cell {
+                border-top: 1px solid var(--gray);
+            }
+
+            .explanation-cell {
+                border-top: 0;
+                padding-top: 0;
+                padding-bottom: 18px;
+            }
+
+
+            .annotated,
+            .table-grid {
+                grid-template-columns: 1fr
+            }
+
+            .key {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:580px) {
+            body {
+                padding: 8px
+            }
+
+            .bkgd-page {
+                padding: 13px
+            }
+
+            .page {
+                padding: 16px
+            }
+
+            .hero {
+                margin: -16px -16px 19px;
+                padding: 19px 16px;
+                gap: 13px
+            }
+
+            .hero-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.7rem
+            }
+
+            .hero h1 {
+                font-size: 2rem
+            }
+
+            .hero .subtitle {
+                font-size: .95rem
+            }
+
+            .process {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .example-body,
+            .table-content {
+                padding: 12px
+            }
+
+            .document {
+                padding: 14px
+            }
+
+            .key {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0
+            }
+
+            .bkgd-page {
+                padding: 0;
+                background: none
+            }
+
+            .example,
+            .table-example,
+            .key-item {
+                break-inside: avoid
+            }
+        }
+
+
+        /* Example switcher: full content remains visible when JavaScript is unavailable. */
+        .example-switcher {
+            margin: 24px 0 0
+        }
+
+        .example-switcher h2 {
+            color: var(--maroon);
+            font-size: 1.45rem;
+            margin: 0 0 4px
+        }
+
+        .example-switcher p {
+            margin: 0 0 12px
+        }
+
+        /* Folder-style tabs: each tab has its own pale brand-color tint. */
+        .visual-tabs {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 8px;
+            align-items: end;
+            position: relative;
+            z-index: 2
+        }
+
+        .visual-tabs button {
+            --folder-color: var(--teal-dark);
+            --folder-tint: var(--teal-light);
+            position: relative;
+            min-width: 0;
+            padding: 13px 8px 12px;
+            border: 2px solid var(--folder-color);
+            border-bottom: 0;
+            border-radius: 13px 13px 0 0;
+            background: var(--folder-tint);
+            color: var(--folder-color);
+            font-weight: 700;
+            font-size: .96rem;
+            line-height: 1.25;
+            cursor: pointer;
+            transition: background-color .15s ease, transform .15s ease;
+        }
+
+        .visual-tabs button:nth-child(1) {
+            --folder-color: var(--teal-dark);
+            --folder-tint: var(--teal-light)
+        }
+
+        .visual-tabs button:nth-child(2) {
+            --folder-color: var(--maroon);
+            --folder-tint: var(--maroon-light)
+        }
+
+        .visual-tabs button:nth-child(3) {
+            --folder-color: var(--orange);
+            --folder-tint: var(--orange-light)
+        }
+
+        .visual-tabs button:nth-child(4) {
+            --folder-color: #555258;
+            --folder-tint: var(--smoke-light)
+        }
+
+        .visual-tabs button:hover {
+            filter: brightness(.975)
+        }
+
+        .visual-tabs button[aria-selected="true"] {
+            background: var(--folder-tint);
+            color: var(--folder-color);
+            padding-top: 17px;
+            padding-bottom: 15px;
+            margin-bottom: -2px;
+            z-index: 3;
+            box-shadow: 0 -3px 0 var(--folder-color);
+        }
+
+        .visual-tabs button[aria-selected="false"] {
+            opacity: .82
+        }
+
+        .visual-tabs button:focus-visible {
+            outline: 3px solid var(--orange);
+            outline-offset: 3px
+        }
+
+        /* Carry each folder's color into the top edge of its open page. */
+        #panel-figure {
+            border-top: 5px solid var(--teal-dark)
+        }
+
+        #panel-table {
+            border-top: 5px solid var(--maroon)
+        }
+
+        #panel-screenshot {
+            border-top: 5px solid var(--orange)
+        }
+
+        #panel-chart {
+            border-top: 5px solid #555258
+        }
+
+        /* Connected folder tabs and matching open-folder surfaces. */
+        .visual-tabs {
+            margin-bottom: 0;
+        }
+
+        .visual-tabs button[aria-selected="true"] {
+            margin-bottom: -2px;
+            padding-bottom: 14px;
+        }
+
+        .visual-panel {
+            --panel-color: var(--teal-dark);
+            --panel-tint: var(--teal-light);
+            margin-top: 0;
+            border: 2px solid var(--panel-color);
+            border-top: 5px solid var(--panel-color);
+            border-radius: 0 12px 12px 12px;
+            background: var(--panel-tint);
+        }
+
+        #panel-figure {
+            --panel-color: var(--teal-dark);
+            --panel-tint: var(--teal-light);
+        }
+
+        #panel-table {
+            --panel-color: var(--maroon);
+            --panel-tint: var(--maroon-light);
+        }
+
+        #panel-screenshot {
+            --panel-color: var(--orange);
+            --panel-tint: var(--orange-light);
+        }
+
+        #panel-chart,
+        #panel-photograph {
+            --panel-color: #555258;
+            --panel-tint: var(--smoke-light);
+        }
+
+        .visual-panel .example-header,
+        .visual-panel .table-header {
+            background: var(--panel-color);
+            color: white;
+        }
+
+        .visual-panel .example-body,
+        .visual-panel .table-content,
+        .visual-panel .explanation-cell {
+            background: var(--panel-tint);
+        }
+
+        /* Retain the four instructional move colors within each example. */
+        .visual-panel .annotation-note {
+            background: white;
+        }
+
+        .visual-panel[hidden] {
+            display: none !important
+        }
+
+        .visual-panel {
+            margin-top: 0
+        }
+
+        .web-shot {
+            max-width: 430px;
+            margin: auto;
+            border: 2px solid #9ca4aa;
+            background: white;
+            border-radius: 7px;
+            overflow: hidden;
+            font-size: 13px;
+        }
+
+        .browser-top {
+            display: flex;
+            gap: 20px;
+            background: #e8e9ed;
+            padding: 7px 11px;
+            color: #48515a
+        }
+
+        .browser-top span:first-child {
+            color: #a75b55
+        }
+
+        .web-inner {
+            padding: 13px
+        }
+
+        .web-banner {
+            background: var(--teal-dark);
+            color: white;
+            font-weight: bold;
+            padding: 12px
+        }
+
+        .web-small {
+            font-size: 12px;
+            color: #555
+        }
+
+        .web-field {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin: 10px 0;
+            font-weight: bold
+        }
+
+        .web-field span {
+            color: #9b9b9b;
+            font-weight: normal
+        }
+
+        .web-button {
+            display: inline-block;
+            background: #d8dce0;
+            color: #41484b;
+            padding: 7px 24px;
+            margin-top: 8px;
+            border-radius: 3px
+        }
+
+        .chart-wrap {
+            max-width: 460px;
+            margin: auto;
+            padding: 10px 0
+        }
+
+        .chart-title {
+            text-align: center;
+            font-weight: bold;
+            margin: 0 0 19px !important
+        }
+
+        .chart-line {
+            display: grid;
+            grid-template-columns: 110px minmax(0, 1fr);
+            align-items: center;
+            gap: 8px;
+            margin: 15px 0;
+            font-size: .83rem
+        }
+
+        .chart-track {
+            height: 36px;
+            background: #f0eff0
+        }
+
+        .chart-bar {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+            white-space: nowrap;
+            color: white;
+            font-weight: bold
+        }
+
+        .chart-old {
+            background: var(--maroon)
+        }
+
+        .chart-new {
+            background: var(--teal-dark)
+        }
+
+        .chart-axis {
+            text-align: center;
+            font-size: .78rem !important;
+            color: #555
+        }
+
+        @media(max-width:580px) {
+            .visual-tabs {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                row-gap: 8px
+            }
+
+            .visual-tabs button[aria-selected="true"] {
+                margin-bottom: 0
+            }
+
+            .chart-line {
+                grid-template-columns: 85px minmax(0, 1fr)
+            }
+        }
+
+        @media print {
+            .visual-tabs button {
+                box-shadow: none !important
+            }
+
+            /* Connected folder tabs and matching open-folder surfaces. */
+            .visual-tabs {
+                margin-bottom: 0;
+            }
+
+            .visual-tabs button[aria-selected="true"] {
+                margin-bottom: -2px;
+                padding-bottom: 14px;
+            }
+
+            .visual-panel {
+                --panel-color: var(--teal-dark);
+                --panel-tint: var(--teal-light);
+                margin-top: 0;
+                border: 2px solid var(--panel-color);
+                border-top: 5px solid var(--panel-color);
+                border-radius: 0 12px 12px 12px;
+                background: var(--panel-tint);
+            }
+
+            #panel-figure {
+                --panel-color: var(--teal-dark);
+                --panel-tint: var(--teal-light);
+            }
+
+            #panel-table {
+                --panel-color: var(--maroon);
+                --panel-tint: var(--maroon-light);
+            }
+
+            #panel-screenshot {
+                --panel-color: var(--orange);
+                --panel-tint: var(--orange-light);
+            }
+
+            #panel-chart {
+                --panel-color: #555258;
+                --panel-tint: var(--smoke-light);
+            }
+
+            .visual-panel .example-header,
+            .visual-panel .table-header {
+                background: var(--panel-color);
+                color: white;
+            }
+
+            .visual-panel .example-body,
+            .visual-panel .table-content,
+            .visual-panel .explanation-cell {
+                background: var(--panel-tint);
+            }
+
+            /* Retain the four instructional move colors within each example. */
+            .visual-panel .annotation-note {
+                background: white;
+            }
+
+            .visual-panel[hidden] {
+                display: block !important
+            }
+
+            .visual-tabs {
+                display: none
+            }
+
+            .visual-panel {
+                margin: 18px 0;
+                break-before: page
+            }
+
+            .example-switcher {
+                display: none
+            }
+        }
+
+        /* Neutral folder navigation: color is reserved for the four teaching moves. */
+        .visual-tabs button,
+        .visual-tabs button:nth-child(1),
+        .visual-tabs button:nth-child(2),
+        .visual-tabs button:nth-child(3),
+        .visual-tabs button:nth-child(4),
+        .visual-tabs button:nth-child(5) {
+            --folder-color: #737173;
+            --folder-tint: #e5e1e6;
+            background: var(--folder-tint);
+            border-color: #99949b;
+            color: #49474b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+        }
+
+        .visual-tabs button i {
+            font-size: 1.05rem;
+        }
+
+        .visual-tabs button[aria-selected="true"] {
+            --folder-tint: #f7f6f7;
+            background: var(--folder-tint);
+            border-color: #555258;
+            color: #252428;
+            opacity: 1;
+            box-shadow: 0 -3px 0 #555258;
+        }
+
+        .visual-tabs button:focus-visible {
+            outline: 3px solid #555258;
+            outline-offset: 3px;
+        }
+
+        .visual-panel,
+        #panel-figure,
+        #panel-table,
+        #panel-screenshot,
+        #panel-chart,
+        #panel-photograph {
+            --panel-color: #555258;
+            --panel-tint: #fff;
+            border-color: #555258;
+            border-top: 5px solid #555258;
+            background: var(--panel-tint);
+        }
+
+        .visual-panel .example-header,
+        .visual-panel .table-header {
+            background: #555258;
+            color: white;
+        }
+
+        /* Square upper-right corner closes the gap beside the folder tabs. */
+        .visual-panel,
+        #panel-figure,
+        #panel-table,
+        #panel-screenshot,
+        #panel-chart,
+        #panel-photograph {
+            border-top-right-radius: 0;
+        }
+
+        .visual-panel .example-header,
+        .visual-panel .table-header {
+            border-top-right-radius: 0;
+        }
+
+        /* Reverse the active folder tab for a clear selected state. */
+        .visual-tabs button[aria-selected="true"] {
+            --folder-tint: #555258;
+            background: #555258;
+            color: #fff;
+            border-color: #555258;
+        }
+
+        /* White document area; retain a subtle distinction for annotation cells. */
+        .visual-panel .example-body,
+        .visual-panel .table-content {
+            background: white;
+        }
+
+        .visual-panel .explanation-cell {
+            background: var(--smoke-light);
+        }
+
+        .sample-photograph {
+            display: block;
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            margin: 0 auto;
+            border: 1px solid var(--gray);
+        }
+
+        /* Keep the five folder labels readable at intermediate widths. */
+        @media (min-width:581px) and (max-width:760px) {
+            .visual-tabs button {
+                font-size: .82rem;
+                gap: 5px;
+                padding-left: 3px;
+                padding-right: 3px;
+            }
+        }
+
+        @media(max-width:580px) {
+            .visual-tabs {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .visual-tabs button {
+                gap: 6px;
+            }
+        }
+
+        /* Keep tab-panel headings available to screen readers without visual repetition. */
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
+        }
+
+        /* Source integration adaptation */
+        .source-tabs {
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+
+        .source-tabs button {
+            font-family: inherit;
+        }
+
+        .source-panel {
+            --panel-color: #555258;
+            --panel-tint: #fff;
+        }
+
+        .source-panel .example-header {
+            background: #555258;
+        }
+
+        .source-panel .example-body {
+            background: #fff;
+        }
+
+        .source-panel .explanation-cell {
+            background: var(--smoke-light);
+        }
+
+        .source-excerpt {
+            margin: 0 0 18px;
+            padding: 13px 16px;
+            background: var(--smoke-light);
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+        }
+
+        .source-excerpt h3 {
+            font-size: .98rem;
+            margin: 0 0 6px;
+            color: var(--maroon);
+        }
+
+        .source-excerpt p {
+            margin: 5px 0;
+            font-size: .9rem;
+        }
+
+        .source-excerpt .source-note {
+            color: #555;
+            font-size: .81rem;
+        }
+
+        .example-cell p {
+            line-height: 1.55;
+        }
+
+        .example-cell .highlight {
+            margin: 0;
+        }
+
+        .example-cell .highlight.integrate {
+            background: var(--orange-light);
+            border-color: var(--orange);
+        }
+
+        .key-item.integrate-key {
+            border-left-color: var(--orange);
+        }
+
+        .example-cell .highlight.maroon {
+            background: var(--maroon-light);
+            border-color: var(--maroon);
+        }
+
+        .example-cell .highlight.dark-teal {
+            background: var(--turq-light);
+            border-color: var(--turq);
+        }
+
+        .source-panel .key-item:nth-child(n) {
+            border-left-color: var(--teal);
+        }
+
+        .source-panel .integrate-key {
+            border-left-color: var(--orange) !important;
+        }
+
+        .source-panel .explain-key {
+            border-left-color: var(--maroon) !important;
+        }
+
+        .source-panel .connect-key {
+            border-left-color: var(--turq) !important;
+        }
+
+        .source-panel .example-cell {
+            background: #fff;
+        }
+
+        .source-panel .example-header p {
+            margin: 0;
+        }
+
+        .source-panel .example-header {
+            padding: 16px 20px;
+        }
+
+        .source-panel .example-body {
+            padding: 20px;
+        }
+
+        .source-panel[hidden] {
+            display: none !important;
+        }
+
+        .source-panel .annotation-note {
+            background: #fff;
+        }
+
+        .source-note-bottom {
+            margin: 20px 0 0;
+            padding: 13px 16px;
+            border-left: 5px solid var(--orange);
+            background: var(--orange-light);
+            font-size: .92rem;
+        }
+
+        @media(max-width:760px) {
+            .source-tabs button {
+                font-size: .82rem;
+            }
+        }
+
+        @media(max-width:580px) {
+            .source-tabs {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .source-panel .example-body {
+                padding: 12px;
+            }
+        }
+
+        @media print {
+            .source-tabs {
+                display: none;
+            }
+
+            .source-panel[hidden] {
+                display: block !important;
+            }
+
+            .source-panel {
+                margin: 20px 0;
+                break-before: page;
+            }
+
+            .example-switcher {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="page">
+                <header class="hero">
+                    <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+                    <div>
+                        <h1>Integrating Sources</h1>
+                        <p class="subtitle">Make research part of your reasoning—not just something you cite.</p>
+                    </div>
+                </header>
+                <p class="intro">Research strengthens a report when readers understand what a source contributes and why it matters. Use these four moves to incorporate evidence into your own explanation:</p>
+                <div class="process" aria-label="Four moves for integrating sources">
+                    <div class="process-step"><b>1. Introduce</b><span>Prepare the reader</span></div>
+                    <div class="process-step"><b>2. Integrate</b><span>Present the evidence</span></div>
+                    <div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
+                    <div class="process-step"><b>4. Connect</b><span>Support your point</span></div>
+                </div>
+                <div class="example-switcher">
+                    <h2>Explore Five Examples</h2>
+                    <p>Choose an integration technique to see the four moves in context. The sample report passages appear on the left; the explanations appear on the right. Colored borders identify instructional moves and <em>are not part of the finished report.</em></p>
+                    <div class="visual-tabs source-tabs" role="tablist" aria-label="Choose a source integration example"><button role="tab" type="button" id="tab-summary" aria-controls="panel-summary" aria-selected="true" tabindex="0"><i class="fa-solid fa-align-left" aria-hidden="true"></i><span>Summary</span></button><button role="tab" type="button" id="tab-paraphrase" aria-controls="panel-paraphrase" aria-selected="false" tabindex="-1"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i><span>Paraphrase</span></button><button role="tab" type="button" id="tab-quotation" aria-controls="panel-quotation" aria-selected="false" tabindex="-1"><i class="fa-solid fa-quote-left" aria-hidden="true"></i><span>Quotation</span></button><button role="tab" type="button" id="tab-synthesis" aria-controls="panel-synthesis" aria-selected="false" tabindex="-1"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>Synthesis</span></button><button role="tab" type="button" id="tab-comparison" aria-controls="panel-comparison" aria-selected="false" tabindex="-1"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span>Comparison</span></button></div>
+                </div>
+                <section class="example visual-panel source-panel" id="panel-summary" role="tabpanel" aria-labelledby="tab-summary" tabindex="0">
+                    <div class="example-header">
+                        <h2 class="visually-hidden">Summary in a Sample Document</h2>
+                        <p>Condense the main findings of a source without repeating every detail. A summary is shorter and broader than the original.</p>
+                    </div>
+                    <div class="example-body">
+                        <div class="source-excerpt">
+                            <h3>Illustrative source material</h3>
+                            <p><strong>Usability review notes (illustrative, 2026):</strong> In a review of 12 university department webpages, reviewers identified inconsistent navigation labels, missing contact information, and confusing links to application instructions. These problems appeared across multiple pages.</p>
+                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                        </div>
+                        <div class="annotated" aria-label="Annotated summary example">
+                            <p class="column-label">Summary in a Sample Report</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="example-row">
+                                <div class="example-cell first">
+                                    <p class="highlight">The department website needs more consistent navigation. An internal usability review provides an overview of the problems across its pages.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item ">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Establish the source and explain why readers need this evidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight integrate">The review found recurring problems with navigation labels, contact details, and links to application instructions (Usability Review Notes, 2026).</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item integrate-key">
+                                        <h3><span class="num">2.</span> Integrate</h3>
+                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight maroon">Together, these findings suggest that visitors encounter several obstacles when trying to locate routine information.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Interpret the information rather than leaving it to speak for itself.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">The department should prioritize a sitewide review of navigation and contact information rather than correcting only one page.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Show how the evidence supports your evaluation or recommendation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="example visual-panel source-panel" id="panel-paraphrase" role="tabpanel" aria-labelledby="tab-paraphrase" tabindex="0">
+                    <div class="example-header">
+                        <h2 class="visually-hidden">Paraphrase in a Sample Document</h2>
+                        <p>Restate a specific idea or finding in your own words and sentence structure while preserving its meaning.</p>
+                    </div>
+                    <div class="example-body">
+                        <div class="source-excerpt">
+                            <h3>Illustrative source material</h3>
+                            <p><strong>Accessibility review notes (illustrative, 2026):</strong> Several application form fields rely on placeholder text alone to identify the information users must enter. When users begin typing, the placeholder disappears, making it harder to confirm what each field requires.</p>
+                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                        </div>
+                        <div class="annotated" aria-label="Annotated paraphrase example">
+                            <p class="column-label">Paraphrase in a Sample Report</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="example-row">
+                                <div class="example-cell first">
+                                    <p class="highlight">The application form may create unnecessary difficulties for users. The accessibility review identifies a specific issue with field instructions.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item ">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Establish the source and explain why readers need this evidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight integrate">According to the accessibility review, some fields use disappearing placeholder text instead of persistent labels, leaving users without visible guidance once they begin entering information (Accessibility Review Notes, 2026).</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item integrate-key">
+                                        <h3><span class="num">2.</span> Integrate</h3>
+                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight maroon">This design makes it harder for applicants to check that they are completing the correct fields.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Interpret the information rather than leaving it to speak for itself.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">The department should add persistent, clearly associated labels to its application form fields.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Show how the evidence supports your evaluation or recommendation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="example visual-panel source-panel" id="panel-quotation" role="tabpanel" aria-labelledby="tab-quotation" tabindex="0">
+                    <div class="example-header">
+                        <h2 class="visually-hidden">Quotation in a Sample Document</h2>
+                        <p>Use a source’s exact words when the particular wording matters. Quote selectively and make clear whose words they are.</p>
+                    </div>
+                    <div class="example-body">
+                        <div class="source-excerpt">
+                            <h3>Illustrative source material</h3>
+                            <p><strong>Student interview (illustrative, 2026):</strong> “I kept going back to the homepage because I couldn’t tell which link had the application instructions.”</p>
+                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                        </div>
+                        <div class="annotated" aria-label="Annotated quotation example">
+                            <p class="column-label">Quotation in a Sample Report</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="example-row">
+                                <div class="example-cell first">
+                                    <p class="highlight">A student interview illustrates the difficulty of locating application instructions.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item ">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Establish the source and explain why readers need this evidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight integrate">One participant explained, “I kept going back to the homepage because I couldn’t tell which link had the application instructions” (Student Interview, 2026).</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item integrate-key">
+                                        <h3><span class="num">2.</span> Integrate</h3>
+                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight maroon">The participant’s description points to unclear link labels and repeated navigation rather than a lack of interest in applying.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Interpret the information rather than leaving it to speak for itself.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">More descriptive link text and a clearly marked application pathway could reduce this confusion.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Show how the evidence supports your evaluation or recommendation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="example visual-panel source-panel" id="panel-synthesis" role="tabpanel" aria-labelledby="tab-synthesis" tabindex="0">
+                    <div class="example-header">
+                        <h2 class="visually-hidden">Synthesis in a Sample Document</h2>
+                        <p>Bring findings from multiple sources together to establish a larger pattern or insight. Do more than list sources one after another.</p>
+                    </div>
+                    <div class="example-body">
+                        <div class="source-excerpt">
+                            <h3>Illustrative source material</h3>
+                            <p><strong>Usability review notes (illustrative, 2026):</strong> Reviewers found inconsistent navigation labels on 8 of 12 department webpages.</p>
+                            <p><strong>Student interview notes (illustrative, 2026):</strong> Several students reported difficulty predicting where application-related links would lead.</p>
+                            <p><strong>Support request log (illustrative, 2026):</strong> The department received repeated questions asking where to find application instructions.</p>
+                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                        </div>
+                        <div class="annotated" aria-label="Annotated synthesis example">
+                            <p class="column-label">Synthesis in a Sample Report</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="example-row">
+                                <div class="example-cell first">
+                                    <p class="highlight">Several sources suggest that applicants struggle to find information on the department website.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item ">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Establish the source and explain why readers need this evidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight integrate">The usability review identified inconsistent labels on 8 of 12 pages; student interviews described uncertainty about link destinations; and the support log recorded repeated requests for application directions (Usability Review Notes; Student Interview Notes; Support Request Log, 2026).</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item integrate-key">
+                                        <h3><span class="num">2.</span> Integrate</h3>
+                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight maroon">These different forms of evidence point to the same underlying problem: the site does not provide a predictable route to application information.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Interpret the information rather than leaving it to speak for itself.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">A consistent navigation system with clearly named application links would address a problem documented by reviewers, students, and support staff.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Show how the evidence supports your evaluation or recommendation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="example visual-panel source-panel" id="panel-comparison" role="tabpanel" aria-labelledby="tab-comparison" tabindex="0">
+                    <div class="example-header">
+                        <h2 class="visually-hidden">Comparison in a Sample Document</h2>
+                        <p>Place sources in conversation by showing where their findings agree, differ, or qualify one another.</p>
+                    </div>
+                    <div class="example-body">
+                        <div class="source-excerpt">
+                            <h3>Illustrative source material</h3>
+                            <p><strong>Staff review notes (illustrative, 2026):</strong> Staff reviewers reported that the application link was easy to find from the admissions landing page.</p>
+                            <p><strong>Student interview notes (illustrative, 2026):</strong> Students entering through program pages often struggled to locate the application link.</p>
+                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                        </div>
+                        <div class="annotated" aria-label="Annotated comparison example">
+                            <p class="column-label">Comparison in a Sample Report</p>
+                            <p class="column-label">How It Works</p>
+                            <div class="example-row">
+                                <div class="example-cell first">
+                                    <p class="highlight">Staff and student assessments of the application navigation differ, so the entry point matters when evaluating the site.</p>
+                                </div>
+                                <div class="explanation-cell first">
+                                    <div class="key-item ">
+                                        <h3><span class="num">1.</span> Introduce</h3>
+                                        <p>Establish the source and explain why readers need this evidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight integrate">Staff reviewers found the application link easy to locate from the admissions landing page (Staff Review Notes, 2026). In contrast, students who started on program pages often had difficulty finding it (Student Interview Notes, 2026).</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item integrate-key">
+                                        <h3><span class="num">2.</span> Integrate</h3>
+                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight maroon">The findings are not necessarily contradictory: the navigation may work well from one page while remaining unclear from other common entry points.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item explain-key">
+                                        <h3><span class="num">3.</span> Explain</h3>
+                                        <p>Interpret the information rather than leaving it to speak for itself.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="example-row">
+                                <div class="example-cell">
+                                    <p class="highlight dark-teal">The department should test and improve application links across program pages, not just on the admissions landing page.</p>
+                                </div>
+                                <div class="explanation-cell">
+                                    <div class="key-item connect-key">
+                                        <h3><span class="num">4.</span> Connect</h3>
+                                        <p>Show how the evidence supports your evaluation or recommendation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <p class="source-note-bottom"><strong>Remember:</strong> Summaries, paraphrases, quotations, and ideas drawn from multiple sources all require attribution. These examples use short illustrative source labels rather than a required citation style; follow your assignment’s citation and reference requirements. The four moves may occur within a single sentence or across several sentences.</p>
+            </div>
+            <p class="updated"><time datetime="2026-10-19">Last Updated October 19, 2026</time></p>
+        </div>
+        <p class="credit">© 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <!-- framing and accessible tab scripts -->
+    <script>
+        (function () {
+            const parentOrigin = "https://www.tengrrl.com";
+            function sendHeight() {
+                if (window.parent === window) return;
+                window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin);
+            }
+            window.addEventListener("load", sendHeight);
+            if (typeof ResizeObserver !== "undefined") {
+                new ResizeObserver(sendHeight).observe(document.documentElement);
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            const tabs = Array.from(document.querySelectorAll('.visual-tabs [role="tab"]'));
+            const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+            function activate(index, focus) {
+                tabs.forEach((tab, i) => { const active = i === index; tab.setAttribute('aria-selected', String(active)); tab.tabIndex = active ? 0 : -1; panels[i].hidden = !active; });
+                if (focus) tabs[index].focus();
+            }
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('click', () => activate(index, false));
+                tab.addEventListener('keydown', event => {
+                    let next = index;
+                    if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+                    else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+                    else if (event.key === 'Home') next = 0;
+                    else if (event.key === 'End') next = tabs.length - 1;
+                    else return;
+                    event.preventDefault(); activate(next, true);
+                });
+            });
+            activate(0, false);
+        })();
+    </script>
+</body>
+
+</html>
