@@ -1,0 +1,54 @@
+/* Shared infographic styles — load before each page’s local <style> block. */
+/* Common color palette */
+:root {
+  --blue: #003c71;
+  --blue-dark: #002a4f;
+  --blue-light: #e5ebf1;
+
+  --gray: #d7d2cb;
+
+  --green: #287a3d;
+  --green-light: #eaf5e9;
+
+  --maroon: #861f41;
+  --maroon-dark: #5e162e;
+  --maroon-light: #f3e8ec;
+
+  --orange: #c64600;
+  --orange-light: #faede6;
+
+  --purple: #642667;
+
+  --red: #a6192e;
+  --red-light: #fae9ec;
+
+  --smoke: #e5e1e6;
+  --smoke-dark: #737173;
+  --smoke-light: #f7f6f7;
+
+  --teal: #508590;
+  --teal-dark: #385d65;
+  --teal-light: #edf3f4;
+
+  --text: #1f1f1f;
+
+  --yellow: #f7ea48;
+  --yellow-dark: #635e1d;
+}
+
+/* Repeated rules with matching declarations across infographic files */
+* {
+  box-sizing: border-box;
+}
+
+.pagewidth {
+  background: #fff;
+  border: 5px solid var(--maroon);
+  border-radius: 14px 14px 0 0;
+  padding: 28px;
+}
+
+.process-step:nth-child(3) {
+  background: var(--maroon-light);
+  border-color: var(--maroon);
+}
