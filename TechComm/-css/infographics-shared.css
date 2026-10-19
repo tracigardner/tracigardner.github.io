@@ -58,6 +58,23 @@
   --font-body: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Used frequently */
+.skipline li,
+.skipline ul li,
+.skipline ol li,
+.skipline dl,
+.skipline dd {
+  margin-bottom: 12px;
+}
+.null li,
+.null ul li,
+.null ol li,
+.null dl,
+.null dd {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
 /* Repeated rules with matching declarations across infographic files */
 * {
   box-sizing: border-box;

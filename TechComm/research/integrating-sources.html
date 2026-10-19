@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="An interactive infographic showing how to introduce, integrate, explain, and connect written sources in a recommendation report.">
-    <meta name="author" content="Traci Gardner">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="An interactive infographic showing how to introduce, integrate, explain, and connect written sources in a recommendation report." name="description" />
+    <meta content="Traci Gardner" name="author" />
     <title>Integrating Sources</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css" rel="stylesheet" />
     <style>
         body {
             margin: 0;
@@ -27,7 +28,7 @@
         .bkgd-page {
             padding: 36px;
             background-color: var(--teal-dark);
-            background-image: var(--pattern-sources);
+            background-image: var(--pattern-visuals);
             background-size: 400px;
             background-repeat: repeat
         }
@@ -39,25 +40,8 @@
             border-radius: 14px 14px 0 0
         }
 
-        .skipline li,
-        .skipline ul li,
-        .skipline ol li,
-        .skipline dl,
-        .skipline dd {
-            margin-bottom: 12px;
-        }
-
         .spacer details {
             margin-bottom: 18px !important;
-        }
-
-        .null li,
-        .null ul li,
-        .null ol li,
-        .null dl,
-        .null dd {
-            margin-top: 0px !important;
-            margin-bottom: 0px !important;
         }
 
         .hero {
@@ -1256,6 +1240,14 @@
             background: #fff;
         }
 
+        .examples-preface {
+            margin: 0 0 20px;
+            padding: 12px 16px;
+            background: var(--smoke-light);
+            border-left: 5px solid var(--teal-dark);
+            font-size: .92rem;
+        }
+
         .source-note-bottom {
             margin: 20px 0 0;
             padding: 13px 16px;
@@ -1306,14 +1298,15 @@
         <div class="bkgd-page">
             <div class="page">
                 <header class="hero">
-                    <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+                    <div aria-hidden="true" class="hero-icon"><i class="fa-solid fa-book-open"></i></div>
                     <div>
                         <h1>Integrating Sources</h1>
                         <p class="subtitle">Make research part of your reasoning—not just something you cite.</p>
                     </div>
                 </header>
                 <p class="intro">Research strengthens a report when readers understand what a source contributes and why it matters. Use these four moves to incorporate evidence into your own explanation:</p>
-                <div class="process" aria-label="Four moves for integrating sources">
+                <aside aria-label="Note on examples and materials" class="examples-preface"><strong>Note on Examples &amp; Materials:</strong> All source materials, data, review notes, findings, and citations presented in this infographic are illustrative teaching examples created for instructional purposes. The sample passages use IEEE-style numbered citations; the reference numbers and page numbers are fictional.</aside>
+                <div aria-label="Four moves for integrating sources" class="process">
                     <div class="process-step"><b>1. Introduce</b><span>Prepare the reader</span></div>
                     <div class="process-step"><b>2. Integrate</b><span>Present the evidence</span></div>
                     <div class="process-step"><b>3. Explain</b><span>Interpret the evidence</span></div>
@@ -1322,20 +1315,19 @@
                 <div class="example-switcher">
                     <h2>Explore Five Examples</h2>
                     <p>Choose an integration technique to see the four moves in context. The sample report passages appear on the left; the explanations appear on the right. Colored borders identify instructional moves and <em>are not part of the finished report.</em></p>
-                    <div class="visual-tabs source-tabs" role="tablist" aria-label="Choose a source integration example"><button role="tab" type="button" id="tab-summary" aria-controls="panel-summary" aria-selected="true" tabindex="0"><i class="fa-solid fa-align-left" aria-hidden="true"></i><span>Summary</span></button><button role="tab" type="button" id="tab-paraphrase" aria-controls="panel-paraphrase" aria-selected="false" tabindex="-1"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i><span>Paraphrase</span></button><button role="tab" type="button" id="tab-quotation" aria-controls="panel-quotation" aria-selected="false" tabindex="-1"><i class="fa-solid fa-quote-left" aria-hidden="true"></i><span>Quotation</span></button><button role="tab" type="button" id="tab-synthesis" aria-controls="panel-synthesis" aria-selected="false" tabindex="-1"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>Synthesis</span></button><button role="tab" type="button" id="tab-comparison" aria-controls="panel-comparison" aria-selected="false" tabindex="-1"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span>Comparison</span></button></div>
+                    <div aria-label="Choose a source integration example" class="visual-tabs source-tabs" role="tablist"><button aria-controls="panel-summary" aria-selected="true" id="tab-summary" role="tab" tabindex="0" type="button"><i aria-hidden="true" class="fa-solid fa-align-left"></i><span>Summary</span></button><button aria-controls="panel-paraphrase" aria-selected="false" id="tab-paraphrase" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-pen-to-square"></i><span>Paraphrase</span></button><button aria-controls="panel-quotation" aria-selected="false" id="tab-quotation" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-quote-left"></i><span>Quotation</span></button><button aria-controls="panel-synthesis" aria-selected="false" id="tab-synthesis" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-layer-group"></i><span>Synthesis</span></button><button aria-controls="panel-comparison" aria-selected="false" id="tab-comparison" role="tab" tabindex="-1" type="button"><i aria-hidden="true" class="fa-solid fa-scale-balanced"></i><span>Comparison</span></button></div>
                 </div>
-                <section class="example visual-panel source-panel" id="panel-summary" role="tabpanel" aria-labelledby="tab-summary" tabindex="0">
+                <section aria-labelledby="tab-summary" class="example visual-panel source-panel" id="panel-summary" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Summary in a Sample Document</h2>
                         <p>Condense the main findings of a source without repeating every detail. A summary is shorter and broader than the original.</p>
                     </div>
                     <div class="example-body">
                         <div class="source-excerpt">
-                            <h3>Illustrative source material</h3>
-                            <p><strong>Usability review notes (illustrative, 2026):</strong> In a review of 12 university department webpages, reviewers identified inconsistent navigation labels, missing contact information, and confusing links to application instructions. These problems appeared across multiple pages.</p>
-                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                            <h3>Sample Source</h3>
+                            <p><strong>Usability review notes:</strong> In a review of 12 university department webpages, reviewers identified inconsistent navigation labels, missing contact information, and confusing links to application instructions. These problems appeared across multiple pages.</p>
                         </div>
-                        <div class="annotated" aria-label="Annotated summary example">
+                        <div aria-label="Annotated summary example" class="annotated">
                             <p class="column-label">Summary in a Sample Report</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
@@ -1343,7 +1335,7 @@
                                     <p class="highlight">The department website needs more consistent navigation. An internal usability review provides an overview of the problems across its pages.</p>
                                 </div>
                                 <div class="explanation-cell first">
-                                    <div class="key-item ">
+                                    <div class="key-item">
                                         <h3><span class="num">1.</span> Introduce</h3>
                                         <p>Establish the source and explain why readers need this evidence.</p>
                                     </div>
@@ -1351,12 +1343,12 @@
                             </div>
                             <div class="example-row">
                                 <div class="example-cell">
-                                    <p class="highlight integrate">The review found recurring problems with navigation labels, contact details, and links to application instructions (Usability Review Notes, 2026).</p>
+                                    <p class="highlight integrate">The review found recurring problems with navigation labels, contact details, and links to application instructions [1, pp. 3–4].</p>
                                 </div>
                                 <div class="explanation-cell">
                                     <div class="key-item integrate-key">
                                         <h3><span class="num">2.</span> Integrate</h3>
-                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                        <p>Incorporate the source material accurately and identify where the information comes from.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1385,18 +1377,17 @@
                         </div>
                     </div>
                 </section>
-                <section class="example visual-panel source-panel" id="panel-paraphrase" role="tabpanel" aria-labelledby="tab-paraphrase" tabindex="0">
+                <section aria-labelledby="tab-paraphrase" class="example visual-panel source-panel" id="panel-paraphrase" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Paraphrase in a Sample Document</h2>
                         <p>Restate a specific idea or finding in your own words and sentence structure while preserving its meaning.</p>
                     </div>
                     <div class="example-body">
                         <div class="source-excerpt">
-                            <h3>Illustrative source material</h3>
-                            <p><strong>Accessibility review notes (illustrative, 2026):</strong> Several application form fields rely on placeholder text alone to identify the information users must enter. When users begin typing, the placeholder disappears, making it harder to confirm what each field requires.</p>
-                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                            <h3>Sample Source</h3>
+                            <p><strong>Accessibility review notes:</strong> Several application form fields rely on placeholder text alone to identify the information users must enter. When users begin typing, the placeholder disappears, making it harder to confirm what each field requires.</p>
                         </div>
-                        <div class="annotated" aria-label="Annotated paraphrase example">
+                        <div aria-label="Annotated paraphrase example" class="annotated">
                             <p class="column-label">Paraphrase in a Sample Report</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
@@ -1404,7 +1395,7 @@
                                     <p class="highlight">The application form may create unnecessary difficulties for users. The accessibility review identifies a specific issue with field instructions.</p>
                                 </div>
                                 <div class="explanation-cell first">
-                                    <div class="key-item ">
+                                    <div class="key-item">
                                         <h3><span class="num">1.</span> Introduce</h3>
                                         <p>Establish the source and explain why readers need this evidence.</p>
                                     </div>
@@ -1412,12 +1403,12 @@
                             </div>
                             <div class="example-row">
                                 <div class="example-cell">
-                                    <p class="highlight integrate">According to the accessibility review, some fields use disappearing placeholder text instead of persistent labels, leaving users without visible guidance once they begin entering information (Accessibility Review Notes, 2026).</p>
+                                    <p class="highlight integrate">According to the accessibility review, some fields use disappearing placeholder text instead of persistent labels, leaving users without visible guidance once they begin entering information [2, p. 6].</p>
                                 </div>
                                 <div class="explanation-cell">
                                     <div class="key-item integrate-key">
                                         <h3><span class="num">2.</span> Integrate</h3>
-                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                        <p>Incorporate the source material accurately and identify where the information comes from.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1446,18 +1437,17 @@
                         </div>
                     </div>
                 </section>
-                <section class="example visual-panel source-panel" id="panel-quotation" role="tabpanel" aria-labelledby="tab-quotation" tabindex="0">
+                <section aria-labelledby="tab-quotation" class="example visual-panel source-panel" id="panel-quotation" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Quotation in a Sample Document</h2>
                         <p>Use a source’s exact words when the particular wording matters. Quote selectively and make clear whose words they are.</p>
                     </div>
                     <div class="example-body">
                         <div class="source-excerpt">
-                            <h3>Illustrative source material</h3>
-                            <p><strong>Student interview (illustrative, 2026):</strong> “I kept going back to the homepage because I couldn’t tell which link had the application instructions.”</p>
-                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                            <h3>Sample Source</h3>
+                            <p><strong>Student interview:</strong> “I kept going back to the homepage because I couldn’t tell which link had the application instructions.”</p>
                         </div>
-                        <div class="annotated" aria-label="Annotated quotation example">
+                        <div aria-label="Annotated quotation example" class="annotated">
                             <p class="column-label">Quotation in a Sample Report</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
@@ -1465,7 +1455,7 @@
                                     <p class="highlight">A student interview illustrates the difficulty of locating application instructions.</p>
                                 </div>
                                 <div class="explanation-cell first">
-                                    <div class="key-item ">
+                                    <div class="key-item">
                                         <h3><span class="num">1.</span> Introduce</h3>
                                         <p>Establish the source and explain why readers need this evidence.</p>
                                     </div>
@@ -1473,12 +1463,12 @@
                             </div>
                             <div class="example-row">
                                 <div class="example-cell">
-                                    <p class="highlight integrate">One participant explained, “I kept going back to the homepage because I couldn’t tell which link had the application instructions” (Student Interview, 2026).</p>
+                                    <p class="highlight integrate">One participant explained, “I kept going back to the homepage because I couldn’t tell which link had the application instructions” [3, p. 2].</p>
                                 </div>
                                 <div class="explanation-cell">
                                     <div class="key-item integrate-key">
                                         <h3><span class="num">2.</span> Integrate</h3>
-                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                        <p>Incorporate the source material accurately and identify where the information comes from.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1507,20 +1497,19 @@
                         </div>
                     </div>
                 </section>
-                <section class="example visual-panel source-panel" id="panel-synthesis" role="tabpanel" aria-labelledby="tab-synthesis" tabindex="0">
+                <section aria-labelledby="tab-synthesis" class="example visual-panel source-panel" id="panel-synthesis" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Synthesis in a Sample Document</h2>
                         <p>Bring findings from multiple sources together to establish a larger pattern or insight. Do more than list sources one after another.</p>
                     </div>
                     <div class="example-body">
                         <div class="source-excerpt">
-                            <h3>Illustrative source material</h3>
-                            <p><strong>Usability review notes (illustrative, 2026):</strong> Reviewers found inconsistent navigation labels on 8 of 12 department webpages.</p>
-                            <p><strong>Student interview notes (illustrative, 2026):</strong> Several students reported difficulty predicting where application-related links would lead.</p>
-                            <p><strong>Support request log (illustrative, 2026):</strong> The department received repeated questions asking where to find application instructions.</p>
-                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                            <h3>Sample Source</h3>
+                            <p><strong>Usability review notes:</strong> Reviewers found inconsistent navigation labels on 8 of 12 department webpages.</p>
+                            <p><strong>Student interview notes:</strong> Several students reported difficulty predicting where application-related links would lead.</p>
+                            <p><strong>Support request log:</strong> The department received repeated questions asking where to find application instructions.</p>
                         </div>
-                        <div class="annotated" aria-label="Annotated synthesis example">
+                        <div aria-label="Annotated synthesis example" class="annotated">
                             <p class="column-label">Synthesis in a Sample Report</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
@@ -1528,7 +1517,7 @@
                                     <p class="highlight">Several sources suggest that applicants struggle to find information on the department website.</p>
                                 </div>
                                 <div class="explanation-cell first">
-                                    <div class="key-item ">
+                                    <div class="key-item">
                                         <h3><span class="num">1.</span> Introduce</h3>
                                         <p>Establish the source and explain why readers need this evidence.</p>
                                     </div>
@@ -1536,12 +1525,12 @@
                             </div>
                             <div class="example-row">
                                 <div class="example-cell">
-                                    <p class="highlight integrate">The usability review identified inconsistent labels on 8 of 12 pages; student interviews described uncertainty about link destinations; and the support log recorded repeated requests for application directions (Usability Review Notes; Student Interview Notes; Support Request Log, 2026).</p>
+                                    <p class="highlight integrate">The usability review identified inconsistent labels on 8 of 12 pages [1, p. 3]; student interviews described uncertainty about link destinations [3, pp. 2–3]; and the support log recorded repeated requests for application directions [4, p. 5].</p>
                                 </div>
                                 <div class="explanation-cell">
                                     <div class="key-item integrate-key">
                                         <h3><span class="num">2.</span> Integrate</h3>
-                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                        <p>Incorporate the source material accurately and identify where the information comes from.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1570,19 +1559,18 @@
                         </div>
                     </div>
                 </section>
-                <section class="example visual-panel source-panel" id="panel-comparison" role="tabpanel" aria-labelledby="tab-comparison" tabindex="0">
+                <section aria-labelledby="tab-comparison" class="example visual-panel source-panel" id="panel-comparison" role="tabpanel" tabindex="0">
                     <div class="example-header">
                         <h2 class="visually-hidden">Comparison in a Sample Document</h2>
                         <p>Place sources in conversation by showing where their findings agree, differ, or qualify one another.</p>
                     </div>
                     <div class="example-body">
                         <div class="source-excerpt">
-                            <h3>Illustrative source material</h3>
-                            <p><strong>Staff review notes (illustrative, 2026):</strong> Staff reviewers reported that the application link was easy to find from the admissions landing page.</p>
-                            <p><strong>Student interview notes (illustrative, 2026):</strong> Students entering through program pages often struggled to locate the application link.</p>
-                            <p class="source-note">Teaching example: fictional research materials and findings, not actual study results.</p>
+                            <h3>Sample Source</h3>
+                            <p><strong>Staff review notes:</strong> Staff reviewers reported that the application link was easy to find from the admissions landing page.</p>
+                            <p><strong>Student interview notes:</strong> Students entering through program pages often struggled to locate the application link.</p>
                         </div>
-                        <div class="annotated" aria-label="Annotated comparison example">
+                        <div aria-label="Annotated comparison example" class="annotated">
                             <p class="column-label">Comparison in a Sample Report</p>
                             <p class="column-label">How It Works</p>
                             <div class="example-row">
@@ -1590,7 +1578,7 @@
                                     <p class="highlight">Staff and student assessments of the application navigation differ, so the entry point matters when evaluating the site.</p>
                                 </div>
                                 <div class="explanation-cell first">
-                                    <div class="key-item ">
+                                    <div class="key-item">
                                         <h3><span class="num">1.</span> Introduce</h3>
                                         <p>Establish the source and explain why readers need this evidence.</p>
                                     </div>
@@ -1598,12 +1586,12 @@
                             </div>
                             <div class="example-row">
                                 <div class="example-cell">
-                                    <p class="highlight integrate">Staff reviewers found the application link easy to locate from the admissions landing page (Staff Review Notes, 2026). In contrast, students who started on program pages often had difficulty finding it (Student Interview Notes, 2026).</p>
+                                    <p class="highlight integrate">Staff reviewers found the application link easy to locate from the admissions landing page [5, p. 2]. In contrast, students who started on program pages often had difficulty finding it [3, p. 4].</p>
                                 </div>
                                 <div class="explanation-cell">
                                     <div class="key-item integrate-key">
                                         <h3><span class="num">2.</span> Integrate</h3>
-                                        <p>Incorporate the source material accurately, with attribution and a citation.</p>
+                                        <p>Incorporate the source material accurately and identify where the information comes from.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1632,7 +1620,7 @@
                         </div>
                     </div>
                 </section>
-                <p class="source-note-bottom"><strong>Remember:</strong> Summaries, paraphrases, quotations, and ideas drawn from multiple sources all require attribution. These examples use short illustrative source labels rather than a required citation style; follow your assignment’s citation and reference requirements. The four moves may occur within a single sentence or across several sentences.</p>
+                <p class="source-note-bottom"><strong>Remember:</strong> Summaries, paraphrases, quotations, and ideas drawn from multiple sources all require attribution. IEEE citations use bracketed numbers that correspond to numbered entries in a reference list; include page numbers when pointing to a specific passage. In your own reports, follow the citation and reference format required by your assignment. The four moves may occur within a single sentence or across several sentences.</p>
             </div>
             <p class="updated"><time datetime="2026-10-19">Last Updated October 19, 2026</time></p>
         </div>
