@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="An infographic comparing the audience, purpose, content, and detail of abstracts and executive summaries in recommendation reports.">
-    <title>Abstract vs. Executive Summary</title>
+    <meta name="description" content="An infographic comparing the audience, purpose, content, and detail of letters of transmittal, abstracts, and executive summaries in recommendation reports.">
+    <title>Purpose & Audience in the Front Matter</title>
     <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
     <style>
         body {
             margin: 0;
-            background: var(--white);
+            background: #fff;
             color: var(--text);
             font-size: 17px;
             line-height: 1.5
@@ -73,7 +73,7 @@
 
         .summary-questions {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 14px;
             margin-bottom: 25px
         }
@@ -83,6 +83,10 @@
             padding: 17px 20px;
             border: 2px solid var(--gray);
             background: white
+        }
+
+        .question.transmittal {
+            border-top: 8px solid var(--maroon)
         }
 
         .question.abstract {
@@ -136,10 +140,14 @@
         }
 
         .compare thead th:nth-child(2) {
-            background: var(--teal-dark)
+            background: var(--maroon)
         }
 
         .compare thead th:nth-child(3) {
+            background: var(--teal-dark)
+        }
+
+        .compare thead th:nth-child(4) {
             background: var(--orange)
         }
 
@@ -150,10 +158,14 @@
         }
 
         .compare tbody td:nth-child(2) {
-            background: var(--teal-light)
+            background: var(--maroon-light)
         }
 
         .compare tbody td:nth-child(3) {
+            background: var(--teal-light)
+        }
+
+        .compare tbody td:nth-child(4) {
             background: var(--orange-light)
         }
 
@@ -171,7 +183,7 @@
 
         .example-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 14px
         }
 
@@ -188,6 +200,10 @@
             padding: 14px 18px;
             color: #fff;
             font-size: 1.2rem
+        }
+
+        .example.transmittal h3 {
+            background: var(--maroon)
         }
 
         .example.abstract h3 {
@@ -217,6 +233,10 @@
             letter-spacing: .04em;
             color: var(--teal-dark);
             margin-bottom: 8px
+        }
+
+        .example.transmittal .focus {
+            color: var(--maroon)
         }
 
         .example.executive .focus {
@@ -287,6 +307,14 @@
             margin: 0
         }
 
+        .source-credit {
+            margin: 0;
+            padding: 13px 24px;
+            background: var(--smoke-light);
+            font-size: .85rem;
+            color: #414141
+        }
+
         .updated {
             margin: 0;
             padding: 9px 13px;
@@ -334,7 +362,7 @@
             }
 
             .compare table {
-                min-width: 590px
+                min-width: 790px
             }
 
             .compare th,
@@ -371,12 +399,22 @@
     <main class="infographic">
         <div class="bkgd-page">
             <div class="pagewidth">
+
+                <!-- title -->
                 <header class="title-row">
                     <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-circle-question"></i></div>
-                    <h1>Abstract vs. Executive Summary</h1>
+                    <h1>Purpose & Audience<br> in Your Front Matter</h1>
                 </header>
-                <p class="intro">Both summarize the same recommendation report, but they serve <strong>different readers and different purposes.</strong> The abstract emphasizes the technical investigation; the executive summary emphasizes what the findings mean for the client.</p>
+
+                <!-- intro para -->
+                <p class="intro">Three parts of a recommendation report's front matter typically mention the same project, but they serve <strong>different readers and different purposes.</strong> Choose what to emphasize based on what each reader needs.</p>
+
+                <!-- summary questions -->
                 <div class="summary-questions">
+                    <section class="question transmittal">
+                        <h2><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Letter of Transmittal</h2>
+                        <p>What report are you sending me, and why?</p>
+                    </section>
                     <section class="question abstract">
                         <h2><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Abstract</h2>
                         <p>Is this technical report relevant to me?</p>
@@ -386,13 +424,16 @@
                         <p>What does this mean for our organization, and what should we do?</p>
                     </section>
                 </div>
+
+                <!-- comparison table -->
                 <section aria-labelledby="compare-heading">
-                    <h2 id="compare-heading">Compare the Two</h2>
+                    <h2 id="compare-heading">Compare the Three</h2>
                     <div class="compare">
                         <table>
                             <thead>
                                 <tr>
                                     <th scope="col">Compare</th>
+                                    <th scope="col">Letter of Transmittal</th>
                                     <th scope="col">Abstract</th>
                                     <th scope="col">Executive Summary</th>
                                 </tr>
@@ -400,32 +441,54 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">Audience</th>
+                                    <td>The primary recipient of the report, typically the client contact or person who commissioned it.</td>
                                     <td>Readers familiar with the technical subject, such as researchers and specialists.</td>
                                     <td>Managers and decision-makers who need to understand the project's organizational significance.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Purpose</th>
-                                    <td>Help readers decide whether to read the full report.</td>
-                                    <td>Help managers understand the problem, implications, and recommended actions.</td>
+                                    <td><strong>Introduce and deliver the report</strong> while establishing a courteous, professional relationship with its recipient.</td>
+                                    <td><strong>Help readers decide</strong> whether to read the full report.</td>
+                                    <td><strong>Help managers decide</strong> what the findings mean and what action to take.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Content</th>
+                                    <td>Identify the enclosed report and its purpose and content; often note who authorized the work and acknowledge assistance. May briefly mention a key finding or recommendation.</td>
                                     <td>Technical background, purpose, methods, and—if informative—major findings and recommendations. May include searchable keywords.</td>
                                     <td>Problem or opportunity, major findings and implications, conclusions, and recommendations. Methods are usually only a sentence or two.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Level of detail</th>
+                                    <td>Brief, reader-directed correspondence. Enough context to introduce the report, not a substitute for its summaries.</td>
                                     <td>Usually <strong>no more than 200 words</strong>. Concise, but technical terminology is appropriate.</td>
                                     <td>Typically <strong>about one double-spaced page</strong> for a report under 20 pages. Prioritizes concrete evidence, consequences, and decisions over technical detail.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Form and tone</th>
+                                    <td><strong>Letter, memo, or email.</strong> Direct address, professional greeting and closing, courteous tone.</td>
+                                    <td>Compact technical summary, often one paragraph, with optional keywords.</td>
+                                    <td>Self-contained, decision-oriented summary written for management.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
+
+                <!-- examples -->
                 <section class="examples" aria-labelledby="examples-heading">
-                    <h2 id="examples-heading">Same Project, Different Emphasis</h2>
-                    <p>Imagine a consultant evaluating an engineering firm's employee onboarding guide. Notice how the same findings are framed for different readers.</p>
+                    <h2 id="examples-heading">Same Project, Three Different Jobs</h2>
+                    <p>Imagine a consultant evaluating an engineering firm's employee onboarding guide. Notice how the same investigation is presented to three audiences.</p>
                     <div class="example-grid">
+                        <article class="example transmittal">
+                            <h3>Letter of Transmittal</h3>
+                            <div class="example-body">
+                                <p class="focus">Focus: Deliver the report</p>
+                                <p>Dear Engineering Manager:</p>
+                                <p>Enclosed is our report evaluating the usability and accessibility of your employee onboarding guide, prepared in response to your request. It outlines our review process, findings, and recommended improvements to navigation and terminology.</p>
+                                <p>Thank you for the opportunity to complete this review. We would be happy to discuss the recommendations with your team.</p>
+                                <p>Sincerely,<br>Maroon + Orange Digital</p>
+                            </div>
+                        </article>
                         <article class="example abstract">
                             <h3>Abstract</h3>
                             <div class="example-body">
@@ -443,8 +506,10 @@
                             </div>
                         </article>
                     </div>
-                    <p class="note"><strong>Note on examples:</strong> The project, research activities, and findings above are fictional teaching examples.</p>
+                    <p class="note"><strong>Note on examples:</strong> The project, correspondence, research activities, and findings above are fictional teaching examples.</p>
                 </section>
+
+                <!-- abstract types -->
                 <section class="abstract-types" aria-labelledby="types-heading">
                     <h2 id="types-heading">Two Types of Abstracts</h2>
                     <div class="type-grid">
@@ -458,15 +523,29 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- takeaways -->
                 <section class="takeaway" aria-labelledby="takeaway-heading">
                     <h2 id="takeaway-heading">Remember the Difference</h2>
-                    <p><strong>Abstract = technical relevance.</strong> <strong>Executive Summary = managerial meaning and action.</strong> Both are concise, but each selects and emphasizes information for its intended audience.</p>
+                    <p><strong>Letter of Transmittal = professional delivery and introduction.</strong> <strong>Abstract = technical relevance.</strong> <strong>Executive Summary = managerial meaning and action.</strong> Some information overlaps, but each section has a distinct job.</p>
                 </section>
+
+
             </div>
-            <p class="updated"><time datetime="2026-10-19">Last Updated October 19, 2026</time></p>
+
+
+            <!-- last updated -->
+            <p class="updated"><time datetime="2026-10-20">Last Updated October 20, 2026</time></p>
         </div>
+
+        <!-- credit & source -->
+        <p class="credit"><strong>Source note:</strong> Based on the discussion of front matter in Chapter 18 of Markel and Selber&rsquo;s <em>Technical Communication</em>, 14th edition. Examples and instructional comparisons developed for this course.</p>
+
         <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+
     </main>
+
+    <!-- frame length script -->
     <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
 </body>
 
