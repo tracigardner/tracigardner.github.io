@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A quick visual comparison of the letter of transmittal, abstract, and executive summary in a recommendation report.">
+    <title>Purpose &amp; Audience in Your Front Matter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+    <style>
+        body {
+            margin: 0;
+            background: #fff;
+            color: var(--text);
+            font-size: 17px;
+            line-height: 1.5
+        }
+
+        .infographic {
+            max-width: 1150px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            background: var(--teal) var(--pattern-geometric-corner) repeat;
+            background-size: 600px;
+            padding: 39px
+        }
+
+        .pagewidth {
+            background: #fff;
+            padding: 28px;
+            border-radius: 10px 10px 0 0
+        }
+
+        .title-row {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            background: var(--smoke-light);
+            margin: -28px -28px 24px;
+            padding: 28px;
+            border-bottom: 2px solid var(--smoke);
+            border-radius: 9px 9px 0 0
+        }
+
+        .title-icon {
+            flex: none;
+            width: 85px;
+            height: 85px;
+            display: grid;
+            place-items: center;
+            background: var(--maroon);
+            color: #fff;
+            border-radius: 14px;
+            font-size: 2.5rem;
+            box-shadow: 6px 6px 0 var(--gray)
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--maroon);
+            font-size: clamp(2rem, 4.3vw, 3.2rem);
+            line-height: 1.1
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin: 0 0 22px
+        }
+
+        h2 {
+            color: var(--maroon);
+            font-size: 1.45rem;
+            margin: 0 0 13px
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 15px;
+            margin-bottom: 22px
+        }
+
+        .genre-card {
+            --accent: var(--maroon);
+            --tint: var(--maroon-light);
+            background: #fff;
+            border: 5px solid var(--accent);
+            border-radius: 12px;
+            padding: 20px;
+            min-width: 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .035)
+        }
+
+        .genre-card.abstract {
+            --accent: var(--teal-dark);
+            --tint: var(--teal-light)
+        }
+
+        .genre-card.executive {
+            --accent: #a44a11;
+            --tint: var(--orange-light)
+        }
+
+        .genre-card .card-icon {
+            display: inline-grid;
+            place-items: center;
+            width: 43px;
+            height: 43px;
+            border-radius: 11px;
+            background: var(--tint);
+            color: var(--accent);
+            font-size: 1.3rem;
+            margin-bottom: 10px
+        }
+
+        .genre-card h3 {
+            margin: 0 0 9px;
+            color: var(--accent);
+            font-size: 1.27rem;
+            line-height: 1.3
+        }
+
+        .genre-card .question {
+            font-size: 1.09rem;
+            font-weight: 750;
+            line-height: 1.35;
+            margin: 0 0 17px;
+            min-height: 3em
+        }
+
+        .genre-card dl {
+            margin: 0
+        }
+
+        .genre-card dt {
+            font-size: .78rem;
+            text-transform: uppercase;
+            letter-spacing: .055em;
+            font-weight: 800;
+            color: #555;
+            margin: 13px 0 2px
+        }
+
+        .genre-card dd {
+            margin: 0;
+            font-size: .98rem
+        }
+
+        .genre-card .detail {
+            margin: 15px 0 0;
+            padding: 11px 12px;
+            background: var(--tint);
+            border-radius: 7px;
+            font-size: .91rem
+        }
+
+        .reminder {
+            border-left: 5px solid var(--teal-dark);
+            background: var(--teal-light);
+            padding: 14px 17px;
+            border-radius: 0 9px 9px 0;
+            margin: 0 0 4px
+        }
+
+        .reminder p {
+            margin: 0
+        }
+
+        .updated {
+            margin: 0;
+            padding: 9px 13px;
+            background: var(--maroon);
+            color: #fff;
+            text-align: right;
+            font-size: .85rem;
+            font-weight: bold
+        }
+
+        .credit {
+            margin: 10px 0 0;
+            font-size: .78rem
+        }
+
+        @media(max-width:800px) {
+            .card-grid {
+                grid-template-columns: 1fr
+            }
+
+            .genre-card .question {
+                min-height: 0
+            }
+
+            .genre-card {
+                padding: 17px
+            }
+        }
+
+        @media(max-width:580px) {
+            .bkgd-page {
+                padding: 12px
+            }
+
+            .pagewidth {
+                padding: 16px
+            }
+
+            .title-row {
+                margin: -16px -16px 18px;
+                padding: 20px 16px;
+                gap: 13px
+            }
+
+            .title-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 1.7rem
+            }
+        }
+
+        @media print {
+            .bkgd-page {
+                padding: 0;
+                background: none
+            }
+
+            .pagewidth {
+                box-shadow: none
+            }
+
+            .genre-card,
+            .reminder {
+                break-inside: avoid
+            }
+
+            .card-grid {
+                gap: 10px
+            }
+
+            body {
+                font-size: 12pt
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="pagewidth">
+                <header class="title-row">
+                    <div class="title-icon" aria-hidden="true"><i class="fa-solid fa-file-circle-question"></i></div>
+                    <h1>Purpose &amp; Audience<br>in Your Front Matter</h1>
+                </header>
+                <p class="intro">Three parts of a recommendation report discuss the same project—but <strong>each serves a different reader and purpose.</strong> The three sections may overlap, but don't write the same summary three times.</p>
+                <section aria-labelledby="compare-heading">
+                    <h2 id="compare-heading">Three Documents, Three Jobs</h2>
+                    <div class="card-grid">
+
+                        <!-- LoT -->
+                        <article class="genre-card transmittal">
+                            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-envelope-open-text"></i></span>
+                            <h3>Letter of Transmittal</h3>
+                            <p class="question">What report are you sending me, and why?</p>
+                            <dl>
+                                <dt>Reader</dt>
+                                <dd>Client or primary recipient, typically the client contact or person who commissioned it.</dd>
+                                <dt>Job</dt>
+                                <dd><strong>Introduce and deliver the report</strong> while establishing a courteous, professional relationship with its recipient.</dd>
+                            </dl>
+                            <p class="detail"><strong>Include:</strong> Why you&rsquo;re sending it, what it covers, and a courteous closing. May briefly mention a key finding or recommendation.</p>
+                        </article>
+
+                        <!-- abstract -->
+                        <article class="genre-card abstract">
+                            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <h3>Abstract</h3>
+                            <p class="question">Is this technical report relevant to me?</p>
+                            <dl>
+                                <dt>Reader</dt>
+                                <dd>Readers familiar with the technical subject, such as researchers and specialists.</dd>
+                                <dt>Job</dt>
+                                <dd>Summarize the investigation so readers can judge its relevance and decide whether to read the full report. Use an <strong>informative abstract</strong> for your recommendation report.</dd>
+                            </dl>
+                            <p class="detail"><strong>Include:</strong> Purpose, approach, major findings, and recommendations. Usually 200 words or fewer. May include searchable keywords.</p>
+                        </article>
+
+                        <!-- exec sum -->
+                        <article class="genre-card executive">
+                            <span class="card-icon" aria-hidden="true"><i class="fa-solid fa-list-check"></i></span>
+                            <h3>Executive Summary</h3>
+                            <p class="question">What does this mean for our organization, and what should we do?</p>
+                            <dl>
+                                <dt>Reader</dt>
+                                <dd>Managers and decision-makers who need to understand the project&rsquo;s organizational significance.
+                                </dd>
+                                <dt>Job</dt>
+                                <dd>Help managers decide what the findings mean and what action to take.</dd>
+                            </dl>
+                            <p class="detail"><strong>Include:</strong> Problem or opportunity, key findings, organizational consequences, and recommended next steps. Methods are usually only a sentence or two.</p>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+            <p class="updated"><time datetime="2026-10-20">Last Updated October 20, 2026</time></p>
+        </div>
+        <p class="credit"><strong>Source note:</strong> Based on the discussion of front matter in Chapter 18 of Markel and Selber’s <em>Technical Communication</em>, 14th edition. Instructional comparisons developed for this course.</p>
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+</body>
+
+</html>
