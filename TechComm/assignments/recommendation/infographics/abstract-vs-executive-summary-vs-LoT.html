@@ -71,41 +71,18 @@
             margin: 0 0 13px
         }
 
-        .summary-questions {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 14px;
-            margin-bottom: 25px
+        .guiding-question {
+            display: block;
+            margin-top: 9px;
+            font-size: .91rem;
+            line-height: 1.35;
+            font-weight: 600;
+            color: #fff;
         }
 
-        .question {
-            border-radius: 12px;
-            padding: 17px 20px;
-            border: 2px solid var(--gray);
-            background: white
-        }
-
-        .question.transmittal {
-            border-top: 8px solid var(--maroon)
-        }
-
-        .question.abstract {
-            border-top: 8px solid var(--teal-dark)
-        }
-
-        .question.executive {
-            border-top: 8px solid var(--orange)
-        }
-
-        .question h2 {
-            font-size: 1.25rem;
-            margin: 0 0 6px
-        }
-
-        .question p {
-            margin: 0;
-            font-size: 1.09rem;
-            font-weight: 700
+        .column-title {
+            display: block;
+            font-weight: 800;
         }
 
         .compare {
@@ -351,7 +328,6 @@
                 font-size: 1.7rem
             }
 
-            .summary-questions,
             .example-grid,
             .type-grid {
                 grid-template-columns: 1fr
@@ -381,7 +357,6 @@
                 box-shadow: none
             }
 
-            .question,
             .example,
             .abstract-types,
             .takeaway {
@@ -409,62 +384,57 @@
                 <!-- intro para -->
                 <p class="intro">Three parts of a recommendation report's front matter typically mention the same project, but they serve <strong>different readers and different purposes.</strong> Choose what to emphasize based on what each reader needs.</p>
 
-                <!-- summary questions -->
-                <div class="summary-questions">
-                    <section class="question transmittal">
-                        <h2><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Letter of Transmittal</h2>
-                        <p>What report are you sending me, and why?</p>
-                    </section>
-                    <section class="question abstract">
-                        <h2><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Abstract</h2>
-                        <p>Is this technical report relevant to me?</p>
-                    </section>
-                    <section class="question executive">
-                        <h2><i class="fa-solid fa-list-check" aria-hidden="true"></i> Executive Summary</h2>
-                        <p>What does this mean for our organization, and what should we do?</p>
-                    </section>
-                </div>
-
                 <!-- comparison table -->
                 <section aria-labelledby="compare-heading">
                     <h2 id="compare-heading">Compare the Three</h2>
                     <div class="compare">
                         <table>
+                            <caption style="caption-side: bottom;">Table 1. Comparison of Three Front Matter Elements</caption>
                             <thead>
+                                <!-- headers -->
                                 <tr>
                                     <th scope="col">Compare</th>
-                                    <th scope="col">Letter of Transmittal</th>
-                                    <th scope="col">Abstract</th>
-                                    <th scope="col">Executive Summary</th>
+                                    <th scope="col"><span class="column-title"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Letter of Transmittal</span><span class="guiding-question">What report are you sending me, and why?</span></th>
+                                    <th scope="col"><span class="column-title"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Abstract</span><span class="guiding-question">Is this technical report relevant to me?</span></th>
+                                    <th scope="col"><span class="column-title"><i class="fa-solid fa-list-check" aria-hidden="true"></i> Executive Summary</span><span class="guiding-question">What does this mean for our organization, and what should we do?</span></th>
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- audience -->
                                 <tr>
                                     <th scope="row">Audience</th>
                                     <td>The primary recipient of the report, typically the client contact or person who commissioned it.</td>
                                     <td>Readers familiar with the technical subject, such as researchers and specialists.</td>
                                     <td>Managers and decision-makers who need to understand the project's organizational significance.</td>
                                 </tr>
+
+                                <!-- purpose -->
                                 <tr>
                                     <th scope="row">Purpose</th>
                                     <td><strong>Introduce and deliver the report</strong> while establishing a courteous, professional relationship with its recipient.</td>
                                     <td><strong>Help readers decide</strong> whether to read the full report.</td>
                                     <td><strong>Help managers decide</strong> what the findings mean and what action to take.</td>
                                 </tr>
+
+                                <!-- content -->
                                 <tr>
                                     <th scope="row">Content</th>
                                     <td>Identify the enclosed report and its purpose and content; often note who authorized the work and acknowledge assistance. May briefly mention a key finding or recommendation.</td>
                                     <td>Technical background, purpose, methods, and—if informative—major findings and recommendations. May include searchable keywords.</td>
                                     <td>Problem or opportunity, major findings and implications, conclusions, and recommendations. Methods are usually only a sentence or two.</td>
                                 </tr>
+
+                                <!-- detail -->
                                 <tr>
-                                    <th scope="row">Level of detail</th>
+                                    <th scope="row">Level of Detail</th>
                                     <td>Brief, reader-directed correspondence. Enough context to introduce the report, not a substitute for its summaries.</td>
                                     <td>Usually <strong>no more than 200 words</strong>. Concise, but technical terminology is appropriate.</td>
                                     <td>Typically <strong>about one double-spaced page</strong> for a report under 20 pages. Prioritizes concrete evidence, consequences, and decisions over technical detail.</td>
                                 </tr>
+
+                                <!-- form & tone -->
                                 <tr>
-                                    <th scope="row">Form and tone</th>
+                                    <th scope="row">Form and Tone</th>
                                     <td><strong>Letter, memo, or email.</strong> Direct address, professional greeting and closing, courteous tone.</td>
                                     <td>Compact technical summary, often one paragraph, with optional keywords.</td>
                                     <td>Self-contained, decision-oriented summary written for management.</td>
