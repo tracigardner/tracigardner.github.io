@@ -82,29 +82,47 @@
             max-width: 820px;
             margin-left: auto;
             margin-right: auto;
-            gap: 24px;
+            gap: 12px;
+            padding: 25px 34px 35px;
             margin-bottom: 22px
         }
 
         .genre-card {
-            --accent: var(--maroon);
-            --tint: var(--maroon-light);
+            --accent: var(--maroon, #861f41);
+            --tint: var(--maroon-light, #f4e8ed);
             background: repeating-linear-gradient(to bottom, #fffdf7 0, #fffdf7 31px, #e8edf0 32px, #fffdf7 33px);
-            border: 3px solid var(--accent);
+            border: 4px solid var(--accent);
             border-radius: 4px;
             padding: 22px 26px;
             min-width: 0;
-            box-shadow: 2px 4px 9px rgba(53, 45, 34, .10);
+            box-shadow: 3px 6px 12px rgba(53, 45, 34, .18);
+        }
+
+        /* Subtle scattered-paper arrangement; document order stays unchanged. */
+        .genre-card {
+            position: relative;
+            transform-origin: center center;
+        }
+
+        .genre-card.transmittal {
+            transform: translateX(-15px) rotate(-1.7deg);
+            z-index: 1;
         }
 
         .genre-card.abstract {
-            --accent: var(--teal-dark);
-            --tint: var(--teal-light);
+            transform: translateX(19px) rotate(0.8deg);
+            z-index: 2;
+            --accent: var(--teal-dark, #176b69);
+            --tint: var(--teal-light, #e3f2f0);
         }
 
         .genre-card.executive {
-            --accent: var(--orange);
-            --tint: var(--orange-light);
+            margin-top: -24px;
+            /* overlap the lower edge of the Abstract card */
+            transform: translateX(-11px) rotate(1.6deg);
+            z-index: 3;
+            --accent: var(--orange, #c65e18);
+            --tint: var(--orange-light, #fff0e2);
         }
 
         .genre-card .card-heading {
@@ -146,12 +164,19 @@
         }
 
         .genre-card dt {
-            font-size: .78rem;
-            text-transform: uppercase;
+            font-size: .9rem;
             letter-spacing: .055em;
             font-weight: 800;
-            color: #555;
+            color: var(--maroon);
             margin: 13px 0 2px
+        }
+
+        .genre-card.abstract dt {
+            color: var(--teal-dark, #176b69);
+        }
+
+        .genre-card.executive dt {
+            color: var(--orange, #c65e18);
         }
 
         .genre-card dd {
@@ -163,7 +188,7 @@
             margin: 15px 0 0;
             padding: 11px 12px;
             background: var(--tint);
-            border: 1px solid color-mix(in srgb, var(--accent) 16%, white);
+            border: 1px solid color-mix(in srgb, var(--accent) 16%, var(--white));
             border-radius: 4px;
             font-size: .91rem
         }
@@ -196,6 +221,21 @@
         }
 
         @media(max-width:800px) {
+            .card-grid {
+                padding: 0;
+                gap: 24px;
+            }
+
+            .genre-card.transmittal,
+            .genre-card.abstract,
+            .genre-card.executive {
+                transform: none;
+            }
+
+            .genre-card.executive {
+                margin-top: 0;
+            }
+
             .card-grid {
                 grid-template-columns: 1fr
             }
@@ -232,6 +272,24 @@
         }
 
         @media print {
+            .genre-card.executive {
+                margin-top: 0;
+            }
+
+            .genre-card.transmittal,
+            .genre-card.abstract,
+            .genre-card.executive {
+                transform: none;
+            }
+
+            .genre-card.executive {
+                margin-top: 0;
+            }
+
+            .card-grid {
+                padding: 0;
+            }
+
             .bkgd-page {
                 padding: 0;
                 background: none
@@ -278,9 +336,9 @@
                             </div>
                             <p class="question">What report are you sending me, and why?</p>
                             <dl>
-                                <dt>Reader</dt>
+                                <dt>Audience</dt>
                                 <dd>Client or primary recipient, typically the client contact or person who commissioned it.</dd>
-                                <dt>Job</dt>
+                                <dt>Purpose</dt>
                                 <dd><strong>Introduce and deliver the report</strong> while establishing a courteous, professional relationship with its recipient.</dd>
                             </dl>
                             <p class="detail"><strong>Include:</strong> Why you&rsquo;re sending it, what it covers, and a courteous closing. May briefly mention a key finding or recommendation.</p>
@@ -294,9 +352,9 @@
                             </div>
                             <p class="question">Is this technical report relevant to me?</p>
                             <dl>
-                                <dt>Reader</dt>
+                                <dt>Audience</dt>
                                 <dd>Readers familiar with the technical subject, such as researchers and specialists.</dd>
-                                <dt>Job</dt>
+                                <dt>Purpose</dt>
                                 <dd>Summarize the investigation so readers can judge its relevance and decide whether to read the full report. Use an <strong>informative abstract</strong> for your recommendation report.</dd>
                             </dl>
                             <p class="detail"><strong>Include:</strong> Purpose, approach, major findings, and recommendations. Usually 200 words or fewer. May include searchable keywords.</p>
@@ -310,10 +368,10 @@
                             </div>
                             <p class="question">What does this mean for our organization, and what should we do?</p>
                             <dl>
-                                <dt>Reader</dt>
+                                <dt>Audience</dt>
                                 <dd>Managers and decision-makers who need to understand the project&rsquo;s organizational significance.
                                 </dd>
-                                <dt>Job</dt>
+                                <dt>Purpose</dt>
                                 <dd>Help managers decide what the findings mean and what action to take.</dd>
                             </dl>
                             <p class="detail"><strong>Include:</strong> Problem or opportunity, key findings, organizational consequences, and recommended next steps. Methods are usually only a sentence or two.</p>
@@ -324,7 +382,7 @@
             </div>
             <p class="updated"><time datetime="2026-10-20">Last Updated October 20, 2026</time></p>
         </div>
-        <p class="credit"><strong>Source note:</strong> Based on the discussion of front matter in Chapter 18 of Markel and Selber’s <em>Technical Communication</em>, 14th edition. Instructional comparisons developed for this course.</p>
+        <p class="credit">Content adapted from Chapter 18 of Markel and Selber&rsquo;s <em>Technical Communication</em>, 14th edition.</p>
         <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
     </main>
     <script>(function () { const parentOrigin = "https://www.tengrrl.com"; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: "tsc-visual-resize", height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener("load", sendHeight); if (typeof ResizeObserver !== "undefined") new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
