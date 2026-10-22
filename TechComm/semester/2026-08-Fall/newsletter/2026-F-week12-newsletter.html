@@ -18,12 +18,34 @@
 
     <style>
         :root {
-            --teal: #508590;
+            --teal: var(--teal);
+            ;
             --teal-dark: #385d65;
             --teal-deep: #294b52;
             --teal-medium: #78a3ab;
             --teal-light: #edf3f4;
             --teal-pale: #f5f8f8;
+
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+
+            --orange: #c64600;
+            --orange-light: #faede6;
+
+            --red: #a6192e;
+            --red-light: #fae9ec;
+
+            --smoke: #e5e1e6;
+            --smoke-dark: #737173;
+            --smoke-darker: #171617;
+            --smoke-light: #f7f6f7;
+
+            --green: #287a3d;
+            --green-dark: #205f30;
+            --green-light: #eaf5e9;
+
+            --white: #ffffff;
         }
 
         body,
@@ -34,7 +56,7 @@
 
         .highlight {
             font-weight: bold;
-            color: #c64600;
+            color: var(--orange);
         }
 
         ul li {
@@ -72,17 +94,18 @@
             width: 46px;
             height: 46px;
             border-radius: 50%;
-            background-color: #861f41;
-            color: #ffffff;
+            background-color: var(--maroon);
+            color: var(--white);
             font-size: 20px;
         }
 
         .heading-icon.teal {
-            background-color: #508590;
+            background-color: var(--teal);
+            ;
         }
 
         .heading-icon.orange {
-            background-color: #c64600;
+            background-color: var(--orange);
         }
 
         /* Key idea callout */
@@ -90,8 +113,8 @@
         .key-idea {
             margin: 18px 0;
             padding: 12px 15px;
-            border-left: 6px solid #c64600;
-            background-color: #fcf1e8;
+            border-left: 6px solid var(--orange);
+            background-color: var(--orange-light);
         }
 
         /* Checklist / question boxes */
@@ -100,12 +123,12 @@
             margin: 18px 0;
             padding: 15px 18px;
             border-radius: 8px;
-            background-color: #edf3f4;
+            background-color: var(--teal-light);
         }
 
         .article-check h4 {
             margin: 0 0 10px 0;
-            color: #385d65;
+            color: var(--teal-dark);
             font-size: 1.5rem;
         }
 
@@ -136,16 +159,16 @@
 
         .mini-process-step {
             padding: 8px 12px;
-            border: 1px solid #508590;
+            border: 1px solid var(--teal);
             border-radius: 6px;
-            background-color: #ffffff;
-            color: #385d65;
+            background-color: var(--white);
+            color: var(--teal-dark);
             font-weight: bold;
             text-align: center;
         }
 
         .mini-process-arrow {
-            color: #c64600;
+            color: var(--orange);
             font-size: 18px;
         }
 
@@ -177,7 +200,7 @@
         }
 
         h5 {
-            color: #c64600 !important;
+            color: var(--orange) !important;
             font-size: 1.5rem !important;
         }
 
@@ -306,7 +329,7 @@
 
                     <p>Assignments for the week are in the Week 12 Module in Canvas.</p>
 
-                    <p style="background-color: #e87722;color: #ffffff;padding-left: 3px;font-size: 1.5rem;font-weight: bold;">
+                    <p style="background-color: var(--orange);color: var(--white);padding-left: 3px;font-size: 1.5rem;font-weight: bold;">
                         Due Fri, Nov 13<br>
                         Grace Period ends Wed, Nov 18
                     </p>
@@ -372,8 +395,7 @@
 
             <div class="row g-3 mb-3">
                 <div class="col-md-6">
-                    <div class="p-3 rounded h-100" style="background-color: #fff0f0;
-                    border-left: 4px solid #b54747;">
+                    <div class="p-3 rounded h-100" style="background-color: var(--red-light);border-left: 4px solid var(--red);">
                         <p class="mb-2">
                             <i class="fa-solid fa-circle-xmark" aria-hidden="true"></i>
                             <strong>Opinion</strong>
@@ -385,8 +407,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="p-3 rounded h-100" style="background-color: #edf7ed;
-                    border-left: 4px solid #397847;">
+                    <div class="p-3 rounded h-100" style="background-color: var(--green-light); border-left: 4px solid var(--green);">
                         <p class="mb-2">
                             <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                             <strong>Finding</strong>
@@ -429,8 +450,8 @@
 
                 <div class="row g-2 mb-3">
                     <div class="col-md-4">
-                        <div class="p-3 rounded h-100" style="background-color: #f5eaf0;
-                    border-top: 4px solid #861f41;">
+                        <div class="p-3 rounded h-100" style="background-color: var(--maroon-light);
+                    border-top: 4px solid var(--maroon);">
                             <p class="mb-2">
                                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                                 <strong>1. Problem</strong>
@@ -442,8 +463,8 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="p-3 rounded h-100" style="background-color: #fff3e7;
-                    border-top: 4px solid #b35a18;">
+                        <div class="p-3 rounded h-100" style="background-color: var(--smoke-light);
+                    border-top: 4px solid var(--smoke-dark)">
                             <p class="mb-2">
                                 <i class="fa-solid fa-arrow-right-arrow-left" aria-hidden="true"></i>
                                 <strong>2. Consequence</strong>
@@ -456,8 +477,8 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="p-3 rounded h-100" style="background-color: #eaf6f3;
-                    border-top: 4px solid #27756d;">
+                        <div class="p-3 rounded h-100" style="background-color: var(--teal-light);
+                    border-top: 4px solid var(--teal-dark);">
                             <p class="mb-2">
                                 <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
                                 <strong>3. Recommendation</strong>
