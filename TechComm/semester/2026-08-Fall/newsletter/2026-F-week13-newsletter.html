@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Weekly Preview for Technical Writing Courses">
+    <meta name="keywords" content="technical writing, communication, science writing, research, documentation">
+    <meta name="author" content="Traci Gardner">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Newsletter CSS -->
+    <link href="../../../-css/newsletter.css" rel="stylesheet" type="text/css">
+    <link href="../../../-css/ptw.css" rel="stylesheet" type="text/css">
+
+    <style>
+        :root {
+            --teal: #508590;
+            --teal-dark: #385d65;
+            --teal-deep: #294b52;
+            --teal-medium: #78a3ab;
+            --teal-light: #edf3f4;
+            --teal-pale: #f5f8f8;
+
+            --maroon: #861f41;
+            --maroon-dark: #5e162e;
+            --maroon-light: #f3e8ec;
+
+            --orange: #c64600;
+            --orange-light: #faede6;
+
+            --red: #a6192e;
+            --red-light: #fae9ec;
+
+            --smoke: #e5e1e6;
+            --smoke-dark: #737173;
+            --smoke-darker: #171617;
+            --smoke-light: #f7f6f7;
+
+            --green: #287a3d;
+            --green-dark: #205f30;
+            --green-light: #eaf5e9;
+
+
+            --turq: #2cd5c4;
+            --turq-dark: #002a4f;
+            --turq-light: #e9fbf9;
+
+            --yellow: #f7ea48;
+            --yellow-dark: #635e1d;
+            --yellow-light: #fefdec;
+
+            --white: #ffffff;
+            --black: #000000;
+        }
+
+        body,
+        .footer {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--orange);
+        }
+
+        ul li {
+            margin-bottom: 12px;
+        }
+
+        .embiggen-font {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h4,
+        h3 {
+            font-weight: bold;
+        }
+
+        /* Heading icons */
+
+        .heading-with-icon {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .heading-with-icon h3 {
+            margin: 0;
+        }
+
+        .heading-icon {
+            display: flex;
+            flex: 0 0 46px;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background-color: var(--maroon);
+            color: var(--white);
+            font-size: 20px;
+        }
+
+        .heading-icon.teal {
+            background-color: var(--teal);
+            ;
+        }
+
+        .heading-icon.orange {
+            background-color: var(--orange);
+        }
+
+        /* Key idea callout */
+
+        .key-idea {
+            margin: 18px 0;
+            padding: 12px 15px;
+            border-left: 6px solid var(--orange);
+            background-color: var(--orange-light);
+        }
+
+        /* Checklist / question boxes */
+
+        .article-check {
+            margin: 18px 0;
+            padding: 15px 18px;
+            border-radius: 8px;
+            background-color: var(--teal-light);
+        }
+
+        .article-check h4 {
+            margin: 0 0 10px 0;
+            color: var(--teal-dark);
+            font-size: 1.5rem;
+        }
+
+        .article-check h4 i {
+            margin-right: 6px;
+        }
+
+        .article-check ul {
+            margin-bottom: 0;
+            padding-left: 22px;
+        }
+
+        .article-check li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Small visual sequence */
+
+        .mini-process {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 18px 0;
+            padding: 12px;
+            background-color: #f7f7f7;
+        }
+
+        .mini-process-step {
+            padding: 8px 12px;
+            border: 1px solid var(--teal);
+            border-radius: 6px;
+            background-color: var(--white);
+            color: var(--teal-dark);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .mini-process-arrow {
+            color: var(--orange);
+            font-size: 18px;
+        }
+
+        #row-four .heading-with-icon {
+            margin-left: 12px;
+        }
+
+        #top-row,
+        #row-two,
+        #row-three,
+        #row-four {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #top-row>div,
+        #row-two>div,
+        #row-three>div,
+        #row-four>div {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+        .howtohdr {
+            background-color: var(--teal);
+            color: var(--white) !important;
+            font-size: 24px;
+            padding: 9px;
+        }
+
+        h5 {
+            color: var(--orange) !important;
+            font-size: 1.5rem !important;
+        }
+
+        .bull li {
+            font-size: 15px !important;
+            margin-left: 24px;
+        }
+
+        /* Responsive adjustment */
+
+        @media screen and (max-width: 600px) {
+
+            .mini-process {
+                flex-direction: column;
+            }
+
+            .mini-process-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/41a7d3b74d.js" crossorigin="anonymous"></script>
+
+    <title>Week 13 Newsletter</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- masthead -->
+        <div id="mastheadsection" class="container-fluid tw-header">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-12 masthead">
+                    <h1 class="text-center">Week 13 Newsletter</h1>
+                </div>
+
+            </div>
+
+            <div class="row masthead">
+
+                <div class="col-sm-6">
+                    <h2 class="text-left">Traci&rsquo;s English 3764 Course</h2>
+                </div>
+
+                <div class="col-sm-6">
+                    <h2 class="text-right">November 16, 2026</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- welcome -->
+    <div id="welcome" class="container-fluid ptop-row">
+
+        <div id="newsletter-welcome" class="row">
+
+            <div id="newsletter-welcome-text" class="col-sm-12">
+
+                <p>Each week, I post a newsletter that includes details on the week&rsquo;s work and tips to help you do well on your projects.</p>
+
+                <p>This week focuses on continuing work on your recommendation report.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- readings & assignments -->
+    <div id="top-row" class="row">
+
+        <div id="top-twocols" class="col-sm-12">
+
+            <div id="art-one-left" class="row border-top-line">
+                <!-- Readings -->
+                <div class="col-sm-7">
+
+                    <div class="heading-with-icon">
+
+                        <div class="heading-icon teal">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>This Week&rsquo;s Readings</h3>
+
+                    </div>
+
+                    <p>New readings this week are course documents in Canvas.</p>
+                    <ul>
+                        <li>Review Ch 18: Writing Recommendation Reports as needed</li>
+                        <li>
+                            <a href="https://canvas.vt.edu/courses/235156/pages/purpose-and-audience-in-your-front-matter" target="_blank">Purpose & Audience in Your Front Matter</a>
+                        </li>
+                        <li>
+                            <a href="https://canvas.vt.edu/courses/235156/pages/memos-vs-letters-infographic" target="_blank">Memos vs. Letters Infographic</a>
+                        </li>
+                        <li>
+                            <a href="https://canvas.vt.edu/courses/235156/pages/annotated-letter-format" target="_blank">Annotated Letter Format</a>
+                        </li>
+                        <li>
+                            <a href="https://canvas.vt.edu/courses/235156/pages/page-numbers-follow-the-report-roadmap" target="_blank">Page Numbers: Follow the Report Roadmap</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- assignments -->
+                <div class="col-sm-5 border-left-line">
+
+                    <div class="heading-with-icon">
+
+                        <div class="heading-icon orange">
+                            <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>Assignments This Week</h3>
+
+                    </div>
+
+                    <p>Assignments for the week are in the Week 13 Module in Canvas.</p>
+
+                    <p style="background-color: var(--orange);color: var(--white);padding-left: 3px;font-size: 1.5rem;font-weight: bold;">
+                        Due Fri, Nov 20<br>
+                        Grace Period ends Wed, Dec 2
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="https://canvas.vt.edu/courses/235156/quizzes/717214" target="_blank">Use of Images Review</a>
+                        </li>
+                        <li>
+                            <a href="https://canvas.vt.edu/courses/235156/quizzes/697052" target="_blank">Week 13 Check-In Survey</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="row-two" class="row col-sm-12 border-top-line">
+
+        <!-- left column -->
+        <div class="col-sm-6">
+
+            left
+
+        </div>
+
+        <div class="col-sm-6 border-left-line">
+
+
+            right
+        </div>
+    </div>
+
+    <div id="row-three" class="row border-top-line" id="middle-row">
+
+        <!-- full column -->
+        <div class="col-sm-12">
+
+
+            full
+
+
+        </div>
+
+
+
+
+
+        <div id="row-four" class="row border-top-line">
+
+            <div class="col-sm-12">
+
+                <div class="heading-with-icon">
+
+                    <div class="heading-icon orange">
+                        <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+                    </div>
+
+                    <h3>Have Questions?</h3>
+
+                </div>
+
+                <ul class="skipline">
+
+                    <li>
+                        If you have <strong>general questions</strong> about policies, assignments, or other course issues, search
+                        <a href="https://notebook.google.com/notebook/4abe4582-e334-4e62-bf06-ca0e098bcb22?authuser=2" target="_blank">HokieBot&rsquo;s Technical Writing Notebook</a>.
+                    </li>
+
+                    <li>
+                        If you have a <strong>private question</strong>, send me a message with the Canvas Inbox.
+                    </li>
+
+                    <li>
+                        Ask a question or make a suggestion <strong>anonymously</strong> with the
+                        <a href="https://forms.gle/jkHocRgPEh6qQ1HaA" target="_blank" rel="noreferrer noopener">Anonymous Questions &amp; Suggestions form</a>.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div id="footer" class="container-fluid">
+
+            <div id="footer-row" class="row footer-bkgd">
+
+                <div class="col-sm-12" style="text-align: center;">
+
+                    <p class="footer">
+                        &copy; 2026 Traci Gardner. This newsletter is licensed under a
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License</a>, unless noted otherwise.
+                    </p>
+
+                    <p class="footer-divider-line"></p>
+
+                    <address class="footer" style="text-align: center;">
+                        Traci Gardner, Department of English, Virginia Tech, 323 Shanks Hall (0112), 181 Turner St. NW, Blacksburg, VA 24061
+                    </address>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p style="margin-top: 9px;"></p>
+
+
+        <!-- Optional JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
