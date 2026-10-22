@@ -18,8 +18,7 @@
 
     <style>
         :root {
-            --teal: var(--teal);
-            ;
+            --teal: #508590;
             --teal-dark: #385d65;
             --teal-deep: #294b52;
             --teal-medium: #78a3ab;
@@ -45,7 +44,17 @@
             --green-dark: #205f30;
             --green-light: #eaf5e9;
 
+
+            --turq: #2cd5c4;
+            --turq-dark: #002a4f;
+            --turq-light: #e9fbf9;
+
+            --yellow: #f7ea48;
+            --yellow-dark: #635e1d;
+            --yellow-light: #fefdec;
+
             --white: #ffffff;
+            --black: #000000;
         }
 
         body,
@@ -364,19 +373,46 @@
                 <h3>Make a Mess, but Leave Yourself Clues</h3>
             </div>
 
-            <p>A rough draft doesn't have to be pretty. It just needs to give you something to work with. Don't stop writing every time you discover a missing detail.</p>
+            <p>A rough draft doesn't have to be pretty. When you encounter
+                a missing detail, leave yourself a specific note and keep writing.</p>
 
-            <p>Instead, leave yourself specific notes in brackets:</p>
+            <div class="p-3 rounded mb-3" style="background-color: #fafafa;
+            border: 1px solid #d6d6d6;">
 
-            <ul>
-                <li>[Add screenshot showing inconsistent headings]</li>
-                <li>[Verify accessibility standard and add citation]</li>
-                <li>[Explain how this problem affects readers]</li>
-            </ul>
+                <p class="mb-3" style="color: #333333;">
+                    <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                    <strong>Results: Heading Consistency</strong>
+                    <span class="badge bg-secondary ms-2">Working Draft</span>
+                </p>
 
-            <p>These notes let you keep moving without forgetting what needs attention. Just make sure your draft includes a substantial attempt at every required section.</p>
+                <p>The guide uses similar formatting for headings at different
+                    levels, making the hierarchy difficult to recognize.</p>
 
-            <p><strong>Remember:</strong> A useful rough draft shows both what you've accomplished and what you still need to do.</p>
+                <div class="p-2 rounded mb-3" style="background-color: var(--yellow-light);
+                border-left: 4px solid #75787b;">
+                    <i class="fa-solid fa-note-sticky" aria-hidden="true" style="color: var(--yellow-dark);"></i>
+                    <strong style="color: #333333;">
+                        [Add screenshot showing heading levels]
+                    </strong>
+                </div>
+
+                <p>This inconsistency may make it harder for readers
+                    to locate instructions.</p>
+
+                <div class="p-2 rounded" style="background-color: var(--yellow-light);
+                border-left: 4px solid #333333;;">
+                    <i class="fa-solid fa-note-sticky" aria-hidden="true" style="color: var(--yellow-dark);"></i>
+                    <strong style="color: #333333;">
+                        [Find design guideline and add citation]
+                    </strong>
+                </div>
+            </div>
+
+            <div class="key-idea">
+                <strong>Keep the writing moving.</strong>
+                Your notes will tell you what to finish when you revise.
+            </div>
+
 
         </div>
 
