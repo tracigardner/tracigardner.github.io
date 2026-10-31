@@ -9,7 +9,9 @@
     <title>Keep It Together: Page Breaks &amp; Proximity</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+    <!-- LOCAL STYLES -->
     <style>
+        /* BASE LAYOUT */
         * {
             box-sizing: border-box
         }
@@ -41,6 +43,7 @@
             border-radius: 14px 14px 0 0
         }
 
+        /* HERO / TITLE */
         .hero {
             display: grid;
             grid-template-columns: 95px 1fr;
@@ -84,6 +87,7 @@
             margin: 0 0 22px
         }
 
+        /* PROXIMITY PRINCIPLE */
         .principle {
             background: var(--teal-light);
             border-left: 7px solid var(--teal);
@@ -102,6 +106,7 @@
             margin: 0
         }
 
+        /* SECTION HEADINGS */
         .section-title {
             font-size: 1.65rem;
             color: var(--maroon);
@@ -112,6 +117,7 @@
             margin: 0 0 16px
         }
 
+        /* FOUR PAGE-BREAK CASES */
         .cases {
             display: grid;
             gap: 20px
@@ -147,6 +153,7 @@
             padding: 18px
         }
 
+        /* BEFORE / AFTER COMPARISONS */
         .sample {
             padding: 14px;
             border-radius: 9px;
@@ -179,6 +186,7 @@
             color: var(--green)
         }
 
+        /* TWO-PAGE DOCUMENT MINIATURES */
         .spread {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -243,6 +251,7 @@
             outline-color: var(--green)
         }
 
+        /* TABLE AND FIGURE EXAMPLES */
         .tiny-table {
             border-collapse: collapse;
             width: 100%;
@@ -281,6 +290,7 @@
             margin: 11px 0 0
         }
 
+        /* ADDITIONAL PROXIMITY EXAMPLES */
         .more {
             margin-top: 26px
         }
@@ -304,8 +314,8 @@
         }
 
         .more-item h3 {
-            font-size: 1.08rem;
-            color: var(--maroon);
+            font-size: 1.25rem;
+            color: var(--teal-dark);
             margin: 7px 0 4px
         }
 
@@ -314,6 +324,7 @@
             margin: 0
         }
 
+        /* EXCEPTIONS AND TAKEAWAY */
         .exception {
             margin-top: 24px;
             background: var(--orange-light);
@@ -332,6 +343,7 @@
             margin: 0
         }
 
+        /* FINAL PAGE-BREAK CHECK */
         .final {
             margin-top: 24px;
             border: 2px solid var(--teal);
@@ -363,6 +375,7 @@
             margin-right: 9px
         }
 
+        /* FOOTER */
         .updated {
             margin: 0;
             background: var(--maroon);
@@ -378,6 +391,7 @@
             margin: 10px 0 0
         }
 
+        /* RESPONSIVE LAYOUT */
         @media(max-width:750px) {
             .bkgd-page {
                 padding: 13px
@@ -430,6 +444,7 @@
             }
         }
 
+        /* PRINT STYLES */
         @media print {
             .bkgd-page {
                 background: none;
@@ -448,22 +463,26 @@
     <main class="infographic">
         <div class="bkgd-page">
             <div class="page">
+                <!-- HERO / TITLE -->
                 <header class="hero">
                     <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-object-group"></i></div>
                     <div>
                         <h1>Keep It Together</h1>
-                        <p class="subtitle">Page Breaks &amp; the Principle of Proximity</p>
+                        <p class="subtitle">Page Breaks &amp; the Design Principle of Proximity</p>
                     </div>
                 </header>
                 <p class="lead">A page break should not break the reader&rsquo;s understanding. When a heading, paragraph, table, or caption gets separated from related information, readers must work harder to follow the document.</p>
+                <!-- THE BIG IDEA: PROXIMITY -->
                 <section class="principle">
                     <h2><i class="fa-solid fa-link" aria-hidden="true"></i> The Big Idea: Proximity Shows Relationships</h2>
                     <p><strong>Information that belongs together should appear together.</strong> Use page breaks and white space to make those relationships clear, even when that means leaving some room at the bottom of a page.</p>
                 </section>
+                <!-- FOUR PAGE-BREAK PROBLEMS -->
                 <section aria-labelledby="problems">
                     <h2 id="problems" class="section-title"><i class="fa-solid fa-file-circle-exclamation" aria-hidden="true"></i> Four Page Break Problems to Spot</h2>
                     <p class="section-intro">Each example shows two consecutive pages. Compare the broken relationship with a clearer arrangement.</p>
                     <div class="cases">
+                        <!-- CASE 1: STRANDED HEADINGS -->
                         <article class="case">
                             <div class="case-header">
                                 <h3>1. Stranded Headings</h3>
@@ -506,6 +525,7 @@
                                 </div>
                             </div>
                         </article>
+                        <!-- CASE 2: STRANDED PARAGRAPH LINES -->
                         <article class="case">
                             <div class="case-header">
                                 <h3>2. Stranded Paragraph Lines</h3>
@@ -547,6 +567,7 @@
                                 </div>
                             </div>
                         </article>
+                        <!-- CASE 3: TABLES BROKEN ACROSS PAGES -->
                         <article class="case">
                             <div class="case-header">
                                 <h3>3. Tables Broken Across Pages</h3>
@@ -617,6 +638,7 @@
                                 </div>
                             </div>
                         </article>
+                        <!-- CASE 4: CAPTIONS SEPARATED FROM VISUALS -->
                         <article class="case">
                             <div class="case-header">
                                 <h3>4. Captions Separated from Visuals</h3>
@@ -658,27 +680,30 @@
                         </article>
                     </div>
                 </section>
+                <!-- OTHER RELATIONSHIPS WORTH PROTECTING -->
                 <section class="more" aria-labelledby="more-title">
                     <h2 class="section-title" id="more-title"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Other Relationships Worth Protecting</h2>
                     <div class="more-grid">
-                        <div class="more-item"><i class="fa-solid fa-list-ul" aria-hidden="true"></i>
-                            <h3>Lists &amp; Introductions</h3>
+                        <div class="more-item">
+                            <h3><i class="fa-solid fa-list-ul" aria-hidden="true"></i> Lists &amp; Introductions</h3>
                             <p>Keep a sentence that introduces a list with at least the beginning of that list. Avoid isolating short list items.</p>
                         </div>
-                        <div class="more-item"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
-                            <h3>Warnings &amp; Instructions</h3>
+                        <div class="more-item">
+                            <h3><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Warnings &amp; Instructions</h3>
                             <p>Place cautions, notes, and explanations next to the steps or information they concern.</p>
                         </div>
-                        <div class="more-item"><i class="fa-solid fa-image" aria-hidden="true"></i>
-                            <h3>Visuals &amp; Discussion</h3>
+                        <div class="more-item">
+                            <h3><i class="fa-solid fa-image" aria-hidden="true"></i> Visuals &amp; Discussion</h3>
                             <p>Place figures and tables near the text that introduces or explains them, whenever practical.</p>
                         </div>
                     </div>
                 </section>
+                <!-- WHEN A PAGE BREAK IS ACCEPTABLE -->
                 <section class="exception">
                     <h2><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Not Every Page Break Is a Problem</h2>
                     <p>Long paragraphs and tables sometimes need to continue onto another page. Make the continuation readable. <strong>A little extra white space is better than separating information that belongs together.</strong></p>
                 </section>
+                <!-- FINAL SELF-CHECK -->
                 <section class="final" aria-labelledby="check-title">
                     <h2 id="check-title"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> The Page-Break Check</h2>
                     <ul>
@@ -691,10 +716,13 @@
                     </ul>
                 </section>
             </div>
+            <!-- LAST UPDATED -->
             <p class="updated"><time datetime="2026-10-31">Last Updated October 31, 2026</time></p>
         </div>
+        <!-- COPYRIGHT AND LICENSE -->
         <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
     </main>
+    <!-- WORDPRESS EMBED AUTO-RESIZE -->
     <script>(function () { const parentOrigin = 'https://www.tengrrl.com'; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: 'tsc-visual-resize', height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener('load', sendHeight); if (typeof ResizeObserver !== 'undefined') new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
 </body>
 
