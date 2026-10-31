@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Visual guide to page breaks, proximity, and keeping related information together in technical reports.">
+    <meta name="author" content="Traci Gardner">
+    <title>Keep It Together: Page Breaks &amp; Proximity</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            padding: 18px;
+            background: var(--white);
+            color: var(--text);
+            line-height: 1.5;
+            font-size: 17px
+        }
+
+        .infographic {
+            max-width: 1100px;
+            margin: auto
+        }
+
+        .bkgd-page {
+            padding: 36px;
+            background: var(--teal) var(--pattern-teal-blueprint) repeat;
+            background-size: 600px
+        }
+
+        .page {
+            padding: 30px;
+            background: var(--white);
+            border: 5px solid var(--maroon);
+            border-radius: 14px 14px 0 0
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 95px 1fr;
+            gap: 22px;
+            align-items: center;
+            margin: -30px -30px 24px;
+            padding: 26px 30px;
+            background: var(--smoke-light);
+            border-bottom: 2px solid var(--smoke);
+            border-radius: 9px 9px 0 0
+        }
+
+        .hero-icon {
+            width: 86px;
+            height: 86px;
+            border-radius: 15px;
+            background: var(--maroon);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 2.7rem;
+            box-shadow: 6px 6px 0 var(--gray)
+        }
+
+        h1 {
+            font-size: clamp(2rem, 4.5vw, 3.3rem);
+            line-height: 1.08;
+            color: var(--maroon);
+            margin: 0
+        }
+
+        .subtitle {
+            margin: 6px 0 0;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--teal-dark)
+        }
+
+        .lead {
+            font-size: 1.1rem;
+            margin: 0 0 22px
+        }
+
+        .principle {
+            background: var(--teal-light);
+            border-left: 7px solid var(--teal);
+            border-radius: 9px;
+            padding: 17px 21px;
+            margin-bottom: 25px
+        }
+
+        .principle h2 {
+            font-size: 1.45rem;
+            color: var(--teal-dark);
+            margin: 0 0 5px
+        }
+
+        .principle p {
+            margin: 0
+        }
+
+        .section-title {
+            font-size: 1.65rem;
+            color: var(--maroon);
+            margin: 0 0 7px
+        }
+
+        .section-intro {
+            margin: 0 0 16px
+        }
+
+        .cases {
+            display: grid;
+            gap: 20px
+        }
+
+        .case {
+            border: 2px solid var(--gray);
+            border-radius: 12px;
+            overflow: hidden;
+            break-inside: avoid
+        }
+
+        .case-header {
+            background: var(--smoke-light);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--gray)
+        }
+
+        .case-header h3 {
+            color: var(--maroon);
+            font-size: 1.35rem;
+            margin: 0 0 3px
+        }
+
+        .case-header p {
+            margin: 0
+        }
+
+        .case-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            padding: 18px
+        }
+
+        .sample {
+            padding: 14px;
+            border-radius: 9px;
+            min-width: 0
+        }
+
+        .sample.bad {
+            background: var(--red-light);
+            border-top: 5px solid var(--red)
+        }
+
+        .sample.good {
+            background: var(--green-light);
+            border-top: 5px solid var(--green)
+        }
+
+        .sample-label {
+            font-weight: 800;
+            font-size: .9rem;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            margin-bottom: 11px
+        }
+
+        .bad .sample-label {
+            color: var(--red)
+        }
+
+        .good .sample-label {
+            color: var(--green)
+        }
+
+        .spread {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px;
+            align-items: stretch
+        }
+
+        .sheet {
+            position: relative;
+            min-height: 168px;
+            padding: 12px 10px 24px;
+            background: white;
+            border: 1px solid var(--gray);
+            box-shadow: 2px 3px 0 #d7d2cb;
+            display: flex;
+            flex-direction: column;
+            gap: 6px
+        }
+
+        .sheet-number {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #555;
+            font-size: .7rem
+        }
+
+        .line {
+            height: 6px;
+            border-radius: 3px;
+            background: #c7c7c7;
+            width: 92%
+        }
+
+        .line.med {
+            width: 72%
+        }
+
+        .line.short {
+            width: 47%
+        }
+
+        .push {
+            flex: 1
+        }
+
+        .doc-heading {
+            font-weight: 800;
+            font-size: .8rem;
+            line-height: 1.15;
+            color: var(--text)
+        }
+
+        .highlight {
+            outline: 2px dashed var(--red);
+            outline-offset: 3px
+        }
+
+        .good .highlight {
+            outline-color: var(--green)
+        }
+
+        .tiny-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: .62rem
+        }
+
+        .tiny-table td,
+        .tiny-table th {
+            border: 1px solid #888;
+            padding: 3px 2px;
+            text-align: left
+        }
+
+        .tiny-table th {
+            background: var(--teal-light)
+        }
+
+        .figure {
+            height: 53px;
+            border: 2px solid var(--teal);
+            background: linear-gradient(135deg, var(--teal-light), var(--blue-light));
+            display: grid;
+            place-items: center;
+            color: var(--teal-dark);
+            font-size: 1.3rem
+        }
+
+        .caption-text {
+            font-size: .65rem;
+            font-weight: bold;
+            line-height: 1.25
+        }
+
+        .note {
+            font-size: .88rem;
+            margin: 11px 0 0
+        }
+
+        .more {
+            margin-top: 26px
+        }
+
+        .more-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px
+        }
+
+        .more-item {
+            padding: 17px;
+            border: 2px solid var(--gray);
+            border-radius: 10px;
+            background: var(--smoke-light)
+        }
+
+        .more-item i {
+            color: var(--teal-dark);
+            font-size: 1.5rem
+        }
+
+        .more-item h3 {
+            font-size: 1.08rem;
+            color: var(--maroon);
+            margin: 7px 0 4px
+        }
+
+        .more-item p {
+            font-size: .94rem;
+            margin: 0
+        }
+
+        .exception {
+            margin-top: 24px;
+            background: var(--orange-light);
+            border-left: 6px solid var(--orange);
+            padding: 17px 20px;
+            border-radius: 9px
+        }
+
+        .exception h2 {
+            font-size: 1.35rem;
+            margin: 0 0 5px;
+            color: var(--maroon)
+        }
+
+        .exception p {
+            margin: 0
+        }
+
+        .final {
+            margin-top: 24px;
+            border: 2px solid var(--teal);
+            border-radius: 12px;
+            overflow: hidden
+        }
+
+        .final h2 {
+            background: var(--teal-dark);
+            color: white;
+            margin: 0;
+            padding: 13px 19px;
+            font-size: 1.5rem
+        }
+
+        .final ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 24px;
+            list-style: none;
+            padding: 17px 20px;
+            margin: 0
+        }
+
+        .final li:before {
+            content: '✓';
+            font-weight: bold;
+            color: var(--green);
+            margin-right: 9px
+        }
+
+        .updated {
+            margin: 0;
+            background: var(--maroon);
+            color: white;
+            text-align: right;
+            padding: 9px 14px;
+            font-weight: bold;
+            font-size: .85rem
+        }
+
+        .credit {
+            font-size: .78rem;
+            margin: 10px 0 0
+        }
+
+        @media(max-width:750px) {
+            .bkgd-page {
+                padding: 13px
+            }
+
+            .page {
+                padding: 17px
+            }
+
+            .hero {
+                margin: -17px -17px 19px;
+                padding: 18px;
+                grid-template-columns: 62px 1fr;
+                gap: 13px
+            }
+
+            .hero-icon {
+                width: 56px;
+                height: 56px;
+                font-size: 1.7rem
+            }
+
+            .case-body,
+            .more-grid,
+            .final ul {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:420px) {
+            .sheet {
+                min-height: 145px;
+                padding: 8px 6px 20px
+            }
+
+            .spread {
+                gap: 5px
+            }
+
+            .case-body {
+                padding: 10px
+            }
+
+            .sample {
+                padding: 9px
+            }
+
+            .doc-heading {
+                font-size: .69rem
+            }
+        }
+
+        @media print {
+            .bkgd-page {
+                background: none;
+                padding: 0
+            }
+
+            .case,
+            .more-item {
+                break-inside: avoid
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="infographic">
+        <div class="bkgd-page">
+            <div class="page">
+                <header class="hero">
+                    <div class="hero-icon" aria-hidden="true"><i class="fa-solid fa-object-group"></i></div>
+                    <div>
+                        <h1>Keep It Together</h1>
+                        <p class="subtitle">Page Breaks &amp; the Principle of Proximity</p>
+                    </div>
+                </header>
+                <p class="lead">A page break should not break the reader&rsquo;s understanding. When a heading, paragraph, table, or caption gets separated from related information, readers must work harder to follow the document.</p>
+                <section class="principle">
+                    <h2><i class="fa-solid fa-link" aria-hidden="true"></i> The Big Idea: Proximity Shows Relationships</h2>
+                    <p><strong>Information that belongs together should appear together.</strong> Use page breaks and white space to make those relationships clear, even when that means leaving some room at the bottom of a page.</p>
+                </section>
+                <section aria-labelledby="problems">
+                    <h2 id="problems" class="section-title"><i class="fa-solid fa-file-circle-exclamation" aria-hidden="true"></i> Four Page Break Problems to Spot</h2>
+                    <p class="section-intro">Each example shows two consecutive pages. Compare the broken relationship with a clearer arrangement.</p>
+                    <div class="cases">
+                        <article class="case">
+                            <div class="case-header">
+                                <h3>1. Stranded Headings</h3>
+                                <p>A heading appears alone at the bottom of a page, while its section starts on the next.</p>
+                            </div>
+                            <div class="case-body">
+                                <div class="sample bad">
+                                    <div class="sample-label"><i class="fa-solid fa-xmark"></i> Avoid</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line"></div>
+                                            <div class="line med"></div>
+                                            <div class="push"></div>
+                                            <div class="doc-heading highlight">Evaluation Criteria</div><span class="sheet-number">Page 4</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <div class="line"></div>
+                                            <div class="line"></div>
+                                            <div class="line med"></div><span class="sheet-number">Page 5</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">The heading has no content beneath it.</p>
+                                </div>
+                                <div class="sample good">
+                                    <div class="sample-label"><i class="fa-solid fa-check"></i> Keep together</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line"></div>
+                                            <div class="line med"></div>
+                                            <div class="push"></div><span class="sheet-number">Page 4</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <div class="doc-heading highlight">Evaluation Criteria</div>
+                                            <div class="line"></div>
+                                            <div class="line"></div>
+                                            <div class="line med"></div><span class="sheet-number">Page 5</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">Move the heading with the content it introduces.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="case">
+                            <div class="case-header">
+                                <h3>2. Stranded Paragraph Lines</h3>
+                                <p>A heading and just one line of text appear at the bottom of a page, or a paragraph&rsquo;s final line appears alone on the next page.</p>
+                            </div>
+                            <div class="case-body">
+                                <div class="sample bad">
+                                    <div class="sample-label"><i class="fa-solid fa-xmark"></i> Avoid</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line med"></div>
+                                            <div class="push"></div>
+                                            <div class="doc-heading">Key Findings</div>
+                                            <div class="line highlight"></div><span class="sheet-number">Page 6</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <div class="line"></div>
+                                            <div class="line"></div>
+                                            <div class="line short"></div><span class="sheet-number">Page 7</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">A single opening line is separated from its paragraph.</p>
+                                </div>
+                                <div class="sample good">
+                                    <div class="sample-label"><i class="fa-solid fa-check"></i> Keep together</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line med"></div>
+                                            <div class="push"></div><span class="sheet-number">Page 6</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <div class="doc-heading">Key Findings</div>
+                                            <div class="line highlight"></div>
+                                            <div class="line"></div>
+                                            <div class="line short"></div><span class="sheet-number">Page 7</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">Keep at least two lines of a paragraph together at a page boundary.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="case">
+                            <div class="case-header">
+                                <h3>3. Tables Broken Across Pages</h3>
+                                <p>A short table is divided, or a continuing table loses the headings readers need to interpret its data.</p>
+                            </div>
+                            <div class="case-body">
+                                <div class="sample bad">
+                                    <div class="sample-label"><i class="fa-solid fa-xmark"></i> Avoid</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line med"></div>
+                                            <div class="push"></div>
+                                            <table class="tiny-table highlight">
+                                                <tr>
+                                                    <th>Measure</th>
+                                                    <th>Score</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Clarity</td>
+                                                    <td>4</td>
+                                                </tr>
+                                            </table><span class="sheet-number">Page 8</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <table class="tiny-table">
+                                                <tr>
+                                                    <td>Access</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Design</td>
+                                                    <td>4</td>
+                                                </tr>
+                                            </table><span class="sheet-number">Page 9</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">Readers lose the column labels on the second page.</p>
+                                </div>
+                                <div class="sample good">
+                                    <div class="sample-label"><i class="fa-solid fa-check"></i> Keep together</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line med"></div>
+                                            <div class="push"></div><span class="sheet-number">Page 8</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <table class="tiny-table highlight">
+                                                <tr>
+                                                    <th>Measure</th>
+                                                    <th>Score</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Clarity</td>
+                                                    <td>4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Access</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Design</td>
+                                                    <td>4</td>
+                                                </tr>
+                                            </table><span class="sheet-number">Page 9</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">Keep short tables intact. For long tables, repeat column headings and avoid split rows.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="case">
+                            <div class="case-header">
+                                <h3>4. Captions Separated from Visuals</h3>
+                                <p>A figure or table appears on one page, but its identifying caption appears on another.</p>
+                            </div>
+                            <div class="case-body">
+                                <div class="sample bad">
+                                    <div class="sample-label"><i class="fa-solid fa-xmark"></i> Avoid</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line med"></div>
+                                            <div class="push"></div>
+                                            <div class="figure"><i class="fa-solid fa-chart-column"></i></div><span class="sheet-number">Page 10</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <div class="caption-text highlight">Figure 2. Survey results</div>
+                                            <div class="line"></div>
+                                            <div class="line med"></div><span class="sheet-number">Page 11</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">The caption is disconnected from the figure it identifies.</p>
+                                </div>
+                                <div class="sample good">
+                                    <div class="sample-label"><i class="fa-solid fa-check"></i> Keep together</div>
+                                    <div class="spread">
+                                        <div class="sheet">
+                                            <div class="line med"></div>
+                                            <div class="push"></div><span class="sheet-number">Page 10</span>
+                                        </div>
+                                        <div class="sheet">
+                                            <div class="figure highlight"><i class="fa-solid fa-chart-column"></i></div>
+                                            <div class="caption-text">Figure 2. Survey results</div>
+                                            <div class="line med"></div><span class="sheet-number">Page 11</span>
+                                        </div>
+                                    </div>
+                                    <p class="note">Keep each caption on the same page as its figure or table, using the required caption position.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="more" aria-labelledby="more-title">
+                    <h2 class="section-title" id="more-title"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Other Relationships Worth Protecting</h2>
+                    <div class="more-grid">
+                        <div class="more-item"><i class="fa-solid fa-list-ul" aria-hidden="true"></i>
+                            <h3>Lists &amp; Introductions</h3>
+                            <p>Keep a sentence that introduces a list with at least the beginning of that list. Avoid isolating short list items.</p>
+                        </div>
+                        <div class="more-item"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                            <h3>Warnings &amp; Instructions</h3>
+                            <p>Place cautions, notes, and explanations next to the steps or information they concern.</p>
+                        </div>
+                        <div class="more-item"><i class="fa-solid fa-image" aria-hidden="true"></i>
+                            <h3>Visuals &amp; Discussion</h3>
+                            <p>Place figures and tables near the text that introduces or explains them, whenever practical.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="exception">
+                    <h2><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Not Every Page Break Is a Problem</h2>
+                    <p>Long paragraphs and tables sometimes need to continue onto another page. Make the continuation readable. <strong>A little extra white space is better than separating information that belongs together.</strong></p>
+                </section>
+                <section class="final" aria-labelledby="check-title">
+                    <h2 id="check-title"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> The Page-Break Check</h2>
+                    <ul>
+                        <li>Do headings stay with their content?</li>
+                        <li>Are single paragraph lines stranded?</li>
+                        <li>Are tables readable across pages?</li>
+                        <li>Do captions stay with their visuals?</li>
+                        <li>Do lists, notes, and explanations stay near related content?</li>
+                        <li>Have you checked the finished pages, not just the draft view?</li>
+                    </ul>
+                </section>
+            </div>
+            <p class="updated"><time datetime="2026-10-31">Last Updated October 31, 2026</time></p>
+        </div>
+        <p class="credit">&copy; 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+    </main>
+    <script>(function () { const parentOrigin = 'https://www.tengrrl.com'; function sendHeight() { if (window.parent === window) return; window.parent.postMessage({ type: 'tsc-visual-resize', height: document.documentElement.scrollHeight }, parentOrigin) } window.addEventListener('load', sendHeight); if (typeof ResizeObserver !== 'undefined') new ResizeObserver(sendHeight).observe(document.documentElement) })();</script>
+</body>
+
+</html>
