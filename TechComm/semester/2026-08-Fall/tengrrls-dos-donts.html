@@ -7,11 +7,12 @@
     <title>Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts for Workplace Writing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+
     <style>
         :root {
-            --bg: #ffffff;
-            --center-line: #508590;
-            --text: #111111;
+            /* Shared palette, background and typography are supplied by infographics-shared.css. */
+            --poster-text: #111111;
 
             --c1: #f4c5a3;
             --c1-circle: #f6e8dc;
@@ -46,9 +47,9 @@
 
         body {
             margin: 0;
-            background: var(--bg);
-            color: var(--text);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: var(--white);
+            color: var(--poster-text);
+            font-family: var(--font-body);
             font-size: 16px;
         }
 
@@ -68,7 +69,7 @@
         }
 
         .poster-title {
-            color: #508590;
+            color: var(--teal);
             font-size: clamp(2.3rem, 5vw, 4.2rem);
             line-height: 1.08;
             font-weight: 700;
@@ -78,7 +79,7 @@
 
         .title-rule {
             height: 6px;
-            background: #508590;
+            background: var(--teal);
             margin-bottom: 2.75rem;
         }
 
@@ -93,7 +94,7 @@
             top: 0;
             bottom: 0;
             width: 0;
-            border-left: 6px dashed #508590;
+            border-left: 6px dashed var(--teal);
             transform: translateX(-50%);
             z-index: 10;
             pointer-events: none;
@@ -189,6 +190,26 @@
             max-width: 92%;
         }
 
+        /* Keep the alternating two-column layout in narrower Canvas views. */
+        @media (min-width: 561px) and (max-width: 900px) {
+            .poster { padding: 2rem 0.5rem 3rem; }
+            .capsule { gap: 0.5rem; min-height: 112px; }
+            .cell { min-height: 112px; min-width: 0; }
+            .number-circle {
+                width: 64px;
+                height: 64px;
+                min-width: 64px;
+                font-size: 2rem;
+            }
+            .headline { font-size: clamp(1rem, 2.5vw, 1.45rem); overflow-wrap: break-word; }
+            .desc { font-size: 0.9rem; max-width: 100%; overflow-wrap: break-word; }
+            .row-left .capsule { padding-left: 0.4rem; }
+            .row-right .capsule { padding-right: 0.4rem; }
+            .row-left .desc-cell { padding-left: 0.7rem; padding-right: 0.25rem; }
+            .row-right .desc-cell { padding-right: 0.7rem; padding-left: 0.25rem; }
+            .headline.ps-3 { padding-left: 0.35rem !important; }
+        }
+
         .c1 {
             background: var(--c1);
         }
@@ -270,6 +291,10 @@
         }
 
         @media (max-width: 900px) {
+            #pagecontent { margin: 12px 10px !important; padding: 12px !important; }
+        }
+
+        @media (max-width: 560px) {
             .poster {
                 padding: 2rem 1rem 3rem;
             }
@@ -329,9 +354,9 @@
 </head>
 
 <body>
-    <div id="bkgd-pattern" style="background-image: url(https://tracigardner.github.io/TechComm/-images/backgrounds/RS200052_20240916_Hokie_Stone_LH_0008_web-450wx300h.jpg); width: 96%; height: 96%; background-color: #dedede;">
+    <div id="bkgd-pattern" style="background-image: var(--pattern-hokie-stone); width: 96%; height: 96%; background-color: #dedede;">
         <p>&nbsp;</p>
-        <div id="pagecontent" style="margin: 24px 36px;background-color: #ffffff;padding: 24px;border: 6px solid #508590;border-radius: 24px;">
+        <div id="pagecontent" style="margin: 24px 36px;background-color: var(--white);padding: 24px;border: 6px solid var(--teal);border-radius: 24px;">
             <div class="poster">
                 <h1 class="poster-title">Tengrrl&rsquo;s Do&rsquo;s &amp; Don&rsquo;ts<br />for Workplace Writing</h1>
                 <div class="title-rule"></div>
@@ -492,12 +517,12 @@
             </div>
             <!-- FOOTER -->
             <p>&nbsp;</p>
-            <p style="border-top: 1px solid #508590;padding-top: 9px;font-size: .9rem">Background image: September 16th, 2024 - Detail of a Hokie stone wall. (Photo by Luke Hayes/Virginia Tech)<br><br>
+            <p style="border-top: 1px solid var(--teal);padding-top: 9px;font-size: .9rem">Background image: September 16th, 2024 - Detail of a Hokie stone wall. (Photo by Luke Hayes/Virginia Tech)<br><br>
                 Text Copyright © 2026 Traci Gardner. Licensed under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
         </div>
         <p>&nbsp;</p>
     </div>
-    <p style="font-size: 14pt;margin-top: 12px;color: #ffffff;background-color: #385d65;font-weight: bold;text-align: right;"><time datetime="2026-08-21">Last Updated August 21, 2026&nbsp;&nbsp;&nbsp;</time></p>
+    <p style="font-size: 14pt;margin-top: 12px;color: var(--white);background-color: var(--teal-dark);font-weight: bold;text-align: right;"><time datetime="2026-08-21">Last Updated August 21, 2026&nbsp;&nbsp;&nbsp;</time></p>
 
 </body>
 <script>
