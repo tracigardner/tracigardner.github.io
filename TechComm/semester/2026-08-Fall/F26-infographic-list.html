@@ -86,6 +86,7 @@
             if (params.get("context") === "canvas") {
                 document.querySelectorAll("[data-canvas-url]").forEach(link => {
                     link.href = link.dataset.canvasUrl;
+                    link.target = "_top";
                 });
             }
         });
