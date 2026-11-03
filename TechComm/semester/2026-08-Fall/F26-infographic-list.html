@@ -46,10 +46,27 @@
 
     .infographic-panel ul {
       padding-left: 1.5rem;
+      list-style-position: inside;
     }
 
     .infographic-panel li {
       margin-bottom: .5rem;
+    }
+
+    .infographic-panel li a {
+      display: inline-block;
+      padding: .25rem 0;
+    }
+
+    .alphabetical-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .alphabetical-group h2 {
+      font-size: 2rem;
+      margin-bottom: .5rem;
+      font-weight: bold;
+      color: var(--maroon);
     }
 
     .topic-group {
@@ -139,9 +156,46 @@
         li.appendChild(makeLink(source));
         list.appendChild(li);
       }
-      const sortedLinks = sourceLinks.sort((a, b) => collator.compare(a.textContent.trim(), b.textContent.trim()));
-      sortedLinks.forEach(link => addListItem(alphabeticalList, link));
 
+      const sortedLinks = sourceLinks.sort((a, b) =>
+        collator.compare(a.textContent.trim(), b.textContent.trim())
+      );
+
+      // Alphabetical groups, three letters per heading
+      const letterGroups = [
+        "ABC", "DEF", "GHI", "JKL", "MNO",
+        "PQR", "STU", "VWX", "YZ"
+      ];
+
+      letterGroups.forEach(group => {
+        const matchingLinks = sortedLinks.filter(link => {
+          const firstLetter = link.textContent.trim().charAt(0).toUpperCase();
+          return group.includes(firstLetter);
+        });
+
+        // Skip groups with no matching infographics
+        if (matchingLinks.length === 0) return;
+
+        const heading = document.createElement("h2");
+        heading.textContent = group;
+
+        const list = document.createElement("ul");
+        list.className = "skipline";
+
+        matchingLinks.forEach(link => addListItem(list, link));
+
+        const section = document.createElement("section");
+        section.className = "alphabetical-group";
+        section.append(heading, list);
+
+        alphabeticalList.appendChild(section);
+      });
+
+
+      /*
+            const sortedLinks = sourceLinks.sort((a, b) => collator.compare(a.textContent.trim(), b.textContent.trim()));
+            sortedLinks.forEach(link => addListItem(alphabeticalList, link));
+      */
       const groups = new Map();
       sortedLinks.forEach(link => {
         const assignedTopics = (link.dataset.topics || "Other").split(",").map(t => t.trim()).filter(Boolean);
