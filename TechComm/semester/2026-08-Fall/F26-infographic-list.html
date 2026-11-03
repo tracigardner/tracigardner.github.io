@@ -16,6 +16,23 @@
 </head>
 
 <body>
+    <!-- test of frame link script -->
+    <h1>Test of Links in/not in Frames</h1>
+    <ul>
+        <li>
+            <a href="https://tracigardner.github.io/TechComm/document-design/visual-hierarchy.html" data-canvas-url="https://canvas.vt.edu/courses/235156/pages/what-gets-read-first">
+                What Gets Read First?
+            </a>
+        </li>
+        <li>
+            <a href="https://tracigardner.github.io/TechComm/document-design/page-numbering-infographic.html" data-canvas-url="https://canvas.vt.edu/courses/235156/pages/page-numbers-follow-the-report-roadmap">
+                Page Numbers: Follow the Report Roadmap
+            </a>
+        </li>
+    </ul>
+
+
+
     <h1 style="font-size: 24px;font-weight: bold;">Alphabetical List of All Infographics, Fall 2026</h1>
     <ul id="my-list" class="skipline">
         <li><a target="_blank" href="https://canvas.vt.edu/courses/235156/pages/academic-writing-vs-technical-communication">Academic Writing vs. Technical Communication</a></li>
@@ -62,6 +79,17 @@
 
     </ul>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+
+            if (params.get("context") === "canvas") {
+                document.querySelectorAll("[data-canvas-url]").forEach(link => {
+                    link.href = link.dataset.canvasUrl;
+                });
+            }
+        });
+    </script>
     <script>
         const list = document.querySelector("#my-list");
         const items = [...list.querySelectorAll(":scope > li")];
