@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual assembly guide for recommendation report sections, page breaks, and page numbering.">
+  <meta name="author" content="Traci Gardner">
+  <title>Recommendation Report: Put the Pages in Order</title>
+  <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+  <!-- INFOGRAPHIC-SPECIFIC STYLES -->
+  <style>
+    /* Only infographic-specific styles; shared design tokens and page styles are supplied by infographics-shared.css. */
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      color: var(--text, #263238);
+      font-size: 17px;
+      line-height: 1.5;
+      background: #fff
+    }
+
+    .bkgd-page {
+      background: var(--smoke, #e7ebed) var(--pattern-geometric-corner) repeat;
+      background-size: 600px;
+      background-color: var(--teal, #19a89c);
+      padding: clamp(12px, 3.4vw, 38px)
+    }
+
+    .infographic {
+      max-width: 1100px;
+      margin: auto
+    }
+
+    .page {
+      background: #fff;
+      padding: clamp(18px, 3.2vw, 38px);
+      border-radius: 12px;
+      box-shadow: 0 5px 20px #00000018
+    }
+
+    .hero {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 24px;
+      background: var(--orange-light, #fff0e1);
+      border-bottom: 5px solid var(--maroon, #861f41);
+      border-radius: 9px;
+      margin-bottom: 22px
+    }
+
+    .hero-icon {
+      flex: 0 0 76px;
+      height: 76px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--maroon, #861f41);
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 800
+    }
+
+    .hero-icon svg {
+      display: block;
+      width: 64px;
+      height: 64px;
+      max-width: 100%
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.9rem);
+      line-height: 1.13;
+      color: var(--maroon, #861f41);
+      margin: 0 0 5px
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      margin: 0
+    }
+
+    .intro {
+      margin: 0 0 16px
+    }
+
+    .guardrail {
+      border-left: 6px solid var(--maroon, #861f41);
+      background: var(--smoke-light, #f3f5f6);
+      padding: 15px 18px;
+      border-radius: 6px;
+      margin: 18px 0
+    }
+
+    .guardrail strong {
+      color: var(--maroon, #861f41)
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px 18px;
+      font-size: .9rem;
+      margin: 16px 0 23px
+    }
+
+    .legend span {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+      background: var(--teal-dark, #006a6a)
+    }
+
+    .dot.optional {
+      background: var(--purple, #7657aa)
+    }
+
+    .zone {
+      margin: 26px 0 30px;
+      display: grid;
+      grid-template-columns: 52px minmax(0, 1fr);
+      gap: 12px;
+      align-items: stretch;
+      --zone-bg: #fff
+    }
+
+    .zone-label {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--zone-border);
+      color: #fff
+    }
+
+    .zone-label h2 {
+      position: absolute;
+      inset: 12px 0;
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.1;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: inherit;
+      font-weight: 800;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      overflow: hidden
+    }
+
+    .zone-label .repeating-label {
+      display: block;
+      flex: none;
+      white-space: nowrap;
+      line-height: 1.1
+    }
+
+    .zone-label .ribbon-dot {
+      display: block;
+      flex: none;
+      line-height: 1;
+      opacity: .85
+    }
+
+    .zone-content {
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+      min-width: 0;
+      border: 2px solid var(--zone-border);
+      border-radius: 11px;
+      background: var(--zone-bg)
+    }
+
+    .front {
+      --zone-border: var(--teal, #19a89c);
+      --zone-bg: var(--teal-light, #edf9f6)
+    }
+
+    .body-zone {
+      --zone-border: var(--orange, #e47728);
+      --zone-bg: var(--orange-light, #fff3e8)
+    }
+
+    .back {
+      --zone-border: var(--purple, #7657aa);
+      --zone-bg: #f5f2fb
+    }
+
+    .entry {
+      display: grid;
+      grid-template-columns: 43px minmax(118px, 170px) minmax(0, 1fr);
+      gap: 13px;
+      align-items: center;
+      padding: 12px;
+      background: #fff;
+      border: 1px solid #d5dce0;
+      border-radius: 9px
+    }
+
+    .order {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--maroon, #861f41);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums
+    }
+
+    .sheet {
+      width: 100%;
+      min-height: 135px;
+      border: 1px solid #b4bdc4;
+      background: #fff;
+      box-shadow: 4px 5px 0 #e1e5e8;
+      padding: 11px 9px 9px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      text-align: center;
+      color: #263238;
+      position: relative
+    }
+
+    .sheet-title {
+      font-size: .78rem;
+      font-weight: 800;
+      line-height: 1.2;
+      overflow-wrap: anywhere
+    }
+
+    .sheet-sub {
+      font-size: .62rem;
+      line-height: 1.25;
+      color: #59616b
+    }
+
+    .line {
+      height: 4px;
+      background: #d8dee2;
+      border-radius: 3px;
+      width: 100%
+    }
+
+    .line.short {
+      width: 65%
+    }
+
+    .line.mid {
+      width: 82%
+    }
+
+    .sheet-number {
+      margin-top: auto;
+      font-size: .67rem;
+      color: #45525d;
+      min-height: 13px
+    }
+
+    .sheet.letter {
+      text-align: left
+    }
+
+    .sheet.letter .sheet-title {
+      font-size: .7rem;
+      font-weight: 600
+    }
+
+    .sheet.titlepage {
+      justify-content: center
+    }
+
+    .sheet.titlepage .sheet-title {
+      font-size: .85rem;
+      color: var(--maroon, #861f41)
+    }
+
+    .entry-info h3 {
+      font-size: 1.08rem;
+      line-height: 1.25;
+      margin: 0 0 6px;
+      color: var(--text, #263238)
+    }
+
+    .entry-info p {
+      margin: 6px 0 0;
+      font-size: .88rem
+    }
+
+    .chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap
+    }
+
+    .chip {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      border-radius: 100px;
+      padding: 3px 9px;
+      background: #e9eef1;
+      color: #263238
+    }
+
+    .chip.break {
+      background: #e7f3f1;
+      color: #075e55
+    }
+
+    .chip.number {
+      background: #f9e7d8;
+      color: #814008
+    }
+
+    .chip.nohead {
+      background: #f9e4e9;
+      color: #861f41
+    }
+
+    .chip.optional {
+      background: #eee7fa;
+      color: #56378a
+    }
+
+    .transition {
+      margin: 18px 0;
+      padding: 13px 17px;
+      border: 2px dashed var(--maroon, #861f41);
+      background: #fff;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: 700;
+      color: var(--maroon, #861f41)
+    }
+
+    .note {
+      font-size: .86rem;
+      color: #4d5861;
+      margin: 7px 0 0
+    }
+
+    .check {
+      padding: 18px;
+      border-radius: 9px;
+      background: var(--smoke-light, #f3f5f6);
+      margin-top: 22px
+    }
+
+    .check h2 {
+      margin: 0 0 9px;
+      font-size: 1.3rem;
+      color: var(--maroon, #861f41)
+    }
+
+    .check ul {
+      margin: 0;
+      padding-left: 22px
+    }
+
+    .check li {
+      margin: 5px 0
+    }
+
+    .updated {
+      margin: 22px 0 0;
+      padding: 9px 13px;
+      background: var(--maroon, #861f41);
+      color: #fff;
+      text-align: right;
+      font-size: .85rem;
+      font-weight: bold
+    }
+
+    .credit {
+      font-size: .75rem;
+      text-align: center;
+      margin: 14px 10px;
+      color: var(--text, #263238)
+    }
+
+    .footer {
+      border-top: 1px solid #d8dee2;
+      margin-top: 23px;
+      padding-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: .78rem;
+      color: #52616b
+    }
+
+    .footer p {
+      margin: 0
+    }
+
+    @media(max-width:580px) {
+      .hero {
+        align-items: flex-start;
+        padding: 17px;
+        gap: 12px
+      }
+
+      .hero-icon {
+        flex-basis: 52px;
+        height: 52px;
+        font-size: 1.8rem
+      }
+
+      .hero-icon svg {
+        width: 44px;
+        height: 44px
+      }
+
+      .entry {
+        grid-template-columns: 34px 94px minmax(0, 1fr);
+        gap: 8px;
+        padding: 9px
+      }
+
+      .order {
+        width: 30px;
+        height: 30px;
+        font-size: .82rem
+      }
+
+      .sheet {
+        min-height: 116px;
+        padding: 8px 5px
+      }
+
+      .sheet-title {
+        font-size: .67rem
+      }
+
+      .entry-info h3 {
+        font-size: .94rem
+      }
+
+      .entry-info p {
+        font-size: .78rem
+      }
+
+      .chip {
+        font-size: .65rem;
+        padding: 2px 6px
+      }
+
+      .zone {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 6px
+      }
+
+      .zone-label h2 {
+        font-size: .78rem;
+        letter-spacing: .04em
+      }
+
+      .zone-content {
+        padding: 9px
+      }
+    }
+
+    @media(max-width:390px) {
+      .zone {
+        grid-template-columns: 25px minmax(0, 1fr);
+        gap: 5px
+      }
+
+      .zone-label h2 {
+        font-size: .68rem
+      }
+
+      .zone-content {
+        padding: 6px
+      }
+
+      .entry {
+        grid-template-columns: 30px 77px minmax(0, 1fr)
+      }
+
+      .sheet {
+        min-height: 110px
+      }
+
+      .sheet-title {
+        font-size: .62rem
+      }
+    }
+
+    @media print {
+      .bkgd-page {
+        padding: 0;
+        background: none
+      }
+
+      .page {
+        box-shadow: none;
+        padding: 0
+      }
+
+      .entry,
+      .zone,
+      .guardrail {
+        break-inside: avoid
+      }
+
+      .zone {
+        break-inside: auto
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="infographic">
+    <div class="bkgd-page">
+      <div class="page">
+        <!-- HERO -->
+        <header class="hero">
+          <div class="hero-icon" aria-hidden="true"><svg viewBox="0 0 110 92" xmlns="http://www.w3.org/2000/svg" focusable="false">
+              <rect x="22" y="7" width="63" height="73" rx="3" fill="#d9d4dc" transform="rotate(8 53 43)" />
+              <rect x="16" y="8" width="63" height="73" rx="3" fill="#eae6e9" transform="rotate(-5 47 44)" />
+              <rect x="22" y="8" width="63" height="73" rx="3" fill="#fff" />
+              <rect x="31" y="21" width="44" height="5" rx="2" fill="#861f41" />
+              <rect x="31" y="35" width="37" height="3" rx="1" fill="#bfc4cb" />
+              <rect x="31" y="43" width="40" height="3" rx="1" fill="#bfc4cb" />
+              <rect x="31" y="51" width="31" height="3" rx="1" fill="#bfc4cb" /><text x="53" y="72" font-size="10" text-anchor="middle" fill="#861f41">1</text>
+            </svg></div>
+          <div>
+            <h1>Recommendation Report:<br>Put the Pages in Order</h1>
+            <p class="subtitle">A visual guide to section order, page breaks, and numbering</p>
+          </div>
+        </header>
+        <!-- INTRODUCTION -->
+        <p class="intro">Build your report in the sequence below. The miniature pages show what belongs <strong>on the page</strong>; the labels and instructions beside them are <strong>not part of the report</strong>.</p>
+        <!-- HEADING GUIDANCE -->
+        <aside class="guardrail"><strong>Use the actual report title and business letter format.</strong> Do not type “Letter of Transmittal” or “Title Page” as headings on those pages.</aside>
+        <!-- LEGEND -->
+        <div class="legend" aria-label="Legend"><span><i class="dot" aria-hidden="true"></i> Required section</span><span><i class="dot optional" aria-hidden="true"></i> Optional section</span><span><strong>New page</strong> = insert a page break before the section</span></div>
+        <!-- FRONT MATTER -->
+        <section class="zone front" aria-labelledby="front-heading">
+          <div class="zone-label">
+            <h2 id="front-heading" aria-label="Front Matter"><span class="repeating-label" aria-hidden="true">Front Matter</span></h2>
+          </div>
+          <div class="zone-content">
+            <!-- REPORT SECTION ENTRIES -->
+            <div class="entry"><span class="order">01</span>
+              <div class="sheet letter" aria-label="Example business letter layout"><span class="sheet-title">November 2026</span><span class="line short"></span><span class="sheet-sub">Recipient address</span><span class="line mid"></span><span class="sheet-sub">Dear …</span><span class="line"></span><span class="line mid"></span><span class="sheet-sub">Sincerely, …</span><span class="sheet-number">&nbsp;</span></div>
+              <div class="entry-info">
+                <h3>Letter of Transmittal</h3>
+                <div class="chips"><span class="chip break">Separate page</span><span class="chip number">No page number</span><span class="chip nohead">No section heading</span></div>
+                <p>Format as a business letter. Do not label it “Letter of Transmittal.”</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">02</span>
+              <div class="sheet titlepage" aria-label="Example title page"><span class="sheet-title">Improving the<br>Client Guide</span><span class="sheet-sub">Recommendation Report</span><span class="sheet-sub">Prepared for …</span><span class="sheet-sub">Prepared by …</span><span class="sheet-sub">Date</span><span class="sheet-number">&nbsp;</span></div>
+              <div class="entry-info">
+                <h3>Title Page</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">No visible number</span><span class="chip nohead">No section heading</span></div>
+                <p>Use your <em>actual report title</em>, not the words “Title Page.” Count this as front-matter page i, but do not display i.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">03</span>
+              <div class="sheet"><span class="sheet-title">Abstract</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="line short"></span><span class="sheet-number">ii</span></div>
+              <div class="entry-info">
+                <h3>Abstract</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
+                <p>Use “Abstract” as the heading. The first visible front-matter number is typically ii.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">04</span>
+              <div class="sheet"><span class="sheet-title">Table of Contents</span><span class="sheet-sub">Introduction ........ 1</span><span class="sheet-sub">Methods ............. 3</span><span class="sheet-sub">Results ............... 5</span><span class="sheet-number">iii*</span></div>
+              <div class="entry-info">
+                <h3>Table of Contents</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
+                <p>List the actual report headings and their correct page numbers. Do not list “Front Matter” or “Report Body.”</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">05</span>
+              <div class="sheet"><span class="sheet-title">List of Illustrations</span><span class="sheet-sub">Figure 1 ............ 4</span><span class="sheet-sub">Table 1 ............. 7</span><span class="sheet-number">iv*</span></div>
+              <div class="entry-info">
+                <h3>List of Illustrations</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
+                <p>List the figures and tables in the report with their page numbers.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">06</span>
+              <div class="sheet"><span class="sheet-title">Executive Summary</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="line short"></span><span class="sheet-number">v*</span></div>
+              <div class="entry-info">
+                <h3>Executive Summary</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
+                <p>Keep Roman numbering through the end of the front matter.</p>
+              </div>
+            </div>
+            <p class="note">*Roman numeral examples assume each preceding front-matter section occupies one page. Actual numbers depend on length.</p>
+          </div>
+        </section>
+        <div class="transition">Numbering changes here: Roman numerals → Arabic numerals, restarting at 1</div>
+        <!-- REPORT BODY -->
+        <section class="zone body-zone" aria-labelledby="body-heading">
+          <div class="zone-label">
+            <h2 id="body-heading" aria-label="Report Body"><span class="repeating-label" aria-hidden="true">Report Body</span></h2>
+          </div>
+          <div class="zone-content">
+            <div class="entry"><span class="order">07</span>
+              <div class="sheet"><span class="sheet-title">Introduction</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">1</span></div>
+              <div class="entry-info">
+                <h3>Introduction</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Arabic page 1</span></div>
+                <p>Start the body here; restart numbering at 1.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">08</span>
+              <div class="sheet"><span class="sheet-title">Methods</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">…</span></div>
+              <div class="entry-info">
+                <h3>Methods</h3>
+                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <p>Explain how you gathered evidence and evaluated the client document.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">09</span>
+              <div class="sheet"><span class="sheet-title">Results</span><span class="line"></span><span class="line short"></span><span class="line"></span><span class="sheet-number">…</span></div>
+              <div class="entry-info">
+                <h3>Results</h3>
+                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <p>Present what your investigation found.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">10</span>
+              <div class="sheet"><span class="sheet-title">Conclusions</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">…</span></div>
+              <div class="entry-info">
+                <h3>Conclusions</h3>
+                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <p>Explain what the results mean.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">11</span>
+              <div class="sheet"><span class="sheet-title">Recommendations</span><span class="line"></span><span class="line short"></span><span class="line"></span><span class="sheet-number">…</span></div>
+              <div class="entry-info">
+                <h3>Recommendations</h3>
+                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <p>Propose specific, feasible improvements supported by your findings.</p>
+              </div>
+            </div>
+            <p class="note">*First-draft layout convention: each major body section begins on a new page. This is a formatting choice to confirm for the course.</p>
+          </div>
+        </section>
+        <!-- BACK MATTER -->
+        <section class="zone back" aria-labelledby="back-heading">
+          <div class="zone-label">
+            <h2 id="back-heading" aria-label="Back Matter"><span class="repeating-label" aria-hidden="true">Back Matter</span></h2>
+          </div>
+          <div class="zone-content">
+            <div class="entry"><span class="order">12</span>
+              <div class="sheet"><span class="sheet-title">References</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">…</span></div>
+              <div class="entry-info">
+                <h3>References</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic</span></div>
+                <p>Include the sources cited in the report. Do not restart numbering.</p>
+              </div>
+            </div>
+            <div class="entry"><span class="order">13</span>
+              <div class="sheet"><span class="sheet-title">Appendix A</span><span class="sheet-sub">Supporting Materials</span><span class="line"></span><span class="line mid"></span><span class="sheet-number">…</span></div>
+              <div class="entry-info">
+                <h3>Appendices <span class="chip optional">Optional</span></h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic</span></div>
+                <p>Include only when needed. Label each appendix clearly (for example, “Appendix A: Supporting Materials”).</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FINAL ASSEMBLY CHECKLIST -->
+        <section class="check" aria-labelledby="check-heading">
+          <h2 id="check-heading">Before You Submit: Check the Assembly</h2>
+          <ul>
+            <li>All 12 required sections appear in the order shown; appendices are included only if needed.</li>
+            <li>The letter uses business letter format, and the title page displays the actual report title.</li>
+            <li>No pages or headings are labeled “Front Matter,” “Report Body,” “Back Matter,” “Letter of Transmittal,” or “Title Page.”</li>
+            <li>Front matter uses Roman numerals; the Introduction begins Arabic numbering at 1; numbering continues through the back matter.</li>
+            <li>Page breaks and table-of-contents entries match the finished document.</li>
+          </ul>
+        </section>
+        <!-- LAST UPDATED -->
+        <p class="updated"><time datetime="2026-11-11">Last Updated November 11, 2026</time></p>
+      </div>
+    </div>
+    <!-- CREDIT -->
+    <p class="credit">© 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
+  </main>
+  <!-- EMBED HEIGHT / PARENT RESIZING -->
+  <script>
+    (function () { const parentOrigin = 'https://www.tengrrl.com'; function sendHeight() { if (window.parent !== window) { window.parent.postMessage({ type: 'tsc-visual-resize', height: document.documentElement.scrollHeight }, parentOrigin) } } window.addEventListener('load', sendHeight); window.addEventListener('resize', sendHeight); if ('ResizeObserver' in window) { new ResizeObserver(sendHeight).observe(document.body) } })();
+  </script>
+  <!-- VERTICAL LABEL REPETITION AND RESPONSIVE FIT -->
+  <script>
+    // Each phrase and separator is its own non-shrinking element. Overflow can
+    // therefore never cut through a word: only complete items are inserted.
+    (function () {
+      const ribbons = document.querySelectorAll('.zone-label');
+      function updateRibbon(ribbon) {
+        const heading = ribbon.querySelector('h2');
+        if (!heading) return;
+        const label = heading.getAttribute('aria-label');
+        heading.replaceChildren();
+        const make = (value, className) => {
+          const span = document.createElement('span');
+          span.className = className;
+          span.textContent = value;
+          return span;
+        };
+        // Always show at least one complete label. Test every additional item
+        // against the actual rendered dimensions, including gaps and font metrics.
+        heading.appendChild(make(label, 'repeating-label'));
+        for (let i = 0; i < 80; i++) {
+          const dot = make('·', 'ribbon-dot');
+          const next = make(label, 'repeating-label');
+          heading.append(dot, next);
+          // In vertical writing mode, scrollWidth measures the inline extent.
+          // Check both axes for browser differences and rounding.
+          if (heading.scrollHeight > heading.clientHeight + 1 ||
+            heading.scrollWidth > heading.clientWidth + 1) {
+            dot.remove(); next.remove(); break;
+          }
+        }
+      }
+      if ('ResizeObserver' in window) {
+        const observer = new ResizeObserver(entries => entries.forEach(entry => updateRibbon(entry.target)));
+        ribbons.forEach(ribbon => observer.observe(ribbon));
+      }
+      ribbons.forEach(updateRibbon);
+      document.fonts?.ready.then(() => ribbons.forEach(updateRibbon));
+      window.addEventListener('resize', () => ribbons.forEach(updateRibbon));
+    })();
+  </script>
+</body>
+
+</html>
