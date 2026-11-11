@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A visual assembly guide for recommendation report sections, page breaks, and page numbering.">
-  <meta name="author" content="Traci Gardner">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="A visual assembly guide for recommendation report sections, page breaks, and page numbering." name="description" />
+  <meta content="Traci Gardner" name="author" />
   <title>Recommendation Report: Put the Pages in Order</title>
-  <link rel="stylesheet" href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css">
+  <link href="https://tracigardner.github.io/TechComm/-css/infographics-shared.css" rel="stylesheet" />
   <!-- INFOGRAPHIC-SPECIFIC STYLES -->
   <style>
     /* Only infographic-specific styles; shared design tokens and page styles are supplied by infographics-shared.css. */
@@ -38,8 +39,9 @@
     .page {
       background: #fff;
       padding: clamp(18px, 3.2vw, 38px);
-      border-radius: 12px;
-      box-shadow: 0 5px 20px #00000018
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 5px 20px #00000018;
+      border: 5px solid var(--maroon);
     }
 
     .hero {
@@ -388,7 +390,7 @@
     }
 
     .updated {
-      margin: 22px 0 0;
+      margin: 0;
       padding: 9px 13px;
       background: var(--maroon, #861f41);
       color: #fff;
@@ -399,7 +401,7 @@
 
     .credit {
       font-size: .75rem;
-      text-align: center;
+      text-align: left;
       margin: 14px 10px;
       color: var(--text, #263238)
     }
@@ -546,17 +548,18 @@
       <div class="page">
         <!-- HERO -->
         <header class="hero">
-          <div class="hero-icon" aria-hidden="true"><svg viewBox="0 0 110 92" xmlns="http://www.w3.org/2000/svg" focusable="false">
-              <rect x="22" y="7" width="63" height="73" rx="3" fill="#d9d4dc" transform="rotate(8 53 43)" />
-              <rect x="16" y="8" width="63" height="73" rx="3" fill="#eae6e9" transform="rotate(-5 47 44)" />
-              <rect x="22" y="8" width="63" height="73" rx="3" fill="#fff" />
-              <rect x="31" y="21" width="44" height="5" rx="2" fill="#861f41" />
-              <rect x="31" y="35" width="37" height="3" rx="1" fill="#bfc4cb" />
-              <rect x="31" y="43" width="40" height="3" rx="1" fill="#bfc4cb" />
-              <rect x="31" y="51" width="31" height="3" rx="1" fill="#bfc4cb" /><rect x="46" y="66" width="16" height="3" rx="1.5" fill="#861f41" />
+          <div aria-hidden="true" class="hero-icon"><svg focusable="false" viewbox="0 0 110 92" xmlns="http://www.w3.org/2000/svg">
+              <rect fill="#d9d4dc" height="73" rx="3" transform="rotate(8 53 43)" width="63" x="22" y="7"></rect>
+              <rect fill="#eae6e9" height="73" rx="3" transform="rotate(-5 47 44)" width="63" x="16" y="8"></rect>
+              <rect fill="#fff" height="73" rx="3" width="63" x="22" y="8"></rect>
+              <rect fill="#861f41" height="5" rx="2" width="44" x="31" y="21"></rect>
+              <rect fill="#bfc4cb" height="3" rx="1" width="37" x="31" y="35"></rect>
+              <rect fill="#bfc4cb" height="3" rx="1" width="40" x="31" y="43"></rect>
+              <rect fill="#bfc4cb" height="3" rx="1" width="31" x="31" y="51"></rect>
+              <rect fill="#861f41" height="3" rx="1.5" width="16" x="46" y="66"></rect>
             </svg></div>
           <div class="hero-copy">
-            <h1>Recommendation Report:<br>Put the Pages in Order</h1>
+            <h1>Recommendation Report:<br />Put the Pages in Order</h1>
             <p class="subtitle">A visual guide to section order, page breaks, and numbering</p>
           </div>
         </header>
@@ -565,153 +568,154 @@
         <!-- HEADING GUIDANCE -->
         <aside class="guardrail"><strong>Use the actual report title and business letter format.</strong> Do not type “Letter of Transmittal” or “Title Page” as headings on those pages.</aside>
         <!-- LEGEND -->
-        <div class="legend" aria-label="Legend"><span><i class="dot" aria-hidden="true"></i> Required section</span><span><i class="dot optional" aria-hidden="true"></i> Optional section</span><span><strong>New page</strong> = insert a page break before the section</span></div>
+        <div aria-label="Legend" class="legend"><span><i aria-hidden="true" class="dot"></i> Required section</span><span><i aria-hidden="true" class="dot optional"></i> Optional section</span><span><strong>New page</strong> = insert a page break before the section</span></div>
         <!-- FRONT MATTER -->
-        <section class="zone front" aria-labelledby="front-heading">
+        <section aria-labelledby="front-heading" class="zone front">
           <div class="zone-label">
-            <h2 id="front-heading" aria-label="Front Matter"><span class="repeating-label" aria-hidden="true">Front Matter</span></h2>
+            <h2 aria-label="Front Matter" id="front-heading"><span aria-hidden="true" class="repeating-label">Front Matter</span></h2>
           </div>
           <div class="zone-content">
             <!-- REPORT SECTION ENTRIES -->
+            <!-- loT -->
             <div class="entry"><span class="order">01</span>
-              <div class="sheet letter" aria-label="Example business letter layout"><span class="sheet-title">November 2026</span><span class="line short"></span><span class="sheet-sub">Recipient address</span><span class="line mid"></span><span class="sheet-sub">Dear …</span><span class="line"></span><span class="line mid"></span><span class="sheet-sub">Sincerely, …</span><span class="sheet-number">&nbsp;</span></div>
+              <div aria-label="Example business letter layout" class="sheet letter"><span class="sheet-title">November 2026</span><span class="line short"></span><span class="sheet-sub">Recipient address</span><span class="line mid"></span><span class="sheet-sub">Dear …</span><span class="line"></span><span class="line mid"></span><span class="sheet-sub">Sincerely, …</span><span class="sheet-number"> </span></div>
               <div class="entry-info">
                 <h3>Letter of Transmittal</h3>
                 <div class="chips"><span class="chip break">Separate page</span><span class="chip number">No page number</span><span class="chip nohead">No section heading</span></div>
                 <p>Format as a business letter. Do not label it “Letter of Transmittal.”</p>
               </div>
             </div>
+            <!-- title -->
             <div class="entry"><span class="order">02</span>
-              <div class="sheet titlepage" aria-label="Example title page"><span class="sheet-title">Improving the<br>Client Guide</span><span class="sheet-sub">Recommendation Report</span><span class="sheet-sub">Prepared for …</span><span class="sheet-sub">Prepared by …</span><span class="sheet-sub">Date</span><span class="sheet-number">&nbsp;</span></div>
+              <div aria-label="Example title page" class="sheet titlepage"><span class="sheet-title">Improving the<br />Client Guide</span><span class="sheet-sub">Recommendation Report</span><span class="sheet-sub">Prepared for …</span><span class="sheet-sub">Prepared by …</span><span class="sheet-sub">Date</span><span class="sheet-number"> </span></div>
               <div class="entry-info">
                 <h3>Title Page</h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">No visible number</span><span class="chip nohead">No section heading</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">No visible page number</span><span class="chip nohead">No section heading</span></div>
                 <p>Use your <em>actual report title</em>, not the words “Title Page.” Count this as front-matter page i, but do not display i.</p>
               </div>
             </div>
+            <!-- abstract -->
             <div class="entry"><span class="order">03</span>
               <div class="sheet"><span class="sheet-title">Abstract</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="line short"></span><span class="sheet-number">ii</span></div>
               <div class="entry-info">
                 <h3>Abstract</h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
-                <p>Use “Abstract” as the heading. The first visible front-matter number is typically ii.</p>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman page number ii</span><span class="chip nohead">Heading: Abstract</span></div>
+                <p>The first visible front-matter number is typically ii.</p>
               </div>
             </div>
+            <!-- ToC -->
             <div class="entry"><span class="order">04</span>
-              <div class="sheet"><span class="sheet-title">Table of Contents</span><span class="sheet-sub">Introduction ........ 1</span><span class="sheet-sub">Methods ............. 3</span><span class="sheet-sub">Results ............... 5</span><span class="sheet-number">iii*</span></div>
+              <div class="sheet"><span class="sheet-title">Table of Contents</span><span class="sheet-sub">Introduction ........ 1</span><span class="sheet-sub">Methods ............. 3</span><span class="sheet-sub">Results ............... 5</span><span class="sheet-number">iii</span></div>
               <div class="entry-info">
                 <h3>Table of Contents</h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Roman page numbers</span><span class="chip nohead">Heading: Table of Contents</span></div>
                 <p>List the actual report headings and their correct page numbers. Do not list “Front Matter” or “Report Body.”</p>
               </div>
             </div>
             <div class="entry"><span class="order">05</span>
-              <div class="sheet"><span class="sheet-title">List of Illustrations</span><span class="sheet-sub">Figure 1 ............ 4</span><span class="sheet-sub">Table 1 ............. 7</span><span class="sheet-number">iv*</span></div>
+              <div class="sheet"><span class="sheet-title">List of Illustrations</span><span class="sheet-sub">Figure 1 ............ 4</span><span class="sheet-sub">Table 1 ............. 7</span><span class="sheet-number">iv</span></div>
+              <!-- illustrations -->
               <div class="entry-info">
-                <h3>List of Illustrations</h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
-                <p>List the figures and tables in the report with their page numbers.</p>
+                <h3>List of Illustrations (optional)</h3>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Roman page numbers</span><span class="chip nohead">Heading: List of Illustrations</span></div>
+                <p>If you have more than three visuals, list the figures and tables in the report with their page numbers.</p>
               </div>
             </div>
+            <!-- ex sum -->
             <div class="entry"><span class="order">06</span>
-              <div class="sheet"><span class="sheet-title">Executive Summary</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="line short"></span><span class="sheet-number">v*</span></div>
+              <div class="sheet"><span class="sheet-title">Executive Summary</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="line short"></span><span class="sheet-number">v</span></div>
               <div class="entry-info">
                 <h3>Executive Summary</h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">Roman numerals</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Roman page numbers</span><span class="chip nohead">Heading: Executive Summary</span></div>
                 <p>Keep Roman numbering through the end of the front matter.</p>
               </div>
             </div>
-            <p class="note">*Roman numeral examples assume each preceding front-matter section occupies one page. Actual numbers depend on length.</p>
+            <p class="note">Roman numeral examples assume each preceding front-matter section occupies one page. Actual numbers depend on length.</p>
           </div>
         </section>
         <div class="transition">Numbering changes here: Roman numerals → Arabic numerals, restarting at 1</div>
         <!-- REPORT BODY -->
-        <section class="zone body-zone" aria-labelledby="body-heading">
+        <section aria-labelledby="body-heading" class="zone body-zone">
           <div class="zone-label">
-            <h2 id="body-heading" aria-label="Report Body"><span class="repeating-label" aria-hidden="true">Report Body</span></h2>
+            <h2 aria-label="Report Body" id="body-heading"><span aria-hidden="true" class="repeating-label">Report Body</span></h2>
           </div>
+          <!-- intro -->
           <div class="zone-content">
             <div class="entry"><span class="order">07</span>
               <div class="sheet"><span class="sheet-title">Introduction</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">1</span></div>
               <div class="entry-info">
                 <h3>Introduction</h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">Arabic page 1</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Arabic page 1</span><span class="chip nohead">Heading: Introduction</span></div>
                 <p>Start the body here; restart numbering at 1.</p>
               </div>
             </div>
+            <!-- methods -->
             <div class="entry"><span class="order">08</span>
               <div class="sheet"><span class="sheet-title">Methods</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">…</span></div>
               <div class="entry-info">
                 <h3>Methods</h3>
-                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic Page Numbers</span><span class="chip nohead">Heading: Methods</span></div>
                 <p>Explain how you gathered evidence and evaluated the client document.</p>
               </div>
             </div>
+            <!-- results -->
             <div class="entry"><span class="order">09</span>
               <div class="sheet"><span class="sheet-title">Results</span><span class="line"></span><span class="line short"></span><span class="line"></span><span class="sheet-number">…</span></div>
               <div class="entry-info">
                 <h3>Results</h3>
-                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic Page Numbers</span><span class="chip nohead">Heading: Results</span></div>
                 <p>Present what your investigation found.</p>
               </div>
             </div>
+            <!-- concls -->
             <div class="entry"><span class="order">10</span>
               <div class="sheet"><span class="sheet-title">Conclusions</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">…</span></div>
               <div class="entry-info">
                 <h3>Conclusions</h3>
-                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic Page Numbers</span><span class="chip nohead">Heading: Conclusions</span></div>
                 <p>Explain what the results mean.</p>
               </div>
             </div>
+            <!-- recs -->
             <div class="entry"><span class="order">11</span>
               <div class="sheet"><span class="sheet-title">Recommendations</span><span class="line"></span><span class="line short"></span><span class="line"></span><span class="sheet-number">…</span></div>
               <div class="entry-info">
                 <h3>Recommendations</h3>
-                <div class="chips"><span class="chip break">New page*</span><span class="chip number">Continue Arabic</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic Page Numbers</span><span class="chip nohead">Heading: Recommendations</span></div>
                 <p>Propose specific, feasible improvements supported by your findings.</p>
               </div>
             </div>
-            <p class="note">*First-draft layout convention: each major body section begins on a new page. This is a formatting choice to confirm for the course.</p>
+            <p class="note">First-draft layout convention: each major body section begins on a new page. This is a formatting choice to confirm for the course.</p>
           </div>
         </section>
         <!-- BACK MATTER -->
-        <section class="zone back" aria-labelledby="back-heading">
+        <section aria-labelledby="back-heading" class="zone back">
           <div class="zone-label">
-            <h2 id="back-heading" aria-label="Back Matter"><span class="repeating-label" aria-hidden="true">Back Matter</span></h2>
+            <h2 aria-label="Back Matter" id="back-heading"><span aria-hidden="true" class="repeating-label">Back Matter</span></h2>
           </div>
           <div class="zone-content">
+            <!-- refs -->
             <div class="entry"><span class="order">12</span>
               <div class="sheet"><span class="sheet-title">References</span><span class="line"></span><span class="line mid"></span><span class="line"></span><span class="sheet-number">…</span></div>
               <div class="entry-info">
                 <h3>References</h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic Page Numbers</span><span class="chip nohead">Heading: References</span></div>
                 <p>Include the sources cited in the report. Do not restart numbering.</p>
               </div>
             </div>
+            <!-- apps -->
             <div class="entry"><span class="order">13</span>
               <div class="sheet"><span class="sheet-title">Appendix A</span><span class="sheet-sub">Supporting Materials</span><span class="line"></span><span class="line mid"></span><span class="sheet-number">…</span></div>
               <div class="entry-info">
                 <h3>Appendices <span class="chip optional">Optional</span></h3>
-                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic</span></div>
+                <div class="chips"><span class="chip break">New page</span><span class="chip number">Continue Arabic Page Numbers</span><span class="chip nohead">Heading: Appendix A (descriptive title)</span></div>
                 <p>Include only when needed. Label each appendix clearly (for example, “Appendix A: Supporting Materials”).</p>
               </div>
             </div>
           </div>
-        </section>
-        <!-- FINAL ASSEMBLY CHECKLIST -->
-        <section class="check" aria-labelledby="check-heading">
-          <h2 id="check-heading">Before You Submit: Check the Assembly</h2>
-          <ul>
-            <li>All 12 required sections appear in the order shown; appendices are included only if needed.</li>
-            <li>The letter uses business letter format, and the title page displays the actual report title.</li>
-            <li>No pages or headings are labeled “Front Matter,” “Report Body,” “Back Matter,” “Letter of Transmittal,” or “Title Page.”</li>
-            <li>Front matter uses Roman numerals; the Introduction begins Arabic numbering at 1; numbering continues through the back matter.</li>
-            <li>Page breaks and table-of-contents entries match the finished document.</li>
-          </ul>
-        </section>
-        <!-- LAST UPDATED -->
-        <p class="updated"><time datetime="2026-11-11">Last Updated November 11, 2026</time></p>
       </div>
+      <!-- LAST UPDATED: FLUSH WITH BOTTOM EDGE OF WHITE PAGE -->
+      <p class="updated"><time datetime="2026-11-11">Last Updated November 11, 2026</time></p>
     </div>
     <!-- CREDIT -->
     <p class="credit">© 2026 Traci Gardner. Available under a Creative Commons Attribution-NonCommercial Share-Alike 4.0 International License.</p>
